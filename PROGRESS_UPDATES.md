@@ -6,6 +6,20 @@ Siin dokumendis on kronoloogilises järjekorras päevased edusammud. Selleks, et
 
 ## 📅 2025-10-13 (Pühapäev)
 
+### 💡 Miks See Projekt Täna Algas
+
+Eile oli kaasteelisega päris pikk arutelu ühe termini pärast. See pani mõtlema - kui ühe termini pärast kulub nii palju aega, siis kuidas me saame süstemaatiliselt kõiki ATL termineid tõlkida nii, et need oleksid usaldusväärsed ja järjepidevad?
+
+**Mõte:** Kuna ma oskan programmeerida, saan ma teha süsteemi, mis:
+- Kogub autoriteetsetest allikatest (EKI) professionaalsed vasteid
+- Analüüsib olemasolevaid tõlkeid (päevatekstid)
+- Kõrvutab erinevaid variante
+- Aitab teha informeeritud otsuseid
+
+See on midagi, mida ma teen **ainult seetõttu, et saan seda programmeerimisega abil teha** - ja see tunne on võimas! 💪
+
+---
+
 ### 🎉 Täna Saavutatud
 
 #### 1. GitHubi Täiendamine - Kõik Andmed Üles Laetud
@@ -63,6 +77,9 @@ Siin dokumendis on kronoloogilises järjekorras päevased edusammud. Selleks, et
   - MVP-first: töötav > täiuslik
 
 ### 📊 Statistika
+
+**Ajakulu:**
+- ⏱️ **Umbes 3 tundi** - ja vaata kui palju saavutatud!
 
 **GitHubis:**
 - 3 commiti täna
