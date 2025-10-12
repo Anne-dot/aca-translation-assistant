@@ -1,0 +1,201 @@
+
+{
+  "log": {
+    "version": "1.2",
+    "creator": {
+      "name": "WebInspector",
+      "version": "537.36"
+    },
+    "pages": [
+      {
+        "startedDateTime": "2025-10-12T20:23:10.374Z",
+        "id": "page_1",
+        "title": "https://sonaveeb.ee/search/unif/dlall/kriis/depressioon/1/est",
+        "pageTimings": {
+          "onContentLoad": 4487.969000001613,
+          "onLoad": 9657.028000001446
+        }
+      }
+    ],
+    "entries": [
+      {
+        "_connectionId": "2951",
+        "_initiator": {
+          "type": "other"
+        },
+        "_priority": "VeryHigh",
+        "_resourceType": "document",
+        "cache": {},
+        "connection": "443",
+        "pageref": "page_1",
+        "request": {
+          "method": "GET",
+          "url": "https://sonaveeb.ee/search/unif/dlall/kriis/depressioon/1/est",
+          "httpVersion": "HTTP/1.1",
+          "headers": [
+            {
+              "name": "Accept",
+              "value": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7"
+            },
+            {
+              "name": "Accept-Encoding",
+              "value": "gzip, deflate, br, zstd"
+            },
+            {
+              "name": "Accept-Language",
+              "value": "en-US,en;q=0.9"
+            },
+            {
+              "name": "Cache-Control",
+              "value": "max-age=0"
+            },
+            {
+              "name": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "name": "Host",
+              "value": "sonaveeb.ee"
+            },
+            {
+              "name": "Sec-Fetch-Dest",
+              "value": "document"
+            },
+            {
+              "name": "Sec-Fetch-Mode",
+              "value": "navigate"
+            },
+            {
+              "name": "Sec-Fetch-Site",
+              "value": "same-origin"
+            },
+            {
+              "name": "Sec-Fetch-User",
+              "value": "?1"
+            },
+            {
+              "name": "Upgrade-Insecure-Requests",
+              "value": "1"
+            },
+            {
+              "name": "User-Agent",
+              "value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36"
+            },
+            {
+              "name": "sec-ch-ua",
+              "value": "\"Not A(Brand\";v=\"8\", \"Chromium\";v=\"132\", \"Google Chrome\";v=\"132\""
+            },
+            {
+              "name": "sec-ch-ua-mobile",
+              "value": "?0"
+            },
+            {
+              "name": "sec-ch-ua-platform",
+              "value": "\"Linux\""
+            }
+          ],
+          "queryString": [],
+          "cookies": [],
+          "headersSize": 952,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "200",
+          "httpVersion": "HTTP/1.1",
+          "headers": [
+            {
+              "name": "Access-Control-Allow-Origin",
+              "value": "*"
+            },
+            {
+              "name": "Cache-Control",
+              "value": "no-store"
+            },
+            {
+              "name": "Connection",
+              "value": "Keep-Alive"
+            },
+            {
+              "name": "Content-Encoding",
+              "value": "gzip"
+            },
+            {
+              "name": "Content-Language",
+              "value": "et"
+            },
+            {
+              "name": "Content-Type",
+              "value": "text/html;charset=UTF-8"
+            },
+            {
+              "name": "Date",
+              "value": "Sun, 12 Oct 2025 20:23:10 GMT"
+            },
+            {
+              "name": "Keep-Alive",
+              "value": "timeout=5, max=100"
+            },
+            {
+              "name": "Server",
+              "value": "Apache"
+            },
+            {
+              "name": "Strict-Transport-Security",
+              "value": "max-age=31536000 ; includeSubDomains"
+            },
+            {
+              "name": "Transfer-Encoding",
+              "value": "chunked"
+            },
+            {
+              "name": "Vary",
+              "value": "Accept-Encoding"
+            },
+            {
+              "name": "X-Content-Type-Options",
+              "value": "nosniff"
+            },
+            {
+              "name": "X-Frame-Options",
+              "value": "DENY"
+            },
+            {
+              "name": "X-XSS-Protection",
+              "value": "1; mode=block"
+            }
+          ],
+          "cookies": [],
+          "content": {
+            "size": 74858,
+            "mimeType": "text/html",
+            "compression": 64493
+          },
+          "redirectURL": "",
+          "headersSize": 810,
+          "bodySize": 10365,
+          "_transferSize": 11175,
+          "_error": null,
+          "_fetchedViaServiceWorker": false
+        },
+        "serverIPAddress": "185.174.162.174",
+        "startedDateTime": "2025-10-12T20:23:10.363Z",
+        "time": 642.4040000019886,
+        "timings": {
+          "blocked": 11.504000001103616,
+          "dns": -1,
+          "ssl": -1,
+          "connect": -1,
+          "send": 0.4850000000000001,
+          "wait": 571.2360000010268,
+          "receive": 59.178999999858206,
+          "_blocked_queueing": 10.685000001103617,
+          "_workerStart": -1,
+          "_workerReady": -1,
+          "_workerFetchStart": -1,
+          "_workerRespondWithSettled": -1
+        }
+      }
+    ]
+  }
+}

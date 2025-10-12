@@ -1,0 +1,3868 @@
+{
+  "log": {
+    "version": "1.2",
+    "creator": {
+      "name": "WebInspector",
+      "version": "537.36"
+    },
+    "pages": [
+      {
+        "startedDateTime": "2025-10-12T20:23:10.374Z",
+        "id": "page_1",
+        "title": "https://sonaveeb.ee/search/unif/dlall/kriis/depressioon/1/est",
+        "pageTimings": {
+          "onContentLoad": 4487.969000001613,
+          "onLoad": 9657.028000001446
+        }
+      }
+    ],
+    "entries": [
+      {
+        "_connectionId": "3067",
+        "_initiator": {
+          "type": "parser",
+          "url": "https://sonaveeb.ee/search/unif/dlall/kriis/depressioon/1/est",
+          "lineNumber": 25
+        },
+        "_priority": "High",
+        "_resourceType": "script",
+        "cache": {},
+        "connection": "443",
+        "pageref": "page_1",
+        "request": {
+          "method": "GET",
+          "url": "https://sonaveeb.ee/view/js/jquery-3.7.1.min.js",
+          "httpVersion": "HTTP/1.1",
+          "headers": [
+            {
+              "name": "Accept",
+              "value": "*/*"
+            },
+            {
+              "name": "Accept-Encoding",
+              "value": "gzip, deflate, br, zstd"
+            },
+            {
+              "name": "Accept-Language",
+              "value": "en-US,en;q=0.9"
+            },
+            {
+              "name": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "name": "Host",
+              "value": "sonaveeb.ee"
+            },
+            {
+              "name": "Referer",
+              "value": "https://sonaveeb.ee/search/unif/dlall/kriis/depressioon/1/est"
+            },
+            {
+              "name": "Sec-Fetch-Dest",
+              "value": "script"
+            },
+            {
+              "name": "Sec-Fetch-Mode",
+              "value": "no-cors"
+            },
+            {
+              "name": "Sec-Fetch-Site",
+              "value": "same-origin"
+            },
+            {
+              "name": "User-Agent",
+              "value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36"
+            },
+            {
+              "name": "sec-ch-ua",
+              "value": "\"Not A(Brand\";v=\"8\", \"Chromium\";v=\"132\", \"Google Chrome\";v=\"132\""
+            },
+            {
+              "name": "sec-ch-ua-mobile",
+              "value": "?0"
+            },
+            {
+              "name": "sec-ch-ua-platform",
+              "value": "\"Linux\""
+            }
+          ],
+          "queryString": [],
+          "cookies": [],
+          "headersSize": 799,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "200",
+          "httpVersion": "HTTP/1.1",
+          "headers": [
+            {
+              "name": "Accept-Ranges",
+              "value": "bytes"
+            },
+            {
+              "name": "Access-Control-Allow-Origin",
+              "value": "*"
+            },
+            {
+              "name": "Cache-Control",
+              "value": "no-cache, no-store, max-age=0, must-revalidate"
+            },
+            {
+              "name": "Connection",
+              "value": "Keep-Alive"
+            },
+            {
+              "name": "Content-Encoding",
+              "value": "gzip"
+            },
+            {
+              "name": "Content-Type",
+              "value": "application/javascript"
+            },
+            {
+              "name": "Date",
+              "value": "Sun, 12 Oct 2025 20:23:11 GMT"
+            },
+            {
+              "name": "Expires",
+              "value": "0"
+            },
+            {
+              "name": "Keep-Alive",
+              "value": "timeout=5, max=100"
+            },
+            {
+              "name": "Last-Modified",
+              "value": "Thu, 02 Oct 2025 17:24:09 GMT"
+            },
+            {
+              "name": "Pragma",
+              "value": "no-cache"
+            },
+            {
+              "name": "Server",
+              "value": "Apache"
+            },
+            {
+              "name": "Strict-Transport-Security",
+              "value": "max-age=31536000 ; includeSubDomains"
+            },
+            {
+              "name": "Transfer-Encoding",
+              "value": "chunked"
+            },
+            {
+              "name": "Vary",
+              "value": "Origin,Accept-Encoding,Access-Control-Request-Method,Access-Control-Request-Headers"
+            },
+            {
+              "name": "X-Content-Type-Options",
+              "value": "nosniff"
+            },
+            {
+              "name": "X-Frame-Options",
+              "value": "DENY"
+            },
+            {
+              "name": "X-XSS-Protection",
+              "value": "1; mode=block"
+            }
+          ],
+          "cookies": [],
+          "content": {
+            "size": 87533,
+            "mimeType": "application/javascript",
+            "compression": 57146
+          },
+          "redirectURL": "",
+          "headersSize": 657,
+          "bodySize": 30387,
+          "_transferSize": 31044,
+          "_error": null,
+          "_fetchedViaServiceWorker": false
+        },
+        "serverIPAddress": "185.174.162.174",
+        "startedDateTime": "2025-10-12T20:23:11.007Z",
+        "time": 1257.6120000012452,
+        "timings": {
+          "blocked": 15.855999998166226,
+          "dns": 0,
+          "ssl": 51.265,
+          "connect": 91.792,
+          "send": 0.22799999999999443,
+          "wait": 582.6940000006766,
+          "receive": 567.0420000024023,
+          "_blocked_queueing": 15.855999998166226,
+          "_workerStart": -1,
+          "_workerReady": -1,
+          "_workerFetchStart": -1,
+          "_workerRespondWithSettled": -1
+        }
+      },
+      {
+        "_connectionId": "3083",
+        "_initiator": {
+          "type": "parser",
+          "url": "https://sonaveeb.ee/search/unif/dlall/kriis/depressioon/1/est",
+          "lineNumber": 26
+        },
+        "_priority": "High",
+        "_resourceType": "script",
+        "cache": {},
+        "connection": "443",
+        "pageref": "page_1",
+        "request": {
+          "method": "GET",
+          "url": "https://sonaveeb.ee/view/js/jquery-ui.min.js",
+          "httpVersion": "HTTP/1.1",
+          "headers": [
+            {
+              "name": "Accept",
+              "value": "*/*"
+            },
+            {
+              "name": "Accept-Encoding",
+              "value": "gzip, deflate, br, zstd"
+            },
+            {
+              "name": "Accept-Language",
+              "value": "en-US,en;q=0.9"
+            },
+            {
+              "name": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "name": "Host",
+              "value": "sonaveeb.ee"
+            },
+            {
+              "name": "Referer",
+              "value": "https://sonaveeb.ee/search/unif/dlall/kriis/depressioon/1/est"
+            },
+            {
+              "name": "Sec-Fetch-Dest",
+              "value": "script"
+            },
+            {
+              "name": "Sec-Fetch-Mode",
+              "value": "no-cors"
+            },
+            {
+              "name": "Sec-Fetch-Site",
+              "value": "same-origin"
+            },
+            {
+              "name": "User-Agent",
+              "value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36"
+            },
+            {
+              "name": "sec-ch-ua",
+              "value": "\"Not A(Brand\";v=\"8\", \"Chromium\";v=\"132\", \"Google Chrome\";v=\"132\""
+            },
+            {
+              "name": "sec-ch-ua-mobile",
+              "value": "?0"
+            },
+            {
+              "name": "sec-ch-ua-platform",
+              "value": "\"Linux\""
+            }
+          ],
+          "queryString": [],
+          "cookies": [],
+          "headersSize": 796,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "200",
+          "httpVersion": "HTTP/1.1",
+          "headers": [
+            {
+              "name": "Accept-Ranges",
+              "value": "bytes"
+            },
+            {
+              "name": "Access-Control-Allow-Origin",
+              "value": "*"
+            },
+            {
+              "name": "Cache-Control",
+              "value": "no-cache, no-store, max-age=0, must-revalidate"
+            },
+            {
+              "name": "Connection",
+              "value": "Keep-Alive"
+            },
+            {
+              "name": "Content-Encoding",
+              "value": "gzip"
+            },
+            {
+              "name": "Content-Type",
+              "value": "application/javascript"
+            },
+            {
+              "name": "Date",
+              "value": "Sun, 12 Oct 2025 20:23:11 GMT"
+            },
+            {
+              "name": "Expires",
+              "value": "0"
+            },
+            {
+              "name": "Keep-Alive",
+              "value": "timeout=5, max=100"
+            },
+            {
+              "name": "Last-Modified",
+              "value": "Thu, 02 Oct 2025 17:24:09 GMT"
+            },
+            {
+              "name": "Pragma",
+              "value": "no-cache"
+            },
+            {
+              "name": "Server",
+              "value": "Apache"
+            },
+            {
+              "name": "Strict-Transport-Security",
+              "value": "max-age=31536000 ; includeSubDomains"
+            },
+            {
+              "name": "Transfer-Encoding",
+              "value": "chunked"
+            },
+            {
+              "name": "Vary",
+              "value": "Origin,Accept-Encoding,Access-Control-Request-Method,Access-Control-Request-Headers"
+            },
+            {
+              "name": "X-Content-Type-Options",
+              "value": "nosniff"
+            },
+            {
+              "name": "X-Frame-Options",
+              "value": "DENY"
+            },
+            {
+              "name": "X-XSS-Protection",
+              "value": "1; mode=block"
+            }
+          ],
+          "cookies": [],
+          "content": {
+            "size": 252068,
+            "mimeType": "application/javascript",
+            "compression": 185384
+          },
+          "redirectURL": "",
+          "headersSize": 657,
+          "bodySize": 66684,
+          "_transferSize": 67341,
+          "_error": null,
+          "_fetchedViaServiceWorker": false
+        },
+        "serverIPAddress": "185.174.162.174",
+        "startedDateTime": "2025-10-12T20:23:11.007Z",
+        "time": 1814.6479999978005,
+        "timings": {
+          "blocked": 16.449999998207204,
+          "dns": 0.016000000000000014,
+          "ssl": 45.080000000000005,
+          "connect": 93.305,
+          "send": 2.509999999999991,
+          "wait": 603.0870000010495,
+          "receive": 1099.2799999985436,
+          "_blocked_queueing": 16.199999998207204,
+          "_workerStart": -1,
+          "_workerReady": -1,
+          "_workerFetchStart": -1,
+          "_workerRespondWithSettled": -1
+        }
+      },
+      {
+        "_connectionId": "3075",
+        "_initiator": {
+          "type": "parser",
+          "url": "https://sonaveeb.ee/search/unif/dlall/kriis/depressioon/1/est",
+          "lineNumber": 27
+        },
+        "_priority": "High",
+        "_resourceType": "script",
+        "cache": {},
+        "connection": "443",
+        "pageref": "page_1",
+        "request": {
+          "method": "GET",
+          "url": "https://sonaveeb.ee/view/js/jquery.serializejson.js",
+          "httpVersion": "HTTP/1.1",
+          "headers": [
+            {
+              "name": "Accept",
+              "value": "*/*"
+            },
+            {
+              "name": "Accept-Encoding",
+              "value": "gzip, deflate, br, zstd"
+            },
+            {
+              "name": "Accept-Language",
+              "value": "en-US,en;q=0.9"
+            },
+            {
+              "name": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "name": "Host",
+              "value": "sonaveeb.ee"
+            },
+            {
+              "name": "Referer",
+              "value": "https://sonaveeb.ee/search/unif/dlall/kriis/depressioon/1/est"
+            },
+            {
+              "name": "Sec-Fetch-Dest",
+              "value": "script"
+            },
+            {
+              "name": "Sec-Fetch-Mode",
+              "value": "no-cors"
+            },
+            {
+              "name": "Sec-Fetch-Site",
+              "value": "same-origin"
+            },
+            {
+              "name": "User-Agent",
+              "value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36"
+            },
+            {
+              "name": "sec-ch-ua",
+              "value": "\"Not A(Brand\";v=\"8\", \"Chromium\";v=\"132\", \"Google Chrome\";v=\"132\""
+            },
+            {
+              "name": "sec-ch-ua-mobile",
+              "value": "?0"
+            },
+            {
+              "name": "sec-ch-ua-platform",
+              "value": "\"Linux\""
+            }
+          ],
+          "queryString": [],
+          "cookies": [],
+          "headersSize": 803,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "200",
+          "httpVersion": "HTTP/1.1",
+          "headers": [
+            {
+              "name": "Accept-Ranges",
+              "value": "bytes"
+            },
+            {
+              "name": "Access-Control-Allow-Origin",
+              "value": "*"
+            },
+            {
+              "name": "Cache-Control",
+              "value": "no-cache, no-store, max-age=0, must-revalidate"
+            },
+            {
+              "name": "Connection",
+              "value": "Keep-Alive"
+            },
+            {
+              "name": "Content-Encoding",
+              "value": "gzip"
+            },
+            {
+              "name": "Content-Type",
+              "value": "application/javascript"
+            },
+            {
+              "name": "Date",
+              "value": "Sun, 12 Oct 2025 20:23:11 GMT"
+            },
+            {
+              "name": "Expires",
+              "value": "0"
+            },
+            {
+              "name": "Keep-Alive",
+              "value": "timeout=5, max=100"
+            },
+            {
+              "name": "Last-Modified",
+              "value": "Thu, 02 Oct 2025 17:24:09 GMT"
+            },
+            {
+              "name": "Pragma",
+              "value": "no-cache"
+            },
+            {
+              "name": "Server",
+              "value": "Apache"
+            },
+            {
+              "name": "Strict-Transport-Security",
+              "value": "max-age=31536000 ; includeSubDomains"
+            },
+            {
+              "name": "Transfer-Encoding",
+              "value": "chunked"
+            },
+            {
+              "name": "Vary",
+              "value": "Origin,Accept-Encoding,Access-Control-Request-Method,Access-Control-Request-Headers"
+            },
+            {
+              "name": "X-Content-Type-Options",
+              "value": "nosniff"
+            },
+            {
+              "name": "X-Frame-Options",
+              "value": "DENY"
+            },
+            {
+              "name": "X-XSS-Protection",
+              "value": "1; mode=block"
+            }
+          ],
+          "cookies": [],
+          "content": {
+            "size": 17192,
+            "mimeType": "application/javascript",
+            "compression": 11764
+          },
+          "redirectURL": "",
+          "headersSize": 657,
+          "bodySize": 5428,
+          "_transferSize": 6085,
+          "_error": null,
+          "_fetchedViaServiceWorker": false
+        },
+        "serverIPAddress": "185.174.162.174",
+        "startedDateTime": "2025-10-12T20:23:11.008Z",
+        "time": 856.195000000298,
+        "timings": {
+          "blocked": 16.626000000542263,
+          "dns": 0,
+          "ssl": 46.727,
+          "connect": 95.238,
+          "send": 0.4830000000000041,
+          "wait": 593.8629999997406,
+          "receive": 149.98500000001513,
+          "_blocked_queueing": 16.626000000542263,
+          "_workerStart": -1,
+          "_workerReady": -1,
+          "_workerFetchStart": -1,
+          "_workerRespondWithSettled": -1
+        }
+      },
+      {
+        "_connectionId": "2951",
+        "_initiator": {
+          "type": "parser",
+          "url": "https://sonaveeb.ee/search/unif/dlall/kriis/depressioon/1/est",
+          "lineNumber": 28
+        },
+        "_priority": "High",
+        "_resourceType": "script",
+        "cache": {},
+        "connection": "443",
+        "pageref": "page_1",
+        "request": {
+          "method": "GET",
+          "url": "https://sonaveeb.ee/view/js/popper.min.js",
+          "httpVersion": "HTTP/1.1",
+          "headers": [
+            {
+              "name": "Accept",
+              "value": "*/*"
+            },
+            {
+              "name": "Accept-Encoding",
+              "value": "gzip, deflate, br, zstd"
+            },
+            {
+              "name": "Accept-Language",
+              "value": "en-US,en;q=0.9"
+            },
+            {
+              "name": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "name": "Host",
+              "value": "sonaveeb.ee"
+            },
+            {
+              "name": "Referer",
+              "value": "https://sonaveeb.ee/search/unif/dlall/kriis/depressioon/1/est"
+            },
+            {
+              "name": "Sec-Fetch-Dest",
+              "value": "script"
+            },
+            {
+              "name": "Sec-Fetch-Mode",
+              "value": "no-cors"
+            },
+            {
+              "name": "Sec-Fetch-Site",
+              "value": "same-origin"
+            },
+            {
+              "name": "User-Agent",
+              "value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36"
+            },
+            {
+              "name": "sec-ch-ua",
+              "value": "\"Not A(Brand\";v=\"8\", \"Chromium\";v=\"132\", \"Google Chrome\";v=\"132\""
+            },
+            {
+              "name": "sec-ch-ua-mobile",
+              "value": "?0"
+            },
+            {
+              "name": "sec-ch-ua-platform",
+              "value": "\"Linux\""
+            }
+          ],
+          "queryString": [],
+          "cookies": [],
+          "headersSize": 793,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "200",
+          "httpVersion": "HTTP/1.1",
+          "headers": [
+            {
+              "name": "Accept-Ranges",
+              "value": "bytes"
+            },
+            {
+              "name": "Access-Control-Allow-Origin",
+              "value": "*"
+            },
+            {
+              "name": "Cache-Control",
+              "value": "no-cache, no-store, max-age=0, must-revalidate"
+            },
+            {
+              "name": "Connection",
+              "value": "Keep-Alive"
+            },
+            {
+              "name": "Content-Encoding",
+              "value": "gzip"
+            },
+            {
+              "name": "Content-Type",
+              "value": "application/javascript"
+            },
+            {
+              "name": "Date",
+              "value": "Sun, 12 Oct 2025 20:23:11 GMT"
+            },
+            {
+              "name": "Expires",
+              "value": "0"
+            },
+            {
+              "name": "Keep-Alive",
+              "value": "timeout=5, max=98"
+            },
+            {
+              "name": "Last-Modified",
+              "value": "Thu, 02 Oct 2025 17:24:09 GMT"
+            },
+            {
+              "name": "Pragma",
+              "value": "no-cache"
+            },
+            {
+              "name": "Server",
+              "value": "Apache"
+            },
+            {
+              "name": "Strict-Transport-Security",
+              "value": "max-age=31536000 ; includeSubDomains"
+            },
+            {
+              "name": "Transfer-Encoding",
+              "value": "chunked"
+            },
+            {
+              "name": "Vary",
+              "value": "Origin,Accept-Encoding,Access-Control-Request-Method,Access-Control-Request-Headers"
+            },
+            {
+              "name": "X-Content-Type-Options",
+              "value": "nosniff"
+            },
+            {
+              "name": "X-Frame-Options",
+              "value": "DENY"
+            },
+            {
+              "name": "X-XSS-Protection",
+              "value": "1; mode=block"
+            }
+          ],
+          "cookies": [],
+          "content": {
+            "size": 19236,
+            "mimeType": "application/javascript",
+            "compression": 12278
+          },
+          "redirectURL": "",
+          "headersSize": 656,
+          "bodySize": 6958,
+          "_transferSize": 7614,
+          "_error": null,
+          "_fetchedViaServiceWorker": false
+        },
+        "serverIPAddress": "185.174.162.174",
+        "startedDateTime": "2025-10-12T20:23:11.008Z",
+        "time": 1397.4469999993744,
+        "timings": {
+          "blocked": 657.0680000001844,
+          "dns": -1,
+          "ssl": -1,
+          "connect": -1,
+          "send": 0.18799999999998818,
+          "wait": 589.7940000015793,
+          "receive": 150.3969999976107,
+          "_blocked_queueing": 17.173000000184402,
+          "_workerStart": -1,
+          "_workerReady": -1,
+          "_workerFetchStart": -1,
+          "_workerRespondWithSettled": -1
+        }
+      },
+      {
+        "_connectionId": "3091",
+        "_initiator": {
+          "type": "parser",
+          "url": "https://sonaveeb.ee/search/unif/dlall/kriis/depressioon/1/est",
+          "lineNumber": 29
+        },
+        "_priority": "High",
+        "_resourceType": "script",
+        "cache": {},
+        "connection": "443",
+        "pageref": "page_1",
+        "request": {
+          "method": "GET",
+          "url": "https://sonaveeb.ee/view/js/bootstrap.min.js",
+          "httpVersion": "HTTP/1.1",
+          "headers": [
+            {
+              "name": "Accept",
+              "value": "*/*"
+            },
+            {
+              "name": "Accept-Encoding",
+              "value": "gzip, deflate, br, zstd"
+            },
+            {
+              "name": "Accept-Language",
+              "value": "en-US,en;q=0.9"
+            },
+            {
+              "name": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "name": "Host",
+              "value": "sonaveeb.ee"
+            },
+            {
+              "name": "Referer",
+              "value": "https://sonaveeb.ee/search/unif/dlall/kriis/depressioon/1/est"
+            },
+            {
+              "name": "Sec-Fetch-Dest",
+              "value": "script"
+            },
+            {
+              "name": "Sec-Fetch-Mode",
+              "value": "no-cors"
+            },
+            {
+              "name": "Sec-Fetch-Site",
+              "value": "same-origin"
+            },
+            {
+              "name": "User-Agent",
+              "value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36"
+            },
+            {
+              "name": "sec-ch-ua",
+              "value": "\"Not A(Brand\";v=\"8\", \"Chromium\";v=\"132\", \"Google Chrome\";v=\"132\""
+            },
+            {
+              "name": "sec-ch-ua-mobile",
+              "value": "?0"
+            },
+            {
+              "name": "sec-ch-ua-platform",
+              "value": "\"Linux\""
+            }
+          ],
+          "queryString": [],
+          "cookies": [],
+          "headersSize": 796,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "200",
+          "httpVersion": "HTTP/1.1",
+          "headers": [
+            {
+              "name": "Accept-Ranges",
+              "value": "bytes"
+            },
+            {
+              "name": "Access-Control-Allow-Origin",
+              "value": "*"
+            },
+            {
+              "name": "Cache-Control",
+              "value": "no-cache, no-store, max-age=0, must-revalidate"
+            },
+            {
+              "name": "Connection",
+              "value": "Keep-Alive"
+            },
+            {
+              "name": "Content-Encoding",
+              "value": "gzip"
+            },
+            {
+              "name": "Content-Type",
+              "value": "application/javascript"
+            },
+            {
+              "name": "Date",
+              "value": "Sun, 12 Oct 2025 20:23:11 GMT"
+            },
+            {
+              "name": "Expires",
+              "value": "0"
+            },
+            {
+              "name": "Keep-Alive",
+              "value": "timeout=5, max=99"
+            },
+            {
+              "name": "Last-Modified",
+              "value": "Thu, 02 Oct 2025 17:24:09 GMT"
+            },
+            {
+              "name": "Pragma",
+              "value": "no-cache"
+            },
+            {
+              "name": "Server",
+              "value": "Apache"
+            },
+            {
+              "name": "Strict-Transport-Security",
+              "value": "max-age=31536000 ; includeSubDomains"
+            },
+            {
+              "name": "Transfer-Encoding",
+              "value": "chunked"
+            },
+            {
+              "name": "Vary",
+              "value": "Origin,Accept-Encoding,Access-Control-Request-Method,Access-Control-Request-Headers"
+            },
+            {
+              "name": "X-Content-Type-Options",
+              "value": "nosniff"
+            },
+            {
+              "name": "X-Frame-Options",
+              "value": "DENY"
+            },
+            {
+              "name": "X-XSS-Protection",
+              "value": "1; mode=block"
+            }
+          ],
+          "cookies": [],
+          "content": {
+            "size": 60010,
+            "mimeType": "application/javascript",
+            "compression": 44065
+          },
+          "redirectURL": "",
+          "headersSize": 656,
+          "bodySize": 15945,
+          "_transferSize": 16601,
+          "_error": null,
+          "_fetchedViaServiceWorker": false
+        },
+        "serverIPAddress": "185.174.162.174",
+        "startedDateTime": "2025-10-12T20:23:11.008Z",
+        "time": 1713.712000000669,
+        "timings": {
+          "blocked": 765.2540000029286,
+          "dns": -1,
+          "ssl": -1,
+          "connect": -1,
+          "send": 0.18599999999992178,
+          "wait": 589.882000000142,
+          "receive": 358.38999999759835,
+          "_blocked_queueing": 17.482000002928544,
+          "_workerStart": -1,
+          "_workerReady": -1,
+          "_workerFetchStart": -1,
+          "_workerRespondWithSettled": -1
+        }
+      },
+      {
+        "_connectionId": "3075",
+        "_initiator": {
+          "type": "parser",
+          "url": "https://sonaveeb.ee/search/unif/dlall/kriis/depressioon/1/est",
+          "lineNumber": 30
+        },
+        "_priority": "High",
+        "_resourceType": "script",
+        "cache": {},
+        "connection": "443",
+        "pageref": "page_1",
+        "request": {
+          "method": "GET",
+          "url": "https://sonaveeb.ee/view/js/simple-lightbox.js",
+          "httpVersion": "HTTP/1.1",
+          "headers": [
+            {
+              "name": "Accept",
+              "value": "*/*"
+            },
+            {
+              "name": "Accept-Encoding",
+              "value": "gzip, deflate, br, zstd"
+            },
+            {
+              "name": "Accept-Language",
+              "value": "en-US,en;q=0.9"
+            },
+            {
+              "name": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "name": "Host",
+              "value": "sonaveeb.ee"
+            },
+            {
+              "name": "Referer",
+              "value": "https://sonaveeb.ee/search/unif/dlall/kriis/depressioon/1/est"
+            },
+            {
+              "name": "Sec-Fetch-Dest",
+              "value": "script"
+            },
+            {
+              "name": "Sec-Fetch-Mode",
+              "value": "no-cors"
+            },
+            {
+              "name": "Sec-Fetch-Site",
+              "value": "same-origin"
+            },
+            {
+              "name": "User-Agent",
+              "value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36"
+            },
+            {
+              "name": "sec-ch-ua",
+              "value": "\"Not A(Brand\";v=\"8\", \"Chromium\";v=\"132\", \"Google Chrome\";v=\"132\""
+            },
+            {
+              "name": "sec-ch-ua-mobile",
+              "value": "?0"
+            },
+            {
+              "name": "sec-ch-ua-platform",
+              "value": "\"Linux\""
+            }
+          ],
+          "queryString": [],
+          "cookies": [],
+          "headersSize": 798,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "200",
+          "httpVersion": "HTTP/1.1",
+          "headers": [
+            {
+              "name": "Accept-Ranges",
+              "value": "bytes"
+            },
+            {
+              "name": "Access-Control-Allow-Origin",
+              "value": "*"
+            },
+            {
+              "name": "Cache-Control",
+              "value": "no-cache, no-store, max-age=0, must-revalidate"
+            },
+            {
+              "name": "Connection",
+              "value": "Keep-Alive"
+            },
+            {
+              "name": "Content-Encoding",
+              "value": "gzip"
+            },
+            {
+              "name": "Content-Type",
+              "value": "application/javascript"
+            },
+            {
+              "name": "Date",
+              "value": "Sun, 12 Oct 2025 20:23:11 GMT"
+            },
+            {
+              "name": "Expires",
+              "value": "0"
+            },
+            {
+              "name": "Keep-Alive",
+              "value": "timeout=5, max=99"
+            },
+            {
+              "name": "Last-Modified",
+              "value": "Thu, 02 Oct 2025 17:24:09 GMT"
+            },
+            {
+              "name": "Pragma",
+              "value": "no-cache"
+            },
+            {
+              "name": "Server",
+              "value": "Apache"
+            },
+            {
+              "name": "Strict-Transport-Security",
+              "value": "max-age=31536000 ; includeSubDomains"
+            },
+            {
+              "name": "Transfer-Encoding",
+              "value": "chunked"
+            },
+            {
+              "name": "Vary",
+              "value": "Origin,Accept-Encoding,Access-Control-Request-Method,Access-Control-Request-Headers"
+            },
+            {
+              "name": "X-Content-Type-Options",
+              "value": "nosniff"
+            },
+            {
+              "name": "X-Frame-Options",
+              "value": "DENY"
+            },
+            {
+              "name": "X-XSS-Protection",
+              "value": "1; mode=block"
+            }
+          ],
+          "cookies": [],
+          "content": {
+            "size": 70602,
+            "mimeType": "application/javascript",
+            "compression": 59336
+          },
+          "redirectURL": "",
+          "headersSize": 656,
+          "bodySize": 11266,
+          "_transferSize": 11922,
+          "_error": null,
+          "_fetchedViaServiceWorker": false
+        },
+        "serverIPAddress": "185.174.162.174",
+        "startedDateTime": "2025-10-12T20:23:11.008Z",
+        "time": 1681.008000003203,
+        "timings": {
+          "blocked": 856.121000003394,
+          "dns": -1,
+          "ssl": -1,
+          "connect": -1,
+          "send": 0.14400000000000546,
+          "wait": 590.9920000000526,
+          "receive": 233.75099999975646,
+          "_blocked_queueing": 17.838000003393972,
+          "_workerStart": -1,
+          "_workerReady": -1,
+          "_workerFetchStart": -1,
+          "_workerRespondWithSettled": -1
+        }
+      },
+      {
+        "_connectionId": "3067",
+        "_initiator": {
+          "type": "parser",
+          "url": "https://sonaveeb.ee/search/unif/dlall/kriis/depressioon/1/est",
+          "lineNumber": 31
+        },
+        "_priority": "High",
+        "_resourceType": "script",
+        "cache": {},
+        "connection": "443",
+        "pageref": "page_1",
+        "request": {
+          "method": "GET",
+          "url": "https://sonaveeb.ee/view/js/ww-common-app.js",
+          "httpVersion": "HTTP/1.1",
+          "headers": [
+            {
+              "name": "Accept",
+              "value": "*/*"
+            },
+            {
+              "name": "Accept-Encoding",
+              "value": "gzip, deflate, br, zstd"
+            },
+            {
+              "name": "Accept-Language",
+              "value": "en-US,en;q=0.9"
+            },
+            {
+              "name": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "name": "Host",
+              "value": "sonaveeb.ee"
+            },
+            {
+              "name": "Referer",
+              "value": "https://sonaveeb.ee/search/unif/dlall/kriis/depressioon/1/est"
+            },
+            {
+              "name": "Sec-Fetch-Dest",
+              "value": "script"
+            },
+            {
+              "name": "Sec-Fetch-Mode",
+              "value": "no-cors"
+            },
+            {
+              "name": "Sec-Fetch-Site",
+              "value": "same-origin"
+            },
+            {
+              "name": "User-Agent",
+              "value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36"
+            },
+            {
+              "name": "sec-ch-ua",
+              "value": "\"Not A(Brand\";v=\"8\", \"Chromium\";v=\"132\", \"Google Chrome\";v=\"132\""
+            },
+            {
+              "name": "sec-ch-ua-mobile",
+              "value": "?0"
+            },
+            {
+              "name": "sec-ch-ua-platform",
+              "value": "\"Linux\""
+            }
+          ],
+          "queryString": [],
+          "cookies": [],
+          "headersSize": 796,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "200",
+          "httpVersion": "HTTP/1.1",
+          "headers": [
+            {
+              "name": "Accept-Ranges",
+              "value": "bytes"
+            },
+            {
+              "name": "Access-Control-Allow-Origin",
+              "value": "*"
+            },
+            {
+              "name": "Cache-Control",
+              "value": "no-cache, no-store, max-age=0, must-revalidate"
+            },
+            {
+              "name": "Connection",
+              "value": "Keep-Alive"
+            },
+            {
+              "name": "Content-Encoding",
+              "value": "gzip"
+            },
+            {
+              "name": "Content-Type",
+              "value": "application/javascript"
+            },
+            {
+              "name": "Date",
+              "value": "Sun, 12 Oct 2025 20:23:12 GMT"
+            },
+            {
+              "name": "Expires",
+              "value": "0"
+            },
+            {
+              "name": "Keep-Alive",
+              "value": "timeout=5, max=99"
+            },
+            {
+              "name": "Last-Modified",
+              "value": "Thu, 02 Oct 2025 17:24:09 GMT"
+            },
+            {
+              "name": "Pragma",
+              "value": "no-cache"
+            },
+            {
+              "name": "Server",
+              "value": "Apache"
+            },
+            {
+              "name": "Strict-Transport-Security",
+              "value": "max-age=31536000 ; includeSubDomains"
+            },
+            {
+              "name": "Transfer-Encoding",
+              "value": "chunked"
+            },
+            {
+              "name": "Vary",
+              "value": "Origin,Accept-Encoding,Access-Control-Request-Method,Access-Control-Request-Headers"
+            },
+            {
+              "name": "X-Content-Type-Options",
+              "value": "nosniff"
+            },
+            {
+              "name": "X-Frame-Options",
+              "value": "DENY"
+            },
+            {
+              "name": "X-XSS-Protection",
+              "value": "1; mode=block"
+            }
+          ],
+          "cookies": [],
+          "content": {
+            "size": 12245,
+            "mimeType": "application/javascript",
+            "compression": 8873
+          },
+          "redirectURL": "",
+          "headersSize": 656,
+          "bodySize": 3372,
+          "_transferSize": 4028,
+          "_error": null,
+          "_fetchedViaServiceWorker": false
+        },
+        "serverIPAddress": "185.174.162.174",
+        "startedDateTime": "2025-10-12T20:23:11.008Z",
+        "time": 1839.1989999981888,
+        "timings": {
+          "blocked": 1257.2239999982762,
+          "dns": -1,
+          "ssl": -1,
+          "connect": -1,
+          "send": 0.17699999999990723,
+          "wait": 564.8530000005169,
+          "receive": 16.944999999395804,
+          "_blocked_queueing": 18.198999998276122,
+          "_workerStart": -1,
+          "_workerReady": -1,
+          "_workerFetchStart": -1,
+          "_workerRespondWithSettled": -1
+        }
+      },
+      {
+        "_connectionId": "2951",
+        "_initiator": {
+          "type": "parser",
+          "url": "https://sonaveeb.ee/search/unif/dlall/kriis/depressioon/1/est",
+          "lineNumber": 32
+        },
+        "_priority": "High",
+        "_resourceType": "script",
+        "cache": {},
+        "connection": "443",
+        "pageref": "page_1",
+        "request": {
+          "method": "GET",
+          "url": "https://sonaveeb.ee/view/js/lazysizes.min.js",
+          "httpVersion": "HTTP/1.1",
+          "headers": [
+            {
+              "name": "Accept",
+              "value": "*/*"
+            },
+            {
+              "name": "Accept-Encoding",
+              "value": "gzip, deflate, br, zstd"
+            },
+            {
+              "name": "Accept-Language",
+              "value": "en-US,en;q=0.9"
+            },
+            {
+              "name": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "name": "Host",
+              "value": "sonaveeb.ee"
+            },
+            {
+              "name": "Referer",
+              "value": "https://sonaveeb.ee/search/unif/dlall/kriis/depressioon/1/est"
+            },
+            {
+              "name": "Sec-Fetch-Dest",
+              "value": "script"
+            },
+            {
+              "name": "Sec-Fetch-Mode",
+              "value": "no-cors"
+            },
+            {
+              "name": "Sec-Fetch-Site",
+              "value": "same-origin"
+            },
+            {
+              "name": "User-Agent",
+              "value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36"
+            },
+            {
+              "name": "sec-ch-ua",
+              "value": "\"Not A(Brand\";v=\"8\", \"Chromium\";v=\"132\", \"Google Chrome\";v=\"132\""
+            },
+            {
+              "name": "sec-ch-ua-mobile",
+              "value": "?0"
+            },
+            {
+              "name": "sec-ch-ua-platform",
+              "value": "\"Linux\""
+            }
+          ],
+          "queryString": [],
+          "cookies": [],
+          "headersSize": 796,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "200",
+          "httpVersion": "HTTP/1.1",
+          "headers": [
+            {
+              "name": "Accept-Ranges",
+              "value": "bytes"
+            },
+            {
+              "name": "Access-Control-Allow-Origin",
+              "value": "*"
+            },
+            {
+              "name": "Cache-Control",
+              "value": "no-cache, no-store, max-age=0, must-revalidate"
+            },
+            {
+              "name": "Connection",
+              "value": "Keep-Alive"
+            },
+            {
+              "name": "Content-Encoding",
+              "value": "gzip"
+            },
+            {
+              "name": "Content-Type",
+              "value": "application/javascript"
+            },
+            {
+              "name": "Date",
+              "value": "Sun, 12 Oct 2025 20:23:12 GMT"
+            },
+            {
+              "name": "Expires",
+              "value": "0"
+            },
+            {
+              "name": "Keep-Alive",
+              "value": "timeout=5, max=97"
+            },
+            {
+              "name": "Last-Modified",
+              "value": "Thu, 02 Oct 2025 17:24:09 GMT"
+            },
+            {
+              "name": "Pragma",
+              "value": "no-cache"
+            },
+            {
+              "name": "Server",
+              "value": "Apache"
+            },
+            {
+              "name": "Strict-Transport-Security",
+              "value": "max-age=31536000 ; includeSubDomains"
+            },
+            {
+              "name": "Transfer-Encoding",
+              "value": "chunked"
+            },
+            {
+              "name": "Vary",
+              "value": "Origin,Accept-Encoding,Access-Control-Request-Method,Access-Control-Request-Headers"
+            },
+            {
+              "name": "X-Content-Type-Options",
+              "value": "nosniff"
+            },
+            {
+              "name": "X-Frame-Options",
+              "value": "DENY"
+            },
+            {
+              "name": "X-XSS-Protection",
+              "value": "1; mode=block"
+            }
+          ],
+          "cookies": [],
+          "content": {
+            "size": 7889,
+            "mimeType": "application/javascript",
+            "compression": 4372
+          },
+          "redirectURL": "",
+          "headersSize": 656,
+          "bodySize": 3517,
+          "_transferSize": 4173,
+          "_error": null,
+          "_fetchedViaServiceWorker": false
+        },
+        "serverIPAddress": "185.174.162.174",
+        "startedDateTime": "2025-10-12T20:23:11.008Z",
+        "time": 1981.0489999981655,
+        "timings": {
+          "blocked": 1398.1999999993634,
+          "dns": -1,
+          "ssl": -1,
+          "connect": -1,
+          "send": 0.28700000000003456,
+          "wait": 568.5540000005176,
+          "receive": 14.007999998284504,
+          "_blocked_queueing": 18.80399999936344,
+          "_workerStart": -1,
+          "_workerReady": -1,
+          "_workerFetchStart": -1,
+          "_workerRespondWithSettled": -1
+        }
+      },
+      {
+        "_connectionId": "3075",
+        "_initiator": {
+          "type": "parser",
+          "url": "https://sonaveeb.ee/search/unif/dlall/kriis/depressioon/1/est",
+          "lineNumber": 33
+        },
+        "_priority": "High",
+        "_resourceType": "script",
+        "cache": {},
+        "connection": "443",
+        "pageref": "page_1",
+        "request": {
+          "method": "GET",
+          "url": "https://sonaveeb.ee/view/js/ww-custom-elements.js",
+          "httpVersion": "HTTP/1.1",
+          "headers": [
+            {
+              "name": "Accept",
+              "value": "*/*"
+            },
+            {
+              "name": "Accept-Encoding",
+              "value": "gzip, deflate, br, zstd"
+            },
+            {
+              "name": "Accept-Language",
+              "value": "en-US,en;q=0.9"
+            },
+            {
+              "name": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "name": "Host",
+              "value": "sonaveeb.ee"
+            },
+            {
+              "name": "Referer",
+              "value": "https://sonaveeb.ee/search/unif/dlall/kriis/depressioon/1/est"
+            },
+            {
+              "name": "Sec-Fetch-Dest",
+              "value": "script"
+            },
+            {
+              "name": "Sec-Fetch-Mode",
+              "value": "no-cors"
+            },
+            {
+              "name": "Sec-Fetch-Site",
+              "value": "same-origin"
+            },
+            {
+              "name": "User-Agent",
+              "value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36"
+            },
+            {
+              "name": "sec-ch-ua",
+              "value": "\"Not A(Brand\";v=\"8\", \"Chromium\";v=\"132\", \"Google Chrome\";v=\"132\""
+            },
+            {
+              "name": "sec-ch-ua-mobile",
+              "value": "?0"
+            },
+            {
+              "name": "sec-ch-ua-platform",
+              "value": "\"Linux\""
+            }
+          ],
+          "queryString": [],
+          "cookies": [],
+          "headersSize": 801,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "200",
+          "httpVersion": "HTTP/1.1",
+          "headers": [
+            {
+              "name": "Accept-Ranges",
+              "value": "bytes"
+            },
+            {
+              "name": "Access-Control-Allow-Origin",
+              "value": "*"
+            },
+            {
+              "name": "Cache-Control",
+              "value": "no-cache, no-store, max-age=0, must-revalidate"
+            },
+            {
+              "name": "Connection",
+              "value": "Keep-Alive"
+            },
+            {
+              "name": "Content-Encoding",
+              "value": "gzip"
+            },
+            {
+              "name": "Content-Type",
+              "value": "application/javascript"
+            },
+            {
+              "name": "Date",
+              "value": "Sun, 12 Oct 2025 20:23:12 GMT"
+            },
+            {
+              "name": "Expires",
+              "value": "0"
+            },
+            {
+              "name": "Keep-Alive",
+              "value": "timeout=5, max=98"
+            },
+            {
+              "name": "Last-Modified",
+              "value": "Thu, 02 Oct 2025 17:24:09 GMT"
+            },
+            {
+              "name": "Pragma",
+              "value": "no-cache"
+            },
+            {
+              "name": "Server",
+              "value": "Apache"
+            },
+            {
+              "name": "Strict-Transport-Security",
+              "value": "max-age=31536000 ; includeSubDomains"
+            },
+            {
+              "name": "Transfer-Encoding",
+              "value": "chunked"
+            },
+            {
+              "name": "Vary",
+              "value": "Origin,Accept-Encoding,Access-Control-Request-Method,Access-Control-Request-Headers"
+            },
+            {
+              "name": "X-Content-Type-Options",
+              "value": "nosniff"
+            },
+            {
+              "name": "X-Frame-Options",
+              "value": "DENY"
+            },
+            {
+              "name": "X-XSS-Protection",
+              "value": "1; mode=block"
+            }
+          ],
+          "cookies": [],
+          "content": {
+            "size": 942,
+            "mimeType": "application/javascript",
+            "compression": 397
+          },
+          "redirectURL": "",
+          "headersSize": 656,
+          "bodySize": 545,
+          "_transferSize": 1201,
+          "_error": null,
+          "_fetchedViaServiceWorker": false
+        },
+        "serverIPAddress": "185.174.162.174",
+        "startedDateTime": "2025-10-12T20:23:11.009Z",
+        "time": 2247.7269999981218,
+        "timings": {
+          "blocked": 1681.1079999984593,
+          "dns": -1,
+          "ssl": -1,
+          "connect": -1,
+          "send": 0.8720000000000709,
+          "wait": 564.0239999984419,
+          "receive": 1.7230000012204982,
+          "_blocked_queueing": 19.02699999845936,
+          "_workerStart": -1,
+          "_workerReady": -1,
+          "_workerFetchStart": -1,
+          "_workerRespondWithSettled": -1
+        }
+      },
+      {
+        "_connectionId": "3091",
+        "_initiator": {
+          "type": "parser",
+          "url": "https://sonaveeb.ee/search/unif/dlall/kriis/depressioon/1/est",
+          "lineNumber": 35
+        },
+        "_priority": "High",
+        "_resourceType": "script",
+        "cache": {},
+        "connection": "443",
+        "pageref": "page_1",
+        "request": {
+          "method": "GET",
+          "url": "https://sonaveeb.ee/view/js/kiosk-board/src/kioskboard-custom.js",
+          "httpVersion": "HTTP/1.1",
+          "headers": [
+            {
+              "name": "Accept",
+              "value": "*/*"
+            },
+            {
+              "name": "Accept-Encoding",
+              "value": "gzip, deflate, br, zstd"
+            },
+            {
+              "name": "Accept-Language",
+              "value": "en-US,en;q=0.9"
+            },
+            {
+              "name": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "name": "Host",
+              "value": "sonaveeb.ee"
+            },
+            {
+              "name": "Referer",
+              "value": "https://sonaveeb.ee/search/unif/dlall/kriis/depressioon/1/est"
+            },
+            {
+              "name": "Sec-Fetch-Dest",
+              "value": "script"
+            },
+            {
+              "name": "Sec-Fetch-Mode",
+              "value": "no-cors"
+            },
+            {
+              "name": "Sec-Fetch-Site",
+              "value": "same-origin"
+            },
+            {
+              "name": "User-Agent",
+              "value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36"
+            },
+            {
+              "name": "sec-ch-ua",
+              "value": "\"Not A(Brand\";v=\"8\", \"Chromium\";v=\"132\", \"Google Chrome\";v=\"132\""
+            },
+            {
+              "name": "sec-ch-ua-mobile",
+              "value": "?0"
+            },
+            {
+              "name": "sec-ch-ua-platform",
+              "value": "\"Linux\""
+            }
+          ],
+          "queryString": [],
+          "cookies": [],
+          "headersSize": 816,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "200",
+          "httpVersion": "HTTP/1.1",
+          "headers": [
+            {
+              "name": "Accept-Ranges",
+              "value": "bytes"
+            },
+            {
+              "name": "Access-Control-Allow-Origin",
+              "value": "*"
+            },
+            {
+              "name": "Cache-Control",
+              "value": "no-cache, no-store, max-age=0, must-revalidate"
+            },
+            {
+              "name": "Connection",
+              "value": "Keep-Alive"
+            },
+            {
+              "name": "Content-Encoding",
+              "value": "gzip"
+            },
+            {
+              "name": "Content-Type",
+              "value": "application/javascript"
+            },
+            {
+              "name": "Date",
+              "value": "Sun, 12 Oct 2025 20:23:12 GMT"
+            },
+            {
+              "name": "Expires",
+              "value": "0"
+            },
+            {
+              "name": "Keep-Alive",
+              "value": "timeout=5, max=98"
+            },
+            {
+              "name": "Last-Modified",
+              "value": "Thu, 02 Oct 2025 17:24:09 GMT"
+            },
+            {
+              "name": "Pragma",
+              "value": "no-cache"
+            },
+            {
+              "name": "Server",
+              "value": "Apache"
+            },
+            {
+              "name": "Strict-Transport-Security",
+              "value": "max-age=31536000 ; includeSubDomains"
+            },
+            {
+              "name": "Transfer-Encoding",
+              "value": "chunked"
+            },
+            {
+              "name": "Vary",
+              "value": "Origin,Accept-Encoding,Access-Control-Request-Method,Access-Control-Request-Headers"
+            },
+            {
+              "name": "X-Content-Type-Options",
+              "value": "nosniff"
+            },
+            {
+              "name": "X-Frame-Options",
+              "value": "DENY"
+            },
+            {
+              "name": "X-XSS-Protection",
+              "value": "1; mode=block"
+            }
+          ],
+          "cookies": [],
+          "content": {
+            "size": 47585,
+            "mimeType": "application/javascript",
+            "compression": 37120
+          },
+          "redirectURL": "",
+          "headersSize": 656,
+          "bodySize": 10465,
+          "_transferSize": 11121,
+          "_error": null,
+          "_fetchedViaServiceWorker": false
+        },
+        "serverIPAddress": "185.174.162.174",
+        "startedDateTime": "2025-10-12T20:23:11.009Z",
+        "time": 2369.883999999729,
+        "timings": {
+          "blocked": 1713.333999998222,
+          "dns": -1,
+          "ssl": -1,
+          "connect": -1,
+          "send": 0.1610000000000582,
+          "wait": 565.885999998425,
+          "receive": 90.50300000308198,
+          "_blocked_queueing": 19.165999998222105,
+          "_workerStart": -1,
+          "_workerReady": -1,
+          "_workerFetchStart": -1,
+          "_workerRespondWithSettled": -1
+        }
+      },
+      {
+        "_connectionId": "3012",
+        "_initiator": {
+          "type": "parser",
+          "url": "https://sonaveeb.ee/search/unif/dlall/kriis/depressioon/1/est",
+          "lineNumber": 36
+        },
+        "_priority": "High",
+        "_resourceType": "script",
+        "cache": {},
+        "connection": "443",
+        "pageref": "page_1",
+        "request": {
+          "method": "GET",
+          "url": "https://sonaveeb.ee/view/js/kioskboard-run.js",
+          "httpVersion": "HTTP/1.1",
+          "headers": [
+            {
+              "name": "Accept",
+              "value": "*/*"
+            },
+            {
+              "name": "Accept-Encoding",
+              "value": "gzip, deflate, br, zstd"
+            },
+            {
+              "name": "Accept-Language",
+              "value": "en-US,en;q=0.9"
+            },
+            {
+              "name": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "name": "Host",
+              "value": "sonaveeb.ee"
+            },
+            {
+              "name": "Referer",
+              "value": "https://sonaveeb.ee/search/unif/dlall/kriis/depressioon/1/est"
+            },
+            {
+              "name": "Sec-Fetch-Dest",
+              "value": "script"
+            },
+            {
+              "name": "Sec-Fetch-Mode",
+              "value": "no-cors"
+            },
+            {
+              "name": "Sec-Fetch-Site",
+              "value": "same-origin"
+            },
+            {
+              "name": "User-Agent",
+              "value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36"
+            },
+            {
+              "name": "sec-ch-ua",
+              "value": "\"Not A(Brand\";v=\"8\", \"Chromium\";v=\"132\", \"Google Chrome\";v=\"132\""
+            },
+            {
+              "name": "sec-ch-ua-mobile",
+              "value": "?0"
+            },
+            {
+              "name": "sec-ch-ua-platform",
+              "value": "\"Linux\""
+            }
+          ],
+          "queryString": [],
+          "cookies": [],
+          "headersSize": 797,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "200",
+          "httpVersion": "HTTP/1.1",
+          "headers": [
+            {
+              "name": "Accept-Ranges",
+              "value": "bytes"
+            },
+            {
+              "name": "Access-Control-Allow-Origin",
+              "value": "*"
+            },
+            {
+              "name": "Cache-Control",
+              "value": "no-cache, no-store, max-age=0, must-revalidate"
+            },
+            {
+              "name": "Connection",
+              "value": "Keep-Alive"
+            },
+            {
+              "name": "Content-Encoding",
+              "value": "gzip"
+            },
+            {
+              "name": "Content-Type",
+              "value": "application/javascript"
+            },
+            {
+              "name": "Date",
+              "value": "Sun, 12 Oct 2025 20:23:12 GMT"
+            },
+            {
+              "name": "Expires",
+              "value": "0"
+            },
+            {
+              "name": "Keep-Alive",
+              "value": "timeout=5, max=99"
+            },
+            {
+              "name": "Last-Modified",
+              "value": "Thu, 02 Oct 2025 17:24:09 GMT"
+            },
+            {
+              "name": "Pragma",
+              "value": "no-cache"
+            },
+            {
+              "name": "Server",
+              "value": "Apache"
+            },
+            {
+              "name": "Strict-Transport-Security",
+              "value": "max-age=31536000 ; includeSubDomains"
+            },
+            {
+              "name": "Transfer-Encoding",
+              "value": "chunked"
+            },
+            {
+              "name": "Vary",
+              "value": "Origin,Accept-Encoding,Access-Control-Request-Method,Access-Control-Request-Headers"
+            },
+            {
+              "name": "X-Content-Type-Options",
+              "value": "nosniff"
+            },
+            {
+              "name": "X-Frame-Options",
+              "value": "DENY"
+            },
+            {
+              "name": "X-XSS-Protection",
+              "value": "1; mode=block"
+            }
+          ],
+          "cookies": [],
+          "content": {
+            "size": 7125,
+            "mimeType": "application/javascript",
+            "compression": 4725
+          },
+          "redirectURL": "",
+          "headersSize": 656,
+          "bodySize": 2400,
+          "_transferSize": 3056,
+          "_error": null,
+          "_fetchedViaServiceWorker": false
+        },
+        "serverIPAddress": "185.174.162.174",
+        "startedDateTime": "2025-10-12T20:23:11.009Z",
+        "time": 2355.4089999997814,
+        "timings": {
+          "blocked": 1742.9880000017088,
+          "dns": -1,
+          "ssl": -1,
+          "connect": -1,
+          "send": 0.16000000000008185,
+          "wait": 578.3149999985128,
+          "receive": 33.94599999955972,
+          "_blocked_queueing": 19.316000001708744,
+          "_workerStart": -1,
+          "_workerReady": -1,
+          "_workerFetchStart": -1,
+          "_workerRespondWithSettled": -1
+        }
+      },
+      {
+        "_connectionId": "2951",
+        "_initiator": {
+          "type": "parser",
+          "url": "https://sonaveeb.ee/search/unif/dlall/kriis/depressioon/1/est",
+          "lineNumber": 37
+        },
+        "_priority": "Low",
+        "_resourceType": "script",
+        "cache": {},
+        "connection": "443",
+        "pageref": "page_1",
+        "request": {
+          "method": "GET",
+          "url": "https://sonaveeb.ee/view/js/eki-components/eki-components.js",
+          "httpVersion": "HTTP/1.1",
+          "headers": [
+            {
+              "name": "Accept",
+              "value": "*/*"
+            },
+            {
+              "name": "Accept-Encoding",
+              "value": "gzip, deflate, br, zstd"
+            },
+            {
+              "name": "Accept-Language",
+              "value": "en-US,en;q=0.9"
+            },
+            {
+              "name": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "name": "Host",
+              "value": "sonaveeb.ee"
+            },
+            {
+              "name": "Referer",
+              "value": "https://sonaveeb.ee/search/unif/dlall/kriis/depressioon/1/est"
+            },
+            {
+              "name": "Sec-Fetch-Dest",
+              "value": "script"
+            },
+            {
+              "name": "Sec-Fetch-Mode",
+              "value": "no-cors"
+            },
+            {
+              "name": "Sec-Fetch-Site",
+              "value": "same-origin"
+            },
+            {
+              "name": "User-Agent",
+              "value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36"
+            },
+            {
+              "name": "sec-ch-ua",
+              "value": "\"Not A(Brand\";v=\"8\", \"Chromium\";v=\"132\", \"Google Chrome\";v=\"132\""
+            },
+            {
+              "name": "sec-ch-ua-mobile",
+              "value": "?0"
+            },
+            {
+              "name": "sec-ch-ua-platform",
+              "value": "\"Linux\""
+            }
+          ],
+          "queryString": [],
+          "cookies": [],
+          "headersSize": 812,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "200",
+          "httpVersion": "HTTP/1.1",
+          "headers": [
+            {
+              "name": "Accept-Ranges",
+              "value": "bytes"
+            },
+            {
+              "name": "Access-Control-Allow-Origin",
+              "value": "*"
+            },
+            {
+              "name": "Cache-Control",
+              "value": "no-cache, no-store, max-age=0, must-revalidate"
+            },
+            {
+              "name": "Connection",
+              "value": "Keep-Alive"
+            },
+            {
+              "name": "Content-Encoding",
+              "value": "gzip"
+            },
+            {
+              "name": "Content-Type",
+              "value": "application/javascript"
+            },
+            {
+              "name": "Date",
+              "value": "Sun, 12 Oct 2025 20:23:14 GMT"
+            },
+            {
+              "name": "Expires",
+              "value": "0"
+            },
+            {
+              "name": "Keep-Alive",
+              "value": "timeout=5, max=95"
+            },
+            {
+              "name": "Last-Modified",
+              "value": "Thu, 02 Oct 2025 17:24:09 GMT"
+            },
+            {
+              "name": "Pragma",
+              "value": "no-cache"
+            },
+            {
+              "name": "Server",
+              "value": "Apache"
+            },
+            {
+              "name": "Strict-Transport-Security",
+              "value": "max-age=31536000 ; includeSubDomains"
+            },
+            {
+              "name": "Transfer-Encoding",
+              "value": "chunked"
+            },
+            {
+              "name": "Vary",
+              "value": "Origin,Accept-Encoding,Access-Control-Request-Method,Access-Control-Request-Headers"
+            },
+            {
+              "name": "X-Content-Type-Options",
+              "value": "nosniff"
+            },
+            {
+              "name": "X-Frame-Options",
+              "value": "DENY"
+            },
+            {
+              "name": "X-XSS-Protection",
+              "value": "1; mode=block"
+            }
+          ],
+          "cookies": [],
+          "content": {
+            "size": 32214,
+            "mimeType": "application/javascript",
+            "compression": 22100
+          },
+          "redirectURL": "",
+          "headersSize": 656,
+          "bodySize": 10114,
+          "_transferSize": 10770,
+          "_error": null,
+          "_fetchedViaServiceWorker": false
+        },
+        "serverIPAddress": "185.174.162.174",
+        "startedDateTime": "2025-10-12T20:23:11.009Z",
+        "time": 3679.5019999990473,
+        "timings": {
+          "blocked": 2988.7159999990367,
+          "dns": -1,
+          "ssl": -1,
+          "connect": -1,
+          "send": 0.10000000000000142,
+          "wait": 592.0219999990023,
+          "receive": 98.66400000100839,
+          "_blocked_queueing": 2979.1279999990365,
+          "_workerStart": -1,
+          "_workerReady": -1,
+          "_workerFetchStart": -1,
+          "_workerRespondWithSettled": -1
+        }
+      },
+      {
+        "_connectionId": "3083",
+        "_initiator": {
+          "type": "parser",
+          "url": "https://sonaveeb.ee/search/unif/dlall/kriis/depressioon/1/est",
+          "lineNumber": 44
+        },
+        "_priority": "High",
+        "_resourceType": "script",
+        "cache": {},
+        "connection": "443",
+        "pageref": "page_1",
+        "request": {
+          "method": "GET",
+          "url": "https://sonaveeb.ee/view/js/shared.js",
+          "httpVersion": "HTTP/1.1",
+          "headers": [
+            {
+              "name": "Accept",
+              "value": "*/*"
+            },
+            {
+              "name": "Accept-Encoding",
+              "value": "gzip, deflate, br, zstd"
+            },
+            {
+              "name": "Accept-Language",
+              "value": "en-US,en;q=0.9"
+            },
+            {
+              "name": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "name": "Host",
+              "value": "sonaveeb.ee"
+            },
+            {
+              "name": "Referer",
+              "value": "https://sonaveeb.ee/search/unif/dlall/kriis/depressioon/1/est"
+            },
+            {
+              "name": "Sec-Fetch-Dest",
+              "value": "script"
+            },
+            {
+              "name": "Sec-Fetch-Mode",
+              "value": "no-cors"
+            },
+            {
+              "name": "Sec-Fetch-Site",
+              "value": "same-origin"
+            },
+            {
+              "name": "User-Agent",
+              "value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36"
+            },
+            {
+              "name": "sec-ch-ua",
+              "value": "\"Not A(Brand\";v=\"8\", \"Chromium\";v=\"132\", \"Google Chrome\";v=\"132\""
+            },
+            {
+              "name": "sec-ch-ua-mobile",
+              "value": "?0"
+            },
+            {
+              "name": "sec-ch-ua-platform",
+              "value": "\"Linux\""
+            }
+          ],
+          "queryString": [],
+          "cookies": [],
+          "headersSize": 789,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "200",
+          "httpVersion": "HTTP/1.1",
+          "headers": [
+            {
+              "name": "Accept-Ranges",
+              "value": "bytes"
+            },
+            {
+              "name": "Access-Control-Allow-Origin",
+              "value": "*"
+            },
+            {
+              "name": "Cache-Control",
+              "value": "no-cache, no-store, max-age=0, must-revalidate"
+            },
+            {
+              "name": "Connection",
+              "value": "Keep-Alive"
+            },
+            {
+              "name": "Content-Encoding",
+              "value": "gzip"
+            },
+            {
+              "name": "Content-Type",
+              "value": "application/javascript"
+            },
+            {
+              "name": "Date",
+              "value": "Sun, 12 Oct 2025 20:23:12 GMT"
+            },
+            {
+              "name": "Expires",
+              "value": "0"
+            },
+            {
+              "name": "Keep-Alive",
+              "value": "timeout=5, max=99"
+            },
+            {
+              "name": "Last-Modified",
+              "value": "Thu, 02 Oct 2025 17:24:09 GMT"
+            },
+            {
+              "name": "Pragma",
+              "value": "no-cache"
+            },
+            {
+              "name": "Server",
+              "value": "Apache"
+            },
+            {
+              "name": "Strict-Transport-Security",
+              "value": "max-age=31536000 ; includeSubDomains"
+            },
+            {
+              "name": "Transfer-Encoding",
+              "value": "chunked"
+            },
+            {
+              "name": "Vary",
+              "value": "Origin,Accept-Encoding,Access-Control-Request-Method,Access-Control-Request-Headers"
+            },
+            {
+              "name": "X-Content-Type-Options",
+              "value": "nosniff"
+            },
+            {
+              "name": "X-Frame-Options",
+              "value": "DENY"
+            },
+            {
+              "name": "X-XSS-Protection",
+              "value": "1; mode=block"
+            }
+          ],
+          "cookies": [],
+          "content": {
+            "size": 2072,
+            "mimeType": "application/javascript",
+            "compression": 1322
+          },
+          "redirectURL": "",
+          "headersSize": 656,
+          "bodySize": 750,
+          "_transferSize": 1406,
+          "_error": null,
+          "_fetchedViaServiceWorker": false
+        },
+        "serverIPAddress": "185.174.162.174",
+        "startedDateTime": "2025-10-12T20:23:11.009Z",
+        "time": 2381.0970000013185,
+        "timings": {
+          "blocked": 1813.495000001542,
+          "dns": -1,
+          "ssl": -1,
+          "connect": -1,
+          "send": 0.16300000000001091,
+          "wait": 565.6790000005822,
+          "receive": 1.759999999194406,
+          "_blocked_queueing": 19.337000001542037,
+          "_workerStart": -1,
+          "_workerReady": -1,
+          "_workerFetchStart": -1,
+          "_workerRespondWithSettled": -1
+        }
+      },
+      {
+        "_connectionId": "3067",
+        "_initiator": {
+          "type": "parser",
+          "url": "https://sonaveeb.ee/search/unif/dlall/kriis/depressioon/1/est",
+          "lineNumber": 45
+        },
+        "_priority": "High",
+        "_resourceType": "script",
+        "cache": {},
+        "connection": "443",
+        "pageref": "page_1",
+        "request": {
+          "method": "GET",
+          "url": "https://sonaveeb.ee/view/js/recorder.js",
+          "httpVersion": "HTTP/1.1",
+          "headers": [
+            {
+              "name": "Accept",
+              "value": "*/*"
+            },
+            {
+              "name": "Accept-Encoding",
+              "value": "gzip, deflate, br, zstd"
+            },
+            {
+              "name": "Accept-Language",
+              "value": "en-US,en;q=0.9"
+            },
+            {
+              "name": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "name": "Host",
+              "value": "sonaveeb.ee"
+            },
+            {
+              "name": "Referer",
+              "value": "https://sonaveeb.ee/search/unif/dlall/kriis/depressioon/1/est"
+            },
+            {
+              "name": "Sec-Fetch-Dest",
+              "value": "script"
+            },
+            {
+              "name": "Sec-Fetch-Mode",
+              "value": "no-cors"
+            },
+            {
+              "name": "Sec-Fetch-Site",
+              "value": "same-origin"
+            },
+            {
+              "name": "User-Agent",
+              "value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36"
+            },
+            {
+              "name": "sec-ch-ua",
+              "value": "\"Not A(Brand\";v=\"8\", \"Chromium\";v=\"132\", \"Google Chrome\";v=\"132\""
+            },
+            {
+              "name": "sec-ch-ua-mobile",
+              "value": "?0"
+            },
+            {
+              "name": "sec-ch-ua-platform",
+              "value": "\"Linux\""
+            }
+          ],
+          "queryString": [],
+          "cookies": [],
+          "headersSize": 791,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "200",
+          "httpVersion": "HTTP/1.1",
+          "headers": [
+            {
+              "name": "Accept-Ranges",
+              "value": "bytes"
+            },
+            {
+              "name": "Access-Control-Allow-Origin",
+              "value": "*"
+            },
+            {
+              "name": "Cache-Control",
+              "value": "no-cache, no-store, max-age=0, must-revalidate"
+            },
+            {
+              "name": "Connection",
+              "value": "Keep-Alive"
+            },
+            {
+              "name": "Content-Encoding",
+              "value": "gzip"
+            },
+            {
+              "name": "Content-Type",
+              "value": "application/javascript"
+            },
+            {
+              "name": "Date",
+              "value": "Sun, 12 Oct 2025 20:23:12 GMT"
+            },
+            {
+              "name": "Expires",
+              "value": "0"
+            },
+            {
+              "name": "Keep-Alive",
+              "value": "timeout=5, max=98"
+            },
+            {
+              "name": "Last-Modified",
+              "value": "Thu, 02 Oct 2025 17:24:09 GMT"
+            },
+            {
+              "name": "Pragma",
+              "value": "no-cache"
+            },
+            {
+              "name": "Server",
+              "value": "Apache"
+            },
+            {
+              "name": "Strict-Transport-Security",
+              "value": "max-age=31536000 ; includeSubDomains"
+            },
+            {
+              "name": "Transfer-Encoding",
+              "value": "chunked"
+            },
+            {
+              "name": "Vary",
+              "value": "Origin,Accept-Encoding,Access-Control-Request-Method,Access-Control-Request-Headers"
+            },
+            {
+              "name": "X-Content-Type-Options",
+              "value": "nosniff"
+            },
+            {
+              "name": "X-Frame-Options",
+              "value": "DENY"
+            },
+            {
+              "name": "X-XSS-Protection",
+              "value": "1; mode=block"
+            }
+          ],
+          "cookies": [],
+          "content": {
+            "size": 14487,
+            "mimeType": "application/javascript",
+            "compression": 11132
+          },
+          "redirectURL": "",
+          "headersSize": 656,
+          "bodySize": 3355,
+          "_transferSize": 4011,
+          "_error": null,
+          "_fetchedViaServiceWorker": false
+        },
+        "serverIPAddress": "185.174.162.174",
+        "startedDateTime": "2025-10-12T20:23:11.009Z",
+        "time": 2425.104999998439,
+        "timings": {
+          "blocked": 1838.584999998849,
+          "dns": -1,
+          "ssl": -1,
+          "connect": -1,
+          "send": 0.16800000000012005,
+          "wait": 564.666999999883,
+          "receive": 21.684999999706633,
+          "_blocked_queueing": 19.457999998849118,
+          "_workerStart": -1,
+          "_workerReady": -1,
+          "_workerFetchStart": -1,
+          "_workerRespondWithSettled": -1
+        }
+      },
+      {
+        "_connectionId": "2951",
+        "_initiator": {
+          "type": "parser",
+          "url": "https://sonaveeb.ee/search/unif/dlall/kriis/depressioon/1/est",
+          "lineNumber": 46
+        },
+        "_priority": "High",
+        "_resourceType": "script",
+        "cache": {},
+        "connection": "443",
+        "pageref": "page_1",
+        "request": {
+          "method": "GET",
+          "url": "https://sonaveeb.ee/view/js/ww-common-audio.js",
+          "httpVersion": "HTTP/1.1",
+          "headers": [
+            {
+              "name": "Accept",
+              "value": "*/*"
+            },
+            {
+              "name": "Accept-Encoding",
+              "value": "gzip, deflate, br, zstd"
+            },
+            {
+              "name": "Accept-Language",
+              "value": "en-US,en;q=0.9"
+            },
+            {
+              "name": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "name": "Host",
+              "value": "sonaveeb.ee"
+            },
+            {
+              "name": "Referer",
+              "value": "https://sonaveeb.ee/search/unif/dlall/kriis/depressioon/1/est"
+            },
+            {
+              "name": "Sec-Fetch-Dest",
+              "value": "script"
+            },
+            {
+              "name": "Sec-Fetch-Mode",
+              "value": "no-cors"
+            },
+            {
+              "name": "Sec-Fetch-Site",
+              "value": "same-origin"
+            },
+            {
+              "name": "User-Agent",
+              "value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36"
+            },
+            {
+              "name": "sec-ch-ua",
+              "value": "\"Not A(Brand\";v=\"8\", \"Chromium\";v=\"132\", \"Google Chrome\";v=\"132\""
+            },
+            {
+              "name": "sec-ch-ua-mobile",
+              "value": "?0"
+            },
+            {
+              "name": "sec-ch-ua-platform",
+              "value": "\"Linux\""
+            }
+          ],
+          "queryString": [],
+          "cookies": [],
+          "headersSize": 798,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "200",
+          "httpVersion": "HTTP/1.1",
+          "headers": [
+            {
+              "name": "Accept-Ranges",
+              "value": "bytes"
+            },
+            {
+              "name": "Access-Control-Allow-Origin",
+              "value": "*"
+            },
+            {
+              "name": "Cache-Control",
+              "value": "no-cache, no-store, max-age=0, must-revalidate"
+            },
+            {
+              "name": "Connection",
+              "value": "Keep-Alive"
+            },
+            {
+              "name": "Content-Encoding",
+              "value": "gzip"
+            },
+            {
+              "name": "Content-Type",
+              "value": "application/javascript"
+            },
+            {
+              "name": "Date",
+              "value": "Sun, 12 Oct 2025 20:23:13 GMT"
+            },
+            {
+              "name": "Expires",
+              "value": "0"
+            },
+            {
+              "name": "Keep-Alive",
+              "value": "timeout=5, max=96"
+            },
+            {
+              "name": "Last-Modified",
+              "value": "Thu, 02 Oct 2025 17:24:09 GMT"
+            },
+            {
+              "name": "Pragma",
+              "value": "no-cache"
+            },
+            {
+              "name": "Server",
+              "value": "Apache"
+            },
+            {
+              "name": "Strict-Transport-Security",
+              "value": "max-age=31536000 ; includeSubDomains"
+            },
+            {
+              "name": "Transfer-Encoding",
+              "value": "chunked"
+            },
+            {
+              "name": "Vary",
+              "value": "Origin,Accept-Encoding,Access-Control-Request-Method,Access-Control-Request-Headers"
+            },
+            {
+              "name": "X-Content-Type-Options",
+              "value": "nosniff"
+            },
+            {
+              "name": "X-Frame-Options",
+              "value": "DENY"
+            },
+            {
+              "name": "X-XSS-Protection",
+              "value": "1; mode=block"
+            }
+          ],
+          "cookies": [],
+          "content": {
+            "size": 5359,
+            "mimeType": "application/javascript",
+            "compression": 3290
+          },
+          "redirectURL": "",
+          "headersSize": 656,
+          "bodySize": 2069,
+          "_transferSize": 2725,
+          "_error": null,
+          "_fetchedViaServiceWorker": false
+        },
+        "serverIPAddress": "185.174.162.174",
+        "startedDateTime": "2025-10-12T20:23:11.010Z",
+        "time": 2557.15500000224,
+        "timings": {
+          "blocked": 1980.5110000003956,
+          "dns": -1,
+          "ssl": -1,
+          "connect": -1,
+          "send": 0.2039999999999509,
+          "wait": 564.5979999983185,
+          "receive": 11.842000003525754,
+          "_blocked_queueing": 19.65600000039558,
+          "_workerStart": -1,
+          "_workerReady": -1,
+          "_workerFetchStart": -1,
+          "_workerRespondWithSettled": -1
+        }
+      },
+      {
+        "_connectionId": "3075",
+        "_initiator": {
+          "type": "parser",
+          "url": "https://sonaveeb.ee/search/unif/dlall/kriis/depressioon/1/est",
+          "lineNumber": 47
+        },
+        "_priority": "High",
+        "_resourceType": "script",
+        "cache": {},
+        "connection": "443",
+        "pageref": "page_1",
+        "request": {
+          "method": "GET",
+          "url": "https://sonaveeb.ee/view/js/ww-common-search.js",
+          "httpVersion": "HTTP/1.1",
+          "headers": [
+            {
+              "name": "Accept",
+              "value": "*/*"
+            },
+            {
+              "name": "Accept-Encoding",
+              "value": "gzip, deflate, br, zstd"
+            },
+            {
+              "name": "Accept-Language",
+              "value": "en-US,en;q=0.9"
+            },
+            {
+              "name": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "name": "Host",
+              "value": "sonaveeb.ee"
+            },
+            {
+              "name": "Referer",
+              "value": "https://sonaveeb.ee/search/unif/dlall/kriis/depressioon/1/est"
+            },
+            {
+              "name": "Sec-Fetch-Dest",
+              "value": "script"
+            },
+            {
+              "name": "Sec-Fetch-Mode",
+              "value": "no-cors"
+            },
+            {
+              "name": "Sec-Fetch-Site",
+              "value": "same-origin"
+            },
+            {
+              "name": "User-Agent",
+              "value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36"
+            },
+            {
+              "name": "sec-ch-ua",
+              "value": "\"Not A(Brand\";v=\"8\", \"Chromium\";v=\"132\", \"Google Chrome\";v=\"132\""
+            },
+            {
+              "name": "sec-ch-ua-mobile",
+              "value": "?0"
+            },
+            {
+              "name": "sec-ch-ua-platform",
+              "value": "\"Linux\""
+            }
+          ],
+          "queryString": [],
+          "cookies": [],
+          "headersSize": 799,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "200",
+          "httpVersion": "HTTP/1.1",
+          "headers": [
+            {
+              "name": "Accept-Ranges",
+              "value": "bytes"
+            },
+            {
+              "name": "Access-Control-Allow-Origin",
+              "value": "*"
+            },
+            {
+              "name": "Cache-Control",
+              "value": "no-cache, no-store, max-age=0, must-revalidate"
+            },
+            {
+              "name": "Connection",
+              "value": "Keep-Alive"
+            },
+            {
+              "name": "Content-Encoding",
+              "value": "gzip"
+            },
+            {
+              "name": "Content-Type",
+              "value": "application/javascript"
+            },
+            {
+              "name": "Date",
+              "value": "Sun, 12 Oct 2025 20:23:13 GMT"
+            },
+            {
+              "name": "Expires",
+              "value": "0"
+            },
+            {
+              "name": "Keep-Alive",
+              "value": "timeout=5, max=97"
+            },
+            {
+              "name": "Last-Modified",
+              "value": "Thu, 02 Oct 2025 17:24:09 GMT"
+            },
+            {
+              "name": "Pragma",
+              "value": "no-cache"
+            },
+            {
+              "name": "Server",
+              "value": "Apache"
+            },
+            {
+              "name": "Strict-Transport-Security",
+              "value": "max-age=31536000 ; includeSubDomains"
+            },
+            {
+              "name": "Transfer-Encoding",
+              "value": "chunked"
+            },
+            {
+              "name": "Vary",
+              "value": "Origin,Accept-Encoding,Access-Control-Request-Method,Access-Control-Request-Headers"
+            },
+            {
+              "name": "X-Content-Type-Options",
+              "value": "nosniff"
+            },
+            {
+              "name": "X-Frame-Options",
+              "value": "DENY"
+            },
+            {
+              "name": "X-XSS-Protection",
+              "value": "1; mode=block"
+            }
+          ],
+          "cookies": [],
+          "content": {
+            "size": 14999,
+            "mimeType": "application/javascript",
+            "compression": 11143
+          },
+          "redirectURL": "",
+          "headersSize": 656,
+          "bodySize": 3856,
+          "_transferSize": 4512,
+          "_error": null,
+          "_fetchedViaServiceWorker": false
+        },
+        "serverIPAddress": "185.174.162.174",
+        "startedDateTime": "2025-10-12T20:23:11.010Z",
+        "time": 2837.2889999991457,
+        "timings": {
+          "blocked": 2247.004000000926,
+          "dns": -1,
+          "ssl": -1,
+          "connect": -1,
+          "send": 0.16600000000016735,
+          "wait": 573.1710000014459,
+          "receive": 16.947999996773433,
+          "_blocked_queueing": 19.851000000926433,
+          "_workerStart": -1,
+          "_workerReady": -1,
+          "_workerFetchStart": -1,
+          "_workerRespondWithSettled": -1
+        }
+      },
+      {
+        "_connectionId": "3012",
+        "_initiator": {
+          "type": "parser",
+          "url": "https://sonaveeb.ee/search/unif/dlall/kriis/depressioon/1/est",
+          "lineNumber": 48
+        },
+        "_priority": "High",
+        "_resourceType": "script",
+        "cache": {},
+        "connection": "443",
+        "pageref": "page_1",
+        "request": {
+          "method": "GET",
+          "url": "https://sonaveeb.ee/view/js/ww-search.js",
+          "httpVersion": "HTTP/1.1",
+          "headers": [
+            {
+              "name": "Accept",
+              "value": "*/*"
+            },
+            {
+              "name": "Accept-Encoding",
+              "value": "gzip, deflate, br, zstd"
+            },
+            {
+              "name": "Accept-Language",
+              "value": "en-US,en;q=0.9"
+            },
+            {
+              "name": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "name": "Host",
+              "value": "sonaveeb.ee"
+            },
+            {
+              "name": "Referer",
+              "value": "https://sonaveeb.ee/search/unif/dlall/kriis/depressioon/1/est"
+            },
+            {
+              "name": "Sec-Fetch-Dest",
+              "value": "script"
+            },
+            {
+              "name": "Sec-Fetch-Mode",
+              "value": "no-cors"
+            },
+            {
+              "name": "Sec-Fetch-Site",
+              "value": "same-origin"
+            },
+            {
+              "name": "User-Agent",
+              "value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36"
+            },
+            {
+              "name": "sec-ch-ua",
+              "value": "\"Not A(Brand\";v=\"8\", \"Chromium\";v=\"132\", \"Google Chrome\";v=\"132\""
+            },
+            {
+              "name": "sec-ch-ua-mobile",
+              "value": "?0"
+            },
+            {
+              "name": "sec-ch-ua-platform",
+              "value": "\"Linux\""
+            }
+          ],
+          "queryString": [],
+          "cookies": [],
+          "headersSize": 792,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "200",
+          "httpVersion": "HTTP/1.1",
+          "headers": [
+            {
+              "name": "Accept-Ranges",
+              "value": "bytes"
+            },
+            {
+              "name": "Access-Control-Allow-Origin",
+              "value": "*"
+            },
+            {
+              "name": "Cache-Control",
+              "value": "no-cache, no-store, max-age=0, must-revalidate"
+            },
+            {
+              "name": "Connection",
+              "value": "Keep-Alive"
+            },
+            {
+              "name": "Content-Encoding",
+              "value": "gzip"
+            },
+            {
+              "name": "Content-Type",
+              "value": "application/javascript"
+            },
+            {
+              "name": "Date",
+              "value": "Sun, 12 Oct 2025 20:23:13 GMT"
+            },
+            {
+              "name": "Expires",
+              "value": "0"
+            },
+            {
+              "name": "Keep-Alive",
+              "value": "timeout=5, max=98"
+            },
+            {
+              "name": "Last-Modified",
+              "value": "Thu, 02 Oct 2025 17:24:09 GMT"
+            },
+            {
+              "name": "Pragma",
+              "value": "no-cache"
+            },
+            {
+              "name": "Server",
+              "value": "Apache"
+            },
+            {
+              "name": "Strict-Transport-Security",
+              "value": "max-age=31536000 ; includeSubDomains"
+            },
+            {
+              "name": "Transfer-Encoding",
+              "value": "chunked"
+            },
+            {
+              "name": "Vary",
+              "value": "Origin,Accept-Encoding,Access-Control-Request-Method,Access-Control-Request-Headers"
+            },
+            {
+              "name": "X-Content-Type-Options",
+              "value": "nosniff"
+            },
+            {
+              "name": "X-Frame-Options",
+              "value": "DENY"
+            },
+            {
+              "name": "X-XSS-Protection",
+              "value": "1; mode=block"
+            }
+          ],
+          "cookies": [],
+          "content": {
+            "size": 6769,
+            "mimeType": "application/javascript",
+            "compression": 4395
+          },
+          "redirectURL": "",
+          "headersSize": 656,
+          "bodySize": 2374,
+          "_transferSize": 3030,
+          "_error": null,
+          "_fetchedViaServiceWorker": false
+        },
+        "serverIPAddress": "185.174.162.174",
+        "startedDateTime": "2025-10-12T20:23:11.010Z",
+        "time": 2953.795999997965,
+        "timings": {
+          "blocked": 2354.99699999883,
+          "dns": -1,
+          "ssl": -1,
+          "connect": -1,
+          "send": 0.27599999999983993,
+          "wait": 573.469000001227,
+          "receive": 25.05399999790825,
+          "_blocked_queueing": 20.005999998829793,
+          "_workerStart": -1,
+          "_workerReady": -1,
+          "_workerFetchStart": -1,
+          "_workerRespondWithSettled": -1
+        }
+      },
+      {
+        "_connectionId": "3091",
+        "_initiator": {
+          "type": "parser",
+          "url": "https://sonaveeb.ee/search/unif/dlall/kriis/depressioon/1/est",
+          "lineNumber": 49
+        },
+        "_priority": "High",
+        "_resourceType": "script",
+        "cache": {},
+        "connection": "443",
+        "pageref": "page_1",
+        "request": {
+          "method": "GET",
+          "url": "https://sonaveeb.ee/view/js/ww-horizontal-scroll-panel.js",
+          "httpVersion": "HTTP/1.1",
+          "headers": [
+            {
+              "name": "Accept",
+              "value": "*/*"
+            },
+            {
+              "name": "Accept-Encoding",
+              "value": "gzip, deflate, br, zstd"
+            },
+            {
+              "name": "Accept-Language",
+              "value": "en-US,en;q=0.9"
+            },
+            {
+              "name": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "name": "Host",
+              "value": "sonaveeb.ee"
+            },
+            {
+              "name": "Referer",
+              "value": "https://sonaveeb.ee/search/unif/dlall/kriis/depressioon/1/est"
+            },
+            {
+              "name": "Sec-Fetch-Dest",
+              "value": "script"
+            },
+            {
+              "name": "Sec-Fetch-Mode",
+              "value": "no-cors"
+            },
+            {
+              "name": "Sec-Fetch-Site",
+              "value": "same-origin"
+            },
+            {
+              "name": "User-Agent",
+              "value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36"
+            },
+            {
+              "name": "sec-ch-ua",
+              "value": "\"Not A(Brand\";v=\"8\", \"Chromium\";v=\"132\", \"Google Chrome\";v=\"132\""
+            },
+            {
+              "name": "sec-ch-ua-mobile",
+              "value": "?0"
+            },
+            {
+              "name": "sec-ch-ua-platform",
+              "value": "\"Linux\""
+            }
+          ],
+          "queryString": [],
+          "cookies": [],
+          "headersSize": 809,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "200",
+          "httpVersion": "HTTP/1.1",
+          "headers": [
+            {
+              "name": "Accept-Ranges",
+              "value": "bytes"
+            },
+            {
+              "name": "Access-Control-Allow-Origin",
+              "value": "*"
+            },
+            {
+              "name": "Cache-Control",
+              "value": "no-cache, no-store, max-age=0, must-revalidate"
+            },
+            {
+              "name": "Connection",
+              "value": "Keep-Alive"
+            },
+            {
+              "name": "Content-Encoding",
+              "value": "gzip"
+            },
+            {
+              "name": "Content-Type",
+              "value": "application/javascript"
+            },
+            {
+              "name": "Date",
+              "value": "Sun, 12 Oct 2025 20:23:13 GMT"
+            },
+            {
+              "name": "Expires",
+              "value": "0"
+            },
+            {
+              "name": "Keep-Alive",
+              "value": "timeout=5, max=97"
+            },
+            {
+              "name": "Last-Modified",
+              "value": "Thu, 02 Oct 2025 17:24:09 GMT"
+            },
+            {
+              "name": "Pragma",
+              "value": "no-cache"
+            },
+            {
+              "name": "Server",
+              "value": "Apache"
+            },
+            {
+              "name": "Strict-Transport-Security",
+              "value": "max-age=31536000 ; includeSubDomains"
+            },
+            {
+              "name": "Transfer-Encoding",
+              "value": "chunked"
+            },
+            {
+              "name": "Vary",
+              "value": "Origin,Accept-Encoding,Access-Control-Request-Method,Access-Control-Request-Headers"
+            },
+            {
+              "name": "X-Content-Type-Options",
+              "value": "nosniff"
+            },
+            {
+              "name": "X-Frame-Options",
+              "value": "DENY"
+            },
+            {
+              "name": "X-XSS-Protection",
+              "value": "1; mode=block"
+            }
+          ],
+          "cookies": [],
+          "content": {
+            "size": 1359,
+            "mimeType": "application/javascript",
+            "compression": 926
+          },
+          "redirectURL": "",
+          "headersSize": 656,
+          "bodySize": 433,
+          "_transferSize": 1089,
+          "_error": null,
+          "_fetchedViaServiceWorker": false
+        },
+        "serverIPAddress": "185.174.162.174",
+        "startedDateTime": "2025-10-12T20:23:11.010Z",
+        "time": 2949.255000003177,
+        "timings": {
+          "blocked": 2369.108000002913,
+          "dns": -1,
+          "ssl": -1,
+          "connect": -1,
+          "send": 0.1479999999996835,
+          "wait": 578.2989999995543,
+          "receive": 1.7000000007101335,
+          "_blocked_queueing": 20.19000000291271,
+          "_workerStart": -1,
+          "_workerReady": -1,
+          "_workerFetchStart": -1,
+          "_workerRespondWithSettled": -1
+        }
+      },
+      {
+        "_connectionId": "2694",
+        "_fromCache": "memory",
+        "_initiator": {
+          "type": "script",
+          "stack": {
+            "callFrames": [
+              {
+                "functionName": "",
+                "scriptId": "87",
+                "url": "https://sonaveeb.ee/search/unif/dlall/kriis/depressioon/1/est",
+                "lineNumber": 66,
+                "columnNumber": 66
+              },
+              {
+                "functionName": "",
+                "scriptId": "87",
+                "url": "https://sonaveeb.ee/search/unif/dlall/kriis/depressioon/1/est",
+                "lineNumber": 67,
+                "columnNumber": 4
+              }
+            ]
+          }
+        },
+        "_priority": "Low",
+        "_resourceType": "script",
+        "cache": {},
+        "connection": "443",
+        "pageref": "page_1",
+        "request": {
+          "method": "GET",
+          "url": "https://www.googletagmanager.com/gtm.js?id=GTM-TXK9BCXH",
+          "httpVersion": "http/2.0",
+          "headers": [
+            {
+              "name": "sec-ch-ua-platform",
+              "value": "\"Linux\""
+            },
+            {
+              "name": "Referer",
+              "value": "https://sonaveeb.ee/"
+            },
+            {
+              "name": "User-Agent",
+              "value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36"
+            },
+            {
+              "name": "sec-ch-ua",
+              "value": "\"Not A(Brand\";v=\"8\", \"Chromium\";v=\"132\", \"Google Chrome\";v=\"132\""
+            },
+            {
+              "name": "sec-ch-ua-mobile",
+              "value": "?0"
+            }
+          ],
+          "queryString": [
+            {
+              "name": "id",
+              "value": "GTM-TXK9BCXH"
+            }
+          ],
+          "cookies": [],
+          "headersSize": -1,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "",
+          "httpVersion": "http/2.0",
+          "headers": [
+            {
+              "name": "content-encoding",
+              "value": "zstd"
+            },
+            {
+              "name": "expires",
+              "value": "Sun, 12 Oct 2025 20:22:56 GMT"
+            },
+            {
+              "name": "alt-svc",
+              "value": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"
+            },
+            {
+              "name": "date",
+              "value": "Sun, 12 Oct 2025 20:22:56 GMT"
+            },
+            {
+              "name": "content-type",
+              "value": "application/javascript; charset=UTF-8"
+            },
+            {
+              "name": "vary",
+              "value": "Accept-Encoding"
+            },
+            {
+              "name": "last-modified",
+              "value": "Sun, 12 Oct 2025 18:00:00 GMT"
+            },
+            {
+              "name": "access-control-allow-headers",
+              "value": "Cache-Control"
+            },
+            {
+              "name": "strict-transport-security",
+              "value": "max-age=31536000; includeSubDomains"
+            },
+            {
+              "name": "cache-control",
+              "value": "private, max-age=900"
+            },
+            {
+              "name": "cross-origin-resource-policy",
+              "value": "cross-origin"
+            },
+            {
+              "name": "access-control-allow-credentials",
+              "value": "true"
+            },
+            {
+              "name": "access-control-allow-origin",
+              "value": "*"
+            },
+            {
+              "name": "content-length",
+              "value": "107489"
+            },
+            {
+              "name": "x-xss-protection",
+              "value": "0"
+            },
+            {
+              "name": "server",
+              "value": "Google Tag Manager"
+            }
+          ],
+          "cookies": [],
+          "content": {
+            "size": 305698,
+            "mimeType": "application/javascript"
+          },
+          "redirectURL": "",
+          "headersSize": -1,
+          "bodySize": 0,
+          "_transferSize": 0,
+          "_error": null,
+          "_fetchedViaServiceWorker": false
+        },
+        "serverIPAddress": "216.58.209.168",
+        "startedDateTime": "2025-10-12T20:23:13.981Z",
+        "time": 2.466999998432584,
+        "timings": {
+          "blocked": -1,
+          "dns": -1,
+          "ssl": -1,
+          "connect": -1,
+          "send": 0,
+          "wait": 2.4309999971592333,
+          "receive": 0.03600000127335079,
+          "_blocked_queueing": -1
+        }
+      },
+      {
+        "_connectionId": "2694",
+        "_fromCache": "memory",
+        "_initiator": {
+          "type": "script",
+          "stack": {
+            "callFrames": [
+              {
+                "functionName": "Mc",
+                "scriptId": "88",
+                "url": "https://www.googletagmanager.com/gtm.js?id=GTM-TXK9BCXH",
+                "lineNumber": 128,
+                "columnNumber": 482
+              },
+              {
+                "functionName": "il",
+                "scriptId": "88",
+                "url": "https://www.googletagmanager.com/gtm.js?id=GTM-TXK9BCXH",
+                "lineNumber": 272,
+                "columnNumber": 167
+              },
+              {
+                "functionName": "bz",
+                "scriptId": "88",
+                "url": "https://www.googletagmanager.com/gtm.js?id=GTM-TXK9BCXH",
+                "lineNumber": 507,
+                "columnNumber": 1318
+              },
+              {
+                "functionName": "VD",
+                "scriptId": "88",
+                "url": "https://www.googletagmanager.com/gtm.js?id=GTM-TXK9BCXH",
+                "lineNumber": 586,
+                "columnNumber": 302
+              },
+              {
+                "functionName": "",
+                "scriptId": "88",
+                "url": "https://www.googletagmanager.com/gtm.js?id=GTM-TXK9BCXH",
+                "lineNumber": 226,
+                "columnNumber": 186
+              },
+              {
+                "functionName": "k.invoke",
+                "scriptId": "88",
+                "url": "https://www.googletagmanager.com/gtm.js?id=GTM-TXK9BCXH",
+                "lineNumber": 145,
+                "columnNumber": 361
+              },
+              {
+                "functionName": "ab",
+                "scriptId": "88",
+                "url": "https://www.googletagmanager.com/gtm.js?id=GTM-TXK9BCXH",
+                "lineNumber": 108,
+                "columnNumber": 390
+              },
+              {
+                "functionName": "Za",
+                "scriptId": "88",
+                "url": "https://www.googletagmanager.com/gtm.js?id=GTM-TXK9BCXH",
+                "lineNumber": 107,
+                "columnNumber": 526
+              },
+              {
+                "functionName": "",
+                "scriptId": "88",
+                "url": "https://www.googletagmanager.com/gtm.js?id=GTM-TXK9BCXH",
+                "lineNumber": 169,
+                "columnNumber": 472
+              },
+              {
+                "functionName": "k.invoke",
+                "scriptId": "88",
+                "url": "https://www.googletagmanager.com/gtm.js?id=GTM-TXK9BCXH",
+                "lineNumber": 145,
+                "columnNumber": 361
+              },
+              {
+                "functionName": "ab",
+                "scriptId": "88",
+                "url": "https://www.googletagmanager.com/gtm.js?id=GTM-TXK9BCXH",
+                "lineNumber": 108,
+                "columnNumber": 390
+              },
+              {
+                "functionName": "k.hp",
+                "scriptId": "88",
+                "url": "https://www.googletagmanager.com/gtm.js?id=GTM-TXK9BCXH",
+                "lineNumber": 110,
+                "columnNumber": 116
+              },
+              {
+                "functionName": "ef",
+                "scriptId": "88",
+                "url": "https://www.googletagmanager.com/gtm.js?id=GTM-TXK9BCXH",
+                "lineNumber": 180,
+                "columnNumber": 959
+              },
+              {
+                "functionName": "",
+                "scriptId": "88",
+                "url": "https://www.googletagmanager.com/gtm.js?id=GTM-TXK9BCXH",
+                "lineNumber": 571,
+                "columnNumber": 314
+              },
+              {
+                "functionName": "cg",
+                "scriptId": "88",
+                "url": "https://www.googletagmanager.com/gtm.js?id=GTM-TXK9BCXH",
+                "lineNumber": 195,
+                "columnNumber": 91
+              },
+              {
+                "functionName": "e",
+                "scriptId": "88",
+                "url": "https://www.googletagmanager.com/gtm.js?id=GTM-TXK9BCXH",
+                "lineNumber": 519,
+                "columnNumber": 229
+              },
+              {
+                "functionName": "",
+                "scriptId": "88",
+                "url": "https://www.googletagmanager.com/gtm.js?id=GTM-TXK9BCXH",
+                "lineNumber": 114,
+                "columnNumber": 124
+              },
+              {
+                "functionName": "",
+                "scriptId": "88",
+                "url": "https://www.googletagmanager.com/gtm.js?id=GTM-TXK9BCXH",
+                "lineNumber": 520,
+                "columnNumber": 413
+              },
+              {
+                "functionName": "",
+                "scriptId": "88",
+                "url": "https://www.googletagmanager.com/gtm.js?id=GTM-TXK9BCXH",
+                "lineNumber": 520,
+                "columnNumber": 153
+              },
+              {
+                "functionName": "hA",
+                "scriptId": "88",
+                "url": "https://www.googletagmanager.com/gtm.js?id=GTM-TXK9BCXH",
+                "lineNumber": 520,
+                "columnNumber": 873
+              },
+              {
+                "functionName": "lA",
+                "scriptId": "88",
+                "url": "https://www.googletagmanager.com/gtm.js?id=GTM-TXK9BCXH",
+                "lineNumber": 525,
+                "columnNumber": 150
+              },
+              {
+                "functionName": "pB",
+                "scriptId": "88",
+                "url": "https://www.googletagmanager.com/gtm.js?id=GTM-TXK9BCXH",
+                "lineNumber": 547,
+                "columnNumber": 307
+              },
+              {
+                "functionName": "rB",
+                "scriptId": "88",
+                "url": "https://www.googletagmanager.com/gtm.js?id=GTM-TXK9BCXH",
+                "lineNumber": 549,
+                "columnNumber": 44
+              }
+            ],
+            "parent": {
+              "description": "setTimeout",
+              "callFrames": [
+                {
+                  "functionName": "Tc",
+                  "scriptId": "88",
+                  "url": "https://www.googletagmanager.com/gtm.js?id=GTM-TXK9BCXH",
+                  "lineNumber": 130,
+                  "columnNumber": 198
+                },
+                {
+                  "functionName": "sB",
+                  "scriptId": "88",
+                  "url": "https://www.googletagmanager.com/gtm.js?id=GTM-TXK9BCXH",
+                  "lineNumber": 552,
+                  "columnNumber": 402
+                },
+                {
+                  "functionName": "xm",
+                  "scriptId": "88",
+                  "url": "https://www.googletagmanager.com/gtm.js?id=GTM-TXK9BCXH",
+                  "lineNumber": 706,
+                  "columnNumber": 344
+                },
+                {
+                  "functionName": "",
+                  "scriptId": "88",
+                  "url": "https://www.googletagmanager.com/gtm.js?id=GTM-TXK9BCXH",
+                  "lineNumber": 710,
+                  "columnNumber": 263
+                },
+                {
+                  "functionName": "c",
+                  "scriptId": "88",
+                  "url": "https://www.googletagmanager.com/gtm.js?id=GTM-TXK9BCXH",
+                  "lineNumber": 708,
+                  "columnNumber": 129
+                },
+                {
+                  "functionName": "",
+                  "scriptId": "88",
+                  "url": "https://www.googletagmanager.com/gtm.js?id=GTM-TXK9BCXH",
+                  "lineNumber": 710,
+                  "columnNumber": 231
+                },
+                {
+                  "functionName": "",
+                  "scriptId": "88",
+                  "url": "https://www.googletagmanager.com/gtm.js?id=GTM-TXK9BCXH",
+                  "lineNumber": 710,
+                  "columnNumber": 236
+                },
+                {
+                  "functionName": "",
+                  "scriptId": "88",
+                  "url": "https://www.googletagmanager.com/gtm.js?id=GTM-TXK9BCXH",
+                  "lineNumber": 712,
+                  "columnNumber": 2
+                }
+              ]
+            }
+          }
+        },
+        "_priority": "Low",
+        "_resourceType": "script",
+        "cache": {},
+        "connection": "443",
+        "pageref": "page_1",
+        "request": {
+          "method": "GET",
+          "url": "https://www.googletagmanager.com/gtag/js?id=G-DR23BQSFEN&cx=c&gtm=4e5a80",
+          "httpVersion": "http/2.0",
+          "headers": [
+            {
+              "name": "sec-ch-ua-platform",
+              "value": "\"Linux\""
+            },
+            {
+              "name": "Referer",
+              "value": "https://sonaveeb.ee/"
+            },
+            {
+              "name": "User-Agent",
+              "value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36"
+            },
+            {
+              "name": "sec-ch-ua",
+              "value": "\"Not A(Brand\";v=\"8\", \"Chromium\";v=\"132\", \"Google Chrome\";v=\"132\""
+            },
+            {
+              "name": "sec-ch-ua-mobile",
+              "value": "?0"
+            }
+          ],
+          "queryString": [
+            {
+              "name": "id",
+              "value": "G-DR23BQSFEN"
+            },
+            {
+              "name": "cx",
+              "value": "c"
+            },
+            {
+              "name": "gtm",
+              "value": "4e5a80"
+            }
+          ],
+          "cookies": [],
+          "headersSize": -1,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "",
+          "httpVersion": "http/2.0",
+          "headers": [
+            {
+              "name": "strict-transport-security",
+              "value": "max-age=31536000; includeSubDomains"
+            },
+            {
+              "name": "cache-control",
+              "value": "private, max-age=900"
+            },
+            {
+              "name": "content-encoding",
+              "value": "zstd"
+            },
+            {
+              "name": "cross-origin-resource-policy",
+              "value": "cross-origin"
+            },
+            {
+              "name": "access-control-allow-credentials",
+              "value": "true"
+            },
+            {
+              "name": "expires",
+              "value": "Sun, 12 Oct 2025 20:22:56 GMT"
+            },
+            {
+              "name": "access-control-allow-origin",
+              "value": "*"
+            },
+            {
+              "name": "alt-svc",
+              "value": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"
+            },
+            {
+              "name": "content-length",
+              "value": "144937"
+            },
+            {
+              "name": "date",
+              "value": "Sun, 12 Oct 2025 20:22:56 GMT"
+            },
+            {
+              "name": "x-xss-protection",
+              "value": "0"
+            },
+            {
+              "name": "content-type",
+              "value": "application/javascript; charset=UTF-8"
+            },
+            {
+              "name": "vary",
+              "value": "Accept-Encoding"
+            },
+            {
+              "name": "server",
+              "value": "Google Tag Manager"
+            },
+            {
+              "name": "access-control-allow-headers",
+              "value": "Cache-Control"
+            }
+          ],
+          "cookies": [],
+          "content": {
+            "size": 430450,
+            "mimeType": "application/javascript"
+          },
+          "redirectURL": "",
+          "headersSize": -1,
+          "bodySize": 0,
+          "_transferSize": 0,
+          "_error": null,
+          "_fetchedViaServiceWorker": false
+        },
+        "serverIPAddress": "216.58.209.168",
+        "startedDateTime": "2025-10-12T20:23:14.300Z",
+        "time": 0.44999999954598024,
+        "timings": {
+          "blocked": -1,
+          "dns": -1,
+          "ssl": -1,
+          "connect": -1,
+          "send": 0,
+          "wait": 0.411000000895001,
+          "receive": 0.03899999865097925,
+          "_blocked_queueing": -1
+        }
+      }
+    ]
+  }
+}

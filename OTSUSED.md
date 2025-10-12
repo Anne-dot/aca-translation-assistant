@@ -25,27 +25,31 @@
 
 ## 🎯 Etapid
 
-### ETAPP 1: Terminibaasi Ehitamine ⏳
+### ETAPP 1: Terminibaasi Ehitamine ✅ VALMIS
 
 **Eesmärk:** Luua põhjalik terminibaas ACA/ATL terminoloogia jaoks
 
 **Allikad:**
 
 1. **Olemasolevad ATL päevamõtted** (originaal + tõlge paaris)
-   - 📍 **Staatus:** Asukoht vajab täpsustamist
+   - 📍 **Staatus:** Järgmine samm
    - 📝 **Märkus:** Need sisaldavad juba tehtud tõlkeid, millest saab õppida
 
-2. **EKI terminibaasid** (Sõnaveeb korpused)
-   - ✅ Skeemiteraapia terminisõnastik (`skt`) - https://sonaveeb.ee/ds/skt
-   - ✅ DKT/DBT terminibaas (`dkt`) - https://sonaveeb.ee/ds/dkt
-   - ✅ Kriisinõustamise terminibaas (`kriis`) - https://sonaveeb.ee/ds/kriis
-   - ✅ Tervisesõnastik (`TAI`) - https://sonaveeb.ee/ds/TAI
-   - 🔧 **Tööriist:** Olemas `kogub_terminid.sh` skript automatiseeritud kogumiseks
+2. **EKI terminibaasid** (Sõnaveeb korpused) ✅ **KOGUTUD!**
+   - ✅ Skeemiteraapia terminisõnastik (`skt`) - 250 terminit
+   - ✅ DKT/DBT terminibaas (`dkt`) - 301 terminit
+   - ✅ Kriisinõustamise terminibaas (`kriis`) - 82 terminit
+   - ✅ Tervisesõnastik (`TAI`) - 645 terminit
+   - 🎉 **KOKKU: 1,278 terminit!**
+   - 🔧 **Tööriist:** `src/eki_koguja.py` (Python skript koos täieliku andmete kogumisega)
+   - 📁 **Asukoht:** `data/eki_terminid/*.json`
+   - 📋 **Andmed:** keel, sünonüümid, definitsioonid, lingid EKI lehele
+   - 📅 **Kogutud:** 2025-10-12
 
-3. **Glossary template**
+3. **Glossary template** ✅ **ANALÜÜSITUD**
    - 📍 **Asukoht:** `/home/d0021/Documents/ATL_drive/Jagatud/Glossary_templatesonavara.docx`
-   - 📝 **Praegune seisund:** Tühi
-   - ❓ **Vajab:** Struktuuri uurimist
+   - 📊 **Staatus:** 210 täidetud, 635 tõlkimata terminit
+   - 📄 **Analüüs:** `data/glossary_analüüs.json`
 
 **Terminibaasi andmestruktuur:**
 
