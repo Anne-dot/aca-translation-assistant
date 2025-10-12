@@ -18,6 +18,14 @@ Eile oli kaasteelisega päris pikk arutelu ühe termini pärast. See pani mõtle
 
 See on midagi, mida ma teen **ainult seetõttu, et saan seda programmeerimisega abil teha** - ja see tunne on võimas! 💪
 
+**Ja kõige olulisem:** Ma saan selle tulevikus edasi anda - see on minu **kingitus eesti ATL kogukonnale**. See pole lihtsalt programmeerimisprojekt, vaid:
+- 🎁 Panus kogukonda
+- 🤝 Abi nendele, kes tulevad pärast mind
+- ✨ Kvaliteetsete ja järjepidevate tõlgete tagamine
+- 📖 Teadmiste ja tööriistade jagamine kõigiga
+
+Kõik on hästi dokumenteeritud ja GitHubis, valmis edasi andmiseks ja teiste poolt täiendamiseks. See on tõeliselt tähendusrikas töö! ❤️
+
 ---
 
 ### 🎉 Täna Saavutatud
