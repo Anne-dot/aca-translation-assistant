@@ -1,0 +1,2681 @@
+{
+  "metaandmed": {
+    "terminibaas_kood": "dkt",
+    "terminibaas_nimi": "Dialektilise käitumisteraapia terminibaas",
+    "terminibaas_url": "https://sonaveeb.ee/ds/dkt",
+    "kontakt": "dkteesti@gmail.com",
+    "kogumise_kuupaev": "2025-10-12T23:49:59.491421",
+    "terminite_arv": 301
+  },
+  "terminid": [
+    {
+      "termin": "ABCEF links",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/ABCEF%20links",
+      "taht": "A",
+      "keel": "inglise",
+      "synonyymid": [],
+      "definitsioon": "spetsiifilise probleemkäitumiseni viinud sündmused, mõtted, emotsioonid, kehalised aistingud ning käitumised, mida kaardistatakse ahelanalüüsis"
+    },
+    {
+      "termin": "acceptance",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/acceptance",
+      "taht": "a",
+      "keel": "inglise",
+      "synonyymid": [],
+      "definitsioon": "the act of approving (signing-off) deliverables if they meet the defined acceptance criteria, tulemite heakskiitmine (nõusoleku andmine), kui need vastavad määratud vastuvõtukriteeriumitele, järgides vastuvõtuprotseduuri"
+    },
+    {
+      "termin": "active passivity",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/active%20passivity",
+      "taht": "a",
+      "keel": "inglise",
+      "synonyymid": [],
+      "definitsioon": "probleemilahenduse stiil, millele on omane passiivsus endapoolsel lahenduste leidmisel ning ootused ja püüdlused, et teised inimesed võtavad probleemi lahendamisel aktiivse rolli"
+    },
+    {
+      "termin": "adaptive denial",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/adaptive%20denial",
+      "taht": "a",
+      "keel": "inglise",
+      "synonyymid": [],
+      "definitsioon": "Järjekindel enese veenmine, et inimene ei soovi sõltuvusega kooskõlaliselt käituda, kui selleks tung tekib, või et sõltuvuskäitumine ei ole valikute hulgas"
+    },
+    {
+      "termin": "addict mind",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/addict%20mind",
+      "taht": "a",
+      "keel": "inglise",
+      "synonyymid": [],
+      "definitsioon": "üks kolmest meeleseisundist dialektilises käitumisteraapias, mis on seotud sõltuvuskäitumisega. Sõltlase meele seisundis on inimene sõltuvusele järele andnud ning sõltuvuskäitumise tung valitseb mõtteid, emotsioone ja käitumist. Sõltlase meele seisundis inimene isegi ei proovi sõltuvuskäitumisele vastu panna, või kui proovitakse, on pingutus vaid osaline ning ebaefektiivne."
+    },
+    {
+      "termin": "afekt",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/afekt",
+      "taht": "a",
+      "keel": "eesti",
+      "synonyymid": [],
+      "definitsioon": "väga tugev lühiajaline emotsionaalne reaktsioon, tormiline tundepuhang (nt raev, vaimustus, meeleheide)"
+    },
+    {
+      "termin": "affect",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/affect",
+      "taht": "a",
+      "keel": "inglise",
+      "synonyymid": [],
+      "definitsioon": "väga tugev lühiajaline emotsionaalne reaktsioon, tormiline tundepuhang (nt raev, vaimustus, meeleheide)"
+    },
+    {
+      "termin": "ahelanalüüs",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/ahelanal%C3%BC%C3%BCs",
+      "taht": "a",
+      "keel": "eesti",
+      "synonyymid": [],
+      "definitsioon": "detailne, samm-sammuline analüüs sündmustest, mis viisid spetsiifilise probleemkäitumiseni"
+    },
+    {
+      "termin": "ahelanalüüsi lülid",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/ahelanal%C3%BC%C3%BCsi%20l%C3%BClid",
+      "taht": "a",
+      "keel": "eesti",
+      "synonyymid": [],
+      "definitsioon": "spetsiifilise probleemkäitumiseni viinud sündmused, mõtted, emotsioonid, kehalised aistingud ning käitumised, mida kaardistatakse ahelanalüüsis"
+    },
+    {
+      "termin": "aktiivne passiivsus",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/aktiivne%20passiivsus",
+      "taht": "a",
+      "keel": "eesti",
+      "synonyymid": [
+        "õpitud abitus"
+      ],
+      "definitsioon": "probleemilahenduse stiil, millele on omane passiivsus endapoolsel lahenduste leidmisel ning ootused ja püüdlused, et teised inimesed võtavad probleemi lahendamisel aktiivse rolli"
+    },
+    {
+      "termin": "aktsepteerimine",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/aktsepteerimine",
+      "taht": "a",
+      "keel": "eesti",
+      "synonyymid": [
+        "aktsepteering"
+      ],
+      "definitsioon": "vastuvõetavaks tunnistamine, heakskiitmine"
+    },
+    {
+      "termin": "allasurutud lein",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/allasurutud%20lein",
+      "taht": "a",
+      "keel": "eesti",
+      "synonyymid": [],
+      "definitsioon": "traumaatiliste kogemuste ja kaotustega kaasnev lein, millega toimetulekuks kasutatakse eelkõige vältivaid strateegiaid"
+    },
+    {
+      "termin": "alternate rebellion",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/alternate%20rebellion",
+      "taht": "a",
+      "keel": "inglise",
+      "synonyymid": [],
+      "definitsioon": "dialektilise käitumisteraapia oskus, kus leitakse teistsugune mässumeelne kuid mittehävituslik käitumine, mis asendab sõltuvuskäitumise"
+    },
+    {
+      "termin": "alternatiivne mässumeelsus",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/alternatiivne%20m%C3%A4ssumeelsus",
+      "taht": "a",
+      "keel": "eesti",
+      "synonyymid": [],
+      "definitsioon": "dialektilise käitumisteraapia oskus, kus leitakse teistsugune mässumeelne kuid mittehävituslik käitumine, mis asendab sõltuvuskäitumise"
+    },
+    {
+      "termin": "avatud grupp",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/avatud%20grupp",
+      "taht": "a",
+      "keel": "eesti",
+      "synonyymid": [],
+      "definitsioon": "grupiviisilise oskuste õppe formaat, mille käigus saavad uued liikmed kogu programmi vältel liituda"
+    },
+    {
+      "termin": "avatud käed",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/avatud%20k%C3%A4ed",
+      "taht": "a",
+      "keel": "eesti",
+      "synonyymid": [],
+      "definitsioon": "Avatud käed on füüsiline hoiak, kus käed on rusikast lahti, peopesad ülespoole suunatud ning sõrmed lõdvestunud, väljendades kehaga tegelikkuse aktsepteerimist."
+    },
+    {
+      "termin": "behavior",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/behavior",
+      "taht": "b",
+      "keel": "inglise",
+      "synonyymid": [
+        "behaviour"
+      ],
+      "definitsioon": "viis või laad, kuidas keegi või miski reageerib, teotseb või töötab"
+    },
+    {
+      "termin": "being mind",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/being%20mind",
+      "taht": "b",
+      "keel": "inglise",
+      "synonyymid": [],
+      "definitsioon": "Meeleseisund DKT-s, kus inimene lihtsalt on ja kogeb hetke ilma püüdluseta seda muuta või hinnanguid anda."
+    },
+    {
+      "termin": "biosocial theory",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/biosocial%20theory",
+      "taht": "b",
+      "keel": "inglise",
+      "synonyymid": [],
+      "definitsioon": "dialektilise käitumisteraapia keskne lähtekoht, mille järgi on piirialase isiksushäire tuum emotsiooni düsregulatsioon, mis tuleneb bioloogilistest eripäradest, mitteabistavast keskkonnast ja nende kahe vastastikmõjust"
+    },
+    {
+      "termin": "biosotsiaalne teooria",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/biosotsiaalne%20teooria",
+      "taht": "b",
+      "keel": "eesti",
+      "synonyymid": [],
+      "definitsioon": "dialektilise käitumisteraapia keskne lähtekoht, mille järgi on piirialase isiksushäire tuum emotsiooni düsregulatsioon, mis tuleneb bioloogilistest eripäradest, mitteabistavast keskkonnast ja nende kahe vastastikmõjust"
+    },
+    {
+      "termin": "body scan meditation, step by step",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/body%20scan%20meditation%2C%20step%20by%20step",
+      "taht": "b",
+      "keel": "inglise",
+      "synonyymid": [],
+      "definitsioon": "dialektilise käitumisteraapia stressitaluvuse oskuste hulka kuuluv ca 30 min kestev harjutus, mis seisneb tähelepanu pööramises kehaaistingutele käesoleval hetkel hinnanguvabalt ja uudishimulikult, juhendatud samm-sammulises järjekorras"
+    },
+    {
+      "termin": "building relationships",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/building%20relationships",
+      "taht": "b",
+      "keel": "inglise",
+      "synonyymid": [],
+      "definitsioon": "suhtetõhususe oskuste üks eesmärk: sõprade leidmine ja neile meeldivaks muutumine ning teadvelolek teistest"
+    },
+    {
+      "termin": "burning bridges and building new ones",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/burning%20bridges%20and%20building%20new%20ones",
+      "taht": "b",
+      "keel": "inglise",
+      "synonyymid": [],
+      "definitsioon": "dialektilise käitumisteraapia oskus, mis tähendab oma elust aktiivselt kõigi potentsiaalsete sõltuvuskäitumise vallandajate eemaldamist. Uute sildade ehitamine viitab uute kujutluspiltide ja füüsiliste aistingute leidmisele, mille abil saaks võidelda sõltuvustungidega."
+    },
+    {
+      "termin": "case management",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/case%20management",
+      "taht": "c",
+      "keel": "inglise",
+      "synonyymid": [],
+      "definitsioon": "sotsiaaltöövorm, mille puhul tegeldakse inimese või perekonna olukorraga (juhtumiga) terviklikult ning mis hõlmab abivajaduse hindamist, sobiva abi planeerimist, eri valdkondade tegevuste koordineerimist ja tulemuste mõõtmist"
+    },
+    {
+      "termin": "chain analysis",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/chain%20analysis",
+      "taht": "c",
+      "keel": "inglise",
+      "synonyymid": [],
+      "definitsioon": "detailne, samm-sammuline analüüs sündmustest, mis viisid spetsiifilise probleemkäitumiseni"
+    },
+    {
+      "termin": "change",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/change",
+      "taht": "c",
+      "keel": "inglise",
+      "synonyymid": [],
+      "definitsioon": "väiksema väärtusega metallraha (hrl mitme rahamündi kohta)"
+    },
+    {
+      "termin": "cheerleading",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/cheerleading",
+      "taht": "c",
+      "keel": "inglise",
+      "synonyymid": [],
+      "definitsioon": "spordivõistlustel publikut ja oma meeskonda ergutav tantsuline kava, mis sisaldab akrobaatikat, hõiskeid vms"
+    },
+    {
+      "termin": "clarifying goals",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/clarifying%20goals",
+      "taht": "c",
+      "keel": "inglise",
+      "synonyymid": [],
+      "definitsioon": "suhtetõhususe oskus, kus teadvustatakse oma soovi või eesmärki, milleks võib olla tõhusus eesmärkides, tõhusus suhetes ja tõhusus eneseväärikuses"
+    },
+    {
+      "termin": "clean mind",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/clean%20mind",
+      "taht": "c",
+      "keel": "inglise",
+      "synonyymid": [],
+      "definitsioon": "üks kolmest meeleseisundist dialektilises käitumisteraapias, mis puudutab sõltuvuskäitumist. Puhta meele seisund kirjeldab kainust ja sõltuvuskäitumistest hoidumist, kuid samaaegset tagasilanguse ohu eitamist. Puhta meele seisundis võib inimene end tunda võitmatuna ja immuunsena tagasilanguste suhtes, kuid see tunne on moonutatud ja esineb risk, et inimene ei püüa enam sõltuvusega seotud ahvatlusi vältida ega tagasilanguse ennetamise strateegiaid kasutada, mistõttu väheneb valmisolek adekvaatselt sõltuvustungi naasmisele reageerida."
+    },
+    {
+      "termin": "clear mind",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/clear%20mind",
+      "taht": "c",
+      "keel": "inglise",
+      "synonyymid": [],
+      "definitsioon": "üks kolmest meeleseisundist dialektilises käitumisteraapias, mis puudutab sõltuvuskäitumist. Selge meel on süntees puhta ja sõltlase meele vahel. Selge meele seisundis on inimene kaine, ja samal ajal teadlik tagasilanguse ohtudest, seega tegeleb ta aktiivselt tagasilööke ja tagasilangust ennetavate käitumistega. Selge meel on sõltuvusega seonduv, kuid targa meelega väga sarnane. (Linehan, 2015, p483)."
+    },
+    {
+      "termin": "closed group",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/closed%20group",
+      "taht": "c",
+      "keel": "inglise",
+      "synonyymid": [],
+      "definitsioon": "grupiviisilise oskuste õppe formaat, mille puhul moodustatakse programmi alguses üks grupp, mis käib teatud aja koos, ning uusi liikmeid gruppi pärast liitumisperioodi enam vastu ei võeta"
+    },
+    {
+      "termin": "co-leader",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/co-leader",
+      "taht": "c",
+      "keel": "inglise",
+      "synonyymid": [],
+      "definitsioon": "üks kahest grupiviisilise oskuste õppe läbiviijatest, kelle ülesanne on maandada grupiliikmete ja teise grupijuhi vahelisi pingeid, pöörata tähelepanu grupiliikmete individuaalsetele reaktsioonidele ja heaolule ning toetada teist grupijuhti oskuste õpetamisel"
+    },
+    {
+      "termin": "cognitive modification",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/cognitive%20modification",
+      "taht": "c",
+      "keel": "inglise",
+      "synonyymid": [],
+      "definitsioon": "kognitiivse sisu ja stiilide hindamine, teadvustamine, sõnastamine ja muutmine"
+    },
+    {
+      "termin": "cognitive restructuring",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/cognitive%20restructuring",
+      "taht": "c",
+      "keel": "inglise",
+      "synonyymid": [],
+      "definitsioon": "olemasolevate düsfunktsionaalsete mõtete/uskumuste sõnastamine ning nende asemel kasulikumate alternatiivide sõnastamine"
+    },
+    {
+      "termin": "commitment",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/commitment",
+      "taht": "c",
+      "keel": "inglise",
+      "synonyymid": [],
+      "definitsioon": "lubadus või kindel otsus midagi teha, a promise or firm decision to do something"
+    },
+    {
+      "termin": "community reinforcement",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/community%20reinforcement",
+      "taht": "c",
+      "keel": "inglise",
+      "synonyymid": [],
+      "definitsioon": "DKT oskus, mis viitab keskkonna ümberstruktureerimisele viisil, mis tasustaks sõltuvuse asemel karskust"
+    },
+    {
+      "termin": "consequence",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/consequence",
+      "taht": "c",
+      "keel": "inglise",
+      "synonyymid": [
+        "result",
+        "effect"
+      ],
+      "definitsioon": "asjaolu, nähtus, tegu, mille on esile kutsunud mingi teine asjaolu, nähtus, tegu"
+    },
+    {
+      "termin": "consultation team",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/consultation%20team",
+      "taht": "c",
+      "keel": "inglise",
+      "synonyymid": [],
+      "definitsioon": "dialektilist käitumisteraapiat ühe raviprogrammi raames osutavad terapeudid, kes kohtuvad omavahel regulaarselt"
+    },
+    {
+      "termin": "consultation-to-the-client",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/consultation-to-the-client",
+      "taht": "c",
+      "keel": "inglise",
+      "synonyymid": [],
+      "definitsioon": "dialektilises käitumisteraapias osaleja jõustamine võtma aktiivne ja vastutav roll end ümbritseva keskkonna muutmisel oma heaolu toetavaks"
+    },
+    {
+      "termin": "contingency management",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/contingency%20management",
+      "taht": "c",
+      "keel": "inglise",
+      "synonyymid": [],
+      "definitsioon": "teraapiatehnika, mille eesmärk on tuvastada erinevad faktorid, mis suurendavad ja vähendavad teatud käitumiste ilmnemise tõenäosust ning suunata neid tagajärgi tahtlikult funktsionaalsemate käitumisviiside kujundamiseks"
+    },
+    {
+      "termin": "contingency schedule",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/contingency%20schedule",
+      "taht": "c",
+      "keel": "inglise",
+      "synonyymid": [],
+      "definitsioon": "struktureeritud plaan, mis sätestab konkreetsetele käitumistele järgnevad tagajärjed, mida tavaliselt kasutatakse soovitud käitumiste suurendamiseks ja soovimatute käitumiste vähendamiseks"
+    },
+    {
+      "termin": "continuous reinforcement",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/continuous%20reinforcement",
+      "taht": "c",
+      "keel": "inglise",
+      "synonyymid": [],
+      "definitsioon": "soovitud käitumise tõenäosuse suurendamise strateegia, kus kinnitatakse iga soovitud käitumise ilmnemist"
+    },
+    {
+      "termin": "crisis",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/crisis",
+      "taht": "c",
+      "keel": "inglise",
+      "synonyymid": [],
+      "definitsioon": "vastuoludest lõhestatud pingeline (sotsiaalne, poliitiline) seisund, mille hrl on põhjustanud raskused, ohud, ebastabiilsed olud ning millega võib kaasneda ähvardavalt järsk muutus"
+    },
+    {
+      "termin": "crisis survival skills",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/crisis%20survival%20skills",
+      "taht": "c",
+      "keel": "inglise",
+      "synonyymid": [],
+      "definitsioon": "DKT oskused, mida kasutatakse kriisiolukorra, valusate emotsioonide ja tungide äratalumiseks ning üleelamiseks ilma olukorda hullemaks tegemata"
+    },
+    {
+      "termin": "DBT",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/DBT",
+      "taht": "D",
+      "keel": "inglise",
+      "synonyymid": [
+        "ductile-to-brittle fracture transition",
+        "ductile-to-brittle transition",
+        "ductile-brittle transition",
+        "ductile to brittle transition",
+        "cold embrittlement"
+      ],
+      "definitsioon": "metalli või muu materjali vastupanu märkimisväärne vähenemine purunemisele ühe või mitme tingimuse, eriti temperatuur, muutumisel (vt külmahapruslävi), a marked change in fracture resistance of metal or other material with changes in one or more variables, in particular temperature (see: ductile-to-brittle transition temperature)"
+    },
+    {
+      "termin": "DCBA",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/DCBA",
+      "taht": "D",
+      "keel": "inglise",
+      "synonyymid": [],
+      "definitsioon": "DESSANT on DKT oskuste kogum, mille keskmes on toimetulek sõltuvusega seotud kriisiga. DESSANT on akronüüm järgmistest DKT oskustest: Dialektiline karskus, Eesmärgipärane eitamine, Selge meel, Sildade põletamine ja uute ehitamine, AlterNatiivne mässumeelsus, kogukondlik Tasustamine., DCBA is a set of DBT crisis survival skills for addiction (dialectical abstinence, clear mind, community reinforcement, burning bridges, alternate rebellion, adaptive denial)"
+    },
+    {
+      "termin": "DEAR MAN",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/DEAR%20MAN",
+      "taht": "D",
+      "keel": "inglise",
+      "synonyymid": [],
+      "definitsioon": "suhtetõhususe oskuste kogumik, mis võimaldab tõhusalt saada soovitut, öelda \"ei\", jääda oma arvamuse juurde või saavutada mõnda muud suhtlemisega seotud eesmärki, enesekehtestamise oskused"
+    },
+    {
+      "termin": "describe",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/describe",
+      "taht": "d",
+      "keel": "inglise",
+      "synonyymid": [],
+      "definitsioon": "jutustades või kirjutades kellestki või millestki ülevaadet või pilti andma"
+    },
+    {
+      "termin": "DESSANT",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/DESSANT",
+      "taht": "D",
+      "keel": "eesti",
+      "synonyymid": [],
+      "definitsioon": "DESSANT on DKT oskuste kogum, mille keskmes on toimetulek sõltuvusega seotud kriisiga. DESSANT on akronüüm järgmistest DKT oskustest: Dialektiline karskus, Eesmärgipärane eitamine, Selge meel, Sildade põletamine ja uute ehitamine, AlterNatiivne mässumeelsus, kogukondlik Tasustamine., DCBA is a set of DBT crisis survival skills for addiction (dialectical abstinence, clear mind, community reinforcement, burning bridges, alternate rebellion, adaptive denial)"
+    },
+    {
+      "termin": "dialectical abstinence",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/dialectical%20abstinence",
+      "taht": "d",
+      "keel": "inglise",
+      "synonyymid": [],
+      "definitsioon": "Dialektilise karskuse korral liigub inimene strateegiliselt absoluutse karskuse vahel \"käesolevas hetkes\" (kuni õnnestub hoiduda sõltuvuskäitumistest) ja tagasilangusega toimetuleku (kui peaks juhtuma, et inimesel tekib tagasilöök või tagasilangus) vahel. Igal ajahetkel, kui inimene on karske (uimastitest või düsfunktsionaalsest käitumisest), on ta iga keharakuga pühendunud absoluutsele karskusele sõltuvuskäitumisest. Iga liigutuse mõte on liikuda aina edasi elust sõltuvusega, ja lähemale elamist väärt elule ilma sõltuvuskäitumiseta. Igal ajahetkel, kui inimene on tagasi langenud, aktsepteerib ta tagasilangust radikaalselt ning keskendub uuesti \"enese püsti ajamisele\", ta kasutab kõiki vajalikke oskusi, et taas karskusse tagasi jõuda."
+    },
+    {
+      "termin": "dialectical behavior therapy",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/dialectical%20behavior%20therapy",
+      "taht": "d",
+      "keel": "inglise",
+      "synonyymid": [
+        "DBT"
+      ],
+      "definitsioon": "Marsha Linehani välja töötatud kognitiiv-käitumuslike algetega suitsidaalse ja ennast kahjustava käitumise vähendamisele suunatud tõenduspõhine raviprogramm"
+    },
+    {
+      "termin": "dialectics",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/dialectics",
+      "taht": "d",
+      "keel": "inglise",
+      "synonyymid": [],
+      "definitsioon": "maailmavaade, mille keskmes on kolm põhiteesi: süsteemi alaosad on omavahel seotud ja mõõdustavad uue väärtusega terviku; reaalsus koosneb vastassuunalistest mõjutustest, mille sünteesimisel kerkivad esile uued näilised vastuolud; see läbipõimunud ühendatus ja vastuolulisus suunavad maailma pidevasse muutusesse"
+    },
+    {
+      "termin": "dialektiline karskus",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/dialektiline%20karskus",
+      "taht": "d",
+      "keel": "eesti",
+      "synonyymid": [],
+      "definitsioon": "Dialektilise karskuse korral liigub inimene strateegiliselt absoluutse karskuse vahel \"käesolevas hetkes\" (kuni õnnestub hoiduda sõltuvuskäitumistest) ja tagasilangusega toimetuleku (kui peaks juhtuma, et inimesel tekib tagasilöök või tagasilangus) vahel. Igal ajahetkel, kui inimene on karske (uimastitest või düsfunktsionaalsest käitumisest), on ta iga keharakuga pühendunud absoluutsele karskusele sõltuvuskäitumisest. Iga liigutuse mõte on liikuda aina edasi elust sõltuvusega, ja lähemale elamist väärt elule ilma sõltuvuskäitumiseta. Igal ajahetkel, kui inimene on tagasi langenud, aktsepteerib ta tagasilangust radikaalselt ning keskendub uuesti \"enese püsti ajamisele\", ta kasutab kõiki vajalikke oskusi, et taas karskusse tagasi jõuda."
+    },
+    {
+      "termin": "dialektiline käitumisteraapia",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/dialektiline%20k%C3%A4itumisteraapia",
+      "taht": "d",
+      "keel": "eesti",
+      "synonyymid": [
+        "DKT"
+      ],
+      "definitsioon": "Marsha Linehani välja töötatud kognitiiv-käitumuslike algetega suitsidaalse ja ennast kahjustava käitumise vähendamisele suunatud tõenduspõhine raviprogramm"
+    },
+    {
+      "termin": "dialektilisus",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/dialektilisus",
+      "taht": "d",
+      "keel": "eesti",
+      "synonyymid": [],
+      "definitsioon": "maailmavaade, mille keskmes on kolm põhiteesi: süsteemi alaosad on omavahel seotud ja mõõdustavad uue väärtusega terviku; reaalsus koosneb vastassuunalistest mõjutustest, mille sünteesimisel kerkivad esile uued näilised vastuolud; see läbipõimunud ühendatus ja vastuolulisus suunavad maailma pidevasse muutusesse"
+    },
+    {
+      "termin": "diary card",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/diary%20card",
+      "taht": "d",
+      "keel": "inglise",
+      "synonyymid": [],
+      "definitsioon": "tööriist dialektilise käitumisteraapia raames igapäevase käitumise kohta info kogumiseks"
+    },
+    {
+      "termin": "dime game",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/dime%20game",
+      "taht": "d",
+      "keel": "inglise",
+      "synonyymid": [],
+      "definitsioon": "dialektilise käitumisteraapia tehnika, mis aitab konkreetses olukorras teha parim otsus selle kohta, kui järjepidevalt midagi paluda või millestki keelduda"
+    },
+    {
+      "termin": "distress tolerance skills",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/distress%20tolerance%20skills",
+      "taht": "d",
+      "keel": "inglise",
+      "synonyymid": [],
+      "definitsioon": "dialektilise käitumisteraapia oskuste treeningu moodul, mis keskendub sellele, kuidas valu ja kannatuse kiuste elada, oma eesmärke täita ja tekkinud raskusi aktsepteerida"
+    },
+    {
+      "termin": "DKT",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/DKT",
+      "taht": "D",
+      "keel": "eesti",
+      "synonyymid": [
+        "dialektiline käitumisteraapia"
+      ],
+      "definitsioon": "Marsha Linehani välja töötatud kognitiiv-käitumuslike algetega suitsidaalse ja ennast kahjustava käitumise vähendamisele suunatud tõenduspõhine raviprogramm"
+    },
+    {
+      "termin": "DKT meeskond",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/DKT%20meeskond",
+      "taht": "D",
+      "keel": "eesti",
+      "synonyymid": [
+        "DKT tiim",
+        "konsultatsioonitiim",
+        "konsultatsioonimeeskond"
+      ],
+      "definitsioon": "dialektilist käitumisteraapiat ühe raviprogrammi raames osutavad terapeudid, kes kohtuvad omavahel regulaarselt"
+    },
+    {
+      "termin": "DKT tiim",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/DKT%20tiim",
+      "taht": "D",
+      "keel": "eesti",
+      "synonyymid": [
+        "DKT meeskond",
+        "konsultatsioonitiim",
+        "konsultatsioonimeeskond"
+      ],
+      "definitsioon": "dialektilist käitumisteraapiat ühe raviprogrammi raames osutavad terapeudid, kes kohtuvad omavahel regulaarselt"
+    },
+    {
+      "termin": "doing mind",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/doing%20mind",
+      "taht": "d",
+      "keel": "inglise",
+      "synonyymid": [],
+      "definitsioon": "Meeleseisund DKT-s, kus inimene keskendub ülesannetele ja sooritusele, tavaliselt automaatselt või harjumuslikult, ilma täielikult hetkes olemata."
+    },
+    {
+      "termin": "eelravi",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/eelravi",
+      "taht": "e",
+      "keel": "eesti",
+      "synonyymid": [
+        "ravieelne etapp"
+      ],
+      "definitsioon": "aktiivsele ravile eelnevad kohtumised individuaalterapeudiga, mille eesmärk on jõuda ühisele arusaamale koostöö jätkamise osas ning selgitada ravisekkumises osalejale ravi olemust, selleks vajalikku pühendumust ning ravi mõjutavaid asjaolusid"
+    },
+    {
+      "termin": "eesmärgipärane eitamine",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/eesm%C3%A4rgip%C3%A4rane%20eitamine",
+      "taht": "e",
+      "keel": "eesti",
+      "synonyymid": [],
+      "definitsioon": "Järjekindel enese veenmine, et inimene ei soovi sõltuvusega kooskõlaliselt käituda, kui selleks tung tekib, või et sõltuvuskäitumine ei ole valikute hulgas"
+    },
+    {
+      "termin": "eesmärkide täpsustamine",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/eesm%C3%A4rkide%20t%C3%A4psustamine",
+      "taht": "e",
+      "keel": "eesti",
+      "synonyymid": [],
+      "definitsioon": "suhtetõhususe oskus, kus teadvustatakse oma soovi või eesmärki, milleks võib olla tõhusus eesmärkides, tõhusus suhetes ja tõhusus eneseväärikuses"
+    },
+    {
+      "termin": "effective rethinking and paired relaxation",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/effective%20rethinking%20and%20paired%20relaxation",
+      "taht": "e",
+      "keel": "inglise",
+      "synonyymid": [],
+      "definitsioon": "DKT meetod, kus kasutatakse korraga kognitiivset ümberstruktureerimist ning järk-järgulist lihaslõdvestust, et kõrge stressi hetkedel erutust kiiresti alandada. Harjutuses tuvastatakse ebatõhusad ja erutavad mõtted ning asendatakse need tõhusamate mõtetega. Samaaegselt kujutletakse end stressiolukorda ning välja hingates sõnastatakse lihaseid lõdvestades rahustav enesekohane lause."
+    },
+    {
+      "termin": "effectively",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/effectively",
+      "taht": "e",
+      "keel": "inglise",
+      "synonyymid": [],
+      "definitsioon": "Üks teadveloleku kuidas-oskus DKT-s, keskendumine käitumistele ja tegevustele, mis on hetkes efektiivsed ja eesmärgipärased."
+    },
+    {
+      "termin": "eksponeerimine",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/eksponeerimine",
+      "taht": "e",
+      "keel": "eesti",
+      "synonyymid": [],
+      "definitsioon": "teraapiatehnika, mille eesmärk on harjutada kokkupuudet kardetud seisundi või olukorraga ja selle abil aja jooksul vähendada tekkivate emotsioonide intensiivsust"
+    },
+    {
+      "termin": "elamist väärt elu",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/elamist%20v%C3%A4%C3%A4rt%20elu",
+      "taht": "e",
+      "keel": "eesti",
+      "synonyymid": [],
+      "definitsioon": "dialektilises käitumisteraapias elu, mis on rahuldustpakkuv, väärtustega kooskõlaline ning tähendusrikas"
+    },
+    {
+      "termin": "elukorralduse probleemid",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/elukorralduse%20probleemid",
+      "taht": "e",
+      "keel": "eesti",
+      "synonyymid": [],
+      "definitsioon": "patsiendi elus esinevad probleemid, mis ei avaldu elu ohustaval või elukvaliteeti oluliselt häirival tasemel"
+    },
+    {
+      "termin": "elukvaliteeti häiriv käitumine",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/elukvaliteeti%20h%C3%A4iriv%20k%C3%A4itumine",
+      "taht": "e",
+      "keel": "eesti",
+      "synonyymid": [],
+      "definitsioon": "käitumine, mis ajas püsimisel hakkab suure tõenäosusega oluliselt elukvaliteeti vähendama"
+    },
+    {
+      "termin": "eluohtlik käitumine",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/eluohtlik%20k%C3%A4itumine",
+      "taht": "e",
+      "keel": "eesti",
+      "synonyymid": [],
+      "definitsioon": "käitumine, millega kaasneb kõrge suitsiidrisk"
+    },
+    {
+      "termin": "emotion regulation skills",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/emotion%20regulation%20skills",
+      "taht": "e",
+      "keel": "inglise",
+      "synonyymid": [],
+      "definitsioon": "dialektilise käitumisteraapia oskuste treeningu moodul, mis keskendub sellele, kuidas märgata ja nimetada emotsioone ja nende komponente, muuta soovimatuid emotsioone või tulla nendega toime, ning vähendada positiivsete emotsioonide võimendamise abil emotsionaalset haavatavust"
+    },
+    {
+      "termin": "emotional dysregulation",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/emotional%20dysregulation",
+      "taht": "e",
+      "keel": "inglise",
+      "synonyymid": [],
+      "definitsioon": "raskused oma emotsionaalse kogemuse ja käitumise muutmisel olukorras, kus valdaval osal inimestest see tavapäraselt õnnestub"
+    },
+    {
+      "termin": "emotional mind",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/emotional%20mind",
+      "taht": "e",
+      "keel": "inglise",
+      "synonyymid": [],
+      "definitsioon": "Üks kolmest meeleseisundist DKT-s, kus emotsioonid juhivad mõtlemist ja käitumist."
+    },
+    {
+      "termin": "emotional vulnerability",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/emotional%20vulnerability",
+      "taht": "e",
+      "keel": "inglise",
+      "synonyymid": [],
+      "definitsioon": "emotsionaalset düsregulatsiooni soodustav faktor, mida iseloomustavad kõrge emotsionaalne tundlikkus, emotsioonide intensiivne kogemine ning emotsioonide aeglane alanemine baastasemele"
+    },
+    {
+      "termin": "emotsionaalne düsregulatsioon",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/emotsionaalne%20d%C3%BCsregulatsioon",
+      "taht": "e",
+      "keel": "eesti",
+      "synonyymid": [],
+      "definitsioon": "raskused oma emotsionaalse kogemuse ja käitumise muutmisel olukorras, kus valdaval osal inimestest see tavapäraselt õnnestub"
+    },
+    {
+      "termin": "emotsionaalne haavatavus",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/emotsionaalne%20haavatavus",
+      "taht": "e",
+      "keel": "eesti",
+      "synonyymid": [],
+      "definitsioon": "emotsionaalset düsregulatsiooni soodustav faktor, mida iseloomustavad kõrge emotsionaalne tundlikkus, emotsioonide intensiivne kogemine ning emotsioonide aeglane alanemine baastasemele"
+    },
+    {
+      "termin": "emotsionaalne meel",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/emotsionaalne%20meel",
+      "taht": "e",
+      "keel": "eesti",
+      "synonyymid": [],
+      "definitsioon": "Üks kolmest meeleseisundist DKT-s, kus emotsioonid juhivad mõtlemist ja käitumist."
+    },
+    {
+      "termin": "emotsiooni juhtimise oskused",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/emotsiooni%20juhtimise%20oskused",
+      "taht": "e",
+      "keel": "eesti",
+      "synonyymid": [
+        "emotsiooniregulatsiooni oskused",
+        "emotsiooni valitsemise oskused"
+      ],
+      "definitsioon": "dialektilise käitumisteraapia oskuste treeningu moodul, mis keskendub sellele, kuidas märgata ja nimetada emotsioone ja nende komponente, muuta soovimatuid emotsioone või tulla nendega toime, ning vähendada positiivsete emotsioonide võimendamise abil emotsionaalset haavatavust"
+    },
+    {
+      "termin": "emotsiooni valitsemise oskused",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/emotsiooni%20valitsemise%20oskused",
+      "taht": "e",
+      "keel": "eesti",
+      "synonyymid": [
+        "emotsiooniregulatsiooni oskused",
+        "emotsiooni juhtimise oskused"
+      ],
+      "definitsioon": "dialektilise käitumisteraapia oskuste treeningu moodul, mis keskendub sellele, kuidas märgata ja nimetada emotsioone ja nende komponente, muuta soovimatuid emotsioone või tulla nendega toime, ning vähendada positiivsete emotsioonide võimendamise abil emotsionaalset haavatavust"
+    },
+    {
+      "termin": "emotsiooniregulatsiooni oskused",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/emotsiooniregulatsiooni%20oskused",
+      "taht": "e",
+      "keel": "eesti",
+      "synonyymid": [
+        "emotsiooni valitsemise oskused",
+        "emotsiooni juhtimise oskused"
+      ],
+      "definitsioon": "dialektilise käitumisteraapia oskuste treeningu moodul, mis keskendub sellele, kuidas märgata ja nimetada emotsioone ja nende komponente, muuta soovimatuid emotsioone või tulla nendega toime, ning vähendada positiivsete emotsioonide võimendamise abil emotsionaalset haavatavust"
+    },
+    {
+      "termin": "ending destructive relationships",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/ending%20destructive%20relationships",
+      "taht": "e",
+      "keel": "inglise",
+      "synonyymid": [],
+      "definitsioon": "suhtetõhususe oskuste üks eesmärk: lõpetada suhe, mille osas on vähe lootust suhet parandada, mis on ahistav või segab oluliste eesmärkide saavutamist"
+    },
+    {
+      "termin": "enese invalideerimine",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/enese%20invalideerimine",
+      "taht": "e",
+      "keel": "eesti",
+      "synonyymid": [],
+      "definitsioon": "reageerimine iseenda kogemusele viisil, mis annab inimesele tagasiside, et tema kogemus ei ole loogiline, mõistetav ega oluline"
+    },
+    {
+      "termin": "enese rahustamine viie meelega",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/enese%20rahustamine%20viie%20meelega",
+      "taht": "e",
+      "keel": "eesti",
+      "synonyymid": [],
+      "definitsioon": "Enese rahustamine on DKT oskus, mille sisuks on enda suhtes toetav, hoidev, rahutegev, õrn ja teadlikult lahke käitumine. Ennast rahustavad tegevused vähendavad emotsionaalse meele haavatavust ja impulsiivset käitumist, ning vähendavad ilmajäetuse tunnet, mis sageli haavatavuse tundega kaasneb. Need aitavad taluda valu ja stressi, tegemata olukorda hullemaks. Ennast saab rahustada viie meelega: nägemine, kuulmine, lõhnameel, maitsemeel, puutemeel."
+    },
+    {
+      "termin": "enesekehtestamise seitse sammu",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/enesekehtestamise%20seitse%20sammu",
+      "taht": "e",
+      "keel": "eesti",
+      "synonyymid": [],
+      "definitsioon": "suhtetõhususe oskuste kogumik, mis võimaldab tõhusalt saada soovitut, öelda \"ei\", jääda oma arvamuse juurde või saavutada mõnda muud suhtlemisega seotud eesmärki, enesekehtestamise oskused"
+    },
+    {
+      "termin": "eneseväärikuse säilitamise oskused",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/enesev%C3%A4%C3%A4rikuse%20s%C3%A4ilitamise%20oskused",
+      "taht": "e",
+      "keel": "eesti",
+      "synonyymid": [],
+      "definitsioon": "suhtetõhususe oskuste kogumik, mis aitab säilitada või parandada eneseväärikust, püüdes samal ajal suhtluses soovitut saavutada"
+    },
+    {
+      "termin": "eraldiseisev oskuste treening",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/eraldiseisev%20oskuste%20treening",
+      "taht": "e",
+      "keel": "eesti",
+      "synonyymid": [],
+      "definitsioon": "dialektilise käitumisteraapia selline vorm, mille käigus pakutakse osalejale üksnes oskuste treeningus osalemist"
+    },
+    {
+      "termin": "ergutamine",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/ergutamine",
+      "taht": "e",
+      "keel": "eesti",
+      "synonyymid": [
+        "kaasaelamine",
+        "julgustamine",
+        "kisakooriks olemine",
+        "toetamine"
+      ],
+      "definitsioon": "teraapiaprotsessis kliendi lootustunde, motivatsiooni ja koostöövalmiduse suurendamine erinevate tehnikate abil"
+    },
+    {
+      "termin": "exposure",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/exposure",
+      "taht": "e",
+      "keel": "inglise",
+      "synonyymid": [],
+      "definitsioon": "kiirguskaitses kasutatav nii füüsikalise suuruse tähenduses kui ka üldisemas tähenduses; kiiritus füüsikalise suurusena: footonite poolt õhuruumalas massiga dm tekitatud ühemärgiliste ioonide kogulaengu absoluutväärtuse ja dm suhe tingimusel, et kõik footonite poolt selles ruumalas vabastatud elektronid (ja positronid) on täielikult pidurdunud; SI-ühik: 1 C/kg; mitte-SI-ühik: R (röntgen); kiiritus üldisemas tähenduses: kokkupuude (või protseduur) ioniseeriva kiirgusega"
+    },
+    {
+      "termin": "extinction",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/extinction",
+      "taht": "e",
+      "keel": "inglise",
+      "synonyymid": [],
+      "definitsioon": "Taksoni (tavaliselt liigi) täielik (ülemaailmne) kadumine."
+    },
+    {
+      "termin": "FAST",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/FAST",
+      "taht": "F",
+      "keel": "inglise",
+      "synonyymid": [],
+      "definitsioon": "suhtetõhususe oskuste kogumik, mis aitab säilitada või parandada eneseväärikust, püüdes samal ajal suhtluses soovitut saavutada"
+    },
+    {
+      "termin": "finding and getting people to like you",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/finding%20and%20getting%20people%20to%20like%20you",
+      "taht": "f",
+      "keel": "inglise",
+      "synonyymid": [],
+      "definitsioon": "suhete loomise üks osa, mis puudutab inimeste leidmist ja sõprussuhete loomist, tuginedes läheduse ja sarnasuse põhimõtetele, vestluse alustamise ja säilitamise oskustele, meeldivuse väljendamisele ja gruppidega ühinemisele"
+    },
+    {
+      "termin": "GIVE",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/GIVE",
+      "taht": "G",
+      "keel": "inglise",
+      "synonyymid": [],
+      "definitsioon": "suhtetõhususe oskuste kogumik, mis on suunatud teise inimesega suhte säilitamisele või parandamisele, püüdes samal ajal suhtluses soovitut saavutada"
+    },
+    {
+      "termin": "group leader",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/group%20leader",
+      "taht": "g",
+      "keel": "inglise",
+      "synonyymid": [
+        "skills trainer"
+      ],
+      "definitsioon": "üks kahest grupiviisilise oskuste õppe läbiviijatest, kelle ülesanne on juhtida kohtumiste alustamise, koduse harjutamise ülevaatamise ning uute oskuste õpetamise protsessi"
+    },
+    {
+      "termin": "haavatavus",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/haavatavus",
+      "taht": "h",
+      "keel": "eesti",
+      "synonyymid": [],
+      "definitsioon": "a weakness, an attribute, or lack of control that would allow or facilitate a threat actuation against NATO classified information or supporting services and resources, nõrkus, omadus või kontrolli puudumine, mille tõttu tekib või võib tekkida oht NATO salastatud teabe või seda toetavate teenuste ja vahendite suhtes"
+    },
+    {
+      "termin": "half-smile",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/half-smile",
+      "taht": "h",
+      "keel": "inglise",
+      "synonyymid": [],
+      "definitsioon": "DKT oskus, mille eesmärgiks on reaalsuse aktsepteerimine oma kehaga, lõdvestades nägu, kael ja õlapiirkonna lihased, ning naeratades pooleldi oma huultega"
+    },
+    {
+      "termin": "heakskiit",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/heakskiit",
+      "taht": "h",
+      "keel": "eesti",
+      "synonyymid": [],
+      "definitsioon": "millegi heaks või õigeks pidamine, sobivaks tunnistamine, millegagi nõus olemine"
+    },
+    {
+      "termin": "hinnangulisus",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/hinnangulisus",
+      "taht": "h",
+      "keel": "eesti",
+      "synonyymid": [
+        "irreverents",
+        "järsk maneer",
+        "ootamatu maneer",
+        "sarkasm",
+        "iroonia"
+      ],
+      "definitsioon": "kommunikatsiooni strateegia, kus terapeut vastab tavapärasest erinevalt, et saada kliendi tähelepanu, leida alternatiivset vaatenurka või muuta kliendi emotsionaalset reaktsiooni"
+    },
+    {
+      "termin": "hooliv heasoovlikkus",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/hooliv%20heasoovlikkus",
+      "taht": "h",
+      "keel": "eesti",
+      "synonyymid": [],
+      "definitsioon": "Teadveloleku praktika, kus väljendatakse empaatiat ja heasoovlikkust nii enda kui ka teiste suhtes, eesmärgiga soodustada heaolu ja leevendada kannatusi."
+    },
+    {
+      "termin": "hävitavate suhete lõpetamine",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/h%C3%A4vitavate%20suhete%20l%C3%B5petamine",
+      "taht": "h",
+      "keel": "eesti",
+      "synonyymid": [
+        "segavate suhete lõpetamine"
+      ],
+      "definitsioon": "suhtetõhususe oskuste üks eesmärk: lõpetada suhe, mille osas on vähe lootust suhet parandada, mis on ahistav või segab oluliste eesmärkide saavutamist"
+    },
+    {
+      "termin": "ilma hinnanguteta",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/ilma%20hinnanguteta",
+      "taht": "i",
+      "keel": "eesti",
+      "synonyymid": [],
+      "definitsioon": "Üks DKT teadveloleku kuidas-oskus, hetke ja oma kogemuste tajumine sellistena nagu need on, ilma hinnanguid andmata."
+    },
+    {
+      "termin": "IMPROVE the moment",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/IMPROVE%20the%20moment",
+      "taht": "I",
+      "keel": "inglise",
+      "synonyymid": [],
+      "definitsioon": "Hulk konkreetsele inimesele sobivaid DKT strateegiaid, mis aitavad parandada hetke kvaliteeti, tehes kriisi üleelamise lihtsamaks. Hetke parandamiseks asendatakse mõtlemine hetkel toimuvatest negatiivsetest sündmustest mõtetega positiivsematest, et teha hetk positiivsemaks ja kergemini talutavaks. Oskus LEPPIMA koosneb järgnevatest allosadest: Lõõgastumine, Enda julgustamine, Palvus, Puhkus, Isiklik tähendus, Mõttepildid, Ainutähelepanu)., IMPROVE the moment - set of skills for use in a crisis situation to make it more bearable and to improve your thinking to be more positive (Imagery, Meaning, Prayer, Relaxation, One thing in the moment, Vacation, Encouragement)."
+    },
+    {
+      "termin": "individuaalteraapia",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/individuaalteraapia",
+      "taht": "i",
+      "keel": "eesti",
+      "synonyymid": [],
+      "definitsioon": "dialektilise käitumisteraapia komponent, mille käigus jälgitakse oma terapeudiga üks-ühele kohtumiste käigus ravieesmärkide täitmist ja toetatakse motivatsiooni ravis osaleda"
+    },
+    {
+      "termin": "individual therapy",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/individual%20therapy",
+      "taht": "i",
+      "keel": "inglise",
+      "synonyymid": [],
+      "definitsioon": "dialektilise käitumisteraapia komponent, mille käigus jälgitakse oma terapeudiga üks-ühele kohtumiste käigus ravieesmärkide täitmist ja toetatakse motivatsiooni ravis osaleda"
+    },
+    {
+      "termin": "inhibited grieving",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/inhibited%20grieving",
+      "taht": "i",
+      "keel": "inglise",
+      "synonyymid": [],
+      "definitsioon": "traumaatiliste kogemuste ja kaotustega kaasnev lein, millega toimetulekuks kasutatakse eelkõige vältivaid strateegiaid"
+    },
+    {
+      "termin": "inimeste leidmine ja neile meeldima hakkamine",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/inimeste%20leidmine%20ja%20neile%20meeldima%20hakkamine",
+      "taht": "i",
+      "keel": "eesti",
+      "synonyymid": [],
+      "definitsioon": "suhete loomise üks osa, mis puudutab inimeste leidmist ja sõprussuhete loomist, tuginedes läheduse ja sarnasuse põhimõtetele, vestluse alustamise ja säilitamise oskustele, meeldivuse väljendamisele ja gruppidega ühinemisele"
+    },
+    {
+      "termin": "inimestevahelise tõhususe oskused",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/inimestevahelise%20t%C3%B5hususe%20oskused",
+      "taht": "i",
+      "keel": "eesti",
+      "synonyymid": [
+        "suhtetõhususe oskused"
+      ],
+      "definitsioon": "dialektilise käitumisteraapia oskuste treeningu moodul, mis keskendub sellele, kuidas suhelda oma suhtlusvõrgustikuga tõhusalt, kutsuda teiste käitumises esile muutusi ning seista vastu teiste soovimatutele mõjutustele eesmärgiga vähendada valu ja kannatust"
+    },
+    {
+      "termin": "intermittent reinforcement",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/intermittent%20reinforcement",
+      "taht": "i",
+      "keel": "inglise",
+      "synonyymid": [],
+      "definitsioon": "soovitud käitumise tõenäosuse suurendamise strateegia, kus soovitud käitumise ilmnemist kinnitatakse vahetevahel"
+    },
+    {
+      "termin": "interpersonal effectiveness skills",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/interpersonal%20effectiveness%20skills",
+      "taht": "i",
+      "keel": "inglise",
+      "synonyymid": [],
+      "definitsioon": "dialektilise käitumisteraapia oskuste treeningu moodul, mis keskendub sellele, kuidas suhelda oma suhtlusvõrgustikuga tõhusalt, kutsuda teiste käitumises esile muutusi ning seista vastu teiste soovimatutele mõjutustele eesmärgiga vähendada valu ja kannatust"
+    },
+    {
+      "termin": "invalidation",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/invalidation",
+      "taht": "i",
+      "keel": "inglise",
+      "synonyymid": [],
+      "definitsioon": "inimese kogemusele reageerimine viisil, mis annab tagasiside, et tema kogemus ei ole loogiline, mõistetav ega oluline"
+    },
+    {
+      "termin": "invalideerimine",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/invalideerimine",
+      "taht": "i",
+      "keel": "eesti",
+      "synonyymid": [],
+      "definitsioon": "inimese kogemusele reageerimine viisil, mis annab tagasiside, et tema kogemus ei ole loogiline, mõistetav ega oluline"
+    },
+    {
+      "termin": "iroonia",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/iroonia",
+      "taht": "i",
+      "keel": "eesti",
+      "synonyymid": [],
+      "definitsioon": "peen, varjatud pilge, võte, kus millestki kõneldakse pilkeks teadlikult vastupidiselt sellele, mida mõeldakse"
+    },
+    {
+      "termin": "irreverence",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/irreverence",
+      "taht": "i",
+      "keel": "inglise",
+      "synonyymid": [],
+      "definitsioon": "kommunikatsiooni strateegia, kus terapeut vastab tavapärasest erinevalt, et saada kliendi tähelepanu, leida alternatiivset vaatenurka või muuta kliendi emotsionaalset reaktsiooni"
+    },
+    {
+      "termin": "irreverents",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/irreverents",
+      "taht": "i",
+      "keel": "eesti",
+      "synonyymid": [
+        "järsk maneer",
+        "ootamatu maneer",
+        "sarkasm",
+        "hinnangulisus",
+        "iroonia"
+      ],
+      "definitsioon": "kommunikatsiooni strateegia, kus terapeut vastab tavapärasest erinevalt, et saada kliendi tähelepanu, leida alternatiivset vaatenurka või muuta kliendi emotsionaalset reaktsiooni"
+    },
+    {
+      "termin": "isepäisus",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/isep%C3%A4isus",
+      "taht": "i",
+      "keel": "eesti",
+      "synonyymid": [
+        "isemeelikus",
+        "isemeelsus"
+      ],
+      "definitsioon": "oma arusaamisest või tahtmisest lähtumine, kangekaelsus, jonnakus"
+    },
+    {
+      "termin": "juhtumikorraldus",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/juhtumikorraldus",
+      "taht": "j",
+      "keel": "eesti",
+      "synonyymid": [],
+      "definitsioon": "sotsiaaltöövorm, mille puhul tegeldakse ühe juhtumiga algusest lõpuni"
+    },
+    {
+      "termin": "julgustamine",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/julgustamine",
+      "taht": "j",
+      "keel": "eesti",
+      "synonyymid": [
+        "kaasaelamine",
+        "kisakooriks olemine",
+        "toetamine",
+        "ergutamine"
+      ],
+      "definitsioon": "teraapiaprotsessis kliendi lootustunde, motivatsiooni ja koostöövalmiduse suurendamine erinevate tehnikate abil"
+    },
+    {
+      "termin": "järkjärguline kujundamine",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/j%C3%A4rkj%C3%A4rguline%20kujundamine",
+      "taht": "j",
+      "keel": "eesti",
+      "synonyymid": [],
+      "definitsioon": "teraapiatehnika, mille käigus tasustatakse soovitud käitumisele sarnaseid käitumisviise olukorras, kus soovitud käitumine ei ole jõukohane või saavutatav"
+    },
+    {
+      "termin": "järsk maneer",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/j%C3%A4rsk%20maneer",
+      "taht": "j",
+      "keel": "eesti",
+      "synonyymid": [
+        "irreverents",
+        "ootamatu maneer",
+        "sarkasm",
+        "hinnangulisus",
+        "iroonia"
+      ],
+      "definitsioon": "kommunikatsiooni strateegia, kus terapeut vastab tavapärasest erinevalt, et saada kliendi tähelepanu, leida alternatiivset vaatenurka või muuta kliendi emotsionaalset reaktsiooni"
+    },
+    {
+      "termin": "kaasaelamine",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/kaasaelamine",
+      "taht": "k",
+      "keel": "eesti",
+      "synonyymid": [
+        "põnevus",
+        "pinge"
+      ],
+      "definitsioon": "a tense wait, creating anxiety, experienced by the spectator (Lavandier, 2005) in responce to lack of certainty [...] about what is going to happen, especially to characters with whom the reader has established a bond of sympathy (Abrams & Harpham, 2012, p. 295), i.e. the uncertainty over the dramatic answer [to the 'dramatic question']. (Lavandier, 2005) As a plot evolves it arouses expectations [hopes and fears] in the [concerned] audience or reader about the future course of events and actions and how characters will respond to them. (Abrams & Harpham, 2012, p. 295) What will happen? is the foremost question in the audience's mind. (Howard & Mabley, 1993, p. 134) Suspense is sometimes a curious mixture of pain and pleasure (Hiltunen, 2002, p. 11). Also see stakes, obstacle., [the viewer's] feeling of fear and excitement created and built up by the narrative, consisting of hope for a desired outcome and, simultaneously, fear that the opposite will happen. (Griffiths, 2015), Tension is a mental, emotional strain for the viewer, a pleasurable anxiety or apprehension resulting from watching an uncertain, undecided, or mysterious situation. It consists of hope for a desired outcome and simultaneously, fear that the opposite will happen. (International Screenwriters' Association, 2017)"
+    },
+    {
+      "termin": "kaasgrupijuht",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/kaasgrupijuht",
+      "taht": "k",
+      "keel": "eesti",
+      "synonyymid": [
+        "oskuste grupi kaasjuht",
+        "kaasjuht"
+      ],
+      "definitsioon": "üks kahest grupiviisilise oskuste õppe läbiviijatest, kelle ülesanne on maandada grupiliikmete ja teise grupijuhi vahelisi pingeid, pöörata tähelepanu grupiliikmete individuaalsetele reaktsioonidele ja heaolule ning toetada teist grupijuhti oskuste õpetamisel"
+    },
+    {
+      "termin": "kaasjuht",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/kaasjuht",
+      "taht": "k",
+      "keel": "eesti",
+      "synonyymid": [
+        "oskuste grupi kaasjuht",
+        "kaasgrupijuht"
+      ],
+      "definitsioon": "üks kahest grupiviisilise oskuste õppe läbiviijatest, kelle ülesanne on maandada grupiliikmete ja teise grupijuhi vahelisi pingeid, pöörata tähelepanu grupiliikmete individuaalsetele reaktsioonidele ja heaolule ning toetada teist grupijuhti oskuste õpetamisel"
+    },
+    {
+      "termin": "kangekaelsus",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/kangekaelsus",
+      "taht": "k",
+      "keel": "eesti",
+      "synonyymid": [
+        "jäärapäisus",
+        "põikpäisus"
+      ],
+      "definitsioon": "jonnakus ja järeleandmatus, visalt mingi mõtte, arvamuse juures püsimine"
+    },
+    {
+      "termin": "karistamine",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/karistamine",
+      "taht": "k",
+      "keel": "eesti",
+      "synonyymid": [],
+      "definitsioon": "kasvatus- või mõjutusvahend, mida rakendatakse kuriteo, üleastumise, halva käitumise vms puhul, vastava vahendi rakendamine"
+    },
+    {
+      "termin": "kasud ja kahjud",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/kasud%20ja%20kahjud",
+      "taht": "k",
+      "keel": "eesti",
+      "synonyymid": [
+        "plussid ja miinused",
+        "tulud ja kulud"
+      ],
+      "definitsioon": "DKT oskus, mis hõlmab kriisis tekkivate käitumistungide järgi tegutsemise ja mittetegutsemise plusside ning miinuste läbikaalumist. Selleks kirjutatakse üles stressi talumise ja impulsiivsetele käitumistele vastu panemise positiivsed ja negatiivsed tagajärjed, ning stressi talumata jätmise ja impulsiivselt käitumise positiivsed ja negatiivsed tagajärjed."
+    },
+    {
+      "termin": "keha skaneerimise meditatsioon Samm Sammult",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/keha%20skaneerimise%20meditatsioon%20Samm%20Sammult",
+      "taht": "k",
+      "keel": "eesti",
+      "synonyymid": [],
+      "definitsioon": "dialektilise käitumisteraapia stressitaluvuse oskuste hulka kuuluv ca 30 min kestev harjutus, mis seisneb tähelepanu pööramises kehaaistingutele käesoleval hetkel hinnanguvabalt ja uudishimulikult, juhendatud samm-sammulises järjekorras"
+    },
+    {
+      "termin": "kehakeemia muutmine TIKK",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/kehakeemia%20muutmine%20TIKK",
+      "taht": "k",
+      "keel": "eesti",
+      "synonyymid": [],
+      "definitsioon": "Kehakeemia muutmine (TIKK: Temperatuuri langetamine, Intensiivne trenn, Kontrollitud hingamine; Kombineeritud lihaslõdvestus) on DKT kriisis ellujäämise oskus. TIKK oskuse erinevad võimalused muudavad kiirelt keha bioloogilisi reaktsioone ja alandavad emotsionaalset erutust, soodustades parasümpaatilise närvisüsteemi tööd ja vähendades sümpaatilise närvisüsteemi aktivatsiooni."
+    },
+    {
+      "termin": "kesktee",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/kesktee",
+      "taht": "k",
+      "keel": "eesti",
+      "synonyymid": [],
+      "definitsioon": "(kahe äärmuse vahepealse toimimisjoone või lahenduse, ka kompromissi kohta)"
+    },
+    {
+      "termin": "kesktee oskused",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/kesktee%20oskused",
+      "taht": "k",
+      "keel": "eesti",
+      "synonyymid": [
+        "keskteel kõndimise oskused"
+      ],
+      "definitsioon": "noorukitele kohandatud dialektilise käitumisteraapia programmi oskuste treeningu moodul, mis keskendub sellele, milliseid dilemmasid tuleb ette peresuhetes, ning suunavad võtma omaks dialektilist maailmavaadet, sh aktsepteerimise ja muutuste tegemise põhimõtteid"
+    },
+    {
+      "termin": "keskteel kõndimise oskused",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/keskteel%20k%C3%B5ndimise%20oskused",
+      "taht": "k",
+      "keel": "eesti",
+      "synonyymid": [
+        "kesktee oskused"
+      ],
+      "definitsioon": "noorukitele kohandatud dialektilise käitumisteraapia programmi oskuste treeningu moodul, mis keskendub sellele, milliseid dilemmasid tuleb ette peresuhetes, ning suunavad võtma omaks dialektilist maailmavaadet, sh aktsepteerimise ja muutuste tegemise põhimõtteid"
+    },
+    {
+      "termin": "kinnine grupp",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/kinnine%20grupp",
+      "taht": "k",
+      "keel": "eesti",
+      "synonyymid": [
+        "suletud grupp"
+      ],
+      "definitsioon": "grupiviisilise oskuste õppe formaat, mille puhul moodustatakse programmi alguses üks grupp, mis käib teatud aja koos, ning uusi liikmeid gruppi pärast liitumisperioodi enam vastu ei võeta"
+    },
+    {
+      "termin": "kinnitamine",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/kinnitamine",
+      "taht": "k",
+      "keel": "eesti",
+      "synonyymid": [
+        "kinnitus",
+        "kinnisidumine",
+        "sidumine"
+      ],
+      "definitsioon": "the fastening or securing of a load to its carrier by use of ropes, cables or other means to prevent shifting during transport, lasti kinnisidumine või kinnitamine kanduri külge, kasutades köisi, trosse või muid vahendeid, et takistada lasti liikumist veo ajal"
+    },
+    {
+      "termin": "kinnituskava",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/kinnituskava",
+      "taht": "k",
+      "keel": "eesti",
+      "synonyymid": [
+        "tasustamiskava",
+        "sarrustuskava"
+      ],
+      "definitsioon": "struktureeritud plaan, mis sätestab konkreetsetele käitumistele järgnevad tagajärjed, mida tavaliselt kasutatakse soovitud käitumiste suurendamiseks ja soovimatute käitumiste vähendamiseks"
+    },
+    {
+      "termin": "kirjelda",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/kirjelda",
+      "taht": "k",
+      "keel": "eesti",
+      "synonyymid": [],
+      "definitsioon": "üks neljast teenusedisaini protsessi etapist: avasta, kirjelda, arenda ja teosta, one of the four distinct phases of service design process: discover, define,develop and deliver"
+    },
+    {
+      "termin": "kisakooriks olemine",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/kisakooriks%20olemine",
+      "taht": "k",
+      "keel": "eesti",
+      "synonyymid": [
+        "kaasaelamine",
+        "julgustamine",
+        "toetamine",
+        "ergutamine"
+      ],
+      "definitsioon": "teraapiaprotsessis kliendi lootustunde, motivatsiooni ja koostöövalmiduse suurendamine erinevate tehnikate abil"
+    },
+    {
+      "termin": "klaar meel",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/klaar%20meel",
+      "taht": "k",
+      "keel": "eesti",
+      "synonyymid": [
+        "selge meel"
+      ],
+      "definitsioon": "üks kolmest meeleseisundist dialektilises käitumisteraapias, mis puudutab sõltuvuskäitumist. Selge meel on süntees puhta ja sõltlase meele vahel. Selge meele seisundis on inimene kaine, ja samal ajal teadlik tagasilanguse ohtudest, seega tegeleb ta aktiivselt tagasilööke ja tagasilangust ennetavate käitumistega. Selge meel on sõltuvusega seonduv, kuid targa meelega väga sarnane. (Linehan, 2015, p483)."
+    },
+    {
+      "termin": "kliendi juhendamine",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/kliendi%20juhendamine",
+      "taht": "k",
+      "keel": "eesti",
+      "synonyymid": [
+        "kliendi konsulteerimine",
+        "kliendi jõustamine"
+      ],
+      "definitsioon": "dialektilises käitumisteraapias osaleja jõustamine võtma aktiivne ja vastutav roll end ümbritseva keskkonna muutmisel oma heaolu toetavaks"
+    },
+    {
+      "termin": "kliendi jõustamine",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/kliendi%20j%C3%B5ustamine",
+      "taht": "k",
+      "keel": "eesti",
+      "synonyymid": [
+        "kliendi konsulteerimine",
+        "kliendi juhendamine"
+      ],
+      "definitsioon": "dialektilises käitumisteraapias osaleja jõustamine võtma aktiivne ja vastutav roll end ümbritseva keskkonna muutmisel oma heaolu toetavaks"
+    },
+    {
+      "termin": "kliendi konsulteerimine",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/kliendi%20konsulteerimine",
+      "taht": "k",
+      "keel": "eesti",
+      "synonyymid": [
+        "kliendi jõustamine",
+        "kliendi juhendamine"
+      ],
+      "definitsioon": "dialektilises käitumisteraapias osaleja jõustamine võtma aktiivne ja vastutav roll end ümbritseva keskkonna muutmisel oma heaolu toetavaks"
+    },
+    {
+      "termin": "kognitiivne modifikatsioon",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/kognitiivne%20modifikatsioon",
+      "taht": "k",
+      "keel": "eesti",
+      "synonyymid": [
+        "mõtete muutmine"
+      ],
+      "definitsioon": "kognitiivse sisu ja stiilide hindamine, teadvustamine, sõnastamine ja muutmine"
+    },
+    {
+      "termin": "kognitiivne restruktureerimine",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/kognitiivne%20restruktureerimine",
+      "taht": "k",
+      "keel": "eesti",
+      "synonyymid": [
+        "mõtete ümberstruktureerimine"
+      ],
+      "definitsioon": "olemasolevate düsfunktsionaalsete mõtete/uskumuste sõnastamine ning nende asemel kasulikumate alternatiivide sõnastamine"
+    },
+    {
+      "termin": "kogukondlik tasustamine",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/kogukondlik%20tasustamine",
+      "taht": "k",
+      "keel": "eesti",
+      "synonyymid": [],
+      "definitsioon": "DKT oskus, mis viitab keskkonna ümberstruktureerimisele viisil, mis tasustaks sõltuvuse asemel karskust"
+    },
+    {
+      "termin": "konsultatsioonimeeskond",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/konsultatsioonimeeskond",
+      "taht": "k",
+      "keel": "eesti",
+      "synonyymid": [
+        "DKT meeskond",
+        "DKT tiim",
+        "konsultatsioonitiim"
+      ],
+      "definitsioon": "dialektilist käitumisteraapiat ühe raviprogrammi raames osutavad terapeudid, kes kohtuvad omavahel regulaarselt"
+    },
+    {
+      "termin": "konsultatsioonitiim",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/konsultatsioonitiim",
+      "taht": "k",
+      "keel": "eesti",
+      "synonyymid": [
+        "DKT meeskond",
+        "DKT tiim",
+        "konsultatsioonimeeskond"
+      ],
+      "definitsioon": "dialektilist käitumisteraapiat ühe raviprogrammi raames osutavad terapeudid, kes kohtuvad omavahel regulaarselt"
+    },
+    {
+      "termin": "kriis",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/kriis",
+      "taht": "k",
+      "keel": "eesti",
+      "synonyymid": [
+        "kriisiolukord",
+        "kriisisituatsioon"
+      ],
+      "definitsioon": "vastuoludest lõhestatud pingeline (sotsiaalne, poliitiline) seisund, mille hrl on põhjustanud raskused, ohud, ebastabiilsed olud ning millega võib kaasneda ähvardavalt järsk muutus"
+    },
+    {
+      "termin": "kriisikäitumisoskused",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/kriisik%C3%A4itumisoskused",
+      "taht": "k",
+      "keel": "eesti",
+      "synonyymid": [
+        "kriisis ellujäämise oskused"
+      ],
+      "definitsioon": "DKT oskused, mida kasutatakse kriisiolukorra, valusate emotsioonide ja tungide äratalumiseks ning üleelamiseks ilma olukorda hullemaks tegemata"
+    },
+    {
+      "termin": "kriisioskused",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/kriisioskused",
+      "taht": "k",
+      "keel": "eesti",
+      "synonyymid": [
+        "stressitaluvuse oskused",
+        "äärmusliku pinge talumise oskused"
+      ],
+      "definitsioon": "dialektilise käitumisteraapia oskuste treeningu moodul, mis keskendub sellele, kuidas valu ja kannatuse kiuste elada, oma eesmärke täita ja tekkinud raskusi aktsepteerida"
+    },
+    {
+      "termin": "kriisis ellujäämise oskused",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/kriisis%20elluj%C3%A4%C3%A4mise%20oskused",
+      "taht": "k",
+      "keel": "eesti",
+      "synonyymid": [
+        "kriisikäitumisoskused"
+      ],
+      "definitsioon": "DKT oskused, mida kasutatakse kriisiolukorra, valusate emotsioonide ja tungide äratalumiseks ning üleelamiseks ilma olukorda hullemaks tegemata"
+    },
+    {
+      "termin": "kuidas-oskused",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/kuidas-oskused",
+      "taht": "k",
+      "keel": "eesti",
+      "synonyymid": [],
+      "definitsioon": "Kolm DKT teadveloleku oskust, mille kaudu saavutada teadvelolekuseisund: ilma hinnangute, täie tähelepanu ja tõhususega."
+    },
+    {
+      "termin": "kustutamine",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/kustutamine",
+      "taht": "k",
+      "keel": "eesti",
+      "synonyymid": [],
+      "definitsioon": "sletting, tilintetgjørelse, ødeleggelse, tap"
+    },
+    {
+      "termin": "käitumine",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/k%C3%A4itumine",
+      "taht": "k",
+      "keel": "eesti",
+      "synonyymid": [
+        "istumine-astumine",
+        "ülalpidamine"
+      ],
+      "definitsioon": "viis või laad, kuidas keegi või miski reageerib, teotseb või töötab"
+    },
+    {
+      "termin": "life worth living",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/life%20worth%20living",
+      "taht": "l",
+      "keel": "inglise",
+      "synonyymid": [],
+      "definitsioon": "dialektilises käitumisteraapias elu, mis on rahuldustpakkuv, väärtustega kooskõlaline ning tähendusrikas"
+    },
+    {
+      "termin": "life-threatening behavior",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/life-threatening%20behavior",
+      "taht": "l",
+      "keel": "inglise",
+      "synonyymid": [],
+      "definitsioon": "käitumine, millega kaasneb kõrge suitsiidrisk"
+    },
+    {
+      "termin": "link",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/link",
+      "taht": "l",
+      "keel": "inglise",
+      "synonyymid": [
+        "connect",
+        "bind"
+      ],
+      "definitsioon": "(inimesi) seesmiselt ühtseks, kokkukuuluvaks muutma, mõtteliselt või tunnetes ühendama"
+    },
+    {
+      "termin": "loving kindness",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/loving%20kindness",
+      "taht": "l",
+      "keel": "inglise",
+      "synonyymid": [
+        "love"
+      ],
+      "definitsioon": "konfutsianismis inimlikkusega tihedalt seotud mõiste"
+    },
+    {
+      "termin": "lüli",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/l%C3%BCli",
+      "taht": "l",
+      "keel": "eesti",
+      "synonyymid": [],
+      "definitsioon": "süsteemi, koosluse vm toimiva terviku üks (järjestikune, siduv) osa või lõik, millegi allüksus"
+    },
+    {
+      "termin": "meele suunamine",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/meele%20suunamine",
+      "taht": "m",
+      "keel": "eesti",
+      "synonyymid": [],
+      "definitsioon": "Meele suunamine on teadliku valiku tegemine tegelikkuse aktsepteerimise kasuks."
+    },
+    {
+      "termin": "meeleseisundid",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/meeleseisundid",
+      "taht": "m",
+      "keel": "eesti",
+      "synonyymid": [],
+      "definitsioon": "Kolm erinevat meeleseisundit DKT-s: emotsionaalne meel, ratsionaalne meel ja tark meel."
+    },
+    {
+      "termin": "middle path",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/middle%20path",
+      "taht": "m",
+      "keel": "inglise",
+      "synonyymid": [
+        "middle way"
+      ],
+      "definitsioon": "budismi olemust iseloomustav mõiste, mis määratleb seda kui äärmuste vältimist"
+    },
+    {
+      "termin": "mindfulness",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/mindfulness",
+      "taht": "m",
+      "keel": "inglise",
+      "synonyymid": [],
+      "definitsioon": "vaimne seisund, millele on tunnuslik oma kogemuste ärgas jälgimine reaalajas"
+    },
+    {
+      "termin": "mindfulness of current thoughts",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/mindfulness%20of%20current%20thoughts",
+      "taht": "m",
+      "keel": "inglise",
+      "synonyymid": [],
+      "definitsioon": "DKT oskus, mis hõlmab oma mõtete minna ja tulla laskmist ning nende vaatlemist püüdeta neid kontrollida või muuta. Mõtteid vaadeldakse kui mõtteid, mitte kui fakte maailma kohta."
+    },
+    {
+      "termin": "mindfulness of others",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/mindfulness%20of%20others",
+      "taht": "m",
+      "keel": "inglise",
+      "synonyymid": [],
+      "definitsioon": "suhete loomise üks osa, mis seisneb teiste inimeste jälgimises ja tähelepanelikkuses nende suhtes, nähtu hinnanguvabas kirjeldamises ning suhtlusvoos osalemises"
+    },
+    {
+      "termin": "mis-oskused",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/mis-oskused",
+      "taht": "m",
+      "keel": "eesti",
+      "synonyymid": [],
+      "definitsioon": "Kolm DKT teadveloleku praktikat, mida kasutada hetkes olemiseks: vaatlemine, kirjeldamine ja osalemine."
+    },
+    {
+      "termin": "missing-links analysis",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/missing-links%20analysis",
+      "taht": "m",
+      "keel": "inglise",
+      "synonyymid": [],
+      "definitsioon": "ahelanalüüsi liik, mille eesmärk on tuvastada takistused ehk puuduvad lülid, mis ilmnesid olukordades, kus inimene ei ole teinud kokkulepitud tegevust"
+    },
+    {
+      "termin": "mittesuitsidaalne enesevigastamine",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/mittesuitsidaalne%20enesevigastamine",
+      "taht": "m",
+      "keel": "eesti",
+      "synonyymid": [
+        "parasuitsidaalne käitumine"
+      ],
+      "definitsioon": "endkahjustavad käitumised, mille eesmärk ei ole suitsiid"
+    },
+    {
+      "termin": "muutus",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/muutus",
+      "taht": "m",
+      "keel": "eesti",
+      "synonyymid": [
+        "muut"
+      ],
+      "definitsioon": "senisest erinevaks muutumine (sündmuse või protsessina)"
+    },
+    {
+      "termin": "mõtete muutmine",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/m%C3%B5tete%20muutmine",
+      "taht": "m",
+      "keel": "eesti",
+      "synonyymid": [
+        "kognitiivne modifikatsioon"
+      ],
+      "definitsioon": "kognitiivse sisu ja stiilide hindamine, teadvustamine, sõnastamine ja muutmine"
+    },
+    {
+      "termin": "mõtete ümberstruktureerimine",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/m%C3%B5tete%20%C3%BCmberstruktureerimine",
+      "taht": "m",
+      "keel": "eesti",
+      "synonyymid": [
+        "kognitiivne restruktureerimine"
+      ],
+      "definitsioon": "olemasolevate düsfunktsionaalsete mõtete/uskumuste sõnastamine ning nende asemel kasulikumate alternatiivide sõnastamine"
+    },
+    {
+      "termin": "mündimäng",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/m%C3%BCndim%C3%A4ng",
+      "taht": "m",
+      "keel": "eesti",
+      "synonyymid": [],
+      "definitsioon": "dialektilise käitumisteraapia tehnika, mis aitab konkreetses olukorras teha parim otsus selle kohta, kui järjepidevalt midagi paluda või millestki keelduda"
+    },
+    {
+      "termin": "nonjudgmentally",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/nonjudgmentally",
+      "taht": "n",
+      "keel": "inglise",
+      "synonyymid": [],
+      "definitsioon": "Üks DKT teadveloleku kuidas-oskus, hetke ja oma kogemuste tajumine sellistena nagu need on, ilma hinnanguid andmata."
+    },
+    {
+      "termin": "nõustumine",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/n%C3%B5ustumine",
+      "taht": "n",
+      "keel": "eesti",
+      "synonyymid": [
+        "valideerimine",
+        "heakskiit"
+      ],
+      "definitsioon": "teise inimese kogemuses ja käitumises loogika leidmine ning selle mõistmise väljendamine"
+    },
+    {
+      "termin": "objectives effectiveness",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/objectives%20effectiveness",
+      "taht": "o",
+      "keel": "inglise",
+      "synonyymid": [],
+      "definitsioon": "üks võimalik eesmärk suhtlemisolukordades: antud olukorras tulemuse või eesmärgi saavutamine"
+    },
+    {
+      "termin": "observe",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/observe",
+      "taht": "o",
+      "keel": "inglise",
+      "synonyymid": [],
+      "definitsioon": "midagi või kedagi (liikuvat) pilguga saates vaatlema, ainiti silmitsedes uurima"
+    },
+    {
+      "termin": "olev meel",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/olev%20meel",
+      "taht": "o",
+      "keel": "eesti",
+      "synonyymid": [],
+      "definitsioon": "Meeleseisund DKT-s, kus inimene lihtsalt on ja kogeb hetke ilma püüdluseta seda muuta või hinnanguid anda."
+    },
+    {
+      "termin": "one-mindfully",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/one-mindfully",
+      "taht": "o",
+      "keel": "inglise",
+      "synonyymid": [],
+      "definitsioon": "Üks teadveloleku kuidas-oskus DKT-s, keskendumine ühele tegevusele korraga, selle kaudu täielikult hetkes olemine."
+    },
+    {
+      "termin": "ootamatu maneer",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/ootamatu%20maneer",
+      "taht": "o",
+      "keel": "eesti",
+      "synonyymid": [
+        "irreverents",
+        "järsk maneer",
+        "sarkasm",
+        "hinnangulisus",
+        "iroonia"
+      ],
+      "definitsioon": "kommunikatsiooni strateegia, kus terapeut vastab tavapärasest erinevalt, et saada kliendi tähelepanu, leida alternatiivset vaatenurka või muuta kliendi emotsionaalset reaktsiooni"
+    },
+    {
+      "termin": "open group",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/open%20group",
+      "taht": "o",
+      "keel": "inglise",
+      "synonyymid": [],
+      "definitsioon": "grupiviisilise oskuste õppe formaat, mille käigus saavad uued liikmed kogu programmi vältel liituda"
+    },
+    {
+      "termin": "osale",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/osale",
+      "taht": "o",
+      "keel": "eesti",
+      "synonyymid": [],
+      "definitsioon": "Üks teadveloleku mis-oskus DKT-s, teadlik ja aktiivne osalemine ja pühendumine hetke tegevustele."
+    },
+    {
+      "termin": "oskus",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/oskus",
+      "taht": "o",
+      "keel": "eesti",
+      "synonyymid": [],
+      "definitsioon": "õppimise ja harjutamise teel omandatud asjatundlikkus milleski, võime, osavus millekski, mingil alal"
+    },
+    {
+      "termin": "oskus LEPPIMA",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/oskus%20LEPPIMA",
+      "taht": "o",
+      "keel": "eesti",
+      "synonyymid": [],
+      "definitsioon": "Hulk konkreetsele inimesele sobivaid DKT strateegiaid, mis aitavad parandada hetke kvaliteeti, tehes kriisi üleelamise lihtsamaks. Hetke parandamiseks asendatakse mõtlemine hetkel toimuvatest negatiivsetest sündmustest mõtetega positiivsematest, et teha hetk positiivsemaks ja kergemini talutavaks. Oskus LEPPIMA koosneb järgnevatest allosadest: Lõõgastumine, Enda julgustamine, Palvus, Puhkus, Isiklik tähendus, Mõttepildid, Ainutähelepanu)., IMPROVE the moment - set of skills for use in a crisis situation to make it more bearable and to improve your thinking to be more positive (Imagery, Meaning, Prayer, Relaxation, One thing in the moment, Vacation, Encouragement)."
+    },
+    {
+      "termin": "oskus STOP",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/oskus%20STOP",
+      "taht": "o",
+      "keel": "eesti",
+      "synonyymid": [],
+      "definitsioon": "DKT kriisis ellujäämise oskus, mis aitab säilitada kontrolli olukorras, kus emotsionaalne meel kipub üle võtma ja reaktsioonid impulsiivseks muutuma. STOP oskus koosneb neljast sammust selles järjekorras: 1. Stopp (Peatu, ära reageeri), 2. Tagane ja tõmba hinge (astu samm tagasi, anna endale aega mõelda, ja reguleeri hingamine rahulikumaks, astu füüsiline samm tagasi); 3. Ole kõrvaltvaataja (Vaatle hinnanguvabalt fakte), 4. Praktiseeri teadvelolekut (Tee seda, mis on tõhus antud olukorras)., The STOP skill is a crisis survival skill that consists of the following sequence of steps: Stop, Take a step back, Observe, and Proceed mindfully."
+    },
+    {
+      "termin": "oskuslikud viisid",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/oskuslikud%20viisid",
+      "taht": "o",
+      "keel": "eesti",
+      "synonyymid": [],
+      "definitsioon": "Praktilised või tõhusad viisid DKT-s, mida kasutatakse eesmärkide saavutamiseks või probleemide lahendamiseks teadveloleku abil."
+    },
+    {
+      "termin": "oskuste grupi juht",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/oskuste%20grupi%20juht",
+      "taht": "o",
+      "keel": "eesti",
+      "synonyymid": [
+        "põhiterapeut"
+      ],
+      "definitsioon": "üks kahest grupiviisilise oskuste õppe läbiviijatest, kelle ülesanne on juhtida kohtumiste alustamise, koduse harjutamise ülevaatamise ning uute oskuste õpetamise protsessi"
+    },
+    {
+      "termin": "oskuste grupi kaasjuht",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/oskuste%20grupi%20kaasjuht",
+      "taht": "o",
+      "keel": "eesti",
+      "synonyymid": [
+        "kaasgrupijuht",
+        "kaasjuht"
+      ],
+      "definitsioon": "üks kahest grupiviisilise oskuste õppe läbiviijatest, kelle ülesanne on maandada grupiliikmete ja teise grupijuhi vahelisi pingeid, pöörata tähelepanu grupiliikmete individuaalsetele reaktsioonidele ja heaolule ning toetada teist grupijuhti oskuste õpetamisel"
+    },
+    {
+      "termin": "oskuste treening",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/oskuste%20treening",
+      "taht": "o",
+      "keel": "eesti",
+      "synonyymid": [
+        "oskuste õpe"
+      ],
+      "definitsioon": "dialektilise käitumisteraapia komponent, struktureeritud psühhohariduslik sekkumine, mille käigus õpitakse teadveloleku, emotsiooniregulatsiooni, stressitaluvuse ja suhtetõhususe oskuseid"
+    },
+    {
+      "termin": "oskuste õpe",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/oskuste%20%C3%B5pe",
+      "taht": "o",
+      "keel": "eesti",
+      "synonyymid": [
+        "oskuste treening"
+      ],
+      "definitsioon": "dialektilise käitumisteraapia komponent, struktureeritud psühhohariduslik sekkumine, mille käigus õpitakse teadveloleku, emotsiooniregulatsiooni, stressitaluvuse ja suhtetõhususe oskuseid"
+    },
+    {
+      "termin": "parasuicidal behavior",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/parasuicidal%20behavior",
+      "taht": "p",
+      "keel": "inglise",
+      "synonyymid": [],
+      "definitsioon": "endkahjustavad käitumised, mille eesmärk ei ole suitsiid"
+    },
+    {
+      "termin": "parasuitsidaalne käitumine",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/parasuitsidaalne%20k%C3%A4itumine",
+      "taht": "p",
+      "keel": "eesti",
+      "synonyymid": [
+        "mittesuitsidaalne enesevigastamine"
+      ],
+      "definitsioon": "endkahjustavad käitumised, mille eesmärk ei ole suitsiid"
+    },
+    {
+      "termin": "participate",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/participate",
+      "taht": "p",
+      "keel": "inglise",
+      "synonyymid": [
+        "take part"
+      ],
+      "definitsioon": "koos teistega mingil üritusel, sündmusel olema, teistega koos midagi tegema"
+    },
+    {
+      "termin": "phone coaching",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/phone%20coaching",
+      "taht": "p",
+      "keel": "inglise",
+      "synonyymid": [],
+      "definitsioon": "dialektilise käitumisteraapia komponent, mille raames terapeut toetab kohtumistevaheliste telefonikõnedega kriisiolukordade tõhusat lahendamist, oskuste üldistamist igapäevaellu ning terapeutilist suhet"
+    },
+    {
+      "termin": "pidev sarrustamine",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/pidev%20sarrustamine",
+      "taht": "p",
+      "keel": "eesti",
+      "synonyymid": [],
+      "definitsioon": "soovitud käitumise tõenäosuse suurendamise strateegia, kus kinnitatakse iga soovitud käitumise ilmnemist"
+    },
+    {
+      "termin": "pidevad kriisid",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/pidevad%20kriisid",
+      "taht": "p",
+      "keel": "eesti",
+      "synonyymid": [],
+      "definitsioon": "tsükkel, kus probleemolukordadega toimetulekuks mittetõhusate toimetulekuviiside kasutamine soodustab järgnevate probleemolukordade, inteniivsete emotsioonide tekkimist ja mittetõhusate toimetulekuviiside kasutamist"
+    },
+    {
+      "termin": "plussid ja miinused",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/plussid%20ja%20miinused",
+      "taht": "p",
+      "keel": "eesti",
+      "synonyymid": [
+        "kasud ja kahjud",
+        "tulud ja kulud"
+      ],
+      "definitsioon": "DKT oskus, mis hõlmab kriisis tekkivate käitumistungide järgi tegutsemise ja mittetegutsemise plusside ning miinuste läbikaalumist. Selleks kirjutatakse üles stressi talumise ja impulsiivsetele käitumistele vastu panemise positiivsed ja negatiivsed tagajärjed, ning stressi talumata jätmise ja impulsiivselt käitumise positiivsed ja negatiivsed tagajärjed."
+    },
+    {
+      "termin": "poolnaeratus",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/poolnaeratus",
+      "taht": "p",
+      "keel": "eesti",
+      "synonyymid": [],
+      "definitsioon": "põgus naeratus"
+    },
+    {
+      "termin": "pretreatment",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/pretreatment",
+      "taht": "p",
+      "keel": "inglise",
+      "synonyymid": [],
+      "definitsioon": "aktiivsele ravile eelnevad kohtumised individuaalterapeudiga, mille eesmärk on jõuda ühisele arusaamale koostöö jätkamise osas ning selgitada ravisekkumises osalejale ravi olemust, selleks vajalikku pühendumust ning ravi mõjutavaid asjaolusid"
+    },
+    {
+      "termin": "probleemkäitumine",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/probleemk%C3%A4itumine",
+      "taht": "p",
+      "keel": "eesti",
+      "synonyymid": [],
+      "definitsioon": "käitumine, mis on kahjulik, funktsioneerimist takistav või vastuolus inimese poolt endale seatud eesmärkidega"
+    },
+    {
+      "termin": "problem behavior",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/problem%20behavior",
+      "taht": "p",
+      "keel": "inglise",
+      "synonyymid": [],
+      "definitsioon": "käitumine, mis on kahjulik, funktsioneerimist takistav või vastuolus inimese poolt endale seatud eesmärkidega"
+    },
+    {
+      "termin": "problems in living",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/problems%20in%20living",
+      "taht": "p",
+      "keel": "inglise",
+      "synonyymid": [],
+      "definitsioon": "patsiendi elus esinevad probleemid, mis ei avaldu elu ohustaval või elukvaliteeti oluliselt häirival tasemel"
+    },
+    {
+      "termin": "prompting event",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/prompting%20event",
+      "taht": "p",
+      "keel": "inglise",
+      "synonyymid": [],
+      "definitsioon": "konkreetne väline või sisemine sündmus, mis käivitab probleemkäitumiseni viiva reaktsioonide ahela"
+    },
+    {
+      "termin": "pros and cons",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/pros%20and%20cons",
+      "taht": "p",
+      "keel": "inglise",
+      "synonyymid": [],
+      "definitsioon": "DKT oskus, mis hõlmab kriisis tekkivate käitumistungide järgi tegutsemise ja mittetegutsemise plusside ning miinuste läbikaalumist. Selleks kirjutatakse üles stressi talumise ja impulsiivsetele käitumistele vastu panemise positiivsed ja negatiivsed tagajärjed, ning stressi talumata jätmise ja impulsiivselt käitumise positiivsed ja negatiivsed tagajärjed."
+    },
+    {
+      "termin": "puhas meel",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/puhas%20meel",
+      "taht": "p",
+      "keel": "eesti",
+      "synonyymid": [],
+      "definitsioon": "üks kolmest meeleseisundist dialektilises käitumisteraapias, mis puudutab sõltuvuskäitumist. Puhta meele seisund kirjeldab kainust ja sõltuvuskäitumistest hoidumist, kuid samaaegset tagasilanguse ohu eitamist. Puhta meele seisundis võib inimene end tunda võitmatuna ja immuunsena tagasilanguste suhtes, kuid see tunne on moonutatud ja esineb risk, et inimene ei püüa enam sõltuvusega seotud ahvatlusi vältida ega tagasilanguse ennetamise strateegiaid kasutada, mistõttu väheneb valmisolek adekvaatselt sõltuvustungi naasmisele reageerida."
+    },
+    {
+      "termin": "punishment",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/punishment",
+      "taht": "p",
+      "keel": "inglise",
+      "synonyymid": [
+        "penalty"
+      ],
+      "definitsioon": "kasvatus- või mõjutusvahend, mida rakendatakse kuriteo, üleastumise, halva käitumise vms puhul, süüdi oleva isiku suhtes kohtulikult rakendatav sunniabinõu"
+    },
+    {
+      "termin": "puuduvate lülide analüüs",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/puuduvate%20l%C3%BClide%20anal%C3%BC%C3%BCs",
+      "taht": "p",
+      "keel": "eesti",
+      "synonyymid": [],
+      "definitsioon": "ahelanalüüsi liik, mille eesmärk on tuvastada takistused ehk puuduvad lülid, mis ilmnesid olukordades, kus inimene ei ole teinud kokkulepitud tegevust"
+    },
+    {
+      "termin": "päevikukaart",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/p%C3%A4evikukaart",
+      "taht": "p",
+      "keel": "eesti",
+      "synonyymid": [],
+      "definitsioon": "tööriist dialektilise käitumisteraapia raames igapäevase käitumise kohta info kogumiseks"
+    },
+    {
+      "termin": "põhiterapeut",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/p%C3%B5hiterapeut",
+      "taht": "p",
+      "keel": "eesti",
+      "synonyymid": [
+        "oskuste grupi juht"
+      ],
+      "definitsioon": "üks kahest grupiviisilise oskuste õppe läbiviijatest, kelle ülesanne on juhtida kohtumiste alustamise, koduse harjutamise ülevaatamise ning uute oskuste õpetamise protsessi"
+    },
+    {
+      "termin": "pühendumine",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/p%C3%BChendumine",
+      "taht": "p",
+      "keel": "eesti",
+      "synonyymid": [],
+      "definitsioon": "millegagi innukalt (ka muud välistavalt) tegelemine"
+    },
+    {
+      "termin": "quality-of-life interfering behavior",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/quality-of-life%20interfering%20behavior",
+      "taht": "q",
+      "keel": "inglise",
+      "synonyymid": [],
+      "definitsioon": "käitumine, mis ajas püsimisel hakkab suure tõenäosusega oluliselt elukvaliteeti vähendama"
+    },
+    {
+      "termin": "radical acceptance",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/radical%20acceptance",
+      "taht": "r",
+      "keel": "inglise",
+      "synonyymid": [],
+      "definitsioon": "Radikaalne aktsepteerimine on tegelikkuse aktsepteerimise oskus, mis tähendab täielikku avatust reaalsuse faktidele, nii nagu need on, ilma jonnita ja ilma ebatõhusa vastuhakkamiseta."
+    },
+    {
+      "termin": "radikaalne aktsepteerimine",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/radikaalne%20aktsepteerimine",
+      "taht": "r",
+      "keel": "eesti",
+      "synonyymid": [],
+      "definitsioon": "Radikaalne aktsepteerimine on tegelikkuse aktsepteerimise oskus, mis tähendab täielikku avatust reaalsuse faktidele, nii nagu need on, ilma jonnita ja ilma ebatõhusa vastuhakkamiseta."
+    },
+    {
+      "termin": "rational mind",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/rational%20mind",
+      "taht": "r",
+      "keel": "inglise",
+      "synonyymid": [],
+      "definitsioon": "Üks kolmest meeleseisundist DKT-s, kus tegutsetakse ja otsustatakse ratsionaalselt, võttes arvesse vaid fakte ja objektiivseid tõendeid."
+    },
+    {
+      "termin": "ratsionaalne meel",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/ratsionaalne%20meel",
+      "taht": "r",
+      "keel": "eesti",
+      "synonyymid": [],
+      "definitsioon": "Üks kolmest meeleseisundist DKT-s, kus tegutsetakse ja otsustatakse ratsionaalselt, võttes arvesse vaid fakte ja objektiivseid tõendeid."
+    },
+    {
+      "termin": "ravi komponent",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/ravi%20komponent",
+      "taht": "r",
+      "keel": "eesti",
+      "synonyymid": [
+        "ravivorm",
+        "ravi modaalsus"
+      ],
+      "definitsioon": "dialektilise käitumisteraapia programmi osad: individuaalne psühhoteraapia, grupiviisiline oskuste treening, telefonikonsultatsioon ja konsultatsioon DKT meeskonnale"
+    },
+    {
+      "termin": "ravi modaalsus",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/ravi%20modaalsus",
+      "taht": "r",
+      "keel": "eesti",
+      "synonyymid": [
+        "ravi komponent",
+        "ravivorm"
+      ],
+      "definitsioon": "dialektilise käitumisteraapia programmi osad: individuaalne psühhoteraapia, grupiviisiline oskuste treening, telefonikonsultatsioon ja konsultatsioon DKT meeskonnale"
+    },
+    {
+      "termin": "ravieelne etapp",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/ravieelne%20etapp",
+      "taht": "r",
+      "keel": "eesti",
+      "synonyymid": [
+        "eelravi"
+      ],
+      "definitsioon": "aktiivsele ravile eelnevad kohtumised individuaalterapeudiga, mille eesmärk on jõuda ühisele arusaamale koostöö jätkamise osas ning selgitada ravisekkumises osalejale ravi olemust, selleks vajalikku pühendumust ning ravi mõjutavaid asjaolusid"
+    },
+    {
+      "termin": "ravietapp",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/ravietapp",
+      "taht": "r",
+      "keel": "eesti",
+      "synonyymid": [],
+      "definitsioon": "dialektilise käitumisteraapia programmis liikumise faas, mis peegeldab ravieesmärkide täitmise tempot, edukust ja järjestust"
+    },
+    {
+      "termin": "ravivorm",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/ravivorm",
+      "taht": "r",
+      "keel": "eesti",
+      "synonyymid": [
+        "ravi komponent",
+        "ravi modaalsus"
+      ],
+      "definitsioon": "dialektilise käitumisteraapia programmi osad: individuaalne psühhoteraapia, grupiviisiline oskuste treening, telefonikonsultatsioon ja konsultatsioon DKT meeskonnale"
+    },
+    {
+      "termin": "reality acceptance skills",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/reality%20acceptance%20skills",
+      "taht": "r",
+      "keel": "inglise",
+      "synonyymid": [],
+      "definitsioon": "DKT oskused, mille abil aktsepteerida oma elu sellisena, nagu see hetkel on, eriti kui elad hetkel sellist elu, millist ei tahaks. Need vähendavad kannatusi ja suurendavad vabadusetunnet. Peamised reaalsuse aktsepteerimise oskused on: Radikaalne aktsepteerimine, Meele suunamine, Valmisolek, Poolnaeratus, Avatud käed ning Teadvelolek hetke mõtetest."
+    },
+    {
+      "termin": "reciprocity",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/reciprocity",
+      "taht": "r",
+      "keel": "inglise",
+      "synonyymid": [],
+      "definitsioon": "leppe osapoolte vaheline suhe, milles mõlemad omavad samu õigusi ja kohustusi teineteise suhtes, relationship between two parties where both have the same rights and obligations towards each other"
+    },
+    {
+      "termin": "reinforcement",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/reinforcement",
+      "taht": "r",
+      "keel": "inglise",
+      "synonyymid": [],
+      "definitsioon": "rods, bars, fabric, fibres, wires, and cables added to give additional strength or support to a material or component, vardad, latid, kangas, kiudaine, traadid ja trossid, mis lisatakse materjalile või komponendile täiendava tugevuse või toe andmiseks"
+    },
+    {
+      "termin": "relationship effectiveness",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/relationship%20effectiveness",
+      "taht": "r",
+      "keel": "inglise",
+      "synonyymid": [],
+      "definitsioon": "üks võimalik eesmärk suhtlemisolukordades: suhte hoidmine või parandamine, püüdes samal ajal saavutada oma eesmärki suhtluses"
+    },
+    {
+      "termin": "retsiprooksus",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/retsiprooksus",
+      "taht": "r",
+      "keel": "eesti",
+      "synonyymid": [],
+      "definitsioon": "vastastikkus, mõlemapoolsus"
+    },
+    {
+      "termin": "sarkasm",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/sarkasm",
+      "taht": "s",
+      "keel": "eesti",
+      "synonyymid": [],
+      "definitsioon": "salvav pilge, äärmiselt terav, üdini lõikav iroonia"
+    },
+    {
+      "termin": "sarrustamine",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/sarrustamine",
+      "taht": "s",
+      "keel": "eesti",
+      "synonyymid": [
+        "tasustamine",
+        "kinnitamine"
+      ],
+      "definitsioon": "kõik tagajärjed, mis suurendavad või tugevdavad käitumise (taas)esinemise tõenäosust"
+    },
+    {
+      "termin": "sarrustuskava",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/sarrustuskava",
+      "taht": "s",
+      "keel": "eesti",
+      "synonyymid": [
+        "tasustamiskava",
+        "kinnituskava"
+      ],
+      "definitsioon": "struktureeritud plaan, mis sätestab konkreetsetele käitumistele järgnevad tagajärjed, mida tavaliselt kasutatakse soovitud käitumiste suurendamiseks ja soovimatute käitumiste vähendamiseks"
+    },
+    {
+      "termin": "segavate suhete lõpetamine",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/segavate%20suhete%20l%C3%B5petamine",
+      "taht": "s",
+      "keel": "eesti",
+      "synonyymid": [
+        "hävitavate suhete lõpetamine"
+      ],
+      "definitsioon": "suhtetõhususe oskuste üks eesmärk: lõpetada suhe, mille osas on vähe lootust suhet parandada, mis on ahistav või segab oluliste eesmärkide saavutamist"
+    },
+    {
+      "termin": "self-invalidation",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/self-invalidation",
+      "taht": "s",
+      "keel": "inglise",
+      "synonyymid": [],
+      "definitsioon": "reageerimine iseenda kogemusele viisil, mis annab inimesele tagasiside, et tema kogemus ei ole loogiline, mõistetav ega oluline"
+    },
+    {
+      "termin": "self-respect effectiveness",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/self-respect%20effectiveness",
+      "taht": "s",
+      "keel": "inglise",
+      "synonyymid": [],
+      "definitsioon": "üks võimalik eesmärk suhtlemisolukordades: eneseaustuse säilitaminevõi parandamine ning oma väärtuste ja tõekspidamiste järgimine, püüdes samal ajal saavutada oma eesmärke"
+    },
+    {
+      "termin": "self-soothing through the senses",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/self-soothing%20through%20the%20senses",
+      "taht": "s",
+      "keel": "inglise",
+      "synonyymid": [],
+      "definitsioon": "Enese rahustamine on DKT oskus, mille sisuks on enda suhtes toetav, hoidev, rahutegev, õrn ja teadlikult lahke käitumine. Ennast rahustavad tegevused vähendavad emotsionaalse meele haavatavust ja impulsiivset käitumist, ning vähendavad ilmajäetuse tunnet, mis sageli haavatavuse tundega kaasneb. Need aitavad taluda valu ja stressi, tegemata olukorda hullemaks. Ennast saab rahustada viie meelega: nägemine, kuulmine, lõhnameel, maitsemeel, puutemeel."
+    },
+    {
+      "termin": "selge meel",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/selge%20meel",
+      "taht": "s",
+      "keel": "eesti",
+      "synonyymid": [
+        "klaar meel"
+      ],
+      "definitsioon": "üks kolmest meeleseisundist dialektilises käitumisteraapias, mis puudutab sõltuvuskäitumist. Selge meel on süntees puhta ja sõltlase meele vahel. Selge meele seisundis on inimene kaine, ja samal ajal teadlik tagasilanguse ohtudest, seega tegeleb ta aktiivselt tagasilööke ja tagasilangust ennetavate käitumistega. Selge meel on sõltuvusega seonduv, kuid targa meelega väga sarnane. (Linehan, 2015, p483)."
+    },
+    {
+      "termin": "shaping",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/shaping",
+      "taht": "s",
+      "keel": "inglise",
+      "synonyymid": [],
+      "definitsioon": "producing flat surfaces using single-point tools; the work is held in a vice or fixture or is clamped directly to the table; the ram supporting the tool is reciprocated in a linear motion past the work, tasapindade lõiketöötlus sirgjooneliselt edasi-tagasi liikuva üksservlõikuriga; sirgjooneline lõikeliikumine antakse lõikurile, toorikule antakse katkendlik, lõikeliikumisele ristsihis ettenihkeliikumine"
+    },
+    {
+      "termin": "sihtmärk",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/sihtm%C3%A4rk",
+      "taht": "s",
+      "keel": "eesti",
+      "synonyymid": [],
+      "definitsioon": "tabamiseks valitud (vastase) objekt (hrl millegi ründamisega ühenduses)"
+    },
+    {
+      "termin": "sildade põletamine ja uute ehitamine",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/sildade%20p%C3%B5letamine%20ja%20uute%20ehitamine",
+      "taht": "s",
+      "keel": "eesti",
+      "synonyymid": [],
+      "definitsioon": "dialektilise käitumisteraapia oskus, mis tähendab oma elust aktiivselt kõigi potentsiaalsete sõltuvuskäitumise vallandajate eemaldamist. Uute sildade ehitamine viitab uute kujutluspiltide ja füüsiliste aistingute leidmisele, mille abil saaks võidelda sõltuvustungidega."
+    },
+    {
+      "termin": "skill",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/skill",
+      "taht": "s",
+      "keel": "inglise",
+      "synonyymid": [
+        "ability"
+      ],
+      "definitsioon": "õppimise ja harjutamise teel omandatud asjatundlikkus milleski, võime, osavus millekski, mingil alal"
+    },
+    {
+      "termin": "skillful means",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/skillful%20means",
+      "taht": "s",
+      "keel": "inglise",
+      "synonyymid": [
+        "skill in means"
+      ],
+      "definitsioon": "budismis, eriti mahajaanas, bodhisattvaid iseloomustav võime, mis tähendab ka tarkust v vilumust vahendite valdamisel, oskust vahendeid valida"
+    },
+    {
+      "termin": "skills trainer",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/skills%20trainer",
+      "taht": "s",
+      "keel": "inglise",
+      "synonyymid": [
+        "group leader"
+      ],
+      "definitsioon": "üks kahest grupiviisilise oskuste õppe läbiviijatest, kelle ülesanne on juhtida kohtumiste alustamise, koduse harjutamise ülevaatamise ning uute oskuste õpetamise protsessi"
+    },
+    {
+      "termin": "skills training",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/skills%20training",
+      "taht": "s",
+      "keel": "inglise",
+      "synonyymid": [],
+      "definitsioon": "dialektilise käitumisteraapia komponent, struktureeritud psühhohariduslik sekkumine, mille käigus õpitakse teadveloleku, emotsiooniregulatsiooni, stressitaluvuse ja suhtetõhususe oskuseid"
+    },
+    {
+      "termin": "spirituaalne vaade",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/spirituaalne%20vaade",
+      "taht": "s",
+      "keel": "eesti",
+      "synonyymid": [],
+      "definitsioon": "Elu ja kogemuste sügavam tähenduslik või vaimne tõlgendus, mis võib sisaldada religioosseid või filosoofilisi tõekspidamisi või praktikaid."
+    },
+    {
+      "termin": "spiritual perspective",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/spiritual%20perspective",
+      "taht": "s",
+      "keel": "inglise",
+      "synonyymid": [],
+      "definitsioon": "Elu ja kogemuste sügavam tähenduslik või vaimne tõlgendus, mis võib sisaldada religioosseid või filosoofilisi tõekspidamisi või praktikaid."
+    },
+    {
+      "termin": "stage",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/stage",
+      "taht": "s",
+      "keel": "inglise",
+      "synonyymid": [
+        "phase"
+      ],
+      "definitsioon": "vaheaste või järk teatava protsessi, sündmuse arengus, suhteliselt iseseisev, piiritletud osa sarjast, kursusest, tsüklist vm"
+    },
+    {
+      "termin": "stand-alone skills training",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/stand-alone%20skills%20training",
+      "taht": "s",
+      "keel": "inglise",
+      "synonyymid": [],
+      "definitsioon": "dialektilise käitumisteraapia selline vorm, mille käigus pakutakse osalejale üksnes oskuste treeningus osalemist"
+    },
+    {
+      "termin": "states of mind",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/states%20of%20mind",
+      "taht": "s",
+      "keel": "inglise",
+      "synonyymid": [],
+      "definitsioon": "Kolm erinevat meeleseisundit DKT-s: emotsionaalne meel, ratsionaalne meel ja tark meel."
+    },
+    {
+      "termin": "STOP",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/STOP",
+      "taht": "S",
+      "keel": "inglise",
+      "synonyymid": [],
+      "definitsioon": "DKT kriisis ellujäämise oskus, mis aitab säilitada kontrolli olukorras, kus emotsionaalne meel kipub üle võtma ja reaktsioonid impulsiivseks muutuma. STOP oskus koosneb neljast sammust selles järjekorras: 1. Stopp (Peatu, ära reageeri), 2. Tagane ja tõmba hinge (astu samm tagasi, anna endale aega mõelda, ja reguleeri hingamine rahulikumaks, astu füüsiline samm tagasi); 3. Ole kõrvaltvaataja (Vaatle hinnanguvabalt fakte), 4. Praktiseeri teadvelolekut (Tee seda, mis on tõhus antud olukorras)., The STOP skill is a crisis survival skill that consists of the following sequence of steps: Stop, Take a step back, Observe, and Proceed mindfully."
+    },
+    {
+      "termin": "stressitaluvuse oskused",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/stressitaluvuse%20oskused",
+      "taht": "s",
+      "keel": "eesti",
+      "synonyymid": [
+        "äärmusliku pinge talumise oskused",
+        "kriisioskused"
+      ],
+      "definitsioon": "dialektilise käitumisteraapia oskuste treeningu moodul, mis keskendub sellele, kuidas valu ja kannatuse kiuste elada, oma eesmärke täita ja tekkinud raskusi aktsepteerida"
+    },
+    {
+      "termin": "suhete loomine",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/suhete%20loomine",
+      "taht": "s",
+      "keel": "eesti",
+      "synonyymid": [],
+      "definitsioon": "suhtetõhususe oskuste üks eesmärk: sõprade leidmine ja neile meeldivaks muutumine ning teadvelolek teistest"
+    },
+    {
+      "termin": "suhete toetamise oskused",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/suhete%20toetamise%20oskused",
+      "taht": "s",
+      "keel": "eesti",
+      "synonyymid": [],
+      "definitsioon": "suhtetõhususe oskuste kogumik, mis on suunatud teise inimesega suhte säilitamisele või parandamisele, püüdes samal ajal suhtluses soovitut saavutada"
+    },
+    {
+      "termin": "suhtetõhususe oskused",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/suhtet%C3%B5hususe%20oskused",
+      "taht": "s",
+      "keel": "eesti",
+      "synonyymid": [
+        "inimestevahelise tõhususe oskused"
+      ],
+      "definitsioon": "dialektilise käitumisteraapia oskuste treeningu moodul, mis keskendub sellele, kuidas suhelda oma suhtlusvõrgustikuga tõhusalt, kutsuda teiste käitumises esile muutusi ning seista vastu teiste soovimatutele mõjutustele eesmärgiga vähendada valu ja kannatust"
+    },
+    {
+      "termin": "suletud grupp",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/suletud%20grupp",
+      "taht": "s",
+      "keel": "eesti",
+      "synonyymid": [
+        "kinnine grupp"
+      ],
+      "definitsioon": "grupiviisilise oskuste õppe formaat, mille puhul moodustatakse programmi alguses üks grupp, mis käib teatud aja koos, ning uusi liikmeid gruppi pärast liitumisperioodi enam vastu ei võeta"
+    },
+    {
+      "termin": "sõltlase meel",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/s%C3%B5ltlase%20meel",
+      "taht": "s",
+      "keel": "eesti",
+      "synonyymid": [],
+      "definitsioon": "üks kolmest meeleseisundist dialektilises käitumisteraapias, mis on seotud sõltuvuskäitumisega. Sõltlase meele seisundis on inimene sõltuvusele järele andnud ning sõltuvuskäitumise tung valitseb mõtteid, emotsioone ja käitumist. Sõltlase meele seisundis inimene isegi ei proovi sõltuvuskäitumisele vastu panna, või kui proovitakse, on pingutus vaid osaline ning ebaefektiivne."
+    },
+    {
+      "termin": "tagajärg",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/tagaj%C3%A4rg",
+      "taht": "t",
+      "keel": "eesti",
+      "synonyymid": [],
+      "definitsioon": "asjaolu, nähtus, tegu, mille on esile kutsunud mingi teine asjaolu, nähtus, tegu"
+    },
+    {
+      "termin": "target",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/target",
+      "taht": "t",
+      "keel": "inglise",
+      "synonyymid": [],
+      "definitsioon": "ravieesmärk; käitumine, mida vähendada või käitumine, mille esinemise sagedust suurendada"
+    },
+    {
+      "termin": "tark meel",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/tark%20meel",
+      "taht": "t",
+      "keel": "eesti",
+      "synonyymid": [],
+      "definitsioon": "Üks kolmest meeleseisundist DKT-s, ratsionaalse ja emotsionaalse meele süntees, mis võimaldab teha tasakaalukaid otsuseid, mis arvestavad nii fakte kui tundeid."
+    },
+    {
+      "termin": "tark meel peab TOETAMA",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/tark%20meel%20peab%20TOETAMA",
+      "taht": "t",
+      "keel": "eesti",
+      "synonyymid": [],
+      "definitsioon": "DKT kriisis ellujäämise oskus, mis seisneb tähelepanu eemalejuhtimises valusalt emotsioonilt või stressisündmuselt, et vältida ohtlikke käitumisi ja võita aega olukorra lahendamiseks. Oskuse osad: Tegutsemine (neutraalsed või kriisikäitumisele vastandlikud käitumised), Oma osa andmine (kellegi teise heaolusse panustamine), Emotsiooni muutmine (läbi tegevuste, mis toovad kaasa teistsuguseid emotsioone), Tõrjumine (Füüsiliselt või mõttes olukorra eemalelükkamine), Asetamine konteksti (Vaatle enda olukorda võrdluses teistega), Muud mõtted (juhi tähelepanu kõrvale ja hõiva lühimälu muude mõtetega), Aistingud (erinevate aistingutega tähelepanu kõrvalejuhtimine)., Distracting with wise mind ACCEPTS is a skill for reducing contact with emotional stimuli or the most painful aspects of the situation, in order to gain time and refrain from impulsive behaviors that would worsen the situation. ACCEPTS is the acronym of even distraction skills: Activities, Contributing, Comparisons, Emotions, Pushing away, Thoughts, Sensations."
+    },
+    {
+      "termin": "tasude ja kahjude haldamine",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/tasude%20ja%20kahjude%20haldamine",
+      "taht": "t",
+      "keel": "eesti",
+      "synonyymid": [],
+      "definitsioon": "teraapiatehnika, mille eesmärk on tuvastada erinevad faktorid, mis suurendavad ja vähendavad teatud käitumiste ilmnemise tõenäosust ning suunata neid tagajärgi tahtlikult funktsionaalsemate käitumisviiside kujundamiseks"
+    },
+    {
+      "termin": "tasustamine",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/tasustamine",
+      "taht": "t",
+      "keel": "eesti",
+      "synonyymid": [
+        "kinnitamine",
+        "sarrustamine"
+      ],
+      "definitsioon": "kõik tagajärjed, mis suurendavad või tugevdavad käitumise (taas)esinemise tõenäosust"
+    },
+    {
+      "termin": "tasustamiskava",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/tasustamiskava",
+      "taht": "t",
+      "keel": "eesti",
+      "synonyymid": [
+        "kinnituskava",
+        "sarrustuskava"
+      ],
+      "definitsioon": "struktureeritud plaan, mis sätestab konkreetsetele käitumistele järgnevad tagajärjed, mida tavaliselt kasutatakse soovitud käitumiste suurendamiseks ja soovimatute käitumiste vähendamiseks"
+    },
+    {
+      "termin": "teadvelolek",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/teadvelolek",
+      "taht": "t",
+      "keel": "eesti",
+      "synonyymid": [
+        "mindfulness"
+      ],
+      "definitsioon": "vaimne seisund, millele on tunnuslik oma kogemuste ärgas jälgimine reaalajas"
+    },
+    {
+      "termin": "teadvelolek hetke mõtetest",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/teadvelolek%20hetke%20m%C3%B5tetest",
+      "taht": "t",
+      "keel": "eesti",
+      "synonyymid": [],
+      "definitsioon": "DKT oskus, mis hõlmab oma mõtete minna ja tulla laskmist ning nende vaatlemist püüdeta neid kontrollida või muuta. Mõtteid vaadeldakse kui mõtteid, mitte kui fakte maailma kohta."
+    },
+    {
+      "termin": "teadveloleku oskused",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/teadveloleku%20oskused",
+      "taht": "t",
+      "keel": "eesti",
+      "synonyymid": [],
+      "definitsioon": "dialektilise käitumisteraapia oskuste treeningu moodul, mis keskendub sellele, kuidas pöörata tähelepanu praegusele hetkele ja selle omadusele"
+    },
+    {
+      "termin": "tegelikkuse aktsepteerimise oskused",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/tegelikkuse%20aktsepteerimise%20oskused",
+      "taht": "t",
+      "keel": "eesti",
+      "synonyymid": [],
+      "definitsioon": "DKT oskused, mille abil aktsepteerida oma elu sellisena, nagu see hetkel on, eriti kui elad hetkel sellist elu, millist ei tahaks. Need vähendavad kannatusi ja suurendavad vabadusetunnet. Peamised reaalsuse aktsepteerimise oskused on: Radikaalne aktsepteerimine, Meele suunamine, Valmisolek, Poolnaeratus, Avatud käed ning Teadvelolek hetke mõtetest."
+    },
+    {
+      "termin": "tegutsev meel",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/tegutsev%20meel",
+      "taht": "t",
+      "keel": "eesti",
+      "synonyymid": [],
+      "definitsioon": "Meeleseisund DKT-s, kus inimene keskendub ülesannetele ja sooritusele, tavaliselt automaatselt või harjumuslikult, ilma täielikult hetkes olemata."
+    },
+    {
+      "termin": "teise mõistmise oskused",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/teise%20m%C3%B5istmise%20oskused",
+      "taht": "t",
+      "keel": "eesti",
+      "synonyymid": [
+        "teisiti mõtlemise oskused"
+      ],
+      "definitsioon": "suhtetõhususe oskuste kogumik, mis on Crick' ja Dodge'i sotsiaalse info töötlemise mudelist (1994) tulenev lisandus DKT-le: aitab harjutada teise inimese vaatenurga võtmist ning teise inimese käitumisele erinevate ja heatahtlike tõlgenduste kaalumist"
+    },
+    {
+      "termin": "teisiti mõtlemise oskused",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/teisiti%20m%C3%B5tlemise%20oskused",
+      "taht": "t",
+      "keel": "eesti",
+      "synonyymid": [
+        "teise mõistmise oskused"
+      ],
+      "definitsioon": "suhtetõhususe oskuste kogumik, mis on Crick' ja Dodge'i sotsiaalse info töötlemise mudelist (1994) tulenev lisandus DKT-le: aitab harjutada teise inimese vaatenurga võtmist ning teise inimese käitumisele erinevate ja heatahtlike tõlgenduste kaalumist"
+    },
+    {
+      "termin": "teistest teadvelolek",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/teistest%20teadvelolek",
+      "taht": "t",
+      "keel": "eesti",
+      "synonyymid": [],
+      "definitsioon": "suhete loomise üks osa, mis seisneb teiste inimeste jälgimises ja tähelepanelikkuses nende suhtes, nähtu hinnanguvabas kirjeldamises ning suhtlusvoos osalemises"
+    },
+    {
+      "termin": "telefonikonsultatsioon",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/telefonikonsultatsioon",
+      "taht": "t",
+      "keel": "eesti",
+      "synonyymid": [],
+      "definitsioon": "dialektilise käitumisteraapia komponent, mille raames terapeut toetab kohtumistevaheliste telefonikõnedega kriisiolukordade tõhusat lahendamist, oskuste üldistamist igapäevaellu ning terapeutilist suhet"
+    },
+    {
+      "termin": "teraapiat takistav käitumine",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/teraapiat%20takistav%20k%C3%A4itumine",
+      "taht": "t",
+      "keel": "eesti",
+      "synonyymid": [],
+      "definitsioon": "patsiendi ja/või terapeudi käitumine, mis vähendab teraapiaprotsessi efektiivsust"
+    },
+    {
+      "termin": "therapy-interfering behavior",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/therapy-interfering%20behavior",
+      "taht": "t",
+      "keel": "inglise",
+      "synonyymid": [],
+      "definitsioon": "patsiendi ja/või terapeudi käitumine, mis vähendab teraapiaprotsessi efektiivsust"
+    },
+    {
+      "termin": "THINK",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/THINK",
+      "taht": "T",
+      "keel": "inglise",
+      "synonyymid": [],
+      "definitsioon": "suhtetõhususe oskuste kogumik, mis on Crick' ja Dodge'i sotsiaalse info töötlemise mudelist (1994) tulenev lisandus DKT-le: aitab harjutada teise inimese vaatenurga võtmist ning teise inimese käitumisele erinevate ja heatahtlike tõlgenduste kaalumist"
+    },
+    {
+      "termin": "TIP skill",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/TIP%20skill",
+      "taht": "T",
+      "keel": "inglise",
+      "synonyymid": [],
+      "definitsioon": "Kehakeemia muutmine (TIKK: Temperatuuri langetamine, Intensiivne trenn, Kontrollitud hingamine; Kombineeritud lihaslõdvestus) on DKT kriisis ellujäämise oskus. TIKK oskuse erinevad võimalused muudavad kiirelt keha bioloogilisi reaktsioone ja alandavad emotsionaalset erutust, soodustades parasümpaatilise närvisüsteemi tööd ja vähendades sümpaatilise närvisüsteemi aktivatsiooni."
+    },
+    {
+      "termin": "toetamine",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/toetamine",
+      "taht": "t",
+      "keel": "eesti",
+      "synonyymid": [
+        "kaasaelamine",
+        "julgustamine",
+        "kisakooriks olemine",
+        "ergutamine"
+      ],
+      "definitsioon": "teraapiaprotsessis kliendi lootustunde, motivatsiooni ja koostöövalmiduse suurendamine erinevate tehnikate abil"
+    },
+    {
+      "termin": "treatment mode",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/treatment%20mode",
+      "taht": "t",
+      "keel": "inglise",
+      "synonyymid": [],
+      "definitsioon": "dialektilise käitumisteraapia programmi osad: individuaalne psühhoteraapia, grupiviisiline oskuste treening, telefonikonsultatsioon ja konsultatsioon DKT meeskonnale"
+    },
+    {
+      "termin": "tujukus",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/tujukus",
+      "taht": "t",
+      "keel": "eesti",
+      "synonyymid": [],
+      "definitsioon": "isemeelsus, jonnakus, kapriissus"
+    },
+    {
+      "termin": "tulud ja kulud",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/tulud%20ja%20kulud",
+      "taht": "t",
+      "keel": "eesti",
+      "synonyymid": [
+        "plussid ja miinused",
+        "kasud ja kahjud"
+      ],
+      "definitsioon": "DKT oskus, mis hõlmab kriisis tekkivate käitumistungide järgi tegutsemise ja mittetegutsemise plusside ning miinuste läbikaalumist. Selleks kirjutatakse üles stressi talumise ja impulsiivsetele käitumistele vastu panemise positiivsed ja negatiivsed tagajärjed, ning stressi talumata jätmise ja impulsiivselt käitumise positiivsed ja negatiivsed tagajärjed."
+    },
+    {
+      "termin": "tungil surfamine",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/tungil%20surfamine",
+      "taht": "t",
+      "keel": "eesti",
+      "synonyymid": [],
+      "definitsioon": "DKT kriisis ellujäämise oskus, alkoholi- ja uimastisõltuvuse tagasilanguste ennetamise strateegia, mis hõlmab tungi teadvelolevat vaatlemist ja kirjeldamist, mille eesmärk on sõltuvuskäitumise tungi \"laine\" tipp mööda saata sellele reageerimata, sellele hinnanguid andmata ja selle ajel tegutsemata."
+    },
+    {
+      "termin": "turning the mind",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/turning%20the%20mind",
+      "taht": "t",
+      "keel": "inglise",
+      "synonyymid": [],
+      "definitsioon": "Meele suunamine on teadliku valiku tegemine tegelikkuse aktsepteerimise kasuks."
+    },
+    {
+      "termin": "täie tähelepanuga",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/t%C3%A4ie%20t%C3%A4helepanuga",
+      "taht": "t",
+      "keel": "eesti",
+      "synonyymid": [],
+      "definitsioon": "Üks teadveloleku kuidas-oskus DKT-s, keskendumine ühele tegevusele korraga, selle kaudu täielikult hetkes olemine."
+    },
+    {
+      "termin": "tõhus järelemõtlemine ja kombineeritud lihaslõdvestus",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/t%C3%B5hus%20j%C3%A4relem%C3%B5tlemine%20ja%20kombineeritud%20lihasl%C3%B5dvestus",
+      "taht": "t",
+      "keel": "eesti",
+      "synonyymid": [],
+      "definitsioon": "DKT meetod, kus kasutatakse korraga kognitiivset ümberstruktureerimist ning järk-järgulist lihaslõdvestust, et kõrge stressi hetkedel erutust kiiresti alandada. Harjutuses tuvastatakse ebatõhusad ja erutavad mõtted ning asendatakse need tõhusamate mõtetega. Samaaegselt kujutletakse end stressiolukorda ning välja hingates sõnastatakse lihaseid lõdvestades rahustav enesekohane lause."
+    },
+    {
+      "termin": "tõhusalt",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/t%C3%B5husalt",
+      "taht": "t",
+      "keel": "eesti",
+      "synonyymid": [],
+      "definitsioon": "Üks teadveloleku kuidas-oskus DKT-s, keskendumine käitumistele ja tegevustele, mis on hetkes efektiivsed ja eesmärgipärased."
+    },
+    {
+      "termin": "tõhusus eesmärkides",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/t%C3%B5husus%20eesm%C3%A4rkides",
+      "taht": "t",
+      "keel": "eesti",
+      "synonyymid": [],
+      "definitsioon": "üks võimalik eesmärk suhtlemisolukordades: antud olukorras tulemuse või eesmärgi saavutamine"
+    },
+    {
+      "termin": "tõhusus eneseväärikuses",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/t%C3%B5husus%20enesev%C3%A4%C3%A4rikuses",
+      "taht": "t",
+      "keel": "eesti",
+      "synonyymid": [],
+      "definitsioon": "üks võimalik eesmärk suhtlemisolukordades: eneseaustuse säilitaminevõi parandamine ning oma väärtuste ja tõekspidamiste järgimine, püüdes samal ajal saavutada oma eesmärke"
+    },
+    {
+      "termin": "tõhusus suhetes",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/t%C3%B5husus%20suhetes",
+      "taht": "t",
+      "keel": "eesti",
+      "synonyymid": [],
+      "definitsioon": "üks võimalik eesmärk suhtlemisolukordades: suhte hoidmine või parandamine, püüdes samal ajal saavutada oma eesmärki suhtluses"
+    },
+    {
+      "termin": "unrelenting crisis",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/unrelenting%20crisis",
+      "taht": "u",
+      "keel": "inglise",
+      "synonyymid": [],
+      "definitsioon": "tsükkel, kus probleemolukordadega toimetulekuks mittetõhusate toimetulekuviiside kasutamine soodustab järgnevate probleemolukordade, inteniivsete emotsioonide tekkimist ja mittetõhusate toimetulekuviiside kasutamist"
+    },
+    {
+      "termin": "urge surfing",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/urge%20surfing",
+      "taht": "u",
+      "keel": "inglise",
+      "synonyymid": [],
+      "definitsioon": "DKT kriisis ellujäämise oskus, alkoholi- ja uimastisõltuvuse tagasilanguste ennetamise strateegia, mis hõlmab tungi teadvelolevat vaatlemist ja kirjeldamist, mille eesmärk on sõltuvuskäitumise tungi \"laine\" tipp mööda saata sellele reageerimata, sellele hinnanguid andmata ja selle ajel tegutsemata."
+    },
+    {
+      "termin": "vaatle",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/vaatle",
+      "taht": "v",
+      "keel": "eesti",
+      "synonyymid": [],
+      "definitsioon": "Üks teadveloleku mis-oskus DKT-s, oma kogemuse jälgimine ilma sellesse sekkumata või seda muutmata."
+    },
+    {
+      "termin": "vahelduv sarrustamine",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/vahelduv%20sarrustamine",
+      "taht": "v",
+      "keel": "eesti",
+      "synonyymid": [],
+      "definitsioon": "soovitud käitumise tõenäosuse suurendamise strateegia, kus soovitud käitumise ilmnemist kinnitatakse vahetevahel"
+    },
+    {
+      "termin": "validation",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/validation",
+      "taht": "v",
+      "keel": "inglise",
+      "synonyymid": [],
+      "definitsioon": "the confirmation of the capabilities and performance of organizations, individuals, materiel or systems to meet defined standards or criteria, through the provision of objective evidence, confirmation que des organisations, des individus, du matériel ou des systèmes satisfont à des normes ou critères définis, grâce à l’apport de preuves objectives, kinnitus, et organisatsioonide, üksikisikute, sõjaväevarustuse või süsteemide võimed ja jõudlus vastavad kindlaksmääratud standarditele või kriteeriumidele, esitades selleks objektiivseid tõendeid"
+    },
+    {
+      "termin": "valideerimine",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/valideerimine",
+      "taht": "v",
+      "keel": "eesti",
+      "synonyymid": [
+        "vastavuskontroll",
+        "tõestamine"
+      ],
+      "definitsioon": "confirmation, through the provision of objective evidence, that specified requirements have been fulfilled, objektiivsete tõendite esitamise alusel tehtud kinnitus, et konkreetsed nõuded on täidetud"
+    },
+    {
+      "termin": "vallandav sündmus",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/vallandav%20s%C3%BCndmus",
+      "taht": "v",
+      "keel": "eesti",
+      "synonyymid": [],
+      "definitsioon": "konkreetne väline või sisemine sündmus, mis käivitab probleemkäitumiseni viiva reaktsioonide ahela"
+    },
+    {
+      "termin": "valmidus",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/valmidus",
+      "taht": "v",
+      "keel": "eesti",
+      "synonyymid": [
+        "valmisolek"
+      ],
+      "definitsioon": "seisund, kus ollakse ettevalmistunud, valmis mingiks tegevuseks või (häda)olukorraks"
+    },
+    {
+      "termin": "valmisolek",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/valmisolek",
+      "taht": "v",
+      "keel": "eesti",
+      "synonyymid": [
+        "valmidus"
+      ],
+      "definitsioon": "seisund, kus ollakse ettevalmistunud, valmis mingiks tegevuseks või (häda)olukorraks"
+    },
+    {
+      "termin": "vastastikmõju",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/vastastikm%C3%B5ju",
+      "taht": "v",
+      "keel": "eesti",
+      "synonyymid": [
+        "interaktsioon",
+        "vastasmõju"
+      ],
+      "definitsioon": "füüsikaliste objektide (kehade, osakeste) vaheline mõju, mille tagajärjel muutub nende liikumisolek"
+    },
+    {
+      "termin": "vastastikusus",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/vastastikusus",
+      "taht": "v",
+      "keel": "eesti",
+      "synonyymid": [
+        "retsiprooksus"
+      ],
+      "definitsioon": "kommunikatsiooni strateegia, kus terapeut on patsiendi suhtes tähelepanelik, siiralt soe ja huvituv ning kohastes piirides end avav"
+    },
+    {
+      "termin": "vulnerability",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/vulnerability",
+      "taht": "v",
+      "keel": "inglise",
+      "synonyymid": [],
+      "definitsioon": "Näitab põhjaveekihi reostustundlikkust reostuse suhtes."
+    },
+    {
+      "termin": "walking the middle path skills",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/walking%20the%20middle%20path%20skills",
+      "taht": "w",
+      "keel": "inglise",
+      "synonyymid": [],
+      "definitsioon": "noorukitele kohandatud dialektilise käitumisteraapia programmi oskuste treeningu moodul, mis keskendub sellele, milliseid dilemmasid tuleb ette peresuhetes, ning suunavad võtma omaks dialektilist maailmavaadet, sh aktsepteerimise ja muutuste tegemise põhimõtteid"
+    },
+    {
+      "termin": "willfulness",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/willfulness",
+      "taht": "w",
+      "keel": "inglise",
+      "synonyymid": [],
+      "definitsioon": "reaalsuse faktide, probleemide ning nende lahendamiseks tõhusate strateegiate vältimine"
+    },
+    {
+      "termin": "willing hands",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/willing%20hands",
+      "taht": "w",
+      "keel": "inglise",
+      "synonyymid": [],
+      "definitsioon": "Avatud käed on füüsiline hoiak, kus käed on rusikast lahti, peopesad ülespoole suunatud ning sõrmed lõdvestunud, väljendades kehaga tegelikkuse aktsepteerimist."
+    },
+    {
+      "termin": "willingness",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/willingness",
+      "taht": "w",
+      "keel": "inglise",
+      "synonyymid": [],
+      "definitsioon": "Valmisolek on valmidus reageerida eluolukordadele targalt, vajaduspõhiselt, vabatahtlikult ja vimma pidamata."
+    },
+    {
+      "termin": "wise mind",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/wise%20mind",
+      "taht": "w",
+      "keel": "inglise",
+      "synonyymid": [],
+      "definitsioon": "Üks kolmest meeleseisundist DKT-s, ratsionaalse ja emotsionaalse meele süntees, mis võimaldab teha tasakaalukaid otsuseid, mis arvestavad nii fakte kui tundeid."
+    },
+    {
+      "termin": "wise mind ACCEPTS",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/wise%20mind%20ACCEPTS",
+      "taht": "w",
+      "keel": "inglise",
+      "synonyymid": [],
+      "definitsioon": "DKT kriisis ellujäämise oskus, mis seisneb tähelepanu eemalejuhtimises valusalt emotsioonilt või stressisündmuselt, et vältida ohtlikke käitumisi ja võita aega olukorra lahendamiseks. Oskuse osad: Tegutsemine (neutraalsed või kriisikäitumisele vastandlikud käitumised), Oma osa andmine (kellegi teise heaolusse panustamine), Emotsiooni muutmine (läbi tegevuste, mis toovad kaasa teistsuguseid emotsioone), Tõrjumine (Füüsiliselt või mõttes olukorra eemalelükkamine), Asetamine konteksti (Vaatle enda olukorda võrdluses teistega), Muud mõtted (juhi tähelepanu kõrvale ja hõiva lühimälu muude mõtetega), Aistingud (erinevate aistingutega tähelepanu kõrvalejuhtimine)., Distracting with wise mind ACCEPTS is a skill for reducing contact with emotional stimuli or the most painful aspects of the situation, in order to gain time and refrain from impulsive behaviors that would worsen the situation. ACCEPTS is the acronym of even distraction skills: Activities, Contributing, Comparisons, Emotions, Pushing away, Thoughts, Sensations."
+    },
+    {
+      "termin": "äärmusliku pinge talumise oskused",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/%C3%A4%C3%A4rmusliku%20pinge%20talumise%20oskused",
+      "taht": "ä",
+      "keel": "eesti",
+      "synonyymid": [
+        "stressitaluvuse oskused",
+        "kriisioskused"
+      ],
+      "definitsioon": "dialektilise käitumisteraapia oskuste treeningu moodul, mis keskendub sellele, kuidas valu ja kannatuse kiuste elada, oma eesmärke täita ja tekkinud raskusi aktsepteerida"
+    },
+    {
+      "termin": "õpitud abitus",
+      "link": "https://sonaveeb.ee/search/unif/dlall/dkt/%C3%B5pitud%20abitus",
+      "taht": "õ",
+      "keel": "eesti",
+      "synonyymid": [],
+      "definitsioon": "seisund, kus inimene peab end saamatuks asjades, millega ta tegelikult hakkama saaks"
+    }
+  ]
+}

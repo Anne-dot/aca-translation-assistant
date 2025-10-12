@@ -1,0 +1,4446 @@
+{
+  "tühjad_terminid": [
+    {
+      "letter": "A",
+      "english": "Astonished",
+      "row": 62
+    },
+    {
+      "letter": "A",
+      "english": "At the core",
+      "row": 64
+    },
+    {
+      "letter": "A",
+      "english": "At times",
+      "row": 65
+    },
+    {
+      "letter": "A",
+      "english": "Attachment",
+      "row": 66
+    },
+    {
+      "letter": "A",
+      "english": "Attributes",
+      "row": 70
+    },
+    {
+      "letter": "B",
+      "english": "Baffling",
+      "row": 77
+    },
+    {
+      "letter": "B",
+      "english": "Balk (to)",
+      "row": 78
+    },
+    {
+      "letter": "B",
+      "english": "Befall",
+      "row": 82
+    },
+    {
+      "letter": "B",
+      "english": "Behavior",
+      "row": 84
+    },
+    {
+      "letter": "B",
+      "english": "Behave",
+      "row": 85
+    },
+    {
+      "letter": "B",
+      "english": "Believe (to)",
+      "row": 86
+    },
+    {
+      "letter": "B",
+      "english": "Belittled",
+      "row": 87
+    },
+    {
+      "letter": "B",
+      "english": "Bellow (to)",
+      "row": 88
+    },
+    {
+      "letter": "B",
+      "english": "Bereavement",
+      "row": 89
+    },
+    {
+      "letter": "B",
+      "english": "Best course",
+      "row": 90
+    },
+    {
+      "letter": "B",
+      "english": "Betrayed",
+      "row": 91
+    },
+    {
+      "letter": "B",
+      "english": "Beyond recall",
+      "row": 92
+    },
+    {
+      "letter": "B",
+      "english": "Bias (it is my)",
+      "row": 93
+    },
+    {
+      "letter": "B",
+      "english": "Bid farewell (to – to)",
+      "row": 94
+    },
+    {
+      "letter": "B",
+      "english": "Big deal (no)",
+      "row": 95
+    },
+    {
+      "letter": "B",
+      "english": "Binging",
+      "row": 96
+    },
+    {
+      "letter": "B",
+      "english": "“Blameless” inventory\n(See pages xvi and xxxvi of the ACA BRB.)",
+      "row": 99
+    },
+    {
+      "letter": "B",
+      "english": "Blatant",
+      "row": 100
+    },
+    {
+      "letter": "B",
+      "english": "Blatantly",
+      "row": 101
+    },
+    {
+      "letter": "B",
+      "english": "“Bleeding deacon”",
+      "row": 102
+    },
+    {
+      "letter": "B",
+      "english": "Bliss",
+      "row": 103
+    },
+    {
+      "letter": "B",
+      "english": "Blistering",
+      "row": 104
+    },
+    {
+      "letter": "B",
+      "english": "Blossomed",
+      "row": 105
+    },
+    {
+      "letter": "B",
+      "english": "Bludgeoned (to be --)",
+      "row": 106
+    },
+    {
+      "letter": "B",
+      "english": "Blunt",
+      "row": 107
+    },
+    {
+      "letter": "B",
+      "english": "Boggle (to)",
+      "row": 108
+    },
+    {
+      "letter": "B",
+      "english": "Bogus",
+      "row": 109
+    },
+    {
+      "letter": "B",
+      "english": "Bold",
+      "row": 110
+    },
+    {
+      "letter": "B",
+      "english": "Bottom (to hit the --)",
+      "row": 111
+    },
+    {
+      "letter": "B",
+      "english": "Bottom out (to)",
+      "row": 112
+    },
+    {
+      "letter": "B",
+      "english": "Branch",
+      "row": 113
+    },
+    {
+      "letter": "B",
+      "english": "Break free (to)",
+      "row": 114
+    },
+    {
+      "letter": "B",
+      "english": "Break out (to)",
+      "row": 115
+    },
+    {
+      "letter": "B",
+      "english": "Breather (n.)",
+      "row": 116
+    },
+    {
+      "letter": "B",
+      "english": "Breed (n.)",
+      "row": 117
+    },
+    {
+      "letter": "B",
+      "english": "Breed (v.)",
+      "row": 118
+    },
+    {
+      "letter": "B",
+      "english": "Broaden (to)",
+      "row": 119
+    },
+    {
+      "letter": "B",
+      "english": "Browbeat",
+      "row": 120
+    },
+    {
+      "letter": "B",
+      "english": "Bruised",
+      "row": 121
+    },
+    {
+      "letter": "B",
+      "english": "Budge",
+      "row": 122
+    },
+    {
+      "letter": "B",
+      "english": "Bulwarks",
+      "row": 123
+    },
+    {
+      "letter": "B",
+      "english": "Bump",
+      "row": 124
+    },
+    {
+      "letter": "B",
+      "english": "Burden",
+      "row": 125
+    },
+    {
+      "letter": "B",
+      "english": "Burst (n.)",
+      "row": 126
+    },
+    {
+      "letter": "C",
+      "english": "Cajole (to)",
+      "row": 128
+    },
+    {
+      "letter": "C",
+      "english": "Caregivers",
+      "row": 129
+    },
+    {
+      "letter": "C",
+      "english": "Centerpiece",
+      "row": 130
+    },
+    {
+      "letter": "C",
+      "english": "Central Service Board",
+      "row": 131
+    },
+    {
+      "letter": "C",
+      "english": "Chairman",
+      "row": 132
+    },
+    {
+      "letter": "C",
+      "english": "Challenge (to)",
+      "row": 133
+    },
+    {
+      "letter": "C",
+      "english": "Character trait",
+      "row": 134
+    },
+    {
+      "letter": "C",
+      "english": "Chase (to)",
+      "row": 135
+    },
+    {
+      "letter": "C",
+      "english": "Chat (to – online)",
+      "row": 136
+    },
+    {
+      "letter": "C",
+      "english": "Checklist",
+      "row": 137
+    },
+    {
+      "letter": "C",
+      "english": "Cheerful",
+      "row": 138
+    },
+    {
+      "letter": "C",
+      "english": "Cheerleader",
+      "row": 139
+    },
+    {
+      "letter": "C",
+      "english": "Chemically addicted",
+      "row": 140
+    },
+    {
+      "letter": "C",
+      "english": "Child within (the)",
+      "row": 141
+    },
+    {
+      "letter": "C",
+      "english": "Childbirth",
+      "row": 142
+    },
+    {
+      "letter": "C",
+      "english": "Childhood neglect\nNeglect can involve denial of food, safety and nutrition in childhood. \nCovert neglect can involve favoritism of one sibling over another. There is also neglect in hatefulness, comparing one child with another, or withholding praise. Perfectionism in which a child can never reach a parent’s idea of behavior or performance is covert neglect. \n(See pages 27-34 of ACA BRB.)",
+      "row": 143
+    },
+    {
+      "letter": "C",
+      "english": "Childhood trauma\n(See index of ACA BRB.) \nChildhood trauma can involve physical abuse such as hitting, slapping, sexual abuse or battering a child. Or it can be verbal abuse such as threats of hitting or cursing, shaming comments, comparing, chronic hatefulness. \nChildhood trauma can also involve denial of food, safety, and proper nutrition without physical or verbal abuse involved. \n(See pages 27-30 of ACA BRB.)",
+      "row": 144
+    },
+    {
+      "letter": "C",
+      "english": "Chronic",
+      "row": 145
+    },
+    {
+      "letter": "C",
+      "english": "Claim (to) \n(See page xx of the ACA BRB: “… needed their own claim….”)",
+      "row": 146
+    },
+    {
+      "letter": "C",
+      "english": "Clarity",
+      "row": 147
+    },
+    {
+      "letter": "C",
+      "english": "Clean (adj.)",
+      "row": 148
+    },
+    {
+      "letter": "C",
+      "english": "Clean (n.)",
+      "row": 149
+    },
+    {
+      "letter": "C",
+      "english": "Clean (to – the wreckage of the past)",
+      "row": 150
+    },
+    {
+      "letter": "C",
+      "english": "Clean (v.)",
+      "row": 151
+    },
+    {
+      "letter": "C",
+      "english": "Clear (to – up the wreckage of the past)",
+      "row": 152
+    },
+    {
+      "letter": "C",
+      "english": "Cling (to – to something)",
+      "row": 153
+    },
+    {
+      "letter": "C",
+      "english": "Closemindedness",
+      "row": 154
+    },
+    {
+      "letter": "C",
+      "english": "Co alcoholic",
+      "row": 155
+    },
+    {
+      "letter": "C",
+      "english": "Codependence\n(See page 335 in the ACA BRB.)",
+      "row": 156
+    },
+    {
+      "letter": "C",
+      "english": "Codependent",
+      "row": 157
+    },
+    {
+      "letter": "C",
+      "english": "CEO (chief executive officer)",
+      "row": 158
+    },
+    {
+      "letter": "C",
+      "english": "Coerced",
+      "row": 159
+    },
+    {
+      "letter": "C",
+      "english": "Collapse",
+      "row": 160
+    },
+    {
+      "letter": "C",
+      "english": "Common behaviors",
+      "row": 161
+    },
+    {
+      "letter": "C",
+      "english": "Commonality",
+      "row": 162
+    },
+    {
+      "letter": "C",
+      "english": "Compel (to)",
+      "row": 163
+    },
+    {
+      "letter": "C",
+      "english": "Compulsivity",
+      "row": 164
+    },
+    {
+      "letter": "C",
+      "english": "Conflict",
+      "row": 165
+    },
+    {
+      "letter": "C",
+      "english": "Connected",
+      "row": 166
+    },
+    {
+      "letter": "C",
+      "english": "Connection",
+      "row": 167
+    },
+    {
+      "letter": "C",
+      "english": "Consistent",
+      "row": 168
+    },
+    {
+      "letter": "C",
+      "english": "Contempt",
+      "row": 169
+    },
+    {
+      "letter": "C",
+      "english": "Continuum",
+      "row": 170
+    },
+    {
+      "letter": "C",
+      "english": "Conversely",
+      "row": 171
+    },
+    {
+      "letter": "C",
+      "english": "Cope (to)",
+      "row": 172
+    },
+    {
+      "letter": "C",
+      "english": "Core",
+      "row": 173
+    },
+    {
+      "letter": "C",
+      "english": "Core (of the issue)",
+      "row": 174
+    },
+    {
+      "letter": "C",
+      "english": "Counselor",
+      "row": 175
+    },
+    {
+      "letter": "C",
+      "english": "Counselor (informed)",
+      "row": 176
+    },
+    {
+      "letter": "C",
+      "english": "Counseling",
+      "row": 177
+    },
+    {
+      "letter": "C",
+      "english": "Course",
+      "row": 178
+    },
+    {
+      "letter": "C",
+      "english": "Cover",
+      "row": 179
+    },
+    {
+      "letter": "C",
+      "english": "Covert",
+      "row": 180
+    },
+    {
+      "letter": "C",
+      "english": "Cowed",
+      "row": 181
+    },
+    {
+      "letter": "C",
+      "english": "Crave (to)",
+      "row": 182
+    },
+    {
+      "letter": "C",
+      "english": "Crazy",
+      "row": 183
+    },
+    {
+      "letter": "C",
+      "english": "Cringe (to)",
+      "row": 184
+    },
+    {
+      "letter": "C",
+      "english": "Crippling",
+      "row": 185
+    },
+    {
+      "letter": "C",
+      "english": "Critical inner parent",
+      "row": 186
+    },
+    {
+      "letter": "C",
+      "english": "Critical inner voice",
+      "row": 187
+    },
+    {
+      "letter": "C",
+      "english": "Critical parent\n(See chapter 8 of the ACA BRB.)",
+      "row": 188
+    },
+    {
+      "letter": "C",
+      "english": "Critical survival parent \nThis is a part of ourselves that tells us we may be making a mistake. Since the critical survival parent may have helped us to stay alive, it is critical (necessary) to our survival. \n(See “To the Beginner in All of Us” trifold and page 121 of The Laundry Lists Workbook.)",
+      "row": 189
+    },
+    {
+      "letter": "C",
+      "english": "Criticism",
+      "row": 190
+    },
+    {
+      "letter": "C",
+      "english": "Cross talk",
+      "row": 191
+    },
+    {
+      "letter": "C",
+      "english": "Cruising",
+      "row": 192
+    },
+    {
+      "letter": "C",
+      "english": "Cue",
+      "row": 193
+    },
+    {
+      "letter": "C",
+      "english": "Cunning",
+      "row": 194
+    },
+    {
+      "letter": "C",
+      "english": "Curse",
+      "row": 195
+    },
+    {
+      "letter": "C",
+      "english": "Cursed",
+      "row": 196
+    },
+    {
+      "letter": "C",
+      "english": "Cursing",
+      "row": 197
+    },
+    {
+      "letter": "D",
+      "english": "Daunting",
+      "row": 199
+    },
+    {
+      "letter": "D",
+      "english": "Deadened",
+      "row": 200
+    },
+    {
+      "letter": "D",
+      "english": "Deal (to – with)",
+      "row": 201
+    },
+    {
+      "letter": "D",
+      "english": "Deep-tissue massage",
+      "row": 202
+    },
+    {
+      "letter": "D",
+      "english": "Defect",
+      "row": 203
+    },
+    {
+      "letter": "D",
+      "english": "Defective",
+      "row": 204
+    },
+    {
+      "letter": "D",
+      "english": "Defiance",
+      "row": 205
+    },
+    {
+      "letter": "D",
+      "english": "Demeanor",
+      "row": 206
+    },
+    {
+      "letter": "D",
+      "english": "Dementia",
+      "row": 207
+    },
+    {
+      "letter": "D",
+      "english": "Denial",
+      "row": 208
+    },
+    {
+      "letter": "D",
+      "english": "Denial (to be in --)",
+      "row": 209
+    },
+    {
+      "letter": "D",
+      "english": "Deprivation",
+      "row": 210
+    },
+    {
+      "letter": "D",
+      "english": "Deserve",
+      "row": 211
+    },
+    {
+      "letter": "D",
+      "english": "Despair",
+      "row": 212
+    },
+    {
+      "letter": "D",
+      "english": "Despite",
+      "row": 213
+    },
+    {
+      "letter": "D",
+      "english": "Detachment",
+      "row": 214
+    },
+    {
+      "letter": "D",
+      "english": "Devastating",
+      "row": 215
+    },
+    {
+      "letter": "D",
+      "english": "Disappointed",
+      "row": 216
+    },
+    {
+      "letter": "D",
+      "english": "Disbelief",
+      "row": 217
+    },
+    {
+      "letter": "D",
+      "english": "Disclose",
+      "row": 218
+    },
+    {
+      "letter": "D",
+      "english": "Disconnection",
+      "row": 219
+    },
+    {
+      "letter": "D",
+      "english": "Discovery and recovery",
+      "row": 220
+    },
+    {
+      "letter": "D",
+      "english": "Discussion",
+      "row": 221
+    },
+    {
+      "letter": "D",
+      "english": "Disdain",
+      "row": 222
+    },
+    {
+      "letter": "D",
+      "english": "Disease",
+      "row": 223
+    },
+    {
+      "letter": "D",
+      "english": "Disease of family addiction \n(See disease model on page xxvi of the ACA BRB.)",
+      "row": 224
+    },
+    {
+      "letter": "D",
+      "english": "Disgraceful",
+      "row": 225
+    },
+    {
+      "letter": "D",
+      "english": "Dishonesty",
+      "row": 226
+    },
+    {
+      "letter": "D",
+      "english": "Dismissive",
+      "row": 227
+    },
+    {
+      "letter": "D",
+      "english": "Disorder",
+      "row": 228
+    },
+    {
+      "letter": "D",
+      "english": "Dissociation",
+      "row": 229
+    },
+    {
+      "letter": "D",
+      "english": "Distorted (image)",
+      "row": 230
+    },
+    {
+      "letter": "D",
+      "english": "Divided self (the)",
+      "row": 231
+    },
+    {
+      "letter": "D",
+      "english": "Divine (the)",
+      "row": 232
+    },
+    {
+      "letter": "D",
+      "english": "Dole (to – out)",
+      "row": 233
+    },
+    {
+      "letter": "D",
+      "english": "Don’t remember rule",
+      "row": 234
+    },
+    {
+      "letter": "D",
+      "english": "Doom (n.)",
+      "row": 235
+    },
+    {
+      "letter": "D",
+      "english": "Doomed",
+      "row": 236
+    },
+    {
+      "letter": "D",
+      "english": "Doctor (Dr.)",
+      "row": 237
+    },
+    {
+      "letter": "D",
+      "english": "Downright",
+      "row": 238
+    },
+    {
+      "letter": "D",
+      "english": "Dramatic",
+      "row": 239
+    },
+    {
+      "letter": "D",
+      "english": "Dread",
+      "row": 240
+    },
+    {
+      "letter": "D",
+      "english": "Dredge (to – up)",
+      "row": 241
+    },
+    {
+      "letter": "D",
+      "english": "Drive (to be driven by)",
+      "row": 242
+    },
+    {
+      "letter": "D",
+      "english": "Drug",
+      "row": 243
+    },
+    {
+      "letter": "D",
+      "english": "Drug addict",
+      "row": 244
+    },
+    {
+      "letter": "D",
+      "english": "Dwell (to)",
+      "row": 245
+    },
+    {
+      "letter": "D",
+      "english": "Dwindle",
+      "row": 246
+    },
+    {
+      "letter": "D",
+      "english": "Dysfunctional",
+      "row": 247
+    },
+    {
+      "letter": "D",
+      "english": "Dysfunction (family --)",
+      "row": 248
+    },
+    {
+      "letter": "E",
+      "english": "Eager",
+      "row": 250
+    },
+    {
+      "letter": "E",
+      "english": "Earnestly",
+      "row": 251
+    },
+    {
+      "letter": "E",
+      "english": "Earnestness",
+      "row": 252
+    },
+    {
+      "letter": "E",
+      "english": "Easy does it",
+      "row": 253
+    },
+    {
+      "letter": "E",
+      "english": "Education",
+      "row": 254
+    },
+    {
+      "letter": "E",
+      "english": "Educational",
+      "row": 255
+    },
+    {
+      "letter": "E",
+      "english": "Effects",
+      "row": 256
+    },
+    {
+      "letter": "E",
+      "english": "Elder, Elder statesman",
+      "row": 257
+    },
+    {
+      "letter": "E",
+      "english": "Embrace",
+      "row": 258
+    },
+    {
+      "letter": "E",
+      "english": "Emotional abuse",
+      "row": 259
+    },
+    {
+      "letter": "E",
+      "english": "Emotional sobriety",
+      "row": 260
+    },
+    {
+      "letter": "E",
+      "english": "Empowered",
+      "row": 261
+    },
+    {
+      "letter": "E",
+      "english": "Embodiment",
+      "row": 262
+    },
+    {
+      "letter": "E",
+      "english": "Enable (to)",
+      "row": 263
+    },
+    {
+      "letter": "E",
+      "english": "Engulfed",
+      "row": 264
+    },
+    {
+      "letter": "E",
+      "english": "Enmeshed",
+      "row": 265
+    },
+    {
+      "letter": "E",
+      "english": "Entertainment",
+      "row": 266
+    },
+    {
+      "letter": "E",
+      "english": "Enthralled",
+      "row": 267
+    },
+    {
+      "letter": "E",
+      "english": "Entangled",
+      "row": 268
+    },
+    {
+      "letter": "E",
+      "english": "Envy",
+      "row": 269
+    },
+    {
+      "letter": "E",
+      "english": "Evil (adj.)",
+      "row": 270
+    },
+    {
+      "letter": "E",
+      "english": "Evil (n.)",
+      "row": 271
+    },
+    {
+      "letter": "E",
+      "english": "Exhaustion",
+      "row": 272
+    },
+    {
+      "letter": "E",
+      "english": "Explain away (to)",
+      "row": 273
+    },
+    {
+      "letter": "E",
+      "english": "Exposed",
+      "row": 274
+    },
+    {
+      "letter": "E",
+      "english": "Extent",
+      "row": 275
+    },
+    {
+      "letter": "F",
+      "english": "Face (to)",
+      "row": 277
+    },
+    {
+      "letter": "F",
+      "english": "Failure",
+      "row": 278
+    },
+    {
+      "letter": "F",
+      "english": "Fairly",
+      "row": 279
+    },
+    {
+      "letter": "F",
+      "english": "Fairness",
+      "row": 280
+    },
+    {
+      "letter": "F",
+      "english": "Faithful",
+      "row": 281
+    },
+    {
+      "letter": "F",
+      "english": "Fall short (to)",
+      "row": 282
+    },
+    {
+      "letter": "F",
+      "english": "Fallout (fall out)",
+      "row": 283
+    },
+    {
+      "letter": "F",
+      "english": "False self\n(See index of the ACA BRB for examples of this term.)",
+      "row": 284
+    },
+    {
+      "letter": "F",
+      "english": "Family roles\n(See pages 97 and 98 of the ACA BRB.)",
+      "row": 285
+    },
+    {
+      "letter": "F",
+      "english": "Family script",
+      "row": 286
+    },
+    {
+      "letter": "F",
+      "english": "Fantasy",
+      "row": 287
+    },
+    {
+      "letter": "F",
+      "english": "Fashion (in)",
+      "row": 288
+    },
+    {
+      "letter": "F",
+      "english": "Fearless",
+      "row": 289
+    },
+    {
+      "letter": "F",
+      "english": "Feeling self (the)",
+      "row": 290
+    },
+    {
+      "letter": "F",
+      "english": "Feeling superior",
+      "row": 291
+    },
+    {
+      "letter": "F",
+      "english": "Feelings",
+      "row": 292
+    },
+    {
+      "letter": "F",
+      "english": "Fellowship",
+      "row": 293
+    },
+    {
+      "letter": "F",
+      "english": "Fellow traveler",
+      "row": 294
+    },
+    {
+      "letter": "F",
+      "english": "Fictionalize (to)",
+      "row": 295
+    },
+    {
+      "letter": "F",
+      "english": "First things first",
+      "row": 296
+    },
+    {
+      "letter": "F",
+      "english": "Fit",
+      "row": 297
+    },
+    {
+      "letter": "F",
+      "english": "Fits (throwing)",
+      "row": 298
+    },
+    {
+      "letter": "F",
+      "english": "Fix (to – another) \nTo touch or hug the person is known as “fixing”.",
+      "row": 299
+    },
+    {
+      "letter": "F",
+      "english": "Flaw",
+      "row": 300
+    },
+    {
+      "letter": "F",
+      "english": "Flawed (to be --)",
+      "row": 301
+    },
+    {
+      "letter": "F",
+      "english": "Fledgling",
+      "row": 302
+    },
+    {
+      "letter": "F",
+      "english": "Flourish (to)",
+      "row": 303
+    },
+    {
+      "letter": "F",
+      "english": "Focus (to – on)",
+      "row": 304
+    },
+    {
+      "letter": "F",
+      "english": "Forethought",
+      "row": 305
+    },
+    {
+      "letter": "F",
+      "english": "Forgiveness",
+      "row": 306
+    },
+    {
+      "letter": "F",
+      "english": "Forth",
+      "row": 307
+    },
+    {
+      "letter": "F",
+      "english": "Foster children",
+      "row": 308
+    },
+    {
+      "letter": "F",
+      "english": "Foundling (home)",
+      "row": 309
+    },
+    {
+      "letter": "F",
+      "english": "Fragmented",
+      "row": 310
+    },
+    {
+      "letter": "F",
+      "english": "Frantic",
+      "row": 311
+    },
+    {
+      "letter": "F",
+      "english": "Fraught",
+      "row": 312
+    },
+    {
+      "letter": "F",
+      "english": "Freeze (to)",
+      "row": 313
+    },
+    {
+      "letter": "F",
+      "english": "Friendliness",
+      "row": 314
+    },
+    {
+      "letter": "F",
+      "english": "Frightening",
+      "row": 315
+    },
+    {
+      "letter": "F",
+      "english": "Fruit",
+      "row": 316
+    },
+    {
+      "letter": "F",
+      "english": "Fulfill",
+      "row": 317
+    },
+    {
+      "letter": "F",
+      "english": "Full",
+      "row": 318
+    },
+    {
+      "letter": "F",
+      "english": "Fury",
+      "row": 319
+    },
+    {
+      "letter": "G",
+      "english": "Gambling",
+      "row": 321
+    },
+    {
+      "letter": "G",
+      "english": "Gateway",
+      "row": 322
+    },
+    {
+      "letter": "G",
+      "english": "Gentleness",
+      "row": 323
+    },
+    {
+      "letter": "G",
+      "english": "Gentleness break",
+      "row": 324
+    },
+    {
+      "letter": "G",
+      "english": "Genuine",
+      "row": 325
+    },
+    {
+      "letter": "G",
+      "english": "Get out of yourself (oneself) (to)",
+      "row": 326
+    },
+    {
+      "letter": "G",
+      "english": "Getcha God",
+      "row": 327
+    },
+    {
+      "letter": "G",
+      "english": "Getting in (our bodies)",
+      "row": 328
+    },
+    {
+      "letter": "G",
+      "english": "Gift",
+      "row": 329
+    },
+    {
+      "letter": "G",
+      "english": "Giggly",
+      "row": 330
+    },
+    {
+      "letter": "G",
+      "english": "Give up (at school)",
+      "row": 331
+    },
+    {
+      "letter": "G",
+      "english": "Glaring (adj.)",
+      "row": 332
+    },
+    {
+      "letter": "G",
+      "english": "Glimpse (n.)",
+      "row": 333
+    },
+    {
+      "letter": "G",
+      "english": "Glimpse (v.)",
+      "row": 334
+    },
+    {
+      "letter": "G",
+      "english": "Glue",
+      "row": 335
+    },
+    {
+      "letter": "G",
+      "english": "Gossip",
+      "row": 336
+    },
+    {
+      "letter": "G",
+      "english": "Grandchild of an alcoholic",
+      "row": 337
+    },
+    {
+      "letter": "G",
+      "english": "Grant me (something)",
+      "row": 338
+    },
+    {
+      "letter": "G",
+      "english": "Grasp",
+      "row": 339
+    },
+    {
+      "letter": "G",
+      "english": "Grateful",
+      "row": 340
+    },
+    {
+      "letter": "G",
+      "english": "Greed",
+      "row": 341
+    },
+    {
+      "letter": "G",
+      "english": "Grief",
+      "row": 342
+    },
+    {
+      "letter": "G",
+      "english": "Grieve (to)",
+      "row": 343
+    },
+    {
+      "letter": "G",
+      "english": "Grin",
+      "row": 344
+    },
+    {
+      "letter": "G",
+      "english": "Growing (n.)",
+      "row": 345
+    },
+    {
+      "letter": "G",
+      "english": "Grudge (n.)",
+      "row": 346
+    },
+    {
+      "letter": "G",
+      "english": "Grudge (v.)",
+      "row": 347
+    },
+    {
+      "letter": "G",
+      "english": "Grudging hours",
+      "row": 348
+    },
+    {
+      "letter": "G",
+      "english": "Guardian",
+      "row": 349
+    },
+    {
+      "letter": "G",
+      "english": "Guesses (second)",
+      "row": 350
+    },
+    {
+      "letter": "G",
+      "english": "Gut reaction",
+      "row": 351
+    },
+    {
+      "letter": "H",
+      "english": "HALTS",
+      "row": 353
+    },
+    {
+      "letter": "H",
+      "english": "Handbook",
+      "row": 354
+    },
+    {
+      "letter": "H",
+      "english": "Handle",
+      "row": 355
+    },
+    {
+      "letter": "H",
+      "english": "Handout",
+      "row": 356
+    },
+    {
+      "letter": "H",
+      "english": "Hang on (to)",
+      "row": 357
+    },
+    {
+      "letter": "H",
+      "english": "Hang over (to)",
+      "row": 358
+    },
+    {
+      "letter": "H",
+      "english": "Hangover",
+      "row": 359
+    },
+    {
+      "letter": "H",
+      "english": "Hard working",
+      "row": 360
+    },
+    {
+      "letter": "H",
+      "english": "Harmed",
+      "row": 361
+    },
+    {
+      "letter": "H",
+      "english": "Harmful",
+      "row": 362
+    },
+    {
+      "letter": "H",
+      "english": "Harsh",
+      "row": 363
+    },
+    {
+      "letter": "H",
+      "english": "Harshness",
+      "row": 364
+    },
+    {
+      "letter": "H",
+      "english": "Havoc",
+      "row": 365
+    },
+    {
+      "letter": "H",
+      "english": "Heal (to)",
+      "row": 366
+    },
+    {
+      "letter": "H",
+      "english": "Heart (to their (his, her) heart’s desire)",
+      "row": 367
+    },
+    {
+      "letter": "H",
+      "english": "Helpline",
+      "row": 368
+    },
+    {
+      "letter": "H",
+      "english": "Hero",
+      "row": 369
+    },
+    {
+      "letter": "H",
+      "english": "Hiding",
+      "row": 370
+    },
+    {
+      "letter": "H",
+      "english": "Higher Power",
+      "row": 371
+    },
+    {
+      "letter": "H",
+      "english": "Hiking",
+      "row": 372
+    },
+    {
+      "letter": "H",
+      "english": "Hindrance",
+      "row": 373
+    },
+    {
+      "letter": "H",
+      "english": "Hip label",
+      "row": 374
+    },
+    {
+      "letter": "H",
+      "english": "Hit (experience a) (such as taking a dosage of drugs). \nYou can also get a “hit” or become intoxicated from inside drugs such as fear, excitement, and pain. Fear, excitement, and pain are derived from inside drugs connected to adrenalin, endorphins, or melatonin. \n(See pages 16, 23, 69, or 87 of the ACA BRB. Also see",
+      "row": 375
+    },
+    {
+      "letter": "H",
+      "english": "Hit the bottom (to)",
+      "row": 376
+    },
+    {
+      "letter": "H",
+      "english": "Home",
+      "row": 377
+    },
+    {
+      "letter": "H",
+      "english": "Home group",
+      "row": 378
+    },
+    {
+      "letter": "H",
+      "english": "Honor (to)",
+      "row": 379
+    },
+    {
+      "letter": "H",
+      "english": "Hope for Adult Children of Alcoholics",
+      "row": 380
+    },
+    {
+      "letter": "H",
+      "english": "Hopelessly",
+      "row": 381
+    },
+    {
+      "letter": "H",
+      "english": "Household",
+      "row": 382
+    },
+    {
+      "letter": "H",
+      "english": "However",
+      "row": 383
+    },
+    {
+      "letter": "H",
+      "english": "Humorous",
+      "row": 384
+    },
+    {
+      "letter": "H",
+      "english": "Hunch",
+      "row": 385
+    },
+    {
+      "letter": "H",
+      "english": "Hurtful",
+      "row": 386
+    },
+    {
+      "letter": "H",
+      "english": "Hypercritical",
+      "row": 387
+    },
+    {
+      "letter": "H",
+      "english": "Hyper vigilance",
+      "row": 388
+    },
+    {
+      "letter": "H",
+      "english": "Hyper vigilant",
+      "row": 389
+    },
+    {
+      "letter": "I",
+      "english": "Identified alcoholic",
+      "row": 391
+    },
+    {
+      "letter": "I",
+      "english": "Identity Committee (the)",
+      "row": 392
+    },
+    {
+      "letter": "I",
+      "english": "Identity Paper\n(See chapters 6 and 10 of the ACA BRB.)",
+      "row": 393
+    },
+    {
+      "letter": "I",
+      "english": "Inadequacy",
+      "row": 394
+    },
+    {
+      "letter": "I",
+      "english": "Inclusion (inclusiveness)",
+      "row": 395
+    },
+    {
+      "letter": "I",
+      "english": "Inconspicuously",
+      "row": 396
+    },
+    {
+      "letter": "I",
+      "english": "Indifference",
+      "row": 397
+    },
+    {
+      "letter": "I",
+      "english": "Inflated",
+      "row": 398
+    },
+    {
+      "letter": "I",
+      "english": "Ingrained",
+      "row": 399
+    },
+    {
+      "letter": "I",
+      "english": "Inhibit",
+      "row": 400
+    },
+    {
+      "letter": "I",
+      "english": "Injury",
+      "row": 401
+    },
+    {
+      "letter": "I",
+      "english": "Inkling",
+      "row": 402
+    },
+    {
+      "letter": "I",
+      "english": "Inner Child",
+      "row": 403
+    },
+    {
+      "letter": "I",
+      "english": "Inner Drugs\n(See pages 16, 23, and 69 in the ACA BRB.)",
+      "row": 404
+    },
+    {
+      "letter": "I",
+      "english": "Insanity",
+      "row": 405
+    },
+    {
+      "letter": "I",
+      "english": "Inside “drugging”",
+      "row": 406
+    },
+    {
+      "letter": "I",
+      "english": "Insight",
+      "row": 407
+    },
+    {
+      "letter": "I",
+      "english": "Interim",
+      "row": 408
+    },
+    {
+      "letter": "I",
+      "english": "Internalize \n (See page 22 of the ACA BRB.)",
+      "row": 409
+    },
+    {
+      "letter": "I",
+      "english": "Interviewed",
+      "row": 410
+    },
+    {
+      "letter": "I",
+      "english": "Involve",
+      "row": 411
+    },
+    {
+      "letter": "I",
+      "english": "Issue, issues (for example, “abandonment issues”)",
+      "row": 412
+    },
+    {
+      "letter": "I",
+      "english": "Item",
+      "row": 413
+    },
+    {
+      "letter": "I",
+      "english": "“It works, if you work it!”",
+      "row": 414
+    },
+    {
+      "letter": "J",
+      "english": "Joyful",
+      "row": 416
+    },
+    {
+      "letter": "J",
+      "english": "Judgemental",
+      "row": 417
+    },
+    {
+      "letter": "J",
+      "english": "Judgementalness",
+      "row": 418
+    },
+    {
+      "letter": "J",
+      "english": "Judging myself without mercy",
+      "row": 419
+    },
+    {
+      "letter": "J",
+      "english": "Judicious",
+      "row": 420
+    },
+    {
+      "letter": "J",
+      "english": "Just as telling (not --)",
+      "row": 421
+    },
+    {
+      "letter": "J",
+      "english": "Just as telling…",
+      "row": 422
+    },
+    {
+      "letter": "K",
+      "english": "Keep it simple (to)",
+      "row": 424
+    },
+    {
+      "letter": "K",
+      "english": "Key",
+      "row": 425
+    },
+    {
+      "letter": "K",
+      "english": "Key event",
+      "row": 426
+    },
+    {
+      "letter": "K",
+      "english": "Keyword",
+      "row": 427
+    },
+    {
+      "letter": "K",
+      "english": "Kind (adj.)",
+      "row": 428
+    },
+    {
+      "letter": "L",
+      "english": "Language",
+      "row": 430
+    },
+    {
+      "letter": "L",
+      "english": "Lash out (to – at someone)",
+      "row": 431
+    },
+    {
+      "letter": "L",
+      "english": "Latter (in the --)",
+      "row": 432
+    },
+    {
+      "letter": "L",
+      "english": "Latter (the latter of the two)",
+      "row": 433
+    },
+    {
+      "letter": "L",
+      "english": "Laundromat",
+      "row": 434
+    },
+    {
+      "letter": "L",
+      "english": "Laundry List (14 traits of an adult child of an alcoholic/dysfunctional family)",
+      "row": 435
+    },
+    {
+      "letter": "L",
+      "english": "Lavish",
+      "row": 436
+    },
+    {
+      "letter": "L",
+      "english": "Leap",
+      "row": 437
+    },
+    {
+      "letter": "L",
+      "english": "Ledge (n.)",
+      "row": 438
+    },
+    {
+      "letter": "L",
+      "english": "Lenient (adj.)",
+      "row": 439
+    },
+    {
+      "letter": "L",
+      "english": "Lessen (to)",
+      "row": 440
+    },
+    {
+      "letter": "L",
+      "english": "Let to (to)",
+      "row": 441
+    },
+    {
+      "letter": "L",
+      "english": "Lethal",
+      "row": 442
+    },
+    {
+      "letter": "L",
+      "english": "Letting go",
+      "row": 443
+    },
+    {
+      "letter": "L",
+      "english": "Limp (to)",
+      "row": 444
+    },
+    {
+      "letter": "L",
+      "english": "Linger (to)",
+      "row": 445
+    },
+    {
+      "letter": "L",
+      "english": "Lingering",
+      "row": 446
+    },
+    {
+      "letter": "L",
+      "english": "Literature",
+      "row": 447
+    },
+    {
+      "letter": "L",
+      "english": "Livelihood",
+      "row": 448
+    },
+    {
+      "letter": "L",
+      "english": "Lock up (to)",
+      "row": 449
+    },
+    {
+      "letter": "L",
+      "english": "Locked down",
+      "row": 450
+    },
+    {
+      "letter": "L",
+      "english": "Loneliness",
+      "row": 451
+    },
+    {
+      "letter": "L",
+      "english": "Longing (n.)",
+      "row": 452
+    },
+    {
+      "letter": "L",
+      "english": "Longitudinal",
+      "row": 453
+    },
+    {
+      "letter": "L",
+      "english": "Loopy",
+      "row": 454
+    },
+    {
+      "letter": "L",
+      "english": "Loss",
+      "row": 455
+    },
+    {
+      "letter": "L",
+      "english": "Lost child",
+      "row": 456
+    },
+    {
+      "letter": "L",
+      "english": "Loving parent\n(See chapter 8 in the ACA BRB.)",
+      "row": 457
+    },
+    {
+      "letter": "L",
+      "english": "Lukewarm",
+      "row": 458
+    },
+    {
+      "letter": "L",
+      "english": "Lump",
+      "row": 459
+    },
+    {
+      "letter": "L",
+      "english": "Lust",
+      "row": 460
+    },
+    {
+      "letter": "M",
+      "english": "Maddening",
+      "row": 462
+    },
+    {
+      "letter": "M",
+      "english": "Maddening pace",
+      "row": 463
+    },
+    {
+      "letter": "M",
+      "english": "Manageable",
+      "row": 464
+    },
+    {
+      "letter": "M",
+      "english": "Manipulative",
+      "row": 465
+    },
+    {
+      "letter": "M",
+      "english": "Many (of us)",
+      "row": 466
+    },
+    {
+      "letter": "M",
+      "english": "Mascot child",
+      "row": 467
+    },
+    {
+      "letter": "M",
+      "english": "Meeting",
+      "row": 468
+    },
+    {
+      "letter": "M",
+      "english": "Mental Illness",
+      "row": 469
+    },
+    {
+      "letter": "M",
+      "english": "Mercy",
+      "row": 470
+    },
+    {
+      "letter": "M",
+      "english": "Midst",
+      "row": 471
+    },
+    {
+      "letter": "M",
+      "english": "Mind",
+      "row": 472
+    },
+    {
+      "letter": "M",
+      "english": "Mind-boggling, it boggles the mind",
+      "row": 473
+    },
+    {
+      "letter": "M",
+      "english": "Miracle state",
+      "row": 474
+    },
+    {
+      "letter": "M",
+      "english": "Mire",
+      "row": 475
+    },
+    {
+      "letter": "M",
+      "english": "Mistakenly",
+      "row": 476
+    },
+    {
+      "letter": "M",
+      "english": "Mistrust",
+      "row": 477
+    },
+    {
+      "letter": "M",
+      "english": "Mood altering substances",
+      "row": 478
+    },
+    {
+      "letter": "M",
+      "english": "Mourning",
+      "row": 479
+    },
+    {
+      "letter": "M",
+      "english": "Movement",
+      "row": 480
+    },
+    {
+      "letter": "M",
+      "english": "Mundane",
+      "row": 481
+    },
+    {
+      "letter": "N",
+      "english": "Neglect",
+      "row": 483
+    },
+    {
+      "letter": "N",
+      "english": "Neglectful",
+      "row": 484
+    },
+    {
+      "letter": "N",
+      "english": "Neurotic",
+      "row": 485
+    },
+    {
+      "letter": "N",
+      "english": "New (the --)",
+      "row": 486
+    },
+    {
+      "letter": "N",
+      "english": "No matter",
+      "row": 487
+    },
+    {
+      "letter": "N",
+      "english": "Nodding",
+      "row": 488
+    },
+    {
+      "letter": "N",
+      "english": "Numbed out",
+      "row": 489
+    },
+    {
+      "letter": "N",
+      "english": "Numbing (psychic numbing)",
+      "row": 490
+    },
+    {
+      "letter": "N",
+      "english": "Numbness",
+      "row": 491
+    },
+    {
+      "letter": "N",
+      "english": "Nurture (to)",
+      "row": 492
+    },
+    {
+      "letter": "N",
+      "english": "Nurturing",
+      "row": 493
+    },
+    {
+      "letter": "O",
+      "english": "O-Anon",
+      "row": 495
+    },
+    {
+      "letter": "O",
+      "english": "Obvious",
+      "row": 496
+    },
+    {
+      "letter": "O",
+      "english": "Odds",
+      "row": 497
+    },
+    {
+      "letter": "O",
+      "english": "Offender",
+      "row": 498
+    },
+    {
+      "letter": "O",
+      "english": "Old member",
+      "row": 499
+    },
+    {
+      "letter": "O",
+      "english": "Old saying",
+      "row": 500
+    },
+    {
+      "letter": "O",
+      "english": "One’s self",
+      "row": 501
+    },
+    {
+      "letter": "O",
+      "english": "Ongoing",
+      "row": 502
+    },
+    {
+      "letter": "O",
+      "english": "Onlooker",
+      "row": 503
+    },
+    {
+      "letter": "O",
+      "english": "Opinion (doctor’s)",
+      "row": 504
+    },
+    {
+      "letter": "O",
+      "english": "Original",
+      "row": 505
+    },
+    {
+      "letter": "O",
+      "english": "Outcomes",
+      "row": 506
+    },
+    {
+      "letter": "O",
+      "english": "Outlook",
+      "row": 507
+    },
+    {
+      "letter": "O",
+      "english": "Outreach",
+      "row": 508
+    },
+    {
+      "letter": "O",
+      "english": "Overnight",
+      "row": 509
+    },
+    {
+      "letter": "O",
+      "english": "Overpower",
+      "row": 510
+    },
+    {
+      "letter": "O",
+      "english": "Overtone",
+      "row": 511
+    },
+    {
+      "letter": "O",
+      "english": "Overwhelmed",
+      "row": 512
+    },
+    {
+      "letter": "P",
+      "english": "Panel discussion",
+      "row": 514
+    },
+    {
+      "letter": "P",
+      "english": "Panic disorder",
+      "row": 515
+    },
+    {
+      "letter": "P",
+      "english": "Para-alcoholic (codependency)",
+      "row": 516
+    },
+    {
+      "letter": "P",
+      "english": "Para-alcoholism \n(See page 335 in the ACA BRB.)",
+      "row": 517
+    },
+    {
+      "letter": "P",
+      "english": "Passive-aggressive \n(See index of ACA BRB.)",
+      "row": 518
+    },
+    {
+      "letter": "P",
+      "english": "Pass on (to)",
+      "row": 519
+    },
+    {
+      "letter": "P",
+      "english": "Path",
+      "row": 520
+    },
+    {
+      "letter": "P",
+      "english": "Pathway",
+      "row": 521
+    },
+    {
+      "letter": "P",
+      "english": "Pattern",
+      "row": 522
+    },
+    {
+      "letter": "P",
+      "english": "Penned",
+      "row": 523
+    },
+    {
+      "letter": "P",
+      "english": "People-pleaser or approval seeker\nTrait 2 of The Laundry List. We became approval seekers and lost our identity in the process",
+      "row": 524
+    },
+    {
+      "letter": "P",
+      "english": "People-pleaser",
+      "row": 525
+    },
+    {
+      "letter": "P",
+      "english": "People-pleasing",
+      "row": 526
+    },
+    {
+      "letter": "P",
+      "english": "Piercing (nom)",
+      "row": 527
+    },
+    {
+      "letter": "P",
+      "english": "Perfectionism",
+      "row": 528
+    },
+    {
+      "letter": "P",
+      "english": "Perfectionist",
+      "row": 529
+    },
+    {
+      "letter": "P",
+      "english": "Perpetration",
+      "row": 530
+    },
+    {
+      "letter": "P",
+      "english": "Persecutor or Perpetrator",
+      "row": 531
+    },
+    {
+      "letter": "P",
+      "english": "Pervasive",
+      "row": 532
+    },
+    {
+      "letter": "P",
+      "english": "Pettiness",
+      "row": 533
+    },
+    {
+      "letter": "P",
+      "english": "Picked on",
+      "row": 534
+    },
+    {
+      "letter": "P",
+      "english": "Piercing (adj.)",
+      "row": 535
+    },
+    {
+      "letter": "P",
+      "english": "Pinpoint (to)",
+      "row": 536
+    },
+    {
+      "letter": "P",
+      "english": "Pitiful",
+      "row": 537
+    },
+    {
+      "letter": "P",
+      "english": "Pitifulness",
+      "row": 538
+    },
+    {
+      "letter": "P",
+      "english": "Playpen",
+      "row": 539
+    },
+    {
+      "letter": "P",
+      "english": "Plea",
+      "row": 540
+    },
+    {
+      "letter": "P",
+      "english": "Pleased",
+      "row": 541
+    },
+    {
+      "letter": "P",
+      "english": "Pledge",
+      "row": 542
+    },
+    {
+      "letter": "P",
+      "english": "Plummet (to)",
+      "row": 543
+    },
+    {
+      "letter": "P",
+      "english": "Ponderous",
+      "row": 544
+    },
+    {
+      "letter": "P",
+      "english": "Positive traits",
+      "row": 545
+    },
+    {
+      "letter": "P",
+      "english": "Post Traumatic Stress Disorder (PTSD)",
+      "row": 546
+    },
+    {
+      "letter": "P",
+      "english": "Post Traumatic Stress Syndrome (PTSS)",
+      "row": 547
+    },
+    {
+      "letter": "P",
+      "english": "Powerful",
+      "row": 548
+    },
+    {
+      "letter": "P",
+      "english": "Praise (n.)",
+      "row": 549
+    },
+    {
+      "letter": "P",
+      "english": "Praise (v.)",
+      "row": 550
+    },
+    {
+      "letter": "P",
+      "english": "Prayer life",
+      "row": 551
+    },
+    {
+      "letter": "P",
+      "english": "Preciousness",
+      "row": 552
+    },
+    {
+      "letter": "P",
+      "english": "Predicament",
+      "row": 553
+    },
+    {
+      "letter": "P",
+      "english": "Predictability",
+      "row": 554
+    },
+    {
+      "letter": "P",
+      "english": "Privation",
+      "row": 555
+    },
+    {
+      "letter": "P",
+      "english": "Problem drinker",
+      "row": 556
+    },
+    {
+      "letter": "P",
+      "english": "Procrastination",
+      "row": 557
+    },
+    {
+      "letter": "P",
+      "english": "Program (ACA)",
+      "row": 558
+    },
+    {
+      "letter": "P",
+      "english": "Prone to",
+      "row": 559
+    },
+    {
+      "letter": "P",
+      "english": "PTSD",
+      "row": 560
+    },
+    {
+      "letter": "P",
+      "english": "Pulled into (to be --)",
+      "row": 561
+    },
+    {
+      "letter": "Q",
+      "english": "Qualifier",
+      "row": 563
+    },
+    {
+      "letter": "Q",
+      "english": "Qualify for ACA",
+      "row": 564
+    },
+    {
+      "letter": "Q",
+      "english": "Quality",
+      "row": 565
+    },
+    {
+      "letter": "Q",
+      "english": "Quality positive",
+      "row": 566
+    },
+    {
+      "letter": "R",
+      "english": "Raw",
+      "row": 568
+    },
+    {
+      "letter": "R",
+      "english": "Reach (n.)",
+      "row": 569
+    },
+    {
+      "letter": "R",
+      "english": "Reach (v.)",
+      "row": 570
+    },
+    {
+      "letter": "R",
+      "english": "Reactors rather than actors",
+      "row": 571
+    },
+    {
+      "letter": "R",
+      "english": "Real Self (also True Self)",
+      "row": 572
+    },
+    {
+      "letter": "R",
+      "english": "Recasting",
+      "row": 573
+    },
+    {
+      "letter": "R",
+      "english": "Reclaim (to)",
+      "row": 574
+    },
+    {
+      "letter": "R",
+      "english": "Recollections",
+      "row": 575
+    },
+    {
+      "letter": "R",
+      "english": "Recovery",
+      "row": 576
+    },
+    {
+      "letter": "R",
+      "english": "Reenact (to)",
+      "row": 577
+    },
+    {
+      "letter": "R",
+      "english": "Reenactment",
+      "row": 578
+    },
+    {
+      "letter": "R",
+      "english": "Reflection",
+      "row": 579
+    },
+    {
+      "letter": "R",
+      "english": "Regardless",
+      "row": 580
+    },
+    {
+      "letter": "R",
+      "english": "Rejection",
+      "row": 581
+    },
+    {
+      "letter": "R",
+      "english": "Rehashed",
+      "row": 582
+    },
+    {
+      "letter": "R",
+      "english": "Rehearse",
+      "row": 583
+    },
+    {
+      "letter": "R",
+      "english": "Relapse\n(This can be relapse with alcohol/drugs. Or you can relapse by returning to childhood roles or using the Laundry List Traits to remain stuck in addiction or self-harming behavior/ relationships.)",
+      "row": 584
+    },
+    {
+      "letter": "R",
+      "english": "Relate \n(See chapter 3 of the ACA BRB: My Parents Did Not Drink But I Can Relate.)",
+      "row": 585
+    },
+    {
+      "letter": "R",
+      "english": "Related",
+      "row": 586
+    },
+    {
+      "letter": "R",
+      "english": "Relative",
+      "row": 587
+    },
+    {
+      "letter": "R",
+      "english": "Relief",
+      "row": 588
+    },
+    {
+      "letter": "R",
+      "english": "Rely on (to)",
+      "row": 589
+    },
+    {
+      "letter": "R",
+      "english": "Remorseful",
+      "row": 590
+    },
+    {
+      "letter": "R",
+      "english": "Removal",
+      "row": 591
+    },
+    {
+      "letter": "R",
+      "english": "Reparent",
+      "row": 592
+    },
+    {
+      "letter": "R",
+      "english": "Reparenting\nReparenting ourselves can mean many things… (See page 299 of the ACA BRB.) \nBy reparenting ourselves, we can believe… (See page 301 of the ACA BRB.)",
+      "row": 593
+    },
+    {
+      "letter": "R",
+      "english": "Rescuer\n(See index in ACA BRB for examples.)",
+      "row": 594
+    },
+    {
+      "letter": "R",
+      "english": "Resentment",
+      "row": 595
+    },
+    {
+      "letter": "R",
+      "english": "Restage (to)",
+      "row": 596
+    },
+    {
+      "letter": "R",
+      "english": "Revisit (to)",
+      "row": 597
+    },
+    {
+      "letter": "R",
+      "english": "Reward",
+      "row": 598
+    },
+    {
+      "letter": "R",
+      "english": "Rewired",
+      "row": 599
+    },
+    {
+      "letter": "R",
+      "english": "Ridicule",
+      "row": 600
+    },
+    {
+      "letter": "R",
+      "english": "Rigidly",
+      "row": 601
+    },
+    {
+      "letter": "R",
+      "english": "Roaring",
+      "row": 602
+    },
+    {
+      "letter": "R",
+      "english": "Roles that children take on in the alcoholic or dysfunctional home: \n- family hero child (usually the oldest child who is perfectionistic) \n- lost child (usually shy or invisible child) \n- black sheep child (usually the angry or trouble-making child) \n- mascot child (usually the youngest child who uses humor for attention)",
+      "row": 603
+    },
+    {
+      "letter": "R",
+      "english": "Ropes course",
+      "row": 606
+    },
+    {
+      "letter": "R",
+      "english": "Ruptured",
+      "row": 607
+    },
+    {
+      "letter": "S",
+      "english": "Salvage (n.)",
+      "row": 611
+    },
+    {
+      "letter": "S",
+      "english": "Scary",
+      "row": 615
+    },
+    {
+      "letter": "S",
+      "english": "Scathing",
+      "row": 616
+    },
+    {
+      "letter": "S",
+      "english": "Scope",
+      "row": 617
+    },
+    {
+      "letter": "S",
+      "english": "Scrambled",
+      "row": 618
+    },
+    {
+      "letter": "S",
+      "english": "Scrutinizing",
+      "row": 619
+    },
+    {
+      "letter": "S",
+      "english": "Seemingly",
+      "row": 622
+    },
+    {
+      "letter": "S",
+      "english": "Self-centeredness",
+      "row": 626
+    },
+    {
+      "letter": "S",
+      "english": "Selflessness",
+      "row": 638
+    },
+    {
+      "letter": "S",
+      "english": "Separateness",
+      "row": 645
+    },
+    {
+      "letter": "S",
+      "english": "Sequence of recovery",
+      "row": 646
+    },
+    {
+      "letter": "S",
+      "english": "Sequence of the Steps",
+      "row": 647
+    },
+    {
+      "letter": "S",
+      "english": "Serendipity",
+      "row": 648
+    },
+    {
+      "letter": "S",
+      "english": "Setting",
+      "row": 651
+    },
+    {
+      "letter": "S",
+      "english": "Settle (to)",
+      "row": 652
+    },
+    {
+      "letter": "S",
+      "english": "Shell shock",
+      "row": 659
+    },
+    {
+      "letter": "S",
+      "english": "Shield",
+      "row": 660
+    },
+    {
+      "letter": "S",
+      "english": "Shortcoming",
+      "row": 662
+    },
+    {
+      "letter": "S",
+      "english": "Showdown",
+      "row": 663
+    },
+    {
+      "letter": "S",
+      "english": "Shrewdly",
+      "row": 664
+    },
+    {
+      "letter": "S",
+      "english": "Shrug",
+      "row": 665
+    },
+    {
+      "letter": "S",
+      "english": "Shrug off",
+      "row": 666
+    },
+    {
+      "letter": "S",
+      "english": "Shut down (to)",
+      "row": 668
+    },
+    {
+      "letter": "S",
+      "english": "Simmering",
+      "row": 671
+    },
+    {
+      "letter": "S",
+      "english": "Sit across (to)",
+      "row": 672
+    },
+    {
+      "letter": "S",
+      "english": "Slam shut",
+      "row": 674
+    },
+    {
+      "letter": "S",
+      "english": "Sliver",
+      "row": 675
+    },
+    {
+      "letter": "S",
+      "english": "Sloppy",
+      "row": 677
+    },
+    {
+      "letter": "S",
+      "english": "Soothe (to)",
+      "row": 678
+    },
+    {
+      "letter": "S",
+      "english": "Sour",
+      "row": 681
+    },
+    {
+      "letter": "S",
+      "english": "Spank (to)",
+      "row": 683
+    },
+    {
+      "letter": "S",
+      "english": "Spat",
+      "row": 684
+    },
+    {
+      "letter": "S",
+      "english": "Spiral inward",
+      "row": 686
+    },
+    {
+      "letter": "S",
+      "english": "Split off (to)",
+      "row": 689
+    },
+    {
+      "letter": "S",
+      "english": "Spread",
+      "row": 693
+    },
+    {
+      "letter": "S",
+      "english": "Sprout (n.)",
+      "row": 694
+    },
+    {
+      "letter": "S",
+      "english": "Spurred",
+      "row": 695
+    },
+    {
+      "letter": "S",
+      "english": "Squandered",
+      "row": 696
+    },
+    {
+      "letter": "S",
+      "english": "Stand up for",
+      "row": 697
+    },
+    {
+      "letter": "S",
+      "english": "States (for example, “Tradition Six, which states)",
+      "row": 698
+    },
+    {
+      "letter": "S",
+      "english": "Steer (to – someone)",
+      "row": 700
+    },
+    {
+      "letter": "S",
+      "english": "Steering",
+      "row": 701
+    },
+    {
+      "letter": "S",
+      "english": "Stellar",
+      "row": 702
+    },
+    {
+      "letter": "S",
+      "english": "Step off into (to)",
+      "row": 704
+    },
+    {
+      "letter": "S",
+      "english": "Sternly",
+      "row": 706
+    },
+    {
+      "letter": "S",
+      "english": "Stifling",
+      "row": 707
+    },
+    {
+      "letter": "S",
+      "english": "Stillness",
+      "row": 709
+    },
+    {
+      "letter": "S",
+      "english": "Stir up",
+      "row": 710
+    },
+    {
+      "letter": "S",
+      "english": "Stirred",
+      "row": 711
+    },
+    {
+      "letter": "S",
+      "english": "Store away (to)",
+      "row": 714
+    },
+    {
+      "letter": "S",
+      "english": "Strangling",
+      "row": 717
+    },
+    {
+      "letter": "S",
+      "english": "Strike (to)",
+      "row": 719
+    },
+    {
+      "letter": "S",
+      "english": "Strive (to – to)",
+      "row": 720
+    },
+    {
+      "letter": "S",
+      "english": "Struck",
+      "row": 721
+    },
+    {
+      "letter": "S",
+      "english": "Strut (to)",
+      "row": 723
+    },
+    {
+      "letter": "S",
+      "english": "Stubborn",
+      "row": 724
+    },
+    {
+      "letter": "S",
+      "english": "Stuff (to – feelings)",
+      "row": 726
+    },
+    {
+      "letter": "S",
+      "english": "Stumble (to -- upon something)",
+      "row": 728
+    },
+    {
+      "letter": "S",
+      "english": "Stunted",
+      "row": 730
+    },
+    {
+      "letter": "S",
+      "english": "Sturdy platform",
+      "row": 731
+    },
+    {
+      "letter": "S",
+      "english": "Subtly",
+      "row": 732
+    },
+    {
+      "letter": "S",
+      "english": "Surge (n.)",
+      "row": 737
+    },
+    {
+      "letter": "S",
+      "english": "Susceptible",
+      "row": 739
+    },
+    {
+      "letter": "S",
+      "english": "Swatting",
+      "row": 741
+    },
+    {
+      "letter": "S",
+      "english": "Sweeping statement",
+      "row": 742
+    },
+    {
+      "letter": "T",
+      "english": "Talk-show",
+      "row": 746
+    },
+    {
+      "letter": "T",
+      "english": "Tame (to)",
+      "row": 747
+    },
+    {
+      "letter": "T",
+      "english": "Tape (on --)",
+      "row": 748
+    },
+    {
+      "letter": "T",
+      "english": "Taunting",
+      "row": 749
+    },
+    {
+      "letter": "T",
+      "english": "Temper (to)",
+      "row": 751
+    },
+    {
+      "letter": "T",
+      "english": "Tensing",
+      "row": 752
+    },
+    {
+      "letter": "T",
+      "english": "Thorough",
+      "row": 758
+    },
+    {
+      "letter": "T",
+      "english": "Thrive (to)",
+      "row": 763
+    },
+    {
+      "letter": "T",
+      "english": "Tickle (to)",
+      "row": 765
+    },
+    {
+      "letter": "T",
+      "english": "Tickling",
+      "row": 766
+    },
+    {
+      "letter": "T",
+      "english": "Top-notch",
+      "row": 768
+    },
+    {
+      "letter": "T",
+      "english": "Transfixed",
+      "row": 772
+    },
+    {
+      "letter": "T",
+      "english": "Trapped",
+      "row": 773
+    },
+    {
+      "letter": "T",
+      "english": "Treat (n.)",
+      "row": 774
+    },
+    {
+      "letter": "T",
+      "english": "Tricky",
+      "row": 776
+    },
+    {
+      "letter": "T",
+      "english": "Trivialize (to)",
+      "row": 778
+    },
+    {
+      "letter": "T",
+      "english": "Troubled (family) \n(See page xix of the ACA BRB: “troubled family systems”.)",
+      "row": 779
+    },
+    {
+      "letter": "T",
+      "english": "Troublesome",
+      "row": 780
+    },
+    {
+      "letter": "T",
+      "english": "True north \n(to keep the --)",
+      "row": 781
+    },
+    {
+      "letter": "T",
+      "english": "Truism",
+      "row": 783
+    },
+    {
+      "letter": "T",
+      "english": "Tussle (n.)",
+      "row": 789
+    },
+    {
+      "letter": "T",
+      "english": "Tussle (v.)",
+      "row": 790
+    },
+    {
+      "letter": "T",
+      "english": "Twitch",
+      "row": 792
+    },
+    {
+      "letter": "U",
+      "english": "Uncanny",
+      "row": 797
+    },
+    {
+      "letter": "U",
+      "english": "Undercut (to)",
+      "row": 798
+    },
+    {
+      "letter": "U",
+      "english": "Underline (to)",
+      "row": 799
+    },
+    {
+      "letter": "U",
+      "english": "Underlying",
+      "row": 800
+    },
+    {
+      "letter": "U",
+      "english": "Undermine (to)",
+      "row": 801
+    },
+    {
+      "letter": "U",
+      "english": "Underpin (to)",
+      "row": 802
+    },
+    {
+      "letter": "U",
+      "english": "Underpinning",
+      "row": 803
+    },
+    {
+      "letter": "U",
+      "english": "Underscore",
+      "row": 804
+    },
+    {
+      "letter": "U",
+      "english": "Unearthed",
+      "row": 805
+    },
+    {
+      "letter": "U",
+      "english": "Unknowingly",
+      "row": 811
+    },
+    {
+      "letter": "U",
+      "english": "Unpurged",
+      "row": 812
+    },
+    {
+      "letter": "U",
+      "english": "Unselfish",
+      "row": 813
+    },
+    {
+      "letter": "U",
+      "english": "Unwhole",
+      "row": 814
+    },
+    {
+      "letter": "U",
+      "english": "Up (appears)",
+      "row": 815
+    },
+    {
+      "letter": "U",
+      "english": "Upbringing",
+      "row": 816
+    },
+    {
+      "letter": "U",
+      "english": "Upon me",
+      "row": 817
+    },
+    {
+      "letter": "U",
+      "english": "Upset",
+      "row": 818
+    },
+    {
+      "letter": "U",
+      "english": "Urge (to – someone)",
+      "row": 819
+    },
+    {
+      "letter": "U",
+      "english": "Used up",
+      "row": 820
+    },
+    {
+      "letter": "V",
+      "english": "Vault (to)",
+      "row": 823
+    },
+    {
+      "letter": "V",
+      "english": "Victimize (to)",
+      "row": 825
+    },
+    {
+      "letter": "V",
+      "english": "Victimizer",
+      "row": 826
+    },
+    {
+      "letter": "W",
+      "english": "Waist",
+      "row": 828
+    },
+    {
+      "letter": "W",
+      "english": "Wane (to)",
+      "row": 830
+    },
+    {
+      "letter": "W",
+      "english": "Ward off (to)",
+      "row": 831
+    },
+    {
+      "letter": "W",
+      "english": "Well up (to)",
+      "row": 833
+    },
+    {
+      "letter": "W",
+      "english": "Whipped",
+      "row": 836
+    },
+    {
+      "letter": "W",
+      "english": "Whore",
+      "row": 838
+    },
+    {
+      "letter": "W",
+      "english": "Wind down (to)",
+      "row": 843
+    },
+    {
+      "letter": "W",
+      "english": "Wisk",
+      "row": 845
+    },
+    {
+      "letter": "W",
+      "english": "Withhold (to -- something)",
+      "row": 846
+    },
+    {
+      "letter": "W",
+      "english": "Woe",
+      "row": 850
+    },
+    {
+      "letter": "W",
+      "english": "Wretched",
+      "row": 863
+    },
+    {
+      "letter": "Z",
+      "english": "Miscellaneous",
+      "row": 873
+    },
+    {
+      "letter": "Z",
+      "english": "Unapproved Draft. These materials have not been verified by the ACA WSO.\n© Copyrighted by Adult Children of Alcoholics®/\nWorld Services Organization, Torrance, California, USA.\nAny copying or distribution without prior written consent from ACA WSO is a violation of copyright law.",
+      "row": 874
+    }
+  ],
+  "täidetud_terminid": [
+    {
+      "letter": "A",
+      "english": "Abandonment\n(This can be physical or emotional abandonment. Shaming a child is abandoning a child.)",
+      "estonian": "hülgamine\n\n(See võib olla füüsiline või emotsionaalne hülgamine. Lapse häbistamine on lapse hülgamine.)",
+      "row": 3
+    },
+    {
+      "letter": "A",
+      "english": "About (is)",
+      "estonian": "Kohta",
+      "row": 4
+    },
+    {
+      "letter": "A",
+      "english": "Abscond (to)",
+      "estonian": "põgenema, peitu minema",
+      "row": 5
+    },
+    {
+      "letter": "A",
+      "english": "Abuse (n.)",
+      "estonian": "väärkohtlemine",
+      "row": 6
+    },
+    {
+      "letter": "A",
+      "english": "Abuse (v.)",
+      "estonian": "väärkohtlema",
+      "row": 7
+    },
+    {
+      "letter": "A",
+      "english": "Abuser",
+      "estonian": "väärkohtleja",
+      "row": 8
+    },
+    {
+      "letter": "A",
+      "english": "Abusive",
+      "estonian": "väärkohtlev",
+      "row": 9
+    },
+    {
+      "letter": "A",
+      "english": "ACA (Adult Children of Alcoholics)",
+      "estonian": "ATL (Alkoholikute täiskasvanud lapsed)",
+      "row": 10
+    },
+    {
+      "letter": "A",
+      "english": "Adult child of an alcoholic\nDefinition: see pages 3 and 4 of the ACA Fellowship Text (Big Red Book). Also see editor’s note on page vii.",
+      "estonian": "Täiskasvanud lapse defintsioon: vaata ATLi sõpruskonna teksti (suure punase raamatu) lehekülgi 3 ja 4. Vaata samuti toimetaja märkust leheküljel VII.\n\n Täiskasvanud lapse kontseptsioon pärit Alateenist kes alustasid Hope for Adult children of Alcoholics koosolekutega. Meie sõpruskonna algsed liikmed, kes olid üle 18 a, olid täiskasvanud; aga olid kasvanud lastena üles alkohoolsetes kodudes. Täiskasvanud laps tähendab samuti et kui konfronteeritakse, me läheme tagasi meie lapsepõlve tasemele (Allikas: ACA history- an interview with Tony A 1992).\n\nInglise keelse väljaande koostaja märkus: Enam kui dekaad on möödunud ajast kui tehti intervjuu ühe meie esmastest rajajatest Tony A-ga sõpruskonna teemal mida ta aitas rajada Alateeni liikmetega aastatel 1977-1978.selle raamatu jaoks kasutame me Tony sõnu kui alust et defineerida täiskasvanud lapse isiksust. Täiskasvanud laps on keegi kes vastab täiskasvanu olukordadele eneses kahtlemise, enese süüdistuse või end valesti või alaväärsena tundes- kõik õpituna lapsepõlvest. Ilma abita me alateadlikult toimime lapsepõlves õpitud ebaeffektiivsete mõtete ja kohtumõistmistega. Tagasiminek võib olla õrn aga see on seal saboteerides meie otsuseid ja suhteid.",
+      "row": 11
+    },
+    {
+      "letter": "A",
+      "english": "ACA counselor",
+      "estonian": "ATLi nõustaja, terapeut",
+      "row": 12
+    },
+    {
+      "letter": "A",
+      "english": "ACA relapse",
+      "estonian": "ATLi tagasilangus",
+      "row": 13
+    },
+    {
+      "letter": "A",
+      "english": "Accountable",
+      "estonian": "Vastutav, aruandev",
+      "row": 14
+    },
+    {
+      "letter": "A",
+      "english": "Accustomed",
+      "estonian": "harjunud, harjumuspärane",
+      "row": 15
+    },
+    {
+      "letter": "A",
+      "english": "Aching sense",
+      "estonian": "valutav tunne",
+      "row": 16
+    },
+    {
+      "letter": "A",
+      "english": "Acquaintance",
+      "estonian": "tuttav, tutvus",
+      "row": 17
+    },
+    {
+      "letter": "A",
+      "english": "Act, action",
+      "estonian": "Tegu",
+      "row": 18
+    },
+    {
+      "letter": "A",
+      "english": "Acting out",
+      "estonian": "Välja elamine",
+      "row": 19
+    },
+    {
+      "letter": "A",
+      "english": "Addicted to excitement\nTrait 8 of The Laundry List. Examples: gossip, dramatic scenes, pending financial failure, or failing health are often the turmoil that adult children create in their lives to fee connected to reality (page 16). Also see page 23.",
+      "estonian": "Sõltumine põnevusest\nMustapesu nimekirja 8.tunnus. \nNäited tagarääkimine, dramaatilised stseenid, kestev finantsiline läbikukkumine või terviseprobleemid on sageli raskus  mida täiskasvanud lapsed enda elus loovad et tunda end reaalsusega ühendatud lk 16. Vt ka lk 22.",
+      "row": 20
+    },
+    {
+      "letter": "A",
+      "english": "Addictive life",
+      "estonian": "Sõltlaslik elu",
+      "row": 21
+    },
+    {
+      "letter": "A",
+      "english": "Addictive thinking",
+      "estonian": "Sõltlaslik mõtlemine",
+      "row": 22
+    },
+    {
+      "letter": "A",
+      "english": "Addictiveness",
+      "estonian": "Sõltlaslikkus",
+      "row": 23
+    },
+    {
+      "letter": "A",
+      "english": "Addictions: switching addictions or substituting addiction (replacing one addiction for another). Addictions can include food, sex, work, gambling, alcohol/drugs.",
+      "estonian": "Sõltuvused: sõltuvused vahetamine või  ....sõltuvuse ühe sõltuvuse asendamise teistega. Sõltuvuse võivad sisaldada toitu, seksi, tööd, mängurlust, alkoholi/uiimastid.",
+      "row": 24
+    },
+    {
+      "letter": "A",
+      "english": "Address (to) \n(See page 22 of the ACA BRB: “This book will address how ACA….”)",
+      "estonian": "aadresseerima",
+      "row": 25
+    },
+    {
+      "letter": "A",
+      "english": "Admitted",
+      "estonian": "Tunnistasime",
+      "row": 26
+    },
+    {
+      "letter": "A",
+      "english": "Admonition",
+      "estonian": "hoiatus manitsus",
+      "row": 27
+    },
+    {
+      "letter": "A",
+      "english": "Addressing",
+      "estonian": "Aadreseerimine",
+      "row": 28
+    },
+    {
+      "letter": "A",
+      "english": "Adultery",
+      "estonian": "abielu rikkuma",
+      "row": 29
+    },
+    {
+      "letter": "A",
+      "english": "Adulthood",
+      "estonian": "Täiskasvanuiga",
+      "row": 30
+    },
+    {
+      "letter": "A",
+      "english": "Advocate for",
+      "estonian": "Advokaadiks olema",
+      "row": 31
+    },
+    {
+      "letter": "A",
+      "english": "Affirmation",
+      "estonian": "afirmatsioon, hüüdlause,",
+      "row": 32
+    },
+    {
+      "letter": "A",
+      "english": "Afraid of people and authority figures",
+      "estonian": "Kardab inimesi ja võimuisikuid.",
+      "row": 33
+    },
+    {
+      "letter": "A",
+      "english": "Against",
+      "estonian": "Vastu",
+      "row": 34
+    },
+    {
+      "letter": "A",
+      "english": "Agonize",
+      "estonian": "Agoonias",
+      "row": 35
+    },
+    {
+      "letter": "A",
+      "english": "Ailment",
+      "estonian": "tervisehäire",
+      "row": 36
+    },
+    {
+      "letter": "A",
+      "english": "Al-Anon",
+      "estonian": "Al anon",
+      "row": 37
+    },
+    {
+      "letter": "A",
+      "english": "Alarmed",
+      "estonian": "Alarmeeritud",
+      "row": 38
+    },
+    {
+      "letter": "A",
+      "english": "Alateen(s)",
+      "estonian": "Alateen (id)",
+      "row": 39
+    },
+    {
+      "letter": "A",
+      "english": "Alcoholic or dysfunctional home",
+      "estonian": "Alkohoolne või düsfunktsionaalne/mittetoimiv kodu",
+      "row": 40
+    },
+    {
+      "letter": "A",
+      "english": "Alienated (to be)",
+      "estonian": "Võõrdunud",
+      "row": 41
+    },
+    {
+      "letter": "A",
+      "english": "All or nothing",
+      "estonian": "kõik või mitte midagi",
+      "row": 42
+    },
+    {
+      "letter": "A",
+      "english": "Altogether",
+      "estonian": "Kõik koos",
+      "row": 43
+    },
+    {
+      "letter": "A",
+      "english": "Amazed",
+      "estonian": "Hämmastunux",
+      "row": 44
+    },
+    {
+      "letter": "A",
+      "english": "Amazing",
+      "estonian": "Hämmastumind",
+      "row": 45
+    },
+    {
+      "letter": "A",
+      "english": "Amends (to make --)",
+      "estonian": "Heastamisi teha",
+      "row": 46
+    },
+    {
+      "letter": "A",
+      "english": "Amends \n(to make direct --)",
+      "estonian": "Heastamisi otse",
+      "row": 47
+    },
+    {
+      "letter": "A",
+      "english": "Amends (to make)",
+      "estonian": "heastada",
+      "row": 48
+    },
+    {
+      "letter": "A",
+      "english": "Amused/Amusement",
+      "estonian": "lõbustama,lõbustus",
+      "row": 49
+    },
+    {
+      "letter": "A",
+      "english": "Anger",
+      "estonian": "Viha",
+      "row": 50
+    },
+    {
+      "letter": "A",
+      "english": "Anguished",
+      "estonian": "ahastus, ängistus",
+      "row": 51
+    },
+    {
+      "letter": "A",
+      "english": "Annual Business Conference",
+      "estonian": "Iga-aastane tegevus konverents",
+      "row": 52
+    },
+    {
+      "letter": "A",
+      "english": "Apologize (to)",
+      "estonian": "Vabandama kellegi ees",
+      "row": 53
+    },
+    {
+      "letter": "A",
+      "english": "Approval (to seek --)",
+      "estonian": "Heakskiitu (otsima)",
+      "row": 54
+    },
+    {
+      "letter": "A",
+      "english": "Argument",
+      "estonian": "Argument",
+      "row": 55
+    },
+    {
+      "letter": "A",
+      "english": "Array",
+      "estonian": "rivi,rida,",
+      "row": 56
+    },
+    {
+      "letter": "A",
+      "english": "As children",
+      "estonian": "Lastena",
+      "row": 57
+    },
+    {
+      "letter": "A",
+      "english": "As said",
+      "estonian": "Nagu öelda",
+      "row": 58
+    },
+    {
+      "letter": "A",
+      "english": "Ashamed",
+      "estonian": "Häbiststud",
+      "row": 59
+    },
+    {
+      "letter": "A",
+      "english": "Assertive",
+      "estonian": "Assertiivne",
+      "row": 60
+    },
+    {
+      "letter": "A",
+      "english": "Asset",
+      "estonian": "Väärtus",
+      "row": 61
+    },
+    {
+      "letter": "A",
+      "english": "At some point",
+      "estonian": "Mingis punktis",
+      "row": 63
+    },
+    {
+      "letter": "A",
+      "english": "Attend (to)",
+      "estonian": "osalema",
+      "row": 67
+    },
+    {
+      "letter": "A",
+      "english": "Attendance",
+      "estonian": "osalemine",
+      "row": 68
+    },
+    {
+      "letter": "A",
+      "english": "Attitude of neutrality",
+      "estonian": "neutraalne hoiak",
+      "row": 69
+    },
+    {
+      "letter": "A",
+      "english": "Awakening",
+      "estonian": "ärkamine",
+      "row": 71
+    },
+    {
+      "letter": "A",
+      "english": "Awareness",
+      "estonian": "teadlikkus",
+      "row": 72
+    },
+    {
+      "letter": "A",
+      "english": "Awe",
+      "estonian": "Aukartus",
+      "row": 73
+    },
+    {
+      "letter": "A",
+      "english": "Awful",
+      "estonian": "halb",
+      "row": 74
+    },
+    {
+      "letter": "A",
+      "english": "Axiom",
+      "estonian": "Aksioom",
+      "row": 75
+    },
+    {
+      "letter": "B",
+      "english": "Bankruptcy",
+      "estonian": "pankrot",
+      "row": 79
+    },
+    {
+      "letter": "B",
+      "english": "Battery",
+      "estonian": "patarei",
+      "row": 80
+    },
+    {
+      "letter": "B",
+      "english": "Becoming your own Loving Parent",
+      "estonian": "Iseendale armastavaks lapsevanemaks muutumine",
+      "row": 81
+    },
+    {
+      "letter": "B",
+      "english": "Beg (I – you)",
+      "estonian": "palun",
+      "row": 83
+    },
+    {
+      "letter": "B",
+      "english": "Black and white (thinking)",
+      "estonian": "must ja valge (mõtlemine)",
+      "row": 97
+    },
+    {
+      "letter": "B",
+      "english": "Black sheep",
+      "estonian": "Must lammas",
+      "row": 98
+    },
+    {
+      "letter": "R",
+      "english": "Romance",
+      "estonian": "Romanss",
+      "row": 604
+    },
+    {
+      "letter": "R",
+      "english": "Root",
+      "estonian": "Juur",
+      "row": 605
+    },
+    {
+      "letter": "R",
+      "english": "Rush (to)",
+      "estonian": "Kiirustama",
+      "row": 608
+    },
+    {
+      "letter": "S",
+      "english": "Sabbath",
+      "estonian": "Sabbat",
+      "row": 610
+    },
+    {
+      "letter": "S",
+      "english": "Sane",
+      "estonian": "Kaine",
+      "row": 612
+    },
+    {
+      "letter": "S",
+      "english": "Sanity",
+      "estonian": "Kainus",
+      "row": 613
+    },
+    {
+      "letter": "S",
+      "english": "Scapegoat",
+      "estonian": "Muzt lammas",
+      "row": 614
+    },
+    {
+      "letter": "S",
+      "english": "Searching inventory",
+      "estonian": "Otsiv inventuur",
+      "row": 620
+    },
+    {
+      "letter": "S",
+      "english": "Seek (to)",
+      "estonian": "Otsima",
+      "row": 621
+    },
+    {
+      "letter": "S",
+      "english": "Self",
+      "estonian": "Mina enese",
+      "row": 623
+    },
+    {
+      "letter": "S",
+      "english": "Self-betrayal",
+      "estonian": "Enese reetmine",
+      "row": 624
+    },
+    {
+      "letter": "S",
+      "english": "Self-centered",
+      "estonian": "Enesekesksus",
+      "row": 625
+    },
+    {
+      "letter": "S",
+      "english": "Self-condemnation",
+      "estonian": "Enese hukkamõistev",
+      "row": 627
+    },
+    {
+      "letter": "S",
+      "english": "Self-confidence",
+      "estonian": "Enesekindlus",
+      "row": 628
+    },
+    {
+      "letter": "S",
+      "english": "Self-destructive",
+      "estonian": "Ennast hävitav",
+      "row": 629
+    },
+    {
+      "letter": "S",
+      "english": "Self-doubt",
+      "estonian": "Enesekshtlus",
+      "row": 630
+    },
+    {
+      "letter": "S",
+      "english": "Self-esteem",
+      "estonian": "Enesehinnang",
+      "row": 631
+    },
+    {
+      "letter": "S",
+      "english": "Self-forgiveness",
+      "estonian": "Eneseandestamine",
+      "row": 632
+    },
+    {
+      "letter": "S",
+      "english": "Self-harming",
+      "estonian": "Enese kahjustav",
+      "row": 633
+    },
+    {
+      "letter": "S",
+      "english": "Self-hate",
+      "estonian": "Enese vihkamine",
+      "row": 634
+    },
+    {
+      "letter": "S",
+      "english": "Self-inventory",
+      "estonian": "Enese inventuur",
+      "row": 635
+    },
+    {
+      "letter": "S",
+      "english": "Selfish",
+      "estonian": "Isekus",
+      "row": 636
+    },
+    {
+      "letter": "S",
+      "english": "Selfless",
+      "estonian": "Isetus",
+      "row": 637
+    },
+    {
+      "letter": "S",
+      "english": "Self-love\n(This is not narcissism. See Chapter 15 of the ACA BRB.)",
+      "estonian": "Enesearmastus",
+      "row": 639
+    },
+    {
+      "letter": "S",
+      "english": "Self-pitying",
+      "estonian": "Enese haletsus",
+      "row": 640
+    },
+    {
+      "letter": "S",
+      "english": "Self-reliant",
+      "estonian": "Enesele toetuv",
+      "row": 641
+    },
+    {
+      "letter": "S",
+      "english": "Self-righteousness",
+      "estonian": "Eneseõigus",
+      "row": 642
+    },
+    {
+      "letter": "S",
+      "english": "Self-worth",
+      "estonian": "Eneseväärtus",
+      "row": 643
+    },
+    {
+      "letter": "S",
+      "english": "Sense of shame",
+      "estonian": "Häbi tunne",
+      "row": 644
+    },
+    {
+      "letter": "S",
+      "english": "Service Board (the)",
+      "estonian": "Teenimisjuhtkond",
+      "row": 649
+    },
+    {
+      "letter": "S",
+      "english": "Service structure",
+      "estonian": "Teenimisstruktuur",
+      "row": 650
+    },
+    {
+      "letter": "S",
+      "english": "Several",
+      "estonian": "Mitmed",
+      "row": 653
+    },
+    {
+      "letter": "S",
+      "english": "Sexual abuse",
+      "estonian": "Seksuaalne väärkohtlemine",
+      "row": 654
+    },
+    {
+      "letter": "S",
+      "english": "Shame-based",
+      "estonian": "Häbil tuginev",
+      "row": 655
+    },
+    {
+      "letter": "S",
+      "english": "Share (n.)",
+      "estonian": "Jagama",
+      "row": 656
+    },
+    {
+      "letter": "S",
+      "english": "Shattered",
+      "estonian": "Hajutatud",
+      "row": 657
+    },
+    {
+      "letter": "S",
+      "english": "Sheet",
+      "estonian": "Leht",
+      "row": 658
+    },
+    {
+      "letter": "S",
+      "english": "Shocked",
+      "estonian": "Shokeeritud",
+      "row": 661
+    },
+    {
+      "letter": "S",
+      "english": "Shunned",
+      "estonian": "Häbistatud",
+      "row": 667
+    },
+    {
+      "letter": "S",
+      "english": "Sibling",
+      "estonian": "Õde või vend",
+      "row": 669
+    },
+    {
+      "letter": "S",
+      "english": "Sick (meaning dysfunctional)",
+      "estonian": "Haige",
+      "row": 670
+    },
+    {
+      "letter": "S",
+      "english": "Skeptic; skeptical",
+      "estonian": "Skeptiline",
+      "row": 673
+    },
+    {
+      "letter": "S",
+      "english": "Slogan",
+      "estonian": "Hüüdlause",
+      "row": 676
+    },
+    {
+      "letter": "S",
+      "english": "Sorrow",
+      "estonian": "Kurbus",
+      "row": 679
+    },
+    {
+      "letter": "S",
+      "english": "Sought",
+      "estonian": "Otsima",
+      "row": 680
+    },
+    {
+      "letter": "S",
+      "english": "Sovereign",
+      "estonian": "Suveräänne",
+      "row": 682
+    },
+    {
+      "letter": "S",
+      "english": "Spending",
+      "estonian": "Kulutama",
+      "row": 685
+    },
+    {
+      "letter": "S",
+      "english": "Spirit",
+      "estonian": "Vaim",
+      "row": 687
+    },
+    {
+      "letter": "S",
+      "english": "Spiritual",
+      "estonian": "Vaimne",
+      "row": 688
+    },
+    {
+      "letter": "S",
+      "english": "Sponsee",
+      "estonian": "Toetatav",
+      "row": 690
+    },
+    {
+      "letter": "S",
+      "english": "Sponsor",
+      "estonian": "Sponsor tugiisik",
+      "row": 691
+    },
+    {
+      "letter": "S",
+      "english": "Sponsorship",
+      "estonian": "Sponsorlus",
+      "row": 692
+    },
+    {
+      "letter": "S",
+      "english": "Statement",
+      "estonian": "Seisukoht",
+      "row": 699
+    },
+    {
+      "letter": "S",
+      "english": "Step aside",
+      "estonian": "Eemale astuma",
+      "row": 703
+    },
+    {
+      "letter": "S",
+      "english": "Stepfather",
+      "estonian": "Kasuisa",
+      "row": 705
+    },
+    {
+      "letter": "S",
+      "english": "Stigma",
+      "estonian": "Stigma",
+      "row": 708
+    },
+    {
+      "letter": "S",
+      "english": "Stockbroker",
+      "estonian": "Börsimaakler",
+      "row": 712
+    },
+    {
+      "letter": "S",
+      "english": "Stone",
+      "estonian": "Kivi",
+      "row": 713
+    },
+    {
+      "letter": "S",
+      "english": "Story",
+      "estonian": "Jutt",
+      "row": 715
+    },
+    {
+      "letter": "S",
+      "english": "Straightforward",
+      "estonian": "Otse edasi",
+      "row": 716
+    },
+    {
+      "letter": "S",
+      "english": "Stress (to -- something)",
+      "estonian": "Stressis",
+      "row": 718
+    },
+    {
+      "letter": "S",
+      "english": "Struggle (to)",
+      "estonian": "Võitlus",
+      "row": 722
+    },
+    {
+      "letter": "S",
+      "english": "Stuck",
+      "estonian": "Kinn",
+      "row": 725
+    },
+    {
+      "letter": "S",
+      "english": "Stuffing",
+      "estonian": "Maha suruma",
+      "row": 727
+    },
+    {
+      "letter": "S",
+      "english": "Stumbling block",
+      "estonian": "Komistuskivi",
+      "row": 729
+    },
+    {
+      "letter": "S",
+      "english": "Succeed (to)",
+      "estonian": "Jõudis millegini",
+      "row": 733
+    },
+    {
+      "letter": "S",
+      "english": "Summary",
+      "estonian": "Kokkuvõte",
+      "row": 734
+    },
+    {
+      "letter": "S",
+      "english": "Supervisor",
+      "estonian": "Supervisor",
+      "row": 735
+    },
+    {
+      "letter": "S",
+      "english": "Support group",
+      "estonian": "Tugirühm",
+      "row": 736
+    },
+    {
+      "letter": "S",
+      "english": "Surrender (to)",
+      "estonian": "Alistama",
+      "row": 738
+    },
+    {
+      "letter": "S",
+      "english": "Swallow (to)",
+      "estonian": "Neelama",
+      "row": 740
+    },
+    {
+      "letter": "T",
+      "english": "Take action",
+      "estonian": "Tegutsema",
+      "row": 744
+    },
+    {
+      "letter": "T",
+      "english": "Take care",
+      "estonian": "Hoolitsema",
+      "row": 745
+    },
+    {
+      "letter": "T",
+      "english": "Teachable",
+      "estonian": "Õpetatav",
+      "row": 750
+    },
+    {
+      "letter": "T",
+      "english": "Terrified of abandonment",
+      "estonian": "Kardab hülgamist",
+      "row": 753
+    },
+    {
+      "letter": "T",
+      "english": "Territory",
+      "estonian": "Territoorium",
+      "row": 754
+    },
+    {
+      "letter": "T",
+      "english": "That said",
+      "estonian": "Nii öelda",
+      "row": 755
+    },
+    {
+      "letter": "T",
+      "english": "Therapist",
+      "estonian": "Terapeut",
+      "row": 756
+    },
+    {
+      "letter": "T",
+      "english": "Thing",
+      "estonian": "Asi",
+      "row": 757
+    },
+    {
+      "letter": "T",
+      "english": "Thought life",
+      "estonian": "Mõtteelu",
+      "row": 759
+    },
+    {
+      "letter": "T",
+      "english": "Thoughtful",
+      "estonian": "Mõtlik",
+      "row": 760
+    },
+    {
+      "letter": "T",
+      "english": "Threat",
+      "estonian": "Oht",
+      "row": 761
+    },
+    {
+      "letter": "T",
+      "english": "Threatens",
+      "estonian": "Hirmutav",
+      "row": 762
+    },
+    {
+      "letter": "T",
+      "english": "Thus far",
+      "estonian": "Nii kaugele",
+      "row": 764
+    },
+    {
+      "letter": "T",
+      "english": "Topic",
+      "estonian": "TeemA",
+      "row": 767
+    },
+    {
+      "letter": "T",
+      "english": "Torn apart",
+      "estonian": "Katki kiskuma",
+      "row": 769
+    },
+    {
+      "letter": "T",
+      "english": "Tragically",
+      "estonian": "Traagiliselt",
+      "row": 770
+    },
+    {
+      "letter": "T",
+      "english": "Trait",
+      "estonian": "Iseloomujoon",
+      "row": 771
+    },
+    {
+      "letter": "T",
+      "english": "Treatment setting",
+      "estonian": "Kohtlev keskkond",
+      "row": 775
+    },
+    {
+      "letter": "T",
+      "english": "Trigger (to)",
+      "estonian": "Päästik",
+      "row": 777
+    },
+    {
+      "letter": "T",
+      "english": "True self (also real self)",
+      "estonian": "Tõeline mina tegelik mina",
+      "row": 782
+    },
+    {
+      "letter": "T",
+      "english": "Trust",
+      "estonian": "Usaldus",
+      "row": 784
+    },
+    {
+      "letter": "T",
+      "english": "Trusted (counselor)",
+      "estonian": "Usaldatav",
+      "row": 785
+    },
+    {
+      "letter": "T",
+      "english": "Trusting in",
+      "estonian": "Usaldama",
+      "row": 786
+    },
+    {
+      "letter": "T",
+      "english": "Trustworthy",
+      "estonian": "Usaldusväärne",
+      "row": 787
+    },
+    {
+      "letter": "T",
+      "english": "Turn things over (to -- to God)",
+      "estonian": "Asju üle andma",
+      "row": 788
+    },
+    {
+      "letter": "T",
+      "english": "Twelve Steps (of ACA)",
+      "estonian": "12 sammu kaksteist sammu",
+      "row": 791
+    },
+    {
+      "letter": "T",
+      "english": "Type",
+      "estonian": "Tüüp",
+      "row": 793
+    },
+    {
+      "letter": "T",
+      "english": "Typically",
+      "estonian": "Tüüpiliselt",
+      "row": 794
+    },
+    {
+      "letter": "U",
+      "english": "Ultimately",
+      "estonian": "Viimaks",
+      "row": 796
+    },
+    {
+      "letter": "U",
+      "english": "Uneventful",
+      "estonian": "Sündmustevaene?",
+      "row": 806
+    },
+    {
+      "letter": "U",
+      "english": "Unfeeling self",
+      "estonian": "Mitte tundmata mina",
+      "row": 807
+    },
+    {
+      "letter": "U",
+      "english": "Unfortunately",
+      "estonian": "Kahjukz",
+      "row": 808
+    },
+    {
+      "letter": "U",
+      "english": "Ungrateful",
+      "estonian": "Mittetänulik",
+      "row": 809
+    },
+    {
+      "letter": "U",
+      "english": "Unique",
+      "estonian": "Unikaalne",
+      "row": 810
+    },
+    {
+      "letter": "V",
+      "english": "Valued",
+      "estonian": "Väärtustatux",
+      "row": 822
+    },
+    {
+      "letter": "V",
+      "english": "Victim",
+      "estonian": "Ohver",
+      "row": 824
+    },
+    {
+      "letter": "W",
+      "english": "Wander (to)",
+      "estonian": "Ekslema",
+      "row": 829
+    },
+    {
+      "letter": "W",
+      "english": "Web",
+      "estonian": "Veeb",
+      "row": 832
+    },
+    {
+      "letter": "W",
+      "english": "Whatsoever",
+      "estonian": "Mida iganes",
+      "row": 834
+    },
+    {
+      "letter": "W",
+      "english": "While",
+      "estonian": "Samal ajal kui",
+      "row": 835
+    },
+    {
+      "letter": "W",
+      "english": "Wholeness",
+      "estonian": "Terviklikkus",
+      "row": 837
+    },
+    {
+      "letter": "W",
+      "english": "Will",
+      "estonian": "Tahe",
+      "row": 839
+    },
+    {
+      "letter": "W",
+      "english": "Willing",
+      "estonian": "Tahtev",
+      "row": 840
+    },
+    {
+      "letter": "W",
+      "english": "Willingly",
+      "estonian": "Tahtlikult",
+      "row": 841
+    },
+    {
+      "letter": "W",
+      "english": "Willingness",
+      "estonian": "Valmisolek",
+      "row": 842
+    },
+    {
+      "letter": "W",
+      "english": "Wisdom",
+      "estonian": "Tarkus",
+      "row": 844
+    },
+    {
+      "letter": "W",
+      "english": "Within",
+      "estonian": "Seez",
+      "row": 847
+    },
+    {
+      "letter": "W",
+      "english": "Without mercy",
+      "estonian": "Ilma halastuseta",
+      "row": 848
+    },
+    {
+      "letter": "W",
+      "english": "Witness (to bear--)",
+      "estonian": "Tunnistus",
+      "row": 849
+    },
+    {
+      "letter": "W",
+      "english": "World Service Organization (WSO)",
+      "estonian": "Maailma teenistusamet",
+      "row": 851
+    },
+    {
+      "letter": "W",
+      "english": "Workable",
+      "estonian": "toimiv",
+      "row": 852
+    },
+    {
+      "letter": "W",
+      "english": "Workaholic\nDefined: An individual who uses work as an addiction or distraction to avoid facing childhood abandonment/neglect.",
+      "estonian": "Tööhoolik töönarkomaan",
+      "row": 853
+    },
+    {
+      "letter": "W",
+      "english": "Workaholic",
+      "estonian": "Tööhoolik töönarkomaania",
+      "row": 854
+    },
+    {
+      "letter": "W",
+      "english": "Workbook",
+      "estonian": "Töövihik",
+      "row": 855
+    },
+    {
+      "letter": "W",
+      "english": "Workplace",
+      "estonian": "Töökoht",
+      "row": 856
+    },
+    {
+      "letter": "W",
+      "english": "Workplace Laundry List",
+      "estonian": "Töökoha mustapesu nimekiri",
+      "row": 857
+    },
+    {
+      "letter": "W",
+      "english": "World Service Office Board of Trustees (WSO)",
+      "estonian": "Maailma teenistusamet",
+      "row": 858
+    },
+    {
+      "letter": "W",
+      "english": "Worship",
+      "estonian": "Ülistuz",
+      "row": 859
+    },
+    {
+      "letter": "W",
+      "english": "Worshipped",
+      "estonian": "Üliztatud",
+      "row": 860
+    },
+    {
+      "letter": "W",
+      "english": "Woundedness",
+      "estonian": "Haavatus",
+      "row": 861
+    },
+    {
+      "letter": "W",
+      "english": "Wreckage",
+      "estonian": "Vrak",
+      "row": 862
+    },
+    {
+      "letter": "W",
+      "english": "Writhe (to – in pain; to – on the floor)",
+      "estonian": "Valuz väänlema",
+      "row": 864
+    },
+    {
+      "letter": "W",
+      "english": "Wrong",
+      "estonian": "Vale",
+      "row": 865
+    },
+    {
+      "letter": "W",
+      "english": "Wrongfully",
+      "estonian": "Valelikult",
+      "row": 866
+    },
+    {
+      "letter": "Y",
+      "english": "Yet",
+      "estonian": "Ikka",
+      "row": 870
+    }
+  ],
+  "statistika": {
+    "tühjad": 635,
+    "täidetud": 210,
+    "kokku": 845
+  }
+}

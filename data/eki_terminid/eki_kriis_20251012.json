@@ -1,0 +1,724 @@
+{
+  "metaandmed": {
+    "terminibaas_kood": "kriis",
+    "terminibaas_nimi": "Kriisinõustamise terminibaas",
+    "terminibaas_url": "https://sonaveeb.ee/ds/kriis",
+    "kontakt": "Kirsti Talu (kirstit@gmail.com)",
+    "kogumise_kuupaev": "2025-10-12T23:33:18.648776",
+    "terminite_arv": 82
+  },
+  "terminid": [
+    {
+      "termin": "Ajaline antoloogia kriisis",
+      "link": "https://sonaveeb.ee/search/unif/dlall/kriis/Ajaline%20antoloogia%20kriisis",
+      "taht": "A",
+      "keel": "eesti",
+      "synonyymid": [],
+      "definitsioon": "kindlad ajaperioodid alates kriisiintsidendi kogemise hetkest 24 kuu jooksul, mil üksikisikul võivad ilmneda emotsionaalsed ja psühhosomaatilised vaevused"
+    },
+    {
+      "termin": "akuutkriis",
+      "link": "https://sonaveeb.ee/search/unif/dlall/kriis/akuutkriis",
+      "taht": "a",
+      "keel": "eesti",
+      "synonyymid": [],
+      "definitsioon": "traumaatilist mõju omava kriisiolukorra kogemise esimesest hetkest 30-40 päeva pikkune periood"
+    },
+    {
+      "termin": "ametialane läbipõlemine",
+      "link": "https://sonaveeb.ee/search/unif/dlall/kriis/ametialane%20l%C3%A4bip%C3%B5lemine",
+      "taht": "a",
+      "keel": "eesti",
+      "synonyymid": [],
+      "definitsioon": "stressisündroom, mille sisuks on üheaegselt füüsiline, psüühiline ja emotsionaalne kurnatus ning tööga seonduv ebapiisavuse tunne"
+    },
+    {
+      "termin": "arengukriis",
+      "link": "https://sonaveeb.ee/search/unif/dlall/kriis/arengukriis",
+      "taht": "a",
+      "keel": "eesti",
+      "synonyymid": [],
+      "definitsioon": "elukaare erinevates etappides ette ennustatav muutus, millega kohanemiseks vajab inimene eakohast ja sotsiaalset toetust"
+    },
+    {
+      "termin": "briefing",
+      "link": "https://sonaveeb.ee/search/unif/dlall/kriis/briefing",
+      "taht": "b",
+      "keel": "inglise",
+      "synonyymid": [],
+      "definitsioon": "the act of giving in advance specific instructions or information, tegevus, mille eesmärk on edastada teavet ja/või anda juhiseid"
+    },
+    {
+      "termin": "briifing",
+      "link": "https://sonaveeb.ee/search/unif/dlall/kriis/briifing",
+      "taht": "b",
+      "keel": "eesti",
+      "synonyymid": [
+        "infotund",
+        "infominutid",
+        "teabetund"
+      ],
+      "definitsioon": "lühike üritus, kus jagatakse millegi kohta infot"
+    },
+    {
+      "termin": "consulting",
+      "link": "https://sonaveeb.ee/search/unif/dlall/kriis/consulting",
+      "taht": "c",
+      "keel": "inglise",
+      "synonyymid": [],
+      "definitsioon": "kvalifitseeritud spetsialistide poolt teistele erialaste teadmiste edasiandmine ja juhendamine praktilistes töödes"
+    },
+    {
+      "termin": "crisis",
+      "link": "https://sonaveeb.ee/search/unif/dlall/kriis/crisis",
+      "taht": "c",
+      "keel": "inglise",
+      "synonyymid": [],
+      "definitsioon": "vastuoludest lõhestatud pingeline (sotsiaalne, poliitiline) seisund, mille hrl on põhjustanud raskused, ohud, ebastabiilsed olud ning millega võib kaasneda ähvardavalt järsk muutus"
+    },
+    {
+      "termin": "crisis aware",
+      "link": "https://sonaveeb.ee/search/unif/dlall/kriis/crisis%20aware",
+      "taht": "c",
+      "keel": "inglise",
+      "synonyymid": [],
+      "definitsioon": "pädev ära tundma ja adekvaatselt reageerima kriisiolukorrale"
+    },
+    {
+      "termin": "crisis counseling",
+      "link": "https://sonaveeb.ee/search/unif/dlall/kriis/crisis%20counseling",
+      "taht": "c",
+      "keel": "inglise",
+      "synonyymid": [],
+      "definitsioon": "ajaliselt piiritletud kriisi- ja traumateadlik psühhosotsiaalne nõustamine, millega tagatakse operatiivne kriisisekkumine ja/või täiendav toetav nõustamine"
+    },
+    {
+      "termin": "crisis intervention",
+      "link": "https://sonaveeb.ee/search/unif/dlall/kriis/crisis%20intervention",
+      "taht": "c",
+      "keel": "inglise",
+      "synonyymid": [
+        "psychosocial crisis intervention"
+      ],
+      "definitsioon": "lühiajaline kriisi- ja traumateadlik psühhosotsiaalne tugi ja juhendamine väga häirivat olukorda (näiteks ootamatu kaotus, õnnetus, katastroof, enesetapukatse jm) kogenud inimesele või inimeste grupile"
+    },
+    {
+      "termin": "debriifing",
+      "link": "https://sonaveeb.ee/search/unif/dlall/kriis/debriifing",
+      "taht": "d",
+      "keel": "eesti",
+      "synonyymid": [
+        "järelarutelu"
+      ],
+      "definitsioon": "the assisted review and extraction of information from a friendly asset, infokogumismeetod, mis tähendab omade ärakuulamist ja nende käest info kogumist"
+    },
+    {
+      "termin": "defjuusing",
+      "link": "https://sonaveeb.ee/search/unif/dlall/kriis/defjuusing",
+      "taht": "d",
+      "keel": "eesti",
+      "synonyymid": [],
+      "definitsioon": "kriisikogemuse järel koheselt toimuv juhitud väljaelamisvestlus"
+    },
+    {
+      "termin": "depression",
+      "link": "https://sonaveeb.ee/search/unif/dlall/kriis/depression",
+      "taht": "d",
+      "keel": "inglise",
+      "synonyymid": [],
+      "definitsioon": "sünge, rõhutud meeleolu, rusutud olek, depressioon"
+    },
+    {
+      "termin": "depressioon",
+      "link": "https://sonaveeb.ee/search/unif/dlall/kriis/depressioon",
+      "taht": "d",
+      "keel": "eesti",
+      "synonyymid": [
+        "deprekas"
+      ],
+      "definitsioon": "püsivam meeleoluhäire, mida iseloomustab alanenud meeleolu, huvideringi kitsenemine, elurõõmu kadumine ning energia vähenemine"
+    },
+    {
+      "termin": "developmental crisis",
+      "link": "https://sonaveeb.ee/search/unif/dlall/kriis/developmental%20crisis",
+      "taht": "d",
+      "keel": "inglise",
+      "synonyymid": [],
+      "definitsioon": "elukaare erinevates etappides ette ennustatav muutus, millega kohanemiseks vajab inimene eakohast ja sotsiaalset toetust"
+    },
+    {
+      "termin": "distress",
+      "link": "https://sonaveeb.ee/search/unif/dlall/kriis/distress",
+      "taht": "d",
+      "keel": "eesti",
+      "synonyymid": [
+        "düstress"
+      ],
+      "definitsioon": "ülemäärane stressi tase, pikaajaline lahenduseta pingeseisund"
+    },
+    {
+      "termin": "emergency",
+      "link": "https://sonaveeb.ee/search/unif/dlall/kriis/emergency",
+      "taht": "e",
+      "keel": "inglise",
+      "synonyymid": [],
+      "definitsioon": "mingi mehhanismi, seadme vms suurem rike"
+    },
+    {
+      "termin": "eustress",
+      "link": "https://sonaveeb.ee/search/unif/dlall/kriis/eustress",
+      "taht": "e",
+      "keel": "eesti",
+      "synonyymid": [],
+      "definitsioon": "tegevust aktiveeriv positiivne pingeseisund"
+    },
+    {
+      "termin": "grief",
+      "link": "https://sonaveeb.ee/search/unif/dlall/kriis/grief",
+      "taht": "g",
+      "keel": "inglise",
+      "synonyymid": [],
+      "definitsioon": "lähedase vm armastatud inimese surmast tingitud tugev hingeline kannatus"
+    },
+    {
+      "termin": "grief counseling",
+      "link": "https://sonaveeb.ee/search/unif/dlall/kriis/grief%20counseling",
+      "taht": "g",
+      "keel": "inglise",
+      "synonyymid": [],
+      "definitsioon": "kriisi- ja traumateadlik psühholoogiline ja/ või psühhosotsiaalne ja/ või hingehoidlik nõustamine kaotusvalu ja leinaprotsessi mõtestamiseks"
+    },
+    {
+      "termin": "grief depression",
+      "link": "https://sonaveeb.ee/search/unif/dlall/kriis/grief%20depression",
+      "taht": "g",
+      "keel": "inglise",
+      "synonyymid": [],
+      "definitsioon": "konkreetsest kaotusest tingitud meeleolu langus ning emotsionaalne võimetus kaotuse kõrval tulevikuvõimalusi näha"
+    },
+    {
+      "termin": "hädaolukord",
+      "link": "https://sonaveeb.ee/search/unif/dlall/kriis/h%C3%A4daolukord",
+      "taht": "h",
+      "keel": "eesti",
+      "synonyymid": [],
+      "definitsioon": "sündmus, mis ohustab paljude inimeste elu või tervist, põhjustab suure varalise kahju, suure keskkonnakahju või elutähtsate teenuste toimepidevuse katkemise"
+    },
+    {
+      "termin": "informeerimine",
+      "link": "https://sonaveeb.ee/search/unif/dlall/kriis/informeerimine",
+      "taht": "i",
+      "keel": "eesti",
+      "synonyymid": [],
+      "definitsioon": "teadistamine"
+    },
+    {
+      "termin": "informing",
+      "link": "https://sonaveeb.ee/search/unif/dlall/kriis/informing",
+      "taht": "i",
+      "keel": "inglise",
+      "synonyymid": [],
+      "definitsioon": "asjakohase teabe edastamine olukorra ja sellega kaasnevate asjaolude selgitamiseks ja vajaduspõhiseks kasutamiseks"
+    },
+    {
+      "termin": "job burnout",
+      "link": "https://sonaveeb.ee/search/unif/dlall/kriis/job%20burnout",
+      "taht": "j",
+      "keel": "inglise",
+      "synonyymid": [
+        "occupational burnout"
+      ],
+      "definitsioon": "stressisündroom, mille sisuks on üheaegselt füüsiline, psüühiline ja emotsionaalne kurnatus ning tööga seonduv ebapiisavuse tunne"
+    },
+    {
+      "termin": "kaastundeväsimus",
+      "link": "https://sonaveeb.ee/search/unif/dlall/kriis/kaastundev%C3%A4simus",
+      "taht": "k",
+      "keel": "eesti",
+      "synonyymid": [],
+      "definitsioon": "emotsionaalse ja füüsilise kurnatuse seisund, mida iseloomustab abistaja vähenenud võimekus või huvi ollaempaatiline (nt tervishoidutöötajate, päästetöötajate puhul)"
+    },
+    {
+      "termin": "kaotus",
+      "link": "https://sonaveeb.ee/search/unif/dlall/kriis/kaotus",
+      "taht": "k",
+      "keel": "eesti",
+      "synonyymid": [],
+      "definitsioon": "millegi või kellegi kaotamine, millestki või kellestki ilmajäämine"
+    },
+    {
+      "termin": "katastroof",
+      "link": "https://sonaveeb.ee/search/unif/dlall/kriis/katastroof",
+      "taht": "k",
+      "keel": "eesti",
+      "synonyymid": [],
+      "definitsioon": "suur hävitav sündmus, mis kahjustab inimeste elu, tervist või looduskeskkonda"
+    },
+    {
+      "termin": "kliiniline surm",
+      "link": "https://sonaveeb.ee/search/unif/dlall/kriis/kliiniline%20surm",
+      "taht": "k",
+      "keel": "eesti",
+      "synonyymid": [],
+      "definitsioon": "surma faas, kus südame talitlus ja hingamine on lakanud, ent elustamisel taastatavad"
+    },
+    {
+      "termin": "kohtinguvägivald",
+      "link": "https://sonaveeb.ee/search/unif/dlall/kriis/kohtinguv%C3%A4givald",
+      "taht": "k",
+      "keel": "eesti",
+      "synonyymid": [],
+      "definitsioon": "igasugune paarisuhte vägivald inimeste vahel, kes on tutvunud või suhtlevad, aga koos ei ela"
+    },
+    {
+      "termin": "komplitseeritud lein",
+      "link": "https://sonaveeb.ee/search/unif/dlall/kriis/komplitseeritud%20lein",
+      "taht": "k",
+      "keel": "eesti",
+      "synonyymid": [],
+      "definitsioon": "keeruline lein, mis erineb oluliselt tavapärasest leinaprotsessist reaktsioonide intensiivsuse ja kestuse poolest"
+    },
+    {
+      "termin": "konflikt",
+      "link": "https://sonaveeb.ee/search/unif/dlall/kriis/konflikt",
+      "taht": "k",
+      "keel": "eesti",
+      "synonyymid": [],
+      "definitsioon": "kahe vastaspoole vaheline äge, terav vastasseis vastandlike seisukohtade pärast"
+    },
+    {
+      "termin": "konsulteerimine",
+      "link": "https://sonaveeb.ee/search/unif/dlall/kriis/konsulteerimine",
+      "taht": "k",
+      "keel": "eesti",
+      "synonyymid": [],
+      "definitsioon": "establishment of dialogue and exchange of views between the body representative of the employees and/or the employees' representatives and the competent organ of the SE, at a time, in a manner and with a content which allows the employees' representatives, on the basis of information provided, to express an opinion on measures envisaged by the competent organ which may be taken into account in the decision-making process within the SE;"
+    },
+    {
+      "termin": "kriis",
+      "link": "https://sonaveeb.ee/search/unif/dlall/kriis/kriis",
+      "taht": "k",
+      "keel": "eesti",
+      "synonyymid": [
+        "kriisiolukord",
+        "kriisisituatsioon"
+      ],
+      "definitsioon": "vastuoludest lõhestatud pingeline (sotsiaalne, poliitiline) seisund, mille hrl on põhjustanud raskused, ohud, ebastabiilsed olud ning millega võib kaasneda ähvardavalt järsk muutus"
+    },
+    {
+      "termin": "kriisi",
+      "link": "https://sonaveeb.ee/search/unif/dlall/kriis/kriisi",
+      "taht": "k",
+      "keel": "soome",
+      "synonyymid": [],
+      "definitsioon": "olukord, mida tajutakse kui talumatult rasket ja millega toimetulekuks on tarvis rohkem ressursse, kui inimesel parajasti kasutada on, olukord (nt traumaatiline muutus), mis tekitab selles osalejates märkimisväärset kognitiivset või emotsionaalset stressi"
+    },
+    {
+      "termin": "kriisiinfotund",
+      "link": "https://sonaveeb.ee/search/unif/dlall/kriis/kriisiinfotund",
+      "taht": "k",
+      "keel": "eesti",
+      "synonyymid": [],
+      "definitsioon": "kuni 60 min toimuv kriisijuhtumist lähtuv teaberikas struktureeritud koosolek juhtumist puudutatud kollektiivi liikmetele"
+    },
+    {
+      "termin": "kriisijuhtimine",
+      "link": "https://sonaveeb.ee/search/unif/dlall/kriis/kriisijuhtimine",
+      "taht": "k",
+      "keel": "eesti",
+      "synonyymid": [
+        "kriisiohje",
+        "kriisiohjamine",
+        "kriisireguleerimine",
+        "kriisi käitlemine",
+        "kriisihaldus",
+        "kriiside lahendamine",
+        "kriisi ohjeldamine"
+      ],
+      "definitsioon": "the coordinated actions taken to defuse crises, prevent their escalation into an armed conflict and contain hostilities if they should result, meetmete süsteem, mis hõlmab kriisiks valmistumist, kriisi ennetamist ja lahendamist"
+    },
+    {
+      "termin": "kriisijuhtum",
+      "link": "https://sonaveeb.ee/search/unif/dlall/kriis/kriisijuhtum",
+      "taht": "k",
+      "keel": "eesti",
+      "synonyymid": [],
+      "definitsioon": "kriisiolukorda kogenud konkreetse üksikisiku või isikute grupiga seotud kriisinõustamise protsess esimesest toetavast kriisisekkumisest kuni kokkuvõtva kriisinõustamiseni"
+    },
+    {
+      "termin": "kriisikommunikatsioon",
+      "link": "https://sonaveeb.ee/search/unif/dlall/kriis/kriisikommunikatsioon",
+      "taht": "k",
+      "keel": "eesti",
+      "synonyymid": [],
+      "definitsioon": "avalikkuse teavitamine hädaolukorra ajal olukorra lahendamise käigust ning juhiste andmine, kuidas hädaolukorras tegutseda"
+    },
+    {
+      "termin": "kriisinõustaja",
+      "link": "https://sonaveeb.ee/search/unif/dlall/kriis/kriisin%C3%B5ustaja",
+      "taht": "k",
+      "keel": "eesti",
+      "synonyymid": [],
+      "definitsioon": "isik, kes annab abivajajale nõu, kuidas taastada psüühilist tasakaalu ja toimetulekut (nt pärast traumaatilise sündmuse läbielamist)"
+    },
+    {
+      "termin": "kriisinõustamine",
+      "link": "https://sonaveeb.ee/search/unif/dlall/kriis/kriisin%C3%B5ustamine",
+      "taht": "k",
+      "keel": "eesti",
+      "synonyymid": [],
+      "definitsioon": "professionaalne abi psüühilise tasakaalu ja toimetuleku taastamiseks nt stressirohkes olukorras või pärast traumaatilise sündmuse läbielamist"
+    },
+    {
+      "termin": "kriisiolukord",
+      "link": "https://sonaveeb.ee/search/unif/dlall/kriis/kriisiolukord",
+      "taht": "k",
+      "keel": "eesti",
+      "synonyymid": [
+        "kriis",
+        "kriisisituatsioon"
+      ],
+      "definitsioon": "vastuoludest lõhestatud pingeline (sotsiaalne, poliitiline) seisund, mille hrl on põhjustanud raskused, ohud, ebastabiilsed olud ning millega võib kaasneda ähvardavalt järsk muutus"
+    },
+    {
+      "termin": "kriisiplaan",
+      "link": "https://sonaveeb.ee/search/unif/dlall/kriis/kriisiplaan",
+      "taht": "k",
+      "keel": "eesti",
+      "synonyymid": [
+        "sekkumiskava",
+        "kriisikava",
+        "hädaolukorra lahendamise plaan",
+        "valmisolekukava",
+        "situatsiooniplaan",
+        "varuplaan"
+      ],
+      "definitsioon": "a plan for the actions to follow in order to minimise the impact of a risk after it has occurred (i.e. proactive acceptance of the consequences), plaan selleks, milliseid tegevusi viiakse läbi pärast mingi riski asetleidmist, et selle mõju vähendada või miinimumini viia (st proaktiivne tagajärgede aktsepteerimine)"
+    },
+    {
+      "termin": "kriisipsühholoogia",
+      "link": "https://sonaveeb.ee/search/unif/dlall/kriis/kriisips%C3%BChholoogia",
+      "taht": "k",
+      "keel": "eesti",
+      "synonyymid": [],
+      "definitsioon": "tegeleb äärmuslike sündmustega seotud inimeste hoiakute ja käitumisega; võimaldab üksikisikut või gruppi kriisideks ette valmistada ning kriisis toetada"
+    },
+    {
+      "termin": "kriisisekkumine",
+      "link": "https://sonaveeb.ee/search/unif/dlall/kriis/kriisisekkumine",
+      "taht": "k",
+      "keel": "eesti",
+      "synonyymid": [
+        "psühhosotsiaalne kriisisekkumine"
+      ],
+      "definitsioon": "lühiajaline kriisi- ja traumateadlik psühhosotsiaalne tugi ja juhendamine väga häirivat olukorda (näiteks ootamatu kaotus, õnnetus, katastroof, enesetapukatse jm) kogenud inimesele või inimeste grupile"
+    },
+    {
+      "termin": "kriisiteadlik",
+      "link": "https://sonaveeb.ee/search/unif/dlall/kriis/kriisiteadlik",
+      "taht": "k",
+      "keel": "eesti",
+      "synonyymid": [],
+      "definitsioon": "pädev ära tundma ja adekvaatselt reageerima kriisiolukorrale"
+    },
+    {
+      "termin": "lein",
+      "link": "https://sonaveeb.ee/search/unif/dlall/kriis/lein",
+      "taht": "l",
+      "keel": "eesti",
+      "synonyymid": [],
+      "definitsioon": "lähedase vm armastatud inimese surmast tingitud tugev hingeline kannatus"
+    },
+    {
+      "termin": "leina duaalsus",
+      "link": "https://sonaveeb.ee/search/unif/dlall/kriis/leina%20duaalsus",
+      "taht": "l",
+      "keel": "eesti",
+      "synonyymid": [],
+      "definitsioon": "leinainaprotsessis leinaja mõtetes ja tunnetes kogetavate stressorite pendeldamine kaotuse ja tuleviku vahel"
+    },
+    {
+      "termin": "leinadepressioon",
+      "link": "https://sonaveeb.ee/search/unif/dlall/kriis/leinadepressioon",
+      "taht": "l",
+      "keel": "eesti",
+      "synonyymid": [],
+      "definitsioon": "konkreetsest kaotusest tingitud meeleolu langus ning emotsionaalne võimetus kaotuse kõrval tulevikuvõimalusi näha"
+    },
+    {
+      "termin": "leinahäire",
+      "link": "https://sonaveeb.ee/search/unif/dlall/kriis/leinah%C3%A4ire",
+      "taht": "l",
+      "keel": "eesti",
+      "synonyymid": [],
+      "definitsioon": ""
+    },
+    {
+      "termin": "leinanõustamine",
+      "link": "https://sonaveeb.ee/search/unif/dlall/kriis/leinan%C3%B5ustamine",
+      "taht": "l",
+      "keel": "eesti",
+      "synonyymid": [],
+      "definitsioon": "professionaalne abi leinaga toimetulekuks"
+    },
+    {
+      "termin": "läbipõlemine",
+      "link": "https://sonaveeb.ee/search/unif/dlall/kriis/l%C3%A4bip%C3%B5lemine",
+      "taht": "l",
+      "keel": "eesti",
+      "synonyymid": [],
+      "definitsioon": "pikaajalise tööstressi tulemusel tekkiv vaimse ja emotsionaalse kurnatuse seisund, millega kaasneb alanev hinnang endale kui professionaalile"
+    },
+    {
+      "termin": "occupational burnout",
+      "link": "https://sonaveeb.ee/search/unif/dlall/kriis/occupational%20burnout",
+      "taht": "o",
+      "keel": "inglise",
+      "synonyymid": [
+        "job burnout"
+      ],
+      "definitsioon": "stressisündroom, mille sisuks on üheaegselt füüsiline, psüühiline ja emotsionaalne kurnatus ning tööga seonduv ebapiisavuse tunne"
+    },
+    {
+      "termin": "ohvriabiteenus",
+      "link": "https://sonaveeb.ee/search/unif/dlall/kriis/ohvriabiteenus",
+      "taht": "o",
+      "keel": "eesti",
+      "synonyymid": [],
+      "definitsioon": "riiklikult koordineeritud psühhosotsiaalne abi ohvrile - kuriteo, vägivalla või kriisijuhtumi tõttu kahjustada saanud isikule või isikutele"
+    },
+    {
+      "termin": "postulaat",
+      "link": "https://sonaveeb.ee/search/unif/dlall/kriis/postulaat",
+      "taht": "p",
+      "keel": "eesti",
+      "synonyymid": [
+        "aksioom",
+        "põhilause"
+      ],
+      "definitsioon": "teooriale või mõttekäigule ilma tõestuseta aluseks võetav väide"
+    },
+    {
+      "termin": "postulate",
+      "link": "https://sonaveeb.ee/search/unif/dlall/kriis/postulate",
+      "taht": "p",
+      "keel": "inglise",
+      "synonyymid": [],
+      "definitsioon": "oluline ja kriisinõustamise kvaliteeti mõjutav alusväide, mis ei vaja täpsemat tõestust"
+    },
+    {
+      "termin": "pregnancy crisis counceling",
+      "link": "https://sonaveeb.ee/search/unif/dlall/kriis/pregnancy%20crisis%20counceling",
+      "taht": "p",
+      "keel": "inglise",
+      "synonyymid": [],
+      "definitsioon": "psühholoogilise toe ja teabe pakkumine raseduse planeerimisel, raseduse ja sünnitusjärgsel ajal"
+    },
+    {
+      "termin": "psychological first aid",
+      "link": "https://sonaveeb.ee/search/unif/dlall/kriis/psychological%20first%20aid",
+      "taht": "p",
+      "keel": "inglise",
+      "synonyymid": [],
+      "definitsioon": "hooliv juuresolemine pärast füüsilise abi tagamist traumeeriva sündmuse korral, on jõukohane ka igasuguse väljaõppeta inimesele"
+    },
+    {
+      "termin": "psychosocial crisis intervention",
+      "link": "https://sonaveeb.ee/search/unif/dlall/kriis/psychosocial%20crisis%20intervention",
+      "taht": "p",
+      "keel": "inglise",
+      "synonyymid": [
+        "crisis intervention"
+      ],
+      "definitsioon": "lühiajaline kriisi- ja traumateadlik psühhosotsiaalne tugi ja juhendamine väga häirivat olukorda (näiteks ootamatu kaotus, õnnetus, katastroof, enesetapukatse jm) kogenud inimesele või inimeste grupile"
+    },
+    {
+      "termin": "psühhohügieen",
+      "link": "https://sonaveeb.ee/search/unif/dlall/kriis/ps%C3%BChhoh%C3%BCgieen",
+      "taht": "p",
+      "keel": "eesti",
+      "synonyymid": [],
+      "definitsioon": "vaimse tervise korrashoid"
+    },
+    {
+      "termin": "psühholoogiline debriifing",
+      "link": "https://sonaveeb.ee/search/unif/dlall/kriis/ps%C3%BChholoogiline%20debriifing",
+      "taht": "p",
+      "keel": "eesti",
+      "synonyymid": [],
+      "definitsioon": "kindla struktuuriga traumajärgne rühmatöö pädeva spetsialisti juhtimisel"
+    },
+    {
+      "termin": "psühholoogiline esmaabi",
+      "link": "https://sonaveeb.ee/search/unif/dlall/kriis/ps%C3%BChholoogiline%20esmaabi",
+      "taht": "p",
+      "keel": "eesti",
+      "synonyymid": [],
+      "definitsioon": "hooliv juuresolemine pärast füüsilise abi tagamist traumeeriva sündmuse korral, on jõukohane ka igasuguse väljaõppeta inimesele"
+    },
+    {
+      "termin": "psühhosotsiaalne",
+      "link": "https://sonaveeb.ee/search/unif/dlall/kriis/ps%C3%BChhosotsiaalne",
+      "taht": "p",
+      "keel": "eesti",
+      "synonyymid": [],
+      "definitsioon": "psüühikat mõjutavate sotsiaalsete oludega seotud"
+    },
+    {
+      "termin": "psühhosotsiaalne kriisisekkumine",
+      "link": "https://sonaveeb.ee/search/unif/dlall/kriis/ps%C3%BChhosotsiaalne%20kriisisekkumine",
+      "taht": "p",
+      "keel": "eesti",
+      "synonyymid": [
+        "kriisisekkumine"
+      ],
+      "definitsioon": "lühiajaline kriisi- ja traumateadlik psühhosotsiaalne tugi ja juhendamine väga häirivat olukorda (näiteks ootamatu kaotus, õnnetus, katastroof, enesetapukatse jm) kogenud inimesele või inimeste grupile"
+    },
+    {
+      "termin": "raseduskriisi nõustamine",
+      "link": "https://sonaveeb.ee/search/unif/dlall/kriis/raseduskriisi%20n%C3%B5ustamine",
+      "taht": "r",
+      "keel": "eesti",
+      "synonyymid": [],
+      "definitsioon": "psühholoogilise toe ja teabe pakkumine raseduse planeerimisel, raseduse ja sünnitusjärgsel ajal"
+    },
+    {
+      "termin": "stress",
+      "link": "https://sonaveeb.ee/search/unif/dlall/kriis/stress",
+      "taht": "s",
+      "keel": "eesti",
+      "synonyymid": [
+        "stressiseisund"
+      ],
+      "definitsioon": "organismi pingeseisund, mis tekib kaitsereaktsioonina teatud tugevate mõjurite (nt vaimse pinge, verekaotuse, hapnikuvaeguse) vastu"
+    },
+    {
+      "termin": "suurõnnetus",
+      "link": "https://sonaveeb.ee/search/unif/dlall/kriis/suur%C3%B5nnetus",
+      "taht": "s",
+      "keel": "eesti",
+      "synonyymid": [],
+      "definitsioon": "paljude ohvritega, suurt kahju põhjustanud õnnetus"
+    },
+    {
+      "termin": "tandem",
+      "link": "https://sonaveeb.ee/search/unif/dlall/kriis/tandem",
+      "taht": "t",
+      "keel": "eesti",
+      "synonyymid": [],
+      "definitsioon": "miski, kus paigutus on selline, et kaks objekti (nt inimest, looma, seadet) asetsevad üksteise järel esiküljega ühele poole"
+    },
+    {
+      "termin": "traumakriis",
+      "link": "https://sonaveeb.ee/search/unif/dlall/kriis/traumakriis",
+      "taht": "t",
+      "keel": "eesti",
+      "synonyymid": [],
+      "definitsioon": "tugevat läbielamist põhjustanud olukorrast tulenev üksikisiku traumaatiline seisund, mil inimene enamasti vajab välist tuge"
+    },
+    {
+      "termin": "victim support service",
+      "link": "https://sonaveeb.ee/search/unif/dlall/kriis/victim%20support%20service",
+      "taht": "v",
+      "keel": "inglise",
+      "synonyymid": [],
+      "definitsioon": "riiklikult koordineeritud psühhosotsiaalne abi ohvrile - kuriteo, vägivalla või kriisijuhtumi tõttu kahjustada saanud isikule või isikutele"
+    },
+    {
+      "termin": "õnnetus",
+      "link": "https://sonaveeb.ee/search/unif/dlall/kriis/%C3%B5nnetus",
+      "taht": "õ",
+      "keel": "eesti",
+      "synonyymid": [],
+      "definitsioon": "ootamatu ja ettekavatsemata halb sündmus, kus keegi või miski saab viga või muud märkimisväärset kahju"
+    },
+    {
+      "termin": "временные проявления кризиса",
+      "link": "https://sonaveeb.ee/search/unif/dlall/kriis/%D0%B2%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D0%BD%D1%8B%D0%B5%20%D0%BF%D1%80%D0%BE%D1%8F%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F%20%D0%BA%D1%80%D0%B8%D0%B7%D0%B8%D1%81%D0%B0",
+      "taht": "в",
+      "keel": "vene",
+      "synonyymid": [],
+      "definitsioon": "kindlad ajaperioodid alates kriisiintsidendi kogemise hetkest 24 kuu jooksul, mil üksikisikul võivad ilmneda emotsionaalsed ja psühhosomaatilised vaevused"
+    },
+    {
+      "termin": "дебрифинг",
+      "link": "https://sonaveeb.ee/search/unif/dlall/kriis/%D0%B4%D0%B5%D0%B1%D1%80%D0%B8%D1%84%D0%B8%D0%BD%D0%B3",
+      "taht": "д",
+      "keel": "vene",
+      "synonyymid": [],
+      "definitsioon": "kriisisündmusejärgne struktureeritud ja juhitud arutelu"
+    },
+    {
+      "termin": "дефьюзинг",
+      "link": "https://sonaveeb.ee/search/unif/dlall/kriis/%D0%B4%D0%B5%D1%84%D1%8C%D1%8E%D0%B7%D0%B8%D0%BD%D0%B3",
+      "taht": "д",
+      "keel": "vene",
+      "synonyymid": [],
+      "definitsioon": "kriisikogemuse järel koheselt toimuv juhitud väljaelamisvestlus"
+    },
+    {
+      "termin": "информирование",
+      "link": "https://sonaveeb.ee/search/unif/dlall/kriis/%D0%B8%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5",
+      "taht": "и",
+      "keel": "vene",
+      "synonyymid": [
+        "осведомление"
+      ],
+      "definitsioon": "teadistamine"
+    },
+    {
+      "termin": "консультирование",
+      "link": "https://sonaveeb.ee/search/unif/dlall/kriis/%D0%BA%D0%BE%D0%BD%D1%81%D1%83%D0%BB%D1%8C%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5",
+      "taht": "к",
+      "keel": "vene",
+      "synonyymid": [
+        "консультация"
+      ],
+      "definitsioon": "omal alal nõu andmine"
+    },
+    {
+      "termin": "консультирование в период тяжелой утраты",
+      "link": "https://sonaveeb.ee/search/unif/dlall/kriis/%D0%BA%D0%BE%D0%BD%D1%81%D1%83%D0%BB%D1%8C%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%20%D0%B2%20%D0%BF%D0%B5%D1%80%D0%B8%D0%BE%D0%B4%20%D1%82%D1%8F%D0%B6%D0%B5%D0%BB%D0%BE%D0%B9%20%D1%83%D1%82%D1%80%D0%B0%D1%82%D1%8B",
+      "taht": "к",
+      "keel": "vene",
+      "synonyymid": [
+        "консультирование при горе"
+      ],
+      "definitsioon": "kriisi- ja traumateadlik psühholoogiline ja/ või psühhosotsiaalne ja/ või hingehoidlik nõustamine kaotusvalu ja leinaprotsessi mõtestamiseks"
+    },
+    {
+      "termin": "консультирование при горе",
+      "link": "https://sonaveeb.ee/search/unif/dlall/kriis/%D0%BA%D0%BE%D0%BD%D1%81%D1%83%D0%BB%D1%8C%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%20%D0%BF%D1%80%D0%B8%20%D0%B3%D0%BE%D1%80%D0%B5",
+      "taht": "к",
+      "keel": "vene",
+      "synonyymid": [
+        "консультирование в период тяжелой утраты"
+      ],
+      "definitsioon": "kriisi- ja traumateadlik psühholoogiline ja/ või psühhosotsiaalne ja/ või hingehoidlik nõustamine kaotusvalu ja leinaprotsessi mõtestamiseks"
+    },
+    {
+      "termin": "кризис развития",
+      "link": "https://sonaveeb.ee/search/unif/dlall/kriis/%D0%BA%D1%80%D0%B8%D0%B7%D0%B8%D1%81%20%D1%80%D0%B0%D0%B7%D0%B2%D0%B8%D1%82%D0%B8%D1%8F",
+      "taht": "к",
+      "keel": "vene",
+      "synonyymid": [],
+      "definitsioon": "elukaare erinevates etappides ette ennustatav muutus, millega kohanemiseks vajab inimene eakohast ja sotsiaalset toetust"
+    },
+    {
+      "termin": "осведомленный о кризисе",
+      "link": "https://sonaveeb.ee/search/unif/dlall/kriis/%D0%BE%D1%81%D0%B2%D0%B5%D0%B4%D0%BE%D0%BC%D0%BB%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9%20%D0%BE%20%D0%BA%D1%80%D0%B8%D0%B7%D0%B8%D1%81%D0%B5",
+      "taht": "о",
+      "keel": "vene",
+      "synonyymid": [],
+      "definitsioon": "pädev ära tundma ja adekvaatselt reageerima kriisiolukorrale"
+    },
+    {
+      "termin": "острый кризис",
+      "link": "https://sonaveeb.ee/search/unif/dlall/kriis/%D0%BE%D1%81%D1%82%D1%80%D1%8B%D0%B9%20%D0%BA%D1%80%D0%B8%D0%B7%D0%B8%D1%81",
+      "taht": "о",
+      "keel": "vene",
+      "synonyymid": [],
+      "definitsioon": "traumaatilist mõju omava kriisiolukorra kogemise esimesest hetkest 30-40 päeva pikkune periood"
+    }
+  ]
+}
