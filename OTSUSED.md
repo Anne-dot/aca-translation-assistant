@@ -25,42 +25,58 @@
 
 ## 🎯 Etapid
 
-### ETAPP 1: Terminibaasi Ehitamine ✅ VALMIS
+### ETAPP 1: Terminibaasi Ehitamine 🔄 POOLELI
 
-**Eesmärk:** Luua põhjalik terminibaas ACA/ATL terminoloogia jaoks
+**Eesmärk:** Luua põhjalik terminibaas ACA/ATL terminoloogia jaoks süstemaatilise kõrvutamise kaudu
 
-**Allikad:**
+**Süstemaatiline lähenemine:**
 
-1. **Olemasolevad ATL päevamõtted** (originaal + tõlge paaris)
-   - 📍 **Staatus:** Järgmine samm
-   - 📝 **Märkus:** Need sisaldavad juba tehtud tõlkeid, millest saab õppida
+#### 1A. EKI Terminibaasid ✅ VALMIS
+- ✅ Skeemiteraapia terminisõnastik (`skt`) - 250 terminit
+- ✅ DKT/DBT terminibaas (`dkt`) - 301 terminit
+- ✅ Kriisinõustamise terminibaas (`kriis`) - 82 terminit
+- ✅ Tervisesõnastik (`TAI`) - 645 terminit
+- 🎉 **KOKKU: 1,278 terminit kogutud**
+- 📊 **Glossary jaoks kasutatavad: 1,265 terminit** (eesti + inglise keeles)
+- 🔧 **Tööriist:** `src/eki_koguja.py`
+- 📁 **Asukoht:** `data/eki_terminid/*.json`
+- 📋 **Andmed:** keel, sünonüümid, definitsioonid, lingid EKI lehele
+- 📅 **Kogutud:** 2025-10-12
 
-2. **EKI terminibaasid** (Sõnaveeb korpused) ✅ **KOGUTUD!**
-   - ✅ Skeemiteraapia terminisõnastik (`skt`) - 250 terminit
-   - ✅ DKT/DBT terminibaas (`dkt`) - 301 terminit
-   - ✅ Kriisinõustamise terminibaas (`kriis`) - 82 terminit
-   - ✅ Tervisesõnastik (`TAI`) - 645 terminit
-   - 🎉 **KOKKU: 1,278 terminit!**
-   - 🔧 **Tööriist:** `src/eki_koguja.py` (Python skript koos täieliku andmete kogumisega)
-   - 📁 **Asukoht:** `data/eki_terminid/*.json`
-   - 📋 **Andmed:** keel, sünonüümid, definitsioonid, lingid EKI lehele
-   - 📅 **Kogutud:** 2025-10-12
+#### 1B. Glossary Terminid Kõrvutamine EKI-ga 📍 PRAEGU
+- 📍 **Asukoht:** `/home/d0021/Documents/ATL_drive/Jagatud/Glossary_templatesonavara.docx`
+- 📊 **Termineid kokku: 845** (210 täidetud + 635 tõlkimata)
+- 📄 **Analüüs:** `data/glossary_analüüs.json`
+- 🔄 **Protsess:**
+  1. Võta KÕIK Glossary terminid (845 tk)
+  2. Kõrvuta iga termin EKI 1,265 terminiga
+  3. **KUI MATCH → täienda EKI vastega + viitega EKI lehele**
+  4. **KUI EI MATCH → jäta tühjaks** (täidetakse hiljem)
+- ⚠️ **IMPORTANT!** Glossary "draft" tõlked pole usaldusväärsed - EKI vaste asendab need
 
-3. **Glossary template** ✅ **ANALÜÜSITUD**
-   - 📍 **Asukoht:** `/home/d0021/Documents/ATL_drive/Jagatud/Glossary_templatesonavara.docx`
-   - 📊 **Staatus:** 210 täidetud, 635 tõlkimata terminit
-   - 📄 **Analüüs:** `data/glossary_analüüs.json`
+#### 1C. Päevatekstid Kõrvutamine EKI-ga ⏳ JÄRGMINE
+- 📝 **Allikas:** Olemasolevad ATL päevamõtted (originaal + tõlge paaris)
+- 🔄 **Protsess:**
+  1. Ekstraheeri originaal + tõlge paarid
+  2. Kõrvuta EKI terminibaasiga
+  3. **KUI MATCH → täienda EKI vastega + viitega**
+  4. Lisa ka päevatekstist leitud tõlge (võib erineda EKI-st)
+- 📝 **Märkus:** Need sisaldavad praktiliselt testitud tõlkeid
 
 **Terminibaasi andmestruktuur:**
 
 Iga termin sisaldab:
 - 🇬🇧 **Ingliskeelne termin** (nt "Inner Child")
-- 🇪🇪 **Eestikeelne vaste(d)** (nt "Sisemine laps", võib olla mitu varianti)
+- 🇪🇪 **Eestikeelne vaste(d)** - võib olla mitu varianti erinevatest allikatest:
+  - **EKI vaste** + viide EKI lehele (autoriteetne allikas)
+  - **Päevateksti tõlge** + viide kuupäevale (praktiliselt testitud)
+  - **Glossary draft** (esialgne tõlge, vajab kontrollimist)
 - 📝 **Kommentaarid/selgitused** (kontekst, nüansid)
 - 📚 **Näited kasutusest** (laused originaaltekstidest ja tõlgetest)
-- 🔗 **Lingid/viited** (kust termin pärineb - kuupäev, dokument, allikas)
-- 🏷️ **Kategooria/teemad** (nt "12-step terminology", "therapy", "emotions")
-- ⭐ **Kinnituse staatus** (kas on ametlikult heaks kiidetud tõlge või variant)
+- 🔗 **Allikate kategooriad** (EKI / päevatekst / draft)
+- 🏷️ **Teemad** (nt "12-step terminology", "therapy", "emotions")
+- ⭐ **Kinnituse staatus** (kas on ametlikult heaks kiidetud)
+- ❓ **TODO: Eelistatud variant** - kui on mitu vastet, kuidas märkida eelistatud/kasutusel olev variant? (vajab läbimõtlemist)
 
 **Terminibaasi formaat:**
 - ❓ **Vajab otsust:** SQLite / JSON / CSV / muu?
@@ -202,6 +218,31 @@ ATL_tõlkeprojekt/
 
 ---
 
+## 🔧 Tehnilised Otsused
+
+### OTSUS: EKI Terminite Keelefilter Glossary Töös
+
+**Kuupäev:** 2025-10-13
+
+**Olukord:** EKI terminibaasid sisaldavad termineid mitmes keeles (eesti, inglise, vene, soome)
+
+**Otsus:**
+- Kõik kogutud terminid jäävad JSON failidesse alles
+- Glossary võrdluseks kasutame ainult eesti ja inglise keeles termineid
+- Vene, soome ja muud keeled jäävad arhiivi võimalikuks tulevikukasutuseks
+
+**Põhjendus:**
+- ATL materjalid on inglise → eesti tõlge
+- Vajame inglise termineid (originaal) ja eesti vasteid (tõlge)
+- Vene/soome terminid pole ATL tõlketöö jaoks esialgu vajalikud
+- Säilitame kõik andmed - võib tulevikus kasulik olla
+
+**Praktiline tegevus:**
+- Filtreerin EKI andmeid analüüsimisel: ainult `keel === "eesti"` VÕI `keel === "inglise"`
+- JSON failid jäävad täielikud (kõik keeled säilitatud)
+
+---
+
 ## 📝 Märkmed
 
 - **ADHD-sõbralik:** Järgi CODING_PRINCIPLES.md põhimõtteid
@@ -211,5 +252,5 @@ ATL_tõlkeprojekt/
 
 ---
 
-**Viimati uuendatud:** 2025-10-12
+**Viimati uuendatud:** 2025-10-13
 **Uuendaja:** Claude AI + Kasutaja
