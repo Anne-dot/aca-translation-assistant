@@ -220,6 +220,26 @@ ATL_tõlkeprojekt/
 
 ## 🔧 Tehnilised Otsused
 
+### OTSUS: Failiformaadid (MVP vs Tulevikuplaanad)
+
+**Kuupäev:** 2025-10-14
+
+**MVP (V1):**
+- ✅ `.docx` (Word dokumendid)
+- ✅ `.txt` (lihttekst)
+- 📝 **PDF failid** - esialgu kopeerin sisu käsitsi, pole probleemi (MVP lähenemine!)
+
+**Tulevikus (kui vaja):**
+- 📋 `.pdf` tugi automaatne (Python: PyPDF2, pdfplumber, pypdf)
+- 📋 OCR tugi (skaneeritud/pildifailidest dokumendid - tesseract, pytesseract)
+
+**Põhjendus:**
+- MVP-first: keskendume põhifunktsioonidele
+- PDF käsitsi kopeerimine ei ole praegu probleem
+- Lisame täiendava võimekuse siis, kui see muutub vajalikuks
+
+---
+
 ### OTSUS: EKI Terminite Keelefilter Glossary Töös
 
 **Kuupäev:** 2025-10-13
@@ -243,6 +263,84 @@ ATL_tõlkeprojekt/
 
 ---
 
+---
+
+## 💡 Tulevikuvisiooni (Future Ideas)
+
+### 🌍 Universaalne Tõlkeplatvorm - Suur Unistus
+
+**Visioon:** Muuta see ATL-spetsiifiline tööriist universaalseks, mitmekeelseks tõlkeplatvormiks, mida erinevad kogukonnad saaksid kasutada.
+
+**Võimalused:**
+
+#### 1. Veebipõhine Platvorm (Online + Offline)
+- 🌐 **Veebipõhine liides** - ligipääsetav kõigile, kõikjal
+- 💾 **Offline režiim** - töötab ka ilma internetita (PWA - Progressive Web App)
+- 📱 **Responsiivne** - töötab nii arvutis, tahvlis kui telefonis
+
+#### 2. Mitme Keelepaari Tugi
+- 🇬🇧 → 🇪🇪 Inglise → Eesti (praegune fookus)
+- 🇪🇪 → 🇫🇮 Eesti → Soome
+- 🇬🇧 → 🇫🇮 Inglise → Soome
+- 🇬🇧 → 🇸🇪 Inglise → Rootsi
+- ...ja teised keelekombinatsioonid
+
+#### 3. Organisatsiooni Haldus ja Kasutajaõigused
+**ACA/ATL võiks:**
+- 📤 **Tekstid üles laadida** platvormile
+- 👥 **Kasutajate õiguste määramine:**
+  - Tõlkijad (saavad tõlkida)
+  - Ülevaatajad (saavad kinnitada/kommenteerida)
+  - Administraatorid (haldavad projekte ja kasutajaid)
+- ✅ **Ülevaatuse töövoog:**
+  - Tõlkija teeb tõlke
+  - Saadab ülevaatajale lihtsalt ühe linnukesega ✓
+  - Ülevaataja saab kommenteerida, kinnitada või tagasi saata
+- 📊 **Progressi jälgimine:**
+  - Mitu teksti on tõlkimisel
+  - Mitu ootab ülevaatust
+  - Mitu on valmis
+
+#### 4. Koostöö ja Versioonihaldus
+- 👥 **Mitme tõlkija koostöö** samal tekstil
+- 📝 **Kommentaarid ja arutelud** terminite kohta
+- 🔄 **Versioonide ajalugu** - näed, kes mida muutis ja millal
+- 🔀 **Tõlkevariantide võrdlemine** - vali parim variant
+
+#### 5. Kogukonnale Avatud
+- 🎁 **Tasuta kasutada** ACA/ATL-ile ja teistele 12-sammu kogukondadele
+- 🌱 **Avatud lähtekoodiga** - teised võivad panustada ja täiendada
+- 📚 **Terminibaasid jagatavad** - kogukonnad saavad oma terminibaase jagada
+- 🔌 **API** - võimalus integreerida teiste süsteemidega
+
+#### 6. Intelligentsed Funktsioonid
+- 🤖 **Masintõlke integratsioon** (DeepL, Google Translate) - kui termin puudub
+- 💡 **Automaatne terminite tuvastamine** - leiab uued terminid tekstist
+- 📊 **Statistika ja analüütika** - millised terminid on kõige sagedamini kasutatud
+- 🔍 **Otsing läbi kõigi projektide** - leia, kuidas termin on varem tõlgitud
+
+### 🎯 Etapiline Teostus (Realistlik Plaan)
+
+**Faas 1:** ATL-spetsiifiline CLI tööriist ✅ (praegu)
+**Faas 2:** ATL-spetsiifiline veebiversioon (MVP)
+**Faas 3:** Kasutajaõigused ja ülevaatuse töövoog
+**Faas 4:** Mitme organisatsiooni tugi (multi-tenant)
+**Faas 5:** Mitme keelepaari tugi
+**Faas 6:** Avatud platvorm kõigile kogukondadele
+
+### 💭 Miks See On Oluline
+
+See pole lihtsalt tööriist - see on **kingitus kogukonnale**, mis:
+- 🤝 Võimaldab kvaliteetsemat ja järjepidevamat tõlkimist
+- ⚡ Kiirendab tõlkeprotsessi märkimisväärselt
+- 👥 Hõlbustab koostööd tõlkijate ja ülevaatajate vahel
+- 📚 Säilitab teadmisi ja parimaid praktikaid
+- 🌍 Võib aidata paljusid teisi kogukondi üle maailma
+
+**"Ma teen seda, sest ma saan seda programmeerimisega teha - ja see on mu kingitus kogukonnale!"** 🎁❤️
+
+---
+
 ## 📝 Märkmed
 
 - **ADHD-sõbralik:** Järgi CODING_PRINCIPLES.md põhimõtteid
@@ -252,5 +350,5 @@ ATL_tõlkeprojekt/
 
 ---
 
-**Viimati uuendatud:** 2025-10-13
+**Viimati uuendatud:** 2025-10-14
 **Uuendaja:** Claude AI + Kasutaja
