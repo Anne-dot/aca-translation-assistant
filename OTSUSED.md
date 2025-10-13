@@ -263,6 +263,35 @@ ATL_tõlkeprojekt/
 
 ---
 
+### OTSUS: GitHub Organization Structure
+
+**Kuupäev:** 2025-10-14
+
+**Milestones = Development Phases (3 major milestones)**
+- Each milestone represents one complete phase of development
+- Clear, high-level goals
+- Human-readable names (not codes like "phase-1")
+
+**Issues = Specific tasks**
+- Concrete, actionable work items
+- Can be assigned, tracked, closed
+- Linked to milestones
+
+**Labels = Categories within milestones**
+- Group related issues together
+- Examples: "terminology-database", "cli-tool", "documentation", "web-interface"
+- Allow filtering and organization
+- Multiple labels per issue possible
+- Labels help organize issues WITHIN each milestone
+
+**Why this works:**
+- Simple and clear structure
+- Not over-engineered
+- Easy to understand at a glance
+- Labels provide flexibility for grouping without rigid hierarchy
+- Follows passion project philosophy (human-readable, not corporate)
+- GitHub doesn't support sub-milestones, but labels achieve similar organization
+
 ---
 
 ## 💡 Tulevikuvisiooni (Future Ideas)
