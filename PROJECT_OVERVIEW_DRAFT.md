@@ -19,19 +19,132 @@ Estonian ACA/ATL materials - building a systematic terminology database as the f
 
 ---
 
-## Big Picture
+## Development Roadmap
 
-```
-Phase 1: Build Terminology Database
-├─ Collect EKI terminology (✅ Done - 1,265 terms)
-├─ Match Glossary with EKI (📍 Current - 845 terms)
-└─ Extract from daily meditations (⏳ Next)
+### Overview
 
-Phase 2: Build CLI Translation Assistant
-└─ Interactive term-by-term translation tool
-```
+**Milestone 1: Terminology Database** - Foundation for everything
+**Milestone 2: Personal CLI Translation Assistant** - Interactive command-line tool
+**Milestone 3: Estonian Community Tool** - Web-based collaboration platform
+**Milestone 4: Multi-Language Platform** - Universal translation tool for global ACA communities
 
 ---
 
-**Status:** DRAFT - to be refined after compacting
+### Milestone 1: Terminology Database (IN PROGRESS)
+
+**Goal:** Create comprehensive terminology database for ACA/ATL translation through systematic comparison of authoritative sources.
+
+**Why this is the foundation:**
+- ACA WSO guidelines mandate glossary as FIRST step
+- Ensures consistent translation across all documents
+- Valuable even standalone (can be used for manual translation)
+- Required for all future milestones
+
+**Sub-steps:**
+
+**1A. Collect EKI Terminology** ✅ DONE
+- Collected from 4 EKI terminology databases
+- Total: 1,278 terms (1,265 usable for Glossary matching)
+- Languages: Estonian + English (+ archived: Russian, Finnish, Latin)
+- Data includes: synonyms, definitions, EKI links
+- Location: `data/eki_terminid/*.json`
+- Tool: `src/eki_koguja.py`
+
+**1B. Match Glossary with EKI** 📍 CURRENT
+- Source: `/home/d0021/Documents/ATL_drive/Jagatud/Glossary_templatesonavara.docx`
+- Total terms: 845 (210 filled + 635 untranslated)
+- Process:
+  1. Take ALL Glossary terms (845)
+  2. Match each with EKI 1,265 terms
+  3. IF MATCH → add EKI Estonian equivalent + EKI link
+  4. IF NO MATCH → leave empty (fill later from daily texts)
+- Important: Glossary "draft" translations are NOT reliable - EKI equivalents replace them
+
+**1C. Extract from Daily Meditations** ⏳ NEXT
+- Source: Existing ATL daily meditations (original + translation pairs)
+- Process:
+  1. Extract original + translation pairs
+  2. Match with EKI terminology database
+  3. IF MATCH → add EKI equivalent + link
+  4. Also add translation found in daily text (may differ from EKI)
+- Note: These contain practically tested translations
+
+**1D. Collaboration Opportunities** 💡 OPTIONAL
+- **EKI Terminology Database Team:** Contact established for potential future cooperation (see `EKI_terminibaasid_kontaktid.md` for details)
+- **Glossary Team:** Request feedback and clarifications on translation choices
+- **Community Review:** Share terminology database with ATL community for validation
+- Note: These are opportunities to improve quality, not required steps
+
+**Terminology Database Structure:**
+
+Each term contains:
+- 🇬🇧 **English term** (e.g., "Inner Child")
+- 🇪🇪 **Estonian equivalent(s)** - can have multiple variants from different sources:
+  - **EKI equivalent** + EKI link (authoritative source)
+  - **Daily text translation** + date reference (practically tested)
+  - **Glossary draft** (initial translation, needs verification)
+- 📝 **Comments/explanations** (context, nuances)
+- 📚 **Usage examples** (sentences from original texts and translations)
+- 🔗 **Source categories** (EKI / daily text / draft)
+- 🏷️ **Topics** (e.g., "12-step terminology", "therapy", "emotions")
+- ⭐ **Approval status** (officially approved or not)
+- ❓ **TODO: Preferred variant** - if multiple equivalents exist, how to mark preferred/in-use variant?
+
+**Database Format Decision:**
+- ❓ **Needs decision:** SQLite / JSON / CSV?
+  - **SQLite** - structured database, good query capabilities, ready for web app
+  - **JSON** - human-readable, easy for version control, good for backups
+  - **CSV** - simplest, can open/edit in Excel/Google Sheets
+- 💡 **Recommendation:** Start with JSON (simple, readable, git-friendly) + SQLite in future
+
+**Output:** Complete terminology database ready for use in Milestone 2 (CLI tool)
+
+---
+
+### Milestone 2: Personal CLI Translation Assistant
+
+**Goal:** Interactive command-line tool for solo translator work.
+
+**Key Features:**
+- Uses Milestone 1 terminology database
+- Identifies terms in source text
+- Suggests translations from database
+- Interactive term-by-term workflow
+- Saves new translations back to database
+
+**Status:** Not started (requires Milestone 1 completion)
+
+---
+
+### Milestone 3: Estonian Community Tool
+
+**Goal:** Web-based interface for Estonian ACA/ATL translation team collaboration.
+
+**Key Features:**
+- Online interface
+- Multiple users with roles (translator, reviewer, admin)
+- Review workflow
+- Shares terminology database from Milestone 1
+- Progress tracking
+
+**Status:** Future milestone (requires Milestone 2 completion)
+
+---
+
+### Milestone 4: Multi-Language Platform
+
+**Goal:** Universal translation platform for global ACA communities, especially small-language speakers.
+
+**Key Features:**
+- Multiple language pairs
+- Multi-language terminology databases
+- Organization management
+- Open source and free for ACA communities
+- API for integration
+
+**Status:** Future vision (requires Milestone 3 completion)
+
+---
+
+**Status:** Ready for implementation
 **Date:** 2025-10-14
