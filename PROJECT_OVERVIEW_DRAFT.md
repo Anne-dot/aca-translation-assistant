@@ -51,23 +51,33 @@ Estonian ACA/ATL materials - building a systematic terminology database as the f
 - Tool: `src/eki_koguja.py`
 
 **1B. Match Glossary with EKI** 📍 CURRENT
-- Source: `/home/d0021/Documents/ATL_drive/Jagatud/Glossary_templatesonavara.docx`
-- Total terms: 845 (210 filled + 635 untranslated)
-- Process:
-  1. Take ALL Glossary terms (845)
-  2. Match each with EKI 1,265 terms
-  3. IF MATCH → add EKI Estonian equivalent + EKI link
-  4. IF NO MATCH → leave empty (fill later from daily texts)
+- Source document: `/home/d0021/Documents/ATL_drive/Jagatud/Glossary_templatesonavara.docx`
+- Input: `data/aca-glossary.json` (845 terms: 210 filled + 635 untranslated)
+- Output: `data/aca-glossary-eki.json` (Glossary enriched with EKI matches)
+- Process steps:
+  1. ✅ Extract Glossary terms (DONE)
+  2. Load and prepare EKI data (4 databases, 1,265 terms)
+  3. Implement matching algorithm (English→English, find Estonian pair by definition)
+  4. Create enriched database (combine Glossary + EKI matches)
+  5. Generate matching statistics (matched/unmatched report)
+  6. Manual review and validation (check quality)
 - Important: Glossary "draft" translations are NOT reliable - EKI equivalents replace them
 
-**1C. Extract from Daily Meditations** ⏳ NEXT
-- Source: Existing ATL daily meditations (original + translation pairs)
+**1C. Extract from Existing ATL Translations** ⏳ NEXT
+- Sources: All ATL in-use translations
+  - Daily meditations (päevamõtted)
+  - 12 Steps text (12 sammu tekst)
+  - Website translations (kodulehe tõlked)
+- Input: `data/aca-glossary-eki.json` (from step 1B)
+- Output: `data/aca-glossary-eki-atl.json` (final terminology database)
 - Process:
-  1. Extract original + translation pairs
-  2. Match with EKI terminology database
-  3. IF MATCH → add EKI equivalent + link
-  4. Also add translation found in daily text (may differ from EKI)
-- Note: These contain practically tested translations
+  1. Extract original + translation pairs from all sources
+  2. Identify terminology usage in context
+  3. Match with existing database
+  4. Add ATL translations (may differ from EKI - both are valuable)
+  5. Mark terms as "practically tested in real ATL texts"
+- Note: These contain practically tested translations in real ACA/ATL context
+- **atl = ATL existing translations**
 
 **1D. Collaboration Opportunities** 💡 OPTIONAL
 - **EKI Terminology Database Team:** Contact established for potential future cooperation (see `EKI_terminibaasid_kontaktid.md` for details)
