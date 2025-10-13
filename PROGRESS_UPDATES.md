@@ -225,3 +225,75 @@ Minu vana muster on keskenduda sellele, mis tegemata jäi - aga täna ma tunnen 
 
 ---
 
+## 📅 2025-10-14 (Esmaspäev) - Õhtune sessioon
+
+### 🎉 Täna Õhtul Saavutatud
+
+#### 7. 🗂️ GitHub Milestones ja Issues Loomine
+
+- ✅ **Loodud 4 milestones GitHubis:**
+  - Milestone 1: Terminology Database
+  - Milestone 2: Personal CLI Translation Assistant
+  - Milestone 3: Estonian Community Tool
+  - Milestone 4: Multi-Language Platform
+
+- ✅ **Loodud 4 labeli:**
+  - 1a-collect-eki-terminology (roheline)
+  - 1b-match-glossary (sinine)
+  - 1c-extract-daily-texts (kollane)
+  - 1d-collaboration (lilla)
+
+- ✅ **Loodud esimesed issues:**
+  - Issue #1: Collect EKI Terminology (✅ closed - completed 2025-10-12)
+  - Issue #2: Match Glossary with EKI (parent issue)
+  - Issue #3: 1B-Step2: Load and prepare EKI data (esimene konkreetne samm)
+
+#### 8. 📝 PROJECT_OVERVIEW Põhjalik Dokumenteerimine
+
+- ✅ **Milestone 1 täielikult lahti kirjutatud:**
+  - Kõik 4 sub-stepi (1A, 1B, 1C, 1D)
+  - Sisend/väljund failinimed
+  - Protsessi sammud
+  - Koostöö võimalused
+
+- ✅ **1C täpsustatud:**
+  - Mitte ainult päevamõtted
+  - KÕIK ATL olemasolevad tõlked: päevamõtted, 12 sammu tekst, koduleht
+
+#### 9. 📁 Failinimede Süsteem
+
+- ✅ **Ümbernimetatud:** `glossary_analüüs.json` → `aca-glossary.json`
+- ✅ **Dokumenteeritud failinimede loogika:**
+  - `aca-glossary.json` (sisend, 845 terminit)
+  - `aca-glossary-eki.json` (1B väljund)
+  - `aca-glossary-eki-atl.json` (1C väljund, lõplik terminibaas)
+  - **atl = ATL existing translations**
+
+#### 10. 🎯 ADHD-Friendly Issue Management
+
+- ✅ **Loodud väikesed, tehtavad sammud:**
+  - Iga samm eraldi issue
+  - Selge eesmärk ja edu tunne
+  - Järgmine issue luuakse siis, kui eelmine valmis
+
+### 📊 Statistika
+
+**Ajakulu:** ⏱️ ~1,5 tundi õhtul
+
+**GitHub:**
+- 4 milestones loodud
+- 4 labeli loodud
+- 3 issue't loodud (1 suletud, 2 avatud)
+- 3 commiti ja push'i
+
+**Dokumentatsioon:**
+- PROJECT_OVERVIEW täiendatud
+- OTSUSED.md Single Source of Truth'i vastavaks
+- Failinimede süsteem dokumenteeritud
+
+### 💭 Tunne
+
+Ma tean, et 1,5 tundi on lühike aeg ja see, mis ma tegin on oluline edasise töö vundament. Samas selline töö ei paku mulle rahuldust. Ma tahaksin juba järgmise sammu juurde minna ja näha, kuidas terminibaas hakkab kokku jooksma ja mida ma selle käigus avastada saan. Ülipõnev. Pigem olen kannatamatu veidi ja seega on hetkel seda suurt tööd, mis AI tehtud ülevaatest välja tuli, raske hinnata. Aga ma proovin. See nimekiri tundus täitsa muljetavaldav.
+
+---
+
