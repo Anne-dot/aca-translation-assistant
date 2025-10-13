@@ -5,9 +5,7 @@ Siin on mõtted ja tunded, mida on oluline välja kirjutada.
 
 ---
 
-## 2025-10-14
-
-### Elevus ja Hirm
+## 📅 2025-10-14 - Elevus ja Hirm
 
 ### 💫 Osa minust, mis on elevil ja usub:
 
