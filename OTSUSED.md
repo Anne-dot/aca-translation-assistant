@@ -337,6 +337,17 @@ See pole lihtsalt tööriist - see on **kingitus kogukonnale**, mis:
 - 📚 Säilitab teadmisi ja parimaid praktikaid
 - 🌍 Võib aidata paljusid teisi kogukondi üle maailma
 
+**Eriti olulised on väikeste keelte rääkijad:**
+- 🇪🇪🇫🇮🇮🇸🇱🇹🇱🇻🇲🇹 Väikestel keeltel on vähe tõlkeressursse
+- Vähe professionaalseid tõlkijaid ja terminibaase
+- Masintõlge halvem kui suurte keelte puhul
+- See tööriist võiks pakkuda neile süstemaatilist lahendust
+
+**Vabatahtlikud programmeerijad:**
+- Kui prototüüp on valmis JA kasulik, saab teha ülemaailmse üleskutse
+- Hästi dokumenteeritud projekt on lihtne kaasata teisi
+- Selge eesmärk (aitab kogukonda) on motiveeriv
+
 **"Ma teen seda, sest ma saan seda programmeerimisega teha - ja see on mu kingitus kogukonnale!"** 🎁❤️
 
 ---
