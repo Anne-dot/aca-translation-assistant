@@ -78,6 +78,10 @@ Estonian ACA/ATL materials - building a systematic terminology database as the f
   5. Mark terms as "practically tested in real ATL texts"
 - Note: These contain practically tested translations in real ACA/ATL context
 - **atl = ATL existing translations**
+- **TODO (later):** Define reference format for each source type:
+  - Daily meditations: date reference (MM-DD format)
+  - BRB (Big Red Book): page number (lk XX)
+  - 12 Steps: step number and point (Step X, pt Y)
 
 **1D. Collaboration Opportunities** 💡 OPTIONAL
 - **EKI Terminology Database Team:** Contact established for potential future cooperation (see `EKI_terminibaasid_kontaktid.md` for details)
