@@ -366,6 +366,24 @@ Ma tean, et 1,5 tundi on lühike aeg ja see, mis ma tegin on oluline edasise tö
 
 - 📝 **Lisatud PROJECT_OVERVIEW_DRAFT.md-sse:** TODO ATL allikate viidete formaatide kohta (päevamõtted: MM-DD, BRB: lk XX, 12 Sammu: Step X, pt Y)
 
+#### 5. ✅ Issue #3 Valmis: Load and Prepare EKI Data
+
+- 🔄 **Koodibaasi migreerimine:** Eesti → Inglise keel
+  - `eki_koguja.py` → `eki_collector.py` (täielikult inglise keeles)
+  - Kõik 4 EKI andmebaasi uuesti kogutud ingliskeelse struktuuriga
+  - Vanad failid kustutatud
+
+- 💾 **EKI andmete laadija loodud:**
+  - `src/load_eki_data.py` - laadib ja kombineerib kõik EKI andmed
+  - `data/eki_combined.json` - kombineeritud terminibaas
+  - 564 inglise terminit, 262 eesti terminit ilma inglise vasteta
+  - Kokku: 1,278 terminit
+
+- 📊 **Dokumentatsioon uuendatud:**
+  - PROJECT_OVERVIEW_DRAFT.md - Step 2 valmis, lisatud põhjendused
+  - Issue #3 suletud koos detailse kommentaariga
+  - Commit ja push tehtud
+
 ### 📊 Statistika
 
 **Ajakulu:** ⏱️ ~4 tundi
@@ -384,6 +402,8 @@ Ma tean, et 1,5 tundi on lühike aeg ja see, mis ma tegin on oluline edasise tö
 ### 💭 Tunne
 
 Ma olen täna olnud veidi laiali, sest ATL kaasteeline, kellega koos tõlgime, tuleb Saaremaale ja aitasin tal uurida ööbimise kohta ja värki. Nüüd tunnen, et ma ootasin endalt suuremat edasiminekut. Ja ma püüan enda vastu olla toetav. Ma teen seda asja esimest korda. See ongi alles suuresti planeerimise ja alternatiivide plusside ja miinustega tutvumise aeg. Ma alustasin projekti ju alles - alles. Ma võin ja saan enda üle uhke olla.
+
+Taaskord mõtlesin, et jõuan kaugemale. Samas ma märkasin, et kood oli eesti ja inglise segakeeles ning tegin selle AI abiga ümber. Ja andmete laadija, mis kombineerib EKI eri korpuste JSON failid kokku. Vähemasti on üks samm täna ära tehtud jälle. Nagu ATL ütleb, siis üks päev korraga, üks samm korraga, üks hetk korraga.
 
 ---
 

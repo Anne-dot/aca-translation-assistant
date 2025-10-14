@@ -56,7 +56,12 @@ Estonian ACA/ATL materials - building a systematic terminology database as the f
 - Output: `data/aca-glossary-eki.json` (Glossary enriched with EKI matches)
 - Process steps:
   1. ✅ Extract Glossary terms (DONE)
-  2. Load and prepare EKI data (4 databases, 1,265 terms)
+  2. ✅ Load and prepare EKI data (DONE - Issue #3)
+     - Combined all 4 EKI databases into unified structure
+     - English terms as dictionary keys for fast lookup during translation
+     - Why English as keys: English is source language (WSO materials), enables quick translation workflow, supports multiple Estonian variants (EKI + ATL + Glossary), scalable to future languages (Milestone 4)
+     - Output: `data/eki_combined.json` (564 English terms, 262 Estonian-only terms)
+     - See: [Issue #3](https://github.com/Anne-dot/aca-translation-assistant/issues/3)
   3. Implement matching algorithm (English→English, find Estonian pair by definition)
   4. Create enriched database (combine Glossary + EKI matches)
   5. Generate matching statistics (matched/unmatched report)
