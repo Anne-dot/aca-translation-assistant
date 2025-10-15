@@ -1,5 +1,31 @@
 # ACA Translation Assistant - Project Overview (DRAFT)
 
+## Quick Overview
+
+**Mission:** Build a systematic terminology database and translation tools to help ACA/ATL communities translate materials consistently, even with limited resources.
+
+**Current Status:** Milestone 1 in progress - automated matching complete (10/845 terms), manual review next.
+
+**Recent Completions:** Issues #4, #5, #6 ✅ | Data structure: ISO 704 compliant | Ready for manual review
+
+---
+
+## Table of Contents
+
+- [Mission & Dream](#mission--dream)
+- [Development Roadmap](#development-roadmap)
+  - [Overview](#overview)
+  - [Milestone 1: Terminology Database](#milestone-1-terminology-database-in-progress)
+    - [1A. Collect EKI Terminology](#1a-collect-eki-terminology--done)
+    - [1B. Match Glossary with EKI](#1b-match-glossary-with-eki--done)
+    - [1C. Extract from Existing ATL Translations](#1c-extract-from-existing-atl-translations--future)
+    - [1D. Collaboration Opportunities](#1d-collaboration-opportunities--optional)
+  - [Milestone 2: Personal CLI Translation Assistant](#milestone-2-personal-cli-translation-assistant)
+  - [Milestone 3: Estonian Community Tool](#milestone-3-estonian-community-tool)
+  - [Milestone 4: Multi-Language Platform](#milestone-4-multi-language-platform)
+
+---
+
 ## Mission & Dream
 
 Build a tool that helps all smaller and bigger ACA communities translate ACA material into their native language, even when they lack resources - small communities, few volunteers, limited financial support, unsustainable book sales, changing team members.
