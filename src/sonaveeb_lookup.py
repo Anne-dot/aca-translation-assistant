@@ -553,6 +553,7 @@ def main():
     print("  Issue #7: Enrich Glossary with Sonaveeb data")
     print("="*60 + "\n")
     print("💡 Press Ctrl+C to stop gracefully (progress will be saved)")
+    print("⚠️  DON'T use Ctrl+Z - it suspends without saving!")
     print("💡 You can resume later - script will skip already enriched terms\n")
 
     # Load input data
