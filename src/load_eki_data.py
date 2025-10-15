@@ -6,9 +6,10 @@ Reads all 4 EKI JSON files and combines them into a unified structure
 with English terms as keys.
 """
 
-import json
 from pathlib import Path
 from typing import Dict, List, Any
+
+from utils import load_json_file, save_json_file
 
 # ==============================================================================
 # CONFIGURATION
@@ -36,19 +37,13 @@ def load_eki_file(filename: str) -> Dict[str, Any]:
     print(f"📖 Loading file: {filename}")
 
     try:
-        with open(filepath, 'r', encoding='utf-8') as f:
-            data = json.load(f)
-
+        data = load_json_file(filepath)
         term_count = len(data.get('terms', []))
         print(f"   ✅ Loaded {term_count} terms\n")
-
         return data
 
     except FileNotFoundError:
         print(f"   ❌ ERROR: File not found: {filepath}\n")
-        raise
-    except json.JSONDecodeError as e:
-        print(f"   ❌ ERROR: JSON decoding failed: {e}\n")
         raise
     except Exception as e:
         print(f"   ❌ ERROR: {e}\n")
@@ -154,9 +149,7 @@ def save_json(data: Dict[str, Any], filepath: Path):
     print(f"💾 Saving file: {filepath}")
 
     try:
-        with open(filepath, 'w', encoding='utf-8') as f:
-            json.dump(data, f, ensure_ascii=False, indent=2)
-
+        save_json_file(data, filepath)
         print(f"   ✅ Saved!\n")
 
     except Exception as e:

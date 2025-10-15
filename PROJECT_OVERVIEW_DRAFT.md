@@ -50,7 +50,7 @@ Estonian ACA/ATL materials - building a systematic terminology database as the f
 - Location: `data/eki_terminid/*.json`
 - Tool: `src/eki_koguja.py`
 
-**1B. Match Glossary with EKI** 📍 CURRENT
+**1B. Match Glossary with EKI** ✅ DONE
 - Source document: `/home/d0021/Documents/ATL_drive/Jagatud/Glossary_templatesonavara.docx`
 - Input: `data/aca-glossary.json` (845 terms: 210 filled + 635 untranslated)
 - Output: `data/aca-glossary-eki.json` (Glossary enriched with EKI matches)
@@ -62,13 +62,23 @@ Estonian ACA/ATL materials - building a systematic terminology database as the f
      - Why English as keys: English is source language (WSO materials), enables quick translation workflow, supports multiple Estonian variants (EKI + ATL + Glossary), scalable to future languages (Milestone 4)
      - Output: `data/eki_combined.json` (564 English terms, 262 Estonian-only terms)
      - See: [Issue #3](https://github.com/Anne-dot/aca-translation-assistant/issues/3)
-  3. Implement matching algorithm (English→English, find Estonian pair by definition)
-  4. Create enriched database (combine Glossary + EKI matches)
-  5. Generate matching statistics (matched/unmatched report)
-  6. Manual review and validation (check quality)
-- Important: Glossary "draft" translations are NOT reliable - EKI equivalents replace them
+  3. ✅ Implement matching algorithm (DONE - Issue #4)
+     - Automated matching with aggressive normalization (handle `(n.)`, `(v.)`, newlines)
+     - Match rate: 10/845 (1.2%) - low rate expected (EKI = specialized, Glossary = general ACA terms)
+     - Included definitions even when Estonian term missing (4 terms)
+     - Tools: `src/match_glossary_eki.py`, `src/generate_review_csv.py`
+     - Output: `data/aca-glossary-eki.json`, `data/glossary-review.csv`, `data/eki-terms.csv`
+     - See: [Issue #4](https://github.com/Anne-dot/aca-translation-assistant/issues/4)
+  4. ⏳ Manual review and validation (NEXT)
+     - Review CSV files in Excel/Sheets
+     - Find additional matches manually
+     - Mark homonyms, set preferred variants
+     - Checkpoints every 25 terms
+- Important: Glossary "draft" translations saved as source `aca_draft_volunteer` for future reference
+- Next enrichment: Additional sources (IATE, Sonaveeb, Aare, Eurotermbank) in Step 1B-4
+- **Code quality:** Refactored shared functions to `src/utils.py` (DRY principle) - See: [Issue #5](https://github.com/Anne-dot/aca-translation-assistant/issues/5)
 
-**1C. Extract from Existing ATL Translations** ⏳ NEXT
+**1C. Extract from Existing ATL Translations** ⏳ FUTURE
 - Sources: All ATL in-use translations
   - Daily meditations (päevamõtted)
   - 12 Steps text (12 sammu tekst)
@@ -165,5 +175,5 @@ Each term contains:
 
 ---
 
-**Status:** Ready for implementation
-**Date:** 2025-10-14
+**Status:** Milestone 1 in progress - Step 1B complete, manual review next
+**Date:** 2025-10-15
