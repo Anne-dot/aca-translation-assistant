@@ -83,7 +83,7 @@ code data/aca-glossary-eki.json
 
 ## After This
 1. **Review closed issues and update documentation**
-   - **Thoroughly review all closed issue comments** (Issues #4, #5, #6)
+   - **Thoroughly review all closed issue comments** (Issues #6 → #5 → #4, newest to oldest)
    - Extract important decisions, findings, and changes
    - **Update PROJECT_OVERVIEW_DRAFT.md** based on issue details:
      - Step 1B-4 with correct additional sources
