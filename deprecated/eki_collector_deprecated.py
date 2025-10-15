@@ -1,5 +1,12 @@
 #!/usr/bin/env python3
 """
+DEPRECATED: Use sonaveeb_lookup.py instead
+
+This script is deprecated because EKI terms are already included in Sonaveeb.
+Use sonaveeb_lookup.py for comprehensive terminology lookup.
+
+---
+
 EKI Terminology Collector
 
 Collects terminology from Estonian Language Institute (EKI) Sõnaveeb terminology databases.

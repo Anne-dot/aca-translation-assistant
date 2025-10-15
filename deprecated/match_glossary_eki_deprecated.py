@@ -1,5 +1,12 @@
 #!/usr/bin/env python3
 """
+DEPRECATED: Use sonaveeb_lookup.py instead
+
+EKI terms are already included in Sonaveeb.
+Use sonaveeb_lookup.py for comprehensive terminology lookup.
+
+---
+
 Match Glossary terms with EKI combined data.
 Following ISO 704 lexicography standards.
 

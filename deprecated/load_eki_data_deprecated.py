@@ -1,5 +1,12 @@
 #!/usr/bin/env python3
 """
+DEPRECATED: Use sonaveeb_lookup.py instead
+
+EKI terms are already included in Sonaveeb.
+Use sonaveeb_lookup.py for comprehensive terminology lookup.
+
+---
+
 EKI Terminology Data Loader and Combiner
 
 Reads all 4 EKI JSON files and combines them into a unified structure
