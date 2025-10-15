@@ -407,3 +407,118 @@ Taaskord mõtlesin, et jõuan kaugemale. Samas ma märkasin, et kood oli eesti j
 
 ---
 
+
+## 📅 2025-10-15 (Kolmapäev)
+
+### 🎉 Täna Saavutatud
+
+#### 1. ✅ Issue #4 Completed: Match Glossary with EKI
+
+- 🤖 **Automated matching algorithm implemented**
+  - Created `src/match_glossary_eki.py` - main matching script
+  - Aggressive normalization: handle `(n.)`, `(v.)`, `(to)`, newlines
+  - Match rate: 10/845 (1.2%) - expected low rate
+  - Why low? EKI = specialized therapy terms, Glossary = general ACA vocabulary
+
+- 📊 **Results:**
+  - 10 matched terms (6 with ET translations, 4 with definitions only)
+  - 835 unmatched terms (to be enriched from other sources)
+  - Created `data/aca-glossary-eki.json` - enriched Glossary
+
+- 📝 **CSV files for manual review:**
+  - `data/glossary-review.csv` (826 terms, alphabetical)
+  - `data/eki-terms.csv` (564 EN→ET pairs, alphabetical)
+  - Created `src/generate_review_csv.py` for CSV generation
+
+- 🔧 **Technical decisions:**
+  - Dictionary structure with `senses` array for homonyms
+  - Preserved part-of-speech markers in `notes` field
+  - Added definitions even when ET term missing
+  - ISO 704 lexicography standards followed
+
+#### 2. ✅ Issue #5 Completed: Code Quality Refactoring
+
+- 🧹 **DRY principle applied:**
+  - Created `src/utils.py` - shared utility functions
+  - 5 functions: `load_json_file()`, `save_json_file()`, `normalize_term()`, `clean_text_for_csv()`, `shorten_text()`
+  - Refactored 3 scripts: `match_glossary_eki.py`, `generate_review_csv.py`, `load_eki_data.py`
+  - All tested and working ✅
+
+- 📚 **Documentation updated:**
+  - Updated `~/.claude/instructions.md` Section 3 with utils rule
+  - Single Source of Truth for shared code
+
+#### 3. ✅ Issue #6 Completed: Add part_of_speech Field
+
+- 📐 **ISO 704 compliance:**
+  - Added structured `part_of_speech` field to all senses
+  - Follows lexicography standards (machine-readable grammatical metadata)
+  - Created `src/add_part_of_speech.py` migration script
+
+- 🔄 **Migration successful:**
+  - 826 terms processed
+  - 826 senses updated with `part_of_speech: null`
+  - JSON validated ✅
+  - Ready for manual review
+
+#### 4. 📝 Major Documentation Overhaul
+
+- ✅ **README.md** - Complete rewrite in English
+  - Industry-standard structure
+  - Current status accurately reflected
+  - Professional and informative
+
+- ✅ **DECISIONS.md** (renamed from OTSUSED.md) - English translation and restructure
+  - Note about GitHub Issues as active work documentation
+  - Strategic/architectural decisions only
+  - Periodic updates (not constant)
+  - Clear workflow: Issues → DECISIONS.md after closing
+
+- ✅ **PROJECT_OVERVIEW_DRAFT.md** - Status and date updated
+
+- ✅ **NEXT_SESSION.md** - Complete rewrite for next session
+  - Clear instructions for manual review
+  - References to MANUAL_REVIEW_GUIDE.md
+  - Issue #6 included in workflow
+
+- ✅ **docs/MANUAL_REVIEW_GUIDE.md** - Created manual JSON editing guide (Estonian)
+  - Step-by-step instructions
+  - Field value explanations
+  - Homonym addition examples
+  - Validation commands
+
+### 📊 Statistika
+
+**Ajakulu:** ⏱️ ~5 tundi
+
+**GitHub:**
+- 3 issues completed and closed (#4, #5, #6)
+- 2 major commits
+- 10+ files created/updated
+
+**Code created:**
+- `src/match_glossary_eki.py` - matching algorithm
+- `src/generate_review_csv.py` - CSV generation
+- `src/utils.py` - shared utilities (DRY)
+- `src/add_part_of_speech.py` - migration script
+
+**Data files:**
+- `data/aca-glossary-eki.json` - enriched terminology (826 terms)
+- `data/glossary-review.csv` - manual review file
+- `data/eki-terms.csv` - reference file
+
+**Documentation:**
+- README.md - professional English version
+- DECISIONS.md - strategic decisions archive
+- MANUAL_REVIEW_GUIDE.md - hands-on guide
+- All references updated
+
+### 💭 Tunne
+
+Ma tunnen end väsinult, kuid samas mõtlen, et hakkan edasi liikuma. See öine töötamine ei ole pikas plaanis jätkusuutlik. Ja täna ma ei süüdista ega kritiseeri. Praegu on nii ja ma olen täiskasvanu, kes võib vahest selliseid valikuid ka teha.
+
+Ma olen uhke selle üle, et AI-d pidevalt joone peal suutsin hoida ja oma juhiseid järgima panna. Ma päris täpselt ei saa ikka veel aru, et miks on võimalik panna oma kontole instructions.md, kui ta ikka neid ära unustab ja järgimist peab korduvalt meelde tuletama.
+
+**GitHub Issues töövoog:** Ma hakkasin kasutama GitHub Issues'sid aktiivse otsustusprotsessi dokumenteerimiseks. Kuna ma teen seda projekti hetkel üksinda, siis saan liikuda nii, et panen iga etapi jaoks paika väga suure plaani ja siis võtan esimese etapi ja hakkan seda väiksemateks sammudeks tegema. Seejärel hoian ainult ühe issue korraga lahti, ja sellega seoses ja vastavalt enesetundele jagan järgmisi lõike väiksemateks või suuremateks tükkideks, kuni jõuan esimese etapi soovitud tulemuseni.
+
+---
