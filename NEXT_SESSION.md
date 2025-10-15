@@ -82,10 +82,15 @@ code data/aca-glossary-eki.json
 ✅ Valmis järgmiseks enrichment sammuks
 
 ## After This
-1. **Update Milestone 1 structure in PROJECT_OVERVIEW_DRAFT.md**
-   - Review Issue comments for expanded source list decisions
-   - Update Step 1B-4 with correct additional sources (IATE, Sonaveeb, Aare, Eurotermbank)
-   - Ensure Milestone 1 reflects all planned enrichment sources
+1. **Review closed issues and update documentation**
+   - **Thoroughly review all closed issue comments** (Issues #4, #5, #6)
+   - Extract important decisions, findings, and changes
+   - **Update PROJECT_OVERVIEW_DRAFT.md** based on issue details:
+     - Step 1B-4 with correct additional sources
+     - Manual review process (checkpoints, workflow)
+     - Any other decisions made in issue comments
+   - **Update DECISIONS.md** with strategic decisions from issues
+   - Follow workflow: GitHub Issues (active work) → Documentation (after closing)
 
 2. **Review remaining .md files** - clean up or archive:
    - `EXISTING_TOOLS_ANALYSIS.md` - review if still needed or archive
