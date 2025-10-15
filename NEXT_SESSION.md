@@ -33,7 +33,43 @@
 
 ## Next Concrete Step
 
-**Manuaalne ülevaatus: matched terminid ja CSV failid**
+**FIRST: Update documentation based on closed issues**
+
+### Mida teha
+
+**1. Review closed issues thoroughly (newest → oldest)**
+- Read Issue #6 comments completely
+- Read Issue #5 comments completely
+- Read Issue #4 comments completely
+- Extract all important decisions, findings, changes
+- Make notes of what needs to be updated in docs
+
+**2. Update PROJECT_OVERVIEW_DRAFT.md**
+- Step 1B-4: correct additional sources list
+- Manual review process description
+- Any structural changes from issue discussions
+- References to completed issues
+
+**3. Update DECISIONS.md**
+- Add strategic/architectural decisions from issues
+- Ensure Issue #6, #5, #4 decisions are documented
+- Follow workflow: Issues (active) → DECISIONS (after closing)
+
+**4. Review and cleanup .md files**
+- `EXISTING_TOOLS_ANALYSIS.md` - review if still needed or archive
+- `PERSONAL_THOUGHTS.md` - personal file, keep as is
+- `eki_analüüs/README.md` - old analysis, consider archiving
+
+### Success criteria
+✅ All closed issues reviewed and understood
+✅ PROJECT_OVERVIEW_DRAFT.md updated with issue details
+✅ DECISIONS.md updated with strategic decisions
+✅ Documentation is current and accurate
+✅ Ready to start manual review with complete context
+
+---
+
+## THEN: Manual review of matched terms and CSV files
 
 ### Mida teha
 
@@ -81,26 +117,13 @@ code data/aca-glossary-eki.json
 ✅ JSON korrektne ja valideeritud
 ✅ Valmis järgmiseks enrichment sammuks
 
-## After This
-1. **Review closed issues and update documentation**
-   - **Thoroughly review all closed issue comments** (Issues #6 → #5 → #4, newest to oldest)
-   - Extract important decisions, findings, and changes
-   - **Update PROJECT_OVERVIEW_DRAFT.md** based on issue details:
-     - Step 1B-4 with correct additional sources
-     - Manual review process (checkpoints, workflow)
-     - Any other decisions made in issue comments
-   - **Update DECISIONS.md** with strategic decisions from issues
-   - Follow workflow: GitHub Issues (active work) → Documentation (after closing)
+---
 
-2. **Review remaining .md files** - clean up or archive:
-   - `EXISTING_TOOLS_ANALYSIS.md` - review if still needed or archive
-   - `PERSONAL_THOUGHTS.md` - personal file, keep as is
-   - `eki_analüüs/README.md` - old analysis, consider archiving
-
-3. Create issue for structured manual review workflow (if needed)
-4. Manual review of Estonian-only terms (262 total from EKI)
-5. 1B-Step4: Enrich with additional sources (IATE, Eurotermbank, Aare, Sonaveeb)
-6. 1C: Extract from ATL existing translations
+## After Manual Review
+1. Create issue for structured manual review workflow (if needed)
+2. Manual review of Estonian-only terms (262 total from EKI)
+3. 1B-Step4: Enrich with additional sources (IATE, Eurotermbank, Aare, Sonaveeb)
+4. 1C: Extract from ATL existing translations
 
 ## Important Context
 - See Issue #4 for matching decisions: https://github.com/Anne-dot/aca-translation-assistant/issues/4
