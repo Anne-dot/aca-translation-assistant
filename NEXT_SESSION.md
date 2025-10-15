@@ -82,14 +82,20 @@ code data/aca-glossary-eki.json
 ✅ Valmis järgmiseks enrichment sammuks
 
 ## After This
-1. **Review remaining .md files** - clean up or archive:
+1. **Update Milestone 1 structure in PROJECT_OVERVIEW_DRAFT.md**
+   - Review Issue comments for expanded source list decisions
+   - Update Step 1B-4 with correct additional sources (IATE, Sonaveeb, Aare, Eurotermbank)
+   - Ensure Milestone 1 reflects all planned enrichment sources
+
+2. **Review remaining .md files** - clean up or archive:
    - `EXISTING_TOOLS_ANALYSIS.md` - review if still needed or archive
    - `PERSONAL_THOUGHTS.md` - personal file, keep as is
    - `eki_analüüs/README.md` - old analysis, consider archiving
-2. Create issue for structured manual review workflow (if needed)
-3. Manual review of Estonian-only terms (262 total from EKI)
-4. 1B-Step4: Enrich with additional sources (IATE, Eurotermbank, Aare, Sonaveeb)
-5. 1C: Extract from ATL existing translations
+
+3. Create issue for structured manual review workflow (if needed)
+4. Manual review of Estonian-only terms (262 total from EKI)
+5. 1B-Step4: Enrich with additional sources (IATE, Eurotermbank, Aare, Sonaveeb)
+6. 1C: Extract from ATL existing translations
 
 ## Important Context
 - See Issue #4 for matching decisions: https://github.com/Anne-dot/aca-translation-assistant/issues/4
