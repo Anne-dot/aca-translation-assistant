@@ -1,0 +1,2114 @@
+<html lang="et"><head>
+<title>Otsing - abandonment</title>
+<!-- Common styles and scripts -->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  
+    <link rel="icon" type="image/png" href="/favicon.png">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  
+
+
+
+    <link rel="stylesheet" href="/view/css/jquery-ui.min.css">
+    <link rel="stylesheet" href="/view/css/styles.css">
+    <link rel="stylesheet" href="/view/js/kiosk-board/src/kioskboard.css">
+    <!-- TODO MV, palun ressurss lae alla-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&amp;icon_names=apps,cancel,info,keyboard,language,record_voice_over,search,visibility">
+  
+
+    <script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-DR23BQSFEN&amp;cx=c&amp;gtm=4e5ad0"></script><script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-TXK9BCXH"></script><script type="text/javascript" src="/view/js/jquery-3.7.1.min.js"></script>
+    <script type="text/javascript" src="/view/js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="/view/js/jquery.serializejson.js"></script>
+    <script type="text/javascript" src="/view/js/popper.min.js"></script>
+    <script type="text/javascript" src="/view/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/view/js/simple-lightbox.js"></script>
+    <script type="text/javascript" src="/view/js/ww-common-app.js"></script>
+    <script type="text/javascript" src="/view/js/lazysizes.min.js"></script>
+    <script type="text/javascript" src="/view/js/ww-custom-elements.js"></script>
+    
+    <script type="text/javascript" src="/view/js/kiosk-board/src/kioskboard-custom.js"></script>
+    <script type="text/javascript" src="/view/js/kioskboard-run.js"></script>
+    <script type="text/javascript" src="/view/js/eki-components/eki-components.js" defer=""></script>
+    <script>
+		const viewPathWordweb = "\/view";
+	</script>
+  
+
+
+  <script type="text/javascript" src="/view/js/shared.js"></script>
+  <script type="text/javascript" src="/view/js/recorder.js"></script>
+  <script type="text/javascript" src="/view/js/ww-common-audio.js"></script>
+  <script type="text/javascript" src="/view/js/ww-common-search.js"></script>
+  <script type="text/javascript" src="/view/js/ww-search.js"></script>
+  <script type="text/javascript" src="/view/js/ww-horizontal-scroll-panel.js"></script>
+
+<script>
+	var applicationUrl = "\/";
+	var sessionTimeoutSec = 3600;
+	const feedbackServiceUrl = "https:\/\/ekilex.ee\/send_feedback";
+	var messages = {
+		'this_is_form' : "see on ka vorm s\u00F5nadest",
+		'audio_generation_failure' : "Heli genereerimise teenus hetkel ei toimi, proovige hiljem uuesti",
+		'search_failure' : "Detailide p\u00E4ring eba\u00F5nnestus, proovige hiljem uuesti",
+		'feedback_missing_service' : "Tagasiside teenus ei ole seadistatud"
+	}
+</script>
+<!-- Google Tag Manager -->
+<script defer="" type="text/javascript">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-TXK9BCXH');</script>
+<!-- End Google Tag Manager -->
+</head>
+<body class="survey-active">
+  <div>
+    
+    <a class="sr-only sr-only-focusable" role="button" href="#search">Otsingu juurde</a>
+  
+    
+    <a class="sr-only sr-only-focusable" role="button" href="#main">Põhisisu juurde</a>
+  
+  </div>
+  
+    
+  
+  
+    
+  
+    <div class="header  ">
+      <div class="header__content">
+        
+        <a href="/" aria-label="Pealehele" class="header__logo"></a>
+        <div class="header__search" id="language-detail-panel">
+          
+          
+            
+    <div class="main-search compact">
+      <form action="/search/unif" method="post" name="searchForm">
+        <div>
+          <input id="search" type="text" name="searchWord" value="abandonment" class="main-search-input form-control search-phrase js-kioskboard-input compact" placeholder="Otsi sõnade tähendusi ja tõlkeid" role="search" autocapitalize="off" autocomplete="off" data-kioskboard-type="keyboard" data-kioskboard-placement="bottom" data-kioskboard-specialcharacters="true">
+          <input type="hidden" name="destinLangsStr" value="dlall">
+          <input type="hidden" name="datasetCodesStr" value="dsall">
+          <input type="hidden" name="selectedWordHomonymNr">
+          <input type="hidden" name="selectedWordLang">
+        </div>
+        <div class="main-search-btns">
+          <button aria-label="Puhasta otsing" id="clear-search-btn" type="button" class="clear-btn">
+            <span class="material-symbols-outlined" aria-hidden="true">cancel</span>
+          </button>
+          <div class="keyboard-search">
+            <button id="keyboard-search-btn" type="button" class="btn keyboard-btn" data-toggle="button" aria-pressed="false" autocomplete="off" style="display: none;">
+              <span class="material-symbols-outlined" aria-hidden="true">keyboard</span>
+            </button>
+            <div id="keyboard-lang-search" class="dropdown dropdown-keyboard-lang" style="display: none;">
+              <a aria-expanded="false" aria-haspopup="true" role="button" data-toggle="dropdown" class="dropdown-toggle" href="#">
+                <span value="estonia" id="selected">ET</span>
+                <span class="costom-keyboard-lang-angle-down">
+                  <i class="fa fa-angle-down" aria-hidden="true"></i>
+                </span>
+              </a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#" value="estonia">ET</a>
+                <a class="dropdown-item" href="#" value="russian">RU</a>
+                <a class="dropdown-item" href="#" value="english">EN</a>
+              </div>
+            </div>
+          </div>
+          <button aria-label="Otsi" id="search-btn" type="submit" class="search-btn">
+            <span class="material-symbols-outlined" aria-hidden="true">search</span>
+          </button>
+        </div>
+      </form>
+      <form action="/search/unif" method="post" id="hiddenSearchForm">
+        <input type="hidden" name="searchWord">
+        <input type="hidden" name="selectedWordHomonymNr">
+        <input type="hidden" name="selectedWordLang">
+        <input type="hidden" name="destinLangsStr" value="dlall">
+        <input type="hidden" name="datasetCodesStr" value="dsall">
+        <input type="hidden" name="linkedLexemeId">
+      </form>
+    </div>
+  
+          
+        </div>
+        <a href="/feelinglucky" class="header__lucky">Ehk mul veab</a>
+        
+          
+    <div class="dropdown lang-btn">
+      <a href="#" aria-label="Vali keel" role="button" class="dropdown-toggle" id="uiLangMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <span>EST</span>
+      </a>
+      <div class="dropdown-menu" data-target="uiLangMenuButton" aria-expanded="true" aria-labelledby="uiLangMenuButton">
+        <a role="link" class="dropdown-item" href="?uilang=et">EST</a>
+        <a role="link" class="dropdown-item" href="?uilang=ru">RUS</a>
+        <a role="link" class="dropdown-item" href="?uilang=en">ENG</a>
+      </div>
+    </div>
+  
+        
+        
+    <div class="navigation__dropdown">
+      <button type="button" aria-label="Menüü" class="navigation__trigger" id="nav-menu" aria-haspopup="menu" aria-expanded="false" aria-controls="nav-menu-links">
+        <span class="navigation__trigger-icon material-symbols-outlined">apps</span>
+      </button>
+      <div class="navigation__dropdown-menu" id="nav-menu-links" aria-labelledby="nav-menu">
+        <a class="navigation__link" href="/" target="_blank">
+          <img class="navigation__image" src="/view/images/sonaveeb-logo-sm.svg" alt="">
+          <span>Sõnaveeb</span>
+        </a>
+        <a class="navigation__link" href="https://eki.ee/teatmik/" target="_blank">
+          <img class="navigation__image" src="/view/images/menu-reference.svg" alt="">
+          <span>EKI teatmik</span>
+        </a>
+        <a class="navigation__link navigation__link--disabled" href="/os" target="_blank">
+          <img class="navigation__image" src="/view/images/os.svg" alt="">
+          <span>ÕS 2025</span>
+          <span class="navigation__link-description">Ilmub detsembris</span>
+        </a>
+        <a class="navigation__link" href="https://eki.ee/keeleinfo/sonastikud/" target="_blank">
+          <img class="navigation__image" src="/view/images/menu-dictionaries.svg" alt="">
+          <span>EKI sõnastikud</span>
+        </a>
+        <a class="navigation__link" href="/lite" target="_blank">
+          <img class="navigation__image" src="/view/images/menu-lite.svg" alt="">
+          <span>Keeleõppija Sõnaveeb</span>
+        </a>
+        <a class="navigation__link" href="/teacher-tools" target="_blank">
+          <img class="navigation__image" src="/view/images/menu-teacher-tools.svg" alt="">
+          <span>Õpetaja tööriistad</span>
+        </a>
+        <a class="navigation__link" href="/pronunciation-exercises" target="_blank">
+          <img class="navigation__image" src="/view/images/menu-spelling.svg" alt="">
+          <span>Hääldus­harjutused</span>
+        </a>
+        <a class="navigation__link" href="/learn" target="_blank">
+          <img class="navigation__image" src="/view/images/menu-learn.svg" alt="">
+          <span>Õpime eesti keelt</span>
+        </a>
+        <a class="navigation__link" href="/wordgame" target="_blank">
+          <img class="navigation__image" src="/view/images/menu-word-games.svg" alt="">
+          <span>Pilt­sõnastik</span>
+        </a>
+        <a class="navigation__link" href="/games" target="_blank">
+          <img class="navigation__image" src="/view/images/menu-games.svg" alt="">
+          <span>Keele­mängud</span>
+        </a>
+        <a class="navigation__link" href="/newwords" target="_blank">
+          <img class="navigation__image" src="/view/images/menu-new-words.svg" alt="">
+          <span>Uued sõnad</span>
+        </a>
+      </div>
+    </div>
+  
+      </div>
+    </div>
+    
+    <div class="modal fade" id="feedback-modal" tabindex="-1" aria-model="true" role="dialog" aria-hidden="false" aria-describedby="feedback-modal-title">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content feedback-modal">
+          <div class="modal-header feedback-modal__header">
+            <h1 class="modal-title" id="feedback-modal-title">Tagasiside</h1>
+            <h1 class="modal-title d-none" id="feedback-modal-success-title">Aitäh</h1>
+            <button type="button" class="feedback-modal__close" data-dismiss="modal" aria-label="Sulge">
+              <span class="fa fa-times" aria-hidden="true"></span>
+            </button>
+          </div>
+          <div id="feedback-data" class="modal-body">
+            <div>
+              <form id="feedback-form" novalidate="">
+                <input type="hidden" name="feedbackType" value="sõnaveeb">
+                <input type="hidden" name="lastSearch" value="abandonment">
+                <div class="feedback-modal__group">
+                  <label for="descriptionInput2" class="col-form-label">Teade</label>
+                  <textarea id="descriptionInput2" class="form-control" name="description" required="" autocomplete="off" placeholder="Kirjuta meile"></textarea>
+                  <div class="invalid-feedback">Palun sisesta teade.</div>
+                </div>
+                <div class="feedback-modal__want-response">
+                  <h2>Kas soovid vastust?</h2>
+                  <p>Kui soovid oma küsimusele vastust, jäta meile oma e-posti aadress.</p>
+                  <div class="feedback-modal__group">
+                    <label for="feedback-modal-email" class="col-form-label">E-post</label>
+                    <input id="feedback-modal-email" type="email" class="form-control form-email" name="senderEmail" autocomplete="email" placeholder="E-posti aadress">
+                  </div>
+                  <div class="feedback-modal__group d-none" id="feedback-modal-checkbox-group">
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="feedback-email-checkbox">
+                      <label class="custom-control-label" for="feedback-email-checkbox">
+                        <span>Nõustun</span>
+                        <a target="_blank" rel="noreferrer" href="/regulations" data-item-name="regulations">kasutus- ja privaatsustingimustega</a>
+                        <span>*</span>
+                      </label>
+                      <div class="invalid-feedback">Väli on kohustuslik</div>
+                    </div>
+                  </div>
+                  <button id="feedback-submit" type="button" class="feedback-modal__button" name="feedbackSendBtn">Saada</button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div id="feedback-response" class="modal-body d-none">
+            <div class="d-flex flex-column">
+              <div id="feedback-error-message" class="alert alert-danger d-none">Tagasiside saatmine ebaõnnestus, proovige hiljem uuesti</div>
+              <p id="feedback-success-message" class="m-0 d-none">Aitäh, oleme tagasiside kätte saanud.</p>
+              <button type="button" class="feedback-modal__button" data-dismiss="modal">Sulge</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  
+  <div class="container-fluid homonym-page mb-5">
+    <div class="sticky-scroll-panel">
+      <div class="search-results-header">
+        <div class="d-flex align-items-center">
+          
+    <div class="dropdown search-filter__wrapper" id="dataset-filter-wrapper">
+      <button class="dropdown-toggle search-filter__toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="dataset-filters-popover">
+        <span class="search-filter__toggle-label">Sõnakogud</span>
+        <span class="search-filter__toggle-count" id="dataset-filter-count"></span>
+      </button>
+      <div class="dropdown-menu search-filter__menu" aria-labelledby="dataset-filters-popover" style="--search-filter-rows: 50">
+        
+          <div class="search-filter__item search-filter__item--full-row">
+            <input type="checkbox" id="dataset-input-dsall" data-filter-code="dsall" name="Kõik sõnakogud" checked="checked">
+            <label for="dataset-input-dsall">Kõik sõnakogud</label>
+          </div>
+          <div class="search-filter__divider"></div>
+        
+          <div class="search-filter__item">
+            <input type="checkbox" id="dataset-input-eki" data-filter-code="eki" name="EKI ühendsõnastik 2025" checked="checked">
+            <label for="dataset-input-eki">EKI ühendsõnastik 2025</label>
+          </div>
+          
+        
+          <div class="search-filter__item">
+            <input type="checkbox" id="dataset-input-esterm" data-filter-code="esterm" name="EKI terminibaas Esterm" checked="checked">
+            <label for="dataset-input-esterm">EKI terminibaas Esterm</label>
+          </div>
+          
+        
+          <div class="search-filter__item">
+            <input type="checkbox" id="dataset-input-MOD" data-filter-code="MOD" name="3D-modelleerimine" checked="checked">
+            <label for="dataset-input-MOD">3D-modelleerimine</label>
+          </div>
+          
+        
+          <div class="search-filter__item">
+            <input type="checkbox" id="dataset-input-ait" data-filter-code="ait" name="Aianduse terminibaas" checked="checked">
+            <label for="dataset-input-ait">Aianduse terminibaas</label>
+          </div>
+          
+        
+          <div class="search-filter__item">
+            <input type="checkbox" id="dataset-input-möb" data-filter-code="möb" name="Ajaloolise mööbli terminibaas" checked="checked">
+            <label for="dataset-input-möb">Ajaloolise mööbli terminibaas</label>
+          </div>
+          
+        
+          <div class="search-filter__item">
+            <input type="checkbox" id="dataset-input-avt" data-filter-code="avt" name="Akadeemilise väljendusoskuse terminibaas" checked="checked">
+            <label for="dataset-input-avt">Akadeemilise väljendusoskuse terminibaas</label>
+          </div>
+          
+        
+          <div class="search-filter__item">
+            <input type="checkbox" id="dataset-input-aso" data-filter-code="aso" name="Andmeanalüüsi ja statistika oskussõnastik" checked="checked">
+            <label for="dataset-input-aso">Andmeanalüüsi ja statistika oskussõnastik</label>
+          </div>
+          
+        
+          <div class="search-filter__item">
+            <input type="checkbox" id="dataset-input-arh" data-filter-code="arh" name="Arheoloogia terminibaas" checked="checked">
+            <label for="dataset-input-arh">Arheoloogia terminibaas</label>
+          </div>
+          
+        
+          <div class="search-filter__item">
+            <input type="checkbox" id="dataset-input-aos" data-filter-code="aos" name="Arhitektuuri oskussõnastik" checked="checked">
+            <label for="dataset-input-aos">Arhitektuuri oskussõnastik</label>
+          </div>
+          
+        
+          <div class="search-filter__item">
+            <input type="checkbox" id="dataset-input-AAC" data-filter-code="AAC" name="Augmentatiivne ja alternatiivne kommunikatsioon " checked="checked">
+            <label for="dataset-input-AAC">Augmentatiivne ja alternatiivne kommunikatsioon </label>
+          </div>
+          
+        
+          <div class="search-filter__item">
+            <input type="checkbox" id="dataset-input-EELBÜTK" data-filter-code="EELBÜTK" name="Betoonkonstruktsioonide terminibaas" checked="checked">
+            <label for="dataset-input-EELBÜTK">Betoonkonstruktsioonide terminibaas</label>
+          </div>
+          
+        
+          <div class="search-filter__item">
+            <input type="checkbox" id="dataset-input-bks" data-filter-code="bks" name="Biokeemiasõnastik" checked="checked">
+            <label for="dataset-input-bks">Biokeemiasõnastik</label>
+          </div>
+          
+        
+          <div class="search-filter__item">
+            <input type="checkbox" id="dataset-input-bot" data-filter-code="bot" name="Botaanika terminibaas" checked="checked">
+            <label for="dataset-input-bot">Botaanika terminibaas</label>
+          </div>
+          
+        
+          <div class="search-filter__item">
+            <input type="checkbox" id="dataset-input-dkt" data-filter-code="dkt" name="Dialektilise käitumisteraapia terminibaas" checked="checked">
+            <label for="dataset-input-dkt">Dialektilise käitumisteraapia terminibaas</label>
+          </div>
+          
+        
+          <div class="search-filter__item">
+            <input type="checkbox" id="dataset-input-DOS" data-filter-code="DOS" name="Disaini oskussõnastik" checked="checked">
+            <label for="dataset-input-DOS">Disaini oskussõnastik</label>
+          </div>
+          
+        
+          <div class="search-filter__item">
+            <input type="checkbox" id="dataset-input-ett" data-filter-code="ett" name="Eesti E-tervise SA terminibaas" checked="checked">
+            <label for="dataset-input-ett">Eesti E-tervise SA terminibaas</label>
+          </div>
+          
+        
+          <div class="search-filter__item">
+            <input type="checkbox" id="dataset-input-ros" data-filter-code="ros" name="Eesti rahvatantsu oskussõnastik" checked="checked">
+            <label for="dataset-input-ros">Eesti rahvatantsu oskussõnastik</label>
+          </div>
+          
+        
+          <div class="search-filter__item">
+            <input type="checkbox" id="dataset-input-õtb" data-filter-code="õtb" name="Eesti-vene-eesti õigusterminoloogiabaas" checked="checked">
+            <label for="dataset-input-õtb">Eesti-vene-eesti õigusterminoloogiabaas</label>
+          </div>
+          
+        
+          <div class="search-filter__item">
+            <input type="checkbox" id="dataset-input-evkit" data-filter-code="evkit" name="Eesti viipekeele IT terminid" checked="checked">
+            <label for="dataset-input-evkit">Eesti viipekeele IT terminid</label>
+          </div>
+          
+        
+          <div class="search-filter__item">
+            <input type="checkbox" id="dataset-input-vkm" data-filter-code="vkm" name="Eesti viipekeele meditsiiniterminid" checked="checked">
+            <label for="dataset-input-vkm">Eesti viipekeele meditsiiniterminid</label>
+          </div>
+          
+        
+          <div class="search-filter__item">
+            <input type="checkbox" id="dataset-input-ehpr" data-filter-code="ehpr" name="Ehitiste projekteerimise terminibaas" checked="checked">
+            <label for="dataset-input-ehpr">Ehitiste projekteerimise terminibaas</label>
+          </div>
+          
+        
+          <div class="search-filter__item">
+            <input type="checkbox" id="dataset-input-elc" data-filter-code="elc" name="Elektroonika terminibaas" checked="checked">
+            <label for="dataset-input-elc">Elektroonika terminibaas</label>
+          </div>
+          
+        
+          <div class="search-filter__item">
+            <input type="checkbox" id="dataset-input-elteh" data-filter-code="elteh" name="Elektrotehnika" checked="checked">
+            <label for="dataset-input-elteh">Elektrotehnika</label>
+          </div>
+          
+        
+          <div class="search-filter__item">
+            <input type="checkbox" id="dataset-input-ene" data-filter-code="ene" name="Energiatehnoloogia, soojustehnika ja soojusenergeetika terminibaas" checked="checked">
+            <label for="dataset-input-ene">Energiatehnoloogia, soojustehnika ja soojusenergeetika terminibaas</label>
+          </div>
+          
+        
+          <div class="search-filter__item">
+            <input type="checkbox" id="dataset-input-ent" data-filter-code="ent" name="Entomoloogia terminibaas" checked="checked">
+            <label for="dataset-input-ent">Entomoloogia terminibaas</label>
+          </div>
+          
+        
+          <div class="search-filter__item">
+            <input type="checkbox" id="dataset-input-eko" data-filter-code="eko" name="Etenduskunstide terminibaas" checked="checked">
+            <label for="dataset-input-eko">Etenduskunstide terminibaas</label>
+          </div>
+          
+        
+          <div class="search-filter__item">
+            <input type="checkbox" id="dataset-input-eõt" data-filter-code="eõt" name="E-õppe terminid / E-learning terms" checked="checked">
+            <label for="dataset-input-eõt">E-õppe terminid / E-learning terms</label>
+          </div>
+          
+        
+          <div class="search-filter__item">
+            <input type="checkbox" id="dataset-input-fkm" data-filter-code="fkm" name="Filmikunsti terminibaas Filmterm" checked="checked">
+            <label for="dataset-input-fkm">Filmikunsti terminibaas Filmterm</label>
+          </div>
+          
+        
+          <div class="search-filter__item">
+            <input type="checkbox" id="dataset-input-fil" data-filter-code="fil" name="Filosoofia terminibaas" checked="checked">
+            <label for="dataset-input-fil">Filosoofia terminibaas</label>
+          </div>
+          
+        
+          <div class="search-filter__item">
+            <input type="checkbox" id="dataset-input-fmt" data-filter-code="fmt" name="Finants- ja maksuarvestuse terminibaas" checked="checked">
+            <label for="dataset-input-fmt">Finants- ja maksuarvestuse terminibaas</label>
+          </div>
+          
+        
+          <div class="search-filter__item">
+            <input type="checkbox" id="dataset-input-usk" data-filter-code="usk" name="Folkloorsete uskumusolendite sõnastik" checked="checked">
+            <label for="dataset-input-usk">Folkloorsete uskumusolendite sõnastik</label>
+          </div>
+          
+        
+          <div class="search-filter__item">
+            <input type="checkbox" id="dataset-input-fon" data-filter-code="fon" name="Foneetika sõnastik" checked="checked">
+            <label for="dataset-input-fon">Foneetika sõnastik</label>
+          </div>
+          
+        
+          <div class="search-filter__item">
+            <input type="checkbox" id="dataset-input-gen" data-filter-code="gen" name="Geneetika terminibaas" checked="checked">
+            <label for="dataset-input-gen">Geneetika terminibaas</label>
+          </div>
+          
+        
+          <div class="search-filter__item">
+            <input type="checkbox" id="dataset-input-geoinf" data-filter-code="geoinf" name="Geoinformaatika" checked="checked">
+            <label for="dataset-input-geoinf">Geoinformaatika</label>
+          </div>
+          
+        
+          <div class="search-filter__item">
+            <input type="checkbox" id="dataset-input-get" data-filter-code="get" name="Geoloogia terminibaas" checked="checked">
+            <label for="dataset-input-get">Geoloogia terminibaas</label>
+          </div>
+          
+        
+          <div class="search-filter__item">
+            <input type="checkbox" id="dataset-input-gmt" data-filter-code="gmt" name="Geomorfoloogia terminibaas" checked="checked">
+            <label for="dataset-input-gmt">Geomorfoloogia terminibaas</label>
+          </div>
+          
+        
+          <div class="search-filter__item">
+            <input type="checkbox" id="dataset-input-GER" data-filter-code="GER" name="Geriaatria terminibaas" checked="checked">
+            <label for="dataset-input-GER">Geriaatria terminibaas</label>
+          </div>
+          
+        
+          <div class="search-filter__item">
+            <input type="checkbox" id="dataset-input-den" data-filter-code="den" name="Hambatehnika terminibaas" checked="checked">
+            <label for="dataset-input-den">Hambatehnika terminibaas</label>
+          </div>
+          
+        
+          <div class="search-filter__item">
+            <input type="checkbox" id="dataset-input-har" data-filter-code="har" name="Haridussõnastik" checked="checked">
+            <label for="dataset-input-har">Haridussõnastik</label>
+          </div>
+          
+        
+          <div class="search-filter__item">
+            <input type="checkbox" id="dataset-input-has" data-filter-code="has" name="Huviharidussõnastik" checked="checked">
+            <label for="dataset-input-has">Huviharidussõnastik</label>
+          </div>
+          
+        
+          <div class="search-filter__item">
+            <input type="checkbox" id="dataset-input-hym" data-filter-code="hym" name="Hümnoloogia terminibaas" checked="checked">
+            <label for="dataset-input-hym">Hümnoloogia terminibaas</label>
+          </div>
+          
+        
+          <div class="search-filter__item">
+            <input type="checkbox" id="dataset-input-ida" data-filter-code="ida" name="Ida mõtteloo leksikon" checked="checked">
+            <label for="dataset-input-ida">Ida mõtteloo leksikon</label>
+          </div>
+          
+        
+          <div class="search-filter__item">
+            <input type="checkbox" id="dataset-input-iht" data-filter-code="iht" name="Ihtüoloogia terminibaas" checked="checked">
+            <label for="dataset-input-iht">Ihtüoloogia terminibaas</label>
+          </div>
+          
+        
+          <div class="search-filter__item">
+            <input type="checkbox" id="dataset-input-imm" data-filter-code="imm" name="Immunoloogia terminibaas" checked="checked">
+            <label for="dataset-input-imm">Immunoloogia terminibaas</label>
+          </div>
+          
+        
+          <div class="search-filter__item">
+            <input type="checkbox" id="dataset-input-lko" data-filter-code="lko" name="Inimese-looma interaktsioonide terminibaas" checked="checked">
+            <label for="dataset-input-lko">Inimese-looma interaktsioonide terminibaas</label>
+          </div>
+          
+        
+          <div class="search-filter__item">
+            <input type="checkbox" id="dataset-input-juuksed" data-filter-code="juuksed" name="Juuksuritöö terminibaas" checked="checked">
+            <label for="dataset-input-juuksed">Juuksuritöö terminibaas</label>
+          </div>
+          
+        
+          <div class="search-filter__item">
+            <input type="checkbox" id="dataset-input-kas" data-filter-code="kas" name="Kaugseire terminibaas" checked="checked">
+            <label for="dataset-input-kas">Kaugseire terminibaas</label>
+          </div>
+          
+        
+          <div class="search-filter__item">
+            <input type="checkbox" id="dataset-input-Syn" data-filter-code="Syn" name="Keemiatehnoloogia ja -tehnika terminibaas Synthesis" checked="checked">
+            <label for="dataset-input-Syn">Keemiatehnoloogia ja -tehnika terminibaas Synthesis</label>
+          </div>
+          
+        
+          <div class="search-filter__item">
+            <input type="checkbox" id="dataset-input-kem" data-filter-code="kem" name="Keemiaterminite baas" checked="checked">
+            <label for="dataset-input-kem">Keemiaterminite baas</label>
+          </div>
+          
+        
+          <div class="search-filter__item">
+            <input type="checkbox" id="dataset-input-klmus" data-filter-code="klmus" name="Klassikalise muusika terminibaas" checked="checked">
+            <label for="dataset-input-klmus">Klassikalise muusika terminibaas</label>
+          </div>
+          
+        
+          <div class="search-filter__item">
+            <input type="checkbox" id="dataset-input-kkt" data-filter-code="kkt" name="Kognitiivse keeleteaduse terminibaas" checked="checked">
+            <label for="dataset-input-kkt">Kognitiivse keeleteaduse terminibaas</label>
+          </div>
+          
+        
+          <div class="search-filter__item">
+            <input type="checkbox" id="dataset-input-kok" data-filter-code="kok" name="Kokanduse terminibaas" checked="checked">
+            <label for="dataset-input-kok">Kokanduse terminibaas</label>
+          </div>
+          
+        
+          <div class="search-filter__item">
+            <input type="checkbox" id="dataset-input-eiops" data-filter-code="eiops" name="Kooliinformaatika terminibaas" checked="checked">
+            <label for="dataset-input-eiops">Kooliinformaatika terminibaas</label>
+          </div>
+          
+        
+          <div class="search-filter__item">
+            <input type="checkbox" id="dataset-input-kool_KV" data-filter-code="kool_KV" name="Koolisõnastikud 2005–2010" checked="checked">
+            <label for="dataset-input-kool_KV">Koolisõnastikud 2005–2010</label>
+          </div>
+          
+        
+          <div class="search-filter__item">
+            <input type="checkbox" id="dataset-input-com" data-filter-code="com" name="Koomiksi terminibaas" checked="checked">
+            <label for="dataset-input-com">Koomiksi terminibaas</label>
+          </div>
+          
+        
+          <div class="search-filter__item">
+            <input type="checkbox" id="dataset-input-korpling" data-filter-code="korpling" name="Korpuslingvistika terminibaas" checked="checked">
+            <label for="dataset-input-korpling">Korpuslingvistika terminibaas</label>
+          </div>
+          
+        
+          <div class="search-filter__item">
+            <input type="checkbox" id="dataset-input-kth" data-filter-code="kth" name="Kosmoseteaduse ja -tehnoloogia terminibaas" checked="checked">
+            <label for="dataset-input-kth">Kosmoseteaduse ja -tehnoloogia terminibaas</label>
+          </div>
+          
+        
+          <div class="search-filter__item">
+            <input type="checkbox" id="dataset-input-kjtb" data-filter-code="kjtb" name="Kriisijuhtimise terminibaas" checked="checked">
+            <label for="dataset-input-kjtb">Kriisijuhtimise terminibaas</label>
+          </div>
+          
+        
+          <div class="search-filter__item">
+            <input type="checkbox" id="dataset-input-kriis" data-filter-code="kriis" name="Kriisinõustamise terminibaas" checked="checked">
+            <label for="dataset-input-kriis">Kriisinõustamise terminibaas</label>
+          </div>
+          
+        
+          <div class="search-filter__item">
+            <input type="checkbox" id="dataset-input-usu" data-filter-code="usu" name="Kristluse sõnastik" checked="checked">
+            <label for="dataset-input-usu">Kristluse sõnastik</label>
+          </div>
+          
+        
+          <div class="search-filter__item">
+            <input type="checkbox" id="dataset-input-kto" data-filter-code="kto" name="Käsitööteaduse oskussõnad" checked="checked">
+            <label for="dataset-input-kto">Käsitööteaduse oskussõnad</label>
+          </div>
+          
+        
+          <div class="search-filter__item">
+            <input type="checkbox" id="dataset-input-LoB" data-filter-code="LoB" name="Köite ja konserveerimise terminibaas" checked="checked">
+            <label for="dataset-input-LoB">Köite ja konserveerimise terminibaas</label>
+          </div>
+          
+        
+          <div class="search-filter__item">
+            <input type="checkbox" id="dataset-input-kfs" data-filter-code="kfs" name="Küberfüüsikalise süsteemitehnika terminibaas" checked="checked">
+            <label for="dataset-input-kfs">Küberfüüsikalise süsteemitehnika terminibaas</label>
+          </div>
+          
+        
+          <div class="search-filter__item">
+            <input type="checkbox" id="dataset-input-LGBT" data-filter-code="LGBT" name="LGBT+ terminibaas" checked="checked">
+            <label for="dataset-input-LGBT">LGBT+ terminibaas</label>
+          </div>
+          
+        
+          <div class="search-filter__item">
+            <input type="checkbox" id="dataset-input-lim" data-filter-code="lim" name="Limnoloogia sõnastik" checked="checked">
+            <label for="dataset-input-lim">Limnoloogia sõnastik</label>
+          </div>
+          
+        
+          <div class="search-filter__item">
+            <input type="checkbox" id="dataset-input-linguae" data-filter-code="linguae" name="Linguae,  maailma keeled, kirjad  ja rahvad" checked="checked">
+            <label for="dataset-input-linguae">Linguae,  maailma keeled, kirjad  ja rahvad</label>
+          </div>
+          
+        
+          <div class="search-filter__item">
+            <input type="checkbox" id="dataset-input-logo" data-filter-code="logo" name="Logopeedia terminibaas" checked="checked">
+            <label for="dataset-input-logo">Logopeedia terminibaas</label>
+          </div>
+          
+        
+          <div class="search-filter__item">
+            <input type="checkbox" id="dataset-input-lkt" data-filter-code="lkt" name="Loomakasvatuse terminibaas" checked="checked">
+            <label for="dataset-input-lkt">Loomakasvatuse terminibaas</label>
+          </div>
+          
+        
+          <div class="search-filter__item">
+            <input type="checkbox" id="dataset-input-lon" data-filter-code="lon" name="Loomanimetuste terminibaas" checked="checked">
+            <label for="dataset-input-lon">Loomanimetuste terminibaas</label>
+          </div>
+          
+        
+          <div class="search-filter__item">
+            <input type="checkbox" id="dataset-input-pre" data-filter-code="pre" name="Loomaparasiitide nimistu" checked="checked">
+            <label for="dataset-input-pre">Loomaparasiitide nimistu</label>
+          </div>
+          
+        
+          <div class="search-filter__item">
+            <input type="checkbox" id="dataset-input-lpr" data-filter-code="lpr" name="Loomaparasiitide terminibaas" checked="checked">
+            <label for="dataset-input-lpr">Loomaparasiitide terminibaas</label>
+          </div>
+          
+        
+          <div class="search-filter__item">
+            <input type="checkbox" id="dataset-input-MEPJ" data-filter-code="MEPJ" name="Masinaehituse ja energiatehnoloogia protsesside juhtimine" checked="checked">
+            <label for="dataset-input-MEPJ">Masinaehituse ja energiatehnoloogia protsesside juhtimine</label>
+          </div>
+          
+        
+          <div class="search-filter__item">
+            <input type="checkbox" id="dataset-input-mtb" data-filter-code="mtb" name="Masinate terminibaas" checked="checked">
+            <label for="dataset-input-mtb">Masinate terminibaas</label>
+          </div>
+          
+        
+          <div class="search-filter__item">
+            <input type="checkbox" id="dataset-input-mat" data-filter-code="mat" name="Matemaatika terminibaas" checked="checked">
+            <label for="dataset-input-mat">Matemaatika terminibaas</label>
+          </div>
+          
+        
+          <div class="search-filter__item">
+            <input type="checkbox" id="dataset-input-mtr" data-filter-code="mtr" name="Materjalitehnika terminibaas" checked="checked">
+            <label for="dataset-input-mtr">Materjalitehnika terminibaas</label>
+          </div>
+          
+        
+          <div class="search-filter__item">
+            <input type="checkbox" id="dataset-input-mef" data-filter-code="mef" name="Meditsiinifüüsika terminibaas" checked="checked">
+            <label for="dataset-input-mef">Meditsiinifüüsika terminibaas</label>
+          </div>
+          
+        
+          <div class="search-filter__item">
+            <input type="checkbox" id="dataset-input-mer" data-filter-code="mer" name="Merenduse terminikogu" checked="checked">
+            <label for="dataset-input-mer">Merenduse terminikogu</label>
+          </div>
+          
+        
+          <div class="search-filter__item">
+            <input type="checkbox" id="dataset-input-mes" data-filter-code="mes" name="Mesindusleksikon" checked="checked">
+            <label for="dataset-input-mes">Mesindusleksikon</label>
+          </div>
+          
+        
+          <div class="search-filter__item">
+            <input type="checkbox" id="dataset-input-met" data-filter-code="met" name="Metalliaabits" checked="checked">
+            <label for="dataset-input-met">Metalliaabits</label>
+          </div>
+          
+        
+          <div class="search-filter__item">
+            <input type="checkbox" id="dataset-input-mtkl" data-filter-code="mtkl" name="Meteoroloogia ja klimatoloogia terminibaas" checked="checked">
+            <label for="dataset-input-mtkl">Meteoroloogia ja klimatoloogia terminibaas</label>
+          </div>
+          
+        
+          <div class="search-filter__item">
+            <input type="checkbox" id="dataset-input-mea" data-filter-code="mea" name="Metroloogia terminibaas" checked="checked">
+            <label for="dataset-input-mea">Metroloogia terminibaas</label>
+          </div>
+          
+        
+          <div class="search-filter__item">
+            <input type="checkbox" id="dataset-input-mil" data-filter-code="mil" name="Militerm | riigikaitseterminite andmebaas " checked="checked">
+            <label for="dataset-input-mil">Militerm | riigikaitseterminite andmebaas </label>
+          </div>
+          
+        
+          <div class="search-filter__item">
+            <input type="checkbox" id="dataset-input-mon" data-filter-code="mon" name="Montessori pedagoogika terminisõnastik" checked="checked">
+            <label for="dataset-input-mon">Montessori pedagoogika terminisõnastik</label>
+          </div>
+          
+        
+          <div class="search-filter__item">
+            <input type="checkbox" id="dataset-input-MIT" data-filter-code="MIT" name="Motiveeriva intervjueerimise terminibaas" checked="checked">
+            <label for="dataset-input-MIT">Motiveeriva intervjueerimise terminibaas</label>
+          </div>
+          
+        
+          <div class="search-filter__item">
+            <input type="checkbox" id="dataset-input-mut" data-filter-code="mut" name="Muuseumitöö terminibaas" checked="checked">
+            <label for="dataset-input-mut">Muuseumitöö terminibaas</label>
+          </div>
+          
+        
+          <div class="search-filter__item">
+            <input type="checkbox" id="dataset-input-mte" data-filter-code="mte" name="Muusikateraapia seletav sõnastik" checked="checked">
+            <label for="dataset-input-mte">Muusikateraapia seletav sõnastik</label>
+          </div>
+          
+        
+          <div class="search-filter__item">
+            <input type="checkbox" id="dataset-input-nht" data-filter-code="nht" name="Nahkhiirte terminibaas" checked="checked">
+            <label for="dataset-input-nht">Nahkhiirte terminibaas</label>
+          </div>
+          
+        
+          <div class="search-filter__item">
+            <input type="checkbox" id="dataset-input-nfs" data-filter-code="nfs" name="Neurofüsioloogia terminibaas" checked="checked">
+            <label for="dataset-input-nfs">Neurofüsioloogia terminibaas</label>
+          </div>
+          
+        
+          <div class="search-filter__item">
+            <input type="checkbox" id="dataset-input-nems" data-filter-code="nems" name="Norra-eesti meditsiinisõnastik" checked="checked">
+            <label for="dataset-input-nems">Norra-eesti meditsiinisõnastik</label>
+          </div>
+          
+        
+          <div class="search-filter__item">
+            <input type="checkbox" id="dataset-input-nmus" data-filter-code="nmus" name="Nüüdismuusika terminibaas" checked="checked">
+            <label for="dataset-input-nmus">Nüüdismuusika terminibaas</label>
+          </div>
+          
+        
+          <div class="search-filter__item">
+            <input type="checkbox" id="dataset-input-oos" data-filter-code="oos" name="Onomastika oskussõnastik" checked="checked">
+            <label for="dataset-input-oos">Onomastika oskussõnastik</label>
+          </div>
+          
+        
+          <div class="search-filter__item">
+            <input type="checkbox" id="dataset-input-org" data-filter-code="org" name="Organisatsioonikäitumise terminibaas" checked="checked">
+            <label for="dataset-input-org">Organisatsioonikäitumise terminibaas</label>
+          </div>
+          
+        
+          <div class="search-filter__item">
+            <input type="checkbox" id="dataset-input-prs" data-filter-code="prs" name="Parasitoloogia terminibaas" checked="checked">
+            <label for="dataset-input-prs">Parasitoloogia terminibaas</label>
+          </div>
+          
+        
+          <div class="search-filter__item">
+            <input type="checkbox" id="dataset-input-pot" data-filter-code="pot" name="Patsiendiohutuse terminibaas" checked="checked">
+            <label for="dataset-input-pot">Patsiendiohutuse terminibaas</label>
+          </div>
+          
+        
+          <div class="search-filter__item">
+            <input type="checkbox" id="dataset-input-pol" data-filter-code="pol" name="Poliitika ja valitsemise sõnastik" checked="checked">
+            <label for="dataset-input-pol">Poliitika ja valitsemise sõnastik</label>
+          </div>
+          
+        
+          <div class="search-filter__item">
+            <input type="checkbox" id="dataset-input-p3m" data-filter-code="p3m" name="Projektijuhtimise terminibaas" checked="checked">
+            <label for="dataset-input-p3m">Projektijuhtimise terminibaas</label>
+          </div>
+          
+        
+          <div class="search-filter__item">
+            <input type="checkbox" id="dataset-input-EK_Puit" data-filter-code="EK_Puit" name="Puitkonstruktsioonide terminibaas" checked="checked">
+            <label for="dataset-input-EK_Puit">Puitkonstruktsioonide terminibaas</label>
+          </div>
+          
+        
+          <div class="search-filter__item">
+            <input type="checkbox" id="dataset-input-pur" data-filter-code="pur" name="Purjetamise terminibaas" checked="checked">
+            <label for="dataset-input-pur">Purjetamise terminibaas</label>
+          </div>
+          
+        
+          <div class="search-filter__item">
+            <input type="checkbox" id="dataset-input-plt" data-filter-code="plt" name="Põllumajandusloomade tõugude terminibaas" checked="checked">
+            <label for="dataset-input-plt">Põllumajandusloomade tõugude terminibaas</label>
+          </div>
+          
+        
+          <div class="search-filter__item">
+            <input type="checkbox" id="dataset-input-rara" data-filter-code="rara" name="Raamatukogusõnastik" checked="checked">
+            <label for="dataset-input-rara">Raamatukogusõnastik</label>
+          </div>
+          
+        
+          <div class="search-filter__item">
+            <input type="checkbox" id="dataset-input-rah" data-filter-code="rah" name="Rahanduse oskussõnastik" checked="checked">
+            <label for="dataset-input-rah">Rahanduse oskussõnastik</label>
+          </div>
+          
+        
+          <div class="search-filter__item">
+            <input type="checkbox" id="dataset-input-rtrv" data-filter-code="rtrv" name="Rahvatervishoiu sõnastik" checked="checked">
+            <label for="dataset-input-rtrv">Rahvatervishoiu sõnastik</label>
+          </div>
+          
+        
+          <div class="search-filter__item">
+            <input type="checkbox" id="dataset-input-rkb" data-filter-code="rkb" name="Rakubioloogia terminibaas" checked="checked">
+            <label for="dataset-input-rkb">Rakubioloogia terminibaas</label>
+          </div>
+          
+        
+          <div class="search-filter__item">
+            <input type="checkbox" id="dataset-input-RTtermleg" data-filter-code="RTtermleg" name="Riigi Teataja seadustes määratletud terminid (legaaldefinitsioonid)" checked="checked">
+            <label for="dataset-input-RTtermleg">Riigi Teataja seadustes määratletud terminid (legaaldefinitsioonid)</label>
+          </div>
+          
+        
+          <div class="search-filter__item">
+            <input type="checkbox" id="dataset-input-rts" data-filter-code="rts" name="Riigi Teataja terminisõnastik" checked="checked">
+            <label for="dataset-input-rts">Riigi Teataja terminisõnastik</label>
+          </div>
+          
+        
+          <div class="search-filter__item">
+            <input type="checkbox" id="dataset-input-rob" data-filter-code="rob" name="Robootika terminibaas" checked="checked">
+            <label for="dataset-input-rob">Robootika terminibaas</label>
+          </div>
+          
+        
+          <div class="search-filter__item">
+            <input type="checkbox" id="dataset-input-rohring" data-filter-code="rohring" name="Rohepöörde ja ringmajanduse terminibaas" checked="checked">
+            <label for="dataset-input-rohring">Rohepöörde ja ringmajanduse terminibaas</label>
+          </div>
+          
+        
+          <div class="search-filter__item">
+            <input type="checkbox" id="dataset-input-plan" data-filter-code="plan" name="Ruumilise keskkonna planeerimise terminibaas" checked="checked">
+            <label for="dataset-input-plan">Ruumilise keskkonna planeerimise terminibaas</label>
+          </div>
+          
+        
+          <div class="search-filter__item">
+            <input type="checkbox" id="dataset-input-sem" data-filter-code="sem" name="Semiootika terminibaas" checked="checked">
+            <label for="dataset-input-sem">Semiootika terminibaas</label>
+          </div>
+          
+        
+          <div class="search-filter__item">
+            <input type="checkbox" id="dataset-input-sarh" data-filter-code="sarh" name="Sisearhitektuuri terminibaas" checked="checked">
+            <label for="dataset-input-sarh">Sisearhitektuuri terminibaas</label>
+          </div>
+          
+        
+          <div class="search-filter__item">
+            <input type="checkbox" id="dataset-input-sisek" data-filter-code="sisek" name="Siseturvalisuse terminibaas" checked="checked">
+            <label for="dataset-input-sisek">Siseturvalisuse terminibaas</label>
+          </div>
+          
+        
+          <div class="search-filter__item">
+            <input type="checkbox" id="dataset-input-skt" data-filter-code="skt" name="Skeemiteraapia terminisõnastik" checked="checked">
+            <label for="dataset-input-skt">Skeemiteraapia terminisõnastik</label>
+          </div>
+          
+        
+          <div class="search-filter__item">
+            <input type="checkbox" id="dataset-input-som" data-filter-code="som" name="Sommeljeede terminibaas" checked="checked">
+            <label for="dataset-input-som">Sommeljeede terminibaas</label>
+          </div>
+          
+        
+          <div class="search-filter__item">
+            <input type="checkbox" id="dataset-input-spaa" data-filter-code="spaa" name="Spaaterminid" checked="checked">
+            <label for="dataset-input-spaa">Spaaterminid</label>
+          </div>
+          
+        
+          <div class="search-filter__item">
+            <input type="checkbox" id="dataset-input-sup" data-filter-code="sup" name="Supervisiooni terminibaas" checked="checked">
+            <label for="dataset-input-sup">Supervisiooni terminibaas</label>
+          </div>
+          
+        
+          <div class="search-filter__item">
+            <input type="checkbox" id="dataset-input-TLV" data-filter-code="TLV" name="Tallinna linnavalitsuse terminibaas" checked="checked">
+            <label for="dataset-input-TLV">Tallinna linnavalitsuse terminibaas</label>
+          </div>
+          
+        
+          <div class="search-filter__item">
+            <input type="checkbox" id="dataset-input-TÕp" data-filter-code="TÕp" name="Teadmisõpetuse oskussõnastik" checked="checked">
+            <label for="dataset-input-TÕp">Teadmisõpetuse oskussõnastik</label>
+          </div>
+          
+        
+          <div class="search-filter__item">
+            <input type="checkbox" id="dataset-input-tet" data-filter-code="tet" name="Teatriterminite baas" checked="checked">
+            <label for="dataset-input-tet">Teatriterminite baas</label>
+          </div>
+          
+        
+          <div class="search-filter__item">
+            <input type="checkbox" id="dataset-input-TH" data-filter-code="TH" name="Teehoolde terminibaas" checked="checked">
+            <label for="dataset-input-TH">Teehoolde terminibaas</label>
+          </div>
+          
+        
+          <div class="search-filter__item">
+            <input type="checkbox" id="dataset-input-tee" data-filter-code="tee" name="Teenuste valdkonna terminibaas" checked="checked">
+            <label for="dataset-input-tee">Teenuste valdkonna terminibaas</label>
+          </div>
+          
+        
+          <div class="search-filter__item">
+            <input type="checkbox" id="dataset-input-tegter" data-filter-code="tegter" name="Tegevusteraapia terminibaas" checked="checked">
+            <label for="dataset-input-tegter">Tegevusteraapia terminibaas</label>
+          </div>
+          
+        
+          <div class="search-filter__item">
+            <input type="checkbox" id="dataset-input-teks" data-filter-code="teks" name="Tekstiilmaterjalide terminibaas" checked="checked">
+            <label for="dataset-input-teks">Tekstiilmaterjalide terminibaas</label>
+          </div>
+          
+        
+          <div class="search-filter__item">
+            <input type="checkbox" id="dataset-input-TAI" data-filter-code="TAI" name="Tervisesõnastik" checked="checked">
+            <label for="dataset-input-TAI">Tervisesõnastik</label>
+          </div>
+          
+        
+          <div class="search-filter__item">
+            <input type="checkbox" id="dataset-input-terv" data-filter-code="terv" name="Tervishoiu terminibaas" checked="checked">
+            <label for="dataset-input-terv">Tervishoiu terminibaas</label>
+          </div>
+          
+        
+          <div class="search-filter__item">
+            <input type="checkbox" id="dataset-input-to" data-filter-code="to" name="Toiduohutuse, loomatervise ja loomade heaolu terminibaas" checked="checked">
+            <label for="dataset-input-to">Toiduohutuse, loomatervise ja loomade heaolu terminibaas</label>
+          </div>
+          
+        
+          <div class="search-filter__item">
+            <input type="checkbox" id="dataset-input-ttt" data-filter-code="ttt" name="Toiduteadus ja -tehnoloogia " checked="checked">
+            <label for="dataset-input-ttt">Toiduteadus ja -tehnoloogia </label>
+          </div>
+          
+        
+          <div class="search-filter__item">
+            <input type="checkbox" id="dataset-input-tlt" data-filter-code="tlt" name="Tolliterminite baas" checked="checked">
+            <label for="dataset-input-tlt">Tolliterminite baas</label>
+          </div>
+          
+        
+          <div class="search-filter__item">
+            <input type="checkbox" id="dataset-input-tts" data-filter-code="tts" name="Tootmistehnika ja -süsteemide terminibaas" checked="checked">
+            <label for="dataset-input-tts">Tootmistehnika ja -süsteemide terminibaas</label>
+          </div>
+          
+        
+          <div class="search-filter__item">
+            <input type="checkbox" id="dataset-input-glu" data-filter-code="glu" name="Tsöliaakia ja gluteenivaba toitumise terminid" checked="checked">
+            <label for="dataset-input-glu">Tsöliaakia ja gluteenivaba toitumise terminid</label>
+          </div>
+          
+        
+          <div class="search-filter__item">
+            <input type="checkbox" id="dataset-input-tur" data-filter-code="tur" name="Turismi terminibaas" checked="checked">
+            <label for="dataset-input-tur">Turismi terminibaas</label>
+          </div>
+          
+        
+          <div class="search-filter__item">
+            <input type="checkbox" id="dataset-input-mar" data-filter-code="mar" name="Turunduse terminibaas" checked="checked">
+            <label for="dataset-input-mar">Turunduse terminibaas</label>
+          </div>
+          
+        
+          <div class="search-filter__item">
+            <input type="checkbox" id="dataset-input-nuk" data-filter-code="nuk" name="Tuumaenergia ja kiirguskaitse terminibaas" checked="checked">
+            <label for="dataset-input-nuk">Tuumaenergia ja kiirguskaitse terminibaas</label>
+          </div>
+          
+        
+          <div class="search-filter__item">
+            <input type="checkbox" id="dataset-input-tnpF" data-filter-code="tnpF" name="Tänapäevafolkloori terminibaas" checked="checked">
+            <label for="dataset-input-tnpF">Tänapäevafolkloori terminibaas</label>
+          </div>
+          
+        
+          <div class="search-filter__item">
+            <input type="checkbox" id="dataset-input-tot" data-filter-code="tot" name="Töötervishoiu ja -ohutuse terminibaas" checked="checked">
+            <label for="dataset-input-tot">Töötervishoiu ja -ohutuse terminibaas</label>
+          </div>
+          
+        
+          <div class="search-filter__item">
+            <input type="checkbox" id="dataset-input-ust" data-filter-code="ust" name="Usundiloo terminibaas" checked="checked">
+            <label for="dataset-input-ust">Usundiloo terminibaas</label>
+          </div>
+          
+        
+          <div class="search-filter__item">
+            <input type="checkbox" id="dataset-input-default" data-filter-code="default" name="Vaikimisi sõnakogu" checked="checked">
+            <label for="dataset-input-default">Vaikimisi sõnakogu</label>
+          </div>
+          
+        
+          <div class="search-filter__item">
+            <input type="checkbox" id="dataset-input-valgus" data-filter-code="valgus" name="Valgustehnika terminibaas" checked="checked">
+            <label for="dataset-input-valgus">Valgustehnika terminibaas</label>
+          </div>
+          
+        
+          <div class="search-filter__item">
+            <input type="checkbox" id="dataset-input-evkis" data-filter-code="evkis" name="Veevarustuse ja kanalisatsiooniga seotud terminibaas" checked="checked">
+            <label for="dataset-input-evkis">Veevarustuse ja kanalisatsiooniga seotud terminibaas</label>
+          </div>
+          
+        
+          <div class="search-filter__item">
+            <input type="checkbox" id="dataset-input-vke" data-filter-code="vke" name="Vene keel Eestis" checked="checked">
+            <label for="dataset-input-vke">Vene keel Eestis</label>
+          </div>
+          
+        
+          <div class="search-filter__item">
+            <input type="checkbox" id="dataset-input-vlk" data-filter-code="vlk" name="Veterinaarmeditsiini ja loomakasvatuse terminibaas" checked="checked">
+            <label for="dataset-input-vlk">Veterinaarmeditsiini ja loomakasvatuse terminibaas</label>
+          </div>
+          
+        
+          <div class="search-filter__item">
+            <input type="checkbox" id="dataset-input-vibu" data-filter-code="vibu" name="Vibulaskmise terminibaas" checked="checked">
+            <label for="dataset-input-vibu">Vibulaskmise terminibaas</label>
+          </div>
+          
+        
+          <div class="search-filter__item">
+            <input type="checkbox" id="dataset-input-ÕTERM" data-filter-code="ÕTERM" name="Õendus- ja ämmaemandusterminite kogu" checked="checked">
+            <label for="dataset-input-ÕTERM">Õendus- ja ämmaemandusterminite kogu</label>
+          </div>
+          
+        
+      </div>
+    </div>
+  
+          <div class="mr-auto mr-md-2 pl-2 d-flex align-items-center flex-wrap">
+            
+    <div class="dropdown search-filter__wrapper" id="lang-filter-wrapper">
+      <button class="dropdown-toggle search-filter__toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="lang-filters-popover">
+        <span class="search-filter__toggle-label">Keel</span>
+        <span class="search-filter__toggle-count" id="lang-filter-count"></span>
+      </button>
+      <div class="dropdown-menu search-filter__menu search-filter__menu--small" aria-labelledby="lang-filters-popover" style="--search-filter-rows: 9">
+        
+          <div class="search-filter__item search-filter__item--full-row">
+            <input type="checkbox" id="lang-input-dlall" data-filter-code="dlall" name="Kõik keeled" checked="checked">
+            <label for="lang-input-dlall">Kõik keeled</label>
+          </div>
+          <div class="search-filter__divider"></div>
+        
+          <div class="search-filter__item">
+            <input type="checkbox" id="lang-input-est" data-filter-code="est" name="eesti" checked="checked">
+            <label for="lang-input-est">eesti</label>
+          </div>
+          
+        
+          <div class="search-filter__item">
+            <input type="checkbox" id="lang-input-eng" data-filter-code="eng" name="inglise" checked="checked">
+            <label for="lang-input-eng">inglise</label>
+          </div>
+          
+        
+          <div class="search-filter__item">
+            <input type="checkbox" id="lang-input-fra" data-filter-code="fra" name="prantsuse" checked="checked">
+            <label for="lang-input-fra">prantsuse</label>
+          </div>
+          
+        
+          <div class="search-filter__item">
+            <input type="checkbox" id="lang-input-deu" data-filter-code="deu" name="saksa" checked="checked">
+            <label for="lang-input-deu">saksa</label>
+          </div>
+          
+        
+          <div class="search-filter__item">
+            <input type="checkbox" id="lang-input-rus" data-filter-code="rus" name="vene" checked="checked">
+            <label for="lang-input-rus">vene</label>
+          </div>
+          
+        
+          <div class="search-filter__item">
+            <input type="checkbox" id="lang-input-ukr" data-filter-code="ukr" name="ukraina" checked="checked">
+            <label for="lang-input-ukr">ukraina</label>
+          </div>
+          
+        
+          <div class="search-filter__item">
+            <input type="checkbox" id="lang-input-other" data-filter-code="other" name="muud keeled" checked="checked">
+            <label for="lang-input-other">muud keeled</label>
+          </div>
+          
+        
+      </div>
+    </div>
+    <div class="search-filter__tags" id="lang-filter-tags"></div>
+  
+          </div>
+        </div>
+      </div>
+      <div class="sticky-scroll-panel__tags">
+        <a href="#word-morphology-results" class="sticky-scroll-panel__tag">Sõnavormid</a>
+        <a href="#word-etymology-results" class="sticky-scroll-panel__tag">Päritolu andmed</a>
+        <a href="#word-relation-results" class="sticky-scroll-panel__tag">Ühendid</a>
+      </div>
+    </div>
+    <main id="mainContentArea" role="main" class="content-panel">
+      <div class="loading-indicator">
+        <div class="spinner-border text-primary " role="status">
+          <span class="sr-only">Loading...</span>
+        </div>
+      </div>
+      
+    <div class="d-none">
+      <button type="button" class="homonym-list-toggle d-flex d-md-none" id="homonymListToggleButton">Nupu sisu</button>
+      <ul class="homonym-list list-unstyled w-100">
+        <li class="homonym-list-item selected last-selected">
+          <form class="h-100">
+            <input type="hidden" name="word-id" value="828933">
+            <input type="hidden" name="word-selected" value="true">
+            <input type="hidden" name="word-select-url" value="/search/unif/dlall/dsall/abandonment/1/eng">
+            <button type="button" id="word-details-link-828933" class="homonym-item homonym__item animation-target">
+              
+                <span title="" data-toggle="tooltip" class="lang-code text-caption" data-original-title="inglise">en</span>
+                
+              
+              <div class="homonym__body">
+                <div class="text-body-two">
+                  <span><span>abandonment</span></span>
+                  <span class="homonym-nr d-none">1</span>
+                </div>
+                <div class="text-caption homonym__text">
+                  <span class="homonym__matches">instability</span>
+                  <p>eeldus, et kõik elu jooksul loodud tähtsad suhted katkevad ning sellest tulenev pidev mure hülgamise ees, the feeling that important relationships which they have formed will never last and thus they are constantly worried about being abandoned by others, The perceived instability or unreliability of those available for support and connection. Involves the sense that significant others will not be able to continue providing emotional support, connection, strength, or practical protection because they are emotionally unstable and unpredictable (e.g., have angry outbursts), unreliable, or present only erratically; because they will die imminently; or because they will abandon the individual in favor of someone better., The patient expects that significant others will eventually abandon him. Others are unreliable and unpredictable in their support and connection. When the patient feels abandoned he switches between feelings of anxiety, grief and anger.</p>
+                </div>
+              </div>
+            </button>
+          </form>
+        </li>
+      </ul>
+    </div>
+  
+      <div id="word-details">
+      <input id="selected-word-homonym-nr" type="hidden" value="1">
+      <input id="selected-word-lang" type="hidden" value="eng">
+      
+      <div class="word-results">
+        <div>
+          
+    <div class="d-flex align-items-center flex-wrap">
+      
+        <span title="" data-toggle="tooltip" class="lang-code text-caption mr-2" data-original-title="inglise">en</span>
+        
+      
+      <div class="search__lex-title-wrapper">
+        <h1 class="search__lex-title"><span>abandonment</span></h1>
+        
+      </div>
+      <span class="word-details-homonym-nr d-none mr-2" aria-label="aria.homonym 1">1</span>
+      
+      
+      
+      
+      
+      
+      
+    </div>
+  
+          
+            
+            
+              <h2 class="search__pre-block-title">Oskussõnastikud</h2>
+              
+    
+      <div class="search__block" id="lexeme-section-2805301">
+        
+    <div class="d-flex">
+      <div class="search__block-header">
+          <span class="search__block-title">Haridussõnastik</span>
+        <div class="meaning-data__modified">
+          <span>ID</span>
+          <span>743763</span>
+          <span>Viimati muudetud</span>
+          <span class="meaning-data__date">01.01.2025</span>
+        </div>
+      </div>
+      <a class="meaning-data__link" href="/ds/har" target="_blank" rel="noreferrer">Vaata sõnakogu</a>
+    </div>
+    <div>
+      <div>
+        
+        <div class="meaning">
+          <div class="definition-row">
+            
+              <div class="mb-2 d-flex flex-wrap gap-2">
+                <span class="text-caption">Valdkond</span>
+                <span class="lang-code text-caption lang-code--unrestricted">sotsiaalpedagoogika</span><span class="lang-code text-caption lang-code--unrestricted">kasvatus ja areng (kasvatusmeetodid)</span>
+              </div>
+            
+            
+              <section class="d-flex">
+                
+                  <span title="" data-toggle="tooltip" class="lang-code text-caption mr-2" data-original-title="eesti">et</span>
+                  
+                
+                <div class="word-notes__wrapper" id="lexeme-definitions-by-lang-743763-est-0">
+                  <ul class="word-notes__list">
+                    <li>
+                      
+                        <div class="d-flex gap-2 flex-wrap" id="definition-entry-526262">
+                          <span class="definition-value text-body-regular text-weight-semi-bold">lähedase inimese või looma mahajätmine</span>
+                        </div>
+                      
+                      
+                    </li>
+                  </ul>
+                </div>
+              </section>
+            
+          </div>
+          
+          
+          
+          
+            <div class="related-meanings mb-2">
+              <div class="relation-list d-flex flex-row flex-wrap">
+                <span class="mr-2 text-caption">Seotud:</span>
+                
+                  <div class="relation-item mr-1">
+                    <a href="/search/unif/dlall/dsall/negligence/1/eng">
+                      <span><span>negligence</span></span>
+                    </a>
+                    
+                    <span class="ml-n1">,</span>
+                  </div>
+                
+                  <div class="relation-item mr-1">
+                    <a href="/search/unif/dlall/dsall/abandonment%20of%20a%20child/1/eng">
+                      <span><span>abandonment of a child</span></span>
+                    </a>
+                    
+                    
+                  </div>
+                
+              </div>
+            </div>
+          
+          
+            <div class="d-flex">
+              
+                <span title="" data-toggle="tooltip" class="lang-code text-caption mr-2" data-original-title="eesti">et</span>
+                
+              
+              <div class="word-notes__wrapper">
+                <div>
+                  <a href="/search/unif/dlall/dsall/h%C3%BClgamine/1/est"><span>hülgamine</span></a>
+                  
+                  <span class="meaning-reliability meaning-reliability--green">
+                    <i class="fa fa-check" aria-hidden="true"></i>
+                    <span>eelistatud</span>
+                  </span>
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                </div>
+              </div>
+            </div>
+            <div class="d-flex">
+              
+                <span title="" data-toggle="tooltip" class="lang-code text-caption mr-2" data-original-title="inglise">en</span>
+                
+              
+              <div class="word-notes__wrapper">
+                <div>
+                  <a href="/search/unif/dlall/dsall/abandonment/1/eng" class="word-matches-search"><span>abandonment</span></a>
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                </div>
+              </div>
+            </div>
+            <div class="d-flex">
+              
+                <span title="" data-toggle="tooltip" class="lang-code text-caption mr-2" data-original-title="saksa">de</span>
+                
+              
+              <div class="word-notes__wrapper">
+                <div class="mb-1">
+                  <a href="/search/unif/dlall/dsall/Aussetzen/1/deu"><span>Aussetzen</span></a>
+                  
+                    <button type="button" class="meaning-data__popover-trigger" data-toggle="popover" data-html="true" aria-label="Grammatiline sisu" data-content="&lt;div&gt;kesksugu&lt;/div&gt;" data-original-title="" title="">
+                      <span class="material-symbols-outlined" aria-hidden="true"> info </span>
+                    </button>
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                </div>
+                <div>
+                  <a href="/search/unif/dlall/dsall/Verlassen/1/deu"><span>Verlassen</span></a>
+                  
+                    <button type="button" class="meaning-data__popover-trigger" data-toggle="popover" data-html="true" aria-label="Grammatiline sisu" data-content="&lt;div&gt;kesksugu&lt;/div&gt;" data-original-title="" title="">
+                      <span class="material-symbols-outlined" aria-hidden="true"> info </span>
+                    </button>
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                </div>
+              </div>
+            </div>
+            <div class="d-flex">
+              
+                <span title="" data-toggle="tooltip" class="lang-code text-caption mr-2" data-original-title="soome">fi</span>
+                
+              
+              <div class="word-notes__wrapper">
+                <div class="mb-1">
+                  <a href="/search/unif/dlall/dsall/hylk%C3%A4%C3%A4minen/1/fin"><span>hylkääminen</span></a>
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                </div>
+                <div>
+                  <a href="/search/unif/dlall/dsall/%28heitteille%29%20j%C3%A4tt%C3%A4minen/1/fin"><span>(heitteille) jättäminen</span></a>
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                </div>
+              </div>
+            </div>
+            <div class="d-flex">
+              
+                <span title="" data-toggle="tooltip" class="lang-code text-caption mr-2" data-original-title="vene">ru</span>
+                
+              
+              <div class="word-notes__wrapper">
+                <div>
+                  <a href="/search/unif/dlall/dsall/%D0%BE%D1%82%D0%B2%D0%B5%D1%80%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5/1/rus"><span>отверж<eki-stress>е</eki-stress>ние</span></a>
+                  
+                    <button type="button" class="meaning-data__popover-trigger" data-toggle="popover" data-html="true" aria-label="Grammatiline sisu" data-content="&lt;div&gt;kesksugu&lt;/div&gt;" data-original-title="" title="">
+                      <span class="material-symbols-outlined" aria-hidden="true"> info </span>
+                    </button>
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                </div>
+              </div>
+            </div>
+          
+        </div>
+      </div>
+    </div>
+  
+      </div>
+    
+      <div class="search__block" id="lexeme-section-3314593">
+        
+    <div class="d-flex">
+      <div class="search__block-header">
+          <span class="search__block-title">Merenduse terminikogu</span>
+        <div class="meaning-data__modified">
+          <span>ID</span>
+          <span>1124435</span>
+          <span>Viimati muudetud</span>
+          <span class="meaning-data__date">17.01.2025</span>
+        </div>
+      </div>
+      <a class="meaning-data__link" href="/ds/mer" target="_blank" rel="noreferrer">Vaata sõnakogu</a>
+    </div>
+    <div>
+      <div>
+        
+        <div class="meaning">
+          <div class="definition-row">
+            
+              <div class="mb-2 d-flex flex-wrap gap-2">
+                <span class="text-caption">Valdkond</span>
+                <span class="lang-code text-caption lang-code--unrestricted">merendus ja meretransport</span>
+              </div>
+            
+            
+          </div>
+          
+          
+          
+          
+          
+            <div class="d-flex">
+              
+                <span title="" data-toggle="tooltip" class="lang-code text-caption mr-2" data-original-title="eesti">et</span>
+                
+              
+              <div class="word-notes__wrapper">
+                <div class="mb-1">
+                  <a href="/search/unif/dlall/dsall/loovutamine/1/est"><span>loovutamine</span></a>
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                    <span class="definition-sources">
+                      
+                        
+    <button type="button" class="lang-code text-caption lang-code--unrestricted definition-source" data-toggle="popover" data-html="true" title="" data-content="Inglise-eesti meresõnaraamat. &lt;a href=&quot;https://arhiiv.eki.ee/dict/meri/&quot; target=&quot;_blank&quot;&gt;https://arhiiv.eki.ee/dict/meri/&lt;/a&gt;" data-original-title="Allikas">
+      <span class="text-underlined mr-1">Inglise-eesti meresõnaraamat</span>
+      
+    </button>
+  
+                      
+                    </span>
+                  
+                  
+                  
+                  
+                    <div class="dependencies mt-2">
+                      <div class="dependence-group">
+                        <div class="d-flex">
+                          <span class="word-notes__note text-caption">Näited</span>
+                        </div>
+                        <ul class="word-notes__list" id="lexeme-usages-3314594">
+                          <li class="word-notes__note">
+                            <div class="d-flex">
+                              <div>
+                                <span class="example-text example-text-w-audio">
+                                  <span class="text-body-two">Kindlustatud vara loovutamine kindlustusandjale.</span>
+                                  <button class="btn btn-speaker btn-speaker--inactive" aria-label="Kuula hääldust - Kindlustatud vara loovutamine kindlustusandjale." data-text="Kindlustatud vara loovutamine kindlustusandjale." data-service-id="speech" onclick="getAndPlayAudio(this)">
+                                    <span class="icon icon-speaker icon--small"></span>
+                                  </button>
+                                </span>
+                                
+                                  <span class="example-text">
+                                    <span class="definition-sources">
+                                      
+    <button type="button" class="lang-code text-caption lang-code--unrestricted definition-source" data-toggle="popover" data-html="true" title="" data-content="Merekeele nõukoda. &lt;a href=&quot;https://transpordiamet.ee/merekeele-noukoda&quot; target=&quot;_blank&quot;&gt;https://transpordiamet.ee/merekeele-noukoda&lt;/a&gt;" data-original-title="Allikas">
+      <span class="text-underlined mr-1">Merekeele nõukoda</span>
+      
+    </button>
+  
+                                    </span>
+                                  </span>
+                                
+                              </div>
+                            </div>
+                          </li>
+                        </ul>
+                        
+                      </div>
+                    </div>
+                  
+                  
+                </div>
+                <div>
+                  <a href="/search/unif/dlall/dsall/mahaj%C3%A4tmine/1/est"><span>mahajätmine</span></a>
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                    <span class="definition-sources">
+                      
+                        
+    <button type="button" class="lang-code text-caption lang-code--unrestricted definition-source" data-toggle="popover" data-html="true" title="" data-content="Inglise-eesti meresõnaraamat. &lt;a href=&quot;https://arhiiv.eki.ee/dict/meri/&quot; target=&quot;_blank&quot;&gt;https://arhiiv.eki.ee/dict/meri/&lt;/a&gt;" data-original-title="Allikas">
+      <span class="text-underlined mr-1">Inglise-eesti meresõnaraamat</span>
+      
+    </button>
+  
+                      
+                    </span>
+                  
+                  
+                  
+                  
+                  
+                </div>
+              </div>
+            </div>
+            <div class="d-flex">
+              
+                <span title="" data-toggle="tooltip" class="lang-code text-caption mr-2" data-original-title="inglise">en</span>
+                
+              
+              <div class="word-notes__wrapper">
+                <div>
+                  <a href="/search/unif/dlall/dsall/abandonment/1/eng" class="word-matches-search"><span>abandonment</span></a>
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                    <span class="definition-sources">
+                      
+                        
+    <button type="button" class="lang-code text-caption lang-code--unrestricted definition-source" data-toggle="popover" data-html="true" title="" data-content="Inglise-eesti meresõnaraamat. &lt;a href=&quot;https://arhiiv.eki.ee/dict/meri/&quot; target=&quot;_blank&quot;&gt;https://arhiiv.eki.ee/dict/meri/&lt;/a&gt;" data-original-title="Allikas">
+      <span class="text-underlined mr-1">Inglise-eesti meresõnaraamat</span>
+      
+    </button>
+  
+                      
+                    </span>
+                  
+                  
+                  
+                  
+                  
+                </div>
+              </div>
+            </div>
+          
+        </div>
+      </div>
+    </div>
+  
+      </div>
+    
+      <div class="search__block" id="lexeme-section-1020511">
+        
+    <div class="d-flex">
+      <div class="search__block-header">
+          <span class="search__block-title">Skeemiteraapia terminisõnastik</span>
+        <div class="meaning-data__modified">
+          <span>ID</span>
+          <span>462555</span>
+          <span>Viimati muudetud</span>
+          <span class="meaning-data__date">29.01.2023</span>
+        </div>
+      </div>
+      <a class="meaning-data__link" href="/ds/skt" target="_blank" rel="noreferrer">Vaata sõnakogu</a>
+    </div>
+    <div>
+      <div>
+        
+        <div class="meaning">
+          <div class="definition-row">
+            
+            
+              <section class="d-flex">
+                
+                  <span title="" data-toggle="tooltip" class="lang-code text-caption mr-2" data-original-title="eesti">et</span>
+                  
+                
+                <div class="word-notes__wrapper" id="lexeme-definitions-by-lang-462555-est-0">
+                  <ul class="word-notes__list">
+                    <li>
+                      
+                      
+                        <div class="d-flex gap-2 flex-wrap" id="definition-entry-256805">
+                          <span class="definition-value text-body-regular text-weight-semi-bold">
+                            eeldus, et kõik elu jooksul loodud tähtsad suhted katkevad ning sellest tulenev pidev mure hülgamise ees
+                            
+                              <span class="definition-sources">
+                                
+                                  
+    <button type="button" class="lang-code text-caption lang-code--unrestricted definition-source" data-toggle="popover" data-html="true" title="" data-content="Eesti Skeemiteraapia Assotsiatsiooni skeemiteraapia terminite töörühm" data-original-title="Allikas">
+      <span class="text-underlined mr-1">Skeemiteraapia terminite töörühm</span>
+      
+    </button>
+  
+                                
+                              </span>
+                            
+                          </span>
+                        </div>
+                        
+                      
+                    </li>
+                  </ul>
+                </div>
+              </section>
+              <section class="d-flex">
+                
+                  <span title="" data-toggle="tooltip" class="lang-code text-caption mr-2" data-original-title="inglise">en</span>
+                  
+                
+                <div class="word-notes__wrapper" id="lexeme-definitions-by-lang-462555-eng-1">
+                  <ul class="word-notes__list">
+                    <li>
+                      
+                      
+                        <div class="d-flex gap-2 flex-wrap" id="definition-entry-256806">
+                          <span class="definition-value text-body-regular text-weight-semi-bold">
+                            the feeling that important relationships which they have formed will never last and thus they are constantly worried about being abandoned by others
+                            
+                              <span class="definition-sources">
+                                
+                                  
+    <button type="button" class="lang-code text-caption lang-code--unrestricted definition-source" data-toggle="popover" data-html="true" title="" data-content="Arntz, A.; Jacob, G. Arntz Jacob 2013. Schema Therapy in Practice: An Introductory Guide to the Schema Mode Approach. Wiley Blackwell 2013" data-original-title="Allikas">
+      <span class="text-underlined mr-1">Arntz Jacob 2013</span>
+      
+    </button>
+  
+                                
+                              </span>
+                            
+                          </span>
+                        </div>
+                        
+                      
+                    </li>
+                    <li>
+                      
+                      
+                        <div class="d-flex gap-2 flex-wrap" id="definition-entry-297360">
+                          <span class="definition-value text-body-regular text-weight-semi-bold">
+                            The perceived instability or unreliability of those available for support and connection. Involves the sense that significant others will not be able to continue providing emotional support, connection, strength, or practical protection because they are emotionally unstable and unpredictable (e.g., have angry outbursts), unreliable, or present only erratically; because they will die imminently; or because they will abandon the individual in favor of someone better.
+                            
+                              <span class="definition-sources">
+                                
+                                  
+    <button type="button" class="lang-code text-caption lang-code--unrestricted definition-source" data-toggle="popover" data-html="true" title="" data-content="Young, J. E.; Klosko, J.; Weishaar, M. Young Klosko Weishaar 2003. Schema therapy: practitioner’s guide. The Guilford Press 2003" data-original-title="Allikas">
+      <span class="text-underlined mr-1">Young Klosko Weishaar 2003</span>
+      
+    </button>
+  
+                                
+                              </span>
+                            
+                          </span>
+                        </div>
+                        
+                      
+                    </li>
+                    <li>
+                      
+                      
+                        <div class="d-flex gap-2 flex-wrap" id="definition-entry-297361">
+                          <span class="definition-value text-body-regular text-weight-semi-bold">
+                            The patient expects that significant others will eventually abandon him. Others are unreliable and unpredictable in their support and connection. When the patient feels abandoned he switches between feelings of anxiety, grief and anger.
+                            
+                              <span class="definition-sources">
+                                
+                                  
+    <button type="button" class="lang-code text-caption lang-code--unrestricted definition-source" data-toggle="popover" data-html="true" title="" data-content="Van Vreeswijk, M.; Boersen, J.; Nadorf, M. Van Vreeswijk Broersen Nadort 2012. The Wiley Blackwell Handbook of Schema Therapy: theory, research and practice. Wiley Blackwell 2012" data-original-title="Allikas">
+      <span class="text-underlined mr-1">Van Vreeswijk Broers...</span>
+      
+    </button>
+  
+                                
+                              </span>
+                            
+                          </span>
+                        </div>
+                        
+                      
+                    </li>
+                  </ul>
+                </div>
+              </section>
+            
+          </div>
+          
+            <section class="d-flex lang-code__border">
+              
+                <span title="" data-toggle="tooltip" class="lang-code text-caption mr-2" data-original-title="eesti">et</span>
+                
+              
+              <div class="word-notes__wrapper" id="lexeme-meaning-notes-by-lang-462555-est-0">
+                <span class="word-notes__note text-caption">Hea teada</span>
+                <ul class="word-notes__list">
+                  <li class="word-notes__note">
+                    <div class="d-flex" id="note-entry-text-10199">
+                      <div>
+                        <span class="text-body-two">Väldi: hülgamine/ebastabiilsus, mahajäetus/ebastabiilsus</span>
+                        
+                        
+                          <span class="definition-sources">
+                            <span>
+                              
+    <button type="button" class="lang-code text-caption lang-code--unrestricted definition-source" data-toggle="popover" data-html="true" title="" data-content="Eesti Skeemiteraapia Assotsiatsiooni skeemiteraapia terminite töörühm" data-original-title="Allikas">
+      <span class="text-underlined mr-1">Skeemiteraapia terminite töörühm</span>
+      
+    </button>
+  
+                            </span>
+                          </span>
+                        
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </section>
+          
+          
+          
+          
+          
+            <div class="d-flex">
+              
+                <span title="" data-toggle="tooltip" class="lang-code text-caption mr-2" data-original-title="eesti">et</span>
+                
+              
+              <div class="word-notes__wrapper">
+                <div class="mb-1">
+                  <a href="/search/unif/dlall/dsall/h%C3%BCljatus/1/est"><span>hüljatus</span></a>
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                </div>
+                <div>
+                  <a href="/search/unif/dlall/dsall/ebastabiilsus/1/est"><span>ebastabiilsus</span></a>
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                </div>
+              </div>
+            </div>
+            <div class="d-flex">
+              
+                <span title="" data-toggle="tooltip" class="lang-code text-caption mr-2" data-original-title="inglise">en</span>
+                
+              
+              <div class="word-notes__wrapper">
+                <div class="mb-1">
+                  <a href="/search/unif/dlall/dsall/abandonment/1/eng" class="word-matches-search"><span>abandonment</span></a>
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                </div>
+                <div>
+                  <a href="/search/unif/dlall/dsall/instability/2/eng"><span>instability</span></a>
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                </div>
+              </div>
+            </div>
+          
+        </div>
+      </div>
+    </div>
+  
+      </div>
+    
+  
+            
+          
+          
+    
+  
+        </div>
+        <div>
+          
+            <section class="search__sidebar-block search__block text-body-two" id="word-morphology-results">
+    <div class="search__sidebar-block-title-wrapper">
+      <h2 class="search__sidebar-block-title search__sidebar-block-title--empty">Sõnavormid puuduvad</h2>
+      <button type="button" class="btn btn-icon btn-sm" aria-label="EKI eesti keele morfoloogiline andmebaas 2019–" data-toggle="tooltip" title="" data-original-title="EKI eesti keele morfoloogiline andmebaas 2019–">
+        <i class="fas fa-info-circle"></i>
+      </button>
+    </div>
+    
+    
+  </section>
+            
+    
+  
+            
+    <section class="search__sidebar-block search__block text-body-two" id="word-etymology-results">
+      <div>
+        <div class="search__sidebar-block-title-wrapper">
+          <h2 class="search__sidebar-block-title search__sidebar-block-title--empty">Päritolu andmed puuduvad</h2>
+          
+          <button type="button" aria-label="Koostanud Udo Uibo (Eesti Keele Instituut)" class="btn btn-icon btn-sm ml-auto" data-toggle="tooltip" data-placement="top" title="" data-original-title="Koostanud Udo Uibo (Eesti Keele Instituut)">
+            <i class="fas fa-info-circle"></i>
+          </button>
+        </div>
+        
+      </div>
+    </section>
+  
+            
+    <section class="search__sidebar-block search__block text-body-two">
+      <div class="word-relations">
+        <div class="search__sidebar-block-title-wrapper">
+          <h2 class="search__sidebar-block-title search__sidebar-block-title--empty">Sõna seosed puuduvad</h2>
+          <button type="button" aria-label="Võrdevormid, tuletised, sarjasõnad" class="btn btn-icon btn-sm" data-toggle="tooltip" data-placement="top" title="" data-original-title="Võrdevormid, tuletised, sarjasõnad">
+            <i class="fas fa-info-circle"></i>
+          </button>
+        </div>
+        
+      </div>
+    </section>
+    
+  
+            
+    
+    <section class="search__sidebar-block search__block text-body-two">
+      <div class="corp-panel">
+        <div class="search__sidebar-block-title-wrapper">
+          <h2 class="search__sidebar-block-title">Sama sõna</h2>
+        </div>
+        <a aria-label="ELi terminibaasis IATE abandonment, Avab uues aknas" href="https://iate.europa.eu/search/byUrl?term=abandonment&amp;sl=en" target="_blank">
+          <span>ELi terminibaasis IATE</span>
+          <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+        </a>
+      </div>
+    </section>
+  
+            
+            
+            <div class="search__sidebar-block search__block text-body-two">
+              
+    <div class="corp-panel">
+      <div class="search__sidebar-block-title-wrapper">
+        <h2 class="search__sidebar-block-title">Veebilaused</h2>
+        <button type="button" class="btn btn-icon btn-sm" data-toggle="tooltip" data-placement="top" aria-label="Vaata lähemalt sketchengine.eu/skell" title="" data-original-title="Vaata lähemalt sketchengine.eu/skell">
+          <i class="fas fa-info-circle"></i>
+        </button>
+      </div>
+      <div class="corp-warning mb-1">
+        <i class="text-danger fa fa-exclamation-triangle mr-1 mt-1" aria-hidden="true"></i>
+        <span>Veebilehelt SkELL saad vaadata sõna kasutusnäiteid, naabersõnu ja sarnase tähendusega sõnu. Need on automaatselt valitud ning võivad sisaldada vigu.</span>
+      </div>
+      <div class="col-6">
+        <a href="https://skell.sketchengine.eu/#result?f=concordance&amp;lang=en&amp;query=abandonment" target="_blank">
+          <img src="/view/images/skell-logo.jpg" alt="Skell logo" class="img-fluid">
+        </a>
+      </div>
+    </div>
+    <script>
+		$('.corp-panel [data-toggle="tooltip"]').tooltip();
+	</script>
+  
+            </div>
+          
+        </div>
+      </div>
+      <script>
+		var currentWord = "abandonment";
+		var currentWordId = 828933;
+		var currentWordLang = "eng";
+		var currentWordPosCodes = "";
+		var currentLinkedLexemeId = null;
+		scrollToLexeme(currentLinkedLexemeId);
+	  </script>
+    </div>
+    </main>
+    
+  </div>
+  
+    <footer class="footer">
+      <div class="footer__grid">
+        <div class="footer__column">
+          <div class="footer__column-header">
+            <a href="https://eki.ee" target="_blank">
+              <img class="footer__logo" src="/view/images/eki.svg" alt="Eesti Keele Instituut">
+            </a>
+          </div>
+          <div class="d-flex flex-column gap-1">
+            <div>Roosikrantsi 6, 10119 Tallinn</div>
+            <div>Registrikood 70004011</div>
+            <div class="d-flex align-items-center justify-content-center justify-content-md-start gap-2 flex-wrap">
+              <span>Keelenõu</span>
+              <a href="tel:6313731">631 3731</a>
+            </div>
+            <div class="d-flex align-items-center justify-content-center justify-content-md-start gap-2 flex-wrap">
+              <span>Üldkontakt</span>
+              <a href="tel:6177500">617 7500</a>
+            </div>
+            <div class="d-flex align-items-center justify-content-center justify-content-md-start gap-2 flex-wrap">
+              <span>E-post</span>
+              <a href="mailto:eki@eki.ee">eki@eki.ee</a>
+            </div>
+          </div>
+          <div class="footer__version">Wordweb App 1.43.0</div>
+        </div>
+        <div class="footer__column">
+          <div class="footer__column-header">Sõnaveeb</div>
+          
+          <div class="d-flex flex-column gap-1">
+            <a href="/about">Portaalist</a>
+            <a href="/collections">Sõnakogud</a>
+            <a href="/ekilex-api">Ekilex API</a>
+            <a href="/news">Uudised ja teated</a>
+            <a href="/regulations">Kasutus- ja privaatsustingimused</a>
+          </div>
+        </div>
+        <div class="footer__column">
+          <div class="footer__column-header">Sotsiaalmeedia</div>
+          <span>Hoia pilk peal meie sotsiaalmeedia kanalitel.</span>
+          <div class="d-flex flex-column gap-1">
+            <a class="d-flex align-items-center justify-content-center justify-content-md-start gap-2" href="https://www.facebook.com/Eesti.Keele.Instituut" target="_blank">
+              <div class="footer__icon footer__icon--facebook" aria-hidden="true"></div>
+              <span>Facebook</span>
+            </a>
+            <a class="d-flex align-items-center justify-content-center justify-content-md-start gap-2" href="https://www.youtube.com/c/EestiKeeleInstituut" target="_blank">
+              <div class="footer__icon footer__icon--youtube" aria-hidden="true"></div>
+              <span>Youtube</span>
+            </a>
+            <a class="d-flex align-items-center justify-content-center justify-content-md-start gap-2" href="https://www.linkedin.com/company/institute-of-the-estonian-language/" target="_blank">
+              <div class="footer__icon footer__icon--linkedin" aria-hidden="true"></div>
+              <span>LinkedIn</span>
+            </a>
+          </div>
+        </div>
+        <div class="footer__column">
+          
+          
+            <div class="footer__column-header">Sõnaveebi tagasiside</div>
+            <p class="text-body-two m-0">Iga arvamus loeb ja aitab Sõnaveebi paremaks teha!</p>
+            <button class="footer__feedback-button" type="button" data-toggle="modal" data-target="#feedback-modal">Kirjuta meile</button>
+          
+        </div>
+      </div>
+    </footer>
+  
+  <script>
+  	var currentPage = "\/search\/unif";
+  	var searchWordFragUrl = "\/searchwordfrag\/unif";
+  	var wordDetailsUrl = "\/worddetails\/unif";
+  	var newsAcceptUrl = "\/newsaccept";
+  	var morphoUrl = "\/morpho\/unif";
+  	var searchLinkUrl = "\/searchlink\/unif";
+  	var corpUrl = "\/corp\/detail";
+  	var corpTransUrl = "\/corptrans";
+  	var speechRecognitionServiceUrl = "wss:\/\/bark.phon.ioc.ee:8443\/dev\/duplex-speech-api\/ws\/speech";
+  	var userPrefUrl = "\/user-pref";
+  </script>
+
+
+</body></html>

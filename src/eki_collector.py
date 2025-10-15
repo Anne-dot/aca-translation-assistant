@@ -5,6 +5,22 @@ EKI Terminology Collector
 Collects terminology from Estonian Language Institute (EKI) Sõnaveeb terminology databases.
 Saves terms in JSON format with references to sources.
 
+⚠️ NOTE: This script collects basic information (term, link, language, synonyms, definition).
+It does NOT collect:
+- Estonian translation equivalents (ET terms)
+- Domain/field information
+- "Hea teada" (Good to know) notes
+- Preferred variant markers
+
+If more complete data extraction becomes important, this script should be refactored to:
+1. Parse full term page HTML structure
+2. Extract ET equivalents with "eelistatud" (preferred) markers
+3. Extract domain/valdkond information
+4. Extract "Hea teada" advisory notes
+5. Separate EN and ET definitions
+
+For now, Sonaveeb lookup script provides more comprehensive data extraction.
+
 Usage:
     python3 eki_collector.py <database_code>
 

@@ -1,0 +1,2561 @@
+{
+  "log": {
+    "version": "1.2",
+    "creator": {
+      "name": "WebInspector",
+      "version": "537.36"
+    },
+    "pages": [
+      {
+        "startedDateTime": "2025-10-15T13:15:07.346Z",
+        "id": "page_1",
+        "title": "https://sonaveeb.ee/search/unif",
+        "pageTimings": {
+          "onContentLoad": 5069.809000000532,
+          "onLoad": 9285.723000000871
+        }
+      }
+    ],
+    "entries": [
+      {
+        "_connectionId": "4715",
+        "_initiator": {
+          "type": "script",
+          "stack": {
+            "callFrames": [
+              {
+                "functionName": "send",
+                "scriptId": "767",
+                "url": "https://sonaveeb.ee/view/js/jquery-3.7.1.min.js",
+                "lineNumber": 1,
+                "columnNumber": 80624
+              },
+              {
+                "functionName": "ajax",
+                "scriptId": "767",
+                "url": "https://sonaveeb.ee/view/js/jquery-3.7.1.min.js",
+                "lineNumber": 1,
+                "columnNumber": 76166
+              },
+              {
+                "functionName": "ce.<computed>",
+                "scriptId": "767",
+                "url": "https://sonaveeb.ee/view/js/jquery-3.7.1.min.js",
+                "lineNumber": 1,
+                "columnNumber": 78231
+              },
+              {
+                "functionName": "fetchDetails",
+                "scriptId": "783",
+                "url": "https://sonaveeb.ee/view/js/ww-search.js",
+                "lineNumber": 28,
+                "columnNumber": 3
+              },
+              {
+                "functionName": "",
+                "scriptId": "783",
+                "url": "https://sonaveeb.ee/view/js/ww-search.js",
+                "lineNumber": 127,
+                "columnNumber": 1
+              },
+              {
+                "functionName": "dispatch",
+                "scriptId": "767",
+                "url": "https://sonaveeb.ee/view/js/jquery-3.7.1.min.js",
+                "lineNumber": 1,
+                "columnNumber": 40034
+              },
+              {
+                "functionName": "v.handle",
+                "scriptId": "767",
+                "url": "https://sonaveeb.ee/view/js/jquery-3.7.1.min.js",
+                "lineNumber": 1,
+                "columnNumber": 38005
+              },
+              {
+                "functionName": "trigger",
+                "scriptId": "767",
+                "url": "https://sonaveeb.ee/view/js/jquery-3.7.1.min.js",
+                "lineNumber": 1,
+                "columnNumber": 70123
+              },
+              {
+                "functionName": "",
+                "scriptId": "767",
+                "url": "https://sonaveeb.ee/view/js/jquery-3.7.1.min.js",
+                "lineNumber": 1,
+                "columnNumber": 70725
+              },
+              {
+                "functionName": "each",
+                "scriptId": "767",
+                "url": "https://sonaveeb.ee/view/js/jquery-3.7.1.min.js",
+                "lineNumber": 1,
+                "columnNumber": 3128
+              },
+              {
+                "functionName": "each",
+                "scriptId": "767",
+                "url": "https://sonaveeb.ee/view/js/jquery-3.7.1.min.js",
+                "lineNumber": 1,
+                "columnNumber": 1593
+              },
+              {
+                "functionName": "trigger",
+                "scriptId": "767",
+                "url": "https://sonaveeb.ee/view/js/jquery-3.7.1.min.js",
+                "lineNumber": 1,
+                "columnNumber": 70700
+              },
+              {
+                "functionName": "initHomonymList",
+                "scriptId": "779",
+                "url": "https://sonaveeb.ee/view/js/shared.js",
+                "lineNumber": 12,
+                "columnNumber": 7
+              },
+              {
+                "functionName": "",
+                "scriptId": "779",
+                "url": "https://sonaveeb.ee/view/js/shared.js",
+                "lineNumber": 3,
+                "columnNumber": 2
+              },
+              {
+                "functionName": "e",
+                "scriptId": "767",
+                "url": "https://sonaveeb.ee/view/js/jquery-3.7.1.min.js",
+                "lineNumber": 1,
+                "columnNumber": 27027
+              },
+              {
+                "functionName": "t",
+                "scriptId": "767",
+                "url": "https://sonaveeb.ee/view/js/jquery-3.7.1.min.js",
+                "lineNumber": 1,
+                "columnNumber": 27329
+              }
+            ],
+            "parent": {
+              "description": "setTimeout",
+              "callFrames": [
+                {
+                  "functionName": "",
+                  "scriptId": "767",
+                  "url": "https://sonaveeb.ee/view/js/jquery-3.7.1.min.js",
+                  "lineNumber": 1,
+                  "columnNumber": 27593
+                },
+                {
+                  "functionName": "c",
+                  "scriptId": "767",
+                  "url": "https://sonaveeb.ee/view/js/jquery-3.7.1.min.js",
+                  "lineNumber": 1,
+                  "columnNumber": 25303
+                },
+                {
+                  "functionName": "fireWith",
+                  "scriptId": "767",
+                  "url": "https://sonaveeb.ee/view/js/jquery-3.7.1.min.js",
+                  "lineNumber": 1,
+                  "columnNumber": 26052
+                },
+                {
+                  "functionName": "fire",
+                  "scriptId": "767",
+                  "url": "https://sonaveeb.ee/view/js/jquery-3.7.1.min.js",
+                  "lineNumber": 1,
+                  "columnNumber": 26088
+                },
+                {
+                  "functionName": "c",
+                  "scriptId": "767",
+                  "url": "https://sonaveeb.ee/view/js/jquery-3.7.1.min.js",
+                  "lineNumber": 1,
+                  "columnNumber": 25303
+                },
+                {
+                  "functionName": "fireWith",
+                  "scriptId": "767",
+                  "url": "https://sonaveeb.ee/view/js/jquery-3.7.1.min.js",
+                  "lineNumber": 1,
+                  "columnNumber": 26052
+                },
+                {
+                  "functionName": "ready",
+                  "scriptId": "767",
+                  "url": "https://sonaveeb.ee/view/js/jquery-3.7.1.min.js",
+                  "lineNumber": 1,
+                  "columnNumber": 29111
+                },
+                {
+                  "functionName": "P",
+                  "scriptId": "767",
+                  "url": "https://sonaveeb.ee/view/js/jquery-3.7.1.min.js",
+                  "lineNumber": 1,
+                  "columnNumber": 28883
+                }
+              ]
+            }
+          }
+        },
+        "_priority": "High",
+        "_resourceType": "xhr",
+        "cache": {},
+        "connection": "443",
+        "pageref": "page_1",
+        "request": {
+          "method": "GET",
+          "url": "https://sonaveeb.ee/worddetails/unif/828933",
+          "httpVersion": "HTTP/1.1",
+          "headers": [
+            {
+              "name": "Accept",
+              "value": "*/*"
+            },
+            {
+              "name": "Accept-Encoding",
+              "value": "gzip, deflate, br, zstd"
+            },
+            {
+              "name": "Accept-Language",
+              "value": "en-US,en;q=0.9"
+            },
+            {
+              "name": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "name": "Host",
+              "value": "sonaveeb.ee"
+            },
+            {
+              "name": "Referer",
+              "value": "https://sonaveeb.ee/search/unif/dlall/skt/abandonment"
+            },
+            {
+              "name": "Sec-Fetch-Dest",
+              "value": "empty"
+            },
+            {
+              "name": "Sec-Fetch-Mode",
+              "value": "cors"
+            },
+            {
+              "name": "Sec-Fetch-Site",
+              "value": "same-origin"
+            },
+            {
+              "name": "User-Agent",
+              "value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36"
+            },
+            {
+              "name": "X-Requested-With",
+              "value": "XMLHttpRequest"
+            },
+            {
+              "name": "sec-ch-ua",
+              "value": "\"Not A(Brand\";v=\"8\", \"Chromium\";v=\"132\", \"Google Chrome\";v=\"132\""
+            },
+            {
+              "name": "sec-ch-ua-mobile",
+              "value": "?0"
+            },
+            {
+              "name": "sec-ch-ua-platform",
+              "value": "\"Linux\""
+            }
+          ],
+          "queryString": [],
+          "cookies": [],
+          "headersSize": 815,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "200",
+          "httpVersion": "HTTP/1.1",
+          "headers": [
+            {
+              "name": "Access-Control-Allow-Origin",
+              "value": "*"
+            },
+            {
+              "name": "Cache-Control",
+              "value": "no-store"
+            },
+            {
+              "name": "Connection",
+              "value": "Keep-Alive"
+            },
+            {
+              "name": "Content-Encoding",
+              "value": "gzip"
+            },
+            {
+              "name": "Content-Language",
+              "value": "et"
+            },
+            {
+              "name": "Content-Type",
+              "value": "text/html;charset=UTF-8"
+            },
+            {
+              "name": "Date",
+              "value": "Wed, 15 Oct 2025 13:15:12 GMT"
+            },
+            {
+              "name": "Keep-Alive",
+              "value": "timeout=5, max=94"
+            },
+            {
+              "name": "Server",
+              "value": "Apache"
+            },
+            {
+              "name": "Strict-Transport-Security",
+              "value": "max-age=31536000 ; includeSubDomains"
+            },
+            {
+              "name": "Transfer-Encoding",
+              "value": "chunked"
+            },
+            {
+              "name": "Vary",
+              "value": "Accept-Encoding"
+            },
+            {
+              "name": "X-Content-Type-Options",
+              "value": "nosniff"
+            },
+            {
+              "name": "X-Frame-Options",
+              "value": "DENY"
+            },
+            {
+              "name": "X-XSS-Protection",
+              "value": "1; mode=block"
+            }
+          ],
+          "cookies": [],
+          "content": {
+            "size": 15592,
+            "mimeType": "text/html",
+            "compression": 12459
+          },
+          "redirectURL": "",
+          "headersSize": 475,
+          "bodySize": 3133,
+          "_transferSize": 3608,
+          "_error": null,
+          "_fetchedViaServiceWorker": false
+        },
+        "serverIPAddress": "185.174.162.174",
+        "startedDateTime": "2025-10-15T13:15:12.494Z",
+        "time": 987.0489999993879,
+        "timings": {
+          "blocked": 372.45400000090245,
+          "dns": -1,
+          "ssl": -1,
+          "connect": -1,
+          "send": 0.16100000000000136,
+          "wait": 572.6929999993931,
+          "receive": 41.74099999909231,
+          "_blocked_queueing": 1.8940000009024516,
+          "_workerStart": -1,
+          "_workerReady": -1,
+          "_workerFetchStart": -1,
+          "_workerRespondWithSettled": -1
+        }
+      },
+      {
+        "_connectionId": "4715",
+        "_initiator": {
+          "type": "script",
+          "stack": {
+            "callFrames": [
+              {
+                "functionName": "send",
+                "scriptId": "767",
+                "url": "https://sonaveeb.ee/view/js/jquery-3.7.1.min.js",
+                "lineNumber": 1,
+                "columnNumber": 80624
+              },
+              {
+                "functionName": "ajax",
+                "scriptId": "767",
+                "url": "https://sonaveeb.ee/view/js/jquery-3.7.1.min.js",
+                "lineNumber": 1,
+                "columnNumber": 76166
+              },
+              {
+                "functionName": "ce.<computed>",
+                "scriptId": "767",
+                "url": "https://sonaveeb.ee/view/js/jquery-3.7.1.min.js",
+                "lineNumber": 1,
+                "columnNumber": 78231
+              },
+              {
+                "functionName": "fetchCorpSentences",
+                "scriptId": "783",
+                "url": "https://sonaveeb.ee/view/js/ww-search.js",
+                "lineNumber": 70,
+                "columnNumber": 3
+              },
+              {
+                "functionName": "",
+                "scriptId": "783",
+                "url": "https://sonaveeb.ee/view/js/ww-search.js",
+                "lineNumber": 34,
+                "columnNumber": 2
+              },
+              {
+                "functionName": "c",
+                "scriptId": "767",
+                "url": "https://sonaveeb.ee/view/js/jquery-3.7.1.min.js",
+                "lineNumber": 1,
+                "columnNumber": 25303
+              },
+              {
+                "functionName": "fireWith",
+                "scriptId": "767",
+                "url": "https://sonaveeb.ee/view/js/jquery-3.7.1.min.js",
+                "lineNumber": 1,
+                "columnNumber": 26052
+              },
+              {
+                "functionName": "l",
+                "scriptId": "767",
+                "url": "https://sonaveeb.ee/view/js/jquery-3.7.1.min.js",
+                "lineNumber": 1,
+                "columnNumber": 77781
+              },
+              {
+                "functionName": "",
+                "scriptId": "767",
+                "url": "https://sonaveeb.ee/view/js/jquery-3.7.1.min.js",
+                "lineNumber": 1,
+                "columnNumber": 80264
+              }
+            ],
+            "parent": {
+              "description": "load",
+              "callFrames": [
+                {
+                  "functionName": "send",
+                  "scriptId": "767",
+                  "url": "https://sonaveeb.ee/view/js/jquery-3.7.1.min.js",
+                  "lineNumber": 1,
+                  "columnNumber": 80449
+                },
+                {
+                  "functionName": "ajax",
+                  "scriptId": "767",
+                  "url": "https://sonaveeb.ee/view/js/jquery-3.7.1.min.js",
+                  "lineNumber": 1,
+                  "columnNumber": 76166
+                },
+                {
+                  "functionName": "ce.<computed>",
+                  "scriptId": "767",
+                  "url": "https://sonaveeb.ee/view/js/jquery-3.7.1.min.js",
+                  "lineNumber": 1,
+                  "columnNumber": 78231
+                },
+                {
+                  "functionName": "fetchDetails",
+                  "scriptId": "783",
+                  "url": "https://sonaveeb.ee/view/js/ww-search.js",
+                  "lineNumber": 28,
+                  "columnNumber": 3
+                },
+                {
+                  "functionName": "",
+                  "scriptId": "783",
+                  "url": "https://sonaveeb.ee/view/js/ww-search.js",
+                  "lineNumber": 127,
+                  "columnNumber": 1
+                },
+                {
+                  "functionName": "dispatch",
+                  "scriptId": "767",
+                  "url": "https://sonaveeb.ee/view/js/jquery-3.7.1.min.js",
+                  "lineNumber": 1,
+                  "columnNumber": 40034
+                },
+                {
+                  "functionName": "v.handle",
+                  "scriptId": "767",
+                  "url": "https://sonaveeb.ee/view/js/jquery-3.7.1.min.js",
+                  "lineNumber": 1,
+                  "columnNumber": 38005
+                },
+                {
+                  "functionName": "trigger",
+                  "scriptId": "767",
+                  "url": "https://sonaveeb.ee/view/js/jquery-3.7.1.min.js",
+                  "lineNumber": 1,
+                  "columnNumber": 70123
+                },
+                {
+                  "functionName": "",
+                  "scriptId": "767",
+                  "url": "https://sonaveeb.ee/view/js/jquery-3.7.1.min.js",
+                  "lineNumber": 1,
+                  "columnNumber": 70725
+                },
+                {
+                  "functionName": "each",
+                  "scriptId": "767",
+                  "url": "https://sonaveeb.ee/view/js/jquery-3.7.1.min.js",
+                  "lineNumber": 1,
+                  "columnNumber": 3128
+                },
+                {
+                  "functionName": "each",
+                  "scriptId": "767",
+                  "url": "https://sonaveeb.ee/view/js/jquery-3.7.1.min.js",
+                  "lineNumber": 1,
+                  "columnNumber": 1593
+                },
+                {
+                  "functionName": "trigger",
+                  "scriptId": "767",
+                  "url": "https://sonaveeb.ee/view/js/jquery-3.7.1.min.js",
+                  "lineNumber": 1,
+                  "columnNumber": 70700
+                },
+                {
+                  "functionName": "initHomonymList",
+                  "scriptId": "779",
+                  "url": "https://sonaveeb.ee/view/js/shared.js",
+                  "lineNumber": 12,
+                  "columnNumber": 7
+                },
+                {
+                  "functionName": "",
+                  "scriptId": "779",
+                  "url": "https://sonaveeb.ee/view/js/shared.js",
+                  "lineNumber": 3,
+                  "columnNumber": 2
+                },
+                {
+                  "functionName": "e",
+                  "scriptId": "767",
+                  "url": "https://sonaveeb.ee/view/js/jquery-3.7.1.min.js",
+                  "lineNumber": 1,
+                  "columnNumber": 27027
+                },
+                {
+                  "functionName": "t",
+                  "scriptId": "767",
+                  "url": "https://sonaveeb.ee/view/js/jquery-3.7.1.min.js",
+                  "lineNumber": 1,
+                  "columnNumber": 27329
+                }
+              ],
+              "parent": {
+                "description": "setTimeout",
+                "callFrames": [
+                  {
+                    "functionName": "",
+                    "scriptId": "767",
+                    "url": "https://sonaveeb.ee/view/js/jquery-3.7.1.min.js",
+                    "lineNumber": 1,
+                    "columnNumber": 27593
+                  },
+                  {
+                    "functionName": "c",
+                    "scriptId": "767",
+                    "url": "https://sonaveeb.ee/view/js/jquery-3.7.1.min.js",
+                    "lineNumber": 1,
+                    "columnNumber": 25303
+                  },
+                  {
+                    "functionName": "fireWith",
+                    "scriptId": "767",
+                    "url": "https://sonaveeb.ee/view/js/jquery-3.7.1.min.js",
+                    "lineNumber": 1,
+                    "columnNumber": 26052
+                  },
+                  {
+                    "functionName": "fire",
+                    "scriptId": "767",
+                    "url": "https://sonaveeb.ee/view/js/jquery-3.7.1.min.js",
+                    "lineNumber": 1,
+                    "columnNumber": 26088
+                  },
+                  {
+                    "functionName": "c",
+                    "scriptId": "767",
+                    "url": "https://sonaveeb.ee/view/js/jquery-3.7.1.min.js",
+                    "lineNumber": 1,
+                    "columnNumber": 25303
+                  },
+                  {
+                    "functionName": "fireWith",
+                    "scriptId": "767",
+                    "url": "https://sonaveeb.ee/view/js/jquery-3.7.1.min.js",
+                    "lineNumber": 1,
+                    "columnNumber": 26052
+                  },
+                  {
+                    "functionName": "ready",
+                    "scriptId": "767",
+                    "url": "https://sonaveeb.ee/view/js/jquery-3.7.1.min.js",
+                    "lineNumber": 1,
+                    "columnNumber": 29111
+                  },
+                  {
+                    "functionName": "P",
+                    "scriptId": "767",
+                    "url": "https://sonaveeb.ee/view/js/jquery-3.7.1.min.js",
+                    "lineNumber": 1,
+                    "columnNumber": 28883
+                  }
+                ]
+              }
+            }
+          }
+        },
+        "_priority": "High",
+        "_resourceType": "xhr",
+        "cache": {},
+        "connection": "443",
+        "pageref": "page_1",
+        "request": {
+          "method": "GET",
+          "url": "https://sonaveeb.ee/corp/detail/abandonment/eng",
+          "httpVersion": "HTTP/1.1",
+          "headers": [
+            {
+              "name": "Accept",
+              "value": "*/*"
+            },
+            {
+              "name": "Accept-Encoding",
+              "value": "gzip, deflate, br, zstd"
+            },
+            {
+              "name": "Accept-Language",
+              "value": "en-US,en;q=0.9"
+            },
+            {
+              "name": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "name": "Host",
+              "value": "sonaveeb.ee"
+            },
+            {
+              "name": "Referer",
+              "value": "https://sonaveeb.ee/search/unif/dlall/skt/abandonment"
+            },
+            {
+              "name": "Sec-Fetch-Dest",
+              "value": "empty"
+            },
+            {
+              "name": "Sec-Fetch-Mode",
+              "value": "cors"
+            },
+            {
+              "name": "Sec-Fetch-Site",
+              "value": "same-origin"
+            },
+            {
+              "name": "User-Agent",
+              "value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36"
+            },
+            {
+              "name": "X-Requested-With",
+              "value": "XMLHttpRequest"
+            },
+            {
+              "name": "sec-ch-ua",
+              "value": "\"Not A(Brand\";v=\"8\", \"Chromium\";v=\"132\", \"Google Chrome\";v=\"132\""
+            },
+            {
+              "name": "sec-ch-ua-mobile",
+              "value": "?0"
+            },
+            {
+              "name": "sec-ch-ua-platform",
+              "value": "\"Linux\""
+            }
+          ],
+          "queryString": [],
+          "cookies": [],
+          "headersSize": 819,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "200",
+          "httpVersion": "HTTP/1.1",
+          "headers": [
+            {
+              "name": "Access-Control-Allow-Origin",
+              "value": "*"
+            },
+            {
+              "name": "Cache-Control",
+              "value": "no-store"
+            },
+            {
+              "name": "Connection",
+              "value": "Keep-Alive"
+            },
+            {
+              "name": "Content-Encoding",
+              "value": "gzip"
+            },
+            {
+              "name": "Content-Language",
+              "value": "et"
+            },
+            {
+              "name": "Content-Type",
+              "value": "text/html;charset=UTF-8"
+            },
+            {
+              "name": "Date",
+              "value": "Wed, 15 Oct 2025 13:15:13 GMT"
+            },
+            {
+              "name": "Keep-Alive",
+              "value": "timeout=5, max=93"
+            },
+            {
+              "name": "Server",
+              "value": "Apache"
+            },
+            {
+              "name": "Strict-Transport-Security",
+              "value": "max-age=31536000 ; includeSubDomains"
+            },
+            {
+              "name": "Transfer-Encoding",
+              "value": "chunked"
+            },
+            {
+              "name": "Vary",
+              "value": "Accept-Encoding"
+            },
+            {
+              "name": "X-Content-Type-Options",
+              "value": "nosniff"
+            },
+            {
+              "name": "X-Frame-Options",
+              "value": "DENY"
+            },
+            {
+              "name": "X-XSS-Protection",
+              "value": "1; mode=block"
+            }
+          ],
+          "cookies": [],
+          "content": {
+            "size": 598,
+            "mimeType": "text/html",
+            "compression": 281
+          },
+          "redirectURL": "",
+          "headersSize": 475,
+          "bodySize": 317,
+          "_transferSize": 792,
+          "_error": null,
+          "_fetchedViaServiceWorker": false
+        },
+        "serverIPAddress": "185.174.162.174",
+        "startedDateTime": "2025-10-15T13:15:13.505Z",
+        "time": 595.1370000002498,
+        "timings": {
+          "blocked": 8.870000000371714,
+          "dns": -1,
+          "ssl": -1,
+          "connect": -1,
+          "send": 0.1819999999999995,
+          "wait": 584.2189999993598,
+          "receive": 1.8660000005183974,
+          "_blocked_queueing": 4.896000000371714,
+          "_workerStart": -1,
+          "_workerReady": -1,
+          "_workerFetchStart": -1,
+          "_workerRespondWithSettled": -1
+        }
+      },
+      {
+        "_connectionId": "4707",
+        "_initiator": {
+          "type": "script",
+          "stack": {
+            "callFrames": [
+              {
+                "functionName": "send",
+                "scriptId": "767",
+                "url": "https://sonaveeb.ee/view/js/jquery-3.7.1.min.js",
+                "lineNumber": 1,
+                "columnNumber": 80624
+              },
+              {
+                "functionName": "ajax",
+                "scriptId": "767",
+                "url": "https://sonaveeb.ee/view/js/jquery-3.7.1.min.js",
+                "lineNumber": 1,
+                "columnNumber": 76166
+              },
+              {
+                "functionName": "ce.<computed>",
+                "scriptId": "767",
+                "url": "https://sonaveeb.ee/view/js/jquery-3.7.1.min.js",
+                "lineNumber": 1,
+                "columnNumber": 78231
+              },
+              {
+                "functionName": "fetchCorpTranslations",
+                "scriptId": "783",
+                "url": "https://sonaveeb.ee/view/js/ww-search.js",
+                "lineNumber": 79,
+                "columnNumber": 3
+              },
+              {
+                "functionName": "",
+                "scriptId": "783",
+                "url": "https://sonaveeb.ee/view/js/ww-search.js",
+                "lineNumber": 35,
+                "columnNumber": 2
+              },
+              {
+                "functionName": "c",
+                "scriptId": "767",
+                "url": "https://sonaveeb.ee/view/js/jquery-3.7.1.min.js",
+                "lineNumber": 1,
+                "columnNumber": 25303
+              },
+              {
+                "functionName": "fireWith",
+                "scriptId": "767",
+                "url": "https://sonaveeb.ee/view/js/jquery-3.7.1.min.js",
+                "lineNumber": 1,
+                "columnNumber": 26052
+              },
+              {
+                "functionName": "l",
+                "scriptId": "767",
+                "url": "https://sonaveeb.ee/view/js/jquery-3.7.1.min.js",
+                "lineNumber": 1,
+                "columnNumber": 77781
+              },
+              {
+                "functionName": "",
+                "scriptId": "767",
+                "url": "https://sonaveeb.ee/view/js/jquery-3.7.1.min.js",
+                "lineNumber": 1,
+                "columnNumber": 80264
+              }
+            ],
+            "parent": {
+              "description": "load",
+              "callFrames": [
+                {
+                  "functionName": "send",
+                  "scriptId": "767",
+                  "url": "https://sonaveeb.ee/view/js/jquery-3.7.1.min.js",
+                  "lineNumber": 1,
+                  "columnNumber": 80449
+                },
+                {
+                  "functionName": "ajax",
+                  "scriptId": "767",
+                  "url": "https://sonaveeb.ee/view/js/jquery-3.7.1.min.js",
+                  "lineNumber": 1,
+                  "columnNumber": 76166
+                },
+                {
+                  "functionName": "ce.<computed>",
+                  "scriptId": "767",
+                  "url": "https://sonaveeb.ee/view/js/jquery-3.7.1.min.js",
+                  "lineNumber": 1,
+                  "columnNumber": 78231
+                },
+                {
+                  "functionName": "fetchDetails",
+                  "scriptId": "783",
+                  "url": "https://sonaveeb.ee/view/js/ww-search.js",
+                  "lineNumber": 28,
+                  "columnNumber": 3
+                },
+                {
+                  "functionName": "",
+                  "scriptId": "783",
+                  "url": "https://sonaveeb.ee/view/js/ww-search.js",
+                  "lineNumber": 127,
+                  "columnNumber": 1
+                },
+                {
+                  "functionName": "dispatch",
+                  "scriptId": "767",
+                  "url": "https://sonaveeb.ee/view/js/jquery-3.7.1.min.js",
+                  "lineNumber": 1,
+                  "columnNumber": 40034
+                },
+                {
+                  "functionName": "v.handle",
+                  "scriptId": "767",
+                  "url": "https://sonaveeb.ee/view/js/jquery-3.7.1.min.js",
+                  "lineNumber": 1,
+                  "columnNumber": 38005
+                },
+                {
+                  "functionName": "trigger",
+                  "scriptId": "767",
+                  "url": "https://sonaveeb.ee/view/js/jquery-3.7.1.min.js",
+                  "lineNumber": 1,
+                  "columnNumber": 70123
+                },
+                {
+                  "functionName": "",
+                  "scriptId": "767",
+                  "url": "https://sonaveeb.ee/view/js/jquery-3.7.1.min.js",
+                  "lineNumber": 1,
+                  "columnNumber": 70725
+                },
+                {
+                  "functionName": "each",
+                  "scriptId": "767",
+                  "url": "https://sonaveeb.ee/view/js/jquery-3.7.1.min.js",
+                  "lineNumber": 1,
+                  "columnNumber": 3128
+                },
+                {
+                  "functionName": "each",
+                  "scriptId": "767",
+                  "url": "https://sonaveeb.ee/view/js/jquery-3.7.1.min.js",
+                  "lineNumber": 1,
+                  "columnNumber": 1593
+                },
+                {
+                  "functionName": "trigger",
+                  "scriptId": "767",
+                  "url": "https://sonaveeb.ee/view/js/jquery-3.7.1.min.js",
+                  "lineNumber": 1,
+                  "columnNumber": 70700
+                },
+                {
+                  "functionName": "initHomonymList",
+                  "scriptId": "779",
+                  "url": "https://sonaveeb.ee/view/js/shared.js",
+                  "lineNumber": 12,
+                  "columnNumber": 7
+                },
+                {
+                  "functionName": "",
+                  "scriptId": "779",
+                  "url": "https://sonaveeb.ee/view/js/shared.js",
+                  "lineNumber": 3,
+                  "columnNumber": 2
+                },
+                {
+                  "functionName": "e",
+                  "scriptId": "767",
+                  "url": "https://sonaveeb.ee/view/js/jquery-3.7.1.min.js",
+                  "lineNumber": 1,
+                  "columnNumber": 27027
+                },
+                {
+                  "functionName": "t",
+                  "scriptId": "767",
+                  "url": "https://sonaveeb.ee/view/js/jquery-3.7.1.min.js",
+                  "lineNumber": 1,
+                  "columnNumber": 27329
+                }
+              ],
+              "parent": {
+                "description": "setTimeout",
+                "callFrames": [
+                  {
+                    "functionName": "",
+                    "scriptId": "767",
+                    "url": "https://sonaveeb.ee/view/js/jquery-3.7.1.min.js",
+                    "lineNumber": 1,
+                    "columnNumber": 27593
+                  },
+                  {
+                    "functionName": "c",
+                    "scriptId": "767",
+                    "url": "https://sonaveeb.ee/view/js/jquery-3.7.1.min.js",
+                    "lineNumber": 1,
+                    "columnNumber": 25303
+                  },
+                  {
+                    "functionName": "fireWith",
+                    "scriptId": "767",
+                    "url": "https://sonaveeb.ee/view/js/jquery-3.7.1.min.js",
+                    "lineNumber": 1,
+                    "columnNumber": 26052
+                  },
+                  {
+                    "functionName": "fire",
+                    "scriptId": "767",
+                    "url": "https://sonaveeb.ee/view/js/jquery-3.7.1.min.js",
+                    "lineNumber": 1,
+                    "columnNumber": 26088
+                  },
+                  {
+                    "functionName": "c",
+                    "scriptId": "767",
+                    "url": "https://sonaveeb.ee/view/js/jquery-3.7.1.min.js",
+                    "lineNumber": 1,
+                    "columnNumber": 25303
+                  },
+                  {
+                    "functionName": "fireWith",
+                    "scriptId": "767",
+                    "url": "https://sonaveeb.ee/view/js/jquery-3.7.1.min.js",
+                    "lineNumber": 1,
+                    "columnNumber": 26052
+                  },
+                  {
+                    "functionName": "ready",
+                    "scriptId": "767",
+                    "url": "https://sonaveeb.ee/view/js/jquery-3.7.1.min.js",
+                    "lineNumber": 1,
+                    "columnNumber": 29111
+                  },
+                  {
+                    "functionName": "P",
+                    "scriptId": "767",
+                    "url": "https://sonaveeb.ee/view/js/jquery-3.7.1.min.js",
+                    "lineNumber": 1,
+                    "columnNumber": 28883
+                  }
+                ]
+              }
+            }
+          }
+        },
+        "_priority": "High",
+        "_resourceType": "xhr",
+        "cache": {},
+        "connection": "443",
+        "pageref": "page_1",
+        "request": {
+          "method": "GET",
+          "url": "https://sonaveeb.ee/corptrans/828933/abandonment/eng",
+          "httpVersion": "HTTP/1.1",
+          "headers": [
+            {
+              "name": "Accept",
+              "value": "*/*"
+            },
+            {
+              "name": "Accept-Encoding",
+              "value": "gzip, deflate, br, zstd"
+            },
+            {
+              "name": "Accept-Language",
+              "value": "en-US,en;q=0.9"
+            },
+            {
+              "name": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "name": "Host",
+              "value": "sonaveeb.ee"
+            },
+            {
+              "name": "Referer",
+              "value": "https://sonaveeb.ee/search/unif/dlall/skt/abandonment"
+            },
+            {
+              "name": "Sec-Fetch-Dest",
+              "value": "empty"
+            },
+            {
+              "name": "Sec-Fetch-Mode",
+              "value": "cors"
+            },
+            {
+              "name": "Sec-Fetch-Site",
+              "value": "same-origin"
+            },
+            {
+              "name": "User-Agent",
+              "value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36"
+            },
+            {
+              "name": "X-Requested-With",
+              "value": "XMLHttpRequest"
+            },
+            {
+              "name": "sec-ch-ua",
+              "value": "\"Not A(Brand\";v=\"8\", \"Chromium\";v=\"132\", \"Google Chrome\";v=\"132\""
+            },
+            {
+              "name": "sec-ch-ua-mobile",
+              "value": "?0"
+            },
+            {
+              "name": "sec-ch-ua-platform",
+              "value": "\"Linux\""
+            }
+          ],
+          "queryString": [],
+          "cookies": [],
+          "headersSize": 824,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "200",
+          "httpVersion": "HTTP/1.1",
+          "headers": [
+            {
+              "name": "Access-Control-Allow-Origin",
+              "value": "*"
+            },
+            {
+              "name": "Cache-Control",
+              "value": "no-store"
+            },
+            {
+              "name": "Connection",
+              "value": "Keep-Alive"
+            },
+            {
+              "name": "Content-Encoding",
+              "value": "gzip"
+            },
+            {
+              "name": "Content-Language",
+              "value": "et"
+            },
+            {
+              "name": "Content-Type",
+              "value": "text/html;charset=UTF-8"
+            },
+            {
+              "name": "Date",
+              "value": "Wed, 15 Oct 2025 13:15:13 GMT"
+            },
+            {
+              "name": "Keep-Alive",
+              "value": "timeout=5, max=93"
+            },
+            {
+              "name": "Server",
+              "value": "Apache"
+            },
+            {
+              "name": "Strict-Transport-Security",
+              "value": "max-age=31536000 ; includeSubDomains"
+            },
+            {
+              "name": "Transfer-Encoding",
+              "value": "chunked"
+            },
+            {
+              "name": "Vary",
+              "value": "Accept-Encoding"
+            },
+            {
+              "name": "X-Content-Type-Options",
+              "value": "nosniff"
+            },
+            {
+              "name": "X-Frame-Options",
+              "value": "DENY"
+            },
+            {
+              "name": "X-XSS-Protection",
+              "value": "1; mode=block"
+            }
+          ],
+          "cookies": [],
+          "content": {
+            "size": 709,
+            "mimeType": "text/html",
+            "compression": 321
+          },
+          "redirectURL": "",
+          "headersSize": 475,
+          "bodySize": 388,
+          "_transferSize": 863,
+          "_error": null,
+          "_fetchedViaServiceWorker": false
+        },
+        "serverIPAddress": "185.174.162.174",
+        "startedDateTime": "2025-10-15T13:15:13.507Z",
+        "time": 600.2130000015313,
+        "timings": {
+          "blocked": 6.674000001475448,
+          "dns": -1,
+          "ssl": -1,
+          "connect": -1,
+          "send": 0.11900000000000022,
+          "wait": 591.7620000008313,
+          "receive": 1.6579999992245575,
+          "_blocked_queueing": 3.153000001475448,
+          "_workerStart": -1,
+          "_workerReady": -1,
+          "_workerFetchStart": -1,
+          "_workerRespondWithSettled": -1
+        }
+      },
+      {
+        "_initiator": {
+          "type": "script",
+          "stack": {
+            "callFrames": [
+              {
+                "functionName": "cd",
+                "scriptId": "801",
+                "url": "https://www.googletagmanager.com/gtag/js?id=G-DR23BQSFEN&cx=c&gtm=4e5ad0",
+                "lineNumber": 233,
+                "columnNumber": 333
+              },
+              {
+                "functionName": "bl",
+                "scriptId": "801",
+                "url": "https://www.googletagmanager.com/gtag/js?id=G-DR23BQSFEN&cx=c&gtm=4e5ad0",
+                "lineNumber": 384,
+                "columnNumber": 255
+              },
+              {
+                "functionName": "sN",
+                "scriptId": "801",
+                "url": "https://www.googletagmanager.com/gtag/js?id=G-DR23BQSFEN&cx=c&gtm=4e5ad0",
+                "lineNumber": 862,
+                "columnNumber": 226
+              },
+              {
+                "functionName": "k.flush",
+                "scriptId": "801",
+                "url": "https://www.googletagmanager.com/gtag/js?id=G-DR23BQSFEN&cx=c&gtm=4e5ad0",
+                "lineNumber": 869,
+                "columnNumber": 420
+              },
+              {
+                "functionName": "",
+                "scriptId": "801",
+                "url": "https://www.googletagmanager.com/gtag/js?id=G-DR23BQSFEN&cx=c&gtm=4e5ad0",
+                "lineNumber": 867,
+                "columnNumber": 160
+              }
+            ],
+            "parent": {
+              "description": "setTimeout",
+              "callFrames": [
+                {
+                  "functionName": "k.Kb",
+                  "scriptId": "801",
+                  "url": "https://www.googletagmanager.com/gtag/js?id=G-DR23BQSFEN&cx=c&gtm=4e5ad0",
+                  "lineNumber": 867,
+                  "columnNumber": 140
+                },
+                {
+                  "functionName": "k.add",
+                  "scriptId": "801",
+                  "url": "https://www.googletagmanager.com/gtag/js?id=G-DR23BQSFEN&cx=c&gtm=4e5ad0",
+                  "lineNumber": 869,
+                  "columnNumber": 332
+                },
+                {
+                  "functionName": "k.Nm",
+                  "scriptId": "801",
+                  "url": "https://www.googletagmanager.com/gtag/js?id=G-DR23BQSFEN&cx=c&gtm=4e5ad0",
+                  "lineNumber": 884,
+                  "columnNumber": 447
+                },
+                {
+                  "functionName": "k.lr",
+                  "scriptId": "801",
+                  "url": "https://www.googletagmanager.com/gtag/js?id=G-DR23BQSFEN&cx=c&gtm=4e5ad0",
+                  "lineNumber": 884,
+                  "columnNumber": 369
+                },
+                {
+                  "functionName": "",
+                  "scriptId": "801",
+                  "url": "https://www.googletagmanager.com/gtag/js?id=G-DR23BQSFEN&cx=c&gtm=4e5ad0",
+                  "lineNumber": 881,
+                  "columnNumber": 295
+                },
+                {
+                  "functionName": "vl",
+                  "scriptId": "801",
+                  "url": "https://www.googletagmanager.com/gtag/js?id=G-DR23BQSFEN&cx=c&gtm=4e5ad0",
+                  "lineNumber": 395,
+                  "columnNumber": 192
+                },
+                {
+                  "functionName": "Mn",
+                  "scriptId": "801",
+                  "url": "https://www.googletagmanager.com/gtag/js?id=G-DR23BQSFEN&cx=c&gtm=4e5ad0",
+                  "lineNumber": 414,
+                  "columnNumber": 67
+                },
+                {
+                  "functionName": "",
+                  "scriptId": "801",
+                  "url": "https://www.googletagmanager.com/gtag/js?id=G-DR23BQSFEN&cx=c&gtm=4e5ad0",
+                  "lineNumber": 881,
+                  "columnNumber": 279
+                },
+                {
+                  "functionName": "c",
+                  "scriptId": "801",
+                  "url": "https://www.googletagmanager.com/gtag/js?id=G-DR23BQSFEN&cx=c&gtm=4e5ad0",
+                  "lineNumber": 818,
+                  "columnNumber": 400
+                },
+                {
+                  "functionName": "BJ",
+                  "scriptId": "801",
+                  "url": "https://www.googletagmanager.com/gtag/js?id=G-DR23BQSFEN&cx=c&gtm=4e5ad0",
+                  "lineNumber": 818,
+                  "columnNumber": 436
+                },
+                {
+                  "functionName": "k.kr",
+                  "scriptId": "801",
+                  "url": "https://www.googletagmanager.com/gtag/js?id=G-DR23BQSFEN&cx=c&gtm=4e5ad0",
+                  "lineNumber": 881,
+                  "columnNumber": 265
+                },
+                {
+                  "functionName": "c",
+                  "scriptId": "801",
+                  "url": "https://www.googletagmanager.com/gtag/js?id=G-DR23BQSFEN&cx=c&gtm=4e5ad0",
+                  "lineNumber": 896,
+                  "columnNumber": 703
+                },
+                {
+                  "functionName": "u",
+                  "scriptId": "801",
+                  "url": "https://www.googletagmanager.com/gtag/js?id=G-DR23BQSFEN&cx=c&gtm=4e5ad0",
+                  "lineNumber": 465,
+                  "columnNumber": 323
+                },
+                {
+                  "functionName": "El",
+                  "scriptId": "801",
+                  "url": "https://www.googletagmanager.com/gtag/js?id=G-DR23BQSFEN&cx=c&gtm=4e5ad0",
+                  "lineNumber": 397,
+                  "columnNumber": 516
+                },
+                {
+                  "functionName": "Np",
+                  "scriptId": "801",
+                  "url": "https://www.googletagmanager.com/gtag/js?id=G-DR23BQSFEN&cx=c&gtm=4e5ad0",
+                  "lineNumber": 465,
+                  "columnNumber": 407
+                },
+                {
+                  "functionName": "Mp.flush",
+                  "scriptId": "801",
+                  "url": "https://www.googletagmanager.com/gtag/js?id=G-DR23BQSFEN&cx=c&gtm=4e5ad0",
+                  "lineNumber": 469,
+                  "columnNumber": 205
+                },
+                {
+                  "functionName": "Mp.register",
+                  "scriptId": "801",
+                  "url": "https://www.googletagmanager.com/gtag/js?id=G-DR23BQSFEN&cx=c&gtm=4e5ad0",
+                  "lineNumber": 466,
+                  "columnNumber": 123
+                },
+                {
+                  "functionName": "",
+                  "scriptId": "801",
+                  "url": "https://www.googletagmanager.com/gtag/js?id=G-DR23BQSFEN&cx=c&gtm=4e5ad0",
+                  "lineNumber": 896,
+                  "columnNumber": 549
+                },
+                {
+                  "functionName": "NO",
+                  "scriptId": "801",
+                  "url": "https://www.googletagmanager.com/gtag/js?id=G-DR23BQSFEN&cx=c&gtm=4e5ad0",
+                  "lineNumber": 896,
+                  "columnNumber": 444
+                },
+                {
+                  "functionName": "OO",
+                  "scriptId": "801",
+                  "url": "https://www.googletagmanager.com/gtag/js?id=G-DR23BQSFEN&cx=c&gtm=4e5ad0",
+                  "lineNumber": 896,
+                  "columnNumber": 159
+                },
+                {
+                  "functionName": "PO",
+                  "scriptId": "801",
+                  "url": "https://www.googletagmanager.com/gtag/js?id=G-DR23BQSFEN&cx=c&gtm=4e5ad0",
+                  "lineNumber": 896,
+                  "columnNumber": 475
+                },
+                {
+                  "functionName": "PP",
+                  "scriptId": "801",
+                  "url": "https://www.googletagmanager.com/gtag/js?id=G-DR23BQSFEN&cx=c&gtm=4e5ad0",
+                  "lineNumber": 905,
+                  "columnNumber": 1344
+                },
+                {
+                  "functionName": "",
+                  "scriptId": "801",
+                  "url": "https://www.googletagmanager.com/gtag/js?id=G-DR23BQSFEN&cx=c&gtm=4e5ad0",
+                  "lineNumber": 333,
+                  "columnNumber": 186
+                },
+                {
+                  "functionName": "k.invoke",
+                  "scriptId": "801",
+                  "url": "https://www.googletagmanager.com/gtag/js?id=G-DR23BQSFEN&cx=c&gtm=4e5ad0",
+                  "lineNumber": 245,
+                  "columnNumber": 361
+                },
+                {
+                  "functionName": "ab",
+                  "scriptId": "801",
+                  "url": "https://www.googletagmanager.com/gtag/js?id=G-DR23BQSFEN&cx=c&gtm=4e5ad0",
+                  "lineNumber": 208,
+                  "columnNumber": 390
+                },
+                {
+                  "functionName": "Za",
+                  "scriptId": "801",
+                  "url": "https://www.googletagmanager.com/gtag/js?id=G-DR23BQSFEN&cx=c&gtm=4e5ad0",
+                  "lineNumber": 207,
+                  "columnNumber": 526
+                },
+                {
+                  "functionName": "",
+                  "scriptId": "801",
+                  "url": "https://www.googletagmanager.com/gtag/js?id=G-DR23BQSFEN&cx=c&gtm=4e5ad0",
+                  "lineNumber": 269,
+                  "columnNumber": 472
+                },
+                {
+                  "functionName": "k.invoke",
+                  "scriptId": "801",
+                  "url": "https://www.googletagmanager.com/gtag/js?id=G-DR23BQSFEN&cx=c&gtm=4e5ad0",
+                  "lineNumber": 245,
+                  "columnNumber": 361
+                },
+                {
+                  "functionName": "ab",
+                  "scriptId": "801",
+                  "url": "https://www.googletagmanager.com/gtag/js?id=G-DR23BQSFEN&cx=c&gtm=4e5ad0",
+                  "lineNumber": 208,
+                  "columnNumber": 390
+                },
+                {
+                  "functionName": "k.mp",
+                  "scriptId": "801",
+                  "url": "https://www.googletagmanager.com/gtag/js?id=G-DR23BQSFEN&cx=c&gtm=4e5ad0",
+                  "lineNumber": 210,
+                  "columnNumber": 116
+                },
+                {
+                  "functionName": "ef",
+                  "scriptId": "801",
+                  "url": "https://www.googletagmanager.com/gtag/js?id=G-DR23BQSFEN&cx=c&gtm=4e5ad0",
+                  "lineNumber": 280,
+                  "columnNumber": 959
+                },
+                {
+                  "functionName": "",
+                  "scriptId": "801",
+                  "url": "https://www.googletagmanager.com/gtag/js?id=G-DR23BQSFEN&cx=c&gtm=4e5ad0",
+                  "lineNumber": 714,
+                  "columnNumber": 314
+                },
+                {
+                  "functionName": "cg",
+                  "scriptId": "801",
+                  "url": "https://www.googletagmanager.com/gtag/js?id=G-DR23BQSFEN&cx=c&gtm=4e5ad0",
+                  "lineNumber": 295,
+                  "columnNumber": 91
+                },
+                {
+                  "functionName": "e",
+                  "scriptId": "801",
+                  "url": "https://www.googletagmanager.com/gtag/js?id=G-DR23BQSFEN&cx=c&gtm=4e5ad0",
+                  "lineNumber": 662,
+                  "columnNumber": 229
+                },
+                {
+                  "functionName": "$z",
+                  "scriptId": "801",
+                  "url": "https://www.googletagmanager.com/gtag/js?id=G-DR23BQSFEN&cx=c&gtm=4e5ad0",
+                  "lineNumber": 663,
+                  "columnNumber": 873
+                },
+                {
+                  "functionName": "dA",
+                  "scriptId": "801",
+                  "url": "https://www.googletagmanager.com/gtag/js?id=G-DR23BQSFEN&cx=c&gtm=4e5ad0",
+                  "lineNumber": 668,
+                  "columnNumber": 150
+                },
+                {
+                  "functionName": "hB",
+                  "scriptId": "801",
+                  "url": "https://www.googletagmanager.com/gtag/js?id=G-DR23BQSFEN&cx=c&gtm=4e5ad0",
+                  "lineNumber": 690,
+                  "columnNumber": 307
+                },
+                {
+                  "functionName": "jB",
+                  "scriptId": "801",
+                  "url": "https://www.googletagmanager.com/gtag/js?id=G-DR23BQSFEN&cx=c&gtm=4e5ad0",
+                  "lineNumber": 692,
+                  "columnNumber": 46
+                },
+                {
+                  "functionName": "rm",
+                  "scriptId": "801",
+                  "url": "https://www.googletagmanager.com/gtag/js?id=G-DR23BQSFEN&cx=c&gtm=4e5ad0",
+                  "lineNumber": 975,
+                  "columnNumber": 65
+                },
+                {
+                  "functionName": "",
+                  "scriptId": "801",
+                  "url": "https://www.googletagmanager.com/gtag/js?id=G-DR23BQSFEN&cx=c&gtm=4e5ad0",
+                  "lineNumber": 978,
+                  "columnNumber": 267
+                },
+                {
+                  "functionName": "c",
+                  "scriptId": "801",
+                  "url": "https://www.googletagmanager.com/gtag/js?id=G-DR23BQSFEN&cx=c&gtm=4e5ad0",
+                  "lineNumber": 976,
+                  "columnNumber": 129
+                },
+                {
+                  "functionName": "",
+                  "scriptId": "801",
+                  "url": "https://www.googletagmanager.com/gtag/js?id=G-DR23BQSFEN&cx=c&gtm=4e5ad0",
+                  "lineNumber": 978,
+                  "columnNumber": 231
+                },
+                {
+                  "functionName": "",
+                  "scriptId": "801",
+                  "url": "https://www.googletagmanager.com/gtag/js?id=G-DR23BQSFEN&cx=c&gtm=4e5ad0",
+                  "lineNumber": 978,
+                  "columnNumber": 236
+                },
+                {
+                  "functionName": "",
+                  "scriptId": "801",
+                  "url": "https://www.googletagmanager.com/gtag/js?id=G-DR23BQSFEN&cx=c&gtm=4e5ad0",
+                  "lineNumber": 980,
+                  "columnNumber": 2
+                }
+              ]
+            }
+          }
+        },
+        "_priority": "High",
+        "_resourceType": "fetch",
+        "cache": {},
+        "connection": "443",
+        "pageref": "page_1",
+        "request": {
+          "method": "POST",
+          "url": "https://region1.analytics.google.com/g/collect?v=2&tid=G-DR23BQSFEN&gtm=45je5ad0v899184943z89198762616za200zb9198762616zd9198762616&_p=1760534111672&gcd=13l3l3l2l1l1&npa=1&dma_cps=syphamo&dma=1&cid=961838725.1760300577&ul=en-us&sr=1366x768&uaa=x86&uab=64&uafvl=Not%2520A(Brand%3B8.0.0.0%7CChromium%3B132.0.6834.110%7CGoogle%2520Chrome%3B132.0.6834.110&uamb=0&uam=&uap=Linux&uapv=6.14.0&uaw=0&are=1&frm=0&pscdl=noapi&_eu=AAAAAAQ&_s=1&tag_exp=101509157~103116026~103200004~103233427~104527906~104528501~104684208~104684211~104948813~115480709~115616986~115752876~115834636~115834638~115868792~115868794~115938466~115938469~115995680~115995682&sid=1760532903&sct=2&seg=1&dl=https%3A%2F%2Fsonaveeb.ee%2Fsearch%2Funif%2Fdlall%2Fskt%2Fabandonment%2F1%2Feng&dr=https%3A%2F%2Fsonaveeb.ee%2F&dt=Otsing%20-%20abandonment&en=page_view&tfd=12031",
+          "httpVersion": "h3",
+          "headers": [
+            {
+              "name": ":authority",
+              "value": "region1.analytics.google.com"
+            },
+            {
+              "name": ":method",
+              "value": "POST"
+            },
+            {
+              "name": ":path",
+              "value": "/g/collect?v=2&tid=G-DR23BQSFEN&gtm=45je5ad0v899184943z89198762616za200zb9198762616zd9198762616&_p=1760534111672&gcd=13l3l3l2l1l1&npa=1&dma_cps=syphamo&dma=1&cid=961838725.1760300577&ul=en-us&sr=1366x768&uaa=x86&uab=64&uafvl=Not%2520A(Brand%3B8.0.0.0%7CChromium%3B132.0.6834.110%7CGoogle%2520Chrome%3B132.0.6834.110&uamb=0&uam=&uap=Linux&uapv=6.14.0&uaw=0&are=1&frm=0&pscdl=noapi&_eu=AAAAAAQ&_s=1&tag_exp=101509157~103116026~103200004~103233427~104527906~104528501~104684208~104684211~104948813~115480709~115616986~115752876~115834636~115834638~115868792~115868794~115938466~115938469~115995680~115995682&sid=1760532903&sct=2&seg=1&dl=https%3A%2F%2Fsonaveeb.ee%2Fsearch%2Funif%2Fdlall%2Fskt%2Fabandonment%2F1%2Feng&dr=https%3A%2F%2Fsonaveeb.ee%2F&dt=Otsing%20-%20abandonment&en=page_view&tfd=12031"
+            },
+            {
+              "name": ":scheme",
+              "value": "https"
+            },
+            {
+              "name": "accept",
+              "value": "*/*"
+            },
+            {
+              "name": "accept-encoding",
+              "value": "gzip, deflate, br, zstd"
+            },
+            {
+              "name": "accept-language",
+              "value": "en-US,en;q=0.9"
+            },
+            {
+              "name": "content-length",
+              "value": "0"
+            },
+            {
+              "name": "origin",
+              "value": "https://sonaveeb.ee"
+            },
+            {
+              "name": "priority",
+              "value": "u=1, i"
+            },
+            {
+              "name": "referer",
+              "value": "https://sonaveeb.ee/"
+            },
+            {
+              "name": "sec-ch-ua",
+              "value": "\"Not A(Brand\";v=\"8\", \"Chromium\";v=\"132\", \"Google Chrome\";v=\"132\""
+            },
+            {
+              "name": "sec-ch-ua-mobile",
+              "value": "?0"
+            },
+            {
+              "name": "sec-ch-ua-platform",
+              "value": "\"Linux\""
+            },
+            {
+              "name": "sec-fetch-dest",
+              "value": "empty"
+            },
+            {
+              "name": "sec-fetch-mode",
+              "value": "no-cors"
+            },
+            {
+              "name": "sec-fetch-site",
+              "value": "cross-site"
+            },
+            {
+              "name": "user-agent",
+              "value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36"
+            },
+            {
+              "name": "x-client-data",
+              "value": "CJS2yQEIorbJAQipncoBCO6FywEIlqHLAQiHoM0BGPTJzQE="
+            }
+          ],
+          "queryString": [
+            {
+              "name": "v",
+              "value": "2"
+            },
+            {
+              "name": "tid",
+              "value": "G-DR23BQSFEN"
+            },
+            {
+              "name": "gtm",
+              "value": "45je5ad0v899184943z89198762616za200zb9198762616zd9198762616"
+            },
+            {
+              "name": "_p",
+              "value": "1760534111672"
+            },
+            {
+              "name": "gcd",
+              "value": "13l3l3l2l1l1"
+            },
+            {
+              "name": "npa",
+              "value": "1"
+            },
+            {
+              "name": "dma_cps",
+              "value": "syphamo"
+            },
+            {
+              "name": "dma",
+              "value": "1"
+            },
+            {
+              "name": "cid",
+              "value": "961838725.1760300577"
+            },
+            {
+              "name": "ul",
+              "value": "en-us"
+            },
+            {
+              "name": "sr",
+              "value": "1366x768"
+            },
+            {
+              "name": "uaa",
+              "value": "x86"
+            },
+            {
+              "name": "uab",
+              "value": "64"
+            },
+            {
+              "name": "uafvl",
+              "value": "Not%2520A(Brand%3B8.0.0.0%7CChromium%3B132.0.6834.110%7CGoogle%2520Chrome%3B132.0.6834.110"
+            },
+            {
+              "name": "uamb",
+              "value": "0"
+            },
+            {
+              "name": "uam",
+              "value": ""
+            },
+            {
+              "name": "uap",
+              "value": "Linux"
+            },
+            {
+              "name": "uapv",
+              "value": "6.14.0"
+            },
+            {
+              "name": "uaw",
+              "value": "0"
+            },
+            {
+              "name": "are",
+              "value": "1"
+            },
+            {
+              "name": "frm",
+              "value": "0"
+            },
+            {
+              "name": "pscdl",
+              "value": "noapi"
+            },
+            {
+              "name": "_eu",
+              "value": "AAAAAAQ"
+            },
+            {
+              "name": "_s",
+              "value": "1"
+            },
+            {
+              "name": "tag_exp",
+              "value": "101509157~103116026~103200004~103233427~104527906~104528501~104684208~104684211~104948813~115480709~115616986~115752876~115834636~115834638~115868792~115868794~115938466~115938469~115995680~115995682"
+            },
+            {
+              "name": "sid",
+              "value": "1760532903"
+            },
+            {
+              "name": "sct",
+              "value": "2"
+            },
+            {
+              "name": "seg",
+              "value": "1"
+            },
+            {
+              "name": "dl",
+              "value": "https%3A%2F%2Fsonaveeb.ee%2Fsearch%2Funif%2Fdlall%2Fskt%2Fabandonment%2F1%2Feng"
+            },
+            {
+              "name": "dr",
+              "value": "https%3A%2F%2Fsonaveeb.ee%2F"
+            },
+            {
+              "name": "dt",
+              "value": "Otsing%20-%20abandonment"
+            },
+            {
+              "name": "en",
+              "value": "page_view"
+            },
+            {
+              "name": "tfd",
+              "value": "12031"
+            }
+          ],
+          "cookies": [],
+          "headersSize": -1,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 204,
+          "statusText": "",
+          "httpVersion": "h3",
+          "headers": [
+            {
+              "name": "access-control-allow-credentials",
+              "value": "true"
+            },
+            {
+              "name": "access-control-allow-origin",
+              "value": "https://sonaveeb.ee"
+            },
+            {
+              "name": "alt-svc",
+              "value": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"
+            },
+            {
+              "name": "cache-control",
+              "value": "no-cache, no-store, must-revalidate"
+            },
+            {
+              "name": "content-length",
+              "value": "0"
+            },
+            {
+              "name": "content-security-policy-report-only",
+              "value": "script-src 'none'; form-action 'none'; frame-src 'none'; report-uri https://csp.withgoogle.com/csp/scaffolding/ascnsrsggc:158:0"
+            },
+            {
+              "name": "content-type",
+              "value": "text/plain"
+            },
+            {
+              "name": "cross-origin-opener-policy-report-only",
+              "value": "same-origin; report-to=ascnsrsggc:158:0"
+            },
+            {
+              "name": "cross-origin-resource-policy",
+              "value": "cross-origin"
+            },
+            {
+              "name": "date",
+              "value": "Wed, 15 Oct 2025 13:15:19 GMT"
+            },
+            {
+              "name": "expires",
+              "value": "Fri, 01 Jan 1990 00:00:00 GMT"
+            },
+            {
+              "name": "pragma",
+              "value": "no-cache"
+            },
+            {
+              "name": "report-to",
+              "value": "{\"group\":\"ascnsrsggc:158:0\",\"max_age\":2592000,\"endpoints\":[{\"url\":\"https://csp.withgoogle.com/csp/report-to/scaffolding/ascnsrsggc:158:0\"}],}"
+            },
+            {
+              "name": "server",
+              "value": "Golfe2"
+            }
+          ],
+          "cookies": [],
+          "content": {
+            "size": 0,
+            "mimeType": "text/plain"
+          },
+          "redirectURL": "",
+          "headersSize": -1,
+          "bodySize": -1,
+          "_transferSize": 20,
+          "_error": "net::ERR_ABORTED",
+          "_fetchedViaServiceWorker": false
+        },
+        "serverIPAddress": "216.239.32.36",
+        "startedDateTime": "2025-10-15T13:15:19.372Z",
+        "time": 590.0680000013381,
+        "timings": {
+          "blocked": 11.645000000177301,
+          "dns": -1,
+          "ssl": -1,
+          "connect": -1,
+          "send": 0.5279999999999998,
+          "wait": 572.2489999997267,
+          "receive": 5.646000001434004,
+          "_blocked_queueing": 9.6560000001773,
+          "_workerStart": -1,
+          "_workerReady": -1,
+          "_workerFetchStart": -1,
+          "_workerRespondWithSettled": -1
+        }
+      },
+      {
+        "_initiator": {
+          "type": "script",
+          "stack": {
+            "callFrames": [
+              {
+                "functionName": "cd",
+                "scriptId": "801",
+                "url": "https://www.googletagmanager.com/gtag/js?id=G-DR23BQSFEN&cx=c&gtm=4e5ad0",
+                "lineNumber": 233,
+                "columnNumber": 333
+              },
+              {
+                "functionName": "bl",
+                "scriptId": "801",
+                "url": "https://www.googletagmanager.com/gtag/js?id=G-DR23BQSFEN&cx=c&gtm=4e5ad0",
+                "lineNumber": 384,
+                "columnNumber": 255
+              },
+              {
+                "functionName": "sN",
+                "scriptId": "801",
+                "url": "https://www.googletagmanager.com/gtag/js?id=G-DR23BQSFEN&cx=c&gtm=4e5ad0",
+                "lineNumber": 862,
+                "columnNumber": 226
+              },
+              {
+                "functionName": "k.flush",
+                "scriptId": "801",
+                "url": "https://www.googletagmanager.com/gtag/js?id=G-DR23BQSFEN&cx=c&gtm=4e5ad0",
+                "lineNumber": 869,
+                "columnNumber": 420
+              },
+              {
+                "functionName": "",
+                "scriptId": "801",
+                "url": "https://www.googletagmanager.com/gtag/js?id=G-DR23BQSFEN&cx=c&gtm=4e5ad0",
+                "lineNumber": 867,
+                "columnNumber": 160
+              }
+            ],
+            "parent": {
+              "description": "setTimeout",
+              "callFrames": [
+                {
+                  "functionName": "k.Kb",
+                  "scriptId": "801",
+                  "url": "https://www.googletagmanager.com/gtag/js?id=G-DR23BQSFEN&cx=c&gtm=4e5ad0",
+                  "lineNumber": 867,
+                  "columnNumber": 140
+                },
+                {
+                  "functionName": "k.add",
+                  "scriptId": "801",
+                  "url": "https://www.googletagmanager.com/gtag/js?id=G-DR23BQSFEN&cx=c&gtm=4e5ad0",
+                  "lineNumber": 869,
+                  "columnNumber": 332
+                },
+                {
+                  "functionName": "k.Nm",
+                  "scriptId": "801",
+                  "url": "https://www.googletagmanager.com/gtag/js?id=G-DR23BQSFEN&cx=c&gtm=4e5ad0",
+                  "lineNumber": 884,
+                  "columnNumber": 447
+                },
+                {
+                  "functionName": "k.lr",
+                  "scriptId": "801",
+                  "url": "https://www.googletagmanager.com/gtag/js?id=G-DR23BQSFEN&cx=c&gtm=4e5ad0",
+                  "lineNumber": 884,
+                  "columnNumber": 369
+                },
+                {
+                  "functionName": "",
+                  "scriptId": "801",
+                  "url": "https://www.googletagmanager.com/gtag/js?id=G-DR23BQSFEN&cx=c&gtm=4e5ad0",
+                  "lineNumber": 881,
+                  "columnNumber": 295
+                },
+                {
+                  "functionName": "vl",
+                  "scriptId": "801",
+                  "url": "https://www.googletagmanager.com/gtag/js?id=G-DR23BQSFEN&cx=c&gtm=4e5ad0",
+                  "lineNumber": 395,
+                  "columnNumber": 192
+                },
+                {
+                  "functionName": "Mn",
+                  "scriptId": "801",
+                  "url": "https://www.googletagmanager.com/gtag/js?id=G-DR23BQSFEN&cx=c&gtm=4e5ad0",
+                  "lineNumber": 414,
+                  "columnNumber": 67
+                },
+                {
+                  "functionName": "",
+                  "scriptId": "801",
+                  "url": "https://www.googletagmanager.com/gtag/js?id=G-DR23BQSFEN&cx=c&gtm=4e5ad0",
+                  "lineNumber": 881,
+                  "columnNumber": 279
+                },
+                {
+                  "functionName": "c",
+                  "scriptId": "801",
+                  "url": "https://www.googletagmanager.com/gtag/js?id=G-DR23BQSFEN&cx=c&gtm=4e5ad0",
+                  "lineNumber": 818,
+                  "columnNumber": 400
+                },
+                {
+                  "functionName": "BJ",
+                  "scriptId": "801",
+                  "url": "https://www.googletagmanager.com/gtag/js?id=G-DR23BQSFEN&cx=c&gtm=4e5ad0",
+                  "lineNumber": 818,
+                  "columnNumber": 436
+                },
+                {
+                  "functionName": "k.kr",
+                  "scriptId": "801",
+                  "url": "https://www.googletagmanager.com/gtag/js?id=G-DR23BQSFEN&cx=c&gtm=4e5ad0",
+                  "lineNumber": 881,
+                  "columnNumber": 265
+                },
+                {
+                  "functionName": "c",
+                  "scriptId": "801",
+                  "url": "https://www.googletagmanager.com/gtag/js?id=G-DR23BQSFEN&cx=c&gtm=4e5ad0",
+                  "lineNumber": 896,
+                  "columnNumber": 703
+                },
+                {
+                  "functionName": "u",
+                  "scriptId": "801",
+                  "url": "https://www.googletagmanager.com/gtag/js?id=G-DR23BQSFEN&cx=c&gtm=4e5ad0",
+                  "lineNumber": 465,
+                  "columnNumber": 323
+                },
+                {
+                  "functionName": "El",
+                  "scriptId": "801",
+                  "url": "https://www.googletagmanager.com/gtag/js?id=G-DR23BQSFEN&cx=c&gtm=4e5ad0",
+                  "lineNumber": 397,
+                  "columnNumber": 516
+                },
+                {
+                  "functionName": "Np",
+                  "scriptId": "801",
+                  "url": "https://www.googletagmanager.com/gtag/js?id=G-DR23BQSFEN&cx=c&gtm=4e5ad0",
+                  "lineNumber": 465,
+                  "columnNumber": 407
+                },
+                {
+                  "functionName": "Mp.flush",
+                  "scriptId": "801",
+                  "url": "https://www.googletagmanager.com/gtag/js?id=G-DR23BQSFEN&cx=c&gtm=4e5ad0",
+                  "lineNumber": 469,
+                  "columnNumber": 205
+                },
+                {
+                  "functionName": "Mp.register",
+                  "scriptId": "801",
+                  "url": "https://www.googletagmanager.com/gtag/js?id=G-DR23BQSFEN&cx=c&gtm=4e5ad0",
+                  "lineNumber": 466,
+                  "columnNumber": 123
+                },
+                {
+                  "functionName": "",
+                  "scriptId": "801",
+                  "url": "https://www.googletagmanager.com/gtag/js?id=G-DR23BQSFEN&cx=c&gtm=4e5ad0",
+                  "lineNumber": 896,
+                  "columnNumber": 549
+                },
+                {
+                  "functionName": "NO",
+                  "scriptId": "801",
+                  "url": "https://www.googletagmanager.com/gtag/js?id=G-DR23BQSFEN&cx=c&gtm=4e5ad0",
+                  "lineNumber": 896,
+                  "columnNumber": 444
+                },
+                {
+                  "functionName": "OO",
+                  "scriptId": "801",
+                  "url": "https://www.googletagmanager.com/gtag/js?id=G-DR23BQSFEN&cx=c&gtm=4e5ad0",
+                  "lineNumber": 896,
+                  "columnNumber": 159
+                },
+                {
+                  "functionName": "PO",
+                  "scriptId": "801",
+                  "url": "https://www.googletagmanager.com/gtag/js?id=G-DR23BQSFEN&cx=c&gtm=4e5ad0",
+                  "lineNumber": 896,
+                  "columnNumber": 475
+                },
+                {
+                  "functionName": "PP",
+                  "scriptId": "801",
+                  "url": "https://www.googletagmanager.com/gtag/js?id=G-DR23BQSFEN&cx=c&gtm=4e5ad0",
+                  "lineNumber": 905,
+                  "columnNumber": 1344
+                },
+                {
+                  "functionName": "",
+                  "scriptId": "801",
+                  "url": "https://www.googletagmanager.com/gtag/js?id=G-DR23BQSFEN&cx=c&gtm=4e5ad0",
+                  "lineNumber": 333,
+                  "columnNumber": 186
+                },
+                {
+                  "functionName": "k.invoke",
+                  "scriptId": "801",
+                  "url": "https://www.googletagmanager.com/gtag/js?id=G-DR23BQSFEN&cx=c&gtm=4e5ad0",
+                  "lineNumber": 245,
+                  "columnNumber": 361
+                },
+                {
+                  "functionName": "ab",
+                  "scriptId": "801",
+                  "url": "https://www.googletagmanager.com/gtag/js?id=G-DR23BQSFEN&cx=c&gtm=4e5ad0",
+                  "lineNumber": 208,
+                  "columnNumber": 390
+                },
+                {
+                  "functionName": "Za",
+                  "scriptId": "801",
+                  "url": "https://www.googletagmanager.com/gtag/js?id=G-DR23BQSFEN&cx=c&gtm=4e5ad0",
+                  "lineNumber": 207,
+                  "columnNumber": 526
+                },
+                {
+                  "functionName": "",
+                  "scriptId": "801",
+                  "url": "https://www.googletagmanager.com/gtag/js?id=G-DR23BQSFEN&cx=c&gtm=4e5ad0",
+                  "lineNumber": 269,
+                  "columnNumber": 472
+                },
+                {
+                  "functionName": "k.invoke",
+                  "scriptId": "801",
+                  "url": "https://www.googletagmanager.com/gtag/js?id=G-DR23BQSFEN&cx=c&gtm=4e5ad0",
+                  "lineNumber": 245,
+                  "columnNumber": 361
+                },
+                {
+                  "functionName": "ab",
+                  "scriptId": "801",
+                  "url": "https://www.googletagmanager.com/gtag/js?id=G-DR23BQSFEN&cx=c&gtm=4e5ad0",
+                  "lineNumber": 208,
+                  "columnNumber": 390
+                },
+                {
+                  "functionName": "k.mp",
+                  "scriptId": "801",
+                  "url": "https://www.googletagmanager.com/gtag/js?id=G-DR23BQSFEN&cx=c&gtm=4e5ad0",
+                  "lineNumber": 210,
+                  "columnNumber": 116
+                },
+                {
+                  "functionName": "ef",
+                  "scriptId": "801",
+                  "url": "https://www.googletagmanager.com/gtag/js?id=G-DR23BQSFEN&cx=c&gtm=4e5ad0",
+                  "lineNumber": 280,
+                  "columnNumber": 959
+                },
+                {
+                  "functionName": "",
+                  "scriptId": "801",
+                  "url": "https://www.googletagmanager.com/gtag/js?id=G-DR23BQSFEN&cx=c&gtm=4e5ad0",
+                  "lineNumber": 714,
+                  "columnNumber": 314
+                },
+                {
+                  "functionName": "cg",
+                  "scriptId": "801",
+                  "url": "https://www.googletagmanager.com/gtag/js?id=G-DR23BQSFEN&cx=c&gtm=4e5ad0",
+                  "lineNumber": 295,
+                  "columnNumber": 91
+                },
+                {
+                  "functionName": "e",
+                  "scriptId": "801",
+                  "url": "https://www.googletagmanager.com/gtag/js?id=G-DR23BQSFEN&cx=c&gtm=4e5ad0",
+                  "lineNumber": 662,
+                  "columnNumber": 229
+                },
+                {
+                  "functionName": "$z",
+                  "scriptId": "801",
+                  "url": "https://www.googletagmanager.com/gtag/js?id=G-DR23BQSFEN&cx=c&gtm=4e5ad0",
+                  "lineNumber": 663,
+                  "columnNumber": 873
+                },
+                {
+                  "functionName": "dA",
+                  "scriptId": "801",
+                  "url": "https://www.googletagmanager.com/gtag/js?id=G-DR23BQSFEN&cx=c&gtm=4e5ad0",
+                  "lineNumber": 668,
+                  "columnNumber": 150
+                },
+                {
+                  "functionName": "hB",
+                  "scriptId": "801",
+                  "url": "https://www.googletagmanager.com/gtag/js?id=G-DR23BQSFEN&cx=c&gtm=4e5ad0",
+                  "lineNumber": 690,
+                  "columnNumber": 307
+                },
+                {
+                  "functionName": "jB",
+                  "scriptId": "801",
+                  "url": "https://www.googletagmanager.com/gtag/js?id=G-DR23BQSFEN&cx=c&gtm=4e5ad0",
+                  "lineNumber": 692,
+                  "columnNumber": 46
+                },
+                {
+                  "functionName": "rm",
+                  "scriptId": "801",
+                  "url": "https://www.googletagmanager.com/gtag/js?id=G-DR23BQSFEN&cx=c&gtm=4e5ad0",
+                  "lineNumber": 975,
+                  "columnNumber": 65
+                },
+                {
+                  "functionName": "",
+                  "scriptId": "801",
+                  "url": "https://www.googletagmanager.com/gtag/js?id=G-DR23BQSFEN&cx=c&gtm=4e5ad0",
+                  "lineNumber": 978,
+                  "columnNumber": 267
+                },
+                {
+                  "functionName": "c",
+                  "scriptId": "801",
+                  "url": "https://www.googletagmanager.com/gtag/js?id=G-DR23BQSFEN&cx=c&gtm=4e5ad0",
+                  "lineNumber": 976,
+                  "columnNumber": 129
+                },
+                {
+                  "functionName": "",
+                  "scriptId": "801",
+                  "url": "https://www.googletagmanager.com/gtag/js?id=G-DR23BQSFEN&cx=c&gtm=4e5ad0",
+                  "lineNumber": 978,
+                  "columnNumber": 231
+                },
+                {
+                  "functionName": "",
+                  "scriptId": "801",
+                  "url": "https://www.googletagmanager.com/gtag/js?id=G-DR23BQSFEN&cx=c&gtm=4e5ad0",
+                  "lineNumber": 978,
+                  "columnNumber": 236
+                },
+                {
+                  "functionName": "",
+                  "scriptId": "801",
+                  "url": "https://www.googletagmanager.com/gtag/js?id=G-DR23BQSFEN&cx=c&gtm=4e5ad0",
+                  "lineNumber": 980,
+                  "columnNumber": 2
+                }
+              ]
+            }
+          }
+        },
+        "_priority": "High",
+        "_resourceType": "fetch",
+        "cache": {},
+        "connection": "443",
+        "pageref": "page_1",
+        "request": {
+          "method": "POST",
+          "url": "https://region1.analytics.google.com/g/collect?v=2&tid=G-148DGQTBDG&gtm=45je5ad0v899184943z89198762616za200zb9198762616zd9198762616&_p=1760534111672&gcd=13l3l3l2l1l1&npa=1&dma_cps=syphamo&dma=1&cid=961838725.1760300577&ul=en-us&sr=1366x768&uaa=x86&uab=64&uafvl=Not%2520A(Brand%3B8.0.0.0%7CChromium%3B132.0.6834.110%7CGoogle%2520Chrome%3B132.0.6834.110&uamb=0&uam=&uap=Linux&uapv=6.14.0&uaw=0&are=1&frm=0&pscdl=noapi&_eu=AAAAAAQ&tag_exp=101509157~103116026~103200004~103233427~104527906~104528501~104684208~104684211~104948813~115480709~115616986~115752876~115834636~115834638~115868792~115868794~115938466~115938469~115995680~115995682&sid=1760532903&sct=2&seg=1&dl=https%3A%2F%2Fsonaveeb.ee%2Fsearch%2Funif%2Fdlall%2Fskt%2Fabandonment%2F1%2Feng&dr=https%3A%2F%2Fsonaveeb.ee%2F&dt=Otsing%20-%20abandonment&_s=1&tfd=12055",
+          "httpVersion": "h3",
+          "headers": [
+            {
+              "name": ":authority",
+              "value": "region1.analytics.google.com"
+            },
+            {
+              "name": ":method",
+              "value": "POST"
+            },
+            {
+              "name": ":path",
+              "value": "/g/collect?v=2&tid=G-148DGQTBDG&gtm=45je5ad0v899184943z89198762616za200zb9198762616zd9198762616&_p=1760534111672&gcd=13l3l3l2l1l1&npa=1&dma_cps=syphamo&dma=1&cid=961838725.1760300577&ul=en-us&sr=1366x768&uaa=x86&uab=64&uafvl=Not%2520A(Brand%3B8.0.0.0%7CChromium%3B132.0.6834.110%7CGoogle%2520Chrome%3B132.0.6834.110&uamb=0&uam=&uap=Linux&uapv=6.14.0&uaw=0&are=1&frm=0&pscdl=noapi&_eu=AAAAAAQ&tag_exp=101509157~103116026~103200004~103233427~104527906~104528501~104684208~104684211~104948813~115480709~115616986~115752876~115834636~115834638~115868792~115868794~115938466~115938469~115995680~115995682&sid=1760532903&sct=2&seg=1&dl=https%3A%2F%2Fsonaveeb.ee%2Fsearch%2Funif%2Fdlall%2Fskt%2Fabandonment%2F1%2Feng&dr=https%3A%2F%2Fsonaveeb.ee%2F&dt=Otsing%20-%20abandonment&_s=1&tfd=12055"
+            },
+            {
+              "name": ":scheme",
+              "value": "https"
+            },
+            {
+              "name": "accept",
+              "value": "*/*"
+            },
+            {
+              "name": "accept-encoding",
+              "value": "gzip, deflate, br, zstd"
+            },
+            {
+              "name": "accept-language",
+              "value": "en-US,en;q=0.9"
+            },
+            {
+              "name": "content-length",
+              "value": "92"
+            },
+            {
+              "name": "content-type",
+              "value": "text/plain;charset=UTF-8"
+            },
+            {
+              "name": "origin",
+              "value": "https://sonaveeb.ee"
+            },
+            {
+              "name": "priority",
+              "value": "u=1, i"
+            },
+            {
+              "name": "referer",
+              "value": "https://sonaveeb.ee/"
+            },
+            {
+              "name": "sec-ch-ua",
+              "value": "\"Not A(Brand\";v=\"8\", \"Chromium\";v=\"132\", \"Google Chrome\";v=\"132\""
+            },
+            {
+              "name": "sec-ch-ua-mobile",
+              "value": "?0"
+            },
+            {
+              "name": "sec-ch-ua-platform",
+              "value": "\"Linux\""
+            },
+            {
+              "name": "sec-fetch-dest",
+              "value": "empty"
+            },
+            {
+              "name": "sec-fetch-mode",
+              "value": "no-cors"
+            },
+            {
+              "name": "sec-fetch-site",
+              "value": "cross-site"
+            },
+            {
+              "name": "user-agent",
+              "value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36"
+            },
+            {
+              "name": "x-client-data",
+              "value": "CJS2yQEIorbJAQipncoBCO6FywEIlqHLAQiHoM0BGPTJzQE="
+            }
+          ],
+          "queryString": [
+            {
+              "name": "v",
+              "value": "2"
+            },
+            {
+              "name": "tid",
+              "value": "G-148DGQTBDG"
+            },
+            {
+              "name": "gtm",
+              "value": "45je5ad0v899184943z89198762616za200zb9198762616zd9198762616"
+            },
+            {
+              "name": "_p",
+              "value": "1760534111672"
+            },
+            {
+              "name": "gcd",
+              "value": "13l3l3l2l1l1"
+            },
+            {
+              "name": "npa",
+              "value": "1"
+            },
+            {
+              "name": "dma_cps",
+              "value": "syphamo"
+            },
+            {
+              "name": "dma",
+              "value": "1"
+            },
+            {
+              "name": "cid",
+              "value": "961838725.1760300577"
+            },
+            {
+              "name": "ul",
+              "value": "en-us"
+            },
+            {
+              "name": "sr",
+              "value": "1366x768"
+            },
+            {
+              "name": "uaa",
+              "value": "x86"
+            },
+            {
+              "name": "uab",
+              "value": "64"
+            },
+            {
+              "name": "uafvl",
+              "value": "Not%2520A(Brand%3B8.0.0.0%7CChromium%3B132.0.6834.110%7CGoogle%2520Chrome%3B132.0.6834.110"
+            },
+            {
+              "name": "uamb",
+              "value": "0"
+            },
+            {
+              "name": "uam",
+              "value": ""
+            },
+            {
+              "name": "uap",
+              "value": "Linux"
+            },
+            {
+              "name": "uapv",
+              "value": "6.14.0"
+            },
+            {
+              "name": "uaw",
+              "value": "0"
+            },
+            {
+              "name": "are",
+              "value": "1"
+            },
+            {
+              "name": "frm",
+              "value": "0"
+            },
+            {
+              "name": "pscdl",
+              "value": "noapi"
+            },
+            {
+              "name": "_eu",
+              "value": "AAAAAAQ"
+            },
+            {
+              "name": "tag_exp",
+              "value": "101509157~103116026~103200004~103233427~104527906~104528501~104684208~104684211~104948813~115480709~115616986~115752876~115834636~115834638~115868792~115868794~115938466~115938469~115995680~115995682"
+            },
+            {
+              "name": "sid",
+              "value": "1760532903"
+            },
+            {
+              "name": "sct",
+              "value": "2"
+            },
+            {
+              "name": "seg",
+              "value": "1"
+            },
+            {
+              "name": "dl",
+              "value": "https%3A%2F%2Fsonaveeb.ee%2Fsearch%2Funif%2Fdlall%2Fskt%2Fabandonment%2F1%2Feng"
+            },
+            {
+              "name": "dr",
+              "value": "https%3A%2F%2Fsonaveeb.ee%2F"
+            },
+            {
+              "name": "dt",
+              "value": "Otsing%20-%20abandonment"
+            },
+            {
+              "name": "_s",
+              "value": "1"
+            },
+            {
+              "name": "tfd",
+              "value": "12055"
+            }
+          ],
+          "cookies": [],
+          "headersSize": -1,
+          "bodySize": 92,
+          "postData": {
+            "mimeType": "text/plain;charset=UTF-8",
+            "text": "en=page_view\r\nen=https%3A%2F%2Fsonaveeb.ee%2Fsearch%2Funif%2Fdlall%2Fskt%2Fabandonment&_et=6"
+          }
+        },
+        "response": {
+          "status": 204,
+          "statusText": "",
+          "httpVersion": "h3",
+          "headers": [
+            {
+              "name": "access-control-allow-credentials",
+              "value": "true"
+            },
+            {
+              "name": "access-control-allow-origin",
+              "value": "https://sonaveeb.ee"
+            },
+            {
+              "name": "alt-svc",
+              "value": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"
+            },
+            {
+              "name": "cache-control",
+              "value": "no-cache, no-store, must-revalidate"
+            },
+            {
+              "name": "content-length",
+              "value": "0"
+            },
+            {
+              "name": "content-security-policy-report-only",
+              "value": "script-src 'none'; form-action 'none'; frame-src 'none'; report-uri https://csp.withgoogle.com/csp/scaffolding/ascnsrsggc:158:0"
+            },
+            {
+              "name": "content-type",
+              "value": "text/plain"
+            },
+            {
+              "name": "cross-origin-opener-policy-report-only",
+              "value": "same-origin; report-to=ascnsrsggc:158:0"
+            },
+            {
+              "name": "cross-origin-resource-policy",
+              "value": "cross-origin"
+            },
+            {
+              "name": "date",
+              "value": "Wed, 15 Oct 2025 13:15:19 GMT"
+            },
+            {
+              "name": "expires",
+              "value": "Fri, 01 Jan 1990 00:00:00 GMT"
+            },
+            {
+              "name": "pragma",
+              "value": "no-cache"
+            },
+            {
+              "name": "report-to",
+              "value": "{\"group\":\"ascnsrsggc:158:0\",\"max_age\":2592000,\"endpoints\":[{\"url\":\"https://csp.withgoogle.com/csp/report-to/scaffolding/ascnsrsggc:158:0\"}],}"
+            },
+            {
+              "name": "server",
+              "value": "Golfe2"
+            }
+          ],
+          "cookies": [],
+          "content": {
+            "size": 0,
+            "mimeType": "text/plain"
+          },
+          "redirectURL": "",
+          "headersSize": -1,
+          "bodySize": -1,
+          "_transferSize": 20,
+          "_error": "net::ERR_ABORTED",
+          "_fetchedViaServiceWorker": false
+        },
+        "serverIPAddress": "216.239.32.36",
+        "startedDateTime": "2025-10-15T13:15:19.396Z",
+        "time": 588.0789999991975,
+        "timings": {
+          "blocked": 2.002999999537482,
+          "dns": -1,
+          "ssl": -1,
+          "connect": -1,
+          "send": 2.6799999999999997,
+          "wait": 572.1499999996317,
+          "receive": 11.246000000028289,
+          "_blocked_queueing": 1.443999999537482,
+          "_workerStart": -1,
+          "_workerReady": -1,
+          "_workerFetchStart": -1,
+          "_workerRespondWithSettled": -1
+        }
+      }
+    ]
+  }
+}

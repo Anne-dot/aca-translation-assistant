@@ -192,6 +192,72 @@ Add structured `part_of_speech` field to all senses (not free text in notes).
 
 ---
 
+### ✅ DECISION: Term Complexity Classification
+
+**Date:** 2025-10-15
+**Issue:** [#7](https://github.com/Anne-dot/aca-translation-assistant/issues/7)
+
+**Decision:**
+Add `term_complexity` field following ISO 1087 standard.
+
+**Values:** `"simple"`, `"complex"`, `"compound"`, `null`
+
+**Rationale:**
+- ISO 1087 defines three term types: simple, complex, compound
+- Helps interpret Sonaveeb lookup results (complex ACA terms unlikely in standard databases)
+- Machine-readable classification
+- Enables component-based lookup for complex terms
+
+**Statistics (826 terms):**
+- Simple: 613 (74.2%) - single-word terms
+- Complex: 187 (22.6%) - multi-word terms (e.g., "addictive thinking")
+- Compound: 26 (3.1%) - hyphenated terms (e.g., "self-esteem")
+
+**Implementation:**
+- Migration script `src/add_term_complexity.py`
+- Automatic classification based on spaces/hyphens
+- `component_terms` array added for complex terms
+
+---
+
+## 📊 Glossary Data Structure Documentation
+
+**Status:** 🚧 LIVING DOCUMENT - Will be finalized after Milestone 1 completion
+
+**Current approach:**
+- All active development decisions documented in GitHub Issues (single source of truth)
+- This section tracks which Issues contain what decisions
+- Full synthesis after Milestone 1 when structure is stable
+
+**Why this approach:**
+- Keep documentation close to active development (avoid duplication)
+- Comprehensive synthesis when phase is complete
+- Issues contain full context, rationale, and discussion
+
+### Quick Reference: Data Structure Decisions
+
+| Field | Issue | Status | Description |
+|-------|-------|--------|-------------|
+| English keys | #3 | ✅ | Top-level dictionary structure |
+| `senses` array | #4 | ✅ | Support for homonyms/polysemy |
+| `part_of_speech` | #6 | ✅ | ISO 704 grammatical metadata |
+| `term_complexity` | #7 | ✅ | ISO 1087 term classification |
+| `component_terms` | #7 | ✅ | Component words for complex terms |
+| `sonaveeb_variants` | #7 | 🔄 | Sonaveeb database enrichment |
+| `atl_variants` | Future | ⏳ | Existing ATL translations (Step 1C) |
+| `preferred_variant` | Future | ⏳ | Manual review additions |
+
+**For current field details and examples:** See individual GitHub Issues
+
+**After Milestone 1:** This section will expand to full data structure reference with:
+- Complete field inventory
+- Examples for each field
+- Migration history
+- Visual diagrams
+- Translation workflow implications
+
+---
+
 ## ❓ Open Questions
 
 ### Milestone 1 (Terminology Database):
