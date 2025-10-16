@@ -831,3 +831,103 @@ Ma olen väsinud. Täna olen lisaks oma projektile ka palju inimsuhtluse kohta �
 - Component lookups vajavad hoolikat disaini duplikatsiooni vältimiseks
 
 ---
+
+## 📅 2025-10-16 (Neljapäev) - Õhtune sessioon: Variant C ja lõplikud täiendused
+
+### 🎉 Täna Saavutatud
+
+#### 1. ✅ Otsus 2 Finaliseeritud: Variant C
+
+**Küsimus:** Kas kasutada ühte või mõlemat staatust (`atl_in_use` vs `atl_approved`)?
+
+**Otsus:** Variant C - Mõlemad eraldi (`atl_status` + `usage_status`)
+
+**Põhjendus:**
+- ATL tekstides on ajalooliselt kasutatud termineid, mis pole veel review'tud
+- Vajame eristust "kasutuses" vs "heaks kiidetud"
+- Näide: Tekstidest ekstraktitud terminid → `atl_status: candidate`, `usage_status: atl_in_use`
+- Näide: Sõnaveebi uued vasted → `atl_status: candidate`, `usage_status: not_in_use`
+
+**Väljad:**
+- `atl_status`: review otsus (`candidate`, `atl_approved`, `rejected`)
+- `usage_status`: faktiline kasutus (`not_in_use`, `atl_in_use`, `formerly_in_use`)
+
+#### 2. 📝 TBX_vs_MY_PLANS.md - Täielik Finaliseerimine
+
+**Uuendatud:**
+- ✅ Kõik 3 otsust märgitud finaliseerituks
+- ✅ Sobivuse skoor: 20% kohandused → kõik otsustatud
+- ✅ Transaction history soovitus: Lihtne → Täielik
+- ✅ Vajab Kohandamist sektsioon: kõik märgitud otsustuks
+- ✅ Kiire tegevusplaan: tasks 1-2 done
+- ✅ Lõpus küsimused → "Kõik otsused tehtud"
+
+**Commit:** 35171d9 - "Decide Variant C for ATL status tracking"
+
+#### 3. 🆕 Uued Väljad ja Kontseptsioonid Lisatud
+
+**usage_examples väli:**
+- Tõlkeotsuste dokumenteerimine kontekstiga
+- Struktuuri näited erinevate tõlkijatega
+- Sama inglise fraasi erinevad tõlked sõltuvalt kontekstist
+
+**Community-added terms selgitus:**
+- Kolm termini tüüpi:
+  - `is_glossary_term: true` - WSO ametlikud glossaari terminid
+  - `is_glossary_term: false` + `derived_from: [...]` - Komponent-terminid
+  - `is_glossary_term: false` + `derived_from: []` - Kogukonna lisatud terminid
+
+**CAT tool + eesti grammatika:**
+- Lemmatiseerimise lähenemine dokumenteeritud
+- Eesti keele eripära: 14 käänet × 2 arvu = 28 vormi + tüvemitus
+- Pragmaatiline lähenemine: salvesta ainult baasvormi (lemma)
+- Lisa käsitsi vorme AINULT kui CAT tool ei leia (5% terminitest)
+- CAT tool fuzzy matching selgitus
+
+**Commit:** 0620586 - "Add usage_examples, community terms, and CAT tool guidance"
+
+#### 4. 📦 Kõik 3 TBX-Basic Otsust Finaliseeritud
+
+**Otsus 1: Transaction History** ✅
+- Täielik ajalugu `transactions[]` array-na
+- Kaasteeline tahab kogu transaction tracking'ut
+
+**Otsus 2: atl_in_use vs atl_approved** ✅
+- Variant C - mõlemad eraldi (`atl_status` + `usage_status`)
+
+**Otsus 3: component_lookups** ✅
+- Hübriid - andmed `_metadata`, viide `has_components: true`
+
+### 📊 Statistika
+
+**Ajakulu:** ⏱️ ~1,5 tundi
+
+**GitHub:**
+- 2 commiti (35171d9, 0620586)
+- 4 faili muudetud (TBX_vs_MY_PLANS.md, TODO.md, PROJECT_OVERVIEW_DRAFT.md)
+- 177 insertions, 58 deletions kokku
+
+**Saavutused:**
+- ✅ Kõik 3 TBX-Basic otsust finaliseeritud
+- ✅ usage_examples väli struktureeritud
+- ✅ Community terms toe dokumenteeritud
+- ✅ CAT tool lähenemine selgeks tehtud
+- ✅ Eesti grammatiliste vormide käsitlus pragmaatiliselt lahendatud
+
+### 🎯 Järgmine Samm
+
+**Järgmise sessiooni ülesanded (TODO.md Task #3):**
+- ⏸️ Kujunda lõplik JSON schema põhinedes kõikidele 3 otsusele
+- ⏸️ Dokumenteeri Sammud 2-5 DATA_PIPELINE.md-s
+- ⏸️ Loo migratsiooniskript `src/migrate_to_tbx_structure.py`
+
+**Muud ülesanded (TODO.md):**
+- Task #4: Glossary .docx struktuuri analüüs
+- Task #5: Component terms extraction disaini finaliseerimine
+- Task #6: Enrichment sources integration disain
+
+### 💭 Tunne
+
+Tunne on selline, et ma alles hakkan aru saama, kui keerulise ülesande ma endale ette olen võtnud. Samas on mul hea meel, et AI on standardite otsimises ja analüüsimises ja minu mõtetele ja lisandustele vastuste leidmisel ja kombineerimisel nii heaks abimeheks. Ma ilma oleks vist juba ammu alla andnud.
+
+---
