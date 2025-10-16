@@ -1,5 +1,8 @@
 # Post-Compacting Cleanup TODO
 
+**Purpose:** Action-oriented task list for current work
+**Strategy & Ideas:** See [FUTURE_IDEAS.md](FUTURE_IDEAS.md) for background, rationale, and open questions
+
 ## Status Legend
 - ⏳ In Progress
 - ✅ Done
@@ -41,6 +44,38 @@
 - Decision: Moved content to PROGRESS_UPDATES.md (2025-10-13 entry)
 - File deleted
 
-### 7. ⏸️ Commit all reorganization changes
+### 7. ✅ Commit all reorganization changes
 - Commit after all above tasks complete
-- Write descriptive commit message covering all changes
+- Commit: 5b7706a "Reorganize project structure and update documentation"
+
+---
+
+## Future Tasks
+
+### 8. ⏸️ Reorganize eki_analüüs/ folder
+- Move relevant files to research/web_pages/sonaveeb/
+- Move EKI archived files to research/web_pages/eki_archived/
+- Delete or archive unnecessary files
+- Remove empty eki_analüüs/ folder
+
+### 9. ⏸️ Analyze ACA Glossary .docx structure and cleanup needs
+- Review original Glossary document step-by-step
+- Identify what fields should emerge from cleanup process
+- Document findings:
+  - Grammatical markers `(n.)` → `part_of_speech` field?
+  - Explanations `\n(...)` → `notes` field structure?
+  - Multi-word terms → component handling?
+- Create cleanup plan
+- **See:** PROJECT_OVERVIEW_DRAFT.md "Open Questions" #1
+
+### 10. ⏸️ Clarify data pipeline: input/output files and data integrity
+- Map current data flow: original .docx → JSON files → final clean version
+- Identify all transformations and their outputs
+- Decide: What is the "clean" glossary version for Sonaveeb lookup?
+- Questions to answer:
+  - Current files: `aca-glossary.json`, `aca-glossary-eki.json` (has deprecated EKI + term_complexity)
+  - Should we create new clean version without EKI data?
+  - What should be input for component extraction?
+  - What should be input for Sonaveeb lookup?
+- Document data integrity strategy (preserve originals, versioning)
+- **See:** PROJECT_OVERVIEW_DRAFT.md "Open Questions" #5, FUTURE_IDEAS.md "Component Terms" Open Question #1

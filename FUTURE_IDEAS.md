@@ -2,6 +2,9 @@
 
 Ideas and improvements for future implementation.
 
+**Purpose:** Strategy, rationale, and open questions for future work
+**Actionable Tasks:** See [TODO.md](TODO.md) for concrete next steps and execution plan
+
 ## Auto-translate Notes Field
 
 **What:** Automatically translate English notes/explanations to Estonian
