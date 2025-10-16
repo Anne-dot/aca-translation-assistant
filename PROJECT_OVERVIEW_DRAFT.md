@@ -6,7 +6,7 @@
 
 **Current Status:** Milestone 1 in progress - TBX-Basic standards research complete, final JSON structure design in progress.
 
-**Recent Completions:** TBX-Basic standards research ✅ | Field definitions documented ✅ | Structure decisions (2/3) ✅ | Issues #5, #6, #7 (script), #9, #11 ✅ | Sonaveeb enrichment approach | ISO 704 & ISO 1087 compliant | EKI approach deprecated
+**Recent Completions:** TBX-Basic standards research ✅ | Field definitions documented ✅ | Structure decisions (3/3) ✅ | Issues #5, #6, #7 (script), #9, #11 ✅ | Sonaveeb enrichment approach | ISO 704 & ISO 1087 compliant | EKI approach deprecated
 
 ---
 
@@ -226,37 +226,33 @@ Each term contains:
      - `research/standards/TBX-Basic_FIELDS.md` - Complete field reference (318 lines)
      - `research/standards/STRUCTURE_COMPARISON.md` - Current vs TBX-Basic (296 lines)
      - `research/standards/TBX_vs_MY_PLANS.md` - TBX vs my plans (700+ lines with ADHD summary)
-   - **Key decisions made (2/3):**
+   - **Key decisions made (3/3):**
      - ✅ Transaction history: Full history in `transactions[]` array (for collaboration)
      - ✅ Component lookups: Hybrid approach - data in `_metadata`, reference `has_components: true`
-     - ⏸️ **Pending:** atl_in_use vs atl_approved (Variant A, B, or C)
+     - ✅ Status tracking: Variant C - both `atl_status` and `usage_status` (2025-10-16)
    - **Benefits:**
      - TBX-Basic compliant structure enables export to professional CAT tools
      - Follows international terminology management standards
      - Compatible with SDL Trados, MemoQ, and other professional tools
      - Supports ATL collaborative workflow with transaction tracking
    - **Next steps:**
-     - Decide on Variant A, B, or C for status tracking
-     - Design final JSON schema
-     - Create migration script to new structure
+     - Design final JSON schema based on all 3 decisions
+     - Create migration script to new TBX-compliant structure
+     - Document Steps 2-5 in DATA_PIPELINE.md
 
 ### Open Questions Requiring Decisions
 
 **TBX-Basic Structure Decision (Priority: HIGH):**
 
-0. **ATL Status Tracking: atl_in_use vs atl_approved**
-   - **Question:** Use one status or two separate statuses?
-   - **Context:** Need to track both "officially approved" and "currently in use" for ATL workflow
-   - **Options analyzed:**
-     - **Variant A:** Only `atl_approved` (simple, but doesn't show actual usage)
-     - **Variant B:** Only `atl_in_use` (practical, but doesn't capture review decisions)
-     - **Variant C:** Both separate `atl_status` + `usage_status` (maximum info, more complex)
-   - **Documentation:** See `research/standards/TBX_vs_MY_PLANS.md` for:
-     - Complete pros/cons analysis for each variant
-     - 4 use case examples for Variant C
-     - Detailed comparison tables
-   - **Status:** NEEDS DECISION before final JSON schema design
-   - **Impact:** Affects entire terminology database structure and migration script
+0. **ATL Status Tracking: atl_in_use vs atl_approved** ✅ DECIDED
+   - **Decision:** Variant C - Both separate statuses (`atl_status` + `usage_status`)
+   - **Date:** 2025-10-16
+   - **Rationale:** ATL texts contain historically used terms not yet reviewed. Need to distinguish "in use" vs "approved".
+   - **Fields:**
+     - `atl_status`: review decision (`candidate`, `atl_approved`, `rejected`)
+     - `usage_status`: actual usage (`not_in_use`, `atl_in_use`, `formerly_in_use`)
+   - **Documentation:** See `research/standards/TBX_vs_MY_PLANS.md`
+   - **Impact:** Enables tracking both historical usage and review decisions independently
 
 **Before Sonaveeb Full Lookup:**
 
@@ -355,5 +351,5 @@ Each term contains:
 
 ---
 
-**Status:** Milestone 1 in progress - TBX-Basic research complete, awaiting status tracking decision (Variant A/B/C) before final JSON schema design
+**Status:** Milestone 1 in progress - TBX-Basic research complete, all 3 key decisions made, ready for final JSON schema design
 **Date:** 2025-10-16

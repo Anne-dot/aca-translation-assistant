@@ -48,10 +48,9 @@
   - ✅ Added ADHD-friendly summary to TBX_vs_MY_PLANS.md
   - ✅ Answered 3 key decisions:
     - ✅ Transaction history: Täielik (kogu ajalugu)
-    - ⏸️ atl_in_use vs atl_approved: VAJA OTSUSTADA (Variant A, B või C?)
+    - ✅ atl_in_use vs atl_approved: Variant C (mõlemad eraldi)
     - ✅ component_lookups: Hübriid (metadata + viide)
-  - ⏸️ **Next:** Otsusta Variant A, B või C (atl_in_use vs atl_approved)
-  - ⏸️ Design final JSON schema based on decisions
+  - ⏸️ **Next:** Design final JSON schema based on decisions
   - ⏸️ Document Steps 2-5 in DATA_PIPELINE.md
 - **Map transformations:**
   - Step 1: .docx extraction → aca-glossary.json (what fields? what's preserved?)

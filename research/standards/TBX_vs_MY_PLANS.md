@@ -1,6 +1,6 @@
 # TBX-Basic Standard vs Sinu Plaanitud Struktuur
 
-**Eesmärk:** Võrrelda TBX-Basic standardit sellega, mida sa oled planeerinud
+**Eesmärk:** Võrrelda TBX-Basic standardit sellega, mida olen planeerinud
 
 **Allikad:**
 - TBX-Basic v1.2.1 (ISO 30042:2019)
@@ -25,7 +25,7 @@ Kasuta **TBX-Basic struktuuri + ATL custom fields** (hübriid lähenemisviis)
 | # | Küsimus | Otsus |
 |---|---------|-------|
 | 1️⃣ | **Transaction history:** Täielik või lihtne? | ✅ Täielik - kogu ajalugu `transactions[]` array |
-| 2️⃣ | **atl_in_use vs atl_approved:** Üks või mõlemad? | ⏸️ **VAJA OTSUSTADA** - Variant A, B või C? |
+| 2️⃣ | **atl_in_use vs atl_approved:** Üks või mõlemad? | ✅ Variant C - Mõlemad eraldi (`atl_status` + `usage_status`) |
 | 3️⃣ | **Component lookups:** Concept või term level? | ✅ Hübriid - andmed `_metadata`, viide `has_components: true` |
 
 ### 📊 Sobivuse skoor:
@@ -176,10 +176,11 @@ Tähendus:
 
 ---
 
-**VAJA OTSUSTADA:** A, B või C?
+**✅ OTSUSTATUD: Variant C** (2025-10-16)
 
-**Minu soovitus Variant C jaoks:**
-Kui tahad mõlemat, siis kasuta kahte eraldi välja:
+**Põhjendus:** ATL tekstides on ajalooliselt kasutatud termineid, mis pole veel review'tud. Vajame eristust "kasutuses" vs "heaks kiidetud".
+
+**Kasutatavad väljad:**
 - `atl_status`: review otsus (`candidate`, `atl_approved`, `rejected`)
 - `usage_status`: faktiline kasutus (`not_in_use`, `atl_in_use`, `formerly_in_use`)
 
