@@ -17,6 +17,12 @@
 - No unnecessary emojis unless user requests them
 - Focus on technical accuracy over validation
 
+## Progress Updates (PROGRESS_UPDATES.md)
+- **NEVER** write "Tunne" or "Mõtted" sections yourself
+- Only the user can write their feelings and thoughts
+- When creating progress updates, present factual content ONLY
+- Let user add their own reflections if they want
+
 ## Compacting/Session Continuity
 - After compacting, read TODO.md to restore context
 - Read this instructions.md file after compacting

@@ -555,3 +555,97 @@ Ma olen uhke selle üle, et AI-d pidevalt joone peal suutsin hoida ja oma juhise
 **GitHub Issues töövoog:** Ma hakkasin kasutama GitHub Issues'sid aktiivse otsustusprotsessi dokumenteerimiseks. Kuna ma teen seda projekti hetkel üksinda, siis saan liikuda nii, et panen iga etapi jaoks paika väga suure plaani ja siis võtan esimese etapi ja hakkan seda väiksemateks sammudeks tegema. Seejärel hoian ainult ühe issue korraga lahti, ja sellega seoses ja vastavalt enesetundele jagan järgmisi lõike väiksemateks või suuremateks tükkideks, kuni jõuan esimese etapi soovitud tulemuseni.
 
 ---
+
+---
+
+## 📅 2025-10-15/16 (Kolmapäev/Neljapäev) - Öine sessioon
+
+**Ajavahemik:** 15.10 u 23:00 - 16.10 u 04:30 (Eesti aeg, 7-tunnine vahe vahepeal)
+
+### 🎉 Täna Saavutatud
+
+#### 1. ✅ Issues #7, #9, #11 Completed
+
+**Issue #7: Sonaveeb enrichment and term complexity**
+- ✅ Sonaveeb lookup script loodud ja testitud
+- ✅ ISO 1087 term complexity classification
+- ✅ 213/826 terminit multi-word (complex/compound)
+- ✅ Commit 358e39a
+
+**Issue #9: Signal handling fixes**
+- ✅ Ctrl+C/Ctrl+Z handling parandatud
+- ✅ Warning message lisatud
+- ✅ Commit 4cc19c7
+
+**Issue #11: Term cleaning utilities**
+- ✅ Term cleaning funktsioonid `src/term_cleaning.py`
+- ✅ FUTURE_IDEAS.md loodud
+- ✅ Commit fbc1422
+
+#### 2. 🗂️ EKI Scripts Deprecation
+
+- ✅ EKI collector scripts liigutatud `deprecated/` kausta
+- ✅ EKI loader deprecated
+- ✅ Match scripts deprecated
+- ✅ Commit 304deab
+
+#### 3. 📝 Component Terms Extraction Design
+
+- ✅ Põhjalik design FUTURE_IDEAS.md's
+- ✅ 3-part implementation plan (ADHD-friendly)
+- ✅ Open questions dokumenteeritud
+- ✅ Commit f0fd59e
+
+#### 4. 🗂️ Post-Compacting Cleanup and Project Reorganization
+
+**Dokumentatsiooni uuendused:**
+- ✅ PROJECT_OVERVIEW_DRAFT.md - Steps 1A ja 1B deprecated
+- ✅ DECISIONS.md (v2.1) - Sonaveeb approach
+- ✅ README.md (v0.3.0-alpha) - Current workflow
+
+**Struktuuri muudatused:**
+- ✅ docs/ kaust loodud
+- ✅ PROGRESS_UPDATES.md → docs/
+- ✅ EXISTING_TOOLS_ANALYSIS.md → docs/
+- ✅ Deprecated EKI failid → deprecated/data/
+- ✅ PERSONAL_THOUGHTS.md sisu → PROGRESS_UPDATES.md
+
+**Uued failid:**
+- ✅ TODO.md - task tracking
+- ✅ instructions.md - Claude Code juhised
+- ✅ FUTURE_IDEAS.md ↔ TODO.md cross-references
+
+**Kustutatud:**
+- ❌ PERSONAL_THOUGHTS.md
+- ❌ "see pole päris see 1 on.txt"
+
+**Tulevikuülesanded (TODO.md):**
+- Task #8: eki_analüüs/ reorganiseerimine
+- Task #9: Glossary .docx analüüs
+- Task #10: Data pipeline clarity
+
+**Commits:**
+- 5b7706a: "Reorganize project structure and update documentation"
+- 1cf29ee: "Add future tasks to TODO.md and cross-reference"
+
+### 📊 Statistika
+
+**Ajakulu:** ⏱️ ~9 tundi (15.10 11:00-16:00 + 23:00-03:00)
+
+**GitHub:**
+- 7 commiti kokku
+- Issues #7, #9, #11 suletud
+- 11+ faili muudetud/liigutatud/loodud
+- Projekt struktuur reorganiseeritud
+
+**Saavutused:**
+- Sonaveeb approach dokumenteeritud
+- EKI approach deprecated
+- Component terms extraction disainitud
+- Session continuity parandatud (TODO.md, instructions.md)
+
+### 💭 Tunne
+
+Ma olen väsinud. Täna olen lisaks oma projektile ka palju inimsuhtluse kohta õppinud ja harjutanud. ATL-i teekaaslane käis külas ja siis meil on hoopis erinevad suunad edasi liikumiseks ja see ongi okei. Ma ise tahan praegu kogukonda aidata tõlgete ja toimetamise järjepidevuse hoidmisel ning selle jaoks ma hakkasin koostama atl-sõnastikku või korpust. ACA WSO on loonud terminite glossary ja see on siis tõlkimise eelne esimene soovituslik samm. meil on juba päevatekstid peaaegu valmis ja brb-st on sammud. ja siis on hunnik masintõlkeid. Täna sain ma lisaks praktilisele tööle ka suhelda inimestega ning tajuda enda muutust oma suhete sees. Minu sõbrannad. Minu viis nõuandmiselt oma kogemuse jagamise peale minna. Teiste tunnete valideerimine ja nendele ruumi andmine, sest mul on selle jaoks enda sees ja end ümbritsevate inimeste jaoks ruumi. ATL-i töö on mulle palju andnud. Kui ma oma mitte ATL sõbrannat tema raskel hetkel toetasin ja siis talle mõnda oma lugu jagasin, et normaliseerida seda, et meil kõigil on vanematena raske ja et sellest rääkimine ei ole mitte häbiasi, vaid teiste ebatäisusele ja autentsusele ruumi loomine, siis ma andsin seda, mis mul praeguseks on tekkinud ja mida olen oma teekonnal saanud. Kui ta mind tänas, siis vastasin, et "Võta heaks ja anna edasi! Kunagi. Kas mulle või kellelegi teisele, kes seda vajab!" Ma saan ja annan ja võtan vastu tänu ja see on nii äge koht. See on elu, mida ma tahan elada. Ma tõesti tervenen omas tempos
+
+---
