@@ -3,11 +3,8 @@
 ## ⚠️ FIRST: Read These Before Starting
 
 **CRITICAL - Read every time before continuing work:**
-1. `instructions.md` - Project-specific rules (in project root)
-2. `~/.claude/instructions.md` - Global non-negotiable requirements
-3. `TODO.md` - Current task list and progress
-
-**Important:** All work must follow ADHD-friendly principles - show TEXT first, ask open questions, NO SILENT FAILURES, use TODO.md (not TodoWrite tool).
+1. `~/.claude/instructions.md` - Global non-negotiable requirements
+2. `TODO.md` - Current task list and progress
 
 ---
 
