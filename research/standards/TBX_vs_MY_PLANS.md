@@ -32,22 +32,24 @@ Kasuta **TBX-Basic struktuuri + ATL custom fields** (hübriid lähenemisviis)
 
 ```
 ✅ Sobib hästi:       ████████░░  80%
-⚠️ Vajab kohandust:   ██░░░░░░░░  20%
+✅ Kohandused:        ██████████  20% (kõik otsustatud 2025-10-16)
 ❌ Ei sobi:           ░░░░░░░░░░   0%
 ```
+
+**Kõik 3 otsust tehtud:** Transaction history (täielik), Status tracking (Variant C), Component lookups (hübriid)
 
 ---
 
 ## 🚀 Kiire tegevusplaan:
 
-1. ✅ **Loe üle:** See dokument (15 min)
-2. ⏸️ **Otsusta:** 3 küsimust (vt allpool)
-3. ⏸️ **Kinnita:** Lõppstruktuur (vt näide lõpus)
+1. ✅ **Loe üle:** See dokument (15 min) - DONE
+2. ✅ **Otsusta:** 3 küsimust - DONE (2025-10-16)
+3. ⏸️ **Kinnita:** Lõppstruktuur (vt näide read 384-547)
 4. ⏸️ **Migratsioon:** Loo `migrate_to_tbx_structure.py`
 
 ---
 
-## ❓ 3 otsust, mis sulle vaja teha:
+## ❓ 3 otsust, mis vaja teha:
 
 ### Otsus 1: Transaction History ✅ OTSUSTATUD
 
@@ -120,7 +122,7 @@ Tähendus:
 | ✅ Maksimum info - mõlemad aspektid nähtavad | ⚠️ Keerulisem - kaks staatust paralleelselt |
 | ✅ Näitab erinevust: "de facto" vs "de jure" | ⚠️ Võivad olla vastuolus (in_use aga mitte approved) |
 | ✅ Ajalugu säilib (vanad terminid `in_use` ilma `approved`) | ⚠️ Vajab selget loogikat kuidas neid kombineerida |
-| ✅ Paindlik - saab mõlemat trackida | ⚠️ Rohkem töödä (mõlemaid tuleb uuendada) |
+| ✅ Paindlik - saab mõlemat trackida | ⚠️ Rohkem tööd (mõlemaid tuleb uuendada) |
 
 **Kasutusjuhud:**
 
@@ -425,6 +427,19 @@ EN: "behavior" → ET: "käitumine", "käitumisviis"
             "approved_date": "2025-10-16",
             "first_used_date": "2025-10-16"
           },
+          "usage_examples": [
+            {
+              "source": "Daily Meditation 2024-03-15",
+              "en_context": "We recognize our addictive behavior patterns.",
+              "et_translation": "Me tunnistame oma addiktiivseid käitumismustreid.",
+              "translator_note": {
+                "author": "Külli J",
+                "date": "2025-10-16",
+                "explanation": "Kasutasin 'addiktiivne' mitte 'sõltuvuslik', sest see on otsesem ja vähem kliiniline.",
+                "key_insight": "ATL kontekstis on oluline säilitada isiklik toon."
+              }
+            }
+          ],
           "transactions": [
             {
               "type": "origination",
@@ -556,11 +571,11 @@ EN: "behavior" → ET: "käitumine", "käitumisviis"
 
 ---
 
-## 📖 Detailne võrdlus (jätka lugemist ↓)
+## 📖 Detailne võrdlus
 
 ---
 
-## Sinu Plaanitud Struktuur (FUTURE_IDEAS.md)
+## Eelnevalt plaanitud struktuur (FUTURE_IDEAS.md)
 
 ### Variant Structure
 
@@ -999,24 +1014,37 @@ EN: "behavior" → ET: "käitumine", "käitumisviis"
 - ✅ TBX eksport: kasuta `crossReference` või `admin` välju
 - ✅ Lihtne struktuur
 
-### 3. Transaction History: Lihtne Variant
+### 3. Transaction History: Täielik Variant ✅ OTSUSTATUD
 
-**Ära kogu täielikku ajalugu** (vähemalt alguses). Kasuta lihtsam variant:
+**Kogu täielik ajalugu `transactions[]` array-na** (2025-10-16):
 
 ```json
 {
-  "workflow": {
-    "atl_status": "atl_approved",
-    "updated_by": "ATL consensus",
-    "updated_date": "2025-10-16"
-  }
+  "term": "addiktiivne käitumine",
+  "administrativeStatus": "preferredTerm-admn-sts",
+  "transactions": [
+    {
+      "type": "origination",
+      "responsibility": "Anne",
+      "date": "2025-10-15",
+      "action": "Added from WSO Glossary"
+    },
+    {
+      "type": "modification",
+      "responsibility": "ATL consensus",
+      "date": "2025-10-16",
+      "action": "Approved as preferred term",
+      "status_change": "candidate → atl_approved"
+    }
+  ]
 }
 ```
 
 **Põhjused:**
-- ✅ Lihtne ADHD-friendly
-- ✅ Piisav ATL workflow jaoks
-- ➕ Saab hiljem laiendada täielikuks ajalooluks
+- ✅ TBX-Basic compliant (`transacGrp`)
+- ✅ Kogu ajalugu säilitatud (kes, millal, miks)
+- ✅ Saab jälgida otsuste evolutsiooni
+- ✅ Hea dokumentatsioon ja accountability
 
 ### 4. Tagasilükkamised: note Field
 
@@ -1168,16 +1196,111 @@ EN: "behavior" → ET: "käitumine", "käitumisviis"
 
 ### ⚠️ Vajab Kohandamist
 
-1. **ATL staatused** - Kasuta custom väärtusi + mapping TBX standardile
-2. **Workflow metadata** - Grupeeri `workflow` objekti (separate from term data)
-3. **Transaction history** - Alusta lihtsaga (viimane update), laienda hiljem
+1. **ATL staatused** - ✅ OTSUSTATUD: Kasuta custom väärtusi (`atl_status`, `usage_status`) + mapping TBX standardile
+2. **Workflow metadata** - ✅ OTSUSTATUD: Grupeeri `workflow` objekti (separate from term data)
+3. **Transaction history** - ✅ OTSUSTATUD: Täielik history `transactions[]` array (2025-10-16)
 
 ### ➕ Sinu Unikaalsed Lisad
 
-1. **is_glossary_term** - Oluline eristus! Pane `_metadata` alla
-2. **derived_from** - Hea component tracking! Pane `_metadata` alla
-3. **component_terms** - ISO 1087 compliant! Pane `_metadata` alla
-4. **component_lookups** (Issue #7) - Unikaalne! Pane `_metadata` alla
+1. **is_glossary_term** - Eristab kolme tüüpi termineid:
+   - `true` - WSO ametlikud glossaari terminid
+   - `false` + `derived_from: [...]` - Komponent-terminid (tuletatud glossaarist)
+   - `false` + `derived_from: []` - Kogukonna lisatud terminid (korduvad tekstis, arutlusobjektid)
+
+   Näide kogukonna terminist:
+   ```json
+   {
+     "_metadata": {
+       "is_glossary_term": false,
+       "derived_from": [],
+       "term_type": "frequently_discussed",
+       "added_reason": "Kordub palju ATL tekstides, tekitab arutelusid"
+     }
+   }
+   ```
+
+2. **derived_from** - Jälgib terminite päritolu ja seoseid glossaari terminitega
+3. **component_terms** - ISO 1087 compliant! Liitsõnade komponentide loetelu
+4. **component_lookups** (Issue #7) - Komponentide eraldi Sõnaveeb lookupid
+5. **usage_examples** - Tõlkeotsuste dokumenteerimine kontekstiga:
+   ```json
+   {
+     "usage_examples": [
+       {
+         "source": "Daily Meditation 2024-03-15",
+         "en_context": "...we feel that we are changing inside.",
+         "et_translation": "...me tunneme, et meis toimub sisemine muutus.",
+         "translator_note": {
+           "author": "Külli J",
+           "date": "2025-10-16",
+           "explanation": "See pole intellektuaalne taipamine, vaid tajutav tunne...",
+           "key_insight": "Sisemine muutus ei sünni pingutades..."
+         }
+       }
+     ]
+   }
+   ```
+
+### 📖 Grammatilised Vormid ja CAT Toolid
+
+**Eesti keele eripära:** 14 käänet × 2 arvu = 28 vormi + tüvemitus (nt `käsi : käe`)
+
+**CAT tool lähenemine:**
+
+Salvesta AINULT baasvormi (lemma). CAT tool lemmatiseerija leiab grammatilised variandid automaatselt.
+
+**Kuidas see töötab:**
+
+1. Terminipank: `"muutus"` (alus/nominatiiv)
+2. Tekstis: `"muutusest"` (alaltüüv)
+3. CAT lemmatiseerija: `"muutusest" → "muutus"`
+4. Tulemus: CAT leiab termini ✅
+
+**TBX-Basic struktuur:**
+```json
+{
+  "term": "muutus",
+  "partOfSpeech": "noun",
+  "grammaticalNumber": "singular",
+  "grammaticalGender": "common"
+}
+```
+
+**Erandid - lisa käsitsi vormid kui:**
+- CAT tool ei leia vormi ära (testimise järel)
+- Tüvemitus on erandlik (`käsi : käe`, `vesi : vee`)
+- Vorm on idioomatiline erinevate tähendustega
+
+**Pragmaatiline variant:**
+```json
+{
+  "term": "muutus",
+  "partOfSpeech": "noun",
+  "et_variants": []  // Tavaliselt tühi
+}
+
+// AGA kui CAT ei tunne "muutusest" ära:
+{
+  "term": "muutus",
+  "partOfSpeech": "noun",
+  "et_variants": [
+    {
+      "term": "muutusest",
+      "grammaticalCase": "elative"
+    }
+  ]
+}
+```
+
+**Soovitus:**
+- Alusta ainult baasvormi-ga (95% terminitest)
+- Testi CAT tool eesti tekstidega
+- Lisa vorme ainult probleemsete termini puhul (5%)
+
+**CAT tool fuzzy matching:**
+- Baasterminid + olulised fraasid eraldi terminitena
+- CAT tool leiab n-gram matchinguga kõik variandid
+- Tõlkijad näevad konteksti + usage_examples
 
 ### 🎯 Peamine Soovitus
 
@@ -1191,12 +1314,12 @@ EN: "behavior" → ET: "käitumine", "käitumisviis"
 
 ---
 
-**Küsimused sulle:**
+**Kõik otsused tehtud:** (2025-10-16)
 
-1. **Kas tahad kogu transaction history või piisab viimasest updatest?**
-2. **Kas `atl_in_use` ja `atl_approved` võiksid olla erinevad staatused või on need sama asi?**
-3. **Kas component_lookups peaks olema concept level või term level?**
+1. ✅ **Transaction history:** Täielik history `transactions[]` array
+2. ✅ **atl_in_use vs atl_approved:** Variant C - mõlemad eraldi (`atl_status` + `usage_status`)
+3. ✅ **component_lookups:** Hübriid - andmed `_metadata`, viide `has_components: true`
 
 ---
 
-**Viimati uuendatud:** 2025-10-16
+**Viimati uuendatud:** 2025-10-16 (kõik otsused finaliseeritud)
