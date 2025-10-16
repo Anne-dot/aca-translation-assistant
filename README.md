@@ -15,7 +15,7 @@ This project creates a comprehensive terminology database and translation assist
 ACA World Service Organization guidelines emphasize that a **glossary/terminology database is the FIRST and MANDATORY step** before translating any literature. This tool follows WSO's recommended workflow to ensure:
 
 - Consistent terminology across all documents
-- Authoritative sources (EKI terminology databases)
+- Authoritative sources (Sõnaveeb - includes EKI terminology databases)
 - Practically tested translations (existing ATL materials)
 - Systematic approach for resource-limited communities
 
@@ -36,16 +36,18 @@ ACA World Service Organization guidelines emphasize that a **glossary/terminolog
 
 **Milestone 1: Terminology Database** (IN PROGRESS)
 
-- ✅ **Step 1A:** Collected 1,278 terms from 4 EKI terminology databases
-- ✅ **Step 1B:** Matched 845 Glossary terms with EKI data (10 matches, 1.2% rate)
-- ✅ CSV files generated for manual review
-- ✅ JSON structure created with ISO 704 compliance
-- ⏳ **Next:** Manual review and validation
+- ⚠️ **Step 1A & 1B:** EKI approach deprecated - EKI databases included in Sõnaveeb
+- ✅ **New Approach:** Sõnaveeb enrichment (Issue #7) - script created, tested with 10 terms
+- ✅ ISO 704 & ISO 1087 compliance - structured fields (part_of_speech, term_complexity)
+- ✅ Term complexity classification - 213/826 terms are multi-word (complex/compound)
+- ⏳ **Next:** Data pipeline refactoring, component terms extraction, full 826-term lookup
 
-**Recent Completions:**
-- Issue #4: Automated matching algorithm ✅
+**Recent Completions (2025-10-15):**
 - Issue #5: Code refactoring (DRY principle) ✅
-- Issue #6: Add part_of_speech field (ISO 704) ✅
+- Issue #6: ISO 704 part_of_speech field ✅
+- Issue #7: Sõnaveeb lookup + term_complexity ✅
+- Issue #9: Signal handling fixes ✅
+- Issue #11: Term cleaning utilities ✅
 
 See detailed roadmap: [PROJECT_OVERVIEW_DRAFT.md](PROJECT_OVERVIEW_DRAFT.md)
 
@@ -56,28 +58,33 @@ See detailed roadmap: [PROJECT_OVERVIEW_DRAFT.md](PROJECT_OVERVIEW_DRAFT.md)
 ```
 ATL_tõlkeprojekt/
 ├── src/                           # Source code
-│   ├── eki_collector.py          # EKI data collector
-│   ├── load_eki_data.py          # EKI data loader & combiner
-│   ├── match_glossary_eki.py     # Matching algorithm
-│   ├── generate_review_csv.py    # CSV generation for review
-│   ├── add_part_of_speech.py     # Migration script
+│   ├── sonaveeb_lookup.py        # Sõnaveeb enrichment (current)
+│   ├── term_cleaning.py          # Term normalization utilities
+│   ├── add_term_complexity.py    # ISO 1087 classification
 │   └── utils.py                  # Shared utility functions
 │
 ├── data/                          # Data files
-│   ├── eki_terms/                # EKI terminology databases (4 files)
-│   ├── eki_combined.json         # Combined EKI data (564 EN, 262 ET)
-│   ├── aca-glossary.json         # ACA Glossary (845 terms)
-│   ├── aca-glossary-eki.json     # Enriched Glossary with EKI matches
-│   ├── glossary-review.csv       # Manual review file (826 terms)
-│   └── eki-terms.csv             # EKI reference (564 EN→ET pairs)
+│   ├── aca-glossary.json         # Original ACA Glossary (845 terms)
+│   ├── aca-glossary-eki.json     # With term_complexity field (826 terms)
+│   └── estonian-only-terms.csv   # Estonian-only terms from Sõnaveeb
+│
+├── deprecated/                    # Deprecated EKI approach
+│   ├── eki_collector_deprecated.py
+│   ├── match_glossary_eki_deprecated.py
+│   └── data/                     # Old EKI data files
 │
 ├── docs/                          # Documentation
-│   └── MANUAL_REVIEW_GUIDE.md    # Manual JSON editing guide
+│   ├── PROGRESS_UPDATES.md       # Daily progress log (Estonian)
+│   └── EXISTING_TOOLS_ANALYSIS.md # Translation tools analysis
+│
+├── research/                      # Research materials
+│   └── web_pages/sonaveeb/       # Sõnaveeb debugging files
 │
 ├── PROJECT_OVERVIEW_DRAFT.md      # Detailed project roadmap
-├── NEXT_SESSION.md                # Next session instructions
 ├── DECISIONS.md                   # Technical decisions and architecture
-└── PROGRESS_UPDATES.md            # Daily progress log (Estonian)
+├── FUTURE_IDEAS.md                # Pending decisions and future work
+├── TODO.md                        # Current tasks (post-compacting)
+└── instructions.md                # Claude Code instructions
 ```
 
 ---
@@ -94,9 +101,10 @@ ATL_tõlkeprojekt/
 ## 📖 Documentation
 
 - **[PROJECT_OVERVIEW_DRAFT.md](PROJECT_OVERVIEW_DRAFT.md)** - Complete project roadmap and milestones
-- **[NEXT_SESSION.md](NEXT_SESSION.md)** - Instructions for continuing work
-- **[docs/MANUAL_REVIEW_GUIDE.md](docs/MANUAL_REVIEW_GUIDE.md)** - Manual review workflow guide
 - **[DECISIONS.md](DECISIONS.md)** - Technical decisions and architecture
+- **[FUTURE_IDEAS.md](FUTURE_IDEAS.md)** - Pending decisions and future work
+- **[TODO.md](TODO.md)** - Current tasks list
+- **[docs/PROGRESS_UPDATES.md](docs/PROGRESS_UPDATES.md)** - Daily progress log (Estonian)
 - **[GitHub Issues](https://github.com/Anne-dot/aca-translation-assistant/issues)** - Active development tasks
 
 ---
@@ -113,5 +121,5 @@ MIT License (to be added)
 
 ---
 
-**Version:** 0.2.0-alpha
-**Last Updated:** 2025-10-15
+**Version:** 0.3.0-alpha
+**Last Updated:** 2025-10-16

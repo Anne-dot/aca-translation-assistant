@@ -2,8 +2,8 @@
 
 **Note:** Active development decisions are documented in GitHub Issues during work. This file is updated periodically with strategic and architectural decisions. For current work details, see [GitHub Issues](https://github.com/Anne-dot/aca-translation-assistant/issues).
 
-**Version:** 2.0
-**Last Updated:** 2025-10-15
+**Version:** 2.1
+**Last Updated:** 2025-10-16
 
 ---
 
@@ -26,15 +26,23 @@
 
 **Milestone 1: Terminology Database** (IN PROGRESS)
 
-- ✅ **Step 1A:** EKI terminology collected (1,278 terms) - Issue #1 ✅
-- ✅ **Step 1B:** Glossary matched with EKI (10/845 matches) - Issues #4, #5, #6 ✅
-- ⏳ **Next:** Manual review and validation
+- ⚠️ **Step 1A:** EKI terminology collection - DEPRECATED (Issues #1, #3, #4) - EKI databases included in Sonaveeb
+- ⚠️ **Step 1B:** Glossary-EKI matching - DEPRECATED (Issues #3, #4, #5, #6) - Using Sonaveeb instead
+- ✅ **New Approach:** Sonaveeb enrichment (Issue #7) - script created, tested with 10 terms
+- ⏳ **Next:** Data pipeline refactoring, component terms extraction, full 826-term Sonaveeb lookup
 - 📋 **Future:** Extract from ATL existing translations (Step 1C)
 
-**Recent Architectural Decisions:**
-- **Data structure:** Dictionary with English terms as keys, senses array for homonyms (Issue #4)
-- **Part of speech:** Added structured field following ISO 704 standards (Issue #6)
-- **Code quality:** DRY principle - shared functions extracted to utils.py (Issue #5)
+**Recent Completions (2025-10-15):**
+- ✅ **Issue #5:** Code refactoring - DRY principle (utils.py)
+- ✅ **Issue #6:** ISO 704 compliance - part_of_speech field
+- ✅ **Issue #7:** Sonaveeb lookup script + term_complexity classification
+- ✅ **Issue #9:** Signal handling fixes
+- ✅ **Issue #11:** Term cleaning utilities extracted
+
+**Key Architectural Changes:**
+- **Sonaveeb approach:** Replaces EKI collection (EKI data included in Sonaveeb)
+- **Term complexity:** ISO 1087 classification (simple/complex/compound)
+- **Component terms:** 213 multi-word terms require component extraction
 
 See complete roadmap: [PROJECT_OVERVIEW_DRAFT.md](PROJECT_OVERVIEW_DRAFT.md)
 

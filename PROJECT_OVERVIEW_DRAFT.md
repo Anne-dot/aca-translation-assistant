@@ -4,9 +4,9 @@
 
 **Mission:** Build a systematic terminology database and translation tools to help ACA/ATL communities translate materials consistently, even with limited resources.
 
-**Current Status:** Milestone 1 in progress - automated matching complete (10/845 terms), manual review next.
+**Current Status:** Milestone 1 in progress - Sonaveeb lookup script created, ready for full 826-term run.
 
-**Recent Completions:** Issues #4, #5, #6 ✅ | Data structure: ISO 704 compliant | Ready for manual review
+**Recent Completions:** Issues #5, #6, #7 (script), #9, #11 ✅ | Sonaveeb enrichment approach | ISO 704 compliant | EKI approach deprecated
 
 ---
 
@@ -68,41 +68,20 @@ Estonian ACA/ATL materials - building a systematic terminology database as the f
 
 **Sub-steps:**
 
-**1A. Collect EKI Terminology** ✅ DONE
-- Collected from 4 EKI terminology databases
-- Total: 1,278 terms (1,265 usable for Glossary matching)
-- Languages: Estonian + English (+ archived: Russian, Finnish, Latin)
-- Data includes: synonyms, definitions, EKI links
-- Location: `data/eki_terminid/*.json`
-- Tool: `src/eki_koguja.py`
+**1A. Collect EKI Terminology** ⚠️ DEPRECATED
+- **Status:** Approach deprecated - EKI databases already included in Sonaveeb
+- **Replacement:** Use Sonaveeb lookup instead (Issue #7)
+- **Historical info:** Collected from 4 EKI terminology databases (1,278 terms)
+- **Deprecated scripts:** Moved to `deprecated/eki_collector_deprecated.py`
+- **See:** Issues #1, #3, #4 for deprecation details
 
-**1B. Match Glossary with EKI** ✅ DONE
-- Source document: `/home/d0021/Documents/ATL_drive/Jagatud/Glossary_templatesonavara.docx`
-- Input: `data/aca-glossary.json` (845 terms: 210 filled + 635 untranslated)
-- Output: `data/aca-glossary-eki.json` (Glossary enriched with EKI matches)
-- Process steps:
-  1. ✅ Extract Glossary terms (DONE)
-  2. ✅ Load and prepare EKI data (DONE - Issue #3)
-     - Combined all 4 EKI databases into unified structure
-     - English terms as dictionary keys for fast lookup during translation
-     - Why English as keys: English is source language (WSO materials), enables quick translation workflow, supports multiple Estonian variants (EKI + ATL + Glossary), scalable to future languages (Milestone 4)
-     - Output: `data/eki_combined.json` (564 English terms, 262 Estonian-only terms)
-     - See: [Issue #3](https://github.com/Anne-dot/aca-translation-assistant/issues/3)
-  3. ✅ Implement matching algorithm (DONE - Issue #4)
-     - Automated matching with aggressive normalization (handle `(n.)`, `(v.)`, newlines)
-     - Match rate: 10/845 (1.2%) - low rate expected (EKI = specialized, Glossary = general ACA terms)
-     - Included definitions even when Estonian term missing (4 terms)
-     - Tools: `src/match_glossary_eki.py`, `src/generate_review_csv.py`
-     - Output: `data/aca-glossary-eki.json`, `data/glossary-review.csv`, `data/eki-terms.csv`
-     - See: [Issue #4](https://github.com/Anne-dot/aca-translation-assistant/issues/4)
-  4. ⏳ Manual review and validation (NEXT)
-     - Review CSV files in Excel/Sheets
-     - Find additional matches manually
-     - Mark homonyms, set preferred variants
-     - Checkpoints every 25 terms
-- Important: Glossary "draft" translations saved as source `aca_draft_volunteer` for future reference
-- Next enrichment: Additional sources (IATE, Sonaveeb, Aare, Eurotermbank) in Step 1B-4
-- **Code quality:** Refactored shared functions to `src/utils.py` (DRY principle) - See: [Issue #5](https://github.com/Anne-dot/aca-translation-assistant/issues/5)
+**1B. Match Glossary with EKI** ⚠️ DEPRECATED
+- **Status:** Approach deprecated - using Sonaveeb lookup instead
+- **Replacement:** Sonaveeb enrichment (Issue #7) includes EKI data automatically
+- **Historical info:** Matched 10/845 terms (1.2% match rate) from EKI databases
+- **Deprecated scripts:** Moved to `deprecated/match_glossary_eki_deprecated.py`
+- **Preserved logic:** Term cleaning functions extracted to `src/term_cleaning.py` (Issue #11)
+- **See:** Issues #3, #4, #5 for implementation details
 
 **1C. Extract from Existing ATL Translations** ⏳ FUTURE
 - Sources: All ATL in-use translations
@@ -201,5 +180,133 @@ Each term contains:
 
 ---
 
-**Status:** Milestone 1 in progress - Step 1B complete, manual review next
-**Date:** 2025-10-15
+## Current Status & Open Questions (2025-10-16)
+
+### What Has Been Completed
+
+**Issues Closed:**
+- ✅ **Issue #5:** Refactored shared code to `src/utils.py` (DRY principle)
+- ✅ **Issue #6:** Added `part_of_speech` field to all 826 terms (ISO 704 compliance)
+- ✅ **Issue #9:** Fixed Ctrl+C signal handling in sonaveeb_lookup.py
+- ✅ **Issue #11:** Extracted term cleaning functions to `src/term_cleaning.py`
+
+**Issues In Progress:**
+- ⏳ **Issue #7:** Sonaveeb lookup script created, tested with 10 terms, awaiting data pipeline refactoring
+- ⏳ **Issue #10:** glossary_manager_via_terminal.py (not started)
+
+**Key Changes from Initial Plan:**
+
+1. **EKI Approach Deprecated (Issues #1, #3, #4)**
+   - **Reason:** EKI terminology databases already included in Sonaveeb
+   - **Decision:** Use Sonaveeb lookup instead of separate EKI collection
+   - **Deprecated files:** Moved to `deprecated/` folder:
+     - `eki_collector_deprecated.py`
+     - `load_eki_data_deprecated.py`
+     - `match_glossary_eki_deprecated.py`
+   - **Preserved logic:** Term cleaning functions extracted to `src/term_cleaning.py`
+
+2. **Term Complexity Classification Added (Issue #7)**
+   - **Discovery:** 213/826 terms are multi-word (complex/compound per ISO 1087)
+   - **Implementation:** Added `term_complexity` and `component_terms` fields
+   - **Impact:** Requires component term handling before Sonaveeb lookup
+   - **Note:** ISO 704 and ISO 1087 standards followed from project start
+
+3. **Documentation Structure**
+   - **Created:** `FUTURE_IDEAS.md` for pending decisions and future work
+   - **Purpose:** ADHD-friendly separation of current work vs future plans
+
+### Open Questions Requiring Decisions
+
+**Before Sonaveeb Full Lookup:**
+
+1. **ACA Glossary .docx Cleanup & Field Mapping**
+   - Review original Glossary document step-by-step
+   - Identify what fields should emerge from cleanup process
+   - Examples:
+     - Grammatical markers `(n.)` → `part_of_speech` field?
+     - Explanations `\n(...)` → `notes` field structure?
+     - Multi-word terms → component handling?
+   - **Status:** Not yet reviewed systematically
+
+2. **Component Terms Extraction (213 terms)**
+   - **Step A:** Generate component terms list from complex/compound terms
+   - **Step B:** Review generic words decision:
+     - Words like "to", "about", "for", "of", "the", "self", "based"
+     - **Options:** Filter them out OR keep for lookup and see what emerges
+     - **Current thinking:** Keep all, review results, decide filtering later
+   - **Step C:** Add approved components to glossary as separate terms
+   - **Step D:** Restructure lookup order: simple terms first → then complex
+   - **Status:** Design complete (FUTURE_IDEAS.md), not implemented
+   - **See:** FUTURE_IDEAS.md - "Component Terms Extraction" section
+
+3. **Part of Speech Field Usage**
+   - 107 terms have grammatical markers in `notes` field
+   - **Question:** When to populate `part_of_speech`?
+     - Before lookup? (probably not useful)
+     - During manual review? (makes more sense)
+   - **Status:** Field exists (Issue #6), population timing undecided
+
+4. **Sonaveeb Database Filtering**
+   - **Question:** Keep all Sonaveeb results or filter irrelevant databases?
+   - **Example:** Automotive terminology not relevant for ACA/therapy
+   - **Options:**
+     - A: Pre-filter databases (cleaner results)
+     - B: Keep ALL results, mark irrelevant during manual review with status
+   - **Decision:** Variant B - small dataset, learn what exists, auto-filter later if patterns emerge
+   - **Benefit:** Track rejected homonyms with reasons
+
+5. **Data Flow Clarification**
+   - Current files: `aca-glossary.json` → `aca-glossary-eki.json` (has deprecated EKI data)
+   - **Questions:**
+     - What is current "clean" glossary version?
+     - Should we create new version without EKI data?
+     - What should be input for component extraction?
+     - What should be input for Sonaveeb lookup?
+   - **Status:** Needs systematic review of data pipeline
+
+### Recommended Next Steps
+
+**Tomorrow's Fresh Start:**
+
+1. **Review & Document Glossary Cleanup Pipeline**
+   - Map: original .docx → current JSON → desired clean state
+   - Identify all field mappings and transformations
+   - Document what fields emerge from each step
+
+2. **Implement Component Terms Extraction**
+   - Part 1: Generate CSV of all components
+   - Part 2: Review generic words (manual decision)
+   - Part 3: Add to glossary
+
+3. **Prepare Clean Glossary for Sonaveeb**
+   - Determine correct input file
+   - Verify structure matches Sonaveeb lookup expectations
+   - Add any missing foundational terms (ACA→ATL, Adult Child→Täiskasvanud laps)
+
+4. **Run Sonaveeb Lookup**
+   - Full 826-term run
+   - Simple terms first, then complex terms
+   - Generate results for manual review
+
+### Files & Locations
+
+**Current Data:**
+- `data/aca-glossary.json` - Original extraction
+- `data/aca-glossary-eki.json` - With deprecated EKI matches + term_complexity
+- `data/eki_combined.json` - Deprecated EKI combined data
+
+**Scripts:**
+- `src/sonaveeb_lookup.py` - Created and tested, needs refactoring for new pipeline (Issue #7)
+- `src/term_cleaning.py` - Term cleanup utilities (Issue #11)
+- `src/add_term_complexity.py` - Already executed
+- `deprecated/` - Old EKI scripts preserved
+
+**Documentation:**
+- `FUTURE_IDEAS.md` - Component extraction, variant structure, future features
+- `DECISIONS.md` - Architectural decisions log
+- `PROJECT_OVERVIEW_DRAFT.md` - This document
+
+---
+
+**Status:** Milestone 1 in progress - Sonaveeb lookup script ready, awaiting data pipeline clarification and component extraction
+**Date:** 2025-10-16
