@@ -2,7 +2,7 @@
 
 **Note:** Active development decisions are documented in GitHub Issues during work. This file is updated periodically with strategic and architectural decisions. For current work details, see [GitHub Issues](https://github.com/Anne-dot/aca-translation-assistant/issues).
 
-**Version:** 2.1
+**Version:** 2.2
 **Last Updated:** 2025-10-16
 
 ---
@@ -15,7 +15,7 @@
 **Technical Stack:**
 - Language: Python 3.x
 - Data Format: JSON (current), SQLite (future)
-- Standards: ISO 704 lexicography standards
+- Standards: TBX-Basic v1.2.1 (ISO 30042:2019), ISO 704, ISO 1087
 - Workflow: Git + GitHub Issues
 
 **End Goal:** Gift to Estonian and global ACA/ATL communities
@@ -29,17 +29,20 @@
 - ⚠️ **Step 1A:** EKI terminology collection - DEPRECATED (Issues #1, #3, #4) - EKI databases included in Sonaveeb
 - ⚠️ **Step 1B:** Glossary-EKI matching - DEPRECATED (Issues #3, #4, #5, #6) - Using Sonaveeb instead
 - ✅ **New Approach:** Sonaveeb enrichment (Issue #7) - script created, tested with 10 terms
-- ⏳ **Next:** Data pipeline refactoring, component terms extraction, full 826-term Sonaveeb lookup
+- ✅ **TBX-Basic Structure:** Standards research complete (Issue #13) - all 3 key decisions finalized
+- ⏳ **Next:** Final JSON schema design, data pipeline documentation, migration script
 - 📋 **Future:** Extract from ATL existing translations (Step 1C)
 
-**Recent Completions (2025-10-15):**
-- ✅ **Issue #5:** Code refactoring - DRY principle (utils.py)
-- ✅ **Issue #6:** ISO 704 compliance - part_of_speech field
-- ✅ **Issue #7:** Sonaveeb lookup script + term_complexity classification
-- ✅ **Issue #9:** Signal handling fixes
+**Recent Completions (2025-10-16):**
+- ✅ **Issue #13:** TBX-Basic standards research and 3 structural decisions
 - ✅ **Issue #11:** Term cleaning utilities extracted
+- ✅ **Issue #9:** Signal handling fixes
+- ✅ **Issue #7:** Sonaveeb lookup script + term_complexity classification
+- ✅ **Issue #6:** ISO 704 compliance - part_of_speech field
+- ✅ **Issue #5:** Code refactoring - DRY principle (utils.py)
 
 **Key Architectural Changes:**
+- **TBX-Basic compliance:** Final structure based on ISO 30042:2019 standard
 - **Sonaveeb approach:** Replaces EKI collection (EKI data included in Sonaveeb)
 - **Term complexity:** ISO 1087 classification (simple/complex/compound)
 - **Component terms:** 213 multi-word terms require component extraction
@@ -225,6 +228,54 @@ Add `term_complexity` field following ISO 1087 standard.
 - Migration script `src/add_term_complexity.py`
 - Automatic classification based on spaces/hyphens
 - `component_terms` array added for complex terms
+
+---
+
+### ✅ DECISION: TBX-Basic Compliant Structure
+
+**Date:** 2025-10-16
+**Issue:** [#13](https://github.com/Anne-dot/aca-translation-assistant/issues/13)
+
+**Decision:**
+Adopt TBX-Basic v1.2.1 (ISO 30042:2019) as foundation for final JSON structure with custom ATL workflow extensions.
+
+**Three Key Structural Decisions:**
+
+1. **Transaction History:** Full history tracking with `transactions[]` array
+   - Rationale: Collaborator wants complete audit trail for all term changes
+   - TBX-Basic compliant (`transacGrp`)
+
+2. **Status Tracking:** Variant C - Both `atl_status` + `usage_status`
+   - `atl_status`: Review decision (`candidate`, `atl_approved`, `rejected`)
+   - `usage_status`: Actual usage (`not_in_use`, `atl_in_use`, `formerly_in_use`)
+   - Rationale: ATL texts contain historically used terms not yet reviewed
+
+3. **Component Lookups:** Hybrid approach
+   - Data stored in `_metadata.component_lookups`
+   - Reference at term level: `has_components: true`
+   - Rationale: Avoids duplication, smaller JSON size
+
+**Additional Features:**
+- `usage_examples` field for translation decision documentation with context
+- Community-added terms support (`is_glossary_term: false` + `derived_from: []`)
+- CAT tool lemmatization approach (store base form only)
+- Estonian grammatical forms handling (pragmatic: add variants only if needed)
+
+**Benefits:**
+- TBX-Basic compliant → exportable to professional CAT tools (SDL Trados, MemoQ)
+- Follows international terminology management standards (ISO 30042:2019)
+- Supports ATL collaborative workflow
+- All custom fields preserved in `workflow` and `_metadata` groups
+
+**Documentation:**
+- `research/standards/TBX-Basic_FIELDS.md` - Complete field reference (318 lines)
+- `research/standards/STRUCTURE_COMPARISON.md` - Current vs TBX-Basic (296 lines)
+- `research/standards/TBX_vs_MY_PLANS.md` - TBX vs ATL workflow (700+ lines)
+
+**Next Steps:**
+- Design final JSON schema based on all 3 decisions
+- Create migration script to TBX-compliant structure
+- Document complete data pipeline (Steps 2-5)
 
 ---
 

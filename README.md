@@ -37,17 +37,16 @@ ACA World Service Organization guidelines emphasize that a **glossary/terminolog
 **Milestone 1: Terminology Database** (IN PROGRESS)
 
 - ⚠️ **Step 1A & 1B:** EKI approach deprecated - EKI databases included in Sõnaveeb
-- ✅ **TBX-Basic Standards Research:** Complete (2025-10-16) - 4 hours
+- ✅ **TBX-Basic Standards Research:** Complete (Issue #13) - All 3 structural decisions finalized
 - ✅ **Standards Documentation:** Field definitions, structure comparison, ATL workflow integration
-- ✅ **Key Decisions:** Transaction history (full), component lookups (hybrid)
-- ⏸️ **Pending Decision:** ATL status tracking (atl_in_use vs atl_approved - Variant A/B/C)
+- ✅ **Key Decisions:** Transaction history (full), status tracking (Variant C), component lookups (hybrid)
 - ✅ ISO 704, ISO 1087, TBX-Basic (ISO 30042:2019) compliance
 - ✅ Term complexity classification - 213/826 terms are multi-word (complex/compound)
-- ⏳ **Next:** Finalize status tracking decision → Design final JSON schema → Create migration script
+- ⏳ **Next:** Design final JSON schema → Document data pipeline (Steps 2-5) → Create migration script
 
 **Recent Completions:**
-- 2025-10-16: TBX-Basic standards research and documentation ✅
-- 2025-10-15: Issue #5, #6, #7, #9, #11 ✅
+- 2025-10-16: Issue #13 - TBX-Basic research and all 3 structural decisions ✅
+- 2025-10-15: Issues #5, #6, #7, #9, #11 ✅
 - Sõnaveeb enrichment approach ✅
 - ISO 704 & ISO 1087 compliance ✅
 
@@ -80,6 +79,10 @@ ATL_tõlkeprojekt/
 │   └── EXISTING_TOOLS_ANALYSIS.md # Translation tools analysis
 │
 ├── research/                      # Research materials
+│   ├── standards/                # TBX-Basic & ISO standards documentation
+│   │   ├── TBX-Basic_FIELDS.md  # Complete field reference (318 lines)
+│   │   ├── STRUCTURE_COMPARISON.md # Current vs TBX-Basic
+│   │   └── TBX_vs_MY_PLANS.md   # TBX vs ATL workflow (700+ lines)
 │   └── web_pages/sonaveeb/       # Sõnaveeb debugging files
 │
 ├── PROJECT_OVERVIEW_DRAFT.md      # Detailed project roadmap
@@ -95,7 +98,7 @@ ATL_tõlkeprojekt/
 
 - **Language:** Python 3.x
 - **Data Format:** JSON (current), SQLite (future)
-- **Standards:** ISO 704 lexicography standards
+- **Standards:** TBX-Basic v1.2.1 (ISO 30042:2019), ISO 704, ISO 1087
 - **Version Control:** Git + GitHub Issues workflow
 
 ---
