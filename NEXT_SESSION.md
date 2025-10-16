@@ -1,132 +1,214 @@
-# Next Session - 2025-10-16
+# Next Session - 2025-10-17
 
 ## ⚠️ FIRST: Read These Before Starting
 
 **CRITICAL - Read every time before continuing work:**
-1. `~/.claude/instructions.md` - Global non-negotiable requirements (always follow this as primary source)
-2. `AI_COLLABORATION_GUIDE.md` - Project collaboration rules (if exists)
-3. **If this is after compacting:** Read compacting summary to get back to speed
+1. `instructions.md` - Project-specific rules (in project root)
+2. `~/.claude/instructions.md` - Global non-negotiable requirements
+3. `TODO.md` - Current task list and progress
 
-**Important:** All work must follow `~/.claude/instructions.md` principles - 29 line limit, show TEXT first, ask open questions, NO SILENT FAILURES, ADHD-friendly code.
-
-## Where We Left Off (2025-10-15)
-
-**Issue #4 completed and closed:**
-- ✅ Implemented matching algorithm for Glossary + EKI
-- ✅ Aggressive normalization (handle `(n.)`, `(v.)`, newlines)
-- ✅ Match rate: 10/845 (1.2%) - expected (EKI specialized, Glossary general)
-- ✅ Created CSV files for manual review
-- ✅ Output: `data/aca-glossary-eki.json`, `data/glossary-review.csv`, `data/eki-terms.csv`
-
-**Issue #5 completed and closed:**
-- ✅ Refactored shared code to `src/utils.py` (DRY principle)
-- ✅ 5 utility functions created
-- ✅ 3 scripts refactored and tested
-- ✅ Updated `~/.claude/instructions.md` with utils rule
-
-**Documentation updated:**
-- ✅ PROJECT_OVERVIEW_DRAFT.md - status and date updated
-- ✅ NEXT_SESSION.md - updated for next session
-- ✅ Created `docs/MANUAL_REVIEW_GUIDE.md` - guide for manual JSON editing
-
-**Key decision:** Low match rate expected - EKI = specialized therapy terms, Glossary = general ACA vocabulary
-
-## Next Concrete Step
-
-**FIRST: Update documentation based on closed issues**
-
-### Mida teha
-
-**1. Review closed issues thoroughly (newest → oldest)**
-- Read Issue #6 comments completely
-- Read Issue #5 comments completely
-- Read Issue #4 comments completely
-- Extract all important decisions, findings, changes
-- Make notes of what needs to be updated in docs
-
-**2. Update PROJECT_OVERVIEW_DRAFT.md**
-- Step 1B-4: correct additional sources list
-- Manual review process description
-- Any structural changes from issue discussions
-- References to completed issues
-
-**3. Update DECISIONS.md**
-- Add strategic/architectural decisions from issues
-- Ensure Issue #6, #5, #4 decisions are documented
-- Follow workflow: Issues (active) → DECISIONS (after closing)
-
-**4. Review and cleanup .md files**
-- `EXISTING_TOOLS_ANALYSIS.md` - review if still needed or archive
-- `PERSONAL_THOUGHTS.md` - personal file, keep as is
-- `eki_analüüs/README.md` - old analysis, consider archiving
-
-### Success criteria
-✅ All closed issues reviewed and understood
-✅ PROJECT_OVERVIEW_DRAFT.md updated with issue details
-✅ DECISIONS.md updated with strategic decisions
-✅ Documentation is current and accurate
-✅ Ready to start manual review with complete context
+**Important:** All work must follow ADHD-friendly principles - show TEXT first, ask open questions, NO SILENT FAILURES, use TODO.md (not TodoWrite tool).
 
 ---
 
-## THEN: Manual review of matched terms and CSV files
+## Where We Left Off (2025-10-16)
 
-### Mida teha
+### ✅ Completed This Session
 
-**1. Ava failid**
-```bash
-code data/aca-glossary-eki.json
-# Ava CSV failid Excelis/Google Sheetsis
-```
+**TBX-Basic Standards Research (4 hours):**
+- ✅ Downloaded and analyzed TBX-Basic v1.2.1 specification (ISO 30042:2019)
+- ✅ Created comprehensive field reference documentation
+- ✅ Compared current JSON structure with TBX-Basic requirements
+- ✅ Compared TBX-Basic standard with ATL workflow plans
+- ✅ Made 2 out of 3 key structural decisions
 
-**2. Kontrolli 10 automaatselt matchitud terminit**
-- Ava `data/glossary-review.csv` Excelis
-- Sorteeri Match_Status järgi (matched enne)
-- Kontrolli üle kas tõlked sobivad
-- Valideeri domain ja definitsioonid
+**Documentation Created:**
+- ✅ `research/standards/TBX-Basic_FIELDS.md` (318 lines) - Complete field reference
+- ✅ `research/standards/STRUCTURE_COMPARISON.md` (296 lines) - Current vs TBX-Basic
+- ✅ `research/standards/TBX_vs_MY_PLANS.md` (700+ lines) - TBX vs my plans with ADHD summary
+- ✅ `docs/PROGRESS_UPDATES.md` - Added 2025-10-16 session entry
+- ✅ `PROJECT_OVERVIEW_DRAFT.md` - Updated with TBX-Basic research
+- ✅ `TODO.md` - Added documentation update tasks (#10-14)
 
-**3. Otsi käsitsi lisamatche**
-- Võrdle Glossary EN termineid EKI EN terminitega
-- Kasuta `data/eki-terms.csv` abimaterjalina (564 EN→ET paari)
-- Märgi leitud matchid JSON-i (vt juhend)
-- Lisa `match_confidence: "manual"`
-
-**4. Märgi homonüümid**
-- Terminid, millel mitu tähendust (nt "abuse" - noun vs verb)
-- Notes veerg sisaldab `(n.)`, `(v.)`, `(to)` markereid - need on kandidaadid
-- Lisa JSON-i teine sense (vt juhend)
-- Lisa `part_of_speech` väli (ISO 704 standard)
-
-**5. Checkpoint iga 25 termini järel**
-- Salvesta `data/aca-glossary-eki.json`
-- Valideeri: `python3 -m json.tool data/aca-glossary-eki.json > /dev/null`
-- Tee märkmeid, mida leidsid
-
-**Detailne juhend:** Vaata `docs/MANUAL_REVIEW_GUIDE.md`
-
-### Failid
-- **Muudetav:** `data/aca-glossary-eki.json` - terminibaas
-- **Vaatamiseks:** `data/glossary-review.csv` (826 terminit)
-- **Vaatamiseks:** `data/eki-terms.csv` (564 EN→ET paari)
-- **Juhend:** `docs/MANUAL_REVIEW_GUIDE.md`
-
-### Success criteria
-✅ 10 matched terminit valideeritud
-✅ Käsitsi lisamatchid leitud ja märgitud
-✅ Homonüümid identifitseeritud ja märgitud
-✅ JSON korrektne ja valideeritud
-✅ Valmis järgmiseks enrichment sammuks
+**Key Decisions Made:**
+1. ✅ **Transaction History:** Full history tracking with `transactions[]` array (collaborator wants full audit trail)
+2. ✅ **Component Lookups:** Hybrid approach - data in `_metadata.component_lookups`, reference `has_components: true` at term level
+3. ⏸️ **PENDING:** atl_in_use vs atl_approved - needs decision between Variant A, B, or C
 
 ---
 
-## After Manual Review
-1. Create issue for structured manual review workflow (if needed)
-2. Manual review of Estonian-only terms (262 total from EKI)
-3. 1B-Step4: Enrich with additional sources (IATE, Eurotermbank, Aare, Sonaveeb)
-4. 1C: Extract from ATL existing translations
+## 🎯 Next Concrete Step
 
-## Important Context
-- See Issue #4 for matching decisions: https://github.com/Anne-dot/aca-translation-assistant/issues/4
-- See Issue #5 for refactoring: https://github.com/Anne-dot/aca-translation-assistant/issues/5
-- Manual review is hands-on work with JSON + CSV files
-- `part_of_speech` field added following ISO 704 lexicography standards
+### PRIORITY 1: Make Status Tracking Decision ⚠️ BLOCKS EVERYTHING ELSE
+
+**Decision needed:** Choose Variant A, B, or C for ATL status tracking
+
+**Where to find info:**
+- Read `research/standards/TBX_vs_MY_PLANS.md`
+- Start with TL;DR (ADHD Summary) at the top
+- Focus on "Otsus 2" section
+
+**Three options:**
+
+| Variant | Description | Complexity | Use Case |
+|---------|-------------|------------|----------|
+| **A** | Only `atl_approved` | 🟢 Simple | If workflow is: review → approve |
+| **B** | Only `atl_in_use` | 🟢 Simple | If focus is on actual usage tracking |
+| **C** | Both `atl_status` + `usage_status` | 🟡 Medium | If need to track approval AND usage separately |
+
+**Variant C Examples (most flexible):**
+- Term approved but not yet in use: `atl_approved` + `not_in_use`
+- Term in use but not yet reviewed: `candidate` + `atl_in_use`
+- Term rejected but still in old texts: `rejected` + `atl_in_use`
+- Term approved and actively used: `atl_approved` + `atl_in_use`
+
+**How to decide:**
+1. Think about ATL workflow: Do you review first or use first?
+2. Do you need to distinguish "officially approved" from "currently used"?
+3. Will you have terms that are used but not yet approved? (historical terms)
+4. Will you have terms that are approved but not yet in päevatekstid?
+
+**After decision:**
+- Update `research/standards/TBX_vs_MY_PLANS.md` with decision
+- Update TODO.md Task #3 as complete
+- Proceed to Priority 2
+
+---
+
+### PRIORITY 2: Design Final JSON Schema
+
+**Once Variant A/B/C is decided:**
+
+1. **Create JSON schema document**
+   - File: `research/standards/FINAL_JSON_SCHEMA.md`
+   - Based on recommended structure from TBX_vs_MY_PLANS.md
+   - Include complete example with all fields
+   - Document all field definitions
+   - Add validation rules
+
+2. **Update DATA_PIPELINE.md**
+   - Document Steps 2-5 (currently only Step 1 exists)
+   - Show transformation at each step
+   - Include example data at each stage
+
+3. **Plan migration strategy**
+   - Current: `aca-glossary-eki.json`
+   - Target: New TBX-compliant structure
+   - Migration script: `src/migrate_to_tbx_structure.py`
+
+---
+
+### PRIORITY 3: Create Migration Script
+
+**Script: `src/migrate_to_tbx_structure.py`**
+
+**What it does:**
+1. Load current `aca-glossary-eki.json`
+2. Transform each term to new TBX-compliant structure:
+   - Clean English term from string → separate `term` and `note`
+   - Extract part_of_speech from markers `(n.)`, `(v.)`, etc.
+   - Create `languages.en` and `languages.et` sections
+   - Flatten all ET variants into `languages.et.terms[]`
+   - Move `term_complexity`, `component_terms`, `is_glossary_term` → `_metadata`
+   - Set appropriate `administrativeStatus` values
+   - Create transaction history entries
+3. Save to `data/aca-glossary-tbx.json`
+4. Validate output
+5. Generate migration report
+
+**Success criteria:**
+- ✅ All 826 terms migrated
+- ✅ No data loss
+- ✅ TBX-Basic compliant structure
+- ✅ All custom ATL fields preserved
+- ✅ JSON validates correctly
+
+---
+
+## 📋 Full Task List (from TODO.md)
+
+**Current session tasks (Tasks #10-14):**
+- ✅ #10: Progress update created
+- ✅ #11: PROJECT_OVERVIEW_DRAFT.md updated
+- ✅ #12: NEXT_SESSION.md updated (this file)
+- ⏸️ #13: README.md needs updating
+- ⏸️ #14: Git commit and push
+
+**Data Pipeline (Task #3):**
+- ⏸️ Decide Variant A/B/C (atl_in_use vs atl_approved)
+- ⏸️ Design final JSON schema
+- ⏸️ Document Steps 2-5 in DATA_PIPELINE.md
+- ⏸️ Create migration script
+
+**Future tasks:**
+- Task #4: Analyze ACA Glossary .docx structure
+- Task #5: Finalize component terms extraction design
+- Task #6: Design enrichment sources integration
+- Tasks #7-9: Component lookup, term cleaning, glossary manager (GitHub issues)
+
+---
+
+## 📁 Important Files
+
+**Standards Documentation:**
+- `research/standards/TBX_vs_MY_PLANS.md` ⭐ **READ THIS FIRST** (ADHD summary at top)
+- `research/standards/TBX-Basic_FIELDS.md` - All field definitions
+- `research/standards/STRUCTURE_COMPARISON.md` - Current problems identified
+- `research/standards/README.md` - Standards documentation index
+
+**Current Data:**
+- `data/aca-glossary-eki.json` - Current structure (needs migration)
+- `data/Glossary_templatesonavara.docx` - Original ACA Glossary
+
+**Project Documentation:**
+- `TODO.md` - Current task list (use this, not TodoWrite!)
+- `instructions.md` - Project-specific rules
+- `PROJECT_OVERVIEW_DRAFT.md` - Project overview
+- `docs/PROGRESS_UPDATES.md` - Session summaries
+- `FUTURE_IDEAS.md` - Future plans and open questions
+
+---
+
+## 💡 Context & Reminders
+
+**Why TBX-Basic matters:**
+- International standard for terminology exchange (ISO 30042:2019)
+- FREE and OPEN (unlike ISO 704/1087)
+- Enables export to professional CAT tools (SDL Trados, MemoQ)
+- Used by professional translation industry
+- Supports collaboration and version tracking
+
+**Current compatibility:**
+- ✅ 80% of my plans align well with TBX-Basic
+- ⚠️ 20% needs adjustment (mainly structure reorganization)
+- ✅ All custom ATL features can be preserved
+- ✅ ISO 1087 `term_complexity` field is good addition
+
+**Key insight:**
+TBX-Basic provides the professional foundation we need while allowing custom ATL workflow fields. Best of both worlds - standards compliance + flexibility.
+
+---
+
+## 🎯 Success Criteria for Next Session
+
+**Minimum:**
+- ✅ Decision made: Variant A, B, or C
+- ✅ Final JSON schema documented
+- ✅ README.md updated
+- ✅ Changes committed and pushed
+
+**Ideal:**
+- ✅ All of minimum
+- ✅ Migration script created
+- ✅ First terms migrated successfully
+- ✅ Validation working
+
+**Stretch:**
+- ✅ All of ideal
+- ✅ Full migration complete (826 terms)
+- ✅ Migration report generated
+- ✅ Ready to continue with enrichment
+
+---
+
+**Remember:** Take breaks, follow ADHD-friendly principles, update TODO.md as you go. You've made excellent progress! 🎉

@@ -649,3 +649,185 @@ Ma olen uhke selle üle, et AI-d pidevalt joone peal suutsin hoida ja oma juhise
 Ma olen väsinud. Täna olen lisaks oma projektile ka palju inimsuhtluse kohta õppinud ja harjutanud. ATL-i teekaaslane käis külas ja siis meil on hoopis erinevad suunad edasi liikumiseks ja see ongi okei. Ma ise tahan praegu kogukonda aidata tõlgete ja toimetamise järjepidevuse hoidmisel ning selle jaoks ma hakkasin koostama atl-sõnastikku või korpust. ACA WSO on loonud terminite glossary ja see on siis tõlkimise eelne esimene soovituslik samm. meil on juba päevatekstid peaaegu valmis ja brb-st on sammud. ja siis on hunnik masintõlkeid. Täna sain ma lisaks praktilisele tööle ka suhelda inimestega ning tajuda enda muutust oma suhete sees. Minu sõbrannad. Minu viis nõuandmiselt oma kogemuse jagamise peale minna. Teiste tunnete valideerimine ja nendele ruumi andmine, sest mul on selle jaoks enda sees ja end ümbritsevate inimeste jaoks ruumi. ATL-i töö on mulle palju andnud. Kui ma oma mitte ATL sõbrannat tema raskel hetkel toetasin ja siis talle mõnda oma lugu jagasin, et normaliseerida seda, et meil kõigil on vanematena raske ja et sellest rääkimine ei ole mitte häbiasi, vaid teiste ebatäisusele ja autentsusele ruumi loomine, siis ma andsin seda, mis mul praeguseks on tekkinud ja mida olen oma teekonnal saanud. Kui ta mind tänas, siis vastasin, et "Võta heaks ja anna edasi! Kunagi. Kas mulle või kellelegi teisele, kes seda vajab!" Ma saan ja annan ja võtan vastu tänu ja see on nii äge koht. See on elu, mida ma tahan elada. Ma tõesti tervenen omas tempos
 
 ---
+
+## 📅 2025-10-16 (Neljapäev) - TBX-Basic Standards Research
+
+### 🎉 Täna Saavutatud
+
+#### 1. 📚 TBX-Basic Standard Analysis - Complete Field Reference
+
+**Kontekst:** Pärast compacting'ut vajasin selgust: mis väljad peavad lõpplikus terminoloogia andmebaasis olema? Milline struktuur on professionaalne ja standarditele vastav?
+
+**Uurimistöö:**
+- ✅ TBX-Basic v1.2.1 spetsifikatsiooni allalaadimine (ISO 30042:2019)
+- ✅ TBX-Basic dialect package allalaadimine (skeemid, näited)
+- ✅ TBX-basic-samples.tbx analüüs (legacy 2009)
+- ✅ Example_Astronomy_DCA_VALID.tbx analüüs (current 2023)
+- ✅ TBX-Basic_v1.2.1/ package ekstraktimine
+
+**Loodud failid:**
+- `research/standards/TBX-Basic_FIELDS.md` (318 rida) - Kõik TBX-Basic väljad ja nõuded
+- `research/standards/STRUCTURE_COMPARISON.md` (296 rida) - Praegune JSON vs TBX-Basic
+- `research/standards/TBX_vs_MY_PLANS.md` (700+ rida) - TBX-Basic vs minu plaanid
+
+#### 2. 📖 TBX-Basic_FIELDS.md - Täielik Väljade Referents
+
+**Eesmärk:** Defineerida kõik nõutud ja soovituslikud väljad lõpliku JSON struktuuri jaoks
+
+**Sisu:**
+- Kolmetasandiline hierarhia: Concept → Language → Term
+- Nõutud väljad igal tasemel
+- Soovituslikud aga olulised väljad
+- Soovitused ACA Translation Assistant projektile
+- Mapping: ACA Glossary → TBX-compliant JSON
+- Custom väljad ATL workflow jaoks
+
+**Peamine avastus:**
+- TBX-Basic on TASUTA ja AVATUD (erinevalt ISO 704/1087)
+- Professionaalne standard terminoloogia vahetamiseks
+- Kasutuses CAT tools (SDL Trados, MemoQ)
+- Võimaldab tulevikus eksportida TBX XML formaati
+
+#### 3. 🔍 STRUCTURE_COMPARISON.md - Praegune JSON vs TBX-Basic
+
+**Analüüsitud:** `aca-glossary-eki.json` struktuur vs TBX-Basic nõuded
+
+**Peamised probleemid:**
+1. ❌ Puudub keelte eraldatus (EN ja ET segamini)
+2. ❌ Terminid sisaldavad metadata stringides ("Abandonment\n(...)")
+3. ⚠️ Allikate järgi grupeeritud (`eki_variants`, `sonaveeb_variants`)
+4. ❌ `part_of_speech` tühi (kõik null)
+5. ⚠️ Mitte-standardsed administrativeStatus väärtused
+
+**Mis toimib hästi:**
+- ✅ Concept = top-level entry
+- ✅ ISO 1087 vastavus (`term_complexity`)
+- ✅ Allikate jälgimine
+- ✅ Valdkondade klassifikatsioon
+- ✅ Põhjalik metadata
+
+**Migratsioon:** 🔴 Kõrge prioriteet - TBX-Basic vastavus oluline professionaalsete tööriistade jaoks
+
+#### 4. 🎯 TBX_vs_MY_PLANS.md - TBX vs Minu Plaanitud Struktuur
+
+**Võrdlesin:** TBX-Basic standard minu plaanidega:
+- FUTURE_IDEAS.md "Variant Structure"
+- Issue #7 kommentaarid (term_complexity, component_lookups)
+- Issue #10 (glossary_manager, status tracking)
+
+**ADHD-sõbralik summary lisatud algusesse:**
+- ✅ TL;DR sektsioon
+- 📊 Sobivuse skoor: 80% hea sobivus
+- ⚡ 3 põhilist otsust
+- 🚀 Kiire tegevusplaan
+- ❓ 3 otsust plussid/miinused tabelitega
+
+**Sobivuse skoor:**
+```
+✅ Sobib hästi:       ████████░░  80%
+⚠️ Vajab kohandust:   ██░░░░░░░░  20%
+❌ Ei sobi:           ░░░░░░░░░░   0%
+```
+
+#### 5. ✅ Otsused Tehtud (2 / 3)
+
+**Otsus 1: Transaction History** ✅
+- **Küsimus:** Täielik ajalugu või ainult viimane update?
+- **Otsus:** Täielik ajalugu - `transactions[]` array
+- **Põhjus:** Kaasteeline tahab kogu transaction tracking'ut
+- **Eelis:** Kogu ajalugu nähtav, accountability, TBX compliant
+
+**Otsus 2: atl_in_use vs atl_approved** ⏸️
+- **Küsimus:** Kas kasutada ühte või mõlemat staatust?
+- **Variandid analüüsitud:**
+  - Variant A: Ainult `atl_approved` (lihtne)
+  - Variant B: Ainult `atl_in_use` (praktiline)
+  - Variant C: Mõlemad eraldi (maksimum info, keerulisem)
+- **Staatus:** VAJAB OTSUST - näitasin 4 kasutusjuhu näidet Variant C jaoks
+- **Dokumenteeritud:** Kõik 3 varianti plussid/miinused, kasutusj uhud
+
+**Otsus 3: component_lookups Asukoht** ✅
+- **Küsimus:** Concept level või term level?
+- **Otsus:** Hübriid - andmed `_metadata.component_lookups`, viide `has_components: true` termini juures
+- **Põhjus:** Ei duplitseeri, kõik component info ühes kohas, väiksem JSON size
+- **Struktuur:** EN komponendid `_metadata.component_lookups.en`, ET tõlked `_metadata.component_lookups.et`
+
+#### 6. 📦 Soovitatud Lõppstruktuur
+
+**Loodud täielik JSON näide, mis näitab:**
+- TBX-Basic compliant struktuuri
+- Täielik transaction history (Otsus 1)
+- ATL workflow: `atl_status` + `usage_status` (Otsus 2, Variant C näide)
+- Component lookups hübriid (Otsus 3)
+- Kolm eesti termini näidet:
+  - Eelistatud ja heakskiidetud (`atl_approved` + `atl_in_use`)
+  - Aegunud ja tagasilükatud (`rejected` + `not_in_use`)
+  - Kandidaat ootab review'd (`candidate` + `not_in_use`)
+
+**Eelised:**
+- ✅ TBX-Basic compliant (eksporditav)
+- ✅ ATL workflow toetatud
+- ✅ Component tracking säilitatud
+- ✅ Selge ja hästi struktureeritud
+
+#### 7. 📝 Dokumentatsiooni Uuendused
+
+**research/standards/README.md:**
+- ✅ Lisatud TBX-Basic Field Reference sektsioon
+- ✅ Dokumenteeritud eesmärk ja sisu
+- ✅ Cross-reference TBX-Basic_FIELDS.md-le
+
+**TODO.md:**
+- ✅ Uuendatud Task #3 progress (8 punkti tehtud)
+- ✅ Lisatud 3 põhiotsuse staatus
+- ✅ Järgmised sammud dokumenteeritud
+
+### 📊 Statistika
+
+**Ajakulu:** ⏱️ ~4 tundi
+
+**Loodud failid:**
+- `research/standards/TBX-Basic_FIELDS.md` (318 rida)
+- `research/standards/STRUCTURE_COMPARISON.md` (296 rida)
+- `research/standards/TBX_vs_MY_PLANS.md` (700+ rida ADHD summary'ga)
+- `research/standards/TBX-Basic_v1.2.1/` (ekstraktitud package)
+
+**Analüüsitud dokumendid:**
+- TBX-Basic_Definition_v1.2.1.pdf
+- TBX-basic-samples.tbx (legacy)
+- Example_Astronomy_DCA_VALID.tbx (current)
+
+**GitHub issues läbi vaadatud:**
+- Issue #7 (6 kommentaari) - Sonaveeb enrichment, term_complexity
+- Issue #10 - Interactive glossary manager
+- Issue #11 - Term cleaning functions
+
+### 🎯 Järgmine Samm
+
+**Kohe:**
+1. ⏸️ **Otsusta:** Variant A, B või C (atl_in_use vs atl_approved)
+2. ⏸️ **Disaini:** Lõplik JSON schema vastavalt kõigile 3 otsusele
+3. ⏸️ **Dokumenteeri:** Steps 2-5 DATA_PIPELINE.md failis
+4. ⏸️ **Loo:** Migratsiooniskript `src/migrate_to_tbx_structure.py`
+
+**Järgmise sessiooni ülesanded (TODO.md-st):**
+- Task #4: Glossary .docx struktuuri analüüs
+- Task #5: Component terms extraction disaini valmis tegemine
+- Task #6: Enrichment sources integration disain
+- Tasks #7-9: Component lookup, term cleaning, glossary manager (GitHub issues)
+
+### 💭 Mõtted ja Õppetunnid
+
+**Mis toimis hästi:**
+- TBX-Basic standardi avastamine - täpselt see, mida vajasin!
+- Tasuta ja avatud standard vs tasuline ISO standard
+- ADHD-sõbralik dokumentatsiooni struktuur (summary enne, detailid hiljem)
+- TBX-i võrdlemine oma plaanidega - hea sobivus (80%)
+
+**Mis õppisin:**
+- TBX-Basic on professionaalne standard terminoloogia vahetamiseks
+- Kolmetasandiline hierarhia on loogiline: concept → language → term
+- Transaction history tracking on oluline koostöö jaoks
+- Component lookups vajavad hoolikat disaini duplikatsiooni vältimiseks
+
+---

@@ -37,17 +37,19 @@ ACA World Service Organization guidelines emphasize that a **glossary/terminolog
 **Milestone 1: Terminology Database** (IN PROGRESS)
 
 - ⚠️ **Step 1A & 1B:** EKI approach deprecated - EKI databases included in Sõnaveeb
-- ✅ **New Approach:** Sõnaveeb enrichment (Issue #7) - script created, tested with 10 terms
-- ✅ ISO 704 & ISO 1087 compliance - structured fields (part_of_speech, term_complexity)
+- ✅ **TBX-Basic Standards Research:** Complete (2025-10-16) - 4 hours
+- ✅ **Standards Documentation:** Field definitions, structure comparison, ATL workflow integration
+- ✅ **Key Decisions:** Transaction history (full), component lookups (hybrid)
+- ⏸️ **Pending Decision:** ATL status tracking (atl_in_use vs atl_approved - Variant A/B/C)
+- ✅ ISO 704, ISO 1087, TBX-Basic (ISO 30042:2019) compliance
 - ✅ Term complexity classification - 213/826 terms are multi-word (complex/compound)
-- ⏳ **Next:** Data pipeline refactoring, component terms extraction, full 826-term lookup
+- ⏳ **Next:** Finalize status tracking decision → Design final JSON schema → Create migration script
 
-**Recent Completions (2025-10-15):**
-- Issue #5: Code refactoring (DRY principle) ✅
-- Issue #6: ISO 704 part_of_speech field ✅
-- Issue #7: Sõnaveeb lookup + term_complexity ✅
-- Issue #9: Signal handling fixes ✅
-- Issue #11: Term cleaning utilities ✅
+**Recent Completions:**
+- 2025-10-16: TBX-Basic standards research and documentation ✅
+- 2025-10-15: Issue #5, #6, #7, #9, #11 ✅
+- Sõnaveeb enrichment approach ✅
+- ISO 704 & ISO 1087 compliance ✅
 
 See detailed roadmap: [PROJECT_OVERVIEW_DRAFT.md](PROJECT_OVERVIEW_DRAFT.md)
 

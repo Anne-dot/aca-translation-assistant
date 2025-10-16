@@ -4,9 +4,9 @@
 
 **Mission:** Build a systematic terminology database and translation tools to help ACA/ATL communities translate materials consistently, even with limited resources.
 
-**Current Status:** Milestone 1 in progress - Sonaveeb lookup script created, ready for full 826-term run.
+**Current Status:** Milestone 1 in progress - TBX-Basic standards research complete, final JSON structure design in progress.
 
-**Recent Completions:** Issues #5, #6, #7 (script), #9, #11 ✅ | Sonaveeb enrichment approach | ISO 704 compliant | EKI approach deprecated
+**Recent Completions:** TBX-Basic standards research ✅ | Field definitions documented ✅ | Structure decisions (2/3) ✅ | Issues #5, #6, #7 (script), #9, #11 ✅ | Sonaveeb enrichment approach | ISO 704 & ISO 1087 compliant | EKI approach deprecated
 
 ---
 
@@ -215,7 +215,48 @@ Each term contains:
    - **Created:** `FUTURE_IDEAS.md` for pending decisions and future work
    - **Purpose:** ADHD-friendly separation of current work vs future plans
 
+4. **TBX-Basic Standards Research (2025-10-16)**
+   - **Discovery:** TBX-Basic is FREE and OPEN standard for terminology exchange (ISO 30042:2019)
+   - **Research completed:**
+     - Downloaded TBX-Basic v1.2.1 specification and examples
+     - Analyzed three-level hierarchy: Concept → Language → Term
+     - Compared current JSON structure with TBX-Basic requirements
+     - Compared TBX-Basic with planned ATL workflow features
+   - **Documentation created:**
+     - `research/standards/TBX-Basic_FIELDS.md` - Complete field reference (318 lines)
+     - `research/standards/STRUCTURE_COMPARISON.md` - Current vs TBX-Basic (296 lines)
+     - `research/standards/TBX_vs_MY_PLANS.md` - TBX vs my plans (700+ lines with ADHD summary)
+   - **Key decisions made (2/3):**
+     - ✅ Transaction history: Full history in `transactions[]` array (for collaboration)
+     - ✅ Component lookups: Hybrid approach - data in `_metadata`, reference `has_components: true`
+     - ⏸️ **Pending:** atl_in_use vs atl_approved (Variant A, B, or C)
+   - **Benefits:**
+     - TBX-Basic compliant structure enables export to professional CAT tools
+     - Follows international terminology management standards
+     - Compatible with SDL Trados, MemoQ, and other professional tools
+     - Supports ATL collaborative workflow with transaction tracking
+   - **Next steps:**
+     - Decide on Variant A, B, or C for status tracking
+     - Design final JSON schema
+     - Create migration script to new structure
+
 ### Open Questions Requiring Decisions
+
+**TBX-Basic Structure Decision (Priority: HIGH):**
+
+0. **ATL Status Tracking: atl_in_use vs atl_approved**
+   - **Question:** Use one status or two separate statuses?
+   - **Context:** Need to track both "officially approved" and "currently in use" for ATL workflow
+   - **Options analyzed:**
+     - **Variant A:** Only `atl_approved` (simple, but doesn't show actual usage)
+     - **Variant B:** Only `atl_in_use` (practical, but doesn't capture review decisions)
+     - **Variant C:** Both separate `atl_status` + `usage_status` (maximum info, more complex)
+   - **Documentation:** See `research/standards/TBX_vs_MY_PLANS.md` for:
+     - Complete pros/cons analysis for each variant
+     - 4 use case examples for Variant C
+     - Detailed comparison tables
+   - **Status:** NEEDS DECISION before final JSON schema design
+   - **Impact:** Affects entire terminology database structure and migration script
 
 **Before Sonaveeb Full Lookup:**
 
@@ -305,8 +346,14 @@ Each term contains:
 - `FUTURE_IDEAS.md` - Component extraction, variant structure, future features
 - `DECISIONS.md` - Architectural decisions log
 - `PROJECT_OVERVIEW_DRAFT.md` - This document
+- `research/standards/` - TBX-Basic standards documentation:
+  - `TBX-Basic_FIELDS.md` - Complete field reference
+  - `STRUCTURE_COMPARISON.md` - Current JSON vs TBX-Basic
+  - `TBX_vs_MY_PLANS.md` - TBX-Basic vs ATL workflow (with ADHD summary)
+  - `README.md` - Standards documentation index
+  - `TBX-Basic_v1.2.1/` - TBX-Basic dialect package
 
 ---
 
-**Status:** Milestone 1 in progress - Sonaveeb lookup script ready, awaiting data pipeline clarification and component extraction
+**Status:** Milestone 1 in progress - TBX-Basic research complete, awaiting status tracking decision (Variant A/B/C) before final JSON schema design
 **Date:** 2025-10-16

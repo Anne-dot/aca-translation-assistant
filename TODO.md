@@ -33,9 +33,26 @@
 
 ### 📊 II. Data Pipeline (Main Work)
 
-#### 3. ⏸️ Map complete data pipeline: .docx → final JSON
+#### 3. ⏳ Map complete data pipeline: .docx → final JSON
 - **Start:** ACA Glossary .docx (original WSO document)
 - **End:** Final JSON with all terms + translations from all sources
+- **Progress:**
+  - ✅ Created DATA_PIPELINE.md with Step 1 documented (.docx extraction)
+  - ✅ Analyzed Glossary_templatesonavara.docx structure (3 columns, 874 rows)
+  - ✅ Researched TBX-Basic standard (ISO 30042:2019) for final JSON structure
+  - ✅ Downloaded TBX-Basic v1.2.1 specification and examples
+  - ✅ Created TBX-Basic_FIELDS.md - complete field reference for final JSON design
+  - ✅ Updated research/standards/README.md with field reference documentation
+  - ✅ Created STRUCTURE_COMPARISON.md - compared current JSON with TBX-Basic
+  - ✅ Created TBX_vs_MY_PLANS.md - compared TBX-Basic with my planned structure (FUTURE_IDEAS.md + GitHub issues)
+  - ✅ Added ADHD-friendly summary to TBX_vs_MY_PLANS.md
+  - ✅ Answered 3 key decisions:
+    - ✅ Transaction history: Täielik (kogu ajalugu)
+    - ⏸️ atl_in_use vs atl_approved: VAJA OTSUSTADA (Variant A, B või C?)
+    - ✅ component_lookups: Hübriid (metadata + viide)
+  - ⏸️ **Next:** Otsusta Variant A, B või C (atl_in_use vs atl_approved)
+  - ⏸️ Design final JSON schema based on decisions
+  - ⏸️ Document Steps 2-5 in DATA_PIPELINE.md
 - **Map transformations:**
   - Step 1: .docx extraction → aca-glossary.json (what fields? what's preserved?)
   - Step 2: Enrichment stages (Sõnaveeb, päevatekstid, aare.edu.ee)
@@ -93,6 +110,79 @@
 
 ---
 
+### 🔍 IV. Additional Tasks from GitHub Issues
+
+#### 7. ⏸️ Component Term Lookup (Issue #7 comment #6)
+- **Context:** 187 complex terms (22.6%) expected low match rate in Sonaveeb
+- **Goal:** For complex terms with 0 results, lookup component terms individually
+- **Example:** "aca counselor" → lookup "aca" and "counselor" separately
+- **Data structure:** Add `component_lookups` field to store individual component results
+- **Recommendation:** Implement as separate script after initial Sonaveeb enrichment completes
+- **Benefit:** Increase coverage from ~35-40% to ~45-50%
+- **See:** Issue #7 comment (2025-10-15T20:00:05Z)
+
+#### 8. ⏸️ Extract Term Cleaning Functions (Issue #11)
+- **Goal:** Extract reusable functions from deprecated scripts to `src/term_cleaning.py`
+- **Functions needed:**
+  - `extract_base_term()` - Remove `(n.)`, `(v.)`, `(to)` markers
+  - `extract_notes()` - Extract explanatory text and markers
+  - `clean_glossary_term()` - Combined cleaning
+  - `PARENTHESES_PATTERN` - Regex constant
+- **Used by:** Issue #10 (glossary_manager), Issue #8 (component lookup), future term processing
+- **See:** Issue #11
+
+#### 9. ⏸️ Interactive Glossary Manager (Issue #10)
+- **Goal:** Create `src/glossary_manager_via_terminal.py` for manual term management
+- **Features:**
+  - Add/edit terms interactively
+  - Prompts: English term, Estonian translation, status, source, notes, is_glossary_term
+  - Show example at startup
+  - JSON validation after changes
+- **Use cases:**
+  - Add core ATL terms (ACA→ATL, Adult Child→Täiskasvanud laps)
+  - Update variant status (candidate → atl_approved)
+  - Add translations from ATL review
+- **See:** Issue #10
+
+---
+
+---
+
+### 📄 V. Documentation Updates (Current Session)
+
+#### 10. ⏳ Progress Update for 2025-10-16 Session
+- ✅ Created progress update entry in docs/PROGRESS_UPDATES.md
+- ✅ Documented TBX-Basic research (4 hours)
+- ✅ Documented 3 key decisions (2 completed, 1 pending)
+- ✅ Documented 7 achievements (#1-7)
+- ✅ Added statistics and next steps
+
+#### 11. ⏸️ Update Project Structure Documentation
+- ⏸️ Update PROJECT_OVERVIEW_DRAFT.md with TBX-Basic decisions
+- ⏸️ Document new research/standards/ structure
+- ⏸️ Update data pipeline documentation
+- ⏸️ Reflect current project state
+
+#### 12. ⏸️ Update NEXT_SESSION.md
+- ⏸️ Add TBX-Basic decisions context
+- ⏸️ Add decision needed: Variant A, B, or C (atl_in_use vs atl_approved)
+- ⏸️ Reference TBX_vs_MY_PLANS.md for details
+- ⏸️ Update next steps priorities
+
+#### 13. ⏸️ Update README.md
+- ⏸️ Add research/standards/ folder to structure
+- ⏸️ Update current status to reflect TBX-Basic work
+- ⏸️ Update version number if needed
+- ⏸️ Add TBX-Basic compliance note
+
+#### 14. ⏸️ Commit Session Work
+- ⏸️ Git status review
+- ⏸️ Stage new files (research/standards/*.md)
+- ⏸️ Commit with descriptive message
+- ⏸️ Push to GitHub
+
+---
+
 ## Completed (2025-10-15/16 Session)
 
 ### ✅ Post-Compacting Cleanup
@@ -104,3 +194,14 @@
 - Create TODO.md and instructions.md
 - Add future tasks and cross-references
 - Commits: 5b7706a, 1cf29ee, 1e0e65c
+
+### ✅ TBX-Basic Standards Research (2025-10-16 Session)
+- Research TBX-Basic v1.2.1 specification
+- Create TBX-Basic_FIELDS.md (318 lines)
+- Create STRUCTURE_COMPARISON.md (296 lines)
+- Create TBX_vs_MY_PLANS.md (700+ lines with ADHD summary)
+- Extract TBX-Basic_v1.2.1/ package
+- Update research/standards/README.md
+- Make 2/3 key decisions (transaction history, component_lookups)
+- Update TODO.md Task #3 progress
+- Create progress update entry in docs/PROGRESS_UPDATES.md
