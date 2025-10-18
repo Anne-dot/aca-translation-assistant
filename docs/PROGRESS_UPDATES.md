@@ -931,3 +931,111 @@ Ma olen väsinud. Täna olen lisaks oma projektile ka palju inimsuhtluse kohta �
 Tunne on selline, et ma alles hakkan aru saama, kui keerulise ülesande ma endale ette olen võtnud. Samas on mul hea meel, et AI on standardite otsimises ja analüüsimises ja minu mõtetele ja lisandustele vastuste leidmisel ja kombineerimisel nii heaks abimeheks. Ma ilma oleks vist juba ammu alla andnud.
 
 ---
+
+## 📅 2025-10-18 (Reede) - JSON Schema Design Session
+
+### 🎉 Täna Saavutatud
+
+#### 1. 🆕 GitHub Issue #14 Loodud
+
+**Issue:** Design final JSON schema based on TBX-Basic decisions
+- Milestone: Terminology Database
+- Label: documentation
+- URL: https://github.com/Anne-dot/aca-translation-assistant/issues/14
+
+**Töövoog:**
+- Iga otsus dokumenteeritud eraldi kommentaarina
+- Kõik plussid/miinused välja toodud
+- Põhjendused ja näited lisatud
+- Valideerimise reeglid dokumenteeritud
+
+#### 2. ✅ 9 Põhiotsust Tehtud
+
+**Decision 1: Naming Convention** (Comment #3418459408)
+- Valik: camelCase (mitte snake_case)
+- Põhjus: TBX-Basic vastavus, CAT tool ühilduvus
+- Näide: `administrativeStatus`, `partOfSpeech`, `termComplexity`
+
+**Decision 2: Field `id`** (Comment #3418461013)
+- Valik: REQUIRED with auto-generation
+- Formaat: "c001", "c002", jne
+- Scripts genereerivad automaatselt
+
+**Decision 3: Field `subjectField`** (Comment #3418465183)
+- Valik: REQUIRED ENUM with migration workflow
+- Väärtused: "ACA Glossary", "Component Term", "ACA Community Term", "ATL Estonian Term"
+- Migration workflow dokumenteeritud uute enumide lisamiseks
+
+**Decision 4: Field `languages`** (Comment #3418469099)
+- Valik: EN REQUIRED, ET ja teised VALIKULISED
+- Põhjus: Projekt on EN→ET tõlkimine, English alati source
+- Workflow: Start EN (from .docx) → add ET (enrichment)
+
+**Decision 5: Field `term`** (Comment #3418470327)
+- Valik: REQUIRED
+- Ilmselge - termin ilma terminita on mõttetu
+
+**Decision 6: Field `partOfSpeech`** (Comment #3418474440)
+- Valik: OPTIONAL now, REQUIRED later
+- 3-faasi workflow:
+  - Phase 1: OPTIONAL (Glossary .docx-s paljudel puudub)
+  - Phase 2: Enrichment (extract from markers, manual review)
+  - Phase 3: REQUIRED (after all filled)
+- Allowed values: "noun", "verb", "adjective", "adverb", "phrase", null
+
+**Decision 7: Field `supersededBy`** (Comment #3418502396)
+- Valik: OPTIONAL field for term replacement links
+- Type: String (term text, NOT concept ID)
+- References: Same language, same concept
+- Use case: Kui 5+ terminit sama concept'i all, vajab eksplitsiitset linki
+
+**Decision 8: Field `note`** (Comment #3418526916)
+- Valik: OPTIONAL
+- Use cases: WSO preferences, context clarification, translation notes
+
+**Decision 9: Field `source`** (Comment #3418540592)
+- Valik: REQUIRED object (not string)
+- REQUIRED fields: `type`, `addedBy`, `date` (auto-generated)
+- OPTIONAL fields: `url`, `note`
+- Põhjus: Batch addition workflow, traceability essential
+
+#### 3. 📋 Migration Workflow Pattern Established
+
+**Pattern loodud ENUM väljadele:**
+- Dokumenteeritud migration workflow
+- Validation scripts template
+- Template uute väärtuste lisamiseks
+- Cross-reference Decision 3 pattern'ile
+
+**3-Phase Workflow Pattern:**
+- Loodud OPTIONAL → REQUIRED transition workflow
+- Used for: `partOfSpeech` (Decision 6)
+- Reusable for other fields
+
+### 📊 Statistika
+
+**Ajakulu:** ⏱️ 1 tund
+
+**GitHub:**
+- 1 issue loodud (#14)
+- 9 kommentaari lisatud
+- Kõik otsused dokumenteeritud
+
+**Saavutused:**
+- 9/~15 välja otsustatud
+- Migration patterns dokumenteeritud
+- Validation rules näited loodud
+- Clear workflow established
+
+### 🎯 Järgmine Samm
+
+**Järgmise sessiooni ülesanded:**
+- Continue Decision 10+: `workflow` object (`atl_status`, `usage_status`)
+- `usageExamples` array
+- `transactions` array
+- `_metadata` fields (concept level)
+- Create final deliverable: `research/standards/FINAL_JSON_SCHEMA.md`
+
+**Remaining fields estimate:** ~6-8 fields (concept + term level)
+
+---
