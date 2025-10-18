@@ -21,7 +21,10 @@
 
 **Status:**
 - All 3 structural decisions from Issue #13 are finalized and documented
-- Issue #14 (JSON schema design) is IN PROGRESS - needs review for alignment with Issue #13
+- Issue #14 (JSON schema design) is IN PROGRESS - 12/15 decisions complete
+  - ✅ Decisions 1-12: All term-level fields decided
+  - ⏸️ Decision 13: _metadata fields (concept level)
+  - ⏸️ Decisions 14-15: Final validation and schema document
 - Task #14 (git commit/push) is PENDING for this session's changes
 
 ---
