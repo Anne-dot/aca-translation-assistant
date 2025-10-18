@@ -427,7 +427,7 @@ EN: "behavior" → ET: "käitumine", "käitumisviis"
             "approved_date": "2025-10-16",
             "first_used_date": "2025-10-16"
           },
-          "usage_examples": [
+          "usageExamples": [
             {
               "source": "Daily Meditation 2024-03-15",
               "en_context": "We recognize our addictive behavior patterns.",
@@ -1222,10 +1222,10 @@ EN: "behavior" → ET: "käitumine", "käitumisviis"
 2. **derived_from** - Jälgib terminite päritolu ja seoseid glossaari terminitega
 3. **component_terms** - ISO 1087 compliant! Liitsõnade komponentide loetelu
 4. **component_lookups** (Issue #7) - Komponentide eraldi Sõnaveeb lookupid
-5. **usage_examples** - Tõlkeotsuste dokumenteerimine kontekstiga:
+5. **usageExamples** - Tõlkeotsuste dokumenteerimine kontekstiga:
    ```json
    {
-     "usage_examples": [
+     "usageExamples": [
        {
          "source": "Daily Meditation 2024-03-15",
          "en_context": "...we feel that we are changing inside.",
@@ -1300,7 +1300,7 @@ Salvesta AINULT baasvormi (lemma). CAT tool lemmatiseerija leiab grammatilised v
 **CAT tool fuzzy matching:**
 - Baasterminid + olulised fraasid eraldi terminitena
 - CAT tool leiab n-gram matchinguga kõik variandid
-- Tõlkijad näevad konteksti + usage_examples
+- Tõlkijad näevad konteksti + usageExamples
 
 ### 🎯 Peamine Soovitus
 

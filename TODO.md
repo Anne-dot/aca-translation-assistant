@@ -52,9 +52,11 @@
     - ✅ component_lookups: Hübriid (metadata + viide) - data in `_metadata`, reference at term level
   - ✅ Additional features: usage_examples, community terms, CAT tool lemmatization, Estonian grammar
   - ⏳ **Issue #14:** Design final JSON schema based on all 3 decisions (IN PROGRESS)
-    - ✅ 12/15 decisions made (documented in Issue #14 comments)
-    - ✅ Decisions 1-12: Naming, id, subjectField, languages, term, partOfSpeech, supersededBy, note, source, workflow, usageExamples, transactions
-    - ⏸️ Remaining: Decision 13 (_metadata fields), Decisions 14-15 (validation)
+    - ✅ 16/18 decisions made (documented in Issue #14 comments)
+    - ✅ Decisions 1-12: Term-level fields (naming, id, subjectField, languages, term, partOfSpeech, supersededBy, note, source, workflow, usageExamples, transactions)
+    - ✅ Decisions 13-16: Language-level and top-level fields (xml:lang, definition, top-level structure, metadata object)
+    - ✅ Case-by-case analysis completed: naming conflicts resolved, TBX_vs_MY_PLANS.md corrected
+    - ⏸️ Remaining: Decision 17 (_metadata fields), Decision 18 (validation & final schema)
     - ⏸️ Create final deliverable: `research/standards/FINAL_JSON_SCHEMA.md`
   - ⏸️ Document Steps 2-5 in DATA_PIPELINE.md
   - ⏸️ Create migration script `src/migrate_to_tbx_structure.py`

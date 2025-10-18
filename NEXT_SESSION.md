@@ -10,21 +10,32 @@
 
 ---
 
-## Where We Left Off (2025-10-18 Session)
+## Where We Left Off (2025-10-18 Evening Session)
 
 ### ✅ Completed This Session
 
-**Documentation Updates (Tasks #10-12):**
-- ✅ Created progress update for 2025-10-16 sessions in `docs/PROGRESS_UPDATES.md`
-- ✅ Updated `PROJECT_OVERVIEW_DRAFT.md` with TBX-Basic research section
-- ✅ Updated `NEXT_SESSION.md` (this file) with current status and next priorities
+**Issue #14: JSON Schema Design Progress (16/18 decisions):**
+- ✅ Decisions 1-12: All term-level fields (from previous session)
+- ✅ Decision 13: `xml:lang` field (Language level, REQUIRED)
+- ✅ Decision 14: `definition` field (Language level, OPTIONAL)
+- ✅ Decision 15: Top-level structure (metadata + concepts wrapper)
+- ✅ Decision 16: metadata object fields (created, standard, formatVersion, author, license, project)
+- ✅ Case-by-case analysis: Resolved field naming conflicts and missing fields
+- ✅ Fixed TBX_vs_MY_PLANS.md: `usage_examples` → `usageExamples` (camelCase)
+- ✅ License decision: CC BY-SA 4.0 (supports small-language ACA communities)
+
+**Key Decisions Made:**
+- `xml:lang` REQUIRED (TBX-Basic compliance, language variant support)
+- `definition` OPTIONAL (language-specific definitions)
+- Top-level wrapper with metadata object
+- Metadata fields: created (auto), standard, formatVersion (auto), author "Anne R", license "CC BY-SA 4.0"
+- Standard value: "TBX-Basic v1.2.1 + ACA workflow custom fields"
 
 **Status:**
-- All 3 structural decisions from Issue #13 are finalized and documented
-- Issue #14 (JSON schema design) is IN PROGRESS - 12/15 decisions complete
-  - ✅ Decisions 1-12: All term-level fields decided
-  - ⏸️ Decision 13: _metadata fields (concept level)
-  - ⏸️ Decisions 14-15: Final validation and schema document
+- Issue #14: 16/18 decisions complete (89%)
+  - ⏸️ Decision 17: _metadata fields (termComplexity, componentTerms, isGlossaryTerm, etc.)
+  - ⏸️ Decision 18: Validation rules and final schema document
+- All decisions documented in Issue #14 comments
 - Task #14 (git commit/push) is PENDING for this session's changes
 
 ---
@@ -69,28 +80,34 @@
 
 ## 🎯 Next Concrete Step
 
-### PRIORITY 1: Design Final JSON Schema ⭐ NEXT TASK
+### PRIORITY 1: Complete Issue #14 JSON Schema Design ⭐ NEXT TASK
 
-**What:** Create complete JSON schema document based on all 3 finalized decisions
+**What:** Finish remaining 2 decisions (Decision 17 & 18)
 
-**Time estimate:** 30-45 minutes (not difficult, but needs decisions on details)
+**Time estimate:** 30-45 minutes
 
 **Steps:**
 
-1. **Create JSON schema document**
-   - File: `research/standards/FINAL_JSON_SCHEMA.md`
-   - Based on recommended structure from TBX_vs_MY_PLANS.md (lines 384-547)
-   - Include complete example with all fields
-   - Document all field definitions
+1. **Decision 17: _metadata fields**
+   - Define all _metadata object fields (concept level)
+   - Fields: termComplexity, componentTerms, isGlossaryTerm, derivedFrom, termType, addedReason, componentLookups
+   - Specify REQUIRED vs OPTIONAL for each
+   - Define allowed values (enums)
    - Add validation rules
+   - Document in Issue #14 comment
 
-**Still to decide:**
-- Naming convention: `administrativeStatus` (TBX camelCase) vs `administrative_status` (Python snake_case)?
-- Required vs optional fields
-- Allowed values for enum fields (atl_status, usage_status, administrativeStatus)
-- `source` format: string vs object?
+2. **Decision 18: Validation & Final Schema**
+   - Summary of all decisions (1-17)
+   - Complete validation rules
+   - Required vs optional fields summary
+   - Allowed enum values summary
+   - Create final deliverable: `research/standards/FINAL_JSON_SCHEMA.md`
+   - Close Issue #14
 
-**Base structure already designed in TBX_vs_MY_PLANS.md** - mostly copy + minor decisions
+**Context:**
+- All 16 decisions documented in Issue #14 comments
+- TBX_vs_MY_PLANS.md corrected (usageExamples)
+- Base structure ready in TBX_vs_MY_PLANS.md (lines 384-563)
 
 ---
 
