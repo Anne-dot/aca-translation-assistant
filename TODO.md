@@ -51,7 +51,11 @@
     - ✅ atl_in_use vs atl_approved: Variant C (mõlemad eraldi) - `atl_status` + `usage_status`
     - ✅ component_lookups: Hübriid (metadata + viide) - data in `_metadata`, reference at term level
   - ✅ Additional features: usage_examples, community terms, CAT tool lemmatization, Estonian grammar
-  - ⏸️ **Next:** Design final JSON schema based on all 3 decisions
+  - ⏳ **Issue #14:** Design final JSON schema based on all 3 decisions (IN PROGRESS)
+    - ✅ 9 fundamental decisions made (documented in Issue #14 comments)
+    - ✅ Migration workflow patterns established (ENUM + 3-phase OPTIONAL→REQUIRED)
+    - ⏸️ Remaining: workflow object, usageExamples, transactions, _metadata fields (~6-8 fields)
+    - ⏸️ Create final deliverable: `research/standards/FINAL_JSON_SCHEMA.md`
   - ⏸️ Document Steps 2-5 in DATA_PIPELINE.md
   - ⏸️ Create migration script `src/migrate_to_tbx_structure.py`
 - **Map transformations:**

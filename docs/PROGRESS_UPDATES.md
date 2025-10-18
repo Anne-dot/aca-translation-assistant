@@ -1038,4 +1038,8 @@ Tunne on selline, et ma alles hakkan aru saama, kui keerulise ülesande ma endal
 
 **Remaining fields estimate:** ~6-8 fields (concept + term level)
 
+### 💭 Tunne
+
+Lootsin selle poole tunniga valmis saada, kuid tund on täis ja mitmed otsused on alles tegemata ja läbi mõtlemata. Samas ma usaldan ennast, sest ma tean, et see on oluline. Ja juba praeguse arutelu jooksul olen mitmeid täiendusi esialgse AI poolt pakutud lahendustele teinud. See on hea blueprint ja sellega me ennetame hilisemaid suuremaid ümbertegemisi, mis oleks palju suurem ajakulu. Ma tean, et see on oluline. Ja ikka tahaks kuidagi kiiremini edasi liikuda. Ja ma luban endale seda, et üks osa tahaks edasi liikuda ja teine süveneda. ADHD ja HSP kombinatsiooni väljakutse ja tugevus. Palju mõtteid, seoseid ja soovi mõelda ja analüüsida neid kõiki põhjalikult enne otsustamist. Ma valin usaldada oma protsessi ja aju.
+
 ---

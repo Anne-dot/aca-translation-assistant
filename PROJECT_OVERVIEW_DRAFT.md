@@ -4,9 +4,9 @@
 
 **Mission:** Build a systematic terminology database and translation tools to help ACA/ATL communities translate materials consistently, even with limited resources.
 
-**Current Status:** Milestone 1 in progress - TBX-Basic standards research complete, final JSON structure design in progress.
+**Current Status:** Milestone 1 in progress - Issue #14 JSON schema design (9/~15 decisions made), migration patterns established.
 
-**Recent Completions:** TBX-Basic standards research ✅ | Field definitions documented ✅ | Structure decisions (3/3) ✅ | Issues #5, #6, #7 (script), #9, #11 ✅ | Sonaveeb enrichment approach | ISO 704 & ISO 1087 compliant | EKI approach deprecated
+**Recent Completions:** Issue #14 created ✅ | 9 fundamental field decisions ✅ | Migration workflow patterns (ENUM + 3-phase) ✅ | TBX-Basic standards research ✅ | Field definitions documented ✅ | Structure decisions (3/3) ✅ | Issues #5, #6, #7, #9, #11 ✅ | Sonaveeb enrichment | ISO 704 & ISO 1087 compliant | EKI deprecated
 
 ---
 
