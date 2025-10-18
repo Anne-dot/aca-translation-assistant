@@ -1074,3 +1074,85 @@ Lootsin selle poole tunniga valmis saada, kuid tund on täis ja mitmed otsused o
 Mul on hea tunne, sest see on oluline osa protsessist ja järjepidev dokumentatsiooni uuendamine on kriitilise tähtsusega minu enda töö ja projekti dokumenteerimise kohta.
 
 ---
+
+### 🎉 Session 3: Issue #14 Decisions Review & Completion
+
+#### 1. ✅ Issue #13 Põhjalik Ülevaatus
+
+**Analüüsitud:**
+- TBX_vs_MY_PLANS.md (1325 rida) põhjalikult läbi vaadatud
+- Kõik 3 põhiotsust + lisafunktsioonid dokumenteeritud
+- Agent koostas täieliku kokkuvõtte kõigist otsustest
+
+#### 2. ✅ Issue #14 Decisions 1-9 Ülevaatus Issue #13 Vastu
+
+**Kooskõlas (ei vaja muutmist):**
+- Decisions 1-2: Naming (camelCase), id (auto-generation)
+- Decisions 4-8: languages, term, partOfSpeech, supersededBy, note
+
+**Parandatud:**
+- Decision 3: subjectField (domain, mitte kategooria) - GitHubis uuendatud
+- Decision 9: source object (type/title/page/edition/isbn/chapter) - GitHubis uuendatud ja täiendatud
+
+#### 3. ✅ Uued Otsused 10-12 Tehtud
+
+**Decision 10: workflow object**
+- Hybrid approach: administrativeStatus (TBX-Basic) + workflow (ATL custom)
+- atl_status enum: candidate/atl_approved/rejected
+- usage_status enum: not_in_use/atl_in_use/formerly_in_use
+
+**Decision 11: usageExamples array**
+- source object (WSO materjalid ainult)
+- en_context, et_translation (REQUIRED)
+- translator_note (OPTIONAL, all subfields OPTIONAL)
+
+**Decision 12: transactions array**
+- Hybrid: type/actionType (enum) + actionDescription (free text)
+- actionType enum: originated/enriched/approved/rejected/modified/manual_addition
+- Statistika + kontekst säilivad
+
+#### 4. ✅ GitHubi Kommentaarid Lisatud
+
+**Issue #14 kommentaarid:**
+- Decision 3 (revised)
+- Decision 9 (supplement + revised)
+- Decision 10
+- Decision 11
+- Decision 12
+
+Kõik otsused dokumenteeritud GitHubis, et compacting käigus ei kaoks.
+
+#### 5. ✅ Dokumentatsioon Uuendatud
+
+**Updated files:**
+- TODO.md: 12/15 decisions complete
+- NEXT_SESSION.md: Status updated
+- instructions.md: COMPACTING_GUIDELINES.md viide eemaldatud
+- eki-terms.ods liigutatud deprecated/data/
+
+### 📊 Session 3 Statistika
+
+**Ajakulu:** ⏱️ ~1h 40min
+
+**Otsused:** 12/15 valmis
+- ✅ Decisions 1-12 complete
+- ⏸️ Decision 13 (_metadata)
+- ⏸️ Decisions 14-15 (validation)
+
+**GitHubi kommentaarid:** 5 uut kommentaari
+
+**Commits:** 3
+- instructions.md update
+- Documentation updates
+- eki-terms.ods move
+
+**Saavutused:**
+- Issue #14 otsused 80% valmis (12/15)
+- Kõik term-level väljad otsustatud
+- Järgi järgi ainult concept-level (_metadata) ja validation
+
+### 💭 Tunne (Session 3)
+
+Mul on tunne, et ma teen väga suurt ja põhjalikku projekti. Ja ma teen sellsit asja esmakordselt. On okei, kui mul läheb 30 min asemel 3 tundi. Mu tulemus on ka sellevõrra parem. seda ma tuletan endale meelde. ma saan teha suuri ja keerukaid asju. üks samm korraga.
+
+---
