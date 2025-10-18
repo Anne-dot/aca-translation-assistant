@@ -46,12 +46,14 @@
   - ✅ Created STRUCTURE_COMPARISON.md - compared current JSON with TBX-Basic
   - ✅ Created TBX_vs_MY_PLANS.md - compared TBX-Basic with my planned structure (FUTURE_IDEAS.md + GitHub issues)
   - ✅ Added ADHD-friendly summary to TBX_vs_MY_PLANS.md
-  - ✅ Answered 3 key decisions:
-    - ✅ Transaction history: Täielik (kogu ajalugu)
-    - ✅ atl_in_use vs atl_approved: Variant C (mõlemad eraldi)
-    - ✅ component_lookups: Hübriid (metadata + viide)
-  - ⏸️ **Next:** Design final JSON schema based on decisions
+  - ✅ Issue #13: TBX-Basic standards research complete - All 3 key decisions finalized:
+    - ✅ Transaction history: Täielik (kogu ajalugu) - `transactions[]` array
+    - ✅ atl_in_use vs atl_approved: Variant C (mõlemad eraldi) - `atl_status` + `usage_status`
+    - ✅ component_lookups: Hübriid (metadata + viide) - data in `_metadata`, reference at term level
+  - ✅ Additional features: usage_examples, community terms, CAT tool lemmatization, Estonian grammar
+  - ⏸️ **Next:** Design final JSON schema based on all 3 decisions
   - ⏸️ Document Steps 2-5 in DATA_PIPELINE.md
+  - ⏸️ Create migration script `src/migrate_to_tbx_structure.py`
 - **Map transformations:**
   - Step 1: .docx extraction → aca-glossary.json (what fields? what's preserved?)
   - Step 2: Enrichment stages (Sõnaveeb, päevatekstid, aare.edu.ee)

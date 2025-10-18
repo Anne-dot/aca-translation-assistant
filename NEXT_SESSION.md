@@ -5,90 +5,86 @@
 **CRITICAL - Read every time before continuing work:**
 1. `~/.claude/instructions.md` - Global non-negotiable requirements
 2. `TODO.md` - Current task list and progress
+3. **Issue #13** - TBX-Basic research summary (closed, all info there)
 
 ---
 
-## Where We Left Off (2025-10-16)
+## Where We Left Off (2025-10-16 Evening Session)
 
 ### ✅ Completed This Session
 
-**TBX-Basic Standards Research (4 hours):**
+**Issue #13: TBX-Basic Standards Research Complete (5.5 hours total):**
 - ✅ Downloaded and analyzed TBX-Basic v1.2.1 specification (ISO 30042:2019)
 - ✅ Created comprehensive field reference documentation
 - ✅ Compared current JSON structure with TBX-Basic requirements
 - ✅ Compared TBX-Basic standard with ATL workflow plans
-- ✅ Made 2 out of 3 key structural decisions
+- ✅ **All 3 key structural decisions finalized**
 
 **Documentation Created:**
 - ✅ `research/standards/TBX-Basic_FIELDS.md` (318 lines) - Complete field reference
 - ✅ `research/standards/STRUCTURE_COMPARISON.md` (296 lines) - Current vs TBX-Basic
-- ✅ `research/standards/TBX_vs_MY_PLANS.md` (700+ lines) - TBX vs my plans with ADHD summary
-- ✅ `docs/PROGRESS_UPDATES.md` - Added 2025-10-16 session entry
-- ✅ `PROJECT_OVERVIEW_DRAFT.md` - Updated with TBX-Basic research
-- ✅ `TODO.md` - Added documentation update tasks (#10-14)
+- ✅ `research/standards/TBX_vs_MY_PLANS.md` (700+ lines) - TBX vs ATL workflow with ADHD summary
+- ✅ `docs/PROGRESS_UPDATES.md` - Added 2025-10-16 sessions (day + evening)
+- ✅ `DECISIONS.md` v2.2 - Added TBX-Basic decision section
+- ✅ `README.md` - Updated with Issue #13 completion
 
-**Key Decisions Made:**
-1. ✅ **Transaction History:** Full history tracking with `transactions[]` array (collaborator wants full audit trail)
-2. ✅ **Component Lookups:** Hybrid approach - data in `_metadata.component_lookups`, reference `has_components: true` at term level
-3. ⏸️ **PENDING:** atl_in_use vs atl_approved - needs decision between Variant A, B, or C
+**All 3 Key Decisions Finalized:**
+1. ✅ **Transaction History:** Full history tracking with `transactions[]` array
+2. ✅ **Status Tracking:** Variant C - Both `atl_status` + `usage_status` separately
+3. ✅ **Component Lookups:** Hybrid approach - data in `_metadata.component_lookups`, reference `has_components: true` at term level
+
+**Additional Features Documented:**
+- ✅ `usage_examples` field for translation decision documentation with context
+- ✅ Community-added terms support (`is_glossary_term: false` + `derived_from: []`)
+- ✅ CAT tool lemmatization approach for Estonian grammar
+- ✅ Pragmatic grammatical forms handling (store lemma only, add variants if CAT tool needs)
+
+**Commits:**
+- 35171d9 - Decide Variant C for ATL status tracking
+- 0620586 - Add usage_examples, community terms, and CAT tool guidance
+- e3e5866 - Add progress update for 2025-10-16 evening session
+- 879c813 - Update documentation with TBX-Basic research completion
 
 ---
 
 ## 🎯 Next Concrete Step
 
-### PRIORITY 1: Make Status Tracking Decision ⚠️ BLOCKS EVERYTHING ELSE
+### PRIORITY 1: Design Final JSON Schema ⭐ NEXT TASK
 
-**Decision needed:** Choose Variant A, B, or C for ATL status tracking
+**What:** Create complete JSON schema document based on all 3 finalized decisions
 
-**Where to find info:**
-- Read `research/standards/TBX_vs_MY_PLANS.md`
-- Start with TL;DR (ADHD Summary) at the top
-- Focus on "Otsus 2" section
+**Time estimate:** 30-45 minutes (not difficult, but needs decisions on details)
 
-**Three options:**
-
-| Variant | Description | Complexity | Use Case |
-|---------|-------------|------------|----------|
-| **A** | Only `atl_approved` | 🟢 Simple | If workflow is: review → approve |
-| **B** | Only `atl_in_use` | 🟢 Simple | If focus is on actual usage tracking |
-| **C** | Both `atl_status` + `usage_status` | 🟡 Medium | If need to track approval AND usage separately |
-
-**Variant C Examples (most flexible):**
-- Term approved but not yet in use: `atl_approved` + `not_in_use`
-- Term in use but not yet reviewed: `candidate` + `atl_in_use`
-- Term rejected but still in old texts: `rejected` + `atl_in_use`
-- Term approved and actively used: `atl_approved` + `atl_in_use`
-
-**How to decide:**
-1. Think about ATL workflow: Do you review first or use first?
-2. Do you need to distinguish "officially approved" from "currently used"?
-3. Will you have terms that are used but not yet approved? (historical terms)
-4. Will you have terms that are approved but not yet in päevatekstid?
-
-**After decision:**
-- Update `research/standards/TBX_vs_MY_PLANS.md` with decision
-- Update TODO.md Task #3 as complete
-- Proceed to Priority 2
-
----
-
-### PRIORITY 2: Design Final JSON Schema
-
-**Once Variant A/B/C is decided:**
+**Steps:**
 
 1. **Create JSON schema document**
    - File: `research/standards/FINAL_JSON_SCHEMA.md`
-   - Based on recommended structure from TBX_vs_MY_PLANS.md
+   - Based on recommended structure from TBX_vs_MY_PLANS.md (lines 384-547)
    - Include complete example with all fields
    - Document all field definitions
    - Add validation rules
 
-2. **Update DATA_PIPELINE.md**
+**Still to decide:**
+- Naming convention: `administrativeStatus` (TBX camelCase) vs `administrative_status` (Python snake_case)?
+- Required vs optional fields
+- Allowed values for enum fields (atl_status, usage_status, administrativeStatus)
+- `source` format: string vs object?
+
+**Base structure already designed in TBX_vs_MY_PLANS.md** - mostly copy + minor decisions
+
+---
+
+### PRIORITY 2: Document Data Pipeline
+
+**After JSON schema is done:**
+
+1. **Update DATA_PIPELINE.md**
    - Document Steps 2-5 (currently only Step 1 exists)
    - Show transformation at each step
    - Include example data at each stage
+   - Map: .docx → aca-glossary.json → enrichment → final TBX structure
 
-3. **Plan migration strategy**
+2. **Plan migration strategy**
    - Current: `aca-glossary-eki.json`
    - Target: New TBX-compliant structure
    - Migration script: `src/migrate_to_tbx_structure.py`
@@ -148,10 +144,13 @@
 ## 📁 Important Files
 
 **Standards Documentation:**
-- `research/standards/TBX_vs_MY_PLANS.md` ⭐ **READ THIS FIRST** (ADHD summary at top)
+- `research/standards/TBX_vs_MY_PLANS.md` ⭐ Complete structure designed (lines 384-547)
 - `research/standards/TBX-Basic_FIELDS.md` - All field definitions
 - `research/standards/STRUCTURE_COMPARISON.md` - Current problems identified
 - `research/standards/README.md` - Standards documentation index
+
+**GitHub Issues:**
+- **Issue #13** (CLOSED) - TBX-Basic research summary - Single source of truth for all decisions
 
 **Current Data:**
 - `data/aca-glossary-eki.json` - Current structure (needs migration)
@@ -159,9 +158,10 @@
 
 **Project Documentation:**
 - `TODO.md` - Current task list (use this, not TodoWrite!)
-- `instructions.md` - Project-specific rules
+- `DECISIONS.md` v2.2 - Includes Issue #13 TBX-Basic decision
+- `README.md` - Updated with Issue #13 completion
 - `PROJECT_OVERVIEW_DRAFT.md` - Project overview
-- `docs/PROGRESS_UPDATES.md` - Session summaries
+- `docs/PROGRESS_UPDATES.md` - Session summaries (includes 2025-10-16 evening)
 - `FUTURE_IDEAS.md` - Future plans and open questions
 
 ---
@@ -175,11 +175,11 @@
 - Used by professional translation industry
 - Supports collaboration and version tracking
 
-**Current compatibility:**
-- ✅ 80% of my plans align well with TBX-Basic
-- ⚠️ 20% needs adjustment (mainly structure reorganization)
-- ✅ All custom ATL features can be preserved
-- ✅ ISO 1087 `term_complexity` field is good addition
+**All 3 structural decisions finalized:**
+- ✅ Transaction history: Full `transactions[]` array
+- ✅ Status tracking: Variant C - `atl_status` + `usage_status` separately
+- ✅ Component lookups: Hybrid - data in `_metadata`, reference at term level
+- ✅ Additional features: usage_examples, community terms, CAT tool support
 
 **Key insight:**
 TBX-Basic provides the professional foundation we need while allowing custom ATL workflow fields. Best of both worlds - standards compliance + flexibility.
@@ -189,23 +189,25 @@ TBX-Basic provides the professional foundation we need while allowing custom ATL
 ## 🎯 Success Criteria for Next Session
 
 **Minimum:**
-- ✅ Decision made: Variant A, B, or C
-- ✅ Final JSON schema documented
-- ✅ README.md updated
+- ✅ Final JSON schema documented (`research/standards/FINAL_JSON_SCHEMA.md`)
+- ✅ All minor decisions made (naming conventions, required fields, etc.)
 - ✅ Changes committed and pushed
 
 **Ideal:**
 - ✅ All of minimum
-- ✅ Migration script created
-- ✅ First terms migrated successfully
-- ✅ Validation working
+- ✅ DATA_PIPELINE.md updated with Steps 2-5
+- ✅ Migration strategy planned
 
 **Stretch:**
 - ✅ All of ideal
-- ✅ Full migration complete (826 terms)
-- ✅ Migration report generated
-- ✅ Ready to continue with enrichment
+- ✅ Migration script created (`src/migrate_to_tbx_structure.py`)
+- ✅ First test migration successful
+- ✅ Validation working
 
 ---
 
-**Remember:** Take breaks, follow ADHD-friendly principles, update TODO.md as you go. You've made excellent progress! 🎉
+**Remember:**
+- Take breaks, follow ADHD-friendly principles
+- Update TODO.md as you go
+- Issue #13 is closed - all decisions made
+- You've made excellent progress! 🎉
