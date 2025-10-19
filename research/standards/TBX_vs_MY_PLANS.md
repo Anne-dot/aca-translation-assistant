@@ -5,7 +5,7 @@
 **Allikad:**
 - TBX-Basic v1.2.1 (ISO 30042:2019)
 - FUTURE_IDEAS.md "Variant Structure" sektsioon
-- Issue #7 kommentaarid (term_complexity, component_lookups)
+- Issue #7 kommentaarid (termComplexity, componentLookups)
 - Issue #10 (glossary_manager, status tracking)
 
 **Kuupäev:** 2025-10-16
@@ -188,9 +188,9 @@ Tähendus:
 
 ---
 
-### Otsus 3: component_lookups Asukoht ✅ OTSUSTATUD
+### Otsus 3: componentLookups Asukoht ✅ OTSUSTATUD
 
-**Küsimus:** Kas `component_lookups` peaks olema concept või term level?
+**Küsimus:** Kas `componentLookups` peaks olema concept või term level?
 
 **✅ OTSUS: Mõlemad!** - Concept level (EN komponendid) + Term level (ET tõlked)
 
@@ -219,7 +219,7 @@ EN: "behavior" → ET: "käitumine", "käitumisviis"
         {
           "term": "addictive behavior",
           "partOfSpeech": "noun",
-          "component_lookups": {
+          "componentLookups": {
             "addictive": {
               "term": "addictive",
               "partOfSpeech": "adjective",
@@ -241,7 +241,7 @@ EN: "behavior" → ET: "käitumine", "käitumisviis"
         {
           "term": "addiktiivne käitumine",
           "partOfSpeech": "noun",
-          "component_lookups": {
+          "componentLookups": {
             "addictive": {
               "component_en": "addictive",
               "translations": [
@@ -273,8 +273,8 @@ EN: "behavior" → ET: "käitumine", "käitumisviis"
     }
   },
   "_metadata": {
-    "term_complexity": "complex",
-    "component_terms": ["addictive", "behavior"],
+    "termComplexity": "complex",
+    "componentTerms": ["addictive", "behavior"],
     "is_glossary_term": true
   }
 }
@@ -297,9 +297,9 @@ EN: "behavior" → ET: "käitumine", "käitumisviis"
 {
   "id": "c001",
   "_metadata": {
-    "term_complexity": "complex",
-    "component_terms": ["addictive", "behavior"],
-    "component_lookups": {
+    "termComplexity": "complex",
+    "componentTerms": ["addictive", "behavior"],
+    "componentLookups": {
       "en": {
         "addictive": {...},
         "behavior": {...}
@@ -345,8 +345,8 @@ EN: "behavior" → ET: "käitumine", "käitumisviis"
     }
   },
   "_metadata": {
-    "component_terms": ["addictive", "behavior"],
-    "component_lookups": {
+    "componentTerms": ["addictive", "behavior"],
+    "componentLookups": {
       "en": {
         "addictive": {
           "term": "addictive",
@@ -379,7 +379,7 @@ EN: "behavior" → ET: "käitumine", "käitumisviis"
 - ✅ Term level näitab et komponendid eksisteerivad
 - ✅ Väiksem JSON size
 
-**SOOVITUS:** Hübriid - andmed `_metadata.component_lookups`, viide `has_components: true` termini juures
+**SOOVITUS:** Hübriid - andmed `_metadata.componentLookups`, viide `has_components: true` termini juures
 
 ---
 
@@ -509,10 +509,10 @@ EN: "behavior" → ET: "käitumine", "käitumisviis"
     }
   },
   "_metadata": {
-    "term_complexity": "complex",
-    "component_terms": ["addictive", "behavior"],
+    "termComplexity": "complex",
+    "componentTerms": ["addictive", "behavior"],
     "is_glossary_term": true,
-    "component_lookups": {
+    "componentLookups": {
       "en": {
         "addictive": {
           "term": "addictive",
@@ -614,7 +614,7 @@ EN: "behavior" → ET: "käitumine", "käitumisviis"
    - Tagasilükatud: `rejected_by`, `rejected_date`, `rejected_reason`
 
 5. **is_glossary_term** - eristab ametlikke ACA termineid komponent-terminitest
-6. **derived_from** - array, mis jälgib allika glossaari termineid
+6. **derivedFrom** - array, mis jälgib allika glossaari termineid
 
 ### Component Terms (Issue #7, FUTURE_IDEAS.md)
 
@@ -622,15 +622,15 @@ EN: "behavior" → ET: "käitumine", "käitumisviis"
 {
   "addictive": {
     "is_glossary_term": false,
-    "derived_from": ["addictive behavior", "addictive thinking"],
-    "component_lookups": {
+    "derivedFrom": ["addictive behavior", "addictive thinking"],
+    "componentLookups": {
       "sonaveeb": [...]
     }
   },
   "addictive behavior": {
     "is_glossary_term": true,
-    "term_complexity": "complex",
-    "component_terms": ["addictive", "behavior"],
+    "termComplexity": "complex",
+    "componentTerms": ["addictive", "behavior"],
     "variants": [...]
   }
 }
@@ -686,10 +686,10 @@ EN: "behavior" → ET: "käitumine", "käitumisviis"
 | **Tagasilükkamine** | `rejected_by`, `rejected_date`, `rejected_reason` | `note` + `deprecatedTerm-admn-sts` | ⚠️ Erinevad nimed |
 | **Märkused** | `rejected_reason` | `note` | ✅ Sama |
 | **is_glossary_term** | `is_glossary_term: true/false` | - | ❌ Puudub standardis |
-| **derived_from** | `derived_from` array | - | ❌ Puudub standardis |
-| **term_complexity** | `term_complexity` (ISO 1087) | - | ➕ Hea lisa! |
-| **component_terms** | `component_terms` array | - | ➕ Hea lisa! |
-| **component_lookups** | `component_lookups` object | - | ➕ Hea lisa! |
+| **derivedFrom** | `derivedFrom` array | - | ❌ Puudub standardis |
+| **termComplexity** | `termComplexity` (ISO 1087) | - | ➕ Hea lisa! |
+| **componentTerms** | `componentTerms` array | - | ➕ Hea lisa! |
+| **componentLookups** | `componentLookups` object | - | ➕ Hea lisa! |
 
 ---
 
@@ -886,13 +886,13 @@ EN: "behavior" → ET: "käitumine", "käitumisviis"
 {
   "addictive": {
     "is_glossary_term": false,
-    "derived_from": ["addictive behavior", "addictive thinking"],
-    "term_complexity": "simple"
+    "derivedFrom": ["addictive behavior", "addictive thinking"],
+    "termComplexity": "simple"
   },
   "addictive behavior": {
     "is_glossary_term": true,
-    "term_complexity": "complex",
-    "component_terms": ["addictive", "behavior"]
+    "termComplexity": "complex",
+    "componentTerms": ["addictive", "behavior"]
   }
 }
 ```
@@ -947,7 +947,7 @@ EN: "behavior" → ET: "käitumine", "käitumisviis"
   },
   "_custom": {
     "is_glossary_term": false,
-    "derived_from": ["addictive behavior", "addictive thinking"]
+    "derivedFrom": ["addictive behavior", "addictive thinking"]
   }
 }
 ```
@@ -1002,8 +1002,8 @@ EN: "behavior" → ET: "käitumine", "käitumisviis"
   },
   "_metadata": {
     "is_glossary_term": false,
-    "derived_from": ["addictive behavior", "addictive thinking"],
-    "term_complexity": "simple"
+    "derivedFrom": ["addictive behavior", "addictive thinking"],
+    "termComplexity": "simple"
   }
 }
 ```
@@ -1136,8 +1136,8 @@ EN: "behavior" → ET: "käitumine", "käitumisviis"
         }
       },
       "_metadata": {
-        "term_complexity": "complex",
-        "component_terms": ["addictive", "behavior"],
+        "termComplexity": "complex",
+        "componentTerms": ["addictive", "behavior"],
         "is_glossary_term": true
       }
     },
@@ -1172,10 +1172,10 @@ EN: "behavior" → ET: "käitumine", "käitumisviis"
         }
       },
       "_metadata": {
-        "term_complexity": "simple",
-        "component_terms": null,
+        "termComplexity": "simple",
+        "componentTerms": null,
         "is_glossary_term": false,
-        "derived_from": ["addictive behavior", "addictive thinking"]
+        "derivedFrom": ["addictive behavior", "addictive thinking"]
       }
     }
   ]
@@ -1192,7 +1192,7 @@ EN: "behavior" → ET: "käitumine", "käitumisviis"
 2. **Staatuse tracking** - TBX `administrativeStatus` vastab ATL vajadustele
 3. **Source tracking** - TBX `admin type="source"` ja `source` field
 4. **Notes** - TBX `note` field sobib rejected_reason jaoks
-5. **term_complexity** - Hea lisa! ISO 1087 compliant
+5. **termComplexity** - Hea lisa! ISO 1087 compliant
 
 ### ⚠️ Vajab Kohandamist
 
@@ -1204,24 +1204,24 @@ EN: "behavior" → ET: "käitumine", "käitumisviis"
 
 1. **is_glossary_term** - Eristab kolme tüüpi termineid:
    - `true` - WSO ametlikud glossaari terminid
-   - `false` + `derived_from: [...]` - Komponent-terminid (tuletatud glossaarist)
-   - `false` + `derived_from: []` - Kogukonna lisatud terminid (korduvad tekstis, arutlusobjektid)
+   - `false` + `derivedFrom: [...]` - Komponent-terminid (tuletatud glossaarist)
+   - `false` + `derivedFrom: []` - Kogukonna lisatud terminid (korduvad tekstis, arutlusobjektid)
 
    Näide kogukonna terminist:
    ```json
    {
      "_metadata": {
        "is_glossary_term": false,
-       "derived_from": [],
-       "term_type": "frequently_discussed",
-       "added_reason": "Kordub palju ATL tekstides, tekitab arutelusid"
+       "derivedFrom": [],
+       "termType": "communityAdded",
+       "addedReason": "Kordub palju ATL tekstides, tekitab arutelusid"
      }
    }
    ```
 
-2. **derived_from** - Jälgib terminite päritolu ja seoseid glossaari terminitega
-3. **component_terms** - ISO 1087 compliant! Liitsõnade komponentide loetelu
-4. **component_lookups** (Issue #7) - Komponentide eraldi Sõnaveeb lookupid
+2. **derivedFrom** - Jälgib terminite päritolu ja seoseid glossaari terminitega
+3. **componentTerms** - ISO 1087 compliant! Liitsõnade komponentide loetelu
+4. **componentLookups** (Issue #7) - Komponentide eraldi Sõnaveeb lookupid
 5. **usageExamples** - Tõlkeotsuste dokumenteerimine kontekstiga:
    ```json
    {
@@ -1318,7 +1318,7 @@ Salvesta AINULT baasvormi (lemma). CAT tool lemmatiseerija leiab grammatilised v
 
 1. ✅ **Transaction history:** Täielik history `transactions[]` array
 2. ✅ **atl_in_use vs atl_approved:** Variant C - mõlemad eraldi (`atl_status` + `usage_status`)
-3. ✅ **component_lookups:** Hübriid - andmed `_metadata`, viide `has_components: true`
+3. ✅ **componentLookups:** Hübriid - andmed `_metadata`, viide `has_components: true`
 
 ---
 

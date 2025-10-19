@@ -1032,6 +1032,25 @@ Tunne on selline, et ma alles hakkan aru saama, kui keerulise ülesande ma endal
 **Järgmise sessiooni ülesanded:**
 - Continue Decision 10+: `workflow` object (`atl_status`, `usage_status`)
 - `usageExamples` array
+
+---
+
+## 📅 2025-10-18 (Reede õhtu) - Viimased detailid
+
+### 🎉 Täna Saavutatud
+
+**Issue #14 jätkamine:** 16/18 otsust tehtud (~30 min)
+
+Käisin läbi puuduvad väljad ja tegin veel 4 otsust (D13-D16). Parandatud paar typo'd ja otsustatud faili metadata (autor, litsents, jms).
+
+**Litsentsi otsus - CC BY-SA 4.0:**
+Valisin litsentsi, mis võimaldab ACA WSO-l ja teistel väikestel keelte kogukondadel vabalt kasutada, aga muudatused jäävad avatuks. Ma saan ka krediidi oma töö eest.
+
+### 💭 Tunne
+
+Väsinud. Tahaks juba lõppu jõuda, aga kardan, et järgmine Decision 17 võtab sama palju aega kui kõik eelmised kokku. Seal on 7 erinevat välja, igaühel oma struktuur.
+
+Progress on hea - 16/18 tehtud (89%). Veel kaks otsust ja Issue #14 on valmis!
 - `transactions` array
 - `_metadata` fields (concept level)
 - Create final deliverable: `research/standards/FINAL_JSON_SCHEMA.md`
