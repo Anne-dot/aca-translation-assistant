@@ -155,9 +155,9 @@ If "addictive thinking" is also processed:
 **Goal:** Extract all possible components and see what emerges
 
 **Input:**
-- `data/aca-glossary-eki.json` OR clean version (needs clarification - see Data Flow Questions below)
-- Filter: `term_complexity in ['complex', 'compound']` (213 terms)
-- Use existing: `component_terms` array (already exists from Issue #7)
+- Master glossary JSON (from 3 sources: foundation + TMS + Template 2025)
+- Filter: `term_complexity in ['complex', 'compound']`
+- Use existing: `component_terms` array (from Issue #14 schema)
 
 **Process:**
 1. Load glossary
@@ -224,12 +224,10 @@ If "addictive thinking" is also processed:
 
 **Open Questions:**
 
-1. **Data Flow Clarification:**
-   - What is current "clean" glossary version?
-   - `aca-glossary-eki.json` has EKI data (deprecated) + term_complexity field
-   - Should we create new version without EKI data?
-   - Where does add_term_complexity.py output currently live?
-   - What should be input for component extraction?
+1. **Data Flow Clarification:** ✅ RESOLVED (Issue #18)
+   - Current source: 3 files (498 terms total)
+   - Master glossary will be created from merged sources
+   - Input for component extraction: Master glossary JSON
 
 2. **Generic Words Filtering:**
    - Which words are "too generic" to include?
