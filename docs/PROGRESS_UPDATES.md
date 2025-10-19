@@ -1227,6 +1227,6 @@ Töö käigus selgus: glossary allikad vajavad uuendamist.
 
 #### 💭 Tunne
 
-(Sinu jaoks)
+Ma olen väsinud, kuid mul on tunne, et see mida tegin, oli õige otsus. Raske on seda teha, kui mehe jaoks minu projektid on ärritavad. Ja ise ta ootab, et ma tema projektide osas entusiasmi, toetust näitaksin ning neid kui "meie" projekte võtaksin.
 
 ---
