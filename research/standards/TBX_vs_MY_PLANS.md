@@ -133,8 +133,8 @@ Tähendus:
   "workflow": {
     "atl_status": "atl_approved",      // Review team kiitis heaks
     "usage_status": "atl_in_use",      // Ja kasutame päevatekstides
-    "approved_date": "2025-10-16",
-    "first_used_date": "2025-10-16"
+    "approvedDate": "2025-10-16",
+    "firstUsedDate": "2025-10-16"
   }
 }
 ```
@@ -146,7 +146,7 @@ Tähendus:
   "workflow": {
     "atl_status": "candidate",         // Pole veel review'tud
     "usage_status": "atl_in_use",      // Aga kasutame juba
-    "first_used_date": "2024-01-15"
+    "firstUsedDate": "2024-01-15"
   }
 }
 ```
@@ -158,7 +158,7 @@ Tähendus:
   "workflow": {
     "atl_status": "atl_approved",      // Review team kiitis heaks
     "usage_status": "candidate",       // Aga pole veel päevatekstides
-    "approved_date": "2025-10-16"
+    "approvedDate": "2025-10-16"
   }
 }
 ```
@@ -170,8 +170,8 @@ Tähendus:
   "workflow": {
     "atl_status": "rejected",          // Review lükkas tagasi
     "usage_status": "atl_in_use",      // Aga vanad tekstid kasutavad veel
-    "rejected_date": "2025-10-16",
-    "rejected_reason": "Too clinical"
+    "rejectedDate": "2025-10-16",
+    "rejectedReason": "Too clinical"
   }
 }
 ```
@@ -243,7 +243,7 @@ EN: "behavior" → ET: "käitumine", "käitumisviis"
           "partOfSpeech": "noun",
           "componentLookups": {
             "addictive": {
-              "component_en": "addictive",
+              "componentEn": "addictive",
               "translations": [
                 {
                   "term": "sõltuvuslik",
@@ -258,7 +258,7 @@ EN: "behavior" → ET: "käitumine", "käitumisviis"
               ]
             },
             "behavior": {
-              "component_en": "behavior",
+              "componentEn": "behavior",
               "translations": [
                 {
                   "term": "käitumine",
@@ -275,7 +275,7 @@ EN: "behavior" → ET: "käitumine", "käitumisviis"
   "_metadata": {
     "termComplexity": "complex",
     "componentTerms": ["addictive", "behavior"],
-    "is_glossary_term": true
+    "isGlossaryTerm": true
   }
 }
 ```
@@ -334,13 +334,13 @@ EN: "behavior" → ET: "käitumine", "käitumisviis"
     "en": {
       "terms": [{
         "term": "addictive behavior",
-        "has_components": true  // Viide
+        "hasComponents": true  // Viide
       }]
     },
     "et": {
       "terms": [{
         "term": "addiktiivne käitumine",
-        "has_components": true  // Viide
+        "hasComponents": true  // Viide
       }]
     }
   },
@@ -398,7 +398,7 @@ EN: "behavior" → ET: "käitumine", "käitumisviis"
           "partOfSpeech": "noun",
           "administrativeStatus": "preferredTerm-admn-sts",
           "source": "WSO ACA Glossary",
-          "has_components": true,
+          "hasComponents": true,
           "transactions": [
             {
               "type": "origination",
@@ -419,24 +419,24 @@ EN: "behavior" → ET: "käitumine", "käitumisviis"
           "partOfSpeech": "noun",
           "administrativeStatus": "preferredTerm-admn-sts",
           "source": "WSO ACA Glossary",
-          "has_components": true,
+          "hasComponents": true,
           "workflow": {
             "atl_status": "atl_approved",
             "usage_status": "atl_in_use",
-            "approved_by": "ATL consensus",
-            "approved_date": "2025-10-16",
-            "first_used_date": "2025-10-16"
+            "approvedBy": "ATL consensus",
+            "approvedDate": "2025-10-16",
+            "firstUsedDate": "2025-10-16"
           },
           "usageExamples": [
             {
               "source": "Daily Meditation 2024-03-15",
-              "en_context": "We recognize our addictive behavior patterns.",
-              "et_translation": "Me tunnistame oma addiktiivseid käitumismustreid.",
-              "translator_note": {
+              "enContext": "We recognize our addictive behavior patterns.",
+              "etTranslation": "Me tunnistame oma addiktiivseid käitumismustreid.",
+              "translatorNote": {
                 "author": "Külli J",
                 "date": "2025-10-16",
                 "explanation": "Kasutasin 'addiktiivne' mitte 'sõltuvuslik', sest see on otsesem ja vähem kliiniline.",
-                "key_insight": "ATL kontekstis on oluline säilitada isiklik toon."
+                "keyInsight": "ATL kontekstis on oluline säilitada isiklik toon."
               }
             }
           ],
@@ -452,7 +452,7 @@ EN: "behavior" → ET: "käitumine", "käitumisviis"
               "responsibility": "ATL consensus",
               "date": "2025-10-16",
               "action": "Approved as preferred term",
-              "status_change": "candidate → atl_approved"
+              "statusChange": "candidate → atl_approved"
             }
           ]
         },
@@ -461,12 +461,12 @@ EN: "behavior" → ET: "käitumine", "käitumisviis"
           "partOfSpeech": "noun",
           "administrativeStatus": "deprecatedTerm-admn-sts",
           "source": "Sõnaveeb SKT",
-          "has_components": true,
+          "hasComponents": true,
           "workflow": {
             "atl_status": "rejected",
             "usage_status": "not_in_use",
-            "rejected_by": "ATL review team",
-            "rejected_date": "2025-10-16"
+            "rejectedBy": "ATL review team",
+            "rejectedDate": "2025-10-16"
           },
           "note": "Too clinical, not ACA tone",
           "transactions": [
@@ -481,7 +481,7 @@ EN: "behavior" → ET: "käitumine", "käitumisviis"
               "responsibility": "ATL review team",
               "date": "2025-10-16",
               "action": "Rejected - too clinical tone",
-              "status_change": "candidate → rejected"
+              "statusChange": "candidate → rejected"
             }
           ]
         },
@@ -490,11 +490,11 @@ EN: "behavior" → ET: "käitumine", "käitumisviis"
           "partOfSpeech": "noun",
           "administrativeStatus": "admittedTerm-admn-sts",
           "source": "Sõnaveeb",
-          "has_components": true,
+          "hasComponents": true,
           "workflow": {
             "atl_status": "candidate",
             "usage_status": "not_in_use",
-            "added_date": "2025-10-15"
+            "addedDate": "2025-10-15"
           },
           "transactions": [
             {
@@ -511,7 +511,7 @@ EN: "behavior" → ET: "käitumine", "käitumisviis"
   "_metadata": {
     "termComplexity": "complex",
     "componentTerms": ["addictive", "behavior"],
-    "is_glossary_term": true,
+    "isGlossaryTerm": true,
     "componentLookups": {
       "en": {
         "addictive": {
@@ -585,15 +585,15 @@ EN: "behavior" → ET: "käitumine", "käitumisviis"
     {
       "estonian": "sõltuvuslik käitumine",
       "status": "rejected",
-      "rejected_by": "ATL review team",
-      "rejected_date": "2025-10-16",
-      "rejected_reason": "Too clinical, not ACA tone"
+      "rejectedBy": "ATL review team",
+      "rejectedDate": "2025-10-16",
+      "rejectedReason": "Too clinical, not ACA tone"
     },
     {
       "estonian": "addiktiivne käitumine",
       "status": "atl_approved",
-      "approved_by": "ATL consensus",
-      "approved_date": "2025-10-16"
+      "approvedBy": "ATL consensus",
+      "approvedDate": "2025-10-16"
     }
   ]
 }
@@ -621,14 +621,14 @@ EN: "behavior" → ET: "käitumine", "käitumisviis"
 ```json
 {
   "addictive": {
-    "is_glossary_term": false,
+    "isGlossaryTerm": false,
     "derivedFrom": ["addictive behavior", "addictive thinking"],
     "componentLookups": {
       "sonaveeb": [...]
     }
   },
   "addictive behavior": {
-    "is_glossary_term": true,
+    "isGlossaryTerm": true,
     "termComplexity": "complex",
     "componentTerms": ["addictive", "behavior"],
     "variants": [...]
@@ -734,8 +734,8 @@ EN: "behavior" → ET: "käitumine", "käitumisviis"
   "partOfSpeech": "noun",
   "administrativeStatus": "preferredTerm-admn-sts",
   "atl_status": "atl_approved",
-  "approved_by": "ATL consensus",
-  "approved_date": "2025-10-16",
+  "approvedBy": "ATL consensus",
+  "approvedDate": "2025-10-16",
   "source": "WSO ACA Glossary"
 }
 ```
@@ -755,8 +755,8 @@ EN: "behavior" → ET: "käitumine", "käitumisviis"
   "term": "addiktiivne käitumine",
   "partOfSpeech": "noun",
   "administrativeStatus": "atl_approved",
-  "approved_by": "ATL consensus",
-  "approved_date": "2025-10-16",
+  "approvedBy": "ATL consensus",
+  "approvedDate": "2025-10-16",
   "source": "WSO ACA Glossary",
   "_tbx_mapping": {
     "atl_approved": "preferredTerm-admn-sts",
@@ -784,9 +784,9 @@ EN: "behavior" → ET: "käitumine", "käitumisviis"
   "administrativeStatus": "preferredTerm-admn-sts",
   "workflow": {
     "atl_status": "atl_approved",
-    "approved_by": "ATL consensus",
-    "approved_date": "2025-10-16",
-    "review_status": "completed"
+    "approvedBy": "ATL consensus",
+    "approvedDate": "2025-10-16",
+    "reviewStatus": "completed"
   },
   "source": "WSO ACA Glossary"
 }
@@ -828,8 +828,8 @@ EN: "behavior" → ET: "käitumine", "käitumisviis"
 ```json
 {
   "status": "atl_approved",
-  "approved_by": "ATL consensus",
-  "approved_date": "2025-10-16"
+  "approvedBy": "ATL consensus",
+  "approvedDate": "2025-10-16"
 }
 ```
 
@@ -885,12 +885,12 @@ EN: "behavior" → ET: "käitumine", "käitumisviis"
 ```json
 {
   "addictive": {
-    "is_glossary_term": false,
+    "isGlossaryTerm": false,
     "derivedFrom": ["addictive behavior", "addictive thinking"],
     "termComplexity": "simple"
   },
   "addictive behavior": {
-    "is_glossary_term": true,
+    "isGlossaryTerm": true,
     "termComplexity": "complex",
     "componentTerms": ["addictive", "behavior"]
   }
@@ -946,7 +946,7 @@ EN: "behavior" → ET: "käitumine", "käitumisviis"
     }
   },
   "_custom": {
-    "is_glossary_term": false,
+    "isGlossaryTerm": false,
     "derivedFrom": ["addictive behavior", "addictive thinking"]
   }
 }
@@ -967,8 +967,8 @@ EN: "behavior" → ET: "käitumine", "käitumisviis"
   "administrativeStatus": "preferredTerm-admn-sts",
   "workflow": {
     "atl_status": "atl_approved",
-    "approved_by": "ATL consensus",
-    "approved_date": "2025-10-16"
+    "approvedBy": "ATL consensus",
+    "approvedDate": "2025-10-16"
   },
   "source": "WSO ACA Glossary"
 }
@@ -1001,7 +1001,7 @@ EN: "behavior" → ET: "käitumine", "käitumisviis"
     }
   },
   "_metadata": {
-    "is_glossary_term": false,
+    "isGlossaryTerm": false,
     "derivedFrom": ["addictive behavior", "addictive thinking"],
     "termComplexity": "simple"
   }
@@ -1054,8 +1054,8 @@ EN: "behavior" → ET: "käitumine", "käitumisviis"
   "administrativeStatus": "deprecatedTerm-admn-sts",
   "workflow": {
     "atl_status": "rejected",
-    "rejected_by": "ATL review team",
-    "rejected_date": "2025-10-16"
+    "rejectedBy": "ATL review team",
+    "rejectedDate": "2025-10-16"
   },
   "note": "Too clinical, not ACA tone"
 }
@@ -1075,7 +1075,7 @@ EN: "behavior" → ET: "käitumine", "käitumisviis"
   "metadata": {
     "created": "2025-10-16",
     "standard": "TBX-Basic v1.2.1 + ATL Extensions",
-    "format_version": "2.0"
+    "formatVersion": "2.0"
   },
   "concepts": [
     {
@@ -1106,8 +1106,8 @@ EN: "behavior" → ET: "käitumine", "käitumisviis"
               "source": "WSO ACA Glossary",
               "workflow": {
                 "atl_status": "atl_approved",
-                "approved_by": "ATL consensus",
-                "approved_date": "2025-10-16"
+                "approvedBy": "ATL consensus",
+                "approvedDate": "2025-10-16"
               }
             },
             {
@@ -1117,8 +1117,8 @@ EN: "behavior" → ET: "käitumine", "käitumisviis"
               "source": "Sõnaveeb",
               "workflow": {
                 "atl_status": "rejected",
-                "rejected_by": "ATL review team",
-                "rejected_date": "2025-10-16"
+                "rejectedBy": "ATL review team",
+                "rejectedDate": "2025-10-16"
               },
               "note": "Too clinical, not ACA tone"
             },
@@ -1129,7 +1129,7 @@ EN: "behavior" → ET: "käitumine", "käitumisviis"
               "source": "Sõnaveeb",
               "workflow": {
                 "atl_status": "candidate",
-                "added_date": "2025-10-15"
+                "addedDate": "2025-10-15"
               }
             }
           ]
@@ -1138,7 +1138,7 @@ EN: "behavior" → ET: "käitumine", "käitumisviis"
       "_metadata": {
         "termComplexity": "complex",
         "componentTerms": ["addictive", "behavior"],
-        "is_glossary_term": true
+        "isGlossaryTerm": true
       }
     },
     {
@@ -1165,7 +1165,7 @@ EN: "behavior" → ET: "käitumine", "käitumisviis"
               "source": "Sõnaveeb",
               "workflow": {
                 "atl_status": "candidate",
-                "added_date": "2025-10-15"
+                "addedDate": "2025-10-15"
               }
             }
           ]
@@ -1174,7 +1174,7 @@ EN: "behavior" → ET: "käitumine", "käitumisviis"
       "_metadata": {
         "termComplexity": "simple",
         "componentTerms": null,
-        "is_glossary_term": false,
+        "isGlossaryTerm": false,
         "derivedFrom": ["addictive behavior", "addictive thinking"]
       }
     }
@@ -1211,7 +1211,7 @@ EN: "behavior" → ET: "käitumine", "käitumisviis"
    ```json
    {
      "_metadata": {
-       "is_glossary_term": false,
+       "isGlossaryTerm": false,
        "derivedFrom": [],
        "termType": "communityAdded",
        "addedReason": "Kordub palju ATL tekstides, tekitab arutelusid"
@@ -1228,13 +1228,13 @@ EN: "behavior" → ET: "käitumine", "käitumisviis"
      "usageExamples": [
        {
          "source": "Daily Meditation 2024-03-15",
-         "en_context": "...we feel that we are changing inside.",
-         "et_translation": "...me tunneme, et meis toimub sisemine muutus.",
-         "translator_note": {
+         "enContext": "...we feel that we are changing inside.",
+         "etTranslation": "...me tunneme, et meis toimub sisemine muutus.",
+         "translatorNote": {
            "author": "Külli J",
            "date": "2025-10-16",
            "explanation": "See pole intellektuaalne taipamine, vaid tajutav tunne...",
-           "key_insight": "Sisemine muutus ei sünni pingutades..."
+           "keyInsight": "Sisemine muutus ei sünni pingutades..."
          }
        }
      ]
@@ -1276,14 +1276,14 @@ Salvesta AINULT baasvormi (lemma). CAT tool lemmatiseerija leiab grammatilised v
 {
   "term": "muutus",
   "partOfSpeech": "noun",
-  "et_variants": []  // Tavaliselt tühi
+  "etVariants": []  // Tavaliselt tühi
 }
 
 // AGA kui CAT ei tunne "muutusest" ära:
 {
   "term": "muutus",
   "partOfSpeech": "noun",
-  "et_variants": [
+  "etVariants": [
     {
       "term": "muutusest",
       "grammaticalCase": "elative"
