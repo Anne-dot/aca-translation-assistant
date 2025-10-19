@@ -1054,7 +1054,7 @@ Põhimõte oli pragmaatiline: MVP esimeseks faasiks, saab hiljem täiendada kui 
 
 ### 💭 Tunne
 
-[Lisa siia oma tunne]
+Lapsed nõuavad tähelepanu ja raske on oma tehtud tööd nõnda dokumenteerida. Annan endast parima, sest muidu pean palju kaugemalt alustama pärast.
 
 ---
 
