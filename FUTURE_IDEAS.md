@@ -224,12 +224,7 @@ If "addictive thinking" is also processed:
 
 **Open Questions:**
 
-1. **Data Flow Clarification:** ✅ RESOLVED (Issue #18)
-   - Current source: 3 files (498 terms total)
-   - Master glossary will be created from merged sources
-   - Input for component extraction: Master glossary JSON
-
-2. **Generic Words Filtering:**
+1. **Generic Words Filtering:**
    - Which words are "too generic" to include?
    - Hard-coded exclusion list vs minimum word length?
    - Should "self" be excluded? (appears in 17 compound terms)
