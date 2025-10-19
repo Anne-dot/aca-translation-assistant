@@ -1,27 +1,15 @@
 # Deprecated Files
 
-This folder contains deprecated code and data from the **EKI Collection Approach** (October 2025).
+## 1. EKI Collection Approach (October 2025)
 
-## Why Deprecated?
+**Why deprecated:** Sõnaveeb already includes all EKI terminology databases, so separate collection is unnecessary.
 
-The original approach was to collect terminology data from 4 EKI terminology databases separately and match them with the ACA Glossary. This was replaced by **Sõnaveeb enrichment** (Issue #7), which includes all EKI databases automatically.
-
-**Key insight:** Sõnaveeb already includes all EKI terminology databases, so separate collection is unnecessary.
-
-## Deprecation Timeline
-
-- **Issues #1, #3, #4:** EKI collection and matching implementation
-- **Issue #7 (2025-10-15):** Sõnaveeb approach adopted, EKI approach deprecated
-- **2025-10-16:** Scripts and data moved to `deprecated/` folder
-
-## Contents
-
-### Scripts (deprecated/)
+### Scripts
 - `eki_collector_deprecated.py` - EKI terminology collector (4 databases)
 - `load_eki_data_deprecated.py` - EKI data loader and combiner
 - `match_glossary_eki_deprecated.py` - Glossary-EKI matching algorithm
 
-### Data (deprecated/data/)
+### Data (data/)
 - `eki_terms/` - 4 EKI terminology databases (1,278 terms total)
   - `eki_kriis_20251014.json` (82 terms)
   - `eki_skt_20251014.json` (250 terms)
@@ -31,26 +19,32 @@ The original approach was to collect terminology data from 4 EKI terminology dat
 - `eki-terms.csv` - EKI terms review file
 - `glossary-review.csv` - Glossary-EKI match review file
 
-## What Was Preserved
+**What was preserved:** Term cleaning functions → `src/term_cleaning.py` (Issue #11)
 
-Useful logic from deprecated scripts was extracted and preserved:
-
-- **Term cleaning functions** → `src/term_cleaning.py` (Issue #11)
-  - Normalize whitespace
-  - Remove grammatical markers
-  - Clean explanations
-
-These functions are reused in the current Sõnaveeb enrichment workflow.
-
-## Current Approach
-
-See `src/sonaveeb_lookup.py` (Issue #7) for the current enrichment approach using Sõnaveeb API.
+**Issues:** #1, #3, #4, #7, #11
 
 ---
 
-**For historical context, see:**
-- [Issue #1](https://github.com/Anne-dot/aca-translation-assistant/issues/1) - EKI collection
-- [Issue #3](https://github.com/Anne-dot/aca-translation-assistant/issues/3) - EKI data loading
-- [Issue #4](https://github.com/Anne-dot/aca-translation-assistant/issues/4) - Glossary-EKI matching
-- [Issue #7](https://github.com/Anne-dot/aca-translation-assistant/issues/7) - Sõnaveeb enrichment
-- [Issue #11](https://github.com/Anne-dot/aca-translation-assistant/issues/11) - Term cleaning utilities
+## 2. Old Glossary Sources & Documentation (October 2025)
+
+**Why deprecated:** New glossary sources identified (Issue #18).
+
+### Old Glossary Data
+- `aca-glossary.json` - 210 terms from Glossary_templatesonavara.docx
+- `Glossary_templatesonavara.docx` - Original ACA Glossary template
+
+**Replaced by:** 3 new sources (498 terms total)
+- `data/ACA_WSO/foundation_glossary.csv` (334 terms, PRIMARY)
+- `data/ACA_WSO/TMS-Glossary-template.xlsx` (102 unique)
+- `data/ACA_WSO/Translation-Foundation-Glossary-Template-2025.docx` (62 unique)
+
+### Old Documentation
+- `DATA_PIPELINE_old.md` - Described .docx → aca-glossary.json pipeline
+- `MANUAL_REVIEW_GUIDE_old.md` - Guide for editing aca-glossary-eki.json
+- `STRUCTURE_COMPARISON_old.md` - aca-glossary-eki.json vs TBX-Basic analysis
+
+**Issues:** #18 (glossary sources), #19 (documentation update), #20 (new guide needed)
+
+---
+
+**Current glossary:** See `data/ACA_WSO/README.md`
