@@ -16,8 +16,8 @@
 - [Development Roadmap](#development-roadmap)
   - [Overview](#overview)
   - [Milestone 1: Terminology Database](#milestone-1-terminology-database-in-progress)
-    - [1A. Collect EKI Terminology](#1a-collect-eki-terminology--done)
-    - [1B. Match Glossary with EKI](#1b-match-glossary-with-eki--done)
+    - [1A. Glossary Sources](#1a-glossary-sources--complete-issue-18)
+    - [1B. Add Estonian Translations](#1b-add-estonian-translations--future)
     - [1C. Extract from Existing ATL Translations](#1c-extract-from-existing-atl-translations--future)
     - [1D. Collaboration Opportunities](#1d-collaboration-opportunities--optional)
   - [Milestone 2: Personal CLI Translation Assistant](#milestone-2-personal-cli-translation-assistant)
@@ -68,40 +68,30 @@ Estonian ACA/ATL materials - building a systematic terminology database as the f
 
 **Sub-steps:**
 
-**1A. Collect EKI Terminology** ⚠️ DEPRECATED
-- **Status:** Approach deprecated - EKI databases already included in Sonaveeb
-- **Replacement:** Use Sonaveeb lookup instead (Issue #7)
-- **Historical info:** Collected from 4 EKI terminology databases (1,278 terms)
-- **Deprecated scripts:** Moved to `deprecated/eki_collector_deprecated.py`
-- **See:** Issues #1, #3, #4 for deprecation details
+**1A. Glossary Sources** ✅ COMPLETE (Issue #18)
+- **Source:** ACA WSO official glossary materials
+- **Input files:** 3 sources, 498 unique terms total
+  - `data/ACA_WSO/foundation_glossary.csv` - PRIMARY (334 terms with full fields)
+  - `data/ACA_WSO/TMS-Glossary-template.xlsx` - Supplementary (102 unique terms)
+  - `data/ACA_WSO/Translation-Foundation-Glossary-Template-2025.docx` - Supplementary (62 unique terms)
+- **Documentation:** See `data/ACA_WSO/README.md` and Issue #18
+- **Output:** Master glossary JSON (following Issue #14 schema)
+- **Status:** Sources identified and documented
 
-**1B. Match Glossary with EKI** ⚠️ DEPRECATED
-- **Status:** Approach deprecated - using Sonaveeb lookup instead
-- **Replacement:** Sonaveeb enrichment (Issue #7) includes EKI data automatically
-- **Historical info:** Matched 10/845 terms (1.2% match rate) from EKI databases
-- **Deprecated scripts:** Moved to `deprecated/match_glossary_eki_deprecated.py`
-- **Preserved logic:** Term cleaning functions extracted to `src/term_cleaning.py` (Issue #11)
-- **See:** Issues #3, #4, #5 for implementation details
+**1B. Add Estonian Translations** ⏳ FUTURE
+- **Sources:**
+  - https://sonaveeb.ee/ (includes EKI terminology databases)
+  - https://aare.edu.ee/dictionary.html
+  - Other Estonian dictionaries as needed
+- **Output:** Terms with Estonian equivalents from authoritative sources
 
 **1C. Extract from Existing ATL Translations** ⏳ FUTURE
-- Sources: All ATL in-use translations
+- **Sources:** All ATL in-use translations
   - Daily meditations (päevamõtted)
   - 12 Steps text (12 sammu tekst)
   - Website translations (kodulehe tõlked)
-- Input: `data/aca-glossary-eki.json` (from step 1B)
-- Output: `data/aca-glossary-eki-atl.json` (final terminology database)
-- Process:
-  1. Extract original + translation pairs from all sources
-  2. Identify terminology usage in context
-  3. Match with existing database
-  4. Add ATL translations (may differ from EKI - both are valuable)
-  5. Mark terms as "practically tested in real ATL texts"
-- Note: These contain practically tested translations in real ACA/ATL context
-- **atl = ATL existing translations**
-- **TODO (later):** Define reference format for each source type:
-  - Daily meditations: date reference (MM-DD format)
-  - BRB (Big Red Book): page number (lk XX)
-  - 12 Steps: step number and point (Step X, pt Y)
+- **Output:** Practically tested translations in real ACA/ATL context
+- **Note:** ATL translations may differ from dictionary sources - both are valuable
 
 **1D. Collaboration Opportunities** 💡 OPTIONAL
 - **EKI Terminology Database Team:** Contact established for potential future cooperation (see `EKI_terminibaasid_kontaktid.md` for details)

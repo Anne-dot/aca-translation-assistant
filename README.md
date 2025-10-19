@@ -65,9 +65,14 @@ ATL_tõlkeprojekt/
 │   └── utils.py                  # Shared utility functions
 │
 ├── data/                          # Data files
-│   ├── aca-glossary.json         # Original ACA Glossary (845 terms)
-│   ├── aca-glossary-eki.json     # With term_complexity field (826 terms)
-│   └── estonian-only-terms.csv   # Estonian-only terms from Sõnaveeb
+│   ├── ACA_WSO/                   # ACA WSO glossary sources (498 terms total)
+│   │   ├── foundation_glossary.csv    # Primary source (334 terms)
+│   │   ├── foundation_glossay.ods     # Primary source (ODS format)
+│   │   ├── foundation_glossary_from_csv.json # Primary source (JSON)
+│   │   ├── TMS-Glossary-template.xlsx # Supplementary (102 unique)
+│   │   ├── Translation-Foundation-Glossary-Template-2025.docx # Supplementary (62 unique)
+│   │   └── README.md              # Source documentation (see Issue #18)
+│   └── estonian-only-terms.csv    # Estonian-only terms from Sõnaveeb
 │
 ├── deprecated/                    # Deprecated EKI approach
 │   ├── eki_collector_deprecated.py
