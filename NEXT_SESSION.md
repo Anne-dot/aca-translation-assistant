@@ -10,33 +10,37 @@
 
 ---
 
-## Where We Left Off (2025-10-18 Evening Session)
+## Where We Left Off (2025-10-19 Session)
 
 ### ✅ Completed This Session
 
-**Issue #14: JSON Schema Design Progress (16/18 decisions):**
-- ✅ Decisions 1-12: All term-level fields (from previous session)
-- ✅ Decision 13: `xml:lang` field (Language level, REQUIRED)
-- ✅ Decision 14: `definition` field (Language level, OPTIONAL)
-- ✅ Decision 15: Top-level structure (metadata + concepts wrapper)
-- ✅ Decision 16: metadata object fields (created, standard, formatVersion, author, license, project)
-- ✅ Case-by-case analysis: Resolved field naming conflicts and missing fields
-- ✅ Fixed TBX_vs_MY_PLANS.md: `usage_examples` → `usageExamples` (camelCase)
-- ✅ License decision: CC BY-SA 4.0 (supports small-language ACA communities)
+**Issue #14: JSON Schema Design Progress (17/18 decisions - 94% complete):**
+- ✅ Decisions 1-16: All completed in previous sessions
+- ✅ Decision 17: All _metadata fields complete (4 parts):
+  - Part 1: termComplexity & componentTerms (auto-generated, word count based)
+  - Part 2: isGlossaryTerm, termType, addedReason (categorization)
+  - Part 3: derivedFrom (parent term tracking)
+  - Part 4: componentLookups (dictionary sources with sources array)
 
 **Key Decisions Made:**
-- `xml:lang` REQUIRED (TBX-Basic compliance, language variant support)
-- `definition` OPTIONAL (language-specific definitions)
-- Top-level wrapper with metadata object
-- Metadata fields: created (auto), standard, formatVersion (auto), author "Anne R", license "CC BY-SA 4.0"
-- Standard value: "TBX-Basic v1.2.1 + ACA workflow custom fields"
+- termComplexity: Auto-generated (1 word = simple, 2+ = complex), no stop-words
+- componentTerms: All words extracted (pragmatic MVP approach)
+- termType enum: "component" or "communityAdded" (camelCase)
+- addedReason: REQUIRED for communityAdded (min 20 chars for group conscience review)
+- derivedFrom: Array of parent term texts (human-readable)
+- componentLookups: sources array structure (multiple sources per translation)
+
+**Additional Work:**
+- ✅ Fixed 47+ field names to camelCase in TBX_vs_MY_PLANS.md
+- ✅ Created Issue #15: partOfSpeech vs termComplexity review (nice-to-review label)
+- ✅ Created Issue #16: TBX crossReference field enhancement (nice-to-review label)
+- ✅ Documented naming corrections in Issue #13 and #14 comments
 
 **Status:**
-- Issue #14: 16/18 decisions complete (89%)
-  - ⏸️ Decision 17: _metadata fields (termComplexity, componentTerms, isGlossaryTerm, etc.)
+- Issue #14: 17/18 decisions complete (94%)
   - ⏸️ Decision 18: Validation rules and final schema document
 - All decisions documented in Issue #14 comments
-- Task #14 (git commit/push) is PENDING for this session's changes
+- Commit: b72b239 (2025-10-19 15:33)
 
 ---
 

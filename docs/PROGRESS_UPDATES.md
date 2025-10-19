@@ -1035,6 +1035,29 @@ Tunne on selline, et ma alles hakkan aru saama, kui keerulise ülesande ma endal
 
 ---
 
+## 📅 2025-10-19 (Laupäev, algus 14:31, lõpp 15:50, ~1h 19min)
+
+### 🎉 Täna Saavutatud
+
+**Issue #14 jätkamine:** 17/18 otsust tehtud
+
+Tegin Decision 17 valmis - see oli kõige suurem ja keerulisem otsus. 7 _metadata välja, 4 osa, kõik GitHub'i dokumenteeritud.
+
+Otsustasin kuidas termineid klassifitseeritakse (simple vs complex, sõnade loendamise põhjal), kuidas komponendid automaatselt ekstraktitakse, milliseid termini kategooriaid on (WSO glossary, komponent, kogukonna lisatud) ja kuidas komponentide sõnaraamatute linkide struktuur välja näeb (sources array lahendus).
+
+Põhimõte oli pragmaatiline: MVP esimeseks faasiks, saab hiljem täiendada kui vaja.
+
+**Täiendavad tulemused:**
+- Leidsin ja parandasin 47+ kohta TBX failis kus oli vale nimetus (snake_case camelCase'i asemel)
+- Lõin 2 uut issue't asjadest, mida tulevikus võiks üle vaadata aga praegu ei ole vajalik (partOfSpeech vs termComplexity joondamine, TBX crossReference väli)
+- Lõin uue labeli "nice-to-review" tulevaste täienduste märgistamiseks
+
+### 💭 Tunne
+
+[Lisa siia oma tunne]
+
+---
+
 ## 📅 2025-10-18 (Reede õhtu) - Viimased detailid
 
 ### 🎉 Täna Saavutatud
