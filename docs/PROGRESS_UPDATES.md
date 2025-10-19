@@ -1035,29 +1035,6 @@ Tunne on selline, et ma alles hakkan aru saama, kui keerulise ülesande ma endal
 
 ---
 
-## 📅 2025-10-19 (Laupäev, algus 14:31, lõpp 15:50, ~1h 19min)
-
-### 🎉 Täna Saavutatud
-
-**Issue #14 jätkamine:** 17/18 otsust tehtud
-
-Tegin Decision 17 valmis - see oli kõige suurem ja keerulisem otsus. 7 _metadata välja, 4 osa, kõik GitHub'i dokumenteeritud.
-
-Otsustasin kuidas termineid klassifitseeritakse (simple vs complex, sõnade loendamise põhjal), kuidas komponendid automaatselt ekstraktitakse, milliseid termini kategooriaid on (WSO glossary, komponent, kogukonna lisatud) ja kuidas komponentide sõnaraamatute linkide struktuur välja näeb (sources array lahendus).
-
-Põhimõte oli pragmaatiline: MVP esimeseks faasiks, saab hiljem täiendada kui vaja.
-
-**Täiendavad tulemused:**
-- Leidsin ja parandasin 47+ kohta TBX failis kus oli vale nimetus (snake_case camelCase'i asemel)
-- Lõin 2 uut issue't asjadest, mida tulevikus võiks üle vaadata aga praegu ei ole vajalik (partOfSpeech vs termComplexity joondamine, TBX crossReference väli)
-- Lõin uue labeli "nice-to-review" tulevaste täienduste märgistamiseks
-
-### 💭 Tunne
-
-Lapsed nõuavad tähelepanu ja raske on oma tehtud tööd nõnda dokumenteerida. Annan endast parima, sest muidu pean palju kaugemalt alustama pärast.
-
----
-
 ## 📅 2025-10-18 (Reede õhtu) - Viimased detailid
 
 ### 🎉 Täna Saavutatud
@@ -1196,5 +1173,60 @@ Kõik otsused dokumenteeritud GitHubis, et compacting käigus ei kaoks.
 ### 💭 Tunne (Session 3)
 
 Mul on tunne, et ma teen väga suurt ja põhjalikku projekti. Ja ma teen sellsit asja esmakordselt. On okei, kui mul läheb 30 min asemel 3 tundi. Mu tulemus on ka sellevõrra parem. seda ma tuletan endale meelde. ma saan teha suuri ja keerukaid asju. üks samm korraga.
+
+---
+
+## 📅 2025-10-19 (Laupäev, algus 14:31, lõpp 15:50, ~1h 19min)
+
+### 🎉 Täna Saavutatud
+
+**Issue #14 jätkamine:** 17/18 otsust tehtud
+
+Tegin Decision 17 valmis - see oli kõige suurem ja keerulisem otsus. 7 _metadata välja, 4 osa, kõik GitHub'i dokumenteeritud.
+
+Otsustasin kuidas termineid klassifitseeritakse (simple vs complex, sõnade loendamise põhjal), kuidas komponendid automaatselt ekstraktitakse, milliseid termini kategooriaid on (WSO glossary, komponent, kogukonna lisatud) ja kuidas komponentide sõnaraamatute linkide struktuur välja näeb (sources array lahendus).
+
+Põhimõte oli pragmaatiline: MVP esimeseks faasiks, saab hiljem täiendada kui vaja.
+
+**Täiendavad tulemused:**
+- Leidsin ja parandasin 47+ kohta TBX failis kus oli vale nimetus (snake_case camelCase'i asemel)
+- Lõin 2 uut issue't asjadest, mida tulevikus võiks üle vaadata aga praegu ei ole vajalik (partOfSpeech vs termComplexity joondamine, TBX crossReference väli)
+- Lõin uue labeli "nice-to-review" tulevaste täienduste märgistamiseks
+
+### 💭 Tunne
+
+Lapsed nõuavad tähelepanu ja raske on oma tehtud tööd nõnda dokumenteerida. Annan endast parima, sest muidu pean palju kaugemalt alustama pärast.
+
+---
+
+
+### Session 2 (algus ~20:31, lõpp ~01:01, ~3h töö)
+
+#### 🎯 Eesmärk
+
+Issue #14 Decision 18 valmis saada (JSON schema).
+Töö käigus selgus: glossary allikad vajavad uuendamist.
+
+#### ✅ Tehtud
+
+**Issue #18 (CLOSED):**
+- 3 allikat identifitseeritud: foundation_glossary.csv (334), TMS (102), Template 2025 (62) = 498 terminit
+- data/ACA_WSO/README.md loodud
+- Vananenud failid (aca-glossary.json, Glossary_templatesonavara.docx) → deprecated/
+
+**Issue #19 (CLOSED):**
+- 10/10 faili uuendatud
+- 3 dokumenti → deprecated/ (DATA_PIPELINE, MANUAL_REVIEW_GUIDE, STRUCTURE_COMPARISON)
+- PROJECT_OVERVIEW_DRAFT.md ümberkorraldatud: 1A Sources, 1B Add ET Translations, 1C ATL Translations, 1D Collaboration
+- deprecated/README.md täiendatud
+
+**Issue #20 (CREATED):**
+- MANUAL_GLOSSARY_REVIEW_AND_EDITING_GUIDE.md (dependencies: Issue #14 + master glossary)
+
+**Commits:** 7 (9987feb kuni cbcae69)
+
+#### 💭 Tunne
+
+(Sinu jaoks)
 
 ---
