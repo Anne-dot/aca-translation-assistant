@@ -1,0 +1,433 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://github.com/Anne-dot/aca-translation-assistant/schemas/aca-tbx-terminology-schema.json",
+  "title": "ACA TBX-Basic Terminology Database Schema",
+  "description": "JSON Schema for ACA Translation Assistant terminology database. Based on TBX-Basic v1.2.1 (ISO 30042:2019) with ACA workflow extensions.",
+  "version": "1.0.0",
+  "type": "object",
+  "required": ["metadata", "concepts"],
+  "additionalProperties": false,
+
+  "properties": {
+    "metadata": {
+      "type": "object",
+      "required": ["created", "standard", "formatVersion", "author", "license"],
+      "additionalProperties": false,
+      "properties": {
+        "created": {
+          "type": "string",
+          "format": "date",
+          "description": "Database creation date (YYYY-MM-DD)"
+        },
+        "standard": {
+          "type": "string",
+          "const": "TBX-Basic v1.2.1",
+          "description": "Terminology standard"
+        },
+        "formatVersion": {
+          "type": "string",
+          "pattern": "^\\d+\\.\\d+$",
+          "description": "Schema version (semantic versioning: major.minor)"
+        },
+        "author": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Database author/maintainer"
+        },
+        "project": {
+          "type": "string",
+          "description": "Project name (OPTIONAL)"
+        },
+        "license": {
+          "type": "string",
+          "minLength": 1,
+          "description": "License information"
+        }
+      }
+    },
+
+    "concepts": {
+      "type": "array",
+      "minItems": 1,
+      "description": "Array of terminology concepts",
+      "items": {
+        "$ref": "#/definitions/concept"
+      }
+    }
+  },
+
+  "definitions": {
+    "concept": {
+      "type": "object",
+      "required": ["id", "subjectField", "languages", "_metadata"],
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^aca-\\d{4}$",
+          "description": "Unique concept identifier (format: aca-0001)"
+        },
+        "subjectField": {
+          "type": "string",
+          "const": "ACA terminology",
+          "description": "Subject field classification"
+        },
+        "languages": {
+          "type": "object",
+          "minProperties": 1,
+          "description": "Language sections (key = ISO 639-1 code)",
+          "patternProperties": {
+            "^[a-z]{2}$": {
+              "$ref": "#/definitions/languageSection"
+            }
+          },
+          "additionalProperties": false
+        },
+        "_metadata": {
+          "$ref": "#/definitions/conceptMetadata"
+        }
+      }
+    },
+
+    "languageSection": {
+      "type": "object",
+      "required": ["xml:lang", "terms"],
+      "additionalProperties": false,
+      "properties": {
+        "xml:lang": {
+          "type": "string",
+          "pattern": "^[a-z]{2}$",
+          "description": "ISO 639-1 language code"
+        },
+        "definition": {
+          "type": "string",
+          "minLength": 10,
+          "description": "Language-specific definition (OPTIONAL, recommended)"
+        },
+        "terms": {
+          "type": "array",
+          "minItems": 1,
+          "description": "Array of terms in this language",
+          "items": {
+            "$ref": "#/definitions/term"
+          }
+        }
+      }
+    },
+
+    "term": {
+      "type": "object",
+      "required": ["term", "source", "administrativeStatus", "transactions"],
+      "additionalProperties": false,
+      "properties": {
+        "term": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The term itself"
+        },
+        "partOfSpeech": {
+          "type": ["string", "null"],
+          "enum": ["noun", "verb", "adjective", "adverb", "phrase", null],
+          "description": "Part of speech (OPTIONAL in Phase 1, REQUIRED in Phase 3)"
+        },
+        "source": {
+          "$ref": "#/definitions/source"
+        },
+        "administrativeStatus": {
+          "type": "string",
+          "enum": [
+            "preferredTerm-admn-sts",
+            "admittedTerm-admn-sts",
+            "deprecatedTerm-admn-sts",
+            "supersededTerm-admn-sts"
+          ],
+          "description": "TBX-Basic administrative status"
+        },
+        "workflow": {
+          "$ref": "#/definitions/workflow"
+        },
+        "note": {
+          "type": "string",
+          "minLength": 10,
+          "description": "Additional notes about the term (OPTIONAL)"
+        },
+        "usageExamples": {
+          "type": "array",
+          "description": "Usage examples from source texts",
+          "items": {
+            "$ref": "#/definitions/usageExample"
+          }
+        },
+        "termType": {
+          "type": ["string", "null"],
+          "enum": ["fullForm", "acronym", "abbreviation", "shortForm", "variant", null],
+          "description": "TBX-Basic term type (OPTIONAL)"
+        },
+        "supersededBy": {
+          "type": "string",
+          "description": "Concept ID that replaces this term (OPTIONAL)"
+        },
+        "transactions": {
+          "type": "array",
+          "minItems": 1,
+          "description": "Full transaction history",
+          "items": {
+            "$ref": "#/definitions/transaction"
+          }
+        }
+      }
+    },
+
+    "source": {
+      "type": "object",
+      "required": ["type", "name", "date"],
+      "additionalProperties": false,
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": ["book", "dictionary", "website", "manual_addition", "conference", "transcription"],
+          "description": "Source type"
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Source name"
+        },
+        "date": {
+          "type": "string",
+          "format": "date",
+          "description": "Source date (YYYY-MM-DD)"
+        },
+        "author": {
+          "type": "string",
+          "description": "Source author (OPTIONAL)"
+        },
+        "publisher": {
+          "type": "string",
+          "description": "Publisher (OPTIONAL)"
+        },
+        "isbn": {
+          "type": "string",
+          "pattern": "^(\\d{10}|\\d{13})$",
+          "description": "ISBN (OPTIONAL, 10 or 13 digits)"
+        },
+        "url": {
+          "type": "string",
+          "format": "uri",
+          "description": "URL (OPTIONAL)"
+        },
+        "page": {
+          "type": ["string", "integer"],
+          "description": "Page number (OPTIONAL)"
+        },
+        "edition": {
+          "type": "string",
+          "description": "Edition (OPTIONAL)"
+        },
+        "notes": {
+          "type": "string",
+          "description": "Additional notes (OPTIONAL)"
+        }
+      }
+    },
+
+    "workflow": {
+      "type": "object",
+      "required": ["atlStatus", "usageStatus"],
+      "additionalProperties": false,
+      "properties": {
+        "atlStatus": {
+          "type": "string",
+          "enum": ["candidate", "atl_approved", "rejected"],
+          "description": "ATL review decision status"
+        },
+        "usageStatus": {
+          "type": "string",
+          "enum": ["not_in_use", "atl_in_use", "formerly_in_use"],
+          "description": "Actual usage status in ATL texts"
+        },
+        "approvedBy": {
+          "type": "string",
+          "description": "Person who approved (OPTIONAL)"
+        },
+        "approvedDate": {
+          "type": "string",
+          "format": "date",
+          "description": "Approval date (OPTIONAL)"
+        },
+        "reviewNotes": {
+          "type": "string",
+          "description": "Review notes (OPTIONAL)"
+        }
+      }
+    },
+
+    "usageExample": {
+      "type": "object",
+      "required": ["source", "target"],
+      "additionalProperties": false,
+      "properties": {
+        "source": {
+          "type": "string",
+          "minLength": 10,
+          "description": "Example in source language"
+        },
+        "target": {
+          "type": "string",
+          "minLength": 10,
+          "description": "Example in target language"
+        },
+        "reference": {
+          "type": "string",
+          "description": "Reference to source document (OPTIONAL)"
+        }
+      }
+    },
+
+    "transaction": {
+      "type": "object",
+      "required": ["transactionId", "type", "target", "date", "responsibility"],
+      "additionalProperties": false,
+      "properties": {
+        "transactionId": {
+          "type": "string",
+          "pattern": "^tx-\\d{10}$",
+          "description": "Unique transaction ID (format: tx-1234567890)"
+        },
+        "type": {
+          "type": "string",
+          "enum": ["origination", "modification"],
+          "description": "TBX-Basic transaction type"
+        },
+        "actionType": {
+          "type": "string",
+          "enum": ["originated", "enriched", "approved", "rejected", "modified", "manual_addition"],
+          "description": "ACA workflow action type (OPTIONAL)"
+        },
+        "target": {
+          "type": "string",
+          "enum": ["term", "definition", "source", "workflow", "note"],
+          "description": "What was modified"
+        },
+        "date": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Transaction timestamp"
+        },
+        "responsibility": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Person/system responsible"
+        },
+        "note": {
+          "type": "string",
+          "description": "Transaction note (OPTIONAL)"
+        }
+      }
+    },
+
+    "conceptMetadata": {
+      "type": "object",
+      "required": ["isGlossaryTerm", "termComplexity"],
+      "additionalProperties": false,
+      "properties": {
+        "termComplexity": {
+          "type": "string",
+          "enum": ["simple", "complex"],
+          "description": "ISO 1087 term complexity"
+        },
+        "componentTerms": {
+          "type": "array",
+          "description": "Component words for complex terms",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "isGlossaryTerm": {
+          "type": "boolean",
+          "description": "Is this from ACA WSO glossary?"
+        },
+        "termType": {
+          "type": ["string", "null"],
+          "enum": ["component", "communityAdded", null],
+          "description": "ACA workflow term type"
+        },
+        "derivedFrom": {
+          "type": "array",
+          "description": "Parent term IDs (for component terms)",
+          "items": {
+            "type": "string",
+            "pattern": "^aca-\\d{4}$"
+          }
+        },
+        "addedReason": {
+          "type": ["string", "null"],
+          "minLength": 20,
+          "description": "Reason for community-added term (CONDITIONAL REQUIRED)"
+        },
+        "componentLookups": {
+          "type": "object",
+          "description": "Dictionary lookups for component terms",
+          "patternProperties": {
+            "^[a-z]{2}$": {
+              "type": "object",
+              "patternProperties": {
+                "^.+$": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/definitions/componentLookup"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+
+    "componentLookup": {
+      "type": "object",
+      "required": ["term", "sources"],
+      "additionalProperties": false,
+      "properties": {
+        "term": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Component term translation"
+        },
+        "partOfSpeech": {
+          "type": "string",
+          "description": "Part of speech (OPTIONAL)"
+        },
+        "definitions": {
+          "type": "array",
+          "description": "Definitions from dictionary",
+          "items": {
+            "type": "string",
+            "minLength": 5
+          }
+        },
+        "sources": {
+          "type": "array",
+          "minItems": 1,
+          "description": "Dictionary sources",
+          "items": {
+            "type": "object",
+            "required": ["name", "link"],
+            "properties": {
+              "name": {
+                "type": "string",
+                "minLength": 1
+              },
+              "link": {
+                "type": "string",
+                "format": "uri"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

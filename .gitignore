@@ -52,6 +52,7 @@ data/paevamotted/
 !data/eki_terminid/*.json
 !data/glossary_analüüs.json
 !terminibaas.json.example
+!schemas/*.json
 credentials/
 secrets/
 
