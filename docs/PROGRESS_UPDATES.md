@@ -1230,3 +1230,108 @@ Töö käigus selgus: glossary allikad vajavad uuendamist.
 Ma olen väsinud, kuid mul on tunne, et see mida tegin, oli õige otsus. Raske on seda teha, kui mehe jaoks minu projektid on ärritavad. Ja ise ta ootab, et ma tema projektide osas entusiasmi, toetust näitaksin ning neid kui "meie" projekte võtaksin.
 
 ---
+
+## 📅 2025-10-20 (Pühapäev)
+
+### Session 1 (algus ~01:00, lõpp ~01:19, ~19min)
+
+#### 🎯 Eesmärk
+19.okt Session 2 tulemuste dokumenteerimine PROGRESS_UPDATES.md-sse.
+
+#### ✅ Tehtud
+- Dokumenteeritud Session 2 tulemused (Issue #18, #19, #20)
+- Lisatud isiklik reflektsioon
+- Parandatud kronoloogiline järjekord (uuemad üleval)
+
+**Commits:** 3 (c6fb3d7, a2b9aac, 428ab45)
+
+---
+
+### Session 2 (algus ~16:35, lõpp ~18:24, ~1h 49min + paus lõunale)
+
+#### 🎯 Eesmärk
+Issue #14 Decision 18 (JSON Schema) lõpuni viia ja alustada Data Pipeline planeerimisega.
+
+#### ✅ Tehtud
+
+**Issue #14 - JSON Schema Design (CLOSED) ✅**
+- 19/19 otsust complete
+- JSON_SCHEMA_SPECIFICATION.md loodud (2100+ rida, 73KB, 8/8 sektsiooni)
+  - 5 täielikku näidet (simple, complex, component, community, acronym)
+  - 52 fieldi üle 5 hierarhia taseme
+  - REQUIRED vs OPTIONAL Quick Reference tabel
+  - Issue #13 joondamine (3 key decisions)
+  - TBX-Basic v1.2.1 Field Coverage Analysis
+  - Migration Notes (formatVersion, transformations, Phase 2, future)
+- schemas/aca-tbx-terminology-schema.json loodud (JSON Schema Draft 7)
+  - Machine-readable validation
+  - 52 fieldi, 10 enum tüüpi, 4 pattern reeglit
+  - Testitud ja valideeritud ✅
+  - 100% TBX-Basic compliant
+- .gitignore uuendatud (schemas/*.json lubatud)
+- Issue #14 testing results GitHub'i postitatud
+- Issue suleti automaatselt "Closes #14" commitiga
+
+**Dokumentatsioon (8 faili uuendatud):**
+- README.md → v0.4.0-alpha
+- TODO.md
+- DECISIONS.md → v2.3 (lisatud Issue #14 decision)
+- PROJECT_OVERVIEW_DRAFT.md
+- research/standards/README.md
+- NEXT_SESSION.md
+- .gitignore
+
+**DATA_PIPELINE_DRAFT.md (CREATED) ✅**
+- 3-faasiline pipeline dokumenteeritud:
+  - PHASE 1: Source Consolidation (Extract→Merge→Clean→TBX Transform)
+  - PHASE 2: Dictionary Enrichment (Component→EN→ET)
+  - PHASE 3: Manual Review (Review→ATL→Validate)
+- High-level overview (156 rida)
+- Key Decisions (6 punkti):
+  1. Merge strategy (Foundation = primary)
+  2. Deduplication (normalize, keep Foundation)
+  3. Component extraction BEFORE dictionary lookup
+  4. Dictionary order (Simple→Component→Complex)
+  5. Manual review tool (Issue #20)
+  6. Validation at each step
+- Note: Detailed steps will be discussed during implementation
+
+**Issue #21 (CREATED):**
+- "Implement Data Pipeline: 3 sources → Master glossary"
+- Link: https://github.com/Anne-dot/aca-translation-assistant/issues/21
+- Dependencies: Issue #14 ✅, Issue #20 (PHASE 3)
+
+**Commits:** 8 pushitud (ebe8989 kuni cc43856, ajavahemik 17:16-18:22)
+
+#### 📊 Statistika
+
+**Ajakulu:**
+- Session 1: ~19min (öö, dokumenteerimine)
+- Session 2: ~1h 49min (+ lõunapaus)
+- Kokku: ~2h 8min aktiivset tööd
+
+**GitHubis:**
+- 11 commiti täna (sh öö jooksul 3)
+- 2 issue't closed (#14)
+- 1 issue created (#21)
+- 8 dokumenti uuendatud/loodud
+
+**Tulemused:**
+- Issue #14 COMPLETE (7+ sessiooni üle 9 päeva)
+- 52 fieldi spetsifitseeritud ja valideeritud
+- TBX-Basic v1.2.1 compliant
+- Machine-readable JSON Schema valmis
+- Data Pipeline planeeritud
+- Valmis järgmiseks: PHASE 1 implementeerimine
+
+#### 💭 Tunne
+
+Väga produktiivne sessioon! Issue #14 lõpuks valmis - suur milestone. Kõik 19 otsust dokumenteeritud, testitud ja valideeritud.
+
+Pipeline planeerimine läks hästi - leppisime kokku struktuuri, aga ei läinud liiga detailidesse enne kui koos arutame. See on õige lähenemine.
+
+Oluline õppetund: Küsi ALATI enne detailidesse minemist. Ma lähenesin liiga kiiresti detailidesse ilma sinuga arutamata (pipeline detailed steps), aga me saime selle parandatud. Jätan ainult ülevaate ja põhiotsused, detailid arutame implementeerimise käigus.
+
+Next session: Alustan praktilist implementeerimist - PHASE 1, STEP 1.1 (Extract foundation_glossary.csv). Samm-sammult, koos sinuga arutades. 🚀
+
+---
