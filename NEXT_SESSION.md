@@ -1,17 +1,36 @@
 # Next Session - 2025-10-20
 
-## 🎯 Current Work (Priority Order)
+## ✅ Session Completed
 
-**1. Issue #14 - JSON Schema Design** (IN PROGRESS)
-   - Status: 19/19 decisions complete ✅
-   - DRAFT Status: 5/8 sections complete (62.5%)
-   - Missing from DRAFT:
-     1. REQUIRED vs OPTIONAL Table (Quick reference with Status/Auto-gen/Phase columns)
-     2. Issue #13 Alignment Section (Confirm 3 key decisions implemented)
-     3. Migration Notes Section (Current→new transformations, formatVersion, Phase 2, future Issues)
-   - Next: Add 3 missing sections to DRAFT
-   - Link: https://github.com/Anne-dot/aca-translation-assistant/issues/14
+**Issue #14 - JSON Schema Design** - CLOSED ✅
+- All 19 decisions complete
+- JSON_SCHEMA_SPECIFICATION.md created (2100+ lines, 8/8 sections)
+- aca-tbx-terminology-schema.json created (JSON Schema Draft 7)
+- Schema tested and validated
+- TBX-Basic v1.2.1 compliant
+- All documentation updated
 
-**2. Issue #20 - Manual Glossary Guide** (CREATED)
-   - Dependencies: Issue #14 + master glossary
+**Documentation Updates Complete:**
+- ✅ README.md (v0.4.0-alpha)
+- ✅ TODO.md
+- ✅ DECISIONS.md (v2.3)
+- ✅ PROJECT_OVERVIEW_DRAFT.md
+- ✅ research/standards/README.md
+
+---
+
+## 🎯 Next Priorities
+
+**1. Migration Script (Decision 16)**
+   - Create `src/migrate_to_tbx_structure.py`
+   - Transform current → TBX-Basic structure
+   - Validate output against JSON Schema
+
+**2. Phase 2 Enrichment**
+   - Dictionary lookups (EN + ET)
+   - Estonian translations
+   - ATL community review workflow
+
+**3. Issue #20 - Manual Glossary Guide** (NOW UNBLOCKED)
+   - Dependencies: Issue #14 ✅ COMPLETE
    - Link: https://github.com/Anne-dot/aca-translation-assistant/issues/20
