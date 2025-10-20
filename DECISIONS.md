@@ -2,8 +2,8 @@
 
 **Note:** Active development decisions are documented in GitHub Issues during work. This file is updated periodically with strategic and architectural decisions. For current work details, see [GitHub Issues](https://github.com/Anne-dot/aca-translation-assistant/issues).
 
-**Version:** 2.2
-**Last Updated:** 2025-10-16
+**Version:** 2.3
+**Last Updated:** 2025-10-20
 
 ---
 
@@ -29,11 +29,13 @@
 - ⚠️ **Step 1A:** EKI terminology collection - DEPRECATED (Issues #1, #3, #4) - EKI databases included in Sonaveeb
 - ⚠️ **Step 1B:** Glossary-EKI matching - DEPRECATED (Issues #3, #4, #5, #6) - Using Sonaveeb instead
 - ✅ **New Approach:** Sonaveeb enrichment (Issue #7) - script created, tested with 10 terms
-- ✅ **TBX-Basic Structure:** Standards research complete (Issue #13) - all 3 key decisions finalized
-- ⏳ **Next:** Final JSON schema design, data pipeline documentation, migration script
+- ✅ **Issue #13:** TBX-Basic standards research - all 3 structural decisions finalized
+- ✅ **Issue #14:** JSON Schema Design - 19 decisions, specification + validation schema COMPLETE
+- ⏳ **Next:** Migration script, Phase 2 enrichment, Issue #20
 - 📋 **Future:** Extract from ATL existing translations (Step 1C)
 
-**Recent Completions (2025-10-16):**
+**Recent Completions (2025-10-20):**
+- ✅ **Issue #14:** JSON Schema Design (19 decisions, spec + schema)
 - ✅ **Issue #13:** TBX-Basic standards research and 3 structural decisions
 - ✅ **Issue #11:** Term cleaning utilities extracted
 - ✅ **Issue #9:** Signal handling fixes
@@ -43,6 +45,8 @@
 
 **Key Architectural Changes:**
 - **TBX-Basic compliance:** Final structure based on ISO 30042:2019 standard
+- **JSON Schema validation:** Machine-readable validation with JSON Schema Draft 7
+- **Complete specification:** 52 fields across 5 hierarchy levels documented
 - **Sonaveeb approach:** Replaces EKI collection (EKI data included in Sonaveeb)
 - **Term complexity:** ISO 1087 classification (simple/complex/compound)
 - **Component terms:** 213 multi-word terms require component extraction
@@ -273,9 +277,65 @@ Adopt TBX-Basic v1.2.1 (ISO 30042:2019) as foundation for final JSON structure w
 - `research/standards/TBX_vs_MY_PLANS.md` - TBX vs ATL workflow (700+ lines)
 
 **Next Steps:**
-- Design final JSON schema based on all 3 decisions
+- ~~Design final JSON schema based on all 3 decisions~~ ✅ Complete (Issue #14)
 - Create migration script to TBX-compliant structure
 - Document complete data pipeline (Steps 2-5)
+
+---
+
+### ✅ DECISION: Final JSON Schema Design
+
+**Date:** 2025-10-20
+**Issue:** [#14](https://github.com/Anne-dot/aca-translation-assistant/issues/14)
+
+**Decision:**
+Complete JSON schema specification with 19 decisions covering all 52 fields across 5 hierarchy levels.
+
+**Key Decisions:**
+
+1. **Naming Convention:** camelCase for field names, snake_case for enum values
+2. **ID Format:** Concept IDs `aca-0001`, Transaction IDs `tx-0000000001`
+3. **Subject Field:** All concepts use `"ACA terminology"`
+4. **Three-Level Hierarchy:** Root → Concept → Language → Term (TBX-Basic compliant)
+5. **Term Field:** REQUIRED, supports full forms, acronyms, variants
+6. **Part of Speech:** OPTIONAL in Phase 1, REQUIRED in Phase 3
+7. **Superseded Terms:** supersededBy field with concept ID reference
+8. **Notes Field:** OPTIONAL, min 10 characters
+9. **Source Object:** 4 REQUIRED fields (type, name, date, addedBy) + 7 OPTIONAL
+10. **Workflow Object:** ATL-specific (atlStatus, usageStatus, approvedBy, approvedDate, reviewNotes)
+11. **Usage Examples:** Array with source, target, reference fields
+12. **Transaction History:** Full audit trail with type, actionType, target, date, responsibility
+13. **Language Codes:** ISO 639-1 two-letter codes
+14. **Definitions:** OPTIONAL, language-specific
+15. **Metadata Wrapper:** Root-level metadata (created, standard, formatVersion, author, license)
+16. **Format Versioning:** Semantic versioning (major.minor), migration rules
+17. **_metadata Object:** 7 fields (termComplexity, componentTerms, isGlossaryTerm, termType, derivedFrom, addedReason, componentLookups)
+18. **Conditional Requirements:** addedReason REQUIRED when termType=communityAdded
+19. **Term Types:** TBX-Basic termType + _metadata.termType for workflow classification
+
+**Deliverables:**
+- `research/standards/JSON_SCHEMA_SPECIFICATION.md` - Complete human-readable specification (2100+ lines, 73KB)
+- `schemas/aca-tbx-terminology-schema.json` - Machine-readable JSON Schema Draft 7 validation file
+
+**Benefits:**
+- TBX-Basic v1.2.1 (ISO 30042:2019) compliant
+- Machine-readable validation ready
+- Exportable to professional CAT tools (SDL Trados, MemoQ)
+- Supports ATL collaborative workflow
+- Single source of truth for all field definitions
+- Complete testing and validation suite included
+
+**Testing Results:**
+- ✅ Schema syntax validated (JSON Schema Draft 7)
+- ✅ Test data validated successfully
+- ✅ 100% specification compliance confirmed
+- ✅ All 52 fields, 10 enums, 4 patterns validated
+- ✅ TBX-Basic REQUIRED (3/3) and Highly Recommended (7/7) fields implemented
+
+**Next Steps:**
+- Create migration script (Decision 16)
+- Implement Phase 2 enrichment
+- Begin Issue #20 (Manual Glossary Guide)
 
 ---
 
@@ -302,6 +362,8 @@ Adopt TBX-Basic v1.2.1 (ISO 30042:2019) as foundation for final JSON structure w
 | `part_of_speech` | #6 | ✅ | ISO 704 grammatical metadata |
 | `term_complexity` | #7 | ✅ | ISO 1087 term classification |
 | `component_terms` | #7 | ✅ | Component words for complex terms |
+| TBX-Basic structure | #13 | ✅ | Three-level hierarchy (Concept→Language→Term) |
+| JSON Schema | #14 | ✅ | 52 fields, 5 levels, machine-readable validation |
 | `sonaveeb_variants` | #7 | 🔄 | Sonaveeb database enrichment |
 | `atl_variants` | Future | ⏳ | Existing ATL translations (Step 1C) |
 | `preferred_variant` | Future | ⏳ | Manual review additions |
@@ -412,4 +474,4 @@ Adopt TBX-Basic v1.2.1 (ISO 30042:2019) as foundation for final JSON structure w
 
 ---
 
-**Last Updated:** 2025-10-15
+**Last Updated:** 2025-10-20
