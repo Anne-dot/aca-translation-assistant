@@ -4,9 +4,9 @@
 
 **Mission:** Build a systematic terminology database and translation tools to help ACA/ATL communities translate materials consistently, even with limited resources.
 
-**Current Status:** Milestone 1 in progress - Issue #14 JSON schema design (9/~15 decisions made), migration patterns established.
+**Current Status:** Milestone 1 in progress - Issue #14 COMPLETE ✅, ready for migration script implementation.
 
-**Recent Completions:** Issue #14 created ✅ | 9 fundamental field decisions ✅ | Migration workflow patterns (ENUM + 3-phase) ✅ | TBX-Basic standards research ✅ | Field definitions documented ✅ | Structure decisions (3/3) ✅ | Issues #5, #6, #7, #9, #11 ✅ | Sonaveeb enrichment | ISO 704 & ISO 1087 compliant | EKI deprecated
+**Recent Completions:** Issue #14 COMPLETE (19 decisions, spec + schema) ✅ | JSON Schema validation file ✅ | TBX-Basic v1.2.1 compliant ✅ | Issue #13 structural decisions ✅ | Issues #5, #6, #7, #9, #11 ✅ | Sonaveeb enrichment | ISO 704 & ISO 1087 compliant | EKI deprecated
 
 ---
 
@@ -170,7 +170,7 @@ Each term contains:
 
 ---
 
-## Current Status & Open Questions (2025-10-16)
+## Current Status & Open Questions (2025-10-20)
 
 ### What Has Been Completed
 
@@ -179,10 +179,12 @@ Each term contains:
 - ✅ **Issue #6:** Added `part_of_speech` field to all 826 terms (ISO 704 compliance)
 - ✅ **Issue #9:** Fixed Ctrl+C signal handling in sonaveeb_lookup.py
 - ✅ **Issue #11:** Extracted term cleaning functions to `src/term_cleaning.py`
+- ✅ **Issue #13:** TBX-Basic structural decisions (3 key decisions)
+- ✅ **Issue #14:** JSON Schema Design (19 decisions, specification + validation schema)
 
 **Issues In Progress:**
 - ⏳ **Issue #7:** Sonaveeb lookup script created, tested with 10 terms, awaiting data pipeline refactoring
-- ⏳ **Issue #10:** glossary_manager_via_terminal.py (not started)
+- ⏳ **Issue #20:** Manual Glossary Guide (created, depends on Issue #14 - NOW UNBLOCKED)
 
 **Key Changes from Initial Plan:**
 
@@ -205,7 +207,7 @@ Each term contains:
    - **Created:** `FUTURE_IDEAS.md` for pending decisions and future work
    - **Purpose:** ADHD-friendly separation of current work vs future plans
 
-4. **TBX-Basic Standards Research (2025-10-16)**
+4. **TBX-Basic Standards & JSON Schema (Issue #13, #14 - COMPLETE 2025-10-20)**
    - **Discovery:** TBX-Basic is FREE and OPEN standard for terminology exchange (ISO 30042:2019)
    - **Research completed:**
      - Downloaded TBX-Basic v1.2.1 specification and examples
@@ -216,18 +218,20 @@ Each term contains:
      - `research/standards/TBX-Basic_FIELDS.md` - Complete field reference (318 lines)
      - `research/standards/STRUCTURE_COMPARISON.md` - Current vs TBX-Basic (296 lines)
      - `research/standards/TBX_vs_MY_PLANS.md` - TBX vs my plans (700+ lines with ADHD summary)
-   - **Key decisions made (3/3):**
-     - ✅ Transaction history: Full history in `transactions[]` array (for collaboration)
-     - ✅ Component lookups: Hybrid approach - data in `_metadata`, reference `has_components: true`
-     - ✅ Status tracking: Variant C - both `atl_status` and `usage_status` (2025-10-16)
+     - `research/standards/JSON_SCHEMA_SPECIFICATION.md` - Complete specification (2100+ lines, 73KB)
+     - `schemas/aca-tbx-terminology-schema.json` - JSON Schema Draft 7 validation file
+   - **Key decisions made:**
+     - ✅ Issue #13: Transaction history (full), Status tracking (dual), Component lookups (hybrid)
+     - ✅ Issue #14: 19 decisions covering all 52 fields across 5 hierarchy levels
    - **Benefits:**
-     - TBX-Basic compliant structure enables export to professional CAT tools
-     - Follows international terminology management standards
+     - TBX-Basic v1.2.1 compliant structure enables export to professional CAT tools
+     - Follows international terminology management standards (ISO 30042:2019)
      - Compatible with SDL Trados, MemoQ, and other professional tools
      - Supports ATL collaborative workflow with transaction tracking
+     - Machine-readable validation with JSON Schema Draft 7
    - **Next steps:**
-     - Design final JSON schema based on all 3 decisions
-     - Create migration script to new TBX-compliant structure
+     - Create migration script to new TBX-compliant structure (Decision 16)
+     - Implement Phase 2 enrichment (dictionary lookups, ET translations)
      - Document Steps 2-5 in DATA_PIPELINE.md
 
 ### Open Questions Requiring Decisions
@@ -341,5 +345,5 @@ Each term contains:
 
 ---
 
-**Status:** Milestone 1 in progress - TBX-Basic research complete, all 3 key decisions made, ready for final JSON schema design
-**Date:** 2025-10-16
+**Status:** Milestone 1 in progress - Issue #14 COMPLETE ✅ - Ready for migration script and Phase 2 enrichment
+**Date:** 2025-10-20
