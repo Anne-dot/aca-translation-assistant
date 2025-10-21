@@ -40,20 +40,23 @@ ACA World Service Organization guidelines emphasize that a **glossary/terminolog
 - ✅ **Issue #13:** TBX-Basic structural decisions complete - All 3 decisions finalized
 - ✅ **Issue #14:** JSON Schema Design complete - 19 decisions, specification + validation schema
 - ✅ **Standards Documentation:** Complete specification, field definitions, TBX-Basic compliance analysis
-- ✅ **Key Deliverables:**
-  - `research/standards/JSON_SCHEMA_SPECIFICATION.md` (2100+ lines, 73KB)
-  - `schemas/aca-tbx-terminology-schema.json` (JSON Schema Draft 7)
-  - 52 fields across 5 hierarchy levels
-  - TBX-Basic v1.2.1 (ISO 30042:2019) compliant
-  - Machine-readable validation ready
-- ⏳ **Next:** Migration script → Phase 2 enrichment → Issue #20 (Manual Glossary Guide)
+- ⏳ **Issue #21:** Data Pipeline Implementation (PHASE 1) - IN PROGRESS
+  - ✅ STEP 1.1: Extract foundation_glossary.csv (334 terms)
+  - ⏳ STEP 1.2: Extract TMS-Glossary-template.xlsx
+  - ⏳ STEP 1.3: Extract Translation-Template.docx
+  - Future: Merge, Clean, Transform to TBX
+
+**Key Deliverables:**
+- `research/standards/JSON_SCHEMA_SPECIFICATION.md` (2100+ lines, 73KB)
+- `schemas/aca-tbx-terminology-schema.json` (JSON Schema Draft 7)
+- `data/1_extracted/foundation_raw.json` (334 terms extracted)
+- 52 fields across 5 hierarchy levels
+- TBX-Basic v1.2.1 (ISO 30042:2019) compliant
 
 **Recent Completions:**
+- 2025-10-22: Issue #21 STEP 1.1 - Foundation glossary extraction ✅
 - 2025-10-20: Issue #14 - JSON Schema Design (19 decisions, spec + schema) ✅
 - 2025-10-16: Issue #13 - TBX-Basic research and 3 structural decisions ✅
-- 2025-10-15: Issues #5, #6, #7, #9, #11 ✅
-- Sõnaveeb enrichment approach ✅
-- ISO 704 & ISO 1087 compliance ✅
 
 See detailed roadmap: [PROJECT_OVERVIEW_DRAFT.md](PROJECT_OVERVIEW_DRAFT.md)
 
@@ -63,21 +66,24 @@ See detailed roadmap: [PROJECT_OVERVIEW_DRAFT.md](PROJECT_OVERVIEW_DRAFT.md)
 
 ```
 ATL_tõlkeprojekt/
-├── src/                           # Source code
-│   ├── sonaveeb_lookup.py        # Sõnaveeb enrichment (current)
+├── src/                           # Source code (see src/README.md)
+│   ├── extract_foundation_glossary.py  # PHASE 1, STEP 1.1 extraction
+│   ├── utils.py                   # Shared utility functions (DRY)
+│   ├── sonaveeb_lookup.py        # Sõnaveeb enrichment (legacy)
 │   ├── term_cleaning.py          # Term normalization utilities
-│   ├── add_term_complexity.py    # ISO 1087 classification
-│   └── utils.py                  # Shared utility functions
+│   └── add_term_complexity.py    # ISO 1087 classification
 │
-├── data/                          # Data files
+├── data/                          # Data files (see data/README.md)
 │   ├── ACA_WSO/                   # ACA WSO glossary sources (498 terms total)
 │   │   ├── foundation_glossary.csv    # Primary source (334 terms)
-│   │   ├── foundation_glossay.ods     # Primary source (ODS format)
-│   │   ├── foundation_glossary_from_csv.json # Primary source (JSON)
 │   │   ├── TMS-Glossary-template.xlsx # Supplementary (102 unique)
 │   │   ├── Translation-Foundation-Glossary-Template-2025.docx # Supplementary (62 unique)
-│   │   └── README.md              # Source documentation (see Issue #18)
-│   └── estonian-only-terms.csv    # Estonian-only terms from Sõnaveeb
+│   │   └── README.md              # Source documentation
+│   ├── 1_extracted/               # Extracted JSON files (PHASE 1)
+│   │   └── foundation_raw.json    # 334 terms from foundation glossary
+│   ├── 2_merged/                  # Merged data (future)
+│   ├── 3_cleaned/                 # Cleaned data (future)
+│   └── 4_tbx/                     # TBX output (future)
 │
 ├── deprecated/                    # Deprecated EKI approach
 │   ├── eki_collector_deprecated.py
@@ -140,5 +146,5 @@ MIT License (to be added)
 
 ---
 
-**Version:** 0.4.0-alpha
-**Last Updated:** 2025-10-20
+**Version:** 0.5.0-alpha
+**Last Updated:** 2025-10-22

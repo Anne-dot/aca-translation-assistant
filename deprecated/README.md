@@ -47,4 +47,43 @@
 
 ---
 
-**Current glossary:** See `data/ACA_WSO/README.md`
+## 3. Legacy Processing Scripts (October 2025)
+
+**Why deprecated:** New data pipeline (Issue #21) uses different structure and approach.
+
+### Scripts
+
+**`term_cleaning.py` (105 lines)**
+- Old term cleaning functions
+- **Potentially useful functions:**
+  - `extract_base_term()` - Remove parentheses markers (similar to current `extract_term_metadata()`)
+  - Regex pattern for parentheses: `PARENTHESES_PATTERN = r'\(([^)]+)\)'`
+
+**`add_term_complexity.py` (185 lines)**
+- ISO 1087 term classification
+- **Potentially useful functions (if needed for PHASE 2):**
+  - `classify_term_complexity()` - Classify as simple/complex/compound
+  - `extract_component_terms()` - Extract words from multi-word terms
+  - ISO 1087 compliance logic
+
+**`add_part_of_speech.py` (101 lines)**
+- Migration script for old data format
+- Not applicable to new structure
+
+**`generate_review_csv.py` (210 lines)**
+- CSV generation for old format
+- Not applicable to new structure
+
+**`generate_estonian_only_csv.py` (85 lines)**
+- Estonian-only terms export
+- Not applicable to new structure
+
+**`sonaveeb_lookup.py` (609 lines)**
+- Sõnaveeb enrichment tool for old format
+- Will need complete rewrite for new structure (PHASE 2)
+
+**Note:** If any functionality is needed, extract specific functions to `src/utils.py` rather than using these scripts directly.
+
+---
+
+**Current active scripts:** See `src/README.md`
