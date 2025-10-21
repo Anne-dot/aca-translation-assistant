@@ -1364,3 +1364,65 @@ Et näha, et ma liigun edasi, siis valisingi selle faili pidamise ja igakordse u
 See pole väike asi. See on **suur milestone**. Ja ma tegin selle ära, haiglasena, laste ja segadusega. ❤️
 
 ---
+
+## 📅 2025-10-21 (Esmaspäev öö)
+
+### ✅ Täna Saavutatud
+
+**Session 4 (21:25-23:05)**
+
+#### Issue #21 STEP 1.1 - Foundation Glossary Extraction ✅ COMPLETE
+
+**Extraction Script:**
+- src/extract_foundation_glossary.py (168 rida)
+- Auto-split multiple numbered meanings (e.g., "abuse" → 2 definitions)
+- Extract seeAlso cross-references
+- Parse synonyms into arrays
+- Clean non-breaking spaces (\u00a0)
+- Review workflow: needsReview, reviewedAt fields
+
+**Code Quality - DRY Refactoring:**
+- Utils.py: +6 functions (clean_text, parse_list_from_text, detect_numbered_meanings, split_numbered_text, read_csv_file, ensure_output_dir)
+- Extraction: 3 modular functions (extract_term_metadata, parse_term_row, extract_foundation_glossary)
+
+**Project Cleanup:**
+- 6 legacy scripts → deprecated/ (1,295 lines total)
+- src/ folder: extract_foundation_glossary.py + utils.py only
+
+**Documentation:**
+- src/README.md created
+- data/README.md created
+- deprecated/README.md updated (Section 3)
+- Main README.md updated (v0.5.0-alpha)
+- instructions.md updated (README best practices)
+
+**Results:**
+- 334 terms → data/1_extracted/foundation_raw.json
+- 23 letter markers skipped
+- Rich structure: term, grammaticalType, seeAlso, meanings[], pageReferences, needsReview, reviewedAt
+
+**GitHub:**
+- Issue #21 progress comment
+- 2 commits pushed (a600cc5, 83d7e94)
+- NEXT_SESSION.md + TODO.md updated
+
+#### 📊 Statistika
+
+**Ajakulu:** ~1h 40min (21:25-23:05)
+
+**GitHubis:**
+- 1 issue comment
+- 2 commits
+- 12 files changed (+455, -22)
+
+**Tulemused:**
+- STEP 1.1 COMPLETE ✅
+- Next: review_multiple_meanings.py (quality control)
+
+---
+
+#### 💭 Tunne
+
+Olen väsinud ja samas jõudsin lõpuks päriselt sõnadega töötamiseni. Woop woop! Esimene päris JSON fail on olemas, kus on definitsioon, viited, sünonüümid jne juba olemas.
+
+---
