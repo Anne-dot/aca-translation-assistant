@@ -1,41 +1,39 @@
 # TODO - Current Tasks
 
-**Last Updated:** 2025-10-20
+**Last Updated:** 2025-10-22
 
 ---
 
 ## ✅ Recently Completed
 
-### Issue #14 - JSON Schema Design (CLOSED 2025-10-20)
-- ✅ All 19 decisions complete
-- ✅ JSON_SCHEMA_SPECIFICATION.md created (2100+ lines)
-- ✅ aca-tbx-terminology-schema.json created (JSON Schema Draft 7)
-- ✅ Schema tested and validated
-- ✅ TBX-Basic v1.2.1 compliant
-- ✅ Documentation updated (6 files)
-
-### DATA_PIPELINE_DRAFT.md (CREATED 2025-10-20)
-- ✅ 3-phase pipeline documented
-- ✅ High-level overview (156 lines)
-- ✅ Issue #21 created
+### Issue #21 STEP 1.1 - Foundation Glossary Extraction (2025-10-22)
+- ✅ Extraction script created (src/extract_foundation_glossary.py)
+- ✅ Auto-split multiple meanings, extract seeAlso, parse synonyms
+- ✅ DRY refactoring: 6 new utils functions, 3 modular functions
+- ✅ Project cleanup: 6 legacy scripts → deprecated/
+- ✅ Documentation: 3 READMEs created/updated
+- ✅ Results: 334 terms → data/1_extracted/foundation_raw.json
 
 ---
 
 ## 🎯 Current Priority
 
-### Issue #21 - Data Pipeline Implementation
-**Status:** Starting next session
+### Issue #21 - Data Pipeline Implementation (PHASE 1)
+**Status:** STEP 1.1 quality control
 **Link:** https://github.com/Anne-dot/aca-translation-assistant/issues/21
 
-**Next steps:**
-- [ ] PHASE 1, STEP 1.1: Extract foundation_glossary.csv
+**Current task:**
+- ⏳ Create interactive review script (review_multiple_meanings.py)
+  - Quality control for auto-split extraction
+  - Manual verification of flagged terms
+  - Determine if extractor needs refinement
+
+**Next steps after review:**
 - [ ] STEP 1.2: Extract TMS-Glossary-template.xlsx
 - [ ] STEP 1.3: Extract Translation-Template.docx
-- [ ] STEP 1.4: Merge 3 sources → master_glossary_raw.json
+- [ ] STEP 1.4: Merge 3 sources
 - [ ] STEP 1.5: Cleaning & Normalization
 - [ ] STEP 1.6: TBX Structure Transform
-
-**Approach:** Step-by-step with user discussion before each implementation
 
 ---
 
