@@ -152,10 +152,11 @@ def display_review_menu():
     print("  Foundation Glossary Review")
     print("="*60)
     print("\nOptions:")
-    print("  [1] Review flagged terms only (needsReview: true)")
-    print("  [2] Review not reviewed terms (no reviewedAt)")
-    print("  [3] Review all terms")
-    print("  [4] Show statistics and exit")
+    print("  [1] Flagged - needs review (needsReview: true)")
+    print("  [2] Unflagged - needs review (not flagged AND not reviewed)")
+    print("  [3] Reviewed (reviewedAt is not None)")
+    print("  [4] All terms")
+    print("  [5] Show statistics and exit")
     print("  [q] Quit\n")
 
 
@@ -486,11 +487,15 @@ def merge_term_meanings(term):
 
 def filter_terms_for_review(terms, review_mode):
     """Filter terms based on review mode."""
-    if review_mode == '1':  # Flagged only
+    if review_mode == '1':  # Flagged - needs review
         return [t for t in terms if t.get('needsReview', False)]
-    elif review_mode == '2':  # Not reviewed
-        return [t for t in terms if t.get('reviewedAt') is None]
-    elif review_mode == '3':  # All terms
+    elif review_mode == '2':  # Unflagged - needs review
+        return [t for t in terms
+                if not t.get('needsReview', False)
+                and t.get('reviewedAt') is None]
+    elif review_mode == '3':  # Reviewed
+        return [t for t in terms if t.get('reviewedAt') is not None]
+    elif review_mode == '4':  # All terms
         return terms
     return []
 
@@ -510,13 +515,13 @@ def main():
 
     # Show menu
     display_review_menu()
-    choice = get_user_choice("Select option: ", ['1', '2', '3', '4', 'q'])
+    choice = get_user_choice("Select option: ", ['1', '2', '3', '4', '5', 'q'])
 
     if choice == 'q':
         print("\n👋 Goodbye!\n")
         return
 
-    if choice == '4':
+    if choice == '5':
         # Show stats and exit
         stats = count_terms_by_review_status(terms)
         display_statistics(stats)

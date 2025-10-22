@@ -39,10 +39,11 @@ python3 src/interactive_glossary_terms_review.py
 ```
 
 **Menu Options:**
-- [1] Review flagged terms only (needsReview: true)
-- [2] Review not reviewed terms (no reviewedAt)
-- [3] Review all terms
-- [4] Show statistics and exit
+- [1] Flagged - needs review (needsReview: true)
+- [2] Unflagged - needs review (not flagged AND not reviewed)
+- [3] Reviewed (reviewedAt is not None)
+- [4] All terms
+- [5] Show statistics and exit
 
 **Review Actions:**
 - [a] Accept - Mark as reviewed
