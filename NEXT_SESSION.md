@@ -1,53 +1,54 @@
 # Next Session - 2025-10-23
 
-## ✅ Previous Sessions Completed
+## ✅ Session 6 Completed (2025-10-22, 21:22-23:00)
 
-**Session 4 (2025-10-22 öö, 00:15):**
-- ✅ Foundation glossary extraction complete
-- ✅ 334 terms extracted with auto-split, seeAlso, clean data
-- ✅ DRY refactoring, project cleanup
-- ✅ Documentation updates
+### Quality Check & Manual Review
+- ✅ quality_check.py created (210 lines, 22 functions)
+- ✅ Auto-flagged 81 terms (missing type, multiple types, idioms)
+- ✅ Manual review: 175 terms reviewed before crash
+- ✅ Identified 34 terms with normalization issues (10 categories)
+- ❌ Unicode crash - all progress lost
 
-**Session 5 (2025-10-22 pärastlõuna, 15:57):**
-- ✅ Interactive review script created (479 lines)
-- ✅ All actions implemented: Accept, Skip, Flag, Edit, Merge
-- ✅ Flag functionality with notes
-- ✅ Merge with preview and edit
-- ✅ Issue #22 created (term type structure)
-- ✅ FUTURE_IDEAS.md updated (split functionality)
-- ✅ Manual review started (2/19 reviewed, 1 merged, 1 flagged)
+### Issues Created
+- ✅ Issue #23: Quality check script (completed, needs enhancement)
+- ✅ Issue #24: Unicode bug + progress saving + transactions
+- ✅ Issue #25: Term normalization policies (research needed)
 
-**Session 6 (2025-10-22 õhtu, 21:22):**
-- ✅ Statistics enhancement complete (actions tracking + percentages)
-- ✅ Migration script created (5 pre-existing terms migrated)
-- ✅ Review filter added: [2] Review not reviewed terms
-- ✅ Manual review continued (6 new terms: 5 accepted, 1 flagged)
-- ✅ Documentation updated (3 READMEs + PROJECT_OVERVIEW)
-- ✅ VISION.md created (long-term global platform vision)
+### Documentation
+- ✅ All issues fully documented with details
+- ✅ TODO.md updated
+- ✅ NEXT_SESSION.md updated
 
 ---
 
-## 🎯 Next Session: Continue Manual Review
+## 🎯 Next Session: Fix Unicode Bug & Research
 
-**Issue #21 - PHASE 1, STEP 1.1: Manual Review**
-- Link: https://github.com/Anne-dot/aca-translation-assistant/issues/21
+### Priority 1: Issue #24 - Fix Unicode Bug (URGENT)
+**Link:** https://github.com/Anne-dot/aca-translation-assistant/issues/24
 
-**Current Progress:**
-- 11/334 terms reviewed (3.3%)
-- 323/334 not reviewed (96.7%)
-- 16 flagged terms (15 auto-flagged + 1 manual)
-- Actions: 10 accepted, 1 merged, 1 flagged
+**Tasks:**
+1. ⏳ Fix UTF-8 encoding in `src/interactive_glossary_terms_review.py`
+2. ⏳ Add progress saving after each action
+3. ⏳ Add transaction-based saving with user feedback
+4. ⏳ Test with Estonian characters (õ, ä, ö, ü)
 
-**Recommended workflow:**
-1. Run: `python3 src/interactive_glossary_terms_review.py`
-2. Select [2] Review not reviewed terms
-3. Quick accept simple terms with [a]
-4. Flag complex terms with [f] + note for later detailed review
-5. Goal: Review majority of simple terms quickly
+### Priority 2: Issue #25 - Research Term Normalization
+**Link:** https://github.com/Anne-dot/aca-translation-assistant/issues/25
 
-**After significant progress:**
-- Review flagged terms with [1] Review flagged only
-- Use [e] Edit and [m] Merge for complex cases
-- Assess auto-split quality overall
-- Decide if extractor needs refinement
-- Continue to STEP 1.2 (extract TMS xlsx)
+**Tasks:**
+1. ⏳ Research best practices (ISO 1087, CAT tools, style guides)
+2. ⏳ Make policy decisions for 10 categories:
+   - Hyphens, capitalization, singular/plural
+   - Quotation marks, parentheses, asterisks
+   - Acronyms, prepositions, grammatical types
+3. ⏳ Document decisions
+4. ⏳ Enhance quality_check.py with new checks
+
+### Blocked: Issue #21 - Manual Review
+**Status:** Waiting for Issue #24 fix
+**Current:** 0/334 terms reviewed (progress lost)
+
+**After fixes:**
+1. Run quality_check.py with enhanced checks
+2. Resume manual review with [2] Unflagged - needs review
+3. Use [f] Flag for terms needing normalization decisions

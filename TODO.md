@@ -6,61 +6,52 @@
 
 ## ✅ Recently Completed
 
-### Issue #21 STEP 1.1 - Foundation Glossary Extraction (2025-10-22)
-- ✅ Extraction script created (src/extract_foundation_glossary.py)
-- ✅ Auto-split multiple meanings, extract seeAlso, parse synonyms
-- ✅ DRY refactoring: 6 new utils functions, 3 modular functions
-- ✅ Project cleanup: 6 legacy scripts → deprecated/
-- ✅ Documentation: 3 READMEs created/updated
-- ✅ Results: 334 terms → data/1_extracted/foundation_raw.json
+### Quality Check Script (2025-10-22 Session 6)
+- ✅ quality_check.py created (210 lines, 22 functions)
+- ✅ Auto-flagged 81 terms (21 missing type, 59 multiple types, 50 idioms)
+- ✅ Issue #23 completed
 
-### Interactive Review Script (2025-10-22 Session 5)
-- ✅ interactive_glossary_terms_review.py created (479 lines)
-- ✅ All actions: Accept, Skip, Flag, Edit, Merge
-- ✅ Flag with notes functionality
-- ✅ Merge with preview and edit
-- ✅ Issue #22 created (term type structure)
-- ✅ FUTURE_IDEAS.md updated (split functionality)
-
-### Review Enhancements (2025-10-22 Session 6)
-- ✅ Statistics enhancement: actions tracking + percentages
-- ✅ Migration script: migrate_add_actions.py (5 terms)
-- ✅ Review filter: [2] Review not reviewed terms
-- ✅ Manual review: 6 terms (5 accepted, 1 flagged)
-- ✅ Documentation: 3 READMEs + PROJECT_OVERVIEW updated
-- ✅ VISION.md: Long-term global platform vision
+### Manual Review Session (2025-10-22 Session 6)
+- ✅ Reviewed 175 terms before crash
+- ✅ Flagged 34 terms with normalization issues
+- ✅ Identified 10 categories of formatting/structure problems
+- ❌ All progress lost due to Unicode crash
+- ✅ Issue #24 created (Unicode bug + progress saving)
+- ✅ Issue #25 created (term normalization policies)
 
 ---
 
 ## 🎯 Current Priority
 
-### Issue #21 - Data Pipeline Implementation (PHASE 1)
-**Status:** STEP 1.1 manual review in progress
+### Issue #24 - Fix Unicode Bug (URGENT)
+**Status:** Open, blocking manual review
+**Link:** https://github.com/Anne-dot/aca-translation-assistant/issues/24
+
+**Tasks:**
+1. ⏳ Fix UTF-8 encoding in input handling
+2. ⏳ Add progress saving after each action
+3. ⏳ Add transaction-based saving with user feedback
+4. ⏳ Test with Estonian characters
+
+### Issue #25 - Term Normalization Policies
+**Status:** Research needed
+**Link:** https://github.com/Anne-dot/aca-translation-assistant/issues/25
+
+**Tasks:**
+1. ⏳ Research best practices (ISO 1087, CAT tools, style guides)
+2. ⏳ Make policy decisions for 10 categories
+3. ⏳ Enhance quality_check.py with new checks
+4. ⏳ Create term normalization script
+
+### Issue #21 - Data Pipeline (BLOCKED)
+**Status:** STEP 1.1 blocked by Issue #24
 **Link:** https://github.com/Anne-dot/aca-translation-assistant/issues/21
 
 **Current Progress:**
-- 11/334 terms reviewed (3.3%)
-- 323/334 not reviewed (96.7%)
-- 16 flagged terms (15 auto + 1 manual)
-- Actions: 10 accepted, 1 merged, 1 flagged
-
-**PRIORITY TASK:**
-- ⏳ Continue manual review of terms
-  - Use [2] Review not reviewed for quick simple terms
-  - Use [f] Flag complex terms for later detailed review
-  - Goal: Review majority of simple terms first
-
-**After significant progress:**
-- [ ] Review all flagged terms in detail ([1] Review flagged)
-- [ ] Assess auto-split quality overall
-- [ ] Decide if extractor needs refinement
-
-**Next steps after STEP 1.1:**
-- [ ] STEP 1.2: Extract TMS-Glossary-template.xlsx
-- [ ] STEP 1.3: Extract Translation-Template.docx
-- [ ] STEP 1.4: Merge 3 sources
-- [ ] STEP 1.5: Cleaning & Normalization
-- [ ] STEP 1.6: TBX Structure Transform
+- 0/334 terms reviewed (progress lost in crash)
+- 95 flagged by quality_check.py
+- 34 terms identified needing normalization
+- Waiting for Issue #24 fix before continuing
 
 ---
 
