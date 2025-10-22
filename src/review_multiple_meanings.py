@@ -336,8 +336,44 @@ def merge_all_meanings(meanings):
     return [merged]
 
 
+def display_merge_preview(merged_meaning):
+    """Show how merged meaning will look."""
+    print("\n" + "="*60)
+    print("MERGE PREVIEW")
+    print("="*60 + "\n")
+
+    print("Merged Definition:")
+    print(f"  {merged_meaning['definition']}\n")
+
+    print("Merged Synonyms:")
+    if merged_meaning['synonyms']:
+        print(f"  {', '.join(merged_meaning['synonyms'])}\n")
+    else:
+        print("  (none)\n")
+
+    print("Merged Usage Example:")
+    print(f"  {merged_meaning['usageExample']}\n")
+
+    print("="*60 + "\n")
+
+
+def edit_merged_meaning(merged_meaning):
+    """Allow editing of merged meaning before saving."""
+    print("Would you like to edit the merged result?")
+    print("  [y] Yes - Edit fields")
+    print("  [n] No - Accept as is")
+
+    choice = get_user_choice("Your choice: ", ['y', 'n'])
+
+    if choice == 'n':
+        return merged_meaning
+
+    # Use existing edit functionality
+    return edit_single_meaning(merged_meaning)
+
+
 def merge_term_meanings(term):
-    """Merge all meanings of a term into one."""
+    """Merge all meanings of a term into one with preview and edit."""
     meanings = term.get('meanings', [])
 
     if len(meanings) == 1:
@@ -351,7 +387,29 @@ def merge_term_meanings(term):
         print("❌ Merge cancelled\n")
         return term
 
-    term['meanings'] = merge_all_meanings(meanings)
+    # Merge meanings
+    merged_meanings = merge_all_meanings(meanings)
+    merged_meaning = merged_meanings[0]
+
+    # Show preview
+    display_merge_preview(merged_meaning)
+
+    # Allow editing
+    final_meaning = edit_merged_meaning(merged_meaning)
+
+    # Confirm final result
+    print("\n" + "="*60)
+    print("FINAL RESULT")
+    print("="*60)
+    display_single_meaning(final_meaning)
+
+    confirm_save = get_user_choice("Save this merged meaning? [y/n]: ", ['y', 'n'])
+
+    if confirm_save == 'n':
+        print("❌ Merge cancelled\n")
+        return term
+
+    term['meanings'] = [final_meaning]
     print("✅ Meanings merged!\n")
 
     return mark_term_as_reviewed(term)
