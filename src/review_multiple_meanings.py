@@ -15,30 +15,79 @@ from utils import load_json_file, save_json_file
 # STATISTICS
 # ============================================================
 
+def count_actions_by_type(terms):
+    """Count how many terms have each action type."""
+    action_counts = {
+        'accepted': 0,
+        'merged': 0,
+        'edited': 0,
+        'flagged': 0
+    }
+
+    for term in terms:
+        actions = term.get('actions', [])
+        if actions:
+            # Count based on last action
+            last_action = actions[-1]['type']
+            if last_action in action_counts:
+                action_counts[last_action] += 1
+
+    return action_counts
+
+
+def calculate_percentage(count, total):
+    """Calculate percentage with one decimal place."""
+    if total == 0:
+        return 0.0
+    return round((count / total) * 100, 1)
+
+
 def count_terms_by_review_status(terms):
-    """Count terms by review status and meanings."""
+    """Count terms by review status, meanings, and actions."""
     total = len(terms)
     flagged = sum(1 for t in terms if t.get('needsReview', False))
     reviewed = sum(1 for t in terms if t.get('reviewedAt') is not None)
     multiple_meanings = sum(1 for t in terms if len(t.get('meanings', [])) > 1)
 
+    action_counts = count_actions_by_type(terms)
+
     return {
         'total': total,
         'flagged': flagged,
         'reviewed': reviewed,
-        'remaining': flagged - reviewed,
-        'multiple_meanings': multiple_meanings
+        'not_reviewed': total - reviewed,
+        'remaining_flagged': flagged - reviewed,
+        'multiple_meanings': multiple_meanings,
+        'actions': action_counts
     }
 
 
 def display_statistics(stats):
-    """Display term statistics in readable format."""
+    """Display term statistics with percentages."""
+    total = stats['total']
+
     print(f"\n📊 Statistics:")
-    print(f"   Total terms: {stats['total']}")
-    print(f"   Multiple meanings: {stats['multiple_meanings']}")
-    print(f"   Flagged for review: {stats['flagged']}")
-    print(f"   Already reviewed: {stats['reviewed']}")
-    print(f"   Remaining: {stats['remaining']}\n")
+    print(f"   Total terms: {total}")
+
+    mm_pct = calculate_percentage(stats['multiple_meanings'], total)
+    print(f"   Multiple meanings: {stats['multiple_meanings']} ({mm_pct}%)")
+
+    print(f"\n📝 Review Status:")
+    print(f"   Flagged for review: {stats['flagged']} ({calculate_percentage(stats['flagged'], total)}%)")
+
+    reviewed_pct = calculate_percentage(stats['reviewed'], total)
+    print(f"   Reviewed: {stats['reviewed']} ({reviewed_pct}%)")
+
+    not_reviewed_pct = calculate_percentage(stats['not_reviewed'], total)
+    print(f"   Not reviewed: {stats['not_reviewed']} ({not_reviewed_pct}%)")
+
+    print(f"\n📈 Actions (of {total} total):")
+    actions = stats['actions']
+    for action_type, count in actions.items():
+        pct = calculate_percentage(count, total)
+        print(f"   {action_type.capitalize()}: {count} ({pct}%)")
+
+    print()
 
 
 # ============================================================
@@ -138,17 +187,25 @@ def get_review_action():
 # REVIEW ACTIONS
 # ============================================================
 
-def mark_term_as_reviewed(term):
-    """Mark term as reviewed with timestamp."""
+def mark_term_as_reviewed(term, action_type):
+    """Mark term as reviewed with timestamp and action."""
     term['reviewedAt'] = datetime.now().isoformat()
     term['needsReview'] = False
+
+    if 'actions' not in term:
+        term['actions'] = []
+    term['actions'].append({
+        'type': action_type,
+        'date': datetime.now().isoformat()
+    })
+
     return term
 
 
 def accept_term(term):
     """Accept auto-split as correct."""
     print("✅ Accepted!\n")
-    return mark_term_as_reviewed(term)
+    return mark_term_as_reviewed(term, 'accepted')
 
 
 def skip_term(term):
@@ -169,6 +226,13 @@ def flag_term_for_review(term):
             'date': datetime.now().isoformat(),
             'note': note
         })
+
+    if 'actions' not in term:
+        term['actions'] = []
+    term['actions'].append({
+        'type': 'flagged',
+        'date': datetime.now().isoformat()
+    })
 
     print("🚩 Flagged for review!\n")
     return term
@@ -291,7 +355,7 @@ def edit_term_meanings(term):
     term['meanings'] = meanings
     print("✅ Meaning edited!\n")
 
-    return mark_term_as_reviewed(term)
+    return mark_term_as_reviewed(term, 'edited')
 
 
 # ============================================================
@@ -412,7 +476,7 @@ def merge_term_meanings(term):
     term['meanings'] = [final_meaning]
     print("✅ Meanings merged!\n")
 
-    return mark_term_as_reviewed(term)
+    return mark_term_as_reviewed(term, 'merged')
 
 
 # ============================================================
