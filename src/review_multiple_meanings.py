@@ -53,6 +53,10 @@ def display_term_header(term, index, total):
         print(f"Type: ({term['grammaticalType']})")
     if term.get('seeAlso'):
         print(f"See also: {', '.join(term['seeAlso'])}")
+    if term.get('reviewNotes'):
+        print(f"📝 Review notes:")
+        for note in term['reviewNotes']:
+            print(f"   - {note['note']} ({note['date'][:10]})")
     print(f"{'='*60}\n")
 
 
@@ -120,13 +124,14 @@ def display_term_action_menu():
     print("  [a] Accept - Auto-split is correct")
     print("  [e] Edit - Modify meanings")
     print("  [m] Merge - Should be single meaning")
+    print("  [f] Flag - Mark for review")
     print("  [s] Skip - Review later")
     print("  [q] Quit review\n")
 
 
 def get_review_action():
     """Get user's review action for current term."""
-    return get_user_choice("Your choice: ", ['a', 'e', 'm', 's', 'q'])
+    return get_user_choice("Your choice: ", ['a', 'e', 'm', 'f', 's', 'q'])
 
 
 # ============================================================
@@ -149,6 +154,23 @@ def accept_term(term):
 def skip_term(term):
     """Skip term for later review."""
     print("⏭️  Skipped\n")
+    return term
+
+
+def flag_term_for_review(term):
+    """Flag term for review with optional note."""
+    note = input("Reason for flagging (optional): ").strip()
+
+    term['needsReview'] = True
+    if note:
+        if 'reviewNotes' not in term:
+            term['reviewNotes'] = []
+        term['reviewNotes'].append({
+            'date': datetime.now().isoformat(),
+            'note': note
+        })
+
+    print("🚩 Flagged for review!\n")
     return term
 
 
@@ -402,6 +424,9 @@ def main():
             modified = True
         elif action == 's':
             skip_term(term)
+        elif action == 'f':
+            flag_term_for_review(term)
+            modified = True
         elif action == 'e':
             edit_term_meanings(term)
             modified = True
