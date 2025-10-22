@@ -1,46 +1,49 @@
-# Next Session - 2025-10-23
+# Next Session - 2025-10-22 Evening
 
-## ✅ Previous Session Completed (2025-10-22)
+## ✅ Previous Sessions Completed
 
-**Session 4 (2025-10-22 öö, algus 00:15):**
-- ✅ STEP 1.1 COMPLETE - Foundation glossary extraction
-- ✅ Extraction script written and refactored (DRY, modular)
-  - Auto-split multiple numbered meanings
-  - Extract seeAlso cross-references
-  - Parse synonyms into arrays
-  - Clean non-breaking spaces
-  - Review workflow fields (needsReview, reviewedAt)
-- ✅ Utils.py enhanced (6 new functions)
-- ✅ Code quality: 3 modular functions (extract_term_metadata, parse_term_row, extract_foundation_glossary)
-- ✅ Project cleanup: 6 legacy scripts → deprecated/
-- ✅ Documentation: src/README.md, data/README.md, updated main README
-- ✅ Results: 334 terms → data/1_extracted/foundation_raw.json
-- ✅ GitHub Issue #21 progress comment posted
-- ✅ Committed and pushed
+**Session 4 (2025-10-22 öö, 00:15):**
+- ✅ Foundation glossary extraction complete
+- ✅ 334 terms extracted with auto-split, seeAlso, clean data
+- ✅ DRY refactoring, project cleanup
+- ✅ Documentation updates
+
+**Session 5 (2025-10-22 pärastlõuna, 15:57):**
+- ✅ Interactive review script created (479 lines)
+- ✅ All actions implemented: Accept, Skip, Flag, Edit, Merge
+- ✅ Flag functionality with notes
+- ✅ Merge with preview and edit
+- ✅ Issue #22 created (term type structure)
+- ✅ FUTURE_IDEAS.md updated (split functionality)
+- ✅ Manual review started (2/19 reviewed, 1 merged, 1 flagged)
 
 ---
 
-## 🎯 Next Session: Interactive Review Script
+## 🎯 Next Session: Continue Manual Review
 
 **Issue #21 - PHASE 1, STEP 1.1: Quality Control**
 - Link: https://github.com/Anne-dot/aca-translation-assistant/issues/21
 
-**Next task:**
-Create `src/review_multiple_meanings.py` - Interactive review script
+**Current task:**
+Continue manual review of flagged terms
 
-**Purpose:**
-- Quality control for auto-split extraction logic
-- Manual verification of terms with multiple meanings
-- Determine if extractor needs refinement
+**Progress:**
+- 2/19 flagged terms reviewed
+- 17/19 remaining
+- Review script fully functional
 
-**Script behavior:**
-- Input: `data/1_extracted/foundation_raw.json`
-- Output: Same file (in-place updates)
-- Options at start: [1] Review flagged only, [2] Review all, [3] Show stats
-- Per term: [a] Accept, [e] Edit, [m] Merge, [s] Skip
-- Updates: reviewedAt timestamp, needsReview flag
+**What to do:**
+1. Run: `python3 src/review_multiple_meanings.py`
+2. Select [1] Review flagged only
+3. Continue from where left off
+4. Use [f] Flag if find issues
+5. Use [m] Merge if terms should be combined (test preview!)
 
-**Approach:**
-- Show script structure first
-- Get approval before writing
-- Test with sample terms
+**After review complete:**
+- Assess auto-split quality
+- Decide if extractor needs refinement
+- Update documentation:
+  - src/README.md (add review script)
+  - data/README.md (update status)
+  - Main README.md (update progress)
+- Continue to STEP 1.2 (extract TMS xlsx)

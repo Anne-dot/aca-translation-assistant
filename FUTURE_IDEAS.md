@@ -256,3 +256,33 @@ If "addictive thinking" is also processed:
 - Issue #7: Sonaveeb lookup and term_complexity field
 - Issue #10: glossary_manager_via_terminal.py for manual additions
 - ISO 1087: Simple/complex/compound term classification
+
+---
+
+## Split Meaning Functionality
+
+**What:** Allow splitting single meaning into multiple meanings during review
+
+**Use case:** Term incorrectly kept as one meaning, but should be split
+
+**Current state:**
+- Auto-split works during extraction (detects "1. ... 2. ..." pattern)
+- Merge functionality exists (combine multiple → single)
+- Missing: Split (divide single → multiple)
+
+**Example scenario:**
+User reviews term with one meaning but recognizes it has two distinct definitions that should be separate.
+
+**How it could work:**
+1. User selects [split] action
+2. System asks how many meanings to create (2, 3, etc.)
+3. User enters definition/synonyms/example for each meaning
+4. Preview and confirm
+
+**Why:** Opposite of merge - complete editing functionality
+
+**When:** After manual review shows this is needed
+
+**Priority:** Medium - will likely be needed during full review
+
+**Related:** Issue #21 (review script), merge functionality

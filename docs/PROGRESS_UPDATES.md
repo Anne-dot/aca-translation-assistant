@@ -1424,3 +1424,102 @@ See pole väike asi. See on **suur milestone**. Ja ma tegin selle ära, haiglase
 Olen väsinud ja samas jõudsin lõpuks päriselt sõnadega töötamiseni. Woop woop! Esimene päris JSON fail on olemas, kus on definitsioon, viited, sünonüümid jne juba olemas.
 
 ---
+
+## 📅 2025-10-22 (Teisipäev pärastlõuna)
+
+### ✅ Täna Saavutatud
+
+**Session 5 (15:57-käimasolev)**
+
+#### Interactive Review Script - Full Implementation
+
+**Review script created and enhanced:**
+- src/review_multiple_meanings.py (479 lines)
+- Quality control tool for auto-split extraction logic
+
+**Functionality implemented:**
+
+1. **Basic actions:**
+   - [a] Accept - Mark as reviewed with timestamp
+   - [s] Skip - Leave for later
+   - [q] Quit - Save progress
+   - [3] Stats - Show counts
+
+2. **Flag functionality (added):**
+   - [f] Flag - Mark term for review
+   - Optional note with reason
+   - reviewNotes array (multiple notes, timestamped)
+   - Notes displayed in term header
+
+3. **Edit functionality:**
+   - [e] Edit - Modify meanings
+   - Edit definition, synonyms, usageExample
+   - Select which meaning to edit (if multiple)
+   - Keep/Edit/Delete options per field
+
+4. **Merge functionality (enhanced):**
+   - [m] Merge - Combine multiple meanings
+   - Preview merged result
+   - Optional editing before save
+   - Final confirmation
+   - Multiple cancel points
+
+**Testing:**
+- Basic functionality tested (Accept, Skip, Stats, Quit)
+- Edit tested successfully
+- Flag tested successfully
+- Merge preview implemented (not yet tested)
+
+**Manual review started:**
+- 2/19 flagged terms reviewed
+- "act out" skipped (Issue #22 - term type structure)
+- "affirmation" merged successfully
+
+**Issues created:**
+
+**Issue #22:** Term type structure
+- Question: grammaticalType as string vs array
+- Example: "v, idiom" → ["v", "idiom"]?
+- Term complexity classification (idiom, phrasal verb, etc.)
+- TBX-Basic alignment needed
+- Priority: Medium (defer to PHASE 2, document now)
+
+**FUTURE_IDEAS.md updated:**
+- Split meaning functionality documented
+- Opposite of merge (single → multiple meanings)
+- Priority: Medium (likely needed during full review)
+
+**GitHub activity:**
+- Issue #22 created
+- 4 Issue #21 comments (script updates)
+- 3 commits pushed
+
+**Code quality:**
+- 34 functions, 6 sections
+- DRY principles maintained
+- Small, focused functions with clear names
+
+#### 📊 Statistika
+
+**Ajakulu:** ~1h+ (käimasolev)
+
+**GitHubis:**
+- 1 new issue (#22)
+- 4 comments (Issue #21)
+- 3 commits (8f2ef4c, 23c82a5, f36442b)
+
+**Kood:**
+- review_multiple_meanings.py: 479 lines
+- Enhanced 3 times during session
+
+**Tulemused:**
+- Review script feature-complete
+- Manual review in progress (2/19 reviewed)
+- 1 term merged, 1 term flagged
+
+
+#### 💭 Tunne
+
+Olen väsinud ja unine. Kavatsen seda õhtupoole jätkata, kui lapsed juba magavad. See töö on oluline ja see viib meid sinna, et saan selle võtta kasutusele tööriistana enda ja teekaaslase aitamiseks tekstide tõlkimisel.
+
+---

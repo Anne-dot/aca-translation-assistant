@@ -42,19 +42,23 @@ ACA World Service Organization guidelines emphasize that a **glossary/terminolog
 - ✅ **Standards Documentation:** Complete specification, field definitions, TBX-Basic compliance analysis
 - ⏳ **Issue #21:** Data Pipeline Implementation (PHASE 1) - IN PROGRESS
   - ✅ STEP 1.1: Extract foundation_glossary.csv (334 terms)
+  - ⏳ Manual review in progress (2/19 flagged terms reviewed)
   - ⏳ STEP 1.2: Extract TMS-Glossary-template.xlsx
   - ⏳ STEP 1.3: Extract Translation-Template.docx
   - Future: Merge, Clean, Transform to TBX
+- 📝 **Issue #22:** Term type structure question (deferred to PHASE 2)
 
 **Key Deliverables:**
 - `research/standards/JSON_SCHEMA_SPECIFICATION.md` (2100+ lines, 73KB)
 - `schemas/aca-tbx-terminology-schema.json` (JSON Schema Draft 7)
 - `data/1_extracted/foundation_raw.json` (334 terms extracted)
+- `src/review_multiple_meanings.py` (interactive review tool)
 - 52 fields across 5 hierarchy levels
 - TBX-Basic v1.2.1 (ISO 30042:2019) compliant
 
 **Recent Completions:**
-- 2025-10-22: Issue #21 STEP 1.1 - Foundation glossary extraction ✅
+- 2025-10-22 Session 5: Interactive review script complete (479 lines) ✅
+- 2025-10-22 Session 4: Issue #21 STEP 1.1 - Foundation glossary extraction ✅
 - 2025-10-20: Issue #14 - JSON Schema Design (19 decisions, spec + schema) ✅
 - 2025-10-16: Issue #13 - TBX-Basic research and 3 structural decisions ✅
 
@@ -68,6 +72,7 @@ See detailed roadmap: [PROJECT_OVERVIEW_DRAFT.md](PROJECT_OVERVIEW_DRAFT.md)
 ATL_tõlkeprojekt/
 ├── src/                           # Source code (see src/README.md)
 │   ├── extract_foundation_glossary.py  # PHASE 1, STEP 1.1 extraction
+│   ├── review_multiple_meanings.py     # PHASE 1, STEP 1.1 quality control
 │   ├── utils.py                   # Shared utility functions (DRY)
 │   ├── sonaveeb_lookup.py        # Sõnaveeb enrichment (legacy)
 │   ├── term_cleaning.py          # Term normalization utilities

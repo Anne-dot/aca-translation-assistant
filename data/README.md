@@ -44,7 +44,12 @@ See detailed documentation: [ACA_WSO/README.md](ACA_WSO/README.md)
 - Structure: Terms with meanings array, auto-split multiple definitions
 - Fields: term, grammaticalType, seeAlso, meanings[], pageReferences, needsReview, reviewedAt
 
-**Status:** Extraction complete. Currently under review and refinement - terms with multiple numbered meanings have been auto-split and flagged (`needsReview: true`) for manual verification through interactive review workflow.
+**Status:** Extraction complete. Manual review in progress.
+- Extracted: 334 terms
+- Flagged for review: 19 terms with multiple meanings
+- Reviewed: 2/19 (1 merged, 1 flagged with note)
+- Review tool: `src/review_multiple_meanings.py`
+- Progress: reviewedAt timestamps, reviewNotes field added
 
 ---
 

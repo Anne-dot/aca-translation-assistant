@@ -26,6 +26,34 @@ python3 src/extract_foundation_glossary.py
 
 ---
 
+### Quality Control (PHASE 1)
+
+**`review_multiple_meanings.py`**
+- Interactive review tool for extracted terms
+- Quality control for auto-split extraction logic
+- Manual verification and editing
+
+**Usage:**
+```bash
+python3 src/review_multiple_meanings.py
+```
+
+**Features:**
+- [1] Review flagged terms / [2] Review all / [3] Show stats
+- [a] Accept - Mark as reviewed
+- [s] Skip - Review later
+- [f] Flag - Mark for review with optional note
+- [e] Edit - Modify definitions, synonyms, examples
+- [m] Merge - Combine multiple meanings (with preview & edit)
+- [q] Quit - Save progress
+
+**Output:**
+- Updates `data/1_extracted/foundation_raw.json` in-place
+- Adds timestamps and review notes
+- Progress saved on quit
+
+---
+
 ### Utilities
 
 **`utils.py`**
@@ -41,7 +69,9 @@ python3 src/extract_foundation_glossary.py
 
 **Current Focus:** PHASE 1 - Data Extraction Pipeline (Issue #21)
 
-**Next:** Interactive review script for multiple meanings verification
+**Status:** Manual review in progress (2/19 flagged terms reviewed)
+
+**Next:** Complete manual review, then STEP 1.2 (extract TMS xlsx)
 
 ---
 
