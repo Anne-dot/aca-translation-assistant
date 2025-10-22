@@ -39,7 +39,7 @@
 - Actions: 10 accepted, 1 merged, 1 flagged
 
 **Recommended workflow:**
-1. Run: `python3 src/review_multiple_meanings.py`
+1. Run: `python3 src/interactive_glossary_terms_review.py`
 2. Select [2] Review not reviewed terms
 3. Quick accept simple terms with [a]
 4. Flag complex terms with [f] + note for later detailed review

@@ -50,7 +50,7 @@ See detailed documentation: [ACA_WSO/README.md](ACA_WSO/README.md)
 - Not reviewed: 323/334 (96.7%)
 - Flagged for review: 16 terms (15 auto-flagged + 1 manual)
 - Actions tracked: accepted (10), merged (1), flagged (1)
-- Review tool: `src/review_multiple_meanings.py`
+- Review tool: `src/interactive_glossary_terms_review.py`
 - Features: Percentage-based statistics, action tracking, review filters
 
 ---

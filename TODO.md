@@ -15,7 +15,7 @@
 - ✅ Results: 334 terms → data/1_extracted/foundation_raw.json
 
 ### Interactive Review Script (2025-10-22 Session 5)
-- ✅ review_multiple_meanings.py created (479 lines)
+- ✅ interactive_glossary_terms_review.py created (479 lines)
 - ✅ All actions: Accept, Skip, Flag, Edit, Merge
 - ✅ Flag with notes functionality
 - ✅ Merge with preview and edit

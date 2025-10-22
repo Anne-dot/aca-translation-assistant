@@ -1415,7 +1415,7 @@ See pole väike asi. See on **suur milestone**. Ja ma tegin selle ära, haiglase
 
 **Tulemused:**
 - STEP 1.1 COMPLETE ✅
-- Next: review_multiple_meanings.py (quality control)
+- Next: interactive_glossary_terms_review.py (quality control)
 
 ---
 
@@ -1434,7 +1434,7 @@ Olen väsinud ja samas jõudsin lõpuks päriselt sõnadega töötamiseni. Woop 
 #### Interactive Review Script - Full Implementation
 
 **Review script created and enhanced:**
-- src/review_multiple_meanings.py (479 lines)
+- src/interactive_glossary_terms_review.py (479 lines)
 - Quality control tool for auto-split extraction logic
 
 **Functionality implemented:**
@@ -1509,7 +1509,7 @@ Olen väsinud ja samas jõudsin lõpuks päriselt sõnadega töötamiseni. Woop 
 - 3 commits (8f2ef4c, 23c82a5, f36442b)
 
 **Kood:**
-- review_multiple_meanings.py: 479 lines
+- interactive_glossary_terms_review.py: 479 lines
 - Enhanced 3 times during session
 
 **Tulemused:**

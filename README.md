@@ -52,7 +52,7 @@ ACA World Service Organization guidelines emphasize that a **glossary/terminolog
 - `research/standards/JSON_SCHEMA_SPECIFICATION.md` (2100+ lines, 73KB)
 - `schemas/aca-tbx-terminology-schema.json` (JSON Schema Draft 7)
 - `data/1_extracted/foundation_raw.json` (334 terms extracted)
-- `src/review_multiple_meanings.py` (interactive review tool)
+- `src/interactive_glossary_terms_review.py` (interactive review tool)
 - 52 fields across 5 hierarchy levels
 - TBX-Basic v1.2.1 (ISO 30042:2019) compliant
 
@@ -72,7 +72,7 @@ See detailed roadmap: [PROJECT_OVERVIEW_DRAFT.md](PROJECT_OVERVIEW_DRAFT.md)
 ATL_tõlkeprojekt/
 ├── src/                           # Source code (see src/README.md)
 │   ├── extract_foundation_glossary.py  # PHASE 1, STEP 1.1 extraction
-│   ├── review_multiple_meanings.py     # PHASE 1, STEP 1.1 quality control
+│   ├── interactive_glossary_terms_review.py     # PHASE 1, STEP 1.1 quality control
 │   ├── utils.py                   # Shared utility functions (DRY)
 │   ├── sonaveeb_lookup.py        # Sõnaveeb enrichment (legacy)
 │   ├── term_cleaning.py          # Term normalization utilities

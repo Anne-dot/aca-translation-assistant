@@ -28,14 +28,14 @@ python3 src/extract_foundation_glossary.py
 
 ### Quality Control (PHASE 1)
 
-**`review_multiple_meanings.py`**
+**`interactive_glossary_terms_review.py`**
 - Interactive review tool for extracted terms
 - Quality control for auto-split extraction logic
 - Manual verification and editing
 
 **Usage:**
 ```bash
-python3 src/review_multiple_meanings.py
+python3 src/interactive_glossary_terms_review.py
 ```
 
 **Menu Options:**
