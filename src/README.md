@@ -38,14 +38,24 @@ python3 src/extract_foundation_glossary.py
 python3 src/review_multiple_meanings.py
 ```
 
-**Features:**
-- [1] Review flagged terms / [2] Review all / [3] Show stats
+**Menu Options:**
+- [1] Review flagged terms only (needsReview: true)
+- [2] Review not reviewed terms (no reviewedAt)
+- [3] Review all terms
+- [4] Show statistics and exit
+
+**Review Actions:**
 - [a] Accept - Mark as reviewed
 - [s] Skip - Review later
 - [f] Flag - Mark for review with optional note
 - [e] Edit - Modify definitions, synonyms, examples
 - [m] Merge - Combine multiple meanings (with preview & edit)
 - [q] Quit - Save progress
+
+**Statistics:**
+- Percentage-based progress tracking
+- Action distribution (accepted/merged/edited/flagged)
+- Review status overview
 
 **Output:**
 - Updates `data/1_extracted/foundation_raw.json` in-place
@@ -63,15 +73,23 @@ python3 src/review_multiple_meanings.py
 - Text processing: `clean_text()`, `parse_list_from_text()`, `normalize_term()`
 - Multiple meanings detection: `detect_numbered_meanings()`, `split_numbered_text()`
 
+**`migrate_add_actions.py`**
+- One-time migration script to add actions array to reviewed terms
+- Retrospectively adds action tracking to pre-existing reviewed terms
+- Determines action type based on meanings count (1=merged, 2+=accepted)
+
 ---
 
 ## 🎯 Active Development
 
 **Current Focus:** PHASE 1 - Data Extraction Pipeline (Issue #21)
 
-**Status:** Manual review in progress (2/19 flagged terms reviewed)
+**Status:** Manual review in progress (11/334 terms reviewed, 3.3%)
+- Statistics enhancement complete ✅
+- Actions tracking implemented ✅
+- Review filters: flagged / not reviewed / all ✅
 
-**Next:** Complete manual review, then STEP 1.2 (extract TMS xlsx)
+**Next:** Continue manual review (323 terms remaining), then STEP 1.2 (extract TMS xlsx)
 
 ---
 

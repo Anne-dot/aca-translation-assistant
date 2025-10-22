@@ -4,9 +4,9 @@
 
 **Mission:** Build a systematic terminology database and translation tools to help ACA/ATL communities translate materials consistently, even with limited resources.
 
-**Current Status:** Milestone 1 in progress - Issue #14 COMPLETE ✅, ready for migration script implementation.
+**Current Status:** Milestone 1 in progress - Issue #21 PHASE 1 active, manual review in progress (11/334 terms, 3.3%).
 
-**Recent Completions:** Issue #14 COMPLETE (19 decisions, spec + schema) ✅ | JSON Schema validation file ✅ | TBX-Basic v1.2.1 compliant ✅ | Issue #13 structural decisions ✅ | Issues #5, #6, #7, #9, #11 ✅ | Sonaveeb enrichment | ISO 704 & ISO 1087 compliant | EKI deprecated
+**Recent Completions:** Issue #21 STEP 1.1 extraction ✅ | Review script with statistics & actions tracking ✅ | Issue #14 JSON Schema (19 decisions, spec + schema) ✅ | Issue #13 TBX-Basic structural decisions ✅ | TBX-Basic v1.2.1 compliant ✅
 
 ---
 

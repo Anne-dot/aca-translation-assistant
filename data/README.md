@@ -42,14 +42,16 @@ See detailed documentation: [ACA_WSO/README.md](ACA_WSO/README.md)
 - Terms: 334
 - Script: `src/extract_foundation_glossary.py`
 - Structure: Terms with meanings array, auto-split multiple definitions
-- Fields: term, grammaticalType, seeAlso, meanings[], pageReferences, needsReview, reviewedAt
+- Fields: term, grammaticalType, seeAlso, meanings[], pageReferences, needsReview, reviewedAt, actions[], reviewNotes[]
 
 **Status:** Extraction complete. Manual review in progress.
 - Extracted: 334 terms
-- Flagged for review: 19 terms with multiple meanings
-- Reviewed: 2/19 (1 merged, 1 flagged with note)
+- Reviewed: 11/334 (3.3%)
+- Not reviewed: 323/334 (96.7%)
+- Flagged for review: 16 terms (15 auto-flagged + 1 manual)
+- Actions tracked: accepted (10), merged (1), flagged (1)
 - Review tool: `src/review_multiple_meanings.py`
-- Progress: reviewedAt timestamps, reviewNotes field added
+- Features: Percentage-based statistics, action tracking, review filters
 
 ---
 
