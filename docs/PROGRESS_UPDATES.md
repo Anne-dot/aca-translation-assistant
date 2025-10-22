@@ -1523,3 +1523,52 @@ Olen väsinud ja samas jõudsin lõpuks päriselt sõnadega töötamiseni. Woop 
 Olen väsinud ja unine. Kavatsen seda õhtupoole jätkata, kui lapsed juba magavad. See töö on oluline ja see viib meid sinna, et saan selle võtta kasutusele tööriistana enda ja teekaaslase aitamiseks tekstide tõlkimisel.
 
 ---
+## 📅 2025-10-22/23 (Teisipäev õhtu → Kolmapäev öö, 21:22-00:00)
+
+### ✅ Täna Saavutatud
+
+**Session 6**
+
+#### Quality Check Script Created
+- quality_check.py (210 lines, 22 functions)
+- Auto-flagged 81 terms (21 missing type, 59 multiple types, 50 idioms)
+- DRY principles: small, focused functions
+- Issue #23 completed
+
+#### Manual Review Session
+- Reviewed 175 terms before crash
+- Flagged 34 terms with normalization issues
+- Identified 10 systematic categories of formatting/structure problems
+- ❌ All progress lost due to Unicode crash
+
+#### Issues Created & Documented
+- Issue #24: Unicode bug + progress saving + transaction feedback
+- Issue #25: Term normalization policies (34 terms, 10 categories, research needed)
+- Both issues fully documented with session details and task lists
+
+#### Documentation Updated
+- TODO.md: Priorities updated (Issue #24 urgent, #25 research, #21 blocked)
+- NEXT_SESSION.md: Clear next steps documented
+
+#### 📊 Statistika
+
+**Ajakulu:** ~2.5h
+
+**GitHubis:**
+- 2 new issues (#24, #25)
+- 6 issue comments
+- 1 commit (8dd8b2f)
+
+**Kood:**
+- quality_check.py: 210 lines created
+
+**Tulemused:**
+- 81 terms auto-flagged by quality check
+- 34 terms manually flagged with normalization patterns identified
+- Clear path forward: fix bugs → research standards → continue review
+
+#### 💭 Tunne
+
+Mul on tunne, et ma hakkan nüüd sisulise poole peal edusamme tegema. Olen u 200 terminit läbi vaadanud ja sellega seoses tekkis vajadus normaliseerimise ja standardiseerimise otsuste järele. Selleks on plaanis teha uurimistööd. Järgmisena tahaksin ära parandada avastatud bugid ja flagimise skripti täiendada. Tunnen pettumust, et minu progress ei salvestunud, kuid võib olla oli see isegi hea, sest aitab tulevikus süstemaatilisemalt töötada.
+
+---
