@@ -286,3 +286,42 @@ User reviews term with one meaning but recognizes it has two distinct definition
 **Priority:** Medium - will likely be needed during full review
 
 **Related:** Issue #21 (review script), merge functionality
+
+---
+
+## Selective Flag/Note Removal
+
+**What:** Allow removing individual review notes/flags instead of all at once
+
+**Use case:** Term has multiple quality issues flagged (e.g., "Missing Type" + "Contains idiom"). User fixes Type issue but idiom still needs attention.
+
+**Current state:**
+- [a] Accept → removes ALL flags and marks as reviewed
+- Cannot selectively resolve individual issues
+
+**How it could work:**
+```
+Term: act out
+Review notes:
+  1. Multiple grammatical types: v, idiom
+  2. Contains idiom - may need special handling
+
+[r] Remove specific note
+Which note to remove? [1/2]: 1
+✅ Note "Multiple grammatical types" removed!
+Remaining notes: 1
+```
+
+**Why:**
+- Better quality control for complex terms with multiple issues
+- Can track partial progress on problematic terms
+- More granular review workflow
+
+**When:**
+- Low priority for current small dataset (334 terms)
+- Higher priority when database grows larger
+- Needed when quality control becomes more sophisticated
+
+**Priority:** Low - current workflow sufficient for now, revisit when scaling up
+
+**Related:** Issue #23 (quality check script), Issue #21 (review script)
