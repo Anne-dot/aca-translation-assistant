@@ -153,8 +153,9 @@ def display_review_menu():
     print("="*60)
     print("\nOptions:")
     print("  [1] Review flagged terms only (needsReview: true)")
-    print("  [2] Review all terms")
-    print("  [3] Show statistics and exit")
+    print("  [2] Review not reviewed terms (no reviewedAt)")
+    print("  [3] Review all terms")
+    print("  [4] Show statistics and exit")
     print("  [q] Quit\n")
 
 
@@ -487,7 +488,9 @@ def filter_terms_for_review(terms, review_mode):
     """Filter terms based on review mode."""
     if review_mode == '1':  # Flagged only
         return [t for t in terms if t.get('needsReview', False)]
-    elif review_mode == '2':  # All terms
+    elif review_mode == '2':  # Not reviewed
+        return [t for t in terms if t.get('reviewedAt') is None]
+    elif review_mode == '3':  # All terms
         return terms
     return []
 
@@ -507,13 +510,13 @@ def main():
 
     # Show menu
     display_review_menu()
-    choice = get_user_choice("Select option: ", ['1', '2', '3', 'q'])
+    choice = get_user_choice("Select option: ", ['1', '2', '3', '4', 'q'])
 
     if choice == 'q':
         print("\n👋 Goodbye!\n")
         return
 
-    if choice == '3':
+    if choice == '4':
         # Show stats and exit
         stats = count_terms_by_review_status(terms)
         display_statistics(stats)
