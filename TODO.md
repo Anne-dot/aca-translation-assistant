@@ -22,33 +22,38 @@
 - ✅ Issue #22 created (term type structure)
 - ✅ FUTURE_IDEAS.md updated (split functionality)
 
+### Review Enhancements (2025-10-22 Session 6)
+- ✅ Statistics enhancement: actions tracking + percentages
+- ✅ Migration script: migrate_add_actions.py (5 terms)
+- ✅ Review filter: [2] Review not reviewed terms
+- ✅ Manual review: 6 terms (5 accepted, 1 flagged)
+- ✅ Documentation: 3 READMEs + PROJECT_OVERVIEW updated
+- ✅ VISION.md: Long-term global platform vision
+
 ---
 
 ## 🎯 Current Priority
 
 ### Issue #21 - Data Pipeline Implementation (PHASE 1)
-**Status:** STEP 1.1 statistics enhancement
+**Status:** STEP 1.1 manual review in progress
 **Link:** https://github.com/Anne-dot/aca-translation-assistant/issues/21
 
+**Current Progress:**
+- 11/334 terms reviewed (3.3%)
+- 323/334 not reviewed (96.7%)
+- 16 flagged terms (15 auto + 1 manual)
+- Actions: 10 accepted, 1 merged, 1 flagged
+
 **PRIORITY TASK:**
-- ⏳ Add percentage-based statistics to review script
-  - Comment: https://github.com/Anne-dot/aca-translation-assistant/issues/21#issuecomment-3432528889
-  - Track action types (accepted/merged/edited/flagged)
-  - Calculate percentages against total 334 terms
-  - Show progress visibility in statistics
+- ⏳ Continue manual review of terms
+  - Use [2] Review not reviewed for quick simple terms
+  - Use [f] Flag complex terms for later detailed review
+  - Goal: Review majority of simple terms first
 
-**After statistics:**
-- ⏳ Complete manual review of flagged terms
-  - Progress: 2/19 reviewed, 17/19 remaining
-  - 1 term merged, 1 term flagged
-  - Review script fully functional
-
-**After review:**
-- [ ] Assess auto-split quality
-- [ ] Update documentation:
-  - src/README.md (add review script)
-  - data/README.md (update foundation_raw.json status)
-  - Main README.md (update current status)
+**After significant progress:**
+- [ ] Review all flagged terms in detail ([1] Review flagged)
+- [ ] Assess auto-split quality overall
+- [ ] Decide if extractor needs refinement
 
 **Next steps after STEP 1.1:**
 - [ ] STEP 1.2: Extract TMS-Glossary-template.xlsx

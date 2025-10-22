@@ -1,4 +1,4 @@
-# Next Session - 2025-10-22 Evening
+# Next Session - 2025-10-23
 
 ## ✅ Previous Sessions Completed
 
@@ -17,44 +17,37 @@
 - ✅ FUTURE_IDEAS.md updated (split functionality)
 - ✅ Manual review started (2/19 reviewed, 1 merged, 1 flagged)
 
+**Session 6 (2025-10-22 õhtu, 21:22):**
+- ✅ Statistics enhancement complete (actions tracking + percentages)
+- ✅ Migration script created (5 pre-existing terms migrated)
+- ✅ Review filter added: [2] Review not reviewed terms
+- ✅ Manual review continued (6 new terms: 5 accepted, 1 flagged)
+- ✅ Documentation updated (3 READMEs + PROJECT_OVERVIEW)
+- ✅ VISION.md created (long-term global platform vision)
+
 ---
 
-## 🎯 Next Session: Add Statistics Enhancement
+## 🎯 Next Session: Continue Manual Review
 
-**Issue #21 - PHASE 1, STEP 1.1: Statistics Enhancement**
-- Link: https://github.com/Anne-dot/aca-translation-assistant/issues/21#issuecomment-3432528889
+**Issue #21 - PHASE 1, STEP 1.1: Manual Review**
+- Link: https://github.com/Anne-dot/aca-translation-assistant/issues/21
 
-**PRIORITY TASK:**
-Add percentage-based statistics to review script
+**Current Progress:**
+- 11/334 terms reviewed (3.3%)
+- 323/334 not reviewed (96.7%)
+- 16 flagged terms (15 auto-flagged + 1 manual)
+- Actions: 10 accepted, 1 merged, 1 flagged
 
-**What to implement:**
-- Track action types (accepted/merged/edited/flagged) in term metadata
-- Calculate percentages against total 334 terms
-- Update display_statistics() to show:
-  - Review status percentages
-  - Action distribution percentages
-  - Progress visibility
-
-**After statistics complete:**
-Continue manual review of flagged terms
-
-**Progress:**
-- 2/19 flagged terms reviewed
-- 17/19 remaining
-- Review script fully functional
-
-**What to do:**
+**Recommended workflow:**
 1. Run: `python3 src/review_multiple_meanings.py`
-2. Select [1] Review flagged only
-3. Continue from where left off
-4. Use [f] Flag if find issues
-5. Use [m] Merge if terms should be combined (test preview!)
+2. Select [2] Review not reviewed terms
+3. Quick accept simple terms with [a]
+4. Flag complex terms with [f] + note for later detailed review
+5. Goal: Review majority of simple terms quickly
 
-**After review complete:**
-- Assess auto-split quality
+**After significant progress:**
+- Review flagged terms with [1] Review flagged only
+- Use [e] Edit and [m] Merge for complex cases
+- Assess auto-split quality overall
 - Decide if extractor needs refinement
-- Update documentation:
-  - src/README.md (add review script)
-  - data/README.md (update status)
-  - Main README.md (update progress)
 - Continue to STEP 1.2 (extract TMS xlsx)
