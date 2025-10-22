@@ -27,10 +27,17 @@
 ## 🎯 Current Priority
 
 ### Issue #21 - Data Pipeline Implementation (PHASE 1)
-**Status:** STEP 1.1 manual review in progress
+**Status:** STEP 1.1 statistics enhancement
 **Link:** https://github.com/Anne-dot/aca-translation-assistant/issues/21
 
-**Current task:**
+**PRIORITY TASK:**
+- ⏳ Add percentage-based statistics to review script
+  - Comment: https://github.com/Anne-dot/aca-translation-assistant/issues/21#issuecomment-3432528889
+  - Track action types (accepted/merged/edited/flagged)
+  - Calculate percentages against total 334 terms
+  - Show progress visibility in statistics
+
+**After statistics:**
 - ⏳ Complete manual review of flagged terms
   - Progress: 2/19 reviewed, 17/19 remaining
   - 1 term merged, 1 term flagged

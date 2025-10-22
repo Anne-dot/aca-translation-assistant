@@ -19,12 +19,23 @@
 
 ---
 
-## 🎯 Next Session: Continue Manual Review
+## 🎯 Next Session: Add Statistics Enhancement
 
-**Issue #21 - PHASE 1, STEP 1.1: Quality Control**
-- Link: https://github.com/Anne-dot/aca-translation-assistant/issues/21
+**Issue #21 - PHASE 1, STEP 1.1: Statistics Enhancement**
+- Link: https://github.com/Anne-dot/aca-translation-assistant/issues/21#issuecomment-3432528889
 
-**Current task:**
+**PRIORITY TASK:**
+Add percentage-based statistics to review script
+
+**What to implement:**
+- Track action types (accepted/merged/edited/flagged) in term metadata
+- Calculate percentages against total 334 terms
+- Update display_statistics() to show:
+  - Review status percentages
+  - Action distribution percentages
+  - Progress visibility
+
+**After statistics complete:**
 Continue manual review of flagged terms
 
 **Progress:**
