@@ -172,7 +172,7 @@ def get_user_choice(prompt, valid_choices):
 def display_term_action_menu():
     """Display actions available for current term."""
     print("Actions:")
-    print("  [a] Accept - Auto-split is correct")
+    print("  [a] Accept - Entry is correct")
     print("  [e] Edit - Modify meanings")
     print("  [m] Merge - Should be single meaning")
     print("  [f] Flag - Mark for review")
