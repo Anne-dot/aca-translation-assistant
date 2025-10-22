@@ -1,71 +1,39 @@
 # TODO - Current Tasks
 
-**Last Updated:** 2025-10-22
-
 ---
 
-## ✅ Recently Completed
+## 🎯 Next Session
 
-### Quality Check Script (2025-10-22 Session 6)
-- ✅ quality_check.py created (210 lines, 22 functions)
-- ✅ Auto-flagged 81 terms (21 missing type, 59 multiple types, 50 idioms)
-- ✅ Issue #23 completed
-
-### Manual Review Session (2025-10-22 Session 6)
-- ✅ Reviewed 175 terms before crash
-- ✅ Flagged 34 terms with normalization issues
-- ✅ Identified 10 categories of formatting/structure problems
-- ❌ All progress lost due to Unicode crash
-- ✅ Issue #24 created (Unicode bug + progress saving)
-- ✅ Issue #25 created (term normalization policies)
-
----
-
-## 🎯 Current Priority
-
-### Issue #24 - Fix Unicode Bug (URGENT)
-**Status:** Open, blocking manual review
+### Priority 1: Issue #24 - Fix Unicode Bug (URGENT)
 **Link:** https://github.com/Anne-dot/aca-translation-assistant/issues/24
 
 **Tasks:**
-1. ⏳ Fix UTF-8 encoding in input handling
+1. ⏳ Fix UTF-8 encoding in `src/interactive_glossary_terms_review.py`
 2. ⏳ Add progress saving after each action
 3. ⏳ Add transaction-based saving with user feedback
-4. ⏳ Test with Estonian characters
+4. ⏳ Test with Estonian characters (õ, ä, ö, ü)
 
-### Issue #25 - Term Normalization Policies
-**Status:** Research needed
+### Priority 2: Issue #25 - Research Term Normalization
 **Link:** https://github.com/Anne-dot/aca-translation-assistant/issues/25
 
 **Tasks:**
 1. ⏳ Research best practices (ISO 1087, CAT tools, style guides)
 2. ⏳ Make policy decisions for 10 categories
-3. ⏳ Enhance quality_check.py with new checks
-4. ⏳ Create term normalization script
+3. ⏳ Document decisions
+4. ⏳ Enhance quality_check.py with new checks
 
-### Issue #21 - Data Pipeline (BLOCKED)
-**Status:** STEP 1.1 blocked by Issue #24
-**Link:** https://github.com/Anne-dot/aca-translation-assistant/issues/21
-
-**Current Progress:**
-- 0/334 terms reviewed (progress lost in crash)
-- 95 flagged by quality_check.py
-- 34 terms identified needing normalization
-- Waiting for Issue #24 fix before continuing
+### Priority 3: Issue #21 - Manual Review (BLOCKED)
+**Status:** Waiting for Issue #24 fix
+**Current:** 0/334 terms reviewed (progress lost)
 
 ---
 
-## 📋 Pending Tasks
+## 📋 All Open Tasks
 
-### Issue #22 - Term Type Structure
-**Status:** Open for discussion
-**Link:** https://github.com/Anne-dot/aca-translation-assistant/issues/22
-**Priority:** Medium (defer to PHASE 2)
-- Question: grammaticalType as string vs array
-- Term complexity classification (idiom, phrasal verb)
-- TBX-Basic alignment
+**See GitHub Issues:** https://github.com/Anne-dot/aca-translation-assistant/issues
 
-### Issue #20 - Manual Glossary Guide
-**Status:** Created, deferred to PHASE 3
-**Dependencies:** Issue #21 (PHASE 1 & 2 complete first)
-**Link:** https://github.com/Anne-dot/aca-translation-assistant/issues/20
+---
+
+## 💡 Future Ideas
+
+**See:** [FUTURE_IDEAS.md](../FUTURE_IDEAS.md)

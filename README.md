@@ -36,31 +36,18 @@ ACA World Service Organization guidelines emphasize that a **glossary/terminolog
 
 **Milestone 1: Terminology Database** (IN PROGRESS)
 
-- ⚠️ **Step 1A & 1B:** EKI approach deprecated - EKI databases included in Sõnaveeb
-- ✅ **Issue #13:** TBX-Basic structural decisions complete - All 3 decisions finalized
-- ✅ **Issue #14:** JSON Schema Design complete - 19 decisions, specification + validation schema
-- ✅ **Standards Documentation:** Complete specification, field definitions, TBX-Basic compliance analysis
-- ⏳ **Issue #21:** Data Pipeline Implementation (PHASE 1) - IN PROGRESS
-  - ✅ STEP 1.1: Extract foundation_glossary.csv (334 terms)
-  - ⏳ Manual review in progress (2/19 flagged terms reviewed)
-  - ⏳ STEP 1.2: Extract TMS-Glossary-template.xlsx
-  - ⏳ STEP 1.3: Extract Translation-Template.docx
-  - Future: Merge, Clean, Transform to TBX
-- 📝 **Issue #22:** Term type structure question (deferred to PHASE 2)
+**Recent Progress:**
+- ✅ Quality check automation (Issue #23) - 81 terms auto-flagged
+- ⚠️ Manual review session crashed - Unicode bug discovered (Issue #24)
+- 📋 34 terms need normalization decisions (Issue #25)
 
-**Key Deliverables:**
-- `research/standards/JSON_SCHEMA_SPECIFICATION.md` (2100+ lines, 73KB)
-- `schemas/aca-tbx-terminology-schema.json` (JSON Schema Draft 7)
-- `data/1_extracted/foundation_raw.json` (334 terms extracted)
-- `src/interactive_glossary_terms_review.py` (interactive review tool)
-- 52 fields across 5 hierarchy levels
-- TBX-Basic v1.2.1 (ISO 30042:2019) compliant
+**Current Priorities:** See [TODO.md](TODO.md)
 
-**Recent Completions:**
-- 2025-10-22 Session 5: Interactive review script complete (479 lines) ✅
-- 2025-10-22 Session 4: Issue #21 STEP 1.1 - Foundation glossary extraction ✅
-- 2025-10-20: Issue #14 - JSON Schema Design (19 decisions, spec + schema) ✅
-- 2025-10-16: Issue #13 - TBX-Basic research and 3 structural decisions ✅
+**Completed:**
+- ✅ Foundation glossary extraction (334 terms)
+- ✅ Interactive review script with all actions
+- ✅ Quality check automation
+- ✅ TBX-Basic schema + specification
 
 See detailed roadmap: [PROJECT_OVERVIEW_DRAFT.md](PROJECT_OVERVIEW_DRAFT.md)
 
