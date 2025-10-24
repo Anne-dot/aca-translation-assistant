@@ -4,6 +4,96 @@ Siin dokumendis on kronoloogilises järjekorras päevased edusammud. Selleks, et
 
 ---
 
+## 📅 2025-10-24 (Reede)
+
+### 🎉 Täna Saavutatud
+
+#### 1. Review Workflow Täiustused (Issue #25 jätkamine)
+
+**Probleem:** Filtrid ja flagimine ei käitunud järjepidevalt.
+
+**Lahendused (12 commiti):**
+- ✅ [f] Flag action loopib nüüd menüüsse tagasi (DRY konsistentsus)
+- ✅ Flag action lisab `reviewedAt` timestampi (termin on üle vaadatud)
+- ✅ `needsReview` flag seotud `reviewNotes` väljaga (DRY loogika)
+- ✅ Flag kustub ainult siis, kui notes kustutatakse
+- ✅ Keskne cleanup loogika `mark_term_as_reviewed()` funktsioonis
+- ✅ [2] Not reviewed filter ei näita enam flagitud termineid
+- ✅ Normalization detection skip, kui juba käsitletud
+- ✅ Filtrid jagatud: [3] Reviewed - OK ja [4] Reviewed - Flagged
+
+**GitHub:** 27 kommentaari Issue #25-s, 2 uut otsust dokumenteeritud
+
+**Commits:**
+- `125bec1` - Make [f] Flag action loop back to menu (DRY consistency)
+- `3f210f0` - Add reviewedAt timestamp when flagging terms
+- `da9d46a` - Tie needsReview flag lifecycle to review notes (DRY)
+- `d735971` - Skip normalization detection if already handled
+- `545d64f` - Major UX improvements: save, filters, and review notes
+- `a673442` - Refactor term display to single DRY function
+- `0f5ca91` - Show review notes before asking to clear them
+- `8e4c8d2` - Improve edit term fields UX and add review notes cleanup
+- `3b99579` - Complete Issue #25: Term normalization policy integration
+
+#### 2. AI Analüüs: Synonyms vs Definitions (Issue #26)
+
+**Probleem:** Paljudes terminites on synonyms väljal tegelikult definitsioonid/selgitused, mitte alternatiivsed terminid.
+
+**Lahendus:** AI analüüs iga termini kohta individuaalselt (mitte heuristika!):
+
+**Metoodika:**
+- Lugesin läbi kõik 207 terminit synonyms väljaga
+- Iga termini kohta mõtlesin: kas see on tõeline sünonüüm või definitsioon?
+- Põhjendus iga otsuse kohta salvestatud
+
+**Tulemused:**
+- 📊 Analüüsitud: 198 unikaalset terminit
+- 🚩 Flagitud: 84 terminit (synonyms on definitsioon)
+- ✅ Jäetud: 114 terminit (õiged sünonüümid)
+
+**Näited (flagitud):**
+- `childhood trauma` → "adverse childhood experiences which have lasting..." - definitsioon
+- `mindfulness` → "present-moment awareness without judgment" - definitsioon
+- `HALTS` → "the potential trigger conditions of being: hungry, angry..." - definitsioon
+- `reparenting` → "becoming your own loving parent" - definitsioon
+
+**Näited (õiged sünonüümid):**
+- `caregiver(s)` → "caretaker", "guardian" ✓
+- `blind spot` → "denial", "block" ✓
+- `child within` → "inner child" ✓
+- `recovery` → "healing" ✓
+
+**Loodud failid:**
+- `src/ai_synonym_analysis_results.py` - kõik 198 otsust + põhjendused
+- `src/apply_synonym_flags.py` - flagide rakendamine JSON-is
+- `src/extract_synonyms_for_analysis.py` - ekstraktimise abiskript
+- `src/auto_flag_synonym_definitions.py` - auto-flagimise skript
+
+**GitHub:** 1 kommentaar Issue #26-s (AI analüüsi tulemused)
+
+**Commits:**
+- `85b07cf` - AI analysis: Auto-flag 84 terms with definitions in synonyms field
+
+### 📊 Praegune Seis
+
+**Terminite seisund (334 kokku):**
+- **Flagitud:** 183 (54.8%) - oli 95, kasvas +88
+- **Reviewed - OK:** 30 (9.0%)
+- **Reviewed - Flagged:** 10 (3.0%)
+- **Not reviewed:** 294 (88.0%)
+
+**Toimingute statistika:**
+- Accepted: 31 (9.3%)
+- Merged: 0 (0.0%)
+- Edited: 0 (0.0%)
+- Flagged: 82 (24.6%)
+
+### Tunne
+
+Tunne on nii ja naa. Ma tahaksin protsessi kiirendada, kuid saan aru, et see peabki selline olema, et töö käigus avastan ja täiendan. See on investeering tulevikku.
+
+---
+
 ## 📅 2025-10-12 (Pühapäev)
 
 ### 💡 Miks See Projekt Täna Algas
