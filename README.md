@@ -38,16 +38,10 @@ ACA World Service Organization guidelines emphasize that a **glossary/terminolog
 
 **Recent Progress:**
 - ✅ Quality check automation (Issue #23) - 81 terms auto-flagged
-- ⚠️ Manual review session crashed - Unicode bug discovered (Issue #24)
+- ✅ Unicode bug fixed (Issue #24) - UTF-8 encoding + progress saving
 - 📋 34 terms need normalization decisions (Issue #25)
 
 **Current Priorities:** See [TODO.md](TODO.md)
-
-**Completed:**
-- ✅ Foundation glossary extraction (334 terms)
-- ✅ Interactive review script with all actions
-- ✅ Quality check automation
-- ✅ TBX-Basic schema + specification
 
 See detailed roadmap: [PROJECT_OVERVIEW_DRAFT.md](PROJECT_OVERVIEW_DRAFT.md)
 
