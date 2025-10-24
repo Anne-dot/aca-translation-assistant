@@ -201,3 +201,212 @@ def split_numbered_text(text):
             result.append(parts[i + 1].strip())
 
     return result if result else [text]
+
+
+# ============================================================
+# NORMALIZATION DETECTION - Issue #25
+# ============================================================
+
+def detect_parentheses_notation(term):
+    """
+    Detect parentheses notation like (s), (ren), (es).
+
+    Issue #25 Category 5: Singular/Plural
+    Examples: caregiver(s), foster child(ren)
+    Decision: Split into separate terms
+
+    Args:
+        term: Term string to check
+
+    Returns:
+        Dict with category and suggestion, or None
+    """
+    if '(' not in term or ')' not in term:
+        return None
+
+    if '(s)' in term:
+        base = term.replace('(s)', '').strip()
+        plural = base + 's'
+        return {
+            'category': 'split_parentheses',
+            'pattern': '(s)',
+            'suggestion': [base, plural]
+        }
+
+    if '(ren)' in term:
+        base = term.replace('(ren)', '').strip()
+        plural = base + 'ren'
+        return {
+            'category': 'split_parentheses',
+            'pattern': '(ren)',
+            'suggestion': [base, plural]
+        }
+
+    if '(es)' in term:
+        base = term.replace('(es)', '').strip()
+        plural = base + 'es'
+        return {
+            'category': 'split_parentheses',
+            'pattern': '(es)',
+            'suggestion': [base, plural]
+        }
+
+    return None
+
+
+def detect_asterisk(term):
+    """
+    Detect asterisk footnote markers.
+
+    Issue #25 Category 7: Asterisks
+    Examples: counseling*, para-alcoholic*
+    Decision: Remove asterisk, move explanation to note field
+
+    Args:
+        term: Term string to check
+
+    Returns:
+        Dict with category and suggestion, or None
+    """
+    if '*' not in term:
+        return None
+
+    clean_term = term.replace('*', '').strip()
+    return {
+        'category': 'remove_asterisk',
+        'suggestion': {'cleanTerm': clean_term}
+    }
+
+
+def detect_multiple_terms_comma(term):
+    """
+    Detect multiple terms separated by comma.
+
+    Issue #25 Category 4: Multiple terms
+    Examples: hero, hero child
+    Decision: Split into separate terms
+
+    Args:
+        term: Term string to check
+
+    Returns:
+        Dict with category and suggestion, or None
+    """
+    if '(' in term or ', ' not in term:
+        return None
+
+    parts = [p.strip() for p in term.split(',')]
+    if len(parts) > 1:
+        return {
+            'category': 'split_multiple_comma',
+            'suggestion': parts
+        }
+
+    return None
+
+
+def detect_multiple_terms_slash(term):
+    """
+    Detect multiple terms separated by slash.
+
+    Issue #25 Category 4: Multiple terms
+    Examples: Annual Business Conference/ABC
+    Decision: Split into separate terms
+
+    Args:
+        term: Term string to check
+
+    Returns:
+        Dict with category and suggestion, or None
+    """
+    if '/' not in term:
+        return None
+
+    parts = [p.strip() for p in term.split('/')]
+    if len(parts) > 1:
+        return {
+            'category': 'split_multiple_slash',
+            'suggestion': parts
+        }
+
+    return None
+
+
+def detect_seealso_issues(term_data):
+    """
+    Detect seeAlso with explanations instead of terms.
+
+    Issue #25 Category 8: "See also" format
+    Example: "trauma for further references in the literature"
+    Decision: Flag for manual review, extract term only
+
+    Args:
+        term_data: Full term dict with seeAlso field
+
+    Returns:
+        Dict with category and suggestion, or None
+    """
+    see_also = term_data.get('seeAlso', [])
+    if not see_also:
+        return None
+
+    issues = []
+    for entry in see_also:
+        word_count = len(entry.split())
+        if word_count > 4:
+            issues.append({
+                'entry': entry,
+                'reason': f'Too long ({word_count} words)'
+            })
+
+    if issues:
+        return {
+            'category': 'clean_seealso',
+            'suggestion': issues
+        }
+
+    return None
+
+
+def collect_normalization_issues(term_data):
+    """
+    Collect all normalization issues for a term.
+
+    Issue #25: Term normalization policy decisions
+    Detects Categories 4, 5, 7, 8 issues.
+
+    Args:
+        term_data: Full term dict
+
+    Returns:
+        List of issue dicts (empty if no issues)
+    """
+    issues = []
+    term = term_data['term']
+
+    # Category 5: Parentheses
+    parentheses = detect_parentheses_notation(term)
+    if parentheses:
+        issues.append(parentheses)
+
+    # Category 7: Asterisk
+    asterisk = detect_asterisk(term)
+    if asterisk:
+        issues.append(asterisk)
+
+    # Category 4: Multiple terms (comma)
+    comma = detect_multiple_terms_comma(term)
+    if comma:
+        issues.append(comma)
+
+    # Category 4: Multiple terms (slash)
+    slash = detect_multiple_terms_slash(term)
+    if slash:
+        issues.append(slash)
+
+    # Category 8: seeAlso format
+    seealso = detect_seealso_issues(term_data)
+    if seealso:
+        issues.append(seealso)
+
+    return issues

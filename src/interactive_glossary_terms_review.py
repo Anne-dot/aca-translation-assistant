@@ -9,7 +9,7 @@ Issue #21 - PHASE 1, STEP 1.1 Quality Control
 import sys
 from pathlib import Path
 from datetime import datetime
-from utils import load_json_file, save_json_file
+from utils import load_json_file, save_json_file, collect_normalization_issues
 
 
 # ============================================================
@@ -147,16 +147,24 @@ def display_page_references(page_refs):
 # USER INTERACTION
 # ============================================================
 
-def display_review_menu():
-    """Display main menu options."""
+def display_review_menu(terms):
+    """Display main menu options with term counts."""
+    # Calculate counts for each filter
+    flagged = sum(1 for t in terms if t.get('needsReview', False))
+    unflagged = sum(1 for t in terms
+                    if not t.get('needsReview', False)
+                    and t.get('reviewedAt') is None)
+    reviewed = sum(1 for t in terms if t.get('reviewedAt') is not None)
+    total = len(terms)
+
     print("\n" + "="*60)
     print("  Foundation Glossary Review")
     print("="*60)
     print("\nOptions:")
-    print("  [1] Flagged - needs review (needsReview: true)")
-    print("  [2] Unflagged - needs review (not flagged AND not reviewed)")
-    print("  [3] Reviewed (reviewedAt is not None)")
-    print("  [4] All terms")
+    print(f"  [1] Flagged - needs review ({flagged} terms)")
+    print(f"  [2] Unflagged - needs review ({unflagged} terms)")
+    print(f"  [3] Reviewed ({reviewed} terms)")
+    print(f"  [4] All terms ({total} terms)")
     print("  [5] Show statistics and exit")
     print("  [q] Quit\n")
 
@@ -175,6 +183,7 @@ def display_term_action_menu():
     print("Actions:")
     print("  [a] Accept - Entry is correct")
     print("  [e] Edit - Modify meanings")
+    print("  [t] Edit term fields - grammaticalType, seeAlso")
     print("  [m] Merge - Should be single meaning")
     print("  [f] Flag - Mark for review")
     print("  [s] Skip - Review later")
@@ -183,7 +192,169 @@ def display_term_action_menu():
 
 def get_review_action():
     """Get user's review action for current term."""
-    return get_user_choice("Your choice: ", ['a', 'e', 'm', 'f', 's', 'q'])
+    return get_user_choice("Your choice: ", ['a', 'e', 't', 'm', 'f', 's', 'q'])
+
+
+# ============================================================
+# NORMALIZATION HANDLING - Issue #25
+# ============================================================
+
+def display_normalization_issue(issue):
+    """Display detected normalization issue with suggestion."""
+    print(f"\n{'='*60}")
+    print(f"⚠️  NORMALIZATION ISSUE DETECTED")
+    print(f"{'='*60}")
+    print(f"\nCategory: {issue['category']}")
+
+    if issue['category'] == 'split_parentheses':
+        print(f"Pattern: {issue['pattern']}")
+        print(f"Suggestion: Split into {len(issue['suggestion'])} terms")
+        for i, term in enumerate(issue['suggestion'], 1):
+            print(f"   {i}. \"{term}\"")
+
+    elif issue['category'] == 'remove_asterisk':
+        print(f"Suggestion: Remove asterisk")
+        print(f"   Clean term: \"{issue['suggestion']['cleanTerm']}\"")
+
+    elif issue['category'] in ['split_multiple_comma', 'split_multiple_slash']:
+        sep = "," if issue['category'] == 'split_multiple_comma' else "/"
+        print(f"Separator: '{sep}'")
+        print(f"Suggestion: Split into {len(issue['suggestion'])} terms")
+        for i, term in enumerate(issue['suggestion'], 1):
+            print(f"   {i}. \"{term}\"")
+
+    elif issue['category'] == 'clean_seealso':
+        print(f"seeAlso field has suspicious entries:")
+        for item in issue['suggestion']:
+            print(f"   \"{item['entry']}\" - {item['reason']}")
+
+    print(f"{'='*60}\n")
+
+
+def display_normalization_menu():
+    """Display normalization action menu."""
+    print("Normalization actions:")
+    print("  [1] Accept suggestion")
+    print("  [2] Edit manually")
+    print("  [3] Continue with normal review (ignore)")
+    print("  [4] Skip term\n")
+
+
+def get_normalization_action():
+    """Get user's normalization action."""
+    return get_user_choice("Your choice (1-4): ", ['1', '2', '3', '4'])
+
+
+def handle_normalization_edit(issue):
+    """Handle manual editing of normalization suggestion."""
+    print("\n📝 Enter your changes:")
+
+    if issue['category'] in ['split_parentheses', 'split_multiple_comma', 'split_multiple_slash']:
+        print("Enter terms (comma separated):")
+        user_input = input("> ").strip()
+        terms = [t.strip() for t in user_input.split(',')]
+        return {
+            'type': issue['category'],
+            'data': terms
+        }
+
+    elif issue['category'] == 'remove_asterisk':
+        print("Enter clean term:")
+        clean = input("> ").strip()
+        print("Enter note (optional, press Enter to skip):")
+        note = input("> ").strip()
+        return {
+            'type': issue['category'],
+            'data': {
+                'cleanTerm': clean,
+                'note': note if note else None
+            }
+        }
+
+    elif issue['category'] == 'clean_seealso':
+        print("Enter corrected seeAlso entries (comma separated):")
+        user_input = input("> ").strip()
+        terms = [t.strip() for t in user_input.split(',')]
+        return {
+            'type': issue['category'],
+            'data': terms
+        }
+
+    return None
+
+
+def apply_normalization_action(term, action):
+    """Apply normalization action to term."""
+    term['normalizationAction'] = action
+    print(f"\n✅ normalizationAction added: {action['type']}")
+
+
+def display_updated_term_info(term):
+    """Display updated term information after normalization."""
+    print(f"\n{'='*60}")
+    print("UPDATED TERM INFO")
+    print(f"{'='*60}")
+    print(f"Term: {term['term']}")
+
+    if 'normalizationAction' in term:
+        action = term['normalizationAction']
+        print(f"normalizationAction: {action['type']}")
+        if isinstance(action['data'], list):
+            print(f"   → {len(action['data'])} terms: {', '.join(action['data'])}")
+        elif isinstance(action['data'], dict):
+            if 'cleanTerm' in action['data']:
+                print(f"   → Clean term: {action['data']['cleanTerm']}")
+
+    if term.get('meanings'):
+        definition = term['meanings'][0].get('definition', '')
+        if definition:
+            short_def = definition[:100] + "..." if len(definition) > 100 else definition
+            print(f"Definition: {short_def}")
+
+    print(f"{'='*60}\n")
+
+
+def handle_normalization_issues(term):
+    """
+    Check for and handle normalization issues.
+    Returns True if issues were handled, False otherwise.
+    """
+    issues = collect_normalization_issues(term)
+
+    if not issues:
+        return False
+
+    # Process each issue
+    for issue in issues:
+        display_normalization_issue(issue)
+        display_normalization_menu()
+        choice = get_normalization_action()
+
+        if choice == '1':  # Accept suggestion
+            action = {
+                'type': issue['category'],
+                'data': issue['suggestion']
+            }
+            apply_normalization_action(term, action)
+
+        elif choice == '2':  # Edit manually
+            action = handle_normalization_edit(issue)
+            if action:
+                apply_normalization_action(term, action)
+
+        elif choice == '3':  # Continue with normal review
+            print("⏭️  Skipping normalization, continuing to review...")
+            return False
+
+        elif choice == '4':  # Skip term
+            print("⏭️  Term skipped")
+            return True  # Signal to skip this term entirely
+
+    # Show updated info if normalization was applied
+    if 'normalizationAction' in term:
+        display_updated_term_info(term)
+
+    return False  # Continue to normal review
 
 
 # ============================================================
@@ -218,7 +389,11 @@ def mark_term_as_reviewed(term, action_type):
 
 
 def accept_term(term):
-    """Accept auto-split as correct."""
+    """Accept term as correct and clear review notes."""
+    # Clear review notes (issue resolved)
+    if 'reviewNotes' in term:
+        del term['reviewNotes']
+
     print("✅ Accepted!\n")
     return mark_term_as_reviewed(term, 'accepted')
 
@@ -371,6 +546,120 @@ def edit_term_meanings(term):
     print("✅ Meaning edited!\n")
 
     return mark_term_as_reviewed(term, 'edited')
+
+
+def split_grammatical_type(grammatical_type):
+    """
+    Split grammaticalType if it contains qualifier.
+
+    Examples:
+      "n, uncommon" → ("n", "uncommon")
+      "adj, idiom" → ("adj", "idiom")
+      "n" → ("n", None)
+
+    Returns:
+      tuple: (part_of_speech, qualifier)
+    """
+    if not grammatical_type or ',' not in grammatical_type:
+        return (grammatical_type, None)
+
+    parts = [p.strip() for p in grammatical_type.split(',', 1)]
+    return (parts[0], parts[1] if len(parts) > 1 else None)
+
+
+def edit_term_fields(term):
+    """Edit term-level fields (grammaticalType, seeAlso). Returns without marking as reviewed."""
+    print("\n📝 Editing term fields...\n")
+    print("What to edit?")
+    print("  [1] grammaticalType")
+    print("  [2] seeAlso")
+    print("  [3] Both")
+    print("  [0] Cancel\n")
+
+    choice = get_user_choice("Your choice: ", ['1', '2', '3', '0'])
+
+    if choice == '0':
+        print("❌ Edit cancelled\n")
+        return term
+
+    # Edit grammaticalType
+    if choice in ['1', '3']:
+        current_type = term.get('grammaticalType', '')
+
+        # Show split preview if contains qualifier
+        pos, qualifier = split_grammatical_type(current_type)
+        if qualifier:
+            print(f"\nℹ️  Current value will be split:")
+            print(f"   Part of speech: {pos}")
+            print(f"   Qualifier (→ termNote): {qualifier}\n")
+
+        new_type = edit_single_field(
+            'grammaticalType',
+            current_type,
+            is_list=False
+        )
+
+        # Split grammaticalType if contains qualifier
+        pos, qualifier = split_grammatical_type(new_type)
+        term['grammaticalType'] = pos
+
+        # Add qualifier to termNote if exists
+        if qualifier:
+            existing_note = term.get('termNote', '')
+            if existing_note:
+                term['termNote'] = f"{existing_note}; {qualifier}"
+            else:
+                term['termNote'] = qualifier
+            print(f"\n✅ Split applied:")
+            print(f"   grammaticalType: {pos}")
+            print(f"   termNote: {qualifier}")
+
+    # Edit seeAlso
+    if choice in ['2', '3']:
+        current_seealso = term.get('seeAlso', [])
+        new_seealso = edit_single_field(
+            'seeAlso',
+            current_seealso,
+            is_list=True
+        )
+        term['seeAlso'] = new_seealso
+
+    print("✅ Term fields updated!\n")
+
+    # Show complete updated info
+    print(f"{'='*60}")
+    print("UPDATED TERM INFO")
+    print(f"{'='*60}")
+    print(f"Term: {term['term']}")
+    print(f"grammaticalType: {term.get('grammaticalType', 'N/A')}")
+    if term.get('termNote'):
+        print(f"termNote: {term['termNote']}")
+    if term.get('seeAlso'):
+        print(f"seeAlso: {', '.join(term['seeAlso'])}")
+
+    # Show meanings
+    print()
+    meanings = term.get('meanings', [])
+    if meanings:
+        if len(meanings) == 1:
+            print(f"Definition: {meanings[0].get('definition', 'N/A')}")
+            if meanings[0].get('synonyms'):
+                print(f"Synonyms: {', '.join(meanings[0]['synonyms'])}")
+            if meanings[0].get('usageExample'):
+                print(f"Example: {meanings[0]['usageExample']}")
+        else:
+            for i, meaning in enumerate(meanings, 1):
+                print(f"Meaning {i}:")
+                print(f"  Definition: {meaning.get('definition', 'N/A')}")
+                if meaning.get('synonyms'):
+                    print(f"  Synonyms: {', '.join(meaning['synonyms'])}")
+                if meaning.get('usageExample'):
+                    print(f"  Example: {meaning['usageExample']}")
+                print()
+
+    print(f"{'='*60}\n")
+
+    return term  # Return without marking as reviewed yet
 
 
 # ============================================================
@@ -529,8 +818,8 @@ def main():
     terms = load_json_file(input_file)
     print(f"✅ Loaded {len(terms)} terms\n")
 
-    # Show menu
-    display_review_menu()
+    # Show menu with counts
+    display_review_menu(terms)
     choice = get_user_choice("Select option: ", ['1', '2', '3', '4', '5', 'q'])
 
     if choice == 'q':
@@ -559,30 +848,49 @@ def main():
         display_all_meanings(term.get('meanings', []))
         display_page_references(term.get('pageReferences', ''))
 
-        display_term_action_menu()
-        action = get_review_action()
+        # Check for normalization issues (Issue #25)
+        skip_to_next = handle_normalization_issues(term)
+        if skip_to_next:
+            continue
 
+        # Inner loop for term actions (allows returning after [t] edit)
+        while True:
+            display_term_action_menu()
+            action = get_review_action()
+
+            if action == 'q':
+                print("\n⏸️  Review paused\n")
+                break
+            elif action == 'a':
+                accept_term(term)
+                save_with_feedback(terms, input_file)
+                modified = True
+                break
+            elif action == 's':
+                skip_term(term)
+                break
+            elif action == 'f':
+                flag_term_for_review(term)
+                save_with_feedback(terms, input_file)
+                modified = True
+                break
+            elif action == 'e':
+                edit_term_meanings(term)
+                save_with_feedback(terms, input_file)
+                modified = True
+                break
+            elif action == 't':
+                edit_term_fields(term)
+                # Loop back to menu - don't break
+            elif action == 'm':
+                merge_term_meanings(term)
+                save_with_feedback(terms, input_file)
+                modified = True
+                break
+
+        # Break outer loop if quit
         if action == 'q':
-            print("\n⏸️  Review paused\n")
             break
-        elif action == 'a':
-            accept_term(term)
-            save_with_feedback(terms, input_file)
-            modified = True
-        elif action == 's':
-            skip_term(term)
-        elif action == 'f':
-            flag_term_for_review(term)
-            save_with_feedback(terms, input_file)
-            modified = True
-        elif action == 'e':
-            edit_term_meanings(term)
-            save_with_feedback(terms, input_file)
-            modified = True
-        elif action == 'm':
-            merge_term_meanings(term)
-            save_with_feedback(terms, input_file)
-            modified = True
 
     # Summary
     if modified:
