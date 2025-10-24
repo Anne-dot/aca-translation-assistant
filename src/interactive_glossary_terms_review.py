@@ -570,32 +570,16 @@ def split_grammatical_type(grammatical_type):
 def edit_term_fields(term):
     """Edit term-level fields (grammaticalType, seeAlso). Returns without marking as reviewed."""
     print("\n📝 Editing term fields...\n")
-    print("What to edit?")
-    print("  [1] grammaticalType")
-    print("  [2] seeAlso")
-    print("  [3] Both")
-    print("  [0] Cancel\n")
 
-    choice = get_user_choice("Your choice: ", ['1', '2', '3', '0'])
+    current_type = term.get('grammaticalType', '')
 
-    if choice == '0':
-        print("❌ Edit cancelled\n")
-        return term
-
-    # Edit grammaticalType
-    if choice in ['1', '3']:
-        current_type = term.get('grammaticalType', '')
-
-        # Show split preview if contains qualifier
-        pos, qualifier = split_grammatical_type(current_type)
-        if qualifier:
-            print(f"\nℹ️  Current value will be split:")
-            print(f"   Part of speech: {pos}")
-            print(f"   Qualifier (→ termNote): {qualifier}\n")
+    # If grammaticalType is missing, ask for it immediately
+    if not current_type:
+        print("⚠️  grammaticalType is missing\n")
 
         new_type = edit_single_field(
             'grammaticalType',
-            current_type,
+            '',
             is_list=False
         )
 
@@ -614,15 +598,92 @@ def edit_term_fields(term):
             print(f"   grammaticalType: {pos}")
             print(f"   termNote: {qualifier}")
 
-    # Edit seeAlso
-    if choice in ['2', '3']:
-        current_seealso = term.get('seeAlso', [])
-        new_seealso = edit_single_field(
-            'seeAlso',
-            current_seealso,
-            is_list=True
-        )
-        term['seeAlso'] = new_seealso
+        # Ask if user wants to edit seeAlso too
+        edit_seealso = input("\nEdit seeAlso too? [y/N]: ").strip().lower()
+        if edit_seealso == 'y':
+            current_seealso = term.get('seeAlso', [])
+            new_seealso = edit_single_field(
+                'seeAlso',
+                current_seealso,
+                is_list=True
+            )
+            term['seeAlso'] = new_seealso
+
+    else:
+        # grammaticalType exists - show submenu
+        print("What to edit?")
+        print("  [1] grammaticalType")
+        print("  [2] seeAlso")
+        print("  [3] Both")
+        print("  [0] Cancel\n")
+
+        choice = get_user_choice("Your choice: ", ['1', '2', '3', '0'])
+
+        if choice == '0':
+            print("❌ Edit cancelled\n")
+            return term
+
+        # Edit grammaticalType
+        if choice in ['1', '3']:
+            # Check if split suggestion available
+            pos, qualifier = split_grammatical_type(current_type)
+
+            if qualifier:
+                # Show split preview and ask to apply
+                print(f"\nℹ️  Current value will be split:")
+                print(f"   Part of speech: {pos}")
+                print(f"   Qualifier (→ termNote): {qualifier}\n")
+
+                apply_split = input("Apply split? [Y/n]: ").strip().lower()
+
+                if apply_split in ['', 'y', 'yes']:
+                    # Apply split automatically
+                    term['grammaticalType'] = pos
+                    existing_note = term.get('termNote', '')
+                    if existing_note:
+                        term['termNote'] = f"{existing_note}; {qualifier}"
+                    else:
+                        term['termNote'] = qualifier
+                    print(f"\n✅ Split applied:")
+                    print(f"   grammaticalType: {pos}")
+                    print(f"   termNote: {qualifier}")
+                else:
+                    # User declined - ask for new value
+                    new_type = edit_single_field(
+                        'grammaticalType',
+                        current_type,
+                        is_list=False
+                    )
+                    # Apply to new value entered
+                    pos, qualifier = split_grammatical_type(new_type)
+                    term['grammaticalType'] = pos
+                    if qualifier:
+                        existing_note = term.get('termNote', '')
+                        if existing_note:
+                            term['termNote'] = f"{existing_note}; {qualifier}"
+                        else:
+                            term['termNote'] = qualifier
+                        print(f"\n✅ Split applied:")
+                        print(f"   grammaticalType: {pos}")
+                        print(f"   termNote: {qualifier}")
+            else:
+                # No split needed - normal edit
+                new_type = edit_single_field(
+                    'grammaticalType',
+                    current_type,
+                    is_list=False
+                )
+                term['grammaticalType'] = new_type
+
+        # Edit seeAlso
+        if choice in ['2', '3']:
+            current_seealso = term.get('seeAlso', [])
+            new_seealso = edit_single_field(
+                'seeAlso',
+                current_seealso,
+                is_list=True
+            )
+            term['seeAlso'] = new_seealso
 
     print("✅ Term fields updated!\n")
 
@@ -659,7 +720,59 @@ def edit_term_fields(term):
 
     print(f"{'='*60}\n")
 
+    # Handle review notes cleanup
+    if term.get('reviewNotes'):
+        handle_review_notes_cleanup(term)
+
     return term  # Return without marking as reviewed yet
+
+
+def handle_review_notes_cleanup(term):
+    """
+    Ask user whether to clear review notes after editing term fields.
+    Options: clear all, keep all, or interactive (choose per note).
+    """
+    print("Clear review notes?")
+    print("  [y] Clear all notes")
+    print("  [n] Keep all notes")
+    print("  [i] Interactive (choose per note)\n")
+
+    choice = get_user_choice("Your choice: ", ['y', 'n', 'i'])
+
+    if choice == 'y':
+        # Clear all notes
+        del term['reviewNotes']
+        print("✅ All review notes cleared\n")
+
+    elif choice == 'i':
+        # Interactive - ask about each note
+        notes = term['reviewNotes']
+        remaining_notes = []
+
+        print("\nReview notes:")
+        for i, note in enumerate(notes, 1):
+            print(f"  {i}. {note}")
+        print()
+
+        deleted_count = 0
+        for i, note in enumerate(notes, 1):
+            delete = input(f"Delete note #{i}? [y/N]: ").strip().lower()
+            if delete == 'y':
+                deleted_count += 1
+                print("✅ Deleted")
+            else:
+                remaining_notes.append(note)
+                print("⏭️  Kept")
+
+        # Update term
+        if remaining_notes:
+            term['reviewNotes'] = remaining_notes
+            print(f"\n✅ {deleted_count} note(s) deleted, {len(remaining_notes)} kept\n")
+        else:
+            del term['reviewNotes']
+            print(f"\n✅ All {deleted_count} review note(s) deleted\n")
+
+    # If 'n' - do nothing, keep all notes
 
 
 # ============================================================
