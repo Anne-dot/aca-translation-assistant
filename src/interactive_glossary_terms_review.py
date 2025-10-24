@@ -1048,7 +1048,7 @@ def main():
                 flag_term_for_review(term)
                 if save_with_feedback(terms, input_file):
                     modified = True
-                break
+                # Loop back to menu - don't break (consistent with [t] and [n])
             elif action == 'e':
                 edit_term_meanings(term)
                 if save_with_feedback(terms, input_file):
