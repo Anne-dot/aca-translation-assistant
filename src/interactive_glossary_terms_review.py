@@ -454,6 +454,8 @@ def flag_term_for_review(term):
     note = input("Reason for flagging (optional): ").strip()
 
     term['needsReview'] = True
+    term['reviewedAt'] = datetime.now().isoformat()  # Mark as reviewed
+
     if note:
         if 'reviewNotes' not in term:
             term['reviewNotes'] = []
