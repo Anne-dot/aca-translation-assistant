@@ -421,7 +421,14 @@ def save_with_feedback(terms, file_path):
 def mark_term_as_reviewed(term, action_type):
     """Mark term as reviewed with timestamp and action."""
     term['reviewedAt'] = datetime.now().isoformat()
-    term['needsReview'] = False
+
+    # Ask about review notes cleanup if notes exist
+    if term.get('reviewNotes'):
+        handle_review_notes_cleanup(term)
+
+    # Clear flag only if no review notes remain
+    if not term.get('reviewNotes'):
+        term['needsReview'] = False
 
     if 'actions' not in term:
         term['actions'] = []
@@ -434,11 +441,7 @@ def mark_term_as_reviewed(term, action_type):
 
 
 def accept_term(term):
-    """Accept term as correct and clear review notes."""
-    # Clear review notes (issue resolved)
-    if 'reviewNotes' in term:
-        del term['reviewNotes']
-
+    """Accept term as correct."""
     print("✅ Accepted!\n")
     return mark_term_as_reviewed(term, 'accepted')
 
