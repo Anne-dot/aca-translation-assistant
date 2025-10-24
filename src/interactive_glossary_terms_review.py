@@ -6,6 +6,7 @@ Quality control for auto-split extraction logic.
 Issue #21 - PHASE 1, STEP 1.1 Quality Control
 """
 
+import sys
 from pathlib import Path
 from datetime import datetime
 from utils import load_json_file, save_json_file
@@ -188,6 +189,18 @@ def get_review_action():
 # ============================================================
 # REVIEW ACTIONS
 # ============================================================
+
+def save_with_feedback(terms, file_path):
+    """Save with transaction feedback."""
+    try:
+        print("💾 Saving...", end=" ", flush=True)
+        save_json_file(terms, file_path)
+        print("✅ Saved!")
+        return True
+    except Exception as e:
+        print(f"❌ Save failed: {e}")
+        return False
+
 
 def mark_term_as_reviewed(term, action_type):
     """Mark term as reviewed with timestamp and action."""
@@ -508,6 +521,9 @@ def main():
     """Main review workflow."""
     input_file = Path("data/1_extracted/foundation_raw.json")
 
+    # Configure UTF-8 for input
+    sys.stdin.reconfigure(encoding='utf-8')
+
     # Load data
     print(f"\n📖 Loading: {input_file}")
     terms = load_json_file(input_file)
@@ -551,24 +567,26 @@ def main():
             break
         elif action == 'a':
             accept_term(term)
+            save_with_feedback(terms, input_file)
             modified = True
         elif action == 's':
             skip_term(term)
         elif action == 'f':
             flag_term_for_review(term)
+            save_with_feedback(terms, input_file)
             modified = True
         elif action == 'e':
             edit_term_meanings(term)
+            save_with_feedback(terms, input_file)
             modified = True
         elif action == 'm':
             merge_term_meanings(term)
+            save_with_feedback(terms, input_file)
             modified = True
 
-    # Save if modified
+    # Summary
     if modified:
-        print(f"\n💾 Saving changes to: {input_file}")
-        save_json_file(terms, input_file)
-        print("✅ Saved!\n")
+        print(f"\n✅ All changes saved to: {input_file}\n")
     else:
         print("\n📝 No changes made\n")
 
