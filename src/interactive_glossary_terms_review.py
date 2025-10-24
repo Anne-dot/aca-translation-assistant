@@ -732,6 +732,13 @@ def handle_review_notes_cleanup(term):
     Ask user whether to clear review notes after editing term fields.
     Options: clear all, keep all, or interactive (choose per note).
     """
+    # Show existing review notes first
+    notes = term['reviewNotes']
+    print("Review notes:")
+    for i, note in enumerate(notes, 1):
+        print(f"  {i}. {note}")
+    print()
+
     print("Clear review notes?")
     print("  [y] Clear all notes")
     print("  [n] Keep all notes")
