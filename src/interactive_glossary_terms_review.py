@@ -95,52 +95,95 @@ def display_statistics(stats):
 # TERM DISPLAY
 # ============================================================
 
-def display_term_header(term, index, total):
-    """Display term header with basic info."""
+def display_complete_term_info(term, title=None, index=None, total=None):
+    """
+    Display complete term information with all fields.
+    Single source for term display - used everywhere (DRY principle).
+
+    Args:
+        term: Term dictionary
+        title: Custom title (e.g., "FINAL REVIEW", "UPDATED TERM INFO")
+        index: Term index (e.g., 1)
+        total: Total terms (e.g., 88)
+    """
     print(f"\n{'='*60}")
-    print(f"Term {index}/{total}: {term['term']}")
-    if term.get('grammaticalType'):
-        print(f"Type: ({term['grammaticalType']})")
-    if term.get('seeAlso'):
-        print(f"See also: {', '.join(term['seeAlso'])}")
-    if term.get('reviewNotes'):
-        print(f"📝 Review notes:")
-        for note in term['reviewNotes']:
-            print(f"   - {note['note']} ({note['date'][:10]})")
+
+    # Header
+    if title:
+        if index and total:
+            print(f"Term {index}/{total}: {title}")
+        else:
+            print(title)
+    elif index and total:
+        print(f"Term {index}/{total}")
+    else:
+        print("Term Info")
+
     print(f"{'='*60}\n")
 
+    # Term-level fields
+    print(f"Term: {term['term']}")
+    print(f"Type: {term.get('grammaticalType', 'N/A')}")
 
-def display_single_meaning(meaning, meaning_num=None):
-    """Display one meaning with all fields."""
-    if meaning_num is not None:
-        print(f"Meaning {meaning_num}:")
+    if term.get('termNote'):
+        print(f"termNote: {term['termNote']}")
 
-    print(f"  Definition: {meaning.get('definition', 'N/A')}")
-
-    synonyms = meaning.get('synonyms', [])
-    if synonyms:
-        print(f"  Synonyms: {', '.join(synonyms)}")
-
-    example = meaning.get('usageExample', '')
-    if example:
-        print(f"  Example: {example}")
-
-    print()
-
-
-def display_all_meanings(meanings):
-    """Display all meanings for a term."""
-    if len(meanings) == 1:
-        display_single_meaning(meanings[0])
+    if term.get('seeAlso'):
+        print(f"seeAlso: {', '.join(term['seeAlso'])}")
     else:
-        for i, meaning in enumerate(meanings, 1):
-            display_single_meaning(meaning, i)
+        print(f"seeAlso: N/A")
 
+    # Review notes (numbered)
+    if term.get('reviewNotes'):
+        print(f"\n📝 Review notes:")
+        for i, note in enumerate(term['reviewNotes'], 1):
+            if isinstance(note, dict):
+                print(f"  {i}. {note['note']} ({note['date'][:10]})")
+            else:
+                print(f"  {i}. {note}")
 
-def display_page_references(page_refs):
-    """Display page references if present."""
-    if page_refs:
-        print(f"Page References:\n{page_refs}\n")
+    # Meanings
+    meanings = term.get('meanings', [])
+    if meanings:
+        print()
+        if len(meanings) == 1:
+            # Single meaning
+            meaning = meanings[0]
+            print("Definition:")
+            print(f"  {meaning.get('definition', 'N/A')}")
+
+            if meaning.get('synonyms'):
+                print(f"\nSynonyms:")
+                print(f"  {', '.join(meaning['synonyms'])}")
+
+            if meaning.get('usageExample'):
+                print(f"\nExample:")
+                print(f"  {meaning['usageExample']}")
+        else:
+            # Multiple meanings
+            for i, meaning in enumerate(meanings, 1):
+                print(f"Meaning {i}:")
+                print(f"  Definition: {meaning.get('definition', 'N/A')}")
+
+                if meaning.get('synonyms'):
+                    print(f"  Synonyms: {', '.join(meaning['synonyms'])}")
+
+                if meaning.get('usageExample'):
+                    print(f"  Example: {meaning['usageExample']}")
+
+                if i < len(meanings):
+                    print()
+
+    # Page references
+    if term.get('pageReferences'):
+        print(f"\nPage References:")
+        # Format page references with indentation
+        refs = term['pageReferences']
+        for line in refs.split('\n'):
+            if line.strip():
+                print(f"  {line.strip()}")
+
+    print(f"{'='*60}\n")
 
 
 # ============================================================
@@ -291,27 +334,20 @@ def apply_normalization_action(term, action):
 
 def display_updated_term_info(term):
     """Display updated term information after normalization."""
-    print(f"\n{'='*60}")
-    print("UPDATED TERM INFO")
-    print(f"{'='*60}")
-    print(f"Term: {term['term']}")
-
+    # Show normalization action if present
     if 'normalizationAction' in term:
         action = term['normalizationAction']
+        print(f"\n{'='*60}")
         print(f"normalizationAction: {action['type']}")
         if isinstance(action['data'], list):
             print(f"   → {len(action['data'])} terms: {', '.join(action['data'])}")
         elif isinstance(action['data'], dict):
             if 'cleanTerm' in action['data']:
                 print(f"   → Clean term: {action['data']['cleanTerm']}")
+        print(f"{'='*60}\n")
 
-    if term.get('meanings'):
-        definition = term['meanings'][0].get('definition', '')
-        if definition:
-            short_def = definition[:100] + "..." if len(definition) > 100 else definition
-            print(f"Definition: {short_def}")
-
-    print(f"{'='*60}\n")
+    # Show complete term info using DRY function
+    display_complete_term_info(term, title="UPDATED TERM INFO")
 
 
 def handle_normalization_issues(term):
@@ -390,12 +426,22 @@ def mark_term_as_reviewed(term, action_type):
 
 def accept_term(term):
     """Accept term as correct and clear review notes."""
-    # Clear review notes (issue resolved)
-    if 'reviewNotes' in term:
-        del term['reviewNotes']
+    # Show complete term info for final review
+    display_complete_term_info(term, title="FINAL REVIEW - Accepting this term")
 
-    print("✅ Accepted!\n")
-    return mark_term_as_reviewed(term, 'accepted')
+    # Ask for confirmation
+    confirm = input("Confirm accept? [Y/n]: ").strip().lower()
+
+    if confirm in ['', 'y', 'yes']:
+        # Clear review notes (issue resolved)
+        if 'reviewNotes' in term:
+            del term['reviewNotes']
+
+        print("✅ Accepted!\n")
+        return mark_term_as_reviewed(term, 'accepted')
+    else:
+        print("❌ Accept cancelled\n")
+        return None
 
 
 def skip_term(term):
@@ -685,40 +731,10 @@ def edit_term_fields(term):
             )
             term['seeAlso'] = new_seealso
 
-    print("✅ Term fields updated!\n")
+    print("✅ Term fields updated!")
 
     # Show complete updated info
-    print(f"{'='*60}")
-    print("UPDATED TERM INFO")
-    print(f"{'='*60}")
-    print(f"Term: {term['term']}")
-    print(f"grammaticalType: {term.get('grammaticalType', 'N/A')}")
-    if term.get('termNote'):
-        print(f"termNote: {term['termNote']}")
-    if term.get('seeAlso'):
-        print(f"seeAlso: {', '.join(term['seeAlso'])}")
-
-    # Show meanings
-    print()
-    meanings = term.get('meanings', [])
-    if meanings:
-        if len(meanings) == 1:
-            print(f"Definition: {meanings[0].get('definition', 'N/A')}")
-            if meanings[0].get('synonyms'):
-                print(f"Synonyms: {', '.join(meanings[0]['synonyms'])}")
-            if meanings[0].get('usageExample'):
-                print(f"Example: {meanings[0]['usageExample']}")
-        else:
-            for i, meaning in enumerate(meanings, 1):
-                print(f"Meaning {i}:")
-                print(f"  Definition: {meaning.get('definition', 'N/A')}")
-                if meaning.get('synonyms'):
-                    print(f"  Synonyms: {', '.join(meaning['synonyms'])}")
-                if meaning.get('usageExample'):
-                    print(f"  Example: {meaning['usageExample']}")
-                print()
-
-    print(f"{'='*60}\n")
+    display_complete_term_info(term, title="UPDATED TERM INFO")
 
     # Handle review notes cleanup
     if term.get('reviewNotes'):
@@ -964,9 +980,20 @@ def main():
     # Review loop
     modified = False
     for i, term in enumerate(terms_to_review, 1):
-        display_term_header(term, i, len(terms_to_review))
-        display_all_meanings(term.get('meanings', []))
-        display_page_references(term.get('pageReferences', ''))
+        # Determine filter type for display
+        if term.get('needsReview', False):
+            filter_type = "FLAGGED"
+        elif term.get('reviewedAt'):
+            filter_type = "REVIEWED"
+        else:
+            filter_type = "NOT REVIEWED"
+
+        display_complete_term_info(
+            term,
+            title=filter_type,
+            index=i,
+            total=len(terms_to_review)
+        )
 
         # Check for normalization issues (Issue #25)
         skip_to_next = handle_normalization_issues(term)
@@ -982,10 +1009,13 @@ def main():
                 print("\n⏸️  Review paused\n")
                 break
             elif action == 'a':
-                accept_term(term)
-                save_with_feedback(terms, input_file)
-                modified = True
-                break
+                result = accept_term(term)
+                if result is not None:
+                    # Accept confirmed
+                    save_with_feedback(terms, input_file)
+                    modified = True
+                    break
+                # If None - cancelled, loop back to menu
             elif action == 's':
                 skip_term(term)
                 break
