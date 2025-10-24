@@ -360,6 +360,10 @@ def handle_normalization_issues(term):
     Check for and handle normalization issues.
     Returns True if issues were handled, False otherwise.
     """
+    # Skip if normalization action already applied
+    if term.get('normalizationAction'):
+        return False
+
     issues = collect_normalization_issues(term)
 
     if not issues:
