@@ -194,21 +194,25 @@ def display_review_menu(terms):
     """Display main menu options with term counts."""
     # Calculate counts for each filter
     flagged = sum(1 for t in terms if t.get('needsReview', False))
-    unflagged = sum(1 for t in terms
-                    if not t.get('needsReview', False)
-                    and t.get('reviewedAt') is None)
-    reviewed = sum(1 for t in terms if t.get('reviewedAt') is not None)
+    not_reviewed = sum(1 for t in terms if t.get('reviewedAt') is None)
+    reviewed_ok = sum(1 for t in terms
+                      if t.get('reviewedAt') is not None
+                      and not t.get('needsReview', False))
+    reviewed_flagged = sum(1 for t in terms
+                           if t.get('reviewedAt') is not None
+                           and t.get('needsReview', False))
     total = len(terms)
 
     print("\n" + "="*60)
     print("  Foundation Glossary Review")
     print("="*60)
     print("\nOptions:")
-    print(f"  [1] Flagged - needs review ({flagged} terms)")
-    print(f"  [2] Unflagged - needs review ({unflagged} terms)")
-    print(f"  [3] Reviewed ({reviewed} terms)")
-    print(f"  [4] All terms ({total} terms)")
-    print("  [5] Show statistics and exit")
+    print(f"  [1] Flagged ({flagged} terms)")
+    print(f"  [2] Not reviewed ({not_reviewed} terms)")
+    print(f"  [3] Reviewed - OK ({reviewed_ok} terms)")
+    print(f"  [4] Reviewed - Flagged ({reviewed_flagged} terms)")
+    print(f"  [5] All terms ({total} terms)")
+    print(f"  [6] Show statistics and exit")
     print("  [q] Quit\n")
 
 
@@ -227,6 +231,7 @@ def display_term_action_menu():
     print("  [a] Accept - Entry is correct")
     print("  [e] Edit - Modify meanings")
     print("  [t] Edit term fields - grammaticalType, seeAlso")
+    print("  [n] Edit review notes")
     print("  [m] Merge - Should be single meaning")
     print("  [f] Flag - Mark for review")
     print("  [s] Skip - Review later")
@@ -235,7 +240,7 @@ def display_term_action_menu():
 
 def get_review_action():
     """Get user's review action for current term."""
-    return get_user_choice("Your choice: ", ['a', 'e', 't', 'm', 'f', 's', 'q'])
+    return get_user_choice("Your choice: ", ['a', 'e', 't', 'n', 'm', 'f', 's', 'q'])
 
 
 # ============================================================
@@ -426,22 +431,12 @@ def mark_term_as_reviewed(term, action_type):
 
 def accept_term(term):
     """Accept term as correct and clear review notes."""
-    # Show complete term info for final review
-    display_complete_term_info(term, title="FINAL REVIEW - Accepting this term")
+    # Clear review notes (issue resolved)
+    if 'reviewNotes' in term:
+        del term['reviewNotes']
 
-    # Ask for confirmation
-    confirm = input("Confirm accept? [Y/n]: ").strip().lower()
-
-    if confirm in ['', 'y', 'yes']:
-        # Clear review notes (issue resolved)
-        if 'reviewNotes' in term:
-            del term['reviewNotes']
-
-        print("✅ Accepted!\n")
-        return mark_term_as_reviewed(term, 'accepted')
-    else:
-        print("❌ Accept cancelled\n")
-        return None
+    print("✅ Accepted!\n")
+    return mark_term_as_reviewed(term, 'accepted')
 
 
 def skip_term(term):
@@ -743,6 +738,21 @@ def edit_term_fields(term):
     return term  # Return without marking as reviewed yet
 
 
+def edit_review_notes(term):
+    """
+    Edit or delete review notes without changing term fields.
+    Allows user to clean up notes before flagging with new reason.
+    """
+    if not term.get('reviewNotes'):
+        print("⚠️  No review notes to edit\n")
+        return term
+
+    # Call cleanup handler
+    handle_review_notes_cleanup(term)
+
+    return term
+
+
 def handle_review_notes_cleanup(term):
     """
     Ask user whether to clear review notes after editing term fields.
@@ -772,14 +782,18 @@ def handle_review_notes_cleanup(term):
         notes = term['reviewNotes']
         remaining_notes = []
 
-        print("\nReview notes:")
-        for i, note in enumerate(notes, 1):
-            print(f"  {i}. {note}")
-        print()
-
         deleted_count = 0
         for i, note in enumerate(notes, 1):
-            delete = input(f"Delete note #{i}? [y/N]: ").strip().lower()
+            # Extract note text (handle both dict and string formats)
+            if isinstance(note, dict):
+                note_text = f"{note['note']} ({note['date'][:10]})"
+            else:
+                note_text = note
+
+            # Show note in question
+            print(f"\nDelete note #{i}: \"{note_text}\"? [y/N]: ", end="")
+            delete = input().strip().lower()
+
             if delete == 'y':
                 deleted_count += 1
                 print("✅ Deleted")
@@ -790,10 +804,14 @@ def handle_review_notes_cleanup(term):
         # Update term
         if remaining_notes:
             term['reviewNotes'] = remaining_notes
-            print(f"\n✅ {deleted_count} note(s) deleted, {len(remaining_notes)} kept\n")
+            print(f"\n✅ {deleted_count} note(s) deleted, {len(remaining_notes)} kept")
         else:
             del term['reviewNotes']
-            print(f"\n✅ All {deleted_count} review note(s) deleted\n")
+            print(f"\n✅ All {deleted_count} review note(s) deleted")
+
+        # Show updated term info after cleanup
+        print()
+        display_complete_term_info(term, title="UPDATED TERM INFO")
 
     # If 'n' - do nothing, keep all notes
 
@@ -925,15 +943,19 @@ def merge_term_meanings(term):
 
 def filter_terms_for_review(terms, review_mode):
     """Filter terms based on review mode."""
-    if review_mode == '1':  # Flagged - needs review
+    if review_mode == '1':  # Flagged
         return [t for t in terms if t.get('needsReview', False)]
-    elif review_mode == '2':  # Unflagged - needs review
+    elif review_mode == '2':  # Not reviewed
+        return [t for t in terms if t.get('reviewedAt') is None]
+    elif review_mode == '3':  # Reviewed - OK
         return [t for t in terms
-                if not t.get('needsReview', False)
-                and t.get('reviewedAt') is None]
-    elif review_mode == '3':  # Reviewed
-        return [t for t in terms if t.get('reviewedAt') is not None]
-    elif review_mode == '4':  # All terms
+                if t.get('reviewedAt') is not None
+                and not t.get('needsReview', False)]
+    elif review_mode == '4':  # Reviewed - Flagged
+        return [t for t in terms
+                if t.get('reviewedAt') is not None
+                and t.get('needsReview', False)]
+    elif review_mode == '5':  # All terms
         return terms
     return []
 
@@ -956,13 +978,13 @@ def main():
 
     # Show menu with counts
     display_review_menu(terms)
-    choice = get_user_choice("Select option: ", ['1', '2', '3', '4', '5', 'q'])
+    choice = get_user_choice("Select option: ", ['1', '2', '3', '4', '5', '6', 'q'])
 
     if choice == 'q':
         print("\n👋 Goodbye!\n")
         return
 
-    if choice == '5':
+    if choice == '6':
         # Show stats and exit
         stats = count_terms_by_review_status(terms)
         display_statistics(stats)
@@ -981,10 +1003,12 @@ def main():
     modified = False
     for i, term in enumerate(terms_to_review, 1):
         # Determine filter type for display
-        if term.get('needsReview', False):
-            filter_type = "FLAGGED"
+        if term.get('reviewedAt') and term.get('needsReview', False):
+            filter_type = "REVIEWED - FLAGGED"
         elif term.get('reviewedAt'):
-            filter_type = "REVIEWED"
+            filter_type = "REVIEWED - OK"
+        elif term.get('needsReview', False):
+            filter_type = "FLAGGED"
         else:
             filter_type = "NOT REVIEWED"
 
@@ -1009,33 +1033,37 @@ def main():
                 print("\n⏸️  Review paused\n")
                 break
             elif action == 'a':
-                result = accept_term(term)
-                if result is not None:
-                    # Accept confirmed
-                    save_with_feedback(terms, input_file)
+                accept_term(term)
+                if save_with_feedback(terms, input_file):
                     modified = True
-                    break
-                # If None - cancelled, loop back to menu
+                break
             elif action == 's':
                 skip_term(term)
                 break
             elif action == 'f':
                 flag_term_for_review(term)
-                save_with_feedback(terms, input_file)
-                modified = True
+                if save_with_feedback(terms, input_file):
+                    modified = True
                 break
             elif action == 'e':
                 edit_term_meanings(term)
-                save_with_feedback(terms, input_file)
-                modified = True
+                if save_with_feedback(terms, input_file):
+                    modified = True
                 break
             elif action == 't':
                 edit_term_fields(term)
+                if save_with_feedback(terms, input_file):
+                    modified = True
+                # Loop back to menu - don't break
+            elif action == 'n':
+                edit_review_notes(term)
+                if save_with_feedback(terms, input_file):
+                    modified = True
                 # Loop back to menu - don't break
             elif action == 'm':
                 merge_term_meanings(term)
-                save_with_feedback(terms, input_file)
-                modified = True
+                if save_with_feedback(terms, input_file):
+                    modified = True
                 break
 
         # Break outer loop if quit
