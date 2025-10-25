@@ -7,6 +7,9 @@ Issue #21 - PHASE 1, STEP 1.1 Quality Control
 """
 
 import sys
+import os
+import tempfile
+import subprocess
 from pathlib import Path
 from datetime import datetime
 from utils import load_json_file, save_json_file, collect_normalization_issues
@@ -133,6 +136,21 @@ def display_complete_term_info(term, title=None, index=None, total=None):
     else:
         print(f"seeAlso: N/A")
 
+    # Normalization action (if confirmed)
+    if term.get('normalizationAction'):
+        action = term['normalizationAction']
+        print(f"\n🔧 normalizationAction: {action['type']}")
+        if action['type'] == 'split_multiple_slash':
+            print(f"   → Split into: {', '.join(action['data'])}")
+        elif action['type'] == 'split_multiple_comma':
+            print(f"   → Split into: {', '.join(action['data'])}")
+        elif action['type'] == 'clean_seealso':
+            print(f"   → Clean seeAlso entries: {action['data']}")
+        elif action['type'] == 'remove_parentheses':
+            print(f"   → Split: {', '.join(action['data'])}")
+        elif action['type'] == 'remove_asterisk':
+            print(f"   → Clean term: {action['data']['cleanTerm']}")
+
     # Review notes (numbered)
     if term.get('reviewNotes'):
         print(f"\n📝 Review notes:")
@@ -229,6 +247,7 @@ def display_term_action_menu():
     """Display actions available for current term."""
     print("Actions:")
     print("  [a] Accept - Entry is correct")
+    print("  [d] Edit definition - Quick definition edit")
     print("  [e] Edit - Modify meanings")
     print("  [t] Edit term fields - grammaticalType, seeAlso")
     print("  [n] Edit review notes")
@@ -240,7 +259,7 @@ def display_term_action_menu():
 
 def get_review_action():
     """Get user's review action for current term."""
-    return get_user_choice("Your choice: ", ['a', 'e', 't', 'n', 'm', 'f', 's', 'q'])
+    return get_user_choice("Your choice: ", ['a', 'd', 'e', 't', 'n', 'm', 'f', 's', 'q'])
 
 
 # ============================================================
@@ -359,17 +378,24 @@ def handle_normalization_issues(term):
     """
     Check for and handle normalization issues.
     Returns True if issues were handled, False otherwise.
+    Shows only new/unconfirmed issues.
     """
-    # Skip if normalization action already applied
-    if term.get('normalizationAction'):
-        return False
-
     issues = collect_normalization_issues(term)
 
     if not issues:
         return False
 
-    # Process each issue
+    # Filter out already confirmed issues
+    existing_action = term.get('normalizationAction')
+    if existing_action:
+        # Only show issues that are NOT already confirmed
+        issues = [issue for issue in issues if issue['category'] != existing_action['type']]
+
+    if not issues:
+        # All issues already confirmed
+        return False
+
+    # Process each new/unconfirmed issue
     for issue in issues:
         display_normalization_issue(issue)
         display_normalization_menu()
@@ -577,6 +603,184 @@ def select_meaning_to_edit(meanings):
     if choice_num == 0:
         return None
     return choice_num - 1
+
+
+def edit_text_in_editor(current_text, field_name="text"):
+    """
+    Edit text in external text editor (like git commit message).
+    Opens editor with current text, allows editing, returns edited text.
+    """
+    # Create temp file with current text
+    with tempfile.NamedTemporaryFile(mode='w', suffix='.txt', delete=False, encoding='utf-8') as f:
+        # Add helpful comment at top
+        f.write(f"# Muuda {field_name} allpool. Read, mis algavad #-ga, eemaldatakse.\n")
+        f.write(f"# Salvesta ja sulge redaktor kui valmis.\n#\n")
+        f.write(current_text)
+        temp_path = f.name
+
+    try:
+        # Open in editor (uses $EDITOR or nano as fallback)
+        editor = os.environ.get('EDITOR', 'nano')
+        subprocess.call([editor, temp_path])
+
+        # Read edited content
+        with open(temp_path, 'r', encoding='utf-8') as f:
+            lines = f.readlines()
+
+        # Remove comment lines and strip
+        edited_lines = [line for line in lines if not line.strip().startswith('#')]
+        edited_text = ''.join(edited_lines).strip()
+
+        return edited_text
+
+    finally:
+        # Clean up temp file
+        if os.path.exists(temp_path):
+            os.unlink(temp_path)
+
+
+def format_synonym_as_sentence(synonym_text):
+    """
+    Format synonym text as a sentence for moving to definition.
+    - Capitalize first letter
+    - Add period at end if missing
+    """
+    if not synonym_text:
+        return synonym_text
+
+    # Capitalize first letter
+    formatted = synonym_text[0].upper() + synonym_text[1:]
+
+    # Add period if missing
+    if not formatted.endswith('.'):
+        formatted += '.'
+
+    return formatted
+
+
+def handle_synonym_to_definition(term):
+    """
+    Handle moving synonyms that are actually definitions to definition field.
+    Triggered when term has reviewNote about synonyms.
+    Returns True if handled, False otherwise.
+    """
+    # Check if term has synonym-related review note
+    has_synonym_note = False
+    if term.get('reviewNotes'):
+        for note in term['reviewNotes']:
+            note_text = note['note'] if isinstance(note, dict) else note
+            if 'synonym' in note_text.lower():
+                has_synonym_note = True
+                break
+
+    if not has_synonym_note:
+        return False
+
+    meanings = term.get('meanings', [])
+    if not meanings:
+        return False
+
+    # Check if has synonyms
+    meaning = meanings[0]
+    synonyms = meaning.get('synonyms', [])
+
+    if not synonyms:
+        return False
+
+    # Show current state
+    print(f"\n{'='*60}")
+    print("🔧 SYNONYM → DEFINITION")
+    print(f"{'='*60}\n")
+
+    print("Term has been flagged for synonyms issue.")
+    print(f"\nCurrent definition:")
+    print(f"  {meaning.get('definition', 'N/A')}\n")
+
+    print(f"Current synonyms:")
+    for i, syn in enumerate(synonyms, 1):
+        print(f"  {i}. {syn}")
+
+    print()
+
+    # Ask if user wants to move synonyms to definition
+    choice = get_user_choice("Move synonyms to definition field? [y/n]: ", ['y', 'n'])
+
+    if choice == 'n':
+        print("⏭️  Skipped synonym move\n")
+        return False
+
+    # Build new definition
+    current_definition = meaning.get('definition', '')
+
+    # Format each synonym as sentence and add to definition
+    formatted_synonyms = [format_synonym_as_sentence(syn) for syn in synonyms]
+    new_definition = current_definition + "\n\n" + "\n\n".join(formatted_synonyms)
+
+    print("\nPreview (will open in editor):")
+    print(f"  {new_definition[:150]}...\n")
+
+    # Edit in text editor
+    final_definition = edit_text_in_editor(new_definition, "definitsioon")
+
+    # Update
+    meaning['definition'] = final_definition
+    meaning['synonyms'] = []  # Clear synonyms
+    meanings[0] = meaning
+    term['meanings'] = meanings
+
+    print("✅ Synonyms moved to definition!")
+
+    # Show updated term
+    display_complete_term_info(term, title="UPDATED TERM INFO")
+
+    return True
+
+
+def edit_definition(term):
+    """Edit only the definition field using text editor. Returns without marking as reviewed."""
+    meanings = term.get('meanings', [])
+
+    if not meanings:
+        print("❌ No meanings found\n")
+        return term
+
+    # If multiple meanings, ask which one
+    if len(meanings) > 1:
+        meaning_index = select_meaning_to_edit(meanings)
+        if meaning_index is None:
+            print("❌ Edit cancelled\n")
+            return term
+    else:
+        meaning_index = 0
+
+    meaning = meanings[meaning_index]
+    current_definition = meaning.get('definition', '')
+
+    print(f"\n📝 Opening definition in text editor...\n")
+    print("Current definition:")
+    print(f"  {current_definition}\n")
+
+    edited_definition = edit_text_in_editor(current_definition, "definitsioon")
+
+    if edited_definition == current_definition:
+        print("⚠️  No changes made\n")
+        return term
+
+    # Update definition
+    meaning['definition'] = edited_definition
+    meanings[meaning_index] = meaning
+    term['meanings'] = meanings
+
+    print("✅ Definition updated!")
+
+    # Show updated term
+    display_complete_term_info(term, title="UPDATED TERM INFO")
+
+    # Handle review notes cleanup
+    if term.get('reviewNotes'):
+        handle_review_notes_cleanup(term)
+
+    return term  # Return without marking as reviewed - loop back to menu
 
 
 def edit_term_meanings(term):
@@ -1010,7 +1214,17 @@ def main():
 
     # Review loop
     modified = False
+    previous_term_name = None
+
     for i, term in enumerate(terms_to_review, 1):
+        # Show transition from previous term to next
+        if previous_term_name:
+            print(f"\n{'='*60}")
+            print(f"🔚 EXITING TERM: {previous_term_name}")
+            print()
+            print(f"🆕 NEXT TERM: {i}/{len(terms_to_review)}")
+            print(f"{'='*60}")
+
         # Determine filter type for display
         if term.get('reviewedAt') and term.get('needsReview', False):
             filter_type = "REVIEWED - FLAGGED"
@@ -1028,10 +1242,20 @@ def main():
             total=len(terms_to_review)
         )
 
+        # Remember this term name for next transition
+        previous_term_name = term['term']
+
         # Check for normalization issues (Issue #25)
         skip_to_next = handle_normalization_issues(term)
         if skip_to_next:
             continue
+
+        # Check for synonym → definition issue (Issue #26)
+        synonym_handled = handle_synonym_to_definition(term)
+        if synonym_handled:
+            # Save after synonym move
+            if save_with_feedback(terms, input_file):
+                modified = True
 
         # Inner loop for term actions (allows returning after [t] edit)
         while True:
@@ -1046,6 +1270,11 @@ def main():
                 if save_with_feedback(terms, input_file):
                     modified = True
                 break
+            elif action == 'd':
+                edit_definition(term)
+                if save_with_feedback(terms, input_file):
+                    modified = True
+                # Loop back to menu - don't break
             elif action == 's':
                 skip_term(term)
                 break
