@@ -4,7 +4,18 @@
 
 ## 🎯 Next Session
 
-### Priority 1: Continue Manual Review
+### Priority 1: Finish Unflagged Review (11 terms)
+**Goal:** Complete the clean, easy cases
+**Filter:** [8] Unflagged - not reviewed yet
+**Expected:** Quick wins, feel progress
+
+### Priority 2: Update Progress Stats
+**After completing unflagged:**
+- Update TODO.md with new counts
+- Commit progress
+- Celebrate milestone if reached
+
+### Priority 3: Continue Manual Review
 **Link:** https://github.com/Anne-dot/aca-translation-assistant/issues/21
 **Status:** Review workflow improved significantly (2025-10-25)
 **Current:** 149/334 terms reviewed (44.6%)
