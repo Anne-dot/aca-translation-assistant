@@ -224,12 +224,17 @@ def display_complete_term_info(term, title=None, index=None, total=None):
 def display_review_menu(terms):
     """Display main menu options with term counts."""
     # Calculate counts for each filter
-    flagged = sum(1 for t in terms if t.get('needsReview', False))
-    not_reviewed = sum(1 for t in terms if t.get('reviewedAt') is None)
-    reviewed_ok = sum(1 for t in terms
+    waiting = sum(1 for t in terms if t.get('waitingForUpdate', False))
+
+    # Exclude waiting terms from other filters
+    active_terms = [t for t in terms if not t.get('waitingForUpdate', False)]
+
+    flagged = sum(1 for t in active_terms if t.get('needsReview', False))
+    not_reviewed = sum(1 for t in active_terms if t.get('reviewedAt') is None)
+    reviewed_ok = sum(1 for t in active_terms
                       if t.get('reviewedAt') is not None
                       and not t.get('needsReview', False))
-    reviewed_flagged = sum(1 for t in terms
+    reviewed_flagged = sum(1 for t in active_terms
                            if t.get('reviewedAt') is not None
                            and t.get('needsReview', False))
     total = len(terms)
@@ -244,6 +249,7 @@ def display_review_menu(terms):
     print(f"  [4] Reviewed - Flagged ({reviewed_flagged} terms)")
     print(f"  [5] All terms ({total} terms)")
     print(f"  [6] Show statistics and exit")
+    print(f"  [7] Waiting for update ({waiting} terms)")
     print("  [q] Quit\n")
 
 
@@ -266,13 +272,14 @@ def display_term_action_menu():
     print("  [n] Edit review notes")
     print("  [m] Merge - Should be single meaning")
     print("  [f] Flag - Mark for review")
+    print("  [w] Waiting for update - Needs script enhancement")
     print("  [s] Skip - Review later")
     print("  [q] Quit review\n")
 
 
 def get_review_action():
     """Get user's review action for current term."""
-    return get_user_choice("Your choice: ", ['a', 'd', 'e', 't', 'n', 'm', 'f', 's', 'q'])
+    return get_user_choice("Your choice: ", ['a', 'd', 'e', 't', 'n', 'm', 'f', 'w', 's', 'q'])
 
 
 # ============================================================
@@ -544,6 +551,37 @@ def flag_term_for_review(term):
     return term
 
 
+def mark_waiting_for_update(term):
+    """Mark term as waiting for script update."""
+    note = input("Reason for waiting (optional): ").strip()
+
+    term['waitingForUpdate'] = True
+    term['waitingForUpdateAt'] = datetime.now().isoformat()
+    term['reviewedAt'] = datetime.now().isoformat()  # Mark as reviewed
+
+    # Clear needsReview flag if set
+    if 'needsReview' in term:
+        term['needsReview'] = False
+
+    if note:
+        if 'reviewNotes' not in term:
+            term['reviewNotes'] = []
+        term['reviewNotes'].append({
+            'date': datetime.now().isoformat(),
+            'note': f"Waiting for update: {note}"
+        })
+
+    if 'actions' not in term:
+        term['actions'] = []
+    term['actions'].append({
+        'type': 'waiting_for_update',
+        'date': datetime.now().isoformat()
+    })
+
+    print("⏳ Marked as waiting for script update!\n")
+    return term
+
+
 # ============================================================
 # EDIT FUNCTIONALITY - FIELD OPERATIONS
 # ============================================================
@@ -743,11 +781,15 @@ def handle_synonym_to_definition(term):
     print()
 
     # Ask if user wants to move synonyms to definition
-    choice = get_user_choice("Move synonyms to definition field? [y/n]: ", ['y', 'n'])
+    choice = get_user_choice("Move synonyms to definition field? [y/n/w]: ", ['y', 'n', 'w'])
 
     if choice == 'n':
         print("⏭️  Skipped synonym move\n")
         return False
+    elif choice == 'w':
+        print("⏳ Marking term as waiting for script update...\n")
+        mark_waiting_for_update(term)
+        return False  # Don't process synonyms
 
     # Build new definition
     current_definition = meaning.get('definition', '')
@@ -1197,19 +1239,27 @@ def merge_term_meanings(term):
 def filter_terms_for_review(terms, review_mode):
     """Filter terms based on review mode."""
     if review_mode == '1':  # Flagged
-        return [t for t in terms if t.get('needsReview', False)]
+        return [t for t in terms
+                if t.get('needsReview', False)
+                and not t.get('waitingForUpdate', False)]
     elif review_mode == '2':  # Not reviewed
-        return [t for t in terms if t.get('reviewedAt') is None]
+        return [t for t in terms
+                if t.get('reviewedAt') is None
+                and not t.get('waitingForUpdate', False)]
     elif review_mode == '3':  # Reviewed - OK
         return [t for t in terms
                 if t.get('reviewedAt') is not None
-                and not t.get('needsReview', False)]
+                and not t.get('needsReview', False)
+                and not t.get('waitingForUpdate', False)]
     elif review_mode == '4':  # Reviewed - Flagged
         return [t for t in terms
                 if t.get('reviewedAt') is not None
-                and t.get('needsReview', False)]
+                and t.get('needsReview', False)
+                and not t.get('waitingForUpdate', False)]
     elif review_mode == '5':  # All terms
         return terms
+    elif review_mode == '7':  # Waiting for update
+        return [t for t in terms if t.get('waitingForUpdate', False)]
     return []
 
 
@@ -1231,7 +1281,7 @@ def main():
 
     # Show menu with counts
     display_review_menu(terms)
-    choice = get_user_choice("Select option: ", ['1', '2', '3', '4', '5', '6', 'q'])
+    choice = get_user_choice("Select option: ", ['1', '2', '3', '4', '5', '6', '7', 'q'])
 
     if choice == 'q':
         print("\n👋 Goodbye!\n")
@@ -1323,6 +1373,11 @@ def main():
                 if save_with_feedback(terms, input_file):
                     modified = True
                 # Loop back to menu - don't break (consistent with [t] and [n])
+            elif action == 'w':
+                mark_waiting_for_update(term)
+                if save_with_feedback(terms, input_file):
+                    modified = True
+                break  # Move to next term
             elif action == 'e':
                 edit_term_meanings(term)
                 if save_with_feedback(terms, input_file):

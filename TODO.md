@@ -40,3 +40,30 @@
 ## 💡 Future Ideas
 
 **See:** [FUTURE_IDEAS.md](FUTURE_IDEAS.md)
+
+---
+
+## 🗂️ Housekeeping
+
+### Folder cleanup needed
+- Review and organize project folders
+- Clean up temporary files
+- Archive old/unused files
+
+### UX review needed
+- Review menu consistency: letters vs numbers for options
+- Consider standardizing all menus to one format
+
+### Script refactoring needed
+- `interactive_glossary_terms_review.py` is 1414 lines - too large
+- Needs ADHD-friendly restructuring
+- Consider splitting into modules:
+  - Display functions
+  - Edit functions
+  - Normalization handling
+  - Review workflow
+- Or consider OOP approach with classes:
+  - `TermReviewer` class
+  - `NormalizationHandler` class
+  - `SynonymHandler` class
+- Goal: More maintainable, easier to navigate and understand
