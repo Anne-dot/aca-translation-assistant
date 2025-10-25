@@ -5,6 +5,24 @@ Ideas and improvements for future implementation.
 **Purpose:** Strategy, rationale, and open questions for future work
 **Actionable Tasks:** See [TODO.md](TODO.md) for concrete next steps and execution plan
 
+---
+
+## Optimize Save Performance (Track Changed Terms)
+
+**What:** Save only modified terms instead of entire terms array
+
+**Current:** Saves all 334 terms every time (~167 KB, 10-50ms)
+
+**Future:** Track which terms changed, save only those
+
+**Why:** Better performance when term count grows (>1000 terms)
+
+**When:** Not urgent now (334 terms is small), optimize when database grows
+
+**How:** Add change tracking to term objects or TermReviewer class
+
+**Priority:** Low (works fine for current size)
+
 ## Auto-translate Notes Field
 
 **What:** Automatically translate English notes/explanations to Estonian

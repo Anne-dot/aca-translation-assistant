@@ -4,36 +4,35 @@
 
 ## 🎯 Next Session
 
-### Priority 1: Finish Unflagged Review (11 terms)
-**Goal:** Complete the clean, easy cases
-**Filter:** [8] Unflagged - not reviewed yet
-**Expected:** Quick wins, feel progress
+### Priority 1: Issue #27 - OOP Refactoring (IN PROGRESS)
+**Link:** https://github.com/Anne-dot/aca-translation-assistant/issues/27
+**Status:** Design phase ~40% complete
+**Current:** Discussing workflow/validation/error handling rules
 
-### Priority 2: Update docs/PROGRESS_UPDATES.md
-**After completing session:**
-- Document today's work (2025-10-25)
-- Review progress and insights
-- Commit updates
+**Decisions made:**
+- ✅ Full OOP structure (no hybrid)
+- ✅ Display + Interaction separation
+- ✅ Save behavior rules
+- ✅ UX rules (nano edit, letter menus)
 
-### Priority 3: Script Refactoring
-**Status:** `interactive_glossary_terms_review.py` is 1414 lines - too large
-**Goal:** ADHD-friendly restructuring before continuing review
-**Options:**
-- Split into modules (Display, Edit, Normalization, Review workflow)
-- OR OOP approach (TermReviewer, NormalizationHandler, SynonymHandler classes)
-**Why now:** Prevent technical debt from slowing down review work
+**Still to decide:**
+- ⏸️ Review workflow rules
+- ⏸️ Validation rules
+- ⏸️ Error handling rules
+- ⏸️ Finalize class structure
 
-### Priority 4: UX Review
-**Goal:** Menu consistency check
-**Task:** Review menu options - standardize letters vs numbers format
+**Next steps:**
+1. Finish design discussions
+2. Finalize class structure
+3. Start Phase 1 implementation
 
-### Priority 5: Folder Cleanup
+### Priority 2: Folder Cleanup
 **Tasks:**
 - Review and organize project folders
 - Clean up temporary files
 - Archive old/unused files
 
-### Priority 6: Issue #26 - Synonym Edge Cases
+### Priority 3: Issue #26 - Synonym Edge Cases
 **Status:** 6 edge cases documented
 **Task:** Design and implement solutions for:
 1. Multi-meaning terms
@@ -43,7 +42,7 @@
 5. Annotations in synonyms
 6. Slash notation in synonyms
 
-### Priority 7: Continue Manual Review
+### Priority 4: Continue Manual Review
 **Link:** https://github.com/Anne-dot/aca-translation-assistant/issues/21
 **Current:** 149/334 terms reviewed (44.6%)
   - Reviewed - OK: 116 terms
