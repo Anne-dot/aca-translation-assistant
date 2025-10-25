@@ -251,9 +251,11 @@ def display_review_menu(terms):
     print(f"  [6] Show statistics and exit")
     print(f"  [7] Waiting for update ({waiting} terms)")
 
-    # Unflagged = not flagged and not waiting
-    unflagged = sum(1 for t in active_terms if not t.get('needsReview', False))
-    print(f"  [8] Unflagged ({unflagged} terms)")
+    # Unflagged = not flagged, not waiting, and not reviewed yet
+    unflagged = sum(1 for t in active_terms
+                    if not t.get('needsReview', False)
+                    and t.get('reviewedAt') is None)
+    print(f"  [8] Unflagged - not reviewed yet ({unflagged} terms)")
     print("  [q] Quit\n")
 
 
@@ -1276,10 +1278,11 @@ def filter_terms_for_review(terms, review_mode):
         return terms
     elif review_mode == '7':  # Waiting for update
         return [t for t in terms if t.get('waitingForUpdate', False)]
-    elif review_mode == '8':  # Unflagged
+    elif review_mode == '8':  # Unflagged - not reviewed yet
         return [t for t in terms
                 if not t.get('needsReview', False)
-                and not t.get('waitingForUpdate', False)]
+                and not t.get('waitingForUpdate', False)
+                and t.get('reviewedAt') is None]
     return []
 
 
