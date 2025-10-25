@@ -6,28 +6,34 @@
 
 ### Priority 1: Continue Manual Review
 **Link:** https://github.com/Anne-dot/aca-translation-assistant/issues/21
-**Status:** Review workflow improved significantly (2025-10-24)
-**Current:** 40/334 terms reviewed (12.0%)
-**Flagged:** 183 terms (54.8%) - includes 84 AI-flagged for synonyms issue
+**Status:** Review workflow improved significantly (2025-10-25)
+**Current:** 149/334 terms reviewed (44.6%)
+  - Reviewed - OK: 116 terms
+  - Reviewed - Flagged: 19 terms
+  - Waiting for update: 14 terms
+**Remaining:** 185 terms not reviewed (55.4%)
+  - Unflagged: 11 terms (clean cases)
+  - Flagged: 193 terms (need review)
 **Tool:** `python3 src/interactive_glossary_terms_review.py`
 
-**Recent improvements (2025-10-24):**
-- ✅ Flag/filter behavior now consistent
-- ✅ Flag tied to review notes lifecycle
-- ✅ All edit actions auto-save
-- ✅ DRY principles applied throughout
-- ✅ AI flagged 84 terms with definitions in synonyms field
+**Recent improvements (2025-10-25):**
+- ✅ Auto-flagging normalization issues on startup
+- ✅ 6 edge cases documented in Issue #26
+- ✅ Waiting for update functionality [w]
+- ✅ Filter [8] for unflagged, not-reviewed terms
+- ✅ Normalization issues always shown in term display
 
 **Available features:**
-- Normalization detection (automatic for categories 4, 5, 7, 8)
+- Auto-flagging: normalization issues detected on startup
+- Normalization detection (categories 4, 5, 7, 8)
 - Term field editing `[t]` with grammaticalType splitting
 - Review notes auto-cleanup after all edit actions
-- Flag action `[f]` loops back to menu
-- Separate filters: [3] Reviewed-OK, [4] Reviewed-Flagged
+- Waiting for update `[w]` - mark terms needing script enhancement
+- 8 filters including unflagged and waiting categories
 
 **Active issues:**
 - Issue #25: Term normalization policy (OPEN - ongoing decisions)
-- Issue #26: Synonyms vs definitions (84 terms flagged by AI)
+- Issue #26: Synonym data quality patterns (6 edge cases documented)
 
 ---
 
