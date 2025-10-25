@@ -9,11 +9,11 @@
 **Filter:** [8] Unflagged - not reviewed yet
 **Expected:** Quick wins, feel progress
 
-### Priority 2: Update Progress Stats
-**After completing unflagged:**
-- Update TODO.md with new counts
-- Commit progress
-- Celebrate milestone if reached
+### Priority 2: Update docs/PROGRESS_UPDATES.md
+**After completing session:**
+- Document today's work (2025-10-25)
+- Review progress and insights
+- Commit updates
 
 ### Priority 3: Continue Manual Review
 **Link:** https://github.com/Anne-dot/aca-translation-assistant/issues/21
