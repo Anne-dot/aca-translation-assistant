@@ -1302,6 +1302,19 @@ def main():
     terms = load_json_file(input_file)
     print(f"✅ Loaded {len(terms)} terms\n")
 
+    # Auto-flag terms with normalization issues
+    flagged_count = 0
+    for term in terms:
+        if not term.get('needsReview', False):  # Only if not already flagged
+            issues = collect_normalization_issues(term)
+            if issues:
+                term['needsReview'] = True
+                flagged_count += 1
+
+    if flagged_count > 0:
+        save_json_file(terms, input_file)
+        print(f"🚩 Auto-flagged {flagged_count} terms with normalization issues\n")
+
     # Show menu with counts
     display_review_menu(terms)
     choice = get_user_choice("Select option: ", ['1', '2', '3', '4', '5', '6', '7', '8', 'q'])
