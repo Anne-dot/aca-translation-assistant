@@ -15,15 +15,41 @@
 - Review progress and insights
 - Commit updates
 
-### Priority 3: Continue Manual Review
+### Priority 3: Script Refactoring
+**Status:** `interactive_glossary_terms_review.py` is 1414 lines - too large
+**Goal:** ADHD-friendly restructuring before continuing review
+**Options:**
+- Split into modules (Display, Edit, Normalization, Review workflow)
+- OR OOP approach (TermReviewer, NormalizationHandler, SynonymHandler classes)
+**Why now:** Prevent technical debt from slowing down review work
+
+### Priority 4: UX Review
+**Goal:** Menu consistency check
+**Task:** Review menu options - standardize letters vs numbers format
+
+### Priority 5: Folder Cleanup
+**Tasks:**
+- Review and organize project folders
+- Clean up temporary files
+- Archive old/unused files
+
+### Priority 6: Issue #26 - Synonym Edge Cases
+**Status:** 6 edge cases documented
+**Task:** Design and implement solutions for:
+1. Multi-meaning terms
+2. Partial synonyms
+3. Synonym/seeAlso overlap
+4. Conditional synonyms
+5. Annotations in synonyms
+6. Slash notation in synonyms
+
+### Priority 7: Continue Manual Review
 **Link:** https://github.com/Anne-dot/aca-translation-assistant/issues/21
-**Status:** Review workflow improved significantly (2025-10-25)
 **Current:** 149/334 terms reviewed (44.6%)
   - Reviewed - OK: 116 terms
   - Reviewed - Flagged: 19 terms
   - Waiting for update: 14 terms
 **Remaining:** 185 terms not reviewed (55.4%)
-  - Unflagged: 11 terms (clean cases)
   - Flagged: 193 terms (need review)
 **Tool:** `python3 src/interactive_glossary_terms_review.py`
 
@@ -57,30 +83,3 @@
 ## 💡 Future Ideas
 
 **See:** [FUTURE_IDEAS.md](FUTURE_IDEAS.md)
-
----
-
-## 🗂️ Housekeeping
-
-### Folder cleanup needed
-- Review and organize project folders
-- Clean up temporary files
-- Archive old/unused files
-
-### UX review needed
-- Review menu consistency: letters vs numbers for options
-- Consider standardizing all menus to one format
-
-### Script refactoring needed
-- `interactive_glossary_terms_review.py` is 1414 lines - too large
-- Needs ADHD-friendly restructuring
-- Consider splitting into modules:
-  - Display functions
-  - Edit functions
-  - Normalization handling
-  - Review workflow
-- Or consider OOP approach with classes:
-  - `TermReviewer` class
-  - `NormalizationHandler` class
-  - `SynonymHandler` class
-- Goal: More maintainable, easier to navigate and understand
