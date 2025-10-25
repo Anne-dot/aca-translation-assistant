@@ -141,7 +141,8 @@ def display_complete_term_info(term, title=None, index=None, total=None):
     if issues:
         print(f"\n⚠️  Normalization issues detected:")
         for issue in issues:
-            print(f"   • {issue['description']}")
+            desc = get_issue_description_short(issue)
+            print(f"   • {desc}")
 
     # Normalization action (if confirmed)
     if term.get('normalizationAction'):
@@ -272,6 +273,25 @@ def get_review_action():
 # ============================================================
 # NORMALIZATION HANDLING - Issue #25
 # ============================================================
+
+def get_issue_description_short(issue):
+    """Generate short description for normalization issue."""
+    category = issue['category']
+
+    if category == 'split_parentheses':
+        return f"Term contains parentheses: {issue['pattern']}"
+    elif category == 'remove_asterisk':
+        return "Term contains asterisk marker"
+    elif category == 'split_multiple_comma':
+        return "Term contains comma (multiple terms)"
+    elif category == 'split_multiple_slash':
+        return "Term contains slash (multiple terms)"
+    elif category == 'clean_seealso':
+        entries = [item['entry'] for item in issue['suggestion']]
+        return f"seeAlso contains term variants: {', '.join(entries[:2])}"
+    else:
+        return f"Unknown issue: {category}"
+
 
 def display_normalization_issue(issue):
     """Display detected normalization issue with suggestion."""
