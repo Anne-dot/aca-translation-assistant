@@ -250,6 +250,10 @@ def display_review_menu(terms):
     print(f"  [5] All terms ({total} terms)")
     print(f"  [6] Show statistics and exit")
     print(f"  [7] Waiting for update ({waiting} terms)")
+
+    # Unflagged = not flagged and not waiting
+    unflagged = sum(1 for t in active_terms if not t.get('needsReview', False))
+    print(f"  [8] Unflagged ({unflagged} terms)")
     print("  [q] Quit\n")
 
 
@@ -1272,6 +1276,10 @@ def filter_terms_for_review(terms, review_mode):
         return terms
     elif review_mode == '7':  # Waiting for update
         return [t for t in terms if t.get('waitingForUpdate', False)]
+    elif review_mode == '8':  # Unflagged
+        return [t for t in terms
+                if not t.get('needsReview', False)
+                and not t.get('waitingForUpdate', False)]
     return []
 
 
@@ -1293,7 +1301,7 @@ def main():
 
     # Show menu with counts
     display_review_menu(terms)
-    choice = get_user_choice("Select option: ", ['1', '2', '3', '4', '5', '6', '7', 'q'])
+    choice = get_user_choice("Select option: ", ['1', '2', '3', '4', '5', '6', '7', '8', 'q'])
 
     if choice == 'q':
         print("\n👋 Goodbye!\n")
