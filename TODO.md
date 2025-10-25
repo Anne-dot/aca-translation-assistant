@@ -6,14 +6,28 @@
 
 ### Priority 1: Continue Manual Review
 **Link:** https://github.com/Anne-dot/aca-translation-assistant/issues/21
-**Status:** Review tools ready (Issue #25 complete)
-**Current:** ~3/334 terms reviewed (flagged filter active)
+**Status:** Review workflow improved significantly (2025-10-24)
+**Current:** 40/334 terms reviewed (12.0%)
+**Flagged:** 183 terms (54.8%) - includes 84 AI-flagged for synonyms issue
 **Tool:** `python3 src/interactive_glossary_terms_review.py`
 
-**Features available:**
+**Recent improvements (2025-10-24):**
+- ✅ Flag/filter behavior now consistent
+- ✅ Flag tied to review notes lifecycle
+- ✅ All edit actions auto-save
+- ✅ DRY principles applied throughout
+- ✅ AI flagged 84 terms with definitions in synonyms field
+
+**Available features:**
 - Normalization detection (automatic for categories 4, 5, 7, 8)
 - Term field editing `[t]` with grammaticalType splitting
-- Review notes auto-cleanup
+- Review notes auto-cleanup after all edit actions
+- Flag action `[f]` loops back to menu
+- Separate filters: [3] Reviewed-OK, [4] Reviewed-Flagged
+
+**Active issues:**
+- Issue #25: Term normalization policy (OPEN - ongoing decisions)
+- Issue #26: Synonyms vs definitions (84 terms flagged by AI)
 
 ---
 
@@ -25,4 +39,4 @@
 
 ## 💡 Future Ideas
 
-**See:** [FUTURE_IDEAS.md](../FUTURE_IDEAS.md)
+**See:** [FUTURE_IDEAS.md](FUTURE_IDEAS.md)
