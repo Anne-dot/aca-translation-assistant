@@ -781,7 +781,11 @@ def handle_synonym_to_definition(term):
     print()
 
     # Ask if user wants to move synonyms to definition
-    choice = get_user_choice("Move synonyms to definition field? [y/n/w]: ", ['y', 'n', 'w'])
+    print("Options:")
+    print("  [y] Yes - Move synonyms to definition")
+    print("  [n] No - Skip for now")
+    print("  [w] Waiting - Mark as waiting for script update")
+    choice = get_user_choice("Your choice: ", ['y', 'n', 'w'])
 
     if choice == 'n':
         print("⏭️  Skipped synonym move\n")
@@ -1071,6 +1075,8 @@ def handle_review_notes_cleanup(term):
         # Clear all notes
         del term['reviewNotes']
         print("✅ All review notes cleared\n")
+        # Show updated term
+        display_complete_term_info(term, title="UPDATED TERM INFO")
 
     elif choice == 'i':
         # Interactive - ask about each note
@@ -1108,7 +1114,10 @@ def handle_review_notes_cleanup(term):
         print()
         display_complete_term_info(term, title="UPDATED TERM INFO")
 
-    # If 'n' - do nothing, keep all notes
+    elif choice == 'n':
+        # Keep all notes - show term to confirm
+        print("✅ All review notes kept\n")
+        display_complete_term_info(term, title="UPDATED TERM INFO")
 
 
 # ============================================================
