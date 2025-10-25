@@ -13,7 +13,7 @@ ANALYSIS_RESULTS = {
     'blind spot': (False, '"denial" and "block" are genuine synonyms'),
     'caregiver(s)': (False, '"caretaker" and "guardian" are genuine synonyms'),
     'challenge zone': (True, '"mindset of embracing change..." is a definition explaining the concept'),
-    'character defect': (False, '"shortcoming" and "trait out of balance" are genuine synonyms'),
+    'character defect': (True, '"shortcoming" is genuine synonym, but "trait out of balance" is a definition/explanation'),
     'chemically addicted': (True, '"physically dependent on a substance" is a definition, not alternative term'),
     'child within': (False, '"inner child" is a genuine synonym'),
     'childhood neglect': (False, '"childhood abandonment" is a genuine synonym'),

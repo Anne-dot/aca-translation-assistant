@@ -136,6 +136,13 @@ def display_complete_term_info(term, title=None, index=None, total=None):
     else:
         print(f"seeAlso: N/A")
 
+    # Normalization detection (always show if detected)
+    issues = collect_normalization_issues(term)
+    if issues:
+        print(f"\n⚠️  Normalization issues detected:")
+        for issue in issues:
+            print(f"   • {issue['description']}")
+
     # Normalization action (if confirmed)
     if term.get('normalizationAction'):
         action = term['normalizationAction']
