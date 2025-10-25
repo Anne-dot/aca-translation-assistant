@@ -1662,3 +1662,139 @@ Olen väsinud ja unine. Kavatsen seda õhtupoole jätkata, kui lapsed juba magav
 Mul on tunne, et ma hakkan nüüd sisulise poole peal edusamme tegema. Olen u 200 terminit läbi vaadanud ja sellega seoses tekkis vajadus normaliseerimise ja standardiseerimise otsuste järele. Selleks on plaanis teha uurimistööd. Järgmisena tahaksin ära parandada avastatud bugid ja flagimise skripti täiendada. Tunnen pettumust, et minu progress ei salvestunud, kuid võib olla oli see isegi hea, sest aitab tulevikus süstemaatilisemalt töötada.
 
 ---
+
+## 📅 2025-10-25 (Reede)
+
+### 🎉 Täna Saavutatud
+
+#### 1. ✅ Täielik Sünonüümide Analüüs (333 terminit)
+
+**Eesmärk:** Otsustada iga termini kohta individuaalselt - kas synonyms väljal on õiged sünonüümid või definitsioonid?
+
+**Metoodika:**
+- Põhimõte: "Sünonüüm on sõna/väljend, millega saab termi näitelauses asendada ja tähendus säilib"
+- Iga termin individuaalselt analüüsitud (mitte automaatne heuristika!)
+- Kõik otsused dokumenteeritud põhjendustega
+
+**Tulemused:**
+- 📊 Analüüsitud: 333 terminit
+- 🚩 Flagida: 109 terminit (sünonüümid on definitsioonid)
+- ✅ OK: 224 terminit (õiged sünonüümid)
+
+**Näited:**
+- `character defect` → "trait out of balance" on definitsioon ❌
+- `blindsided` → "shocked by something you didn't expect" on definitsioon ❌
+- `fellow traveler` → "traveling companion" on õige sünonüüm ✅
+
+**Täiendus:** Leitud 2 edge case'i, kus lihtne jah/ei ei toimi (dokumenteeritud Issue #26-s)
+
+#### 2. 🆕 "Waiting for Update" Funktsioon
+
+**Probleem:** Terminid, mis vajavad skripti täiendusi, tuleb korduvalt skippida
+
+**Lahendus:**
+- Uus staatus: `waitingForUpdate: true`
+- Uus filter [7] "Waiting for update"
+- Uus action [w] nii peamenüüs kui ka synonym handler'is
+- Kõik teised filtrid välistavad automaatselt waiting termineid
+- Timestamp: `waitingForUpdateAt`
+
+**Kasutus:**
+- Synonym/seeAlso overlap juhtumid
+- Conditional synonyms (vajavad täiendavat loogika)
+- Annotations (vajavad normaliseerimist)
+
+#### 3. 🔍 6 Edge Case'i Dokumenteeritud (Issue #26)
+
+**Issue #26 kommentaarid:** 10 kommentaari 25. oktoobril
+
+**Edge Case 1:** Multi-meaning terms
+- Näide: `ACA` - sünonüümid sobivad osade tähenduste, mitte kõigi jaoks
+
+**Edge Case 2:** Partial synonyms
+- Näide: `blindsided` - sama väljas definitsioon JA sünonüüm
+
+**Edge Case 3:** Synonym/seeAlso overlap
+- Näide: `critical inner parent` - 3/4 sünonüümist on ka seeAlso väljas
+
+**Edge Case 4:** Conditional/context-dependent synonyms
+- Näide: `failure` - "for a situation: defeat / for a person: loser"
+
+**Edge Case 5:** Annotations in synonyms
+- Näide: `gossip` - "tittle-tattle (informal)" ja "rumor(s)"
+- Sisaldab metadata `(informal)` ja `(s)` märgistusi
+
+**Edge Case 6:** Slash notation in synonyms
+- Näide: `substance abuser` - "alcohol/drug misuser"
+- Slash peaks olema eraldi kirjetena
+
+#### 4. ⚡ Auto-Flagging Normaliseerimisele
+
+**Probleem:** Normaliseerimise probleemidega terminid ei ilmunud "Flagged" filtris
+
+**Lahendus:**
+- Skript kontrollib startup'il kõiki termineid
+- Tuvastatakse normaliseerimise probleemid (parentheses, slash, comma, asterisk, seeAlso format)
+- Automaatselt seab `needsReview: true`
+- Näitab kasutajale, mitu terminit flagiti
+
+**Tulemus:**
+- Normaliseerimise terminid ilmuvad nüüd õigesti filter [1] "Flagged" all
+- Filter [8] "Unflagged" ei näita enam normaliseerimise juhtumeid
+
+#### 5. 🎨 UX Täiendused
+
+**Review notes cleanup:**
+- Näitab PRAEGUST TERMI SEISU enne küsimist
+- Näitab UUENDATUD TERMI INFOT pärast valikut
+- Kõigil kolmel valikul: [y] Clear all, [n] Keep all, [i] Interactive
+
+**Synonym handler:**
+- Selgitab valikuid ENNE küsimist
+- [y] Move to definition, [n] Skip, [w] Waiting for update
+
+**Normaliseerimise kuvamine:**
+- Alati nähtav termi kuvamisel (mitte ainult pärast [t] action'it)
+- Lühikesed kirjeldused: `get_issue_description_short()`
+
+**Filter [8] parandus:**
+- Algne versioon näitas kõiki unflagged termineid
+- Parandatud: ainult unflagged JA not-yet-reviewed
+- Välistab juba läbi vaadatud-OK termineid (duplikaat töö)
+
+#### 6. 📝 Dokumentatsiooni Uuendused
+
+**GitHub:**
+- Issue #26: 10 kommentaari (6 edge case'i)
+- TODO.md: Progress update, priorities ümberkorraldatud
+- Refactoring enne review jätkamist (vältida tehnilist võlga)
+
+**Commits:** 14 commiti
+- Auto-flagging feature
+- Waiting for update workflow
+- UX improvements
+- Filter fixes
+- Documentation updates
+
+### 📊 Praegune Seis
+
+**Progress:**
+- **Läbi vaadatud:** 160/334 terminit (47.9%)
+  - Reviewed - OK: 127 terminit
+  - Reviewed - Flagged: 19 terminit
+  - Waiting for update: 14 terminit
+- **Järel:** 174 terminit (52.1%)
+  - Flagged: 193 terminit
+  - Unflagged: 0 terminit ✅
+
+**Unflagged review complete!** 🎉
+
+**Issues:**
+- Issue #25: Term normalization policy (OPEN)
+- Issue #26: Synonym edge cases (6 documented, solutions pending)
+
+### 💭 Tunne
+
+Ma tunnen, et ma hakkan jõudma lähemale olukorrale, kus saan erinevatel väljadel kirjeldatud info masinloetavasse formaati ja puhastatuks ja normaliseerituks saada. 127 terminit on reviewed ja ok seisundis, mul on järgmiseks automatiseeritud puhastamiseks mitu juhtu ja mõtet kirja pandud. Ma olen palju vaeva näinud ja täna hakkas minu jaoks tunneli lõpust valgus paistma. Ma usun, et järgmise nädala jooksul jõuan review tehtud ja info sobivate väljade vahel ümber struktureerida ning lisada kaks teist allikat glossarysse.
+
+---
