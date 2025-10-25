@@ -153,7 +153,12 @@ def display_complete_term_info(term, title=None, index=None, total=None):
         elif action['type'] == 'split_multiple_comma':
             print(f"   → Split into: {', '.join(action['data'])}")
         elif action['type'] == 'clean_seealso':
-            print(f"   → Clean seeAlso entries: {action['data']}")
+            # Handle both dict format (auto-detected) and string format (user entered)
+            if action['data'] and isinstance(action['data'][0], dict):
+                entries = [item['entry'] for item in action['data']]
+            else:
+                entries = action['data']
+            print(f"   → Clean seeAlso entries: {', '.join(entries)}")
         elif action['type'] == 'remove_parentheses':
             print(f"   → Split: {', '.join(action['data'])}")
         elif action['type'] == 'remove_asterisk':
@@ -390,8 +395,16 @@ def display_updated_term_info(term):
         action = term['normalizationAction']
         print(f"\n{'='*60}")
         print(f"normalizationAction: {action['type']}")
+
         if isinstance(action['data'], list):
-            print(f"   → {len(action['data'])} terms: {', '.join(action['data'])}")
+            # Check if list contains dicts (clean_seealso) or strings (split operations)
+            if action['data'] and isinstance(action['data'][0], dict):
+                # clean_seealso format: [{'entry': '...', 'reason': '...'}]
+                entries = [item['entry'] for item in action['data']]
+                print(f"   → {len(entries)} entries to clean: {', '.join(entries)}")
+            else:
+                # split operations format: ['term1', 'term2']
+                print(f"   → {len(action['data'])} terms: {', '.join(action['data'])}")
         elif isinstance(action['data'], dict):
             if 'cleanTerm' in action['data']:
                 print(f"   → Clean term: {action['data']['cleanTerm']}")
