@@ -1057,6 +1057,9 @@ def handle_review_notes_cleanup(term):
     Ask user whether to clear review notes after editing term fields.
     Options: clear all, keep all, or interactive (choose per note).
     """
+    # Show current term state BEFORE asking
+    display_complete_term_info(term, title="CURRENT TERM STATE")
+
     # Show existing review notes first
     notes = term['reviewNotes']
     print("Review notes:")
