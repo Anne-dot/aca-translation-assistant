@@ -124,7 +124,6 @@ def get_issue_description(term, check_type):
     descriptions = {
         'missing_term': "Missing term field",
         'missing_type': "Missing grammaticalType",
-        'contains_idiom': "Contains idiom - may need special handling for translation",
         'missing_definition': "Missing definition in meanings"
     }
     return descriptions.get(check_type, "Unknown issue")
@@ -136,7 +135,7 @@ def check_and_flag_critical_issues(terms):
         ('missing_term', has_missing_term),
         ('missing_type', has_missing_type),
         ('multiple_types', has_multiple_types),
-        ('contains_idiom', has_idiom),
+        # ('contains_idiom', has_idiom),  # Removed: redundant with multiple_types check
         ('missing_definition', has_missing_definition)
     ]
 
@@ -182,7 +181,6 @@ def display_critical_results(critical_results):
         'missing_term': "Missing term field",
         'missing_type': "Missing grammaticalType",
         'multiple_types': "Multiple type markers",
-        'contains_idiom': "Contains idiom",
         'missing_definition': "Missing definition"
     }
 
