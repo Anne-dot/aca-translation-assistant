@@ -7,6 +7,38 @@ Ideas and improvements for future implementation.
 
 ---
 
+## Comprehensive Logging System (Production Ready)
+
+**What:** Add full logging infrastructure when moving to production
+
+**Current (Phase 1):** Console output + git commits (sufficient for personal use)
+
+**Future (Phase 2+):** Structured logging system
+- **ERROR:** Crashes, file corruption, validation failures, unhandled exceptions
+- **WARNING:** Recovery actions taken, git push failures, deprecated features used
+- **INFO:** Session stats, user actions, terms reviewed, performance metrics
+- **AUDIT:** Who changed what and when (multi-user scenario)
+
+**Why:**
+- **Debugging:** Troubleshoot issues without user being present
+- **Audit trail:** Track changes over time (especially multi-user)
+- **Performance monitoring:** Identify slow operations
+- **User support:** Help users recover from errors
+- **Production requirement:** Professional applications need logging
+
+**When:** Before moving to production or when multiple users involved
+
+**How:**
+- Use Python logging module (stdlib)
+- Log rotation: daily/weekly files
+- Log location: `logs/review_YYYYMMDD.log`
+- Configurable log levels
+- Separate error log: `logs/errors.log`
+
+**Priority:** Low (personal use now), High (production later)
+
+---
+
 ## Optimize Save Performance (Track Changed Terms)
 
 **What:** Save only modified terms instead of entire terms array
