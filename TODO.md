@@ -6,25 +6,27 @@
 
 ### Priority 1: Issue #27 - OOP Refactoring (IN PROGRESS)
 **Link:** https://github.com/Anne-dot/aca-translation-assistant/issues/27
-**Status:** Design phase ~40% complete
-**Current:** Discussing workflow/validation/error handling rules
+**Status:** Design phase ~90% complete
+**Current:** Ready to finalize class structure
 
-**Decisions made:**
+**Completed (2025-10-26):**
 - ✅ Full OOP structure (no hybrid)
 - ✅ Display + Interaction separation
-- ✅ Save behavior rules
+- ✅ Review workflow rules (5 actions: a/s/e/f/w)
+- ✅ Editor format (human-readable, CAPS labels)
+- ✅ Editor syntax (auto-fix, review notes)
+- ✅ Validation rules (structure preservation)
+- ✅ Error handling (crash recovery, backup, git automation)
+- ✅ Save behavior rules (transaction pattern)
 - ✅ UX rules (nano edit, letter menus)
 
 **Still to decide:**
-- ⏸️ Review workflow rules
-- ⏸️ Validation rules
-- ⏸️ Error handling rules
-- ⏸️ Finalize class structure
+- ⏸️ Finalize class structure (classes, methods, responsibilities)
 
 **Next steps:**
-1. Finish design discussions
-2. Finalize class structure
-3. Start Phase 1 implementation
+1. Finalize class structure (1-2 hours discussion)
+2. Document final design in Issue #27
+3. Start Phase 1 implementation (new session)
 
 ### Priority 2: Folder Cleanup
 **Tasks:**
