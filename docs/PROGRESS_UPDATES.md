@@ -1798,3 +1798,145 @@ Mul on tunne, et ma hakkan nüüd sisulise poole peal edusamme tegema. Olen u 20
 Ma tunnen, et ma hakkan jõudma lähemale olukorrale, kus saan erinevatel väljadel kirjeldatud info masinloetavasse formaati ja puhastatuks ja normaliseerituks saada. 127 terminit on reviewed ja ok seisundis, mul on järgmiseks automatiseeritud puhastamiseks mitu juhtu ja mõtet kirja pandud. Ma olen palju vaeva näinud ja täna hakkas minu jaoks tunneli lõpust valgus paistma. Ma usun, et järgmise nädala jooksul jõuan review tehtud ja info sobivate väljade vahel ümber struktureerida ning lisada kaks teist allikat glossarysse.
 
 ---
+
+## 📅 2025-10-26 (Pühapäev) 🌟
+
+### 🎉 Täna Saavutatud - SUUR TÖÖ!
+
+**Sessioon:** 15:33 - 21:51 (6h 18min)
+**Fookus:** Issue #27 - OOP Refactoring Design (Design phase: 40% → 90%)
+
+#### 1. Complete Workflow Design ✅
+
+**5 põhivalikut finaliseeritud:**
+- `[a]` Accept - reviewedAt set, needsReview=False
+- `[s]` Skip - ei muuda midagi
+- `[e]` Edit - interactive editor loop
+- `[f]` Flag - multi-input, needsReview=True
+- `[w]` Waiting - multi-input, needsReview=True + waitingForUpdate=True
+
+**Flag & Waiting input:**
+- Smart parsing: numbrid + vaba tekst (nt: `1,3 custom text`)
+- Multi-input loop: "Add another note? [y/n]"
+- Constants file: FLAG_REASONS, WAITING_PATTERNS
+
+**Accept behavior:**
+- Accept ignoreerib warnings (no confirmation)
+- Warnings on dünaamised (genereeritud iga sessiooni alguses)
+- Ainult [f] false positive on püsiv
+
+#### 2. Complete Editor Format ✅
+
+**Human-readable structured text:**
+```
+TERM: abuse (n)
+SEE ALSO: emotional abuse, neglect
+
+=== MEANING 1 ===
+SYNONYMS: mistreatment, assault
+DEFINITION: Cruel or violent treatment...
+EXAMPLE: Regular abuse of any kind...
+
+*** AUTO-DETECTED ISSUES ***
+[] M1: Synonym needs review
+
+*** REVIEW NOTES ***
+[] Needs ATL approval [2025-10-25]
+```
+
+**Editor syntax:**
+- Auto-fix: `[]` → `[a]` (accept) või `[f]` (false positive)
+- Review notes: kustuta `[]` = mark done
+- CAPS labels (TERM, SYNONYMS, DEFINITION, etc.)
+- Legend faili lõpus
+
+**Näited:**
+- 4 näidet dokumenteeritud (simple, 2-meanings, complex, very complex)
+- Kõik mahuvad ekraanile
+
+#### 3. Complete Validation Rules ✅
+
+**Phase 1: Structure preservation**
+- Critical: term exists, structure intact, valid JSON
+- Parsing validation: TERM, MEANING sections, arrays
+- Blokerib save kui viga
+- Phase 2: import validation (tulevikus)
+
+#### 4. Complete Error Handling ✅
+
+**6 komponenti finaliseeritud:**
+
+**A) Crash Recovery - Transaction Pattern:**
+- Write to .tmp → validate → atomic rename
+- Startup recovery kui .tmp exists (ask user: r/d/c)
+- Crashid ei korrupteeri data't
+
+**B) Interrupt Handling (Ctrl+C):**
+- Immediate exit with "Last save: ..." message
+- Emergency exit, aga [q] on normal exit
+
+**C) File Corruption Recovery:**
+- Parse error → show error + recovery options
+- Backup/temp file timestamps nähtavad
+- User valib parima recovery path
+
+**D) Backup Strategy:**
+- Iga save teeb .backup eelmisest versioonist
+- 1 step back võimalus
+- Git = long-term history
+
+**E) Git Automation:**
+- Session end [q] → auto commit + push
+- Grouped commit message:
+  ```
+  Accepted: term1, term2, term3
+  Flagged: term4, term5
+  Waiting: term6
+  ```
+- Push failure handling
+
+**F) Logging Strategy:**
+- Defer to Phase 2 (production)
+- FUTURE_IDEAS.md dokumenteeritud
+- Praegu: console + git commits piisab
+
+#### 5. Documentation
+
+**GitHub Issue #27 - 11 kommentaari:**
+- 15:33 - Workflow Design Discussion
+- 16:15 - Workflow Decision: 5 põhivalikut
+- 16:36 - Edit Workflow Design
+- 16:40 - Action State Changes
+- 16:41 - Flag & Waiting Input Details
+- 16:59 - Editor Syntax Decisions
+- 17:45 - Human-Readable Editor Format
+- 17:49 - Editor Format - Complex Examples
+- 17:52 - Accept Behavior with Warnings
+- 17:59 - Validation Rules - Phase 1
+- 18:32 - Error Handling Rules - Complete
+
+**Files updated:**
+- FUTURE_IDEAS.md: logging strategy
+- TODO.md: progress 40% → 90%
+
+#### 6. Commits & Push
+
+**Commits:**
+- `a72f7d8` - Add logging strategy to FUTURE_IDEAS [20:32]
+- `d7ba99c` - Update TODO.md: Issue #27 design phase 90% complete [21:51]
+
+**Pushed:** 2 korda (20:32, 21:51)
+
+### 📊 Statistika
+
+**Design decisions made:** 50+ otsust
+**GitHub comments:** 11 kommentaari (15:33-18:32)
+**Commits:** 2
+**Session length:** 6h 18min
+**Design completeness:** 90% (ainult class structure jääb)
+
+### 💭 Minu Tunne
+
+WAU! Täna oli SUUR töö! 🌟 Terve süsteem läbi mõeldud - workflow, editor, validation, error handling. Kõik otsused dokumenteeritud ja põhjendatud. Design on nüüd 90% valmis! Ma tunnen end väga uhkena selle üle, kui palju ma täna ära tegin.
+
+---
