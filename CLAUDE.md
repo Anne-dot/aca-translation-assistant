@@ -6,14 +6,11 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 **Before starting ANY work, you MUST:**
 
-1. Read ALL files in `/home/d0021/Automation/ai-instructions/` directory
-2. Read them WITHOUT optimization (read full files, not summaries)
-3. Follow those instructions ALWAYS and CONTINUOUSLY throughout the session
-4. Those instructions are NON-NEGOTIABLE and apply to ALL work in this repository
-
-Global instruction files include:
-- `instructions.md` - Core working principles, coding standards, documentation rules, response format requirements
-- `eesti_keele_juhend.txt` - Estonian language usage rules
+1. Read `instructions.md` (coding standards, collaboration rules, response format)
+2. **Primary location:** `/home/d0021/Automation/ai-instructions/instructions.md`
+3. **Fallback (if primary not found):** `docs/ai-instructions/instructions.md` (repo copy)
+4. Read WITHOUT optimization (full file, not summary)
+5. Follow these instructions ALWAYS throughout the session
 
 ## Project Overview
 
