@@ -63,3 +63,4 @@ secrets/
 .pytest_cache/
 .coverage
 htmlcov/
+.credentials/
