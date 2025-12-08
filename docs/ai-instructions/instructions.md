@@ -31,6 +31,15 @@ Response pacing:
 
 ## 2. Collaboration (MANDATORY)
 
+### Session Start: Permissions Check (KOHUSTUSLIK!)
+
+Iga sessiooni alguses:
+1. Käivita `/permissions` käsk ja kontrolli aktiivseid lubasid
+2. Kui näed vanu "always allow" lubasid eelmistest sessioonidest, hoiata kasutajat
+3. Bash käskude "always allow" load on PÜSIVAD projekti kausta kohta - need jäävad alles ka pärast sessiooni lõppu
+
+**NB:** Kasutaja tahab ALATI kinnitada serveri muudatusi enne nende tegemist. Ära eelda, et varasem "always allow" luba kehtib.
+
 Project-specific guidelines:
 - ALWAYS read project-specific instructions before starting
 - Check for README.md, NEXT_SESSION.md, TODO.md
@@ -418,5 +427,22 @@ Examples of what TO do:
 
 ---
 
-**Last updated:** 2025-11-19
+## 8. API päringute käsitlemine
+
+**JSON vastuste kontrollimine:**
+Enne jq kasutamist kontrolli, kas API vastus on kehtiv JSON:
+```bash
+response=$(curl -s "API_URL")
+if echo "$response" | jq . >/dev/null 2>&1; then
+    echo "$response" | jq -r '...'
+else
+    echo "API error: $response"
+fi
+```
+
+**Miks:** API-d võivad vastata rate limit veaga, HTML-iga või muuga, mis pole JSON. Ilma kontrollita jq annab segase parse errori.
+
+---
+
+**Last updated:** 2025-12-03
 **LIVING document - evolves with needs**
