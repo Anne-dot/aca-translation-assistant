@@ -26,10 +26,12 @@ Labels for categorizing issues:
 
 ## Assignee
 
-| Label | Description |
-|-------|-------------|
-| `anne` | Assigned to Anne |
-| `henri` | Assigned to Henri |
+Use GitHub's built-in assignee feature (not labels).
+
+```bash
+gh issue list --assignee @me
+gh issue list --assignee henri-klimt
+```
 
 ## Milestones
 
@@ -55,13 +57,13 @@ Labels for categorizing issues:
 ## Usage
 
 Issues can have multiple labels combined, e.g.:
-- `m1-terminology-database` + `1a-collect-eki-terminology` + `wf-in-progress` + `henri`
+- `m1-terminology-database` + `1a-collect-eki-terminology` + `wf-in-progress`
 
 ### CLI Examples
 
 ```bash
-# List Henri's issues
-gh issue list --label "henri"
+# List my issues
+gh issue list --assignee @me
 
 # List in-progress issues
 gh issue list --label "wf-in-progress"
