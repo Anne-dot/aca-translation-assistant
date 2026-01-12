@@ -180,8 +180,11 @@ Add structured `part_of_speech` field to all senses (not free text in notes).
 ### ✅ DECISION: GitHub Organization Structure
 
 **Date:** 2025-10-14
+**Updated:** 2026-01-12
 
-**Milestones = Development Phases (4 major milestones)**
+**Milestones = Development Phases (5 milestones)**
+- **M0 "Project Foundation"** - Infrastructure, coding standards, documentation, tooling (supports all milestones)
+- **M1-M4** - Feature milestones (Terminology Database → CLI Tool → Community Tool → Multi-Language)
 - Each milestone represents one complete development phase
 - Clear, high-level goals
 - Human-readable names (not codes like "phase-1")

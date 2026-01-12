@@ -7,7 +7,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 **Before starting ANY work, you MUST:**
 
 1. Read `instructions.md` (coding standards, collaboration rules, response format)
-2. **Primary location:** `/home/d0021/Automation/ai-instructions/instructions.md`
+2. **Primary location:** `/home/d0021/Automation/05-ai-instructions/instructions.md`
 3. **Fallback (if primary not found):** `docs/ai-instructions/instructions.md` (repo copy)
 4. Read WITHOUT optimization (full file, not summary)
 5. Follow these instructions ALWAYS throughout the session
