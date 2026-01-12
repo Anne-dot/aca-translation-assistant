@@ -165,7 +165,8 @@ When a function/pattern repeats 2+ times across files:
 - Extract to `src/utils.py`
 - Import where needed
 
-**See [Issue #31](https://github.com/Anne-dot/aca-translation-assistant/issues/31)** - rules for when/how to split code need to be defined.
+### When to Split Modules
+Split when file grows and natural grouping emerges. Don't force splitting - keep code in one file as long as it's logical and understandable. When it grows and natural groupings appear, then split. ([Issue #31](https://github.com/Anne-dot/aca-translation-assistant/issues/31))
 
 ---
 
