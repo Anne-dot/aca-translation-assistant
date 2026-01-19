@@ -10,8 +10,10 @@ def clean_text_for_csv(text):
 def shorten_text(text, max_length = 100):
 	if not text: text = ""
 	cleaned = clean_text_for_csv(text)
-	return cleaned if len(cleaned) <= max_length
-		else (cleaned[:max_length] + "...")
+	if len(cleaned) <= max_length:
+	    return cleaned
+	else:
+	    return (cleaned[:max_length] + "...")
 
 def clean_text(text):
 	if not text: text = ''
