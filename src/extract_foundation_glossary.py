@@ -5,7 +5,10 @@ Part of PHASE 1, STEP 1.1 - Data Pipeline Implementation.
 """
 
 from pathlib import Path
-import tools.filemanage
+from tools.filemanage import (
+    ensure_directory_exists,
+    read_csv_file, save_json_file
+)
 from tools.text_processing import (
 	clean_text, parse_list_from_text,
 	detect_numbered_meanings, split_numbered_text
