@@ -47,7 +47,7 @@ data/paevamotted/
 !README.txt
 
 # Credentials and sensitive data
-*.json
+# *.json
 # IMPORTANT! Allow public EKI terminology data and analysis results
 !data/eki_terminid/*.json
 !data/glossary_analüüs.json
