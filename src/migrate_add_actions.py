@@ -7,8 +7,7 @@ the actions tracking feature was implemented.
 """
 
 from pathlib import Path
-from utils import load_json_file, save_json_file
-
+from tools.filemanage import load_json_file, save_json_file
 
 def migrate_reviewed_terms(terms):
     """Add actions array to already reviewed terms."""
