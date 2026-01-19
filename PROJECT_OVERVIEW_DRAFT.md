@@ -68,36 +68,25 @@ Estonian ACA/ATL materials - building a systematic terminology database as the f
 
 **Sub-steps:**
 
-**1A. Glossary Sources** ✅ COMPLETE (Issue #18)
-- **Source:** ACA WSO official glossary materials
-- **Input files:** 3 sources, ~500 unique terms total (preliminary estimate from initial comparison)
+**1A. Glossary Sources (EN)**
+- **Goal:** Standards-compliant EN terminology database, ready for translation
+- **Input:** 3 WSO sources (~500 terms)
   - `data/ACA_WSO/foundation_glossary.csv` - PRIMARY
   - `data/ACA_WSO/TMS-Glossary-template.xlsx` - Supplementary
   - `data/ACA_WSO/Translation-Foundation-Glossary-Template-2025.docx` - Supplementary
-- **Documentation:** See `data/ACA_WSO/README.md` and Issue #18
-- **Output:** Master glossary JSON (following Issue #14 schema)
-- **Status:** Sources identified and documented
+- **Deliverable:** JSON with all terms, structure finalized, field decisions documented
+- **Standard:** TBX-Basic v1.2.1 (ISO 30042:2019), see Issue #14 schema (may evolve based on actual needs)
+- **Documentation:** `data/ACA_WSO/README.md`, `research/standards/`
+- **Issues:** `gh issue list --label "1a-glossary-sources" --repo Anne-dot/aca-translation-assistant`
 
 **1B. Add Estonian Translations** ⏳ FUTURE
-- **Sources:**
-  - https://sonaveeb.ee/ (includes EKI terminology databases)
-  - https://aare.edu.ee/dictionary.html
-  - Other Estonian dictionaries as needed
-- **Output:** Terms with Estonian equivalents from authoritative sources
+- Details to be defined at end of 1A, before starting 1B
 
 **1C. Extract from Existing ATL Translations** ⏳ FUTURE
-- **Sources:** All ATL in-use translations
-  - Daily meditations (päevamõtted)
-  - 12 Steps text (12 sammu tekst)
-  - Website translations (kodulehe tõlked)
-- **Output:** Practically tested translations in real ACA/ATL context
-- **Note:** ATL translations may differ from dictionary sources - both are valuable
+- Details to be defined at end of 1B, before starting 1C
 
 **1D. Collaboration Opportunities** 💡 OPTIONAL
-- **EKI Terminology Database Team:** Contact established for potential future cooperation (see `EKI_terminibaasid_kontaktid.md` for details)
-- **Glossary Team:** Request feedback and clarifications on translation choices
-- **Community Review:** Share terminology database with ATL community for validation
-- Note: These are opportunities to improve quality, not required steps
+- Details to be defined at end of 1C, before starting 1D
 
 **Terminology Database Structure:**
 
