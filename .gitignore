@@ -41,6 +41,7 @@ Thumbs.db
 
 # Project specific
 data/paevamotted/
+deprecated/**/*.json
 *.docx
 *.txt
 !requirements.txt
