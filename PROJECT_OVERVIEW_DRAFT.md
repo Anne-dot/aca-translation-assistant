@@ -90,31 +90,13 @@ Estonian ACA/ATL materials - building a systematic terminology database as the f
 
 **Terminology Database Structure:**
 
-Each term contains:
-- 🇬🇧 **English term** (e.g., "Inner Child")
-- 🇪🇪 **Estonian equivalent(s)** - can have multiple variants from different sources:
-  - **EKI equivalent** + EKI link (authoritative source)
-  - **Daily text translation** + date reference (practically tested)
-  - **Glossary draft** (initial translation, needs verification)
-- 📝 **Comments/explanations** (context, nuances)
-- 📚 **Usage examples** (sentences from original texts and translations)
-- 🔗 **Source categories** (EKI / daily text / draft)
-- 🏷️ **Topics** (e.g., "12-step terminology", "therapy", "emotions")
-- ⭐ **Approval status** (officially approved or not)
-- ❓ **TODO: Preferred variant** - if multiple equivalents exist, how to mark preferred/in-use variant?
-
-**Database Format Decision:**
-- ❓ **Needs decision:** SQLite / JSON / CSV?
-  - **SQLite** - structured database, good query capabilities, ready for web app
-  - **JSON** - human-readable, easy for version control, good for backups
-  - **CSV** - simplest, can open/edit in Excel/Google Sheets
-- 💡 **Recommendation:** Start with JSON (simple, readable, git-friendly) + SQLite in future
-
-**Output:** Complete terminology database ready for use in Milestone 2 (CLI tool)
+See `research/standards/JSON_SCHEMA_SPECIFICATION.md` for complete field definitions.
 
 ---
 
 ### Milestone 2: Personal CLI Translation Assistant
+
+(Initial design, to be reviewed after M1 completion)
 
 **Goal:** Interactive command-line tool for solo translator work.
 
@@ -125,11 +107,11 @@ Each term contains:
 - Interactive term-by-term workflow
 - Saves new translations back to database
 
-**Status:** Not started (requires Milestone 1 completion)
-
 ---
 
 ### Milestone 3: Estonian Community Tool
+
+(Initial design, to be reviewed after M2 completion)
 
 **Goal:** Web-based interface for Estonian ACA/ATL translation team collaboration.
 
@@ -140,11 +122,11 @@ Each term contains:
 - Shares terminology database from Milestone 1
 - Progress tracking
 
-**Status:** Future milestone (requires Milestone 2 completion)
-
 ---
 
 ### Milestone 4: Multi-Language Platform
+
+(Initial design, to be reviewed after M3 completion)
 
 **Goal:** Universal translation platform for global ACA communities, especially small-language speakers.
 
@@ -154,8 +136,6 @@ Each term contains:
 - Organization management
 - Open source and free for ACA communities
 - API for integration
-
-**Status:** Future vision (requires Milestone 3 completion)
 
 ---
 
