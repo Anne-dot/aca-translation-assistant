@@ -8,8 +8,7 @@ Issue #23 - Automated quality check script
 
 from pathlib import Path
 from datetime import datetime
-from utils import load_json_file, save_json_file
-
+from tools.filemanage import load_json_file, save_json_file
 
 # ============================================================
 # QUALITY CHECK FUNCTIONS

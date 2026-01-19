@@ -12,8 +12,9 @@ import tempfile
 import subprocess
 from pathlib import Path
 from datetime import datetime
-import tools.filemanage
-import tools.normalization_detection
+
+from tools.filemanage import load_json_file, save_json_file
+from tools.normalization_detection import collect_normalization_issues
 
 
 # ============================================================
