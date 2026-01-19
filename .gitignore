@@ -51,6 +51,7 @@ data/paevamotted/
 # IMPORTANT! Allow public EKI terminology data and analysis results
 !data/eki_terminid/*.json
 !data/glossary_analüüs.json
+!data/1_extracted/*.json
 !terminibaas.json.example
 !schemas/*.json
 credentials/
