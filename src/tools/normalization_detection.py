@@ -1,5 +1,6 @@
 """
-use collect_normalization_issues to get an array of normalization issues in a term
+use collect_normalization_issues to get an array of
+normalization issues in a term.
 """
 
 def detect_comma_separated_terms(term_data):

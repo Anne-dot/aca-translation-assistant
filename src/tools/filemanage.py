@@ -12,8 +12,7 @@ def ensure_directory_exists(file_path):
 
 
 
-# TODO: was `read_csv_file`
-def read_csv_rows(file_path, delimiter = '\t'):
+def read_csv_file(file_path, delimiter = '\t'):
 	with open(file_path, 'r', encoding = 'utf-8') as f:
 		reader = csv.reader(f, delimiter=delimiter)
 		for row in reader:
