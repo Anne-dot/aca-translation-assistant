@@ -58,6 +58,10 @@ deprecated/**/*.json
 credentials/
 secrets/
 
+# Local planning (personal, not shared)
+TODO.md
+NEXT_SESSION.md
+
 # Logs
 *.log
 
