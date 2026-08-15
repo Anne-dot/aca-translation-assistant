@@ -60,8 +60,7 @@ def find_definitions_in_synonyms():
 		elif any(
 			synonym.strip().split()[0].endswith('ing') and
 			len(synonym) > 30 for synonym in synonyms
-		):
-			reason = f'Gerund with explanation: "{synonym_text}"'
+		): reason = f'Gerund with explanation: "{synonym_text}"'
 		
 		if reason: to_flag[term] = reason
 	

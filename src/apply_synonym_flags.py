@@ -1,15 +1,11 @@
 #!/usr/bin/env python3
-"""
-Apply AI synonym analysis results to foundation_raw.json.
-Flags terms where synonyms field contains definitions.
-"""
-
 import json
 from datetime import datetime
 from ai_synonym_analysis_results import ANALYSIS_RESULTS
 
 def main():
-	print("Applying AI synonym analysis results...\n")
+	print("Applying AI synonym analysis results...")
+	print()
 	
 	input_file = "data/1_extracted/foundation_raw.json"
 	
@@ -19,7 +15,6 @@ def main():
 	flagged_count = 0
 	skipped_count = 0
 	
-	# Apply flags
 	for term in terms:
 		if term_name := term['term'] not in ANALYSIS_RESULTS: continue
 		

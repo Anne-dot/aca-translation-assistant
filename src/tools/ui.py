@@ -1,2 +1,1 @@
-def page_break()
-	print("=" * 80)
+def page_break(): return ("=" * 80)
