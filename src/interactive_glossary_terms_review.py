@@ -342,9 +342,7 @@ def check_and_handle_normalization_issues(term):
 	[4] Skip term
 """)
 		
-		choice = 
-		
-		match get_user_choice("> ", ["1", "2", "3", "4"])
+		match get_user_choice("> ", ["1", "2", "3", "4"]):
 			case "1":
 				action = {
 					"type": issue["category"],
@@ -486,8 +484,6 @@ Options:
 	[e] Enter new value
 	[d] Delete (set to empty)
 """)
-	
-	choice = 
 	
 	match get_user_choice("> ", ["k", "e", "d"]):
 		case "k":
@@ -1085,7 +1081,7 @@ def display_review_menu(terms):
 """)
 
 def main():
-	input_file = Path("data/1_extracted/foundation_raw.json")
+	input_file = Path("~/data/1_extracted/foundation_raw.json")
 	
 	sys.stdin.reconfigure(encoding = "utf-8")
 	print()
@@ -1214,7 +1210,7 @@ def main():
 	
 	print()
 	print(
-		f"+ All changes saved to `{input_file}`." if modified /
+		f"+ All changes saved to `{input_file}`." if modified \
 		else "- No changes made."
 	)
 	print()

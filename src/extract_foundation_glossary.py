@@ -74,7 +74,7 @@ def parse_term_row(row):
 			"seeAlso":         see_also,
 			"pageReferences":  clean_text(pageReferences),
 			"needsReview":     True,
-			"reviewedAt":      None
+			"reviewedAt":      None,
 			"meanings":        meanings,
 		}
 	else:
