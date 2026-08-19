@@ -1081,7 +1081,7 @@ def display_review_menu(terms):
 """)
 
 def main():
-	input_file = Path("~/data/1_extracted/foundation_raw.json")
+	input_file = Path("/data/1_extracted/foundation_raw.json")
 	
 	sys.stdin.reconfigure(encoding = "utf-8")
 	print()

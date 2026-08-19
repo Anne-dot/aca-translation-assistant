@@ -2,30 +2,6 @@
 import json
 from datetime import datetime
 
-# AI analysis results
-# TODO: [[
-# 	what is this here for? it should be in some external file,
-# 	either as a csv or, more likely, a human-readable note -
-# 	that is, if it's even needed anymore.
-# ]] - Henri
-TERMS_TO_FLAG = {
-	'blindsided':            'Synonym "shocked by something you didn\'t expect" is a definition/explanation, not an alternative term',
-	'challenge zone':        'Synonym "mindset of embracing change..." is a definition explaining the concept',
-	'chemically addicted':   'Synonym "physically dependent on a substance" is a definition, not an alternative term',
-	'comfort zone':          'Need to check - likely definition',
-	'conscious contact':     'Need to check - likely definition',
-	'critical inner parent': 'Need to check - likely definition',
-	'cross-addiction':       'Need to check - likely definition',
-	'cycle of dysfunction':  'Need to check - likely definition',
-	'denial':                'Need to check - likely definition',
-	'differentiate':         'Need to check - likely definition',
-	'discount feelings':     'Need to check - likely definition',
-	'dissociate':            'Need to check - likely definition',
-	'distorted image':       'Need to check - likely definition',
-	'dysfunctional family':  'Need to check - likely definition',
-	'emotional sobriety':    'Need to check - likely definition',
-}
-
 def find_definitions_in_synonyms():
 	with open(
 		'data/1_extracted/synonyms_analysis.json',
