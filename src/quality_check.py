@@ -4,9 +4,6 @@ from datetime import datetime
 from tools.filemanage import load_json_file, save_json_file
 from tools.ui import page_break
 
-# TODO: UNUSED
-# def has_idiom(term): return 'idiom' in term.get('grammaticalType', '').lower()
-
 def flag_term_for_issue(term, issue_description):
 	term["needsReview"] = True
 	if "reviewNotes" not in term: term["reviewNotes"] = []
