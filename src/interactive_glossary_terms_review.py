@@ -1027,16 +1027,18 @@ def filter_terms_for_review(terms, review_mode):
 	
 	# TODO: optimise this to select and store the used function once
 	
-	def not_waiting(t): return not t["waitingForUpdate"]
+	def not_waiting(t): return not t.get("waitingForUpdate", False)
 	
 	check = {
-		"1": lambda t : t["needsReview"]                         and not_waiting(t),
-		"2": lambda t : t["reviewedAt"] is None                  and not_waiting(t),
-		"3": lambda t : t["reviewedAt"] and not t["needsReview"] and not_waiting(t),
-		"4": lambda t : t["reviewedAt"] and t["needsReview"]     and not_waiting(t),
-		"7": lambda t : t["waitingForUpdate"],
-		"8": lambda t :
-			t["reviewedAt"] is None and not t["needsReview"]     and not_waiting(t),
+		"1": lambda t : t.get("needsReview", False) and not_waiting(t),
+		"2": lambda t : t.get("reviewedAt") is None and not_waiting(t),
+		"3": lambda t : t.get("reviewedAt")
+			and not t.get("needsReview", False) and not_waiting(t),
+		"4": lambda t : t.get("reviewedAt")
+			and t.get("needsReview", False) and not_waiting(t),
+		"7": lambda t : t.get("waitingForUpdate", False),
+		"8": lambda t : t.get("reviewedAt") is None
+			and not t.get("needsReview", False) and not_waiting(t),
 	}
 	
 	if review_mode in check:
