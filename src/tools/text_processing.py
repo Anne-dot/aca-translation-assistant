@@ -11,9 +11,9 @@ def shorten_text(text, max_length = 100):
 	if not text: text = ""
 	cleaned = clean_text_for_csv(text)
 	if len(cleaned) <= max_length:
-	    return cleaned
+		return cleaned
 	else:
-	    return (cleaned[:max_length] + "...")
+		return (cleaned[:max_length] + "...")
 
 def clean_text(text):
 	if not text: text = ''
@@ -29,7 +29,7 @@ def parse_list_from_text(text, delimiter=','):
 
 
 
-def detect_numbered_meanings(text):
+def has_numbered_meanings(text):
 	if not text:
 		return False
 	# starts with "1." or has "\n1." followed by space

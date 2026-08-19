@@ -2,6 +2,8 @@
 
 **Extraction and processing scripts for ACA Translation Assistant**
 
+FIXME: this README is severely outdated in various ways by this point
+
 ---
 
 ## 📁 Current Scripts
