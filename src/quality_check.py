@@ -51,7 +51,7 @@ def check_and_flag_critical_issues(terms):
 		"multiple_types":     lambda t: "," in t.get("grammaticalType", ""),
 		"missing_definition": lambda t: (
 			not t.get("meanings", [])
-			or any(not mget("definition", "").strip() for m in t["meanings"])
+			or any(not m.get("definition", "").strip() for m in t["meanings"])
 		)
 	}
 	
@@ -62,7 +62,7 @@ def check_and_flag_critical_issues(terms):
 		was_flagged = False
 		
 		for check, func in checks.items():
-			if check_func(term):
+			if func(term):
 				results[check].append(term.get("term", "<unnamed>"))
 				flag_term_for_issue(term, get_issue_description(term, check))
 				was_flagged = True
