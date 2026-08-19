@@ -126,11 +126,5 @@ This project is currently in private development. Future goal: open-source gift 
 
 ---
 
-## 📝 License
-
-MIT License (to be added)
-
----
-
 **Version:** 0.5.0-alpha
 **Last Updated:** 2025-10-22
