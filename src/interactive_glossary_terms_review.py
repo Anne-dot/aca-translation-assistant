@@ -436,6 +436,9 @@ def flag_term_for_review(term):
 
 
 
+# "Waiting for update" parks a term until the review tool gains a
+# feature it needs (script enhancement). Parked terms are excluded
+# from normal review filters and retrievable via menu filter [7].
 def mark_waiting_for_update(term):
 	term["waitingForUpdate"]   = True
 	term["waitingForUpdateAt"] = datetime.now().isoformat()
