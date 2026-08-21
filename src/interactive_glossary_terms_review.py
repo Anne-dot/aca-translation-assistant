@@ -527,14 +527,14 @@ def select_meaning_to_edit(meanings):
 	if len(meanings) == 1: return 0
 	
 	print()
-	print("Which meaning to edit? (1 ... {i+1})")
+	print(f"Which meaning to edit? (1 ... {len(meanings)})")
 	print("[0] to cancel")
 	
 	choice = int(get_user_choice(
 		"> ", [str(i) for i in range(len(meanings) + 1)]
 	))
 	
-	return none if choice == 0 else choice - 1
+	return None if choice == 0 else choice - 1
 
 
 
