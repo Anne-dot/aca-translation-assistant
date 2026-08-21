@@ -42,7 +42,8 @@ See detailed documentation: [ACA_WSO/README.md](ACA_WSO/README.md)
 - Terms: 334
 - Script: `src/extract_foundation_glossary.py`
 - Structure: Terms with meanings array, auto-split multiple definitions
-- Fields: term, grammaticalType, seeAlso, meanings[], pageReferences, needsReview, reviewedAt, actions[], reviewNotes[]
+- Fields: term, grammaticalType, seeAlso, meanings[], pageReferences, needsReview, reviewedAt, actions[], reviewNotes[], waitingForUpdate, waitingForUpdateAt
+- `waitingForUpdate` / `waitingForUpdateAt`: term is parked until the review tool gains a feature it needs ("waiting for script update"). Parked terms are excluded from normal review filters and listed via review-tool filter [7].
 
 **Status:** Initial review complete. Waiting for human-based TBX analysis (Issue #51).
 - Total terms: 334

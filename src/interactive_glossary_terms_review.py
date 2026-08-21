@@ -192,22 +192,20 @@ Please choose from: {", ".join(valid_choices)}
 # NORMALIZATION HANDLING - Issue #25                                           #
 #==============================================================================#
 def get_issue_description_short(issue):
-	category = issue["category"]
-	
-	options = {
-		"split_parentheses":   f"Term contains parentheses: {issue['pattern']}",
-		"remove_asterisk":      "Term contains asterisk marker",
-		"split_multiple_comma": "Term contains comma (multiple terms)",
-		"split_multiple_slash": "Term contains slash (multiple terms)",
-	}
-	
-	if category == "clean_seealso":
-		entries = [item["entry"] for item in issue["suggestion"]]
-		return f"seeAlso contains term variants: {', '.join(entries[:2])}"
-	elif category in options:
-		return options[category]
-	else:
-		return f"Unknown issue: {category}"
+	match issue["category"]:
+		case "split_parentheses":
+			return f"Term contains parentheses: {issue['pattern']}"
+		case "remove_asterisk":
+			return "Term contains asterisk marker"
+		case "split_multiple_comma":
+			return "Term contains comma (multiple terms)"
+		case "split_multiple_slash":
+			return "Term contains slash (multiple terms)"
+		case "clean_seealso":
+			entries = [item["entry"] for item in issue["suggestion"]]
+			return f"seeAlso contains term variants: {', '.join(entries[:2])}"
+		case _:
+			return f"Unknown issue: {issue['category']}"
 
 
 
@@ -436,6 +434,9 @@ def flag_term_for_review(term):
 
 
 
+# "Waiting for update" parks a term until the review tool gains a
+# feature it needs (script enhancement). Parked terms are excluded
+# from normal review filters and retrievable via menu filter [7].
 def mark_waiting_for_update(term):
 	term["waitingForUpdate"]   = True
 	term["waitingForUpdateAt"] = datetime.now().isoformat()
@@ -1027,16 +1028,18 @@ def filter_terms_for_review(terms, review_mode):
 	
 	# TODO: optimise this to select and store the used function once
 	
-	def not_waiting(t): return not t["waitingForUpdate"]
+	def not_waiting(t): return not t.get("waitingForUpdate", False)
 	
 	check = {
-		"1": lambda t : t["needsReview"]                         and not_waiting(t),
-		"2": lambda t : t["reviewedAt"] is None                  and not_waiting(t),
-		"3": lambda t : t["reviewedAt"] and not t["needsReview"] and not_waiting(t),
-		"4": lambda t : t["reviewedAt"] and t["needsReview"]     and not_waiting(t),
-		"7": lambda t : t["waitingForUpdate"],
-		"8": lambda t :
-			t["reviewedAt"] is None and not t["needsReview"]     and not_waiting(t),
+		"1": lambda t : t.get("needsReview", False) and not_waiting(t),
+		"2": lambda t : t.get("reviewedAt") is None and not_waiting(t),
+		"3": lambda t : t.get("reviewedAt")
+			and not t.get("needsReview", False) and not_waiting(t),
+		"4": lambda t : t.get("reviewedAt")
+			and t.get("needsReview", False) and not_waiting(t),
+		"7": lambda t : t.get("waitingForUpdate", False),
+		"8": lambda t : t.get("reviewedAt") is None
+			and not t.get("needsReview", False) and not_waiting(t),
 	}
 	
 	if review_mode in check:

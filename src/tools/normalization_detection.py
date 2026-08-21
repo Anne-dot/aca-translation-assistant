@@ -65,7 +65,7 @@ def detect_verbose_seealso(term_data):
 	
 	if issues:
 		return {
-			"category":   "Clean_seealso",
+			"category":   "clean_seealso",
 			"suggestion": issues
 		}
 	
