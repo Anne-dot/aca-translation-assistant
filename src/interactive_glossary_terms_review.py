@@ -210,11 +210,11 @@ def get_issue_description_short(issue):
 
 
 def display_normalization_issue(issue):
-	print("""
+	print(f"""
 ================================================================================
 ! NORMALIZATION ISSUE DETECTED !
 ================================================================================
-Category: {issue["category"]}
+Category: {issue['category']}
 """)
 	
 	match issue["category"]:
@@ -965,20 +965,20 @@ def merge_term_meanings(term):
 	
 	merged = reduce(merge_two_meanings, meanings)
 	
-	print("""
+	print(f"""
 ================================================================================
 MERGE PREVIEW
 ================================================================================
 
 Merged Definition:
-	{merged["definition"]}
+	{merged['definition']}
 
 Merged Synonyms:
-	{', '.join(merged['synonyms']) if merged["synonyms"] else "(none)"}
+	{', '.join(merged['synonyms']) if merged['synonyms'] else '(none)'}
 
 Merged Usage Example:
-	{merged["usageExample"]}
-	
+	{merged['usageExample']}
+
 ================================================================================
 """)
 	
