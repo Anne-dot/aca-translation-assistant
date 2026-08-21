@@ -1,11 +1,22 @@
 # TBX M1 Critical Review — Draft Analysis (Claude, Fable 5)
 
 **Status:** DRAFT — working material only, NOT confirmed decisions.
-**Date:** 2026-08-18
+**Date:** 2026-08-18, revised 2026-08-21 (TBX-Basic Version 4 findings)
 **Purpose:** Full analysis of the 6 M1-critical open questions from
 [TBX_M1_CRITICAL_REVIEW.md](TBX_M1_CRITICAL_REVIEW.md) (3 MUST + 3 SHOULD).
 Confirmed decisions go to GitHub Issue #44 as comments; this file can be deleted
 after all 6 are confirmed there.
+
+**Revision note (2026-08-21):** After the first draft was written, we discovered
+that TerminOrgs published **TBX-Basic Version 4 in November 2025** — a full,
+free, 21-page prose specification that supersedes the v1.2.1 dialect package the
+first draft cited, and closes the "no core prose available" gap (see
+[TBX_VERSIONS.md](TBX_VERSIONS.md) for the version landscape and file
+locations). This revision updates citations and adds V4-specific findings. It
+also adds a new sub-decision to MUST 1: **which specification version the
+project targets.** Citations below name the version explicitly: "v1.2.1" =
+module files now in `deprecated/TBX-Basic_v1.2.1/`; "V4" = `TBX-Basic-V4.pdf`
+(local file; download URL in TBX_VERSIONS.md).
 
 **Scope note:** The 2 "CAN defer to M2" questions (Export Degradation Strategy,
 Structural Complexity Naming) are intentionally NOT analysed here, per the review
@@ -40,6 +51,31 @@ All citations below are to these files. Where the ISO 30042:2019 core text itsel
 would be needed (we do not have the ISO document locally, only the RNG/schematron
 derived from it), I say so explicitly rather than pretending to cite it.
 
+**Update 2026-08-21:** the core-prose gap is now largely closed. TBX-Basic
+**Version 4** (TerminOrgs, Nov 2025) includes the entry structure rules in prose
+(V4 §7) and the complete list of permitted XML elements (V4 Appendix B), plus
+the core structure schemas are freely published by ISO (TR 24633-2 Annex A, in
+`iso-tr24633-2-schemas/`). Key V4 changes relative to v1.2.1 that affect the
+questions below:
+
+- `administrativeStatus` (4 values, `-admn-sts` suffixes) is **replaced by
+  `usageStatus`** with values `preferred` / `admitted` / `deprecated` — no
+  "superseded" value, and only one value per term (V4 §6.23).
+- transactionType values are now `creation` / `modification` (was
+  `origination` / `modification`) (V4 §6.22).
+- partOfSpeech picklist is now noun, verb, adjective, adverb, **properNoun**,
+  other (V4 §6.12) — still **no "phrase"**.
+- **Part of speech is mandatory per term section for any resource used in
+  automated processing (CAT tools);** for human-only resources it may be
+  omitted if a definition or context is present (V4 §9).
+- `transacGrp` contains one `transac` plus `transacNote` and/or `date` — and
+  nothing else (V4 §7.1–7.3). This settles a point the first draft had to mark
+  as interpretation: there is no slot for a free-text note inside a transaction
+  group.
+- Compliance is defined explicitly: a resource complies only if it "uses only
+  the DCs that are defined in this document" and validates against
+  core schema + basic_schema.sch (V4 §9).
+
 **The complete, closed list of TBX-Basic data categories** (Min.tbxmd +
 Basic.tbxmd):
 
@@ -63,13 +99,17 @@ Basic.tbxmd):
 Plus core-structure elements: `conceptEntry` (id), `langSec` (xml:lang),
 `termSec` (term), `note`, `transacGrp`, `date` (seen in the valid example file).
 
-Two facts from this table drive several answers below:
+Two facts from this table drive several answers below (both confirmed unchanged
+in V4):
 
 1. **partOfSpeech has NO "phrase" value** — but termType DOES have "phrase"
-   (Basic.tbxmd, termType picklist; Basic Module Definition.pdf, p. 2).
-2. **"Use TermComp module: False"** — TBX-Basic explicitly excludes the ISO
-   30042 module for term decomposition. Component relationships can only be
-   expressed as separate concepts linked with `crossReference`.
+   (v1.2.1: Basic.tbxmd; V4: §6.12 and §6.21).
+2. **Term decomposition markup is excluded.** The v1.2.1 dialect sheet states
+   "Use TermComp module: False"; V4's closed permitted-element list (Appendix B)
+   likewise contains no component markup. Component relationships can only be
+   expressed as separate concepts linked with `crossReference` (V4 §6.2: concept
+   level points to another entry's concept ID, term level to a term ID in
+   another entry).
 
 ---
 
@@ -82,12 +122,38 @@ are the custom objects (`workflow`, `_metadata`, `usageExamples`,
 `transactions.actionType`, root `metadata`) legally permitted in TBX-Basic, or
 will CAT tools reject the files or silently scrub them?
 
+### Sub-decision (new, 2026-08-21): which specification version do we target?
+
+The schema decisions (Oct 2025) were made against the v1.2.1 dialect package;
+TerminOrgs published Version 4 in Nov 2025. The export target must name one.
+
+**Option V4 (recommended):** current TerminOrgs specification; free full prose
+spec; simpler status values; clear compliance rules (§9); validation files in
+the repo (`TBX-Basic-V4-files/`, `iso-tr24633-2-schemas/`).
+- Minus: newest version — CAT-tool support may lag (worth one verification test
+  in M2 against Trados/memoQ import; the Trados 2024 manual is in
+  `research/terminology_normalization/`). Renames touch our schema enums
+  (see MUST 3, SHOULD 1).
+
+**Option v1.2.1:** what the schema was written against; era-matched to ISO
+30042:2019 tooling.
+- Minus: superseded by its own publisher; 1-page definition + module files only
+  (no prose spec); keeps the clunkier `administrativeStatus` values.
+
+Since our JSON is the master and TBX is an export projection (see below), this
+choice mostly affects the **export mapping and enum spellings**, not the
+architecture — which also means it is cheap to decide now and revisit in M2 if
+CAT-tool testing surprises us.
+
 ### What the standard says
 
 TBX-Basic is a **closed dialect**: core + Min + Basic modules, nothing else
-(TBX-Basic_Definition_v1.2.1.pdf, p. 1). There is no extension mechanism inside
-TBX-Basic. A TBX file containing a `workflow` or `_metadata` data category would
-fail schematron validation and would simply not be a TBX-Basic file. So:
+(TBX-Basic_Definition_v1.2.1.pdf, p. 1). V4 states it directly in its
+compliance clause: a resource is compliant only if it "uses only the DCs that
+are defined in this document" and only the elements in the Appendix B list
+(V4 §9, Appendix B). There is no extension mechanism inside TBX-Basic. A TBX
+file containing a `workflow` or `_metadata` data category would fail schematron
+validation and would simply not be a TBX-Basic file. So:
 
 - **As a claim about a TBX file:** "workflow and _metadata are TBX-Basic
   compliant" would be FALSE.
@@ -103,17 +169,18 @@ half-right: anything without a standard slot **will** vanish in export. The fix
 is not to delete the custom fields but to know exactly which ones have a
 standard home. From the table in §0:
 
-| Our field | Standard home at export | Citation |
+| Our field | Standard home at export (v1.2.1 → V4) | Citation |
 |---|---|---|
-| workflow.atlStatus | administrativeStatus (mapping already in Decision 10) | Min.tbxmd picklist |
-| workflow.rejectedReason | `note` on the term | core; seen in valid example |
-| usageExamples.enContext / etTranslation | `context` (descrip, termSec) on the EN / ET term | Basic.tbxmd: context, termSec, noteText |
-| source object | `admin type="source"` (flattened to string) | Basic.tbxmd: source, all levels |
-| transactions (type, responsibility, date) | `transacGrp` | Basic.tbxmd: transactionType, responsibility; example file |
-| transactions.actionType / actionDescription / statusChange | no slot — drop at export (history stays in JSON master) | — |
-| root `metadata` | `tbxHeader/fileDesc` (free-text `<p>`) | example file header |
-| metadata.project | `projectSubset` (admin, conceptEntry/termSec) if wanted per-entry | Basic.tbxmd |
-| `_metadata.*` (all 7 fields) | no slot — internal only (componentTerms partially via crossReference, see MUST 2) | — |
+| workflow.atlStatus | administrativeStatus (Decision 10 mapping) → **usageStatus** (preferred/admitted/deprecated) | Min.tbxmd; V4 §6.23 |
+| workflow.rejectedReason | `note` on the term (both versions) | V4 §6.11: note at concept/language/term |
+| usageExamples.enContext / etTranslation | `context` (descrip, termSec) on the EN / ET term (both versions) | Basic.tbxmd; V4 §6.1 |
+| source object | `admin type="source"` (flattened to string); V4 also defines nesting in `descripGrp` for definition/context sources | Basic.tbxmd; V4 §6.15–6.17 |
+| transactions (type, responsibility, date) | `transacGrp`; type value `origination` must be exported as `creation` if V4 targeted | Basic.tbxmd; V4 §6.22, §7.1–7.3 |
+| transactions.actionType / actionDescription / statusChange | no slot — drop at export (history stays in JSON master); confirmed: `transacGrp` admits no note | V4 §7.1–7.3 |
+| root `metadata` | `tbxHeader/fileDesc` (free-text `<p>`) | example file; V4 Appendix B step 3 |
+| metadata.project | `projectSubset` (admin, conceptEntry/termSec) if wanted per-entry | Basic.tbxmd; V4 §6.13 |
+| supersededBy | v1.2.1: `supersededTerm-admn-sts`; **V4 has no superseded value** — export as `deprecated` + term-level `crossReference` to the replacing term, or note | V4 §6.23, §6.2 |
+| `_metadata.*` (all 7 fields) | no slot — internal only (componentTerms partially via crossReference, see MUST 2) | V4 §9, Appendix B |
 
 Interesting detail: JSON_SCHEMA_SPECIFICATION.md §6.1 lists `context` as "Not
 implemented (implemented via custom usageExamples)". In reality usageExamples'
@@ -170,12 +237,15 @@ Finnish translation of "addictive" has no clean place to go.
 ### What the standard says
 
 - One concept = one `conceptEntry`; a concept's definitions live in its own
-  entry at conceptEntry or langSec level (Basic.tbxmd: definition levels).
-  There is no mechanism for entry X to carry entry Y's definitions.
-- TBX-Basic **excludes** the TermComp module ("Use TermComp module: False",
-  dialect definition p. 1) — even the standard's own term-decomposition markup
-  is not available. The only standard way to relate parent and component
-  concepts is `crossReference` (ref; conceptEntry/termSec — Basic.tbxmd).
+  entry at conceptEntry or langSec level (Basic.tbxmd; V4 §6.5). V4 adds a
+  best-practice note that a termbase should even **choose a single definition
+  level** and stick to it (V4 Appendix A note). There is no mechanism for entry
+  X to carry entry Y's definitions.
+- Term-decomposition markup is excluded in both versions ("Use TermComp module:
+  False", v1.2.1 dialect sheet; no component elements in V4's Appendix B list).
+  The only standard way to relate parent and component concepts is
+  `crossReference` — concept level pointing to another entry's concept ID, term
+  level to a term's ID in another entry (Basic.tbxmd; V4 §6.2, §7.1, §7.3).
 - Consequence: `componentLookups` has no export path at all; it is invisible to
   any standard consumer.
 
@@ -238,25 +308,38 @@ a term "rejected" in workflow still showing "preferredTerm-admn-sts".
 
 ### What the standard says
 
-administrativeStatus is an optional term-level picklist (Min.tbxmd; only `term`
-itself is required at termSec). **The standard says nothing about
+The status field is an optional term-level picklist in both versions
+(v1.2.1: `administrativeStatus`, 4 values; V4: **`usageStatus`** with
+`preferred` / `admitted` / `deprecated`, exactly one value per term — V4 §6.23).
+Only `term` itself is required at termSec. **The standard says nothing about
 synchronisation with external workflow state** — this is a data-engineering
 decision, not a compliance one. My interpretation, stated as such: since
 Decision 10 already defines a deterministic ATL→TBX mapping, storing two
 independently editable copies of derivable information is redundant data — a
 textbook desync source.
 
-The mapping needs one completion to be fully deterministic (proposed):
+**V4 complication worth deciding consciously (new):** V4 renamed the standard
+field to `usageStatus` — which **collides with our custom
+`workflow.usageStatus`** (not_in_use / atl_in_use / formerly_in_use). Two
+different meanings, one name. If we target V4, I recommend renaming our custom
+field (e.g. `workflow.atlUsage` or `workflow.textUsage`) to prevent permanent
+confusion; the rename is cheap now (migration script not yet written). This
+touches the deferred M2 naming question but cannot wait for M2 if V4 is the
+target.
 
-1. `supersededBy` set → `supersededTerm-admn-sts`
-2. else `atlStatus = rejected` → `deprecatedTerm-admn-sts`
-3. else `atlStatus = atl_approved` → `preferredTerm-admn-sts`
-4. else (candidate / no workflow) → `admittedTerm-admn-sts`
+The mapping needs one completion to be fully deterministic (proposed; V4 value
+names, v1.2.1 equivalents in brackets):
+
+1. `supersededBy` set → `deprecated` + crossReference to replacing term
+   [v1.2.1: `supersededTerm-admn-sts`]
+2. else `atlStatus = rejected` → `deprecated` [`deprecatedTerm-admn-sts`]
+3. else `atlStatus = atl_approved` → `preferred` [`preferredTerm-admn-sts`]
+4. else (candidate / no workflow) → `admitted` [`admittedTerm-admn-sts`]
    - exception: EN glossary terms (isGlossaryTerm true, no workflow) →
-     `preferredTerm-admn-sts` (WSO's own term is by definition the preferred EN
-     form)
+     `preferred` (WSO's own term is by definition the preferred EN form)
 
-Note `usageStatus` deliberately does NOT affect administrativeStatus — usage is
+Note our custom usage-tracking field (`workflow.usageStatus`, possibly renamed
+per above) deliberately does NOT affect the derived standard status — usage is
 a fact, not an approval judgement (consistent with Issue #13 Variant C
 "de facto vs de jure" reasoning).
 
@@ -309,22 +392,33 @@ promise means, and there is also a genuine standards bug in the enum.
 
 ### Standards findings (this part is new information)
 
-Min.tbxmd partOfSpeech picklist: `adjective, noun, other, verb, adverb`.
-Our schema enum: `noun, verb, adjective, adverb, phrase, null`. Two deviations:
+partOfSpeech picklist — v1.2.1: `adjective, noun, other, verb, adverb`
+(Min.tbxmd); V4: `noun, verb, adjective, adverb, properNoun, other` (V4 §6.12).
+Our schema enum: `noun, verb, adjective, adverb, phrase, null`. Deviations:
 
-1. **"phrase" is not a legal TBX-Basic partOfSpeech value.** The standard
-   handles multiword items via **termType = "phrase"** (Basic.tbxmd). Exporting
-   partOfSpeech="phrase" would fail validation.
+1. **"phrase" is not a legal TBX-Basic partOfSpeech value in either version.**
+   The standard handles multiword items via **termType = "phrase"**
+   (Basic.tbxmd; V4 §6.21). Exporting partOfSpeech="phrase" would fail
+   validation (V4 ships a test file for exactly this error:
+   `TBX-Basic-sample-badPOS.tbx`).
 2. **"other" is missing from our enum** — the standard's own escape hatch,
-   which we will need for edge cases ("at ease").
+   which we will need for edge cases ("at ease"). If V4 is targeted,
+   `properNoun` is also worth adding (useful for names like "ACA WSO").
+
+3. **V4 gives the quality gate normative teeth (V4 §9):** a resource used in
+   automated processing (CAT tools — our declared M2+ goal) is compliant only
+   if **every term section has an explicit part of speech**; a human-only
+   resource may omit it where a definition or context exists. So "fill
+   partOfSpeech before CAT export" is no longer just good practice — it is the
+   compliance boundary itself.
 
 ### Options
 
 **Option A — Keep phased plan, add a measurable gate + fix the enum
 (recommended).**
-- Enum fix now: partOfSpeech ∈ {noun, verb, adjective, adverb, other, null};
-  multiword items get termType:"phrase" instead. Zero-cost today because every
-  stored value is null (nothing to migrate).
+- Enum fix now: partOfSpeech ∈ {noun, verb, adjective, adverb, other, null}
+  (+ properNoun if V4 targeted); multiword items get termType:"phrase" instead.
+  Zero-cost today because every stored value is null (nothing to migrate).
 - Phase 2 enrichment (marker extraction + Sõnaveeb + manual review) proceeds as
   planned (Decision 6 already sketches it).
 - The gate: Phase 3 (REQUIRED flip) only after validator reports 0 nulls;
@@ -360,8 +454,10 @@ hierarchy of definition and whether the validator should error.
 The standard itself dissolves this collision, because it never puts "phrase"
 in partOfSpeech at all:
 
-- partOfSpeech = grammatical category, picklist without "phrase" (Min.tbxmd);
-- termType = form of the term, picklist **with** "phrase" (Basic.tbxmd);
+- partOfSpeech = grammatical category, picklist without "phrase" (Min.tbxmd;
+  V4 §6.12);
+- termType = form of the term, picklist **with** "phrase" (Basic.tbxmd;
+  V4 §6.21 — V4 even ships error samples for termType misuse);
 - structural complexity (ISO 1087 simple/complex term) has no TBX-Basic data
   category — our termComplexity is a custom, mechanical, auto-generated fact.
 
@@ -468,9 +564,10 @@ choice — but the clean fix is upstream.
 | # | Question | Recommendation | Reverses an old decision? |
 |---|---|---|---|
 | M1 | Compliance audit | A: reclaim as "TBX-Basic exportable" + adopt export mapping table | Rewords Decision 18's claim; keeps architecture |
+| M1a | Target spec version (new) | V4 (Nov 2025); one CAT-import sanity test in M2 | Updates the version the Oct 2025 decisions assumed |
 | M2 | Atomic components | A: component concept = single home; drop componentLookups | Partly reverses Issue #13 Decision 3 / Decision 17 Part 4 |
-| M3 | Status sync | A2: administrativeStatus derived, script-written, validator-enforced | Tightens Decision 10 (no shape change) |
-| S1 | PoS quality gate | A: keep phased plan + 0-null gate; fix enum (drop "phrase", add "other") | Amends Decision 6 enum |
+| M3 | Status sync | A2: standard status field derived, script-written, validator-enforced; if V4: values preferred/admitted/deprecated + rename custom workflow.usageStatus (name collision) | Tightens Decision 10; renames one Decision 10 field |
+| S1 | PoS quality gate | A: keep phased plan + 0-null gate; fix enum (drop "phrase", add "other" (+properNoun if V4)); V4 §9 makes PoS mandatory for CAT use | Amends Decision 6 enum |
 | S2 | Linguistic vs structural | A: orthogonal axes; "phrase" moves to termType; no cross-field errors | Amends Decision 6/17 interaction; resolves Issue #15's question |
 | S3 | Component sync | A: single home + one-way generation at birth; no sync engine | Follows from M2 |
 
