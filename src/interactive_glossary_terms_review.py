@@ -800,8 +800,7 @@ def edit_term_fields(term):
 				else:
 					new_type = edit_single_field(
 						"grammaticalType",
-						current_type,
-						is_list = False
+						current_type
 					)
 					pos, qualifier = split_grammatical_type(new_type)
 					term["grammaticalType"] = pos
@@ -818,16 +817,14 @@ def edit_term_fields(term):
 			else:
 				new_type = edit_single_field(
 					"grammaticalType",
-					current_type,
-					is_list = False
+					current_type
 				)
 				term["grammaticalType"] = new_type
 		
 		if choice in ["2", "3"]:
 			term["seeAlso"] = edit_single_field(
 				"seeAlso",
-				term.get("seeAlso", []),
-				is_list = True
+				term.get("seeAlso", [])
 			)
 	
 	print("+ Term fields updated!")
