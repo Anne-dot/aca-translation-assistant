@@ -577,7 +577,7 @@ def edit_text_in_editor(current_text, field_name = "text"):
 def format_synonym_as_sentence(text):
 	if text == "": return text
 	if not text.endswith("."): text += "."
-	return text.capitalize()
+	return text[0].upper() + text[1:]
 
 
 
