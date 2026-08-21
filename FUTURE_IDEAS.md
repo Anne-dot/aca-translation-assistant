@@ -375,3 +375,13 @@ Remaining notes: 1
 **Priority:** Low - current workflow sufficient for now, revisit when scaling up
 
 **Related:** Issue #23 (quality check script), Issue #21 (review script)
+
+---
+
+## Archive Synonym-Analysis Scripts?
+
+**What:** Consider moving the three synonym-analysis scripts (`extract_synonyms_for_analysis.py`, `ai_synonym_analysis_results.py`, `apply_synonym_flags.py`) to `deprecated/`
+
+**Why:** The workflow was applied once in October 2025 — the flags and "synonyms (AI)" notes are already in `foundation_raw.json`. The scripts are needed again only if the analysis is ever redone.
+
+**When:** Decide after the flagged-terms review pass. Logged while fixing the apply_synonym_flags crash ([Issue #65](https://github.com/Anne-dot/aca-translation-assistant/issues/65)).
