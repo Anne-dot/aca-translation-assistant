@@ -93,6 +93,21 @@ foo = long_function_name(var_one, var_two,
 - linterid ja formatterid ja nende seadistamise võimalused.
 - Kas saame mõne seadistada nii, et vastaks neile eeslistustele? - Henrile ülesandeks
 
+### Spaces around `=` in keyword arguments `[Discuss]`
+The cleanup introduced `encoding = "utf-8"` style (spaces around `=` in
+keyword arguments/defaults). PEP 8 forbids this, and the codebase is now
+mixed (`indent=2` next to `ensure_ascii = False`). Decide: adopt the spaced
+style as a documented exception, or follow PEP 8.
+
+### Single-line compound statements `[Discuss]`
+`if x: return` / `if __name__ == "__main__": main()` are used widely since
+the cleanup. PEP 8 discourages compound statements on one line. Decide:
+allow (e.g. only for guard clauses), or disallow.
+
+### Import order `[Discuss]`
+PEP 8 orders stdlib imports before local ones; the cleanup left e.g.
+`import re` after the `tools` imports. Decide: follow PEP 8 order.
+
 ---
 
 ## 3. Strings and Characters `[Henri]`
@@ -103,6 +118,11 @@ foo = long_function_name(var_one, var_two,
   - Strings containing double quotes
 
 - sobib
+
+### Conversion status `[Discuss]`
+The double-quote rule is applied to about half the codebase; several files
+are still single-quoted. Decide: convert the rest in one dedicated commit,
+or convert files only when touched anyway.
 
 ---
 
@@ -124,6 +144,12 @@ Comments are **only** for:
 **Never** write comments that describe what code does. If code needs explanation, refactor it or rename variables.
 
 - sobib
+
+### File header docstrings `[Discuss]`
+The cleanup deleted file-purpose docstrings entirely. The comment rule
+permits "file headers – purpose of the file" but does not require them.
+Decide: require a 1–2 line purpose docstring per file (helps ADHD-friendly
+orientation), or leave optional.
 
 ---
 
@@ -167,6 +193,16 @@ When a function/pattern repeats 2+ times across files:
 
 ### When to Split Modules
 Split when file grows and natural grouping emerges. Don't force splitting - keep code in one file as long as it's logical and understandable. When it grows and natural groupings appear, then split. ([Issue #31](https://github.com/Anne-dot/aca-translation-assistant/issues/31))
+
+### Behavior-preserving refactoring `[Discuss]`
+A cleanup/refactor must not silently change behavior. Any intentional
+behavior change must be named explicitly in the commit message. (Origin:
+the split-utils cleanup changed menu flow and display behavior without
+documenting it.)
+
+### Minimum Python version `[Discuss]`
+`match/case` (used since the cleanup) requires Python 3.10+. Document the
+project minimum (proposal: 3.10+) here and in README's technology stack.
 
 ---
 
