@@ -41,7 +41,7 @@ ACA World Service Organization guidelines emphasize that a **glossary/terminolog
 - ✅ Unicode bug fixed (Issue #24) - UTF-8 encoding + progress saving
 - 📋 34 terms need normalization decisions (Issue #25)
 
-**Current Priorities:** See [TODO.md](TODO.md)
+**Current Priorities:** See [GitHub Issues](https://github.com/Anne-dot/aca-translation-assistant/issues)
 
 See detailed roadmap: [PROJECT_OVERVIEW_DRAFT.md](PROJECT_OVERVIEW_DRAFT.md)
 
@@ -54,10 +54,8 @@ ATL_tõlkeprojekt/
 ├── src/                           # Source code (see src/README.md)
 │   ├── extract_foundation_glossary.py  # PHASE 1, STEP 1.1 extraction
 │   ├── interactive_glossary_terms_review.py     # PHASE 1, STEP 1.1 quality control
-│   ├── utils.py                   # Shared utility functions (DRY)
-│   ├── sonaveeb_lookup.py        # Sõnaveeb enrichment (legacy)
-│   ├── term_cleaning.py          # Term normalization utilities
-│   └── add_term_complexity.py    # ISO 1087 classification
+│   ├── quality_check.py           # Automated structural checks
+│   └── tools/                     # Shared modules (DRY, split from utils.py)
 │
 ├── data/                          # Data files (see data/README.md)
 │   ├── ACA_WSO/                   # ACA WSO glossary sources (498 terms total)
@@ -94,7 +92,6 @@ ATL_tõlkeprojekt/
 ├── PROJECT_OVERVIEW_DRAFT.md      # Detailed project roadmap
 ├── DECISIONS.md                   # Technical decisions and architecture
 ├── FUTURE_IDEAS.md                # Pending decisions and future work
-├── TODO.md                        # Current tasks (post-compacting)
 └── instructions.md                # Claude Code instructions
 ```
 
@@ -114,7 +111,6 @@ ATL_tõlkeprojekt/
 - **[PROJECT_OVERVIEW_DRAFT.md](PROJECT_OVERVIEW_DRAFT.md)** - Complete project roadmap and milestones
 - **[DECISIONS.md](DECISIONS.md)** - Technical decisions and architecture
 - **[FUTURE_IDEAS.md](FUTURE_IDEAS.md)** - Pending decisions and future work
-- **[TODO.md](TODO.md)** - Current tasks list
 - **[docs/PROGRESS_UPDATES.md](docs/PROGRESS_UPDATES.md)** - Daily progress log (Estonian)
 - **[GitHub Issues](https://github.com/Anne-dot/aca-translation-assistant/issues)** - Active development tasks
 
@@ -127,4 +123,4 @@ This project is currently in private development. Future goal: open-source gift 
 ---
 
 **Version:** 0.5.0-alpha
-**Last Updated:** 2025-10-22
+**Last Updated:** 2026-08-21
