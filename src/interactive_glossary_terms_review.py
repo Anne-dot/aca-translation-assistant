@@ -1147,7 +1147,10 @@ def main():
 		filter_type = [
 			"NOT REVIEWED",  "FLAGGED",
 			"REVIEWED - OK", "REVIEWED - FLAGGED"
-		][("needsReview" in term)*1 + ("reviewedAt" in term)*2]
+		][
+			bool(term.get("needsReview", False))*1
+			+ (term.get("reviewedAt") is not None)*2
+		]
 		
 		display_complete_term_info(
 			term,      title = filter_type,
