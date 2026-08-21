@@ -1,0 +1,595 @@
+<!-- TBXv3 core structure. Updated 2025 April 8. -->
+<grammar xmlns="http://relaxng.org/ns/structure/1.0" ns="urn:iso:std:iso:30042:ed-2"
+  datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"
+  xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">
+
+  <start>
+    <ref name="TBX"/>
+  </start>
+
+  <define name="TBX">
+    <element name="tbx">
+      <attribute name="type">
+        <data type="string">
+          <param name="pattern">TBX-.+</param>
+        </data>
+      </attribute>
+      <attribute name="style">
+        <choice >
+          <value>dca</value>
+          <value>dct</value>
+          <value>DCA</value>
+          <value>DCT</value>
+        </choice>
+      </attribute>
+      <attribute name="xml:lang">
+        <data type="language"/>
+      </attribute>
+  		<ref name="TBXHeader"/>
+  		<ref name="Text"/>
+    </element>
+  </define>
+  
+  <div>
+    <a:documentation>Header Elements</a:documentation>
+    
+    <define name="TBXHeader">
+      <element name="tbxHeader">
+        <ref name="ID"/>
+        <ref name="FileDesc"/>
+    	  <optional>
+    		  <ref name="EncodingDesc"/>
+    	  </optional>
+    	  <optional>
+    		  <ref name="RevisionDesc"/>
+    	  </optional>
+      </element>
+    </define>
+  
+    <define name="FileDesc">
+      <element name="fileDesc">
+        <ref name="ID"/>
+        <optional><ref name="PublicationStmt"/></optional>
+        <optional><ref name="TitleStmt"/></optional>
+        <oneOrMore><ref name="SourceDesc"/></oneOrMore>
+      </element>
+    </define>
+    
+    <define name="PublicationStmt">
+      <element name="publicationStmt">
+        <ref name="ID"/>
+        <oneOrMore>
+          <ref name="P"/>
+        </oneOrMore>
+      </element>
+    </define>
+    
+    <define name="TitleStmt">
+      <element name="titleStmt">
+        <ref name="IDLang"/>
+        <ref name="Title"/>
+        <zeroOrMore>
+          <ref name="Note"/>
+        </zeroOrMore>
+      </element>
+    </define>
+    
+    <define name="Title">
+      <element name="title">
+        <ref name="IDLang"/>
+        <text/>
+      </element>
+    </define>
+    
+    <define name="SourceDesc">
+      <element name="sourceDesc">
+        <ref name="IDLang"/>
+        <oneOrMore><ref name="P"/></oneOrMore>
+      </element>
+    </define>
+    
+    <define name="P">
+      <element name="p">
+        <ref name="IDLang"/>
+        <optional><attribute name="type"><text/></attribute></optional>
+        <ref name="NoteText"/>
+      </element>
+    </define>
+    
+    <define name="EncodingDesc">
+      <element name="encodingDesc">
+        <ref name="ID"/>
+        <oneOrMore>
+          <ref name="P"/>
+        </oneOrMore>
+      </element>
+    </define>
+    
+    <define name="RevisionDesc">
+      <element name="revisionDesc">
+        <ref name="IDLang"/>
+        <oneOrMore>
+          <ref name="Change"/>
+        </oneOrMore>
+      </element>
+    </define>
+    
+    <define name="Change">
+      <element name="change">
+        <ref name="IDLang"/>
+        <oneOrMore><ref name="P"/></oneOrMore>
+      </element>
+    </define>
+  </div>
+  
+  <define name="Text">
+    <element name="text">
+      <ref name="ID"/>
+  		<optional>
+  			<ref name="Body"/>
+  		</optional>
+  		<optional>
+  			<ref name="Back"/>
+  		</optional>
+    </element>
+  </define>
+  
+  <define name="Body">
+    <element name="body">
+      <ref name="ID"/>
+  		<oneOrMore>
+  			<ref name="ConceptEntry"/>
+  		</oneOrMore>
+    </element>
+  </define>
+  
+  <div>
+    <a:documentation>Main Body Structure Elements</a:documentation>
+    
+    <define name="ConceptEntry">
+      <element name="conceptEntry">
+        <ref name="ID"/>
+        <ref name="AuxInfo"/>
+        <oneOrMore>
+          <ref name="LangSec"/>
+        </oneOrMore>
+      </element>
+    </define>
+    
+    <define name="LangSec">
+      <element name="langSec">
+        <attribute name="xml:lang">
+          <data type="language"/>
+        </attribute>
+    		<oneOrMore>
+    		  <choice>
+    		    <ref name="AuxInfo"/>
+    		    <ref name="TermSec"/>
+    		  </choice>
+    		</oneOrMore>
+      </element>
+    </define>
+    
+    <define name="TermSec">
+      <element name="termSec">
+        <ref name="ID"/>
+  		  <ref name="Term"/>
+    		<zeroOrMore>
+    		  <choice>
+    		    <ref name="TermNote"/>
+    		    <ref name="TermNoteGrp"/>
+    		  </choice>
+    		</zeroOrMore>
+        <ref name="AuxInfo"/>
+      </element>
+    </define>
+  </div>
+  
+  <div>
+    <a:documentation>Main Body Elements</a:documentation>
+    
+    <define name="Term">
+      <element name="term">
+        <ref name="ID"/>
+        <ref name="BasicText"/>
+      </element>
+    </define>
+    
+    <define name="TermNote">
+      <element name="termNote">
+        <attribute name="type"/>
+        <ref name="IDLangTgtDtyp"/>
+        <ref name="NoteText"/>
+      </element>
+    </define>
+    
+    <define name="TermNoteGrp">
+      <element name="termNoteGrp">
+        <ref name="ID"/>
+        <ref name="TermNote"/>
+        <ref name="NoteLinkInfo"/>
+      </element>
+    </define>
+    
+    <define name="Admin">
+      <element name="admin">
+        <attribute name="type"/>
+        <ref name="IDLangTgtDtyp"/>
+        <ref name="NoteText"/>
+      </element>
+    </define>
+    
+    <define name="AdminGrp">
+      <element name="adminGrp">
+        <ref name="ID"/>
+        <ref name="Admin"/>
+        <zeroOrMore>
+          <choice>
+            <ref name="AdminNote"/>
+            <ref name="Note"/>
+            <ref name="Ref"/>
+            <ref name="Xref"/>
+          </choice>
+        </zeroOrMore>
+      </element>
+    </define>
+    
+    <define name="AdminNote">
+      <element name="adminNote">
+        <attribute name="type"/>
+        <ref name="IDLangTgtDtyp"/>
+        <text/>
+      </element>  
+    </define>
+    
+    <define name="Descrip">
+      <element name="descrip">
+        <attribute name="type"/>
+        <ref name="IDLangTgtDtyp"/>
+        <ref name="NoteText"/>
+      </element>
+    </define>
+    
+    <define name="DescripGrp">
+      <element name="descripGrp">
+        <ref name="ID"/>
+        <ref name="Descrip"/>
+        <zeroOrMore>
+          <choice>
+            <ref name="Admin"/>
+            <ref name="AdminGrp"/>
+            <ref name="DescripNote"/>
+            <ref name="Note"/>
+            <ref name="Ref"/>
+            <ref name="TransacGrp"/>
+            <ref name="Xref"/>
+          </choice>
+        </zeroOrMore>
+      </element>
+    </define>
+    
+    <define name="DescripNote">
+      <element name="descripNote">
+        <attribute name="type"/>
+        <ref name="IDLangTgtDtyp"/>
+        <text/>
+      </element>
+    </define>
+    
+    <define name="Note">
+      <element name="note">
+        <ref name="IDLang"/>
+        <ref name="NoteText"/>
+      </element>
+    </define>
+    
+    <define name="Ref">
+      <element name="ref">
+        <attribute name="type"/>
+        <ref name="IDLangTgtDtyp"/>
+        <text/>
+      </element>
+    </define>
+    
+    <define name="TransacGrp">
+      <element name="transacGrp">
+        <ref name="ID"/>
+        <ref name="Transac"/>
+        <zeroOrMore>
+          <choice>
+            <element name="date">
+              <ref name="ID"/>
+              <choice>
+                <data type="date" />
+                <data type="dateTime"/>
+              </choice>
+            </element>
+            <ref name="Note"/>
+            <ref name="Ref"/>
+            <ref name="TransacNote"/>
+            <ref name="Xref"/>
+          </choice>
+        </zeroOrMore>
+      </element>
+    </define>
+    
+    <define name="Transac">
+      <element name="transac">
+        <attribute name="type"/>
+        <ref name="IDLangTgtDtyp"/>
+        <text/>
+      </element>
+    </define>
+    
+    <define name="TransacNote">
+      <element name="transacNote">
+        <attribute name="type"/>
+        <ref name="IDLangTgtDtyp"/>
+        <text/>
+      </element>
+    </define>
+    
+    <define name="Xref">
+      <element name="xref">
+        <ref name="ID"/>
+        <attribute name="type"/>
+        <attribute name="target">
+          <data type="anyURI">
+            <param name="pattern">https?://.*</param>
+          </data>
+        </attribute>
+        <text/>
+      </element>
+    </define>
+  </div>
+  
+  <div>
+    <a:documentation>Inline Markup Elements</a:documentation>
+    
+    <define name="Sc">
+      <element name="sc">
+        <ref name="ID"/>
+        <choice>
+          <attribute name="isolated">
+            <value>yes</value>
+          </attribute>
+          <optional><attribute name="isolated">
+            <value>no</value>
+          </attribute></optional>
+        </choice>
+        <optional><attribute name="type"><text/></attribute></optional>
+        <optional><attribute name="subtype"><text/></attribute></optional>
+        <optional><attribute name="target"><text/></attribute></optional>
+        <text/>
+      </element>
+    </define>
+    
+    <define name="Ec">
+      <element name="ec">
+        <attribute name="startRef"><text/></attribute>
+        <choice>
+          <attribute name="isolated">
+            <value>yes</value>
+          </attribute>
+          <optional><attribute name="isolated">
+            <value>no</value>
+          </attribute></optional>
+        </choice>
+        <optional><attribute name="disp"><text/></attribute></optional>
+        <optional><attribute name="equiv"><text/></attribute></optional>
+        <ref name="ID"/>
+        <optional><attribute name="type">
+          <choice>
+            <value>fmt</value>
+            <value>ui</value>
+            <value>quote</value>
+            <value>link</value>
+            <value>image</value>
+            <value>other</value>
+          </choice>
+        </attribute></optional>
+        <optional><attribute name="subtype"><text/></attribute></optional>
+        <optional><attribute name="target"><text/></attribute></optional>
+        <text/>
+      </element>
+    </define>
+    
+    <define name="Foreign">
+      <element name="foreign">
+        <ref name="IDLang"/>
+        <ref name="NoteText"/>
+      </element>
+    </define>
+    
+    <define name="Hi">
+      <element name="hi">
+        <ref name="Target-IDREF"/>
+        <optional><attribute name="type">
+          <choice>
+            <value>entailedTerm</value>
+            <value>hotkey</value>
+            <value>italics</value>
+            <value>bold</value>
+            <value>superscript</value>
+            <value>subscript</value>
+            <value>math</value>
+          </choice>
+        </attribute></optional>
+        <text/>
+      </element>
+    </define>
+    
+    <define name="Ph">
+      <element name="ph">
+        <optional><attribute name="type"><text/></attribute></optional>
+        <text/>
+      </element>
+    </define>
+  </div>
+  
+  <define name="Back">
+    <element name="back">
+      <ref name="ID"/>
+      <zeroOrMore>
+        <ref name="RefObjectSec"/>
+      </zeroOrMore>
+    </element>
+  </define>
+    
+  <div>
+    <a:documentation>Back Matter Elements</a:documentation>
+    
+    <define name="RefObjectSec">
+      <element name="refObjectSec">
+        <ref name="ID"/>
+        <attribute name="type"/>
+  		  <oneOrMore>
+  		    <ref name="RefObject"/>
+  		  </oneOrMore>
+      </element>
+    </define>
+    
+    <define name="RefObject">
+      <element name="refObject">
+        <ref name="ID"/>
+    		<oneOrMore>
+    		  <choice>
+    		    <ref name="Item"/>
+    		    <ref name="ItemGrp"/>
+    		    <ref name="ItemSet"/>
+    		  </choice>
+    		</oneOrMore>
+      </element>
+    </define>
+    
+    <define name="Item">
+      <element name="item">
+        <ref name="IDType"/>
+  		  <ref name="NoteText"/>
+      </element>
+    </define>
+    
+    <define name="ItemGrp">
+      <element name="itemGrp">
+        <ref name="ID"/>
+        <ref name="Item"/>
+        <ref name="NoteLinkInfo"/>
+      </element>
+    </define>
+    
+    <define name="ItemSet">
+      <element name="itemset">
+        <ref name="IDType"/>
+        <oneOrMore>
+          <choice>
+            <ref name="Item"/>
+            <ref name="ItemGrp"/>
+          </choice>
+        </oneOrMore>
+      </element>
+    </define>
+  </div>
+    
+  <div>
+    <a:documentation>Element Entities</a:documentation>
+    
+    <define name="AuxInfo">
+      <zeroOrMore>
+        <choice>
+          <ref name="Admin"/>
+          <ref name="AdminGrp"/>
+          <ref name="Descrip"/>
+          <ref name="DescripGrp"/>
+          <ref name="Note"/>
+          <ref name="Ref"/>
+          <ref name="TransacGrp"/>
+          <ref name="Xref"/>
+        </choice>
+      </zeroOrMore>
+    </define>
+    
+    <define name="BasicText">
+      <zeroOrMore>
+        <choice>
+          <text/>
+          <ref name="Hi"/>
+        </choice>
+      </zeroOrMore>
+    </define>
+    
+    <define name="NoteText">
+      <zeroOrMore>
+        <choice>
+          <text/>
+          <ref name="Sc"/>
+          <ref name="Ec"/>
+          <ref name="Foreign"/>
+          <ref name="Hi"/>
+          <ref name="Ph"/>
+        </choice>
+      </zeroOrMore>
+    </define>
+    
+    <define name="NoteLinkInfo">
+      <zeroOrMore>
+        <choice>
+          <ref name="Admin"/>
+          <ref name="AdminGrp"/>
+          <ref name="TransacGrp"/>
+          <ref name="Note"/>
+          <ref name="Ref"/>
+          <ref name="Xref"/>
+        </choice>
+      </zeroOrMore>
+    </define>
+  </div>
+  
+  <div>
+    <a:documentation>Attribute Classes</a:documentation>
+
+    <define name="ID">
+      <optional>
+        <attribute name="id">
+          <data type="ID"/>
+        </attribute>
+      </optional>
+    </define>
+    
+    <define name="Lang">
+      <optional>
+        <attribute name="xml:lang">
+          <data type="language"/>
+        </attribute>
+      </optional>
+    </define>
+    
+    <define name="IDLang">
+      <ref name="ID"/>
+      <ref name="Lang"/>
+    </define>
+    
+    <define name="IDType">
+      <ref name="ID"/>
+      <optional>
+        <attribute name="type">
+          <data type="string"/>
+        </attribute>
+      </optional>
+    </define>
+    
+    <define name="Target-IDREF">
+      <optional>
+        <attribute name="target">
+          <data type="IDREF"/>
+        </attribute>
+      </optional>
+    </define>
+    
+    <define name="IDLangTgtDtyp">
+      <ref name="ID"/>
+      <ref name="Lang"/>
+      <ref name="Target-IDREF"/>
+      <optional><attribute name="datatype"><data type="string"/></attribute></optional>
+    </define>
+  </div>
+</grammar>

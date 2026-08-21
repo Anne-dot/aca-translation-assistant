@@ -70,3 +70,7 @@ NEXT_SESSION.md
 .coverage
 htmlcov/
 .credentials/
+
+# TerminOrgs TBX-Basic V4 spec PDF - copyright forbids redistribution.
+# Download URL documented in research/standards/TBX_VERSIONS.md
+research/standards/TBX-Basic-V4.pdf

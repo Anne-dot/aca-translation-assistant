@@ -23,9 +23,33 @@ TBX is ISO 30042:2019 - the international standard for representing and exchangi
 - Used by professional translation and localization industry
 - Enables data exchange between different terminology management systems
 
-### Version 1 (Legacy - 2009)
+**Version overview:** See [TBX_VERSIONS.md](TBX_VERSIONS.md) for the full
+version landscape (2009 → v1.2.1 → V4), file locations, re-download URLs, and
+the key differences between versions.
 
-**Folder:** `TBXBasic/`
+### Version 4 (Current - November 2025)
+
+**Publisher:** TerminOrgs
+
+**Files:**
+- `TBX-Basic-V4.pdf` - Full 21-page prose specification (NOT committed to git —
+  TerminOrgs copyright forbids redistribution; download URL in TBX_VERSIONS.md)
+- `TBX-Basic-V4-files/` - Validation schematron (`basic_schema.sch`) + valid and
+  invalid sample files
+- `iso-tr24633-2-schemas/` - TBX core structure schemas (`core_schema.rng`,
+  `core_schema.xsd`, `xml.xsd`), published free by ISO as TR 24633-2 Annex A
+
+**Key changes from v1.2.1:** `administrativeStatus` replaced by simpler
+`usageStatus` (preferred/admitted/deprecated), transaction type `origination`
+renamed to `creation`, `properNoun` added to partOfSpeech, and part of speech is
+mandatory for CAT-tool use. Details in TBX_VERSIONS.md.
+
+**Note:** Which version this project targets is an open decision in
+[Issue #44](https://github.com/Anne-dot/aca-translation-assistant/issues/44).
+
+### Version 1 (Legacy - 2009, deprecated)
+
+**Folder:** `deprecated/TBXBasic/`
 
 **Contents:**
 - `TBX_Basic_datacategoriesV23.pdf` - Original TBX-Basic specification (470KB)
@@ -38,15 +62,20 @@ TBX is ISO 30042:2019 - the international standard for representing and exchangi
 
 **Source:** https://www.ttt.org/oscarStandards/tbx/TBXBasic.zip (LISA OSCAR)
 
-**Note:** This is the original TBX-Basic from 2009. Useful for understanding the foundation, but superseded by v1.2.1.
+**Note:** This is the original TBX-Basic from 2009. Useful for understanding the foundation, but superseded by v1.2.1 and later Version 4.
 
 ---
 
-### Version 1.2.1 (Current - 2023)
+### Version 1.2.1 (2023, deprecated - superseded by V4)
+
+**Folder:** `deprecated/TBX-Basic_v1.2.1/` (+ `deprecated/TBX-Basic_Definition_v1.2.1.pdf`, `deprecated/TBX-Basic_dialect_v1.2.1.zip`)
 
 **Files:**
-- `TBX-Basic_Definition_v1.2.1.pdf` (318KB) - Current TBX-Basic specification
-- `TBX-Basic_dialect_v1.2.1.zip` (949KB) - Complete package with schemas
+- `TBX-Basic_Definition_v1.2.1.pdf` - 1-page dialect definition sheet (NOT a full
+  spec; the data category details are in the module definition PDFs inside the
+  package)
+- `TBX-Basic_dialect_v1.2.1.zip` - Complete package with Min/Basic module
+  definitions and validation schemas
 
 **Key Changes from Legacy Version:**
 - Based on ISO 30042:2019 (not 2008)
@@ -191,4 +220,4 @@ TBX uses a three-level hierarchical structure:
 
 ---
 
-**Last Updated:** 2025-10-20
+**Last Updated:** 2026-08-21

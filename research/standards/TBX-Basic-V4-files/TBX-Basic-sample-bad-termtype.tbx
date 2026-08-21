@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--<?xml-model href="../core_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>-->
+<?xml-model href="core_schema.xsd" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<?xml-model href="basic_schema.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+
+
+<tbx style="dca" type="TBX-Basic" xml:lang="en" xmlns="urn:iso:std:iso:30042:ed-2">
+  <tbxHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Sample file for TBX-Basic</title>
+      </titleStmt>
+      <sourceDesc>
+        <p>Sample file for TBX-Basic</p>
+      </sourceDesc>
+    </fileDesc>
+    </tbxHeader>
+  <text>
+  <body>
+
+
+<conceptEntry id="a123">
+	<descrip type="subjectField">games</descrip> <!-- min-->
+
+	<note>this entry is a test</note> <!-- min-->
+	<transacGrp>
+		<transac type="transactionType">creation</transac> <!-- min-->
+		<transacNote type="responsibility">Kara Warburton</transacNote> <!-- basic-->
+		<date>2025-01-25</date> <!-- min-->
+	</transacGrp>
+	<admin type="customerSubset">entertainment</admin> <!-- min-->
+	<ref type="crossReference" target="xyz">batter</ref> <!-- basic-->
+
+	<descripGrp>
+		<descrip type="definition">a game involving a batter, played in commonwealth countries</descrip> <!-- basic-->
+		<admin type="source">Rules of Cricket</admin> <!-- basic-->
+		
+	</descripGrp>
+	<admin type="projectSubset">team games</admin> <!-- basic-->
+	<xref type="xGraphic" target="https://www.termologic.com">termologic</xref> <!-- basic-->
+	<xref type="externalCrossReference" target="https://www.termologic.com">termologic</xref> <!-- basic-->
+		<langSec xml:lang="en-US">
+			
+		<transacGrp>
+			<transac type="transactionType">creation</transac> <!-- min-->
+			<transacNote type="responsibility">Kara Warburton</transacNote> <!-- basic-->
+			<date>2025-01-25</date> <!-- min-->
+		
+		</transacGrp>
+		<note>here is a note at the language level</note> <!-- min-->
+		<descrip type="definition">English-specific definition</descrip><!-- basic-->
+			
+			<termSec>	
+				<term>cricket</term> <!-- min-->
+		
+				<termNote type="usageStatus">deprecated</termNote> <!-- min-->
+				<termNote type="grammaticalGender">masculine</termNote> <!-- basic-->
+				<termNote type="geographicalUsage">UK</termNote> <!-- basic-->
+				<termNote type="termLocation">menu item</termNote> <!-- basic-->
+			
+				<termNote type="termType">spelling variant</termNote>  <!-- basic-->
+				<termNote type="partOfSpeech">noun</termNote> <!-- min-->
+				
+				<admin type="source">Mark Warburton</admin> <!-- basic - source of the term-->
+				<admin type="projectSubset">London Athletics</admin> <!-- basic-->
+			
+				<admin type="customerSubset">Commonwealth</admin> <!-- min-->
+				<descrip type="context">Cricket is super fun!</descrip> <!-- basic-->
+				<descrip type="context">Cricket is fun!</descrip> <!-- basic-->
+					<descripGrp>
+						<descrip type="context">Cricket is fun!</descrip> <!-- basic-->
+					
+					<admin type="source">Kara</admin> <!-- basic - source of context -->
+				</descripGrp>
+				<note>here is a note at the term level about cricket</note>
+				<ref type="crossReference" target="abc">pitch</ref> <!-- basic-->
+				<transacGrp>
+		
+					<transac type="transactionType">creation</transac> <!-- min-->
+					<transacNote type="responsibility">Kara Warburton</transacNote> <!-- basic-->
+					<date>2025-01-25</date> <!-- min-->
+					
+				</transacGrp>
+				<xref type="externalCrossReference" target="https://www.termologic.com">termologic</xref> <!-- basic-->
+			
+			</termSec>
+		
+		</langSec>
+	</conceptEntry>
+
+</body>
+</text>
+</tbx>
+	
+	 
+
+
+
