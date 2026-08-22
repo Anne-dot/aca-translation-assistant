@@ -74,3 +74,6 @@ htmlcov/
 # TerminOrgs TBX-Basic V4 spec PDF - copyright forbids redistribution.
 # Download URL documented in research/standards/TBX_VERSIONS.md
 research/standards/TBX-Basic-V4.pdf
+
+# Temporary NotebookLM upload copies (contains the copyrighted V4 PDF copy)
+research/notebook_lm_analüüs/ring2_upload/

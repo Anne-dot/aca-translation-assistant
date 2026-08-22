@@ -1,9 +1,9 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://github.com/Anne-dot/aca-translation-assistant/schemas/aca-tbx-terminology-schema.json",
-  "title": "ACA TBX-Basic Terminology Database Schema",
-  "description": "JSON Schema for ACA Translation Assistant terminology database. Based on TBX-Basic v1.2.1 (ISO 30042:2019) with ACA workflow extensions.",
-  "version": "1.0.0",
+  "title": "ACA Terminology Database Schema (internal master, TBX-Basic exportable)",
+  "description": "JSON Schema for the ACA Translation Assistant terminology database. Internal format, exportable to TBX-Basic Version 4 (2025). Authoritative field reference: research/standards/JSON_SCHEMA_SPECIFICATION.md v2.0. Derived values (multiword-ness, component word lists, TBX export status) are computed, never stored. Note: the EN-section requirement and referential-integrity rules live in the Python validator (JSON Schema cannot express them); see spec Section 7.",
+  "version": "2.0.0",
   "type": "object",
   "required": ["metadata", "concepts"],
   "additionalProperties": false,
@@ -21,13 +21,13 @@
         },
         "standard": {
           "type": "string",
-          "const": "TBX-Basic v1.2.1",
-          "description": "Terminology standard"
+          "const": "Internal format, exportable to TBX-Basic Version 4 (2025)",
+          "description": "Relationship to the terminology exchange standard"
         },
         "formatVersion": {
           "type": "string",
           "pattern": "^\\d+\\.\\d+$",
-          "description": "Schema version (semantic versioning: major.minor)"
+          "description": "Format version (major.minor); this schema describes 2.0"
         },
         "author": {
           "type": "string",
@@ -41,7 +41,7 @@
         "license": {
           "type": "string",
           "minLength": 1,
-          "description": "License information"
+          "description": "License information (CC BY-SA 4.0)"
         }
       }
     },
@@ -70,12 +70,12 @@
         "subjectField": {
           "type": "string",
           "const": "ACA terminology",
-          "description": "Subject field classification"
+          "description": "Subject field classification (domain, not origin category)"
         },
         "languages": {
           "type": "object",
           "minProperties": 1,
-          "description": "Language sections (key = ISO 639-1 code)",
+          "description": "Language sections (key = ISO 639-1 code). EN required by the Python validator (warning-only for communityAdded concepts - open question, spec Section 10).",
           "patternProperties": {
             "^[a-z]{2}$": {
               "$ref": "#/definitions/languageSection"
@@ -97,12 +97,12 @@
         "xml:lang": {
           "type": "string",
           "pattern": "^[a-z]{2}$",
-          "description": "ISO 639-1 language code"
+          "description": "ISO 639-1 language code; must equal the containing key (Python validator checks equality)"
         },
         "definition": {
           "type": "string",
           "minLength": 10,
-          "description": "Language-specific definition (OPTIONAL, recommended)"
+          "description": "Language-specific definition (OPTIONAL, recommended). Exported at language level (descrip type=definition)."
         },
         "terms": {
           "type": "array",
@@ -117,60 +117,51 @@
 
     "term": {
       "type": "object",
-      "required": ["term", "source", "administrativeStatus", "transactions"],
+      "required": ["term", "source", "transactions"],
       "additionalProperties": false,
       "properties": {
         "term": {
           "type": "string",
           "minLength": 1,
-          "description": "The term itself"
+          "description": "The term text (base form / lemma)"
+        },
+        "termType": {
+          "type": ["string", "null"],
+          "enum": ["fullForm", "acronym", "abbreviation", "shortForm", "variant", "phrase", null],
+          "description": "TBX-Basic V4 term type (form axis; 'phrase' marks fixed expressions/idioms/sayings)"
         },
         "partOfSpeech": {
           "type": ["string", "null"],
-          "enum": ["noun", "verb", "adjective", "adverb", "phrase", null],
-          "description": "Part of speech (OPTIONAL in Phase 1, REQUIRED in Phase 3)"
+          "enum": ["noun", "verb", "adjective", "adverb", "properNoun", "other", null],
+          "description": "Part of speech, TBX-Basic V4 picklist (grammar axis; no 'phrase' value). OPTIONAL until the quality gate; export refuses terms without it (V4 par. 9)."
+        },
+        "supersededBy": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Term text of the replacement within the same language section (exports as deprecated + crossReference). Text-vs-ID referencing is an open decision (spec Section 10)."
+        },
+        "note": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Explanations, register info, usage guidance. Never duplicates a status (spec Principle 5)."
         },
         "source": {
           "$ref": "#/definitions/source"
         },
-        "administrativeStatus": {
-          "type": "string",
-          "enum": [
-            "preferredTerm-admn-sts",
-            "admittedTerm-admn-sts",
-            "deprecatedTerm-admn-sts",
-            "supersededTerm-admn-sts"
-          ],
-          "description": "TBX-Basic administrative status"
-        },
         "workflow": {
           "$ref": "#/definitions/workflow"
         },
-        "note": {
-          "type": "string",
-          "minLength": 10,
-          "description": "Additional notes about the term (OPTIONAL)"
-        },
         "usageExamples": {
           "type": "array",
-          "description": "Usage examples from source texts",
+          "description": "Usage examples from WSO source texts",
           "items": {
             "$ref": "#/definitions/usageExample"
           }
         },
-        "termType": {
-          "type": ["string", "null"],
-          "enum": ["fullForm", "acronym", "abbreviation", "shortForm", "variant", null],
-          "description": "TBX-Basic term type (OPTIONAL)"
-        },
-        "supersededBy": {
-          "type": "string",
-          "description": "Concept ID that replaces this term (OPTIONAL)"
-        },
         "transactions": {
           "type": "array",
           "minItems": 1,
-          "description": "Full transaction history",
+          "description": "Full transaction history (audit trail)",
           "items": {
             "$ref": "#/definitions/transaction"
           }
@@ -180,7 +171,7 @@
 
     "source": {
       "type": "object",
-      "required": ["type", "name", "date"],
+      "required": ["type", "title", "addedBy", "date"],
       "additionalProperties": false,
       "properties": {
         "type": {
@@ -188,246 +179,266 @@
           "enum": ["book", "dictionary", "website", "manual_addition", "conference", "transcription"],
           "description": "Source type"
         },
-        "name": {
+        "title": {
           "type": "string",
           "minLength": 1,
-          "description": "Source name"
+          "description": "Source name/title"
+        },
+        "addedBy": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Who added this entry (auto-generated from logged-in user)"
         },
         "date": {
           "type": "string",
           "format": "date",
-          "description": "Source date (YYYY-MM-DD)"
+          "description": "When added (YYYY-MM-DD, auto-generated)"
         },
-        "author": {
+        "chapter": {
           "type": "string",
-          "description": "Source author (OPTIONAL)"
+          "description": "Chapter number/name (OPTIONAL, books)"
         },
-        "publisher": {
+        "page": {
+          "type": ["string", "integer"],
+          "description": "Page number/range, or MM-DD for daily meditation books (OPTIONAL)"
+        },
+        "edition": {
           "type": "string",
-          "description": "Publisher (OPTIONAL)"
+          "description": "Edition (OPTIONAL, books)"
         },
         "isbn": {
           "type": "string",
-          "pattern": "^(\\d{10}|\\d{13})$",
-          "description": "ISBN (OPTIONAL, 10 or 13 digits)"
+          "description": "ISBN (OPTIONAL, books)"
+        },
+        "publisher": {
+          "type": "string",
+          "description": "Publisher (OPTIONAL, books)"
         },
         "url": {
           "type": "string",
           "format": "uri",
-          "description": "URL (OPTIONAL)"
+          "description": "Source URL (OPTIONAL; auto for script lookups)"
         },
-        "page": {
-          "type": ["string", "integer"],
-          "description": "Page number (OPTIONAL)"
-        },
-        "edition": {
+        "note": {
           "type": "string",
-          "description": "Edition (OPTIONAL)"
-        },
-        "notes": {
-          "type": "string",
-          "description": "Additional notes (OPTIONAL)"
+          "description": "Additional context (OPTIONAL)"
         }
       }
     },
 
     "workflow": {
       "type": "object",
-      "required": ["atlStatus", "usageStatus"],
       "additionalProperties": false,
+      "description": "The community's status truth (single source of truth). The TBX export status is DERIVED from this at export time and never stored.",
       "properties": {
-        "atlStatus": {
+        "communityReviewStatus": {
           "type": "string",
-          "enum": ["candidate", "atl_approved", "rejected"],
-          "description": "ATL review decision status"
+          "enum": ["candidate", "approved", "rejected"],
+          "description": "Community review decision (de jure)"
         },
-        "usageStatus": {
+        "communityTextUsage": {
           "type": "string",
-          "enum": ["not_in_use", "atl_in_use", "formerly_in_use"],
-          "description": "Actual usage status in ATL texts"
+          "enum": ["in_use", "not_in_use", "formerly_in_use"],
+          "description": "Actual usage in community texts (de facto); never affects the derived export status; JSON-only (not exported)"
         },
         "approvedBy": {
           "type": "string",
-          "description": "Person who approved (OPTIONAL)"
+          "minLength": 1,
+          "description": "REQUIRED when communityReviewStatus = approved"
         },
         "approvedDate": {
           "type": "string",
           "format": "date",
-          "description": "Approval date (OPTIONAL)"
+          "description": "REQUIRED when communityReviewStatus = approved"
         },
-        "reviewNotes": {
+        "rejectedBy": {
           "type": "string",
-          "description": "Review notes (OPTIONAL)"
+          "minLength": 1,
+          "description": "REQUIRED when communityReviewStatus = rejected"
+        },
+        "rejectedDate": {
+          "type": "string",
+          "format": "date",
+          "description": "REQUIRED when communityReviewStatus = rejected"
+        },
+        "rejectedReason": {
+          "type": "string",
+          "description": "Why rejected (OPTIONAL; exports as a term-level note)"
+        },
+        "firstUsedDate": {
+          "type": "string",
+          "format": "date",
+          "description": "When first used in community texts (OPTIONAL)"
         }
-      }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": { "communityReviewStatus": { "const": "approved" } },
+            "required": ["communityReviewStatus"]
+          },
+          "then": {
+            "required": ["approvedBy", "approvedDate"]
+          }
+        },
+        {
+          "if": {
+            "properties": { "communityReviewStatus": { "const": "rejected" } },
+            "required": ["communityReviewStatus"]
+          },
+          "then": {
+            "required": ["rejectedBy", "rejectedDate"]
+          }
+        }
+      ]
     },
 
     "usageExample": {
       "type": "object",
-      "required": ["source", "target"],
+      "required": ["source", "enContext", "etTranslation"],
       "additionalProperties": false,
       "properties": {
         "source": {
+          "$ref": "#/definitions/source",
+          "description": "Where the example comes from (WSO materials only)"
+        },
+        "enContext": {
           "type": "string",
           "minLength": 10,
-          "description": "Example in source language"
+          "description": "English context sentence (exports as descrip type=context on the EN term)"
         },
-        "target": {
+        "etTranslation": {
           "type": "string",
           "minLength": 10,
-          "description": "Example in target language"
+          "description": "Estonian translation of the context (exports as descrip type=context on the ET term)"
         },
-        "reference": {
-          "type": "string",
-          "description": "Reference to source document (OPTIONAL)"
+        "translatorNote": {
+          "type": "object",
+          "additionalProperties": false,
+          "description": "Translation-decision documentation (JSON-only; never exported)",
+          "properties": {
+            "author": { "type": "string" },
+            "date": { "type": "string", "format": "date" },
+            "explanation": { "type": "string" },
+            "keyInsight": { "type": "string" }
+          }
         }
       }
     },
 
     "transaction": {
       "type": "object",
-      "required": ["transactionId", "type", "target", "date", "responsibility"],
+      "required": ["type", "actionType", "responsibility", "date"],
       "additionalProperties": false,
       "properties": {
-        "transactionId": {
-          "type": "string",
-          "pattern": "^tx-\\d{10}$",
-          "description": "Unique transaction ID (format: tx-1234567890)"
-        },
         "type": {
           "type": "string",
           "enum": ["origination", "modification"],
-          "description": "TBX-Basic transaction type"
+          "description": "Transaction type ('origination' exports as TBX-Basic V4 'creation')"
         },
         "actionType": {
           "type": "string",
           "enum": ["originated", "enriched", "approved", "rejected", "modified", "manual_addition"],
-          "description": "ACA workflow action type (OPTIONAL)"
-        },
-        "target": {
-          "type": "string",
-          "enum": ["term", "definition", "source", "workflow", "note"],
-          "description": "What was modified"
-        },
-        "date": {
-          "type": "string",
-          "format": "date-time",
-          "description": "Transaction timestamp"
+          "description": "Action category for statistics/filtering (JSON-only; not exported)"
         },
         "responsibility": {
           "type": "string",
           "minLength": 1,
-          "description": "Person/system responsible"
+          "description": "Person/group/system responsible"
         },
-        "note": {
+        "date": {
           "type": "string",
-          "description": "Transaction note (OPTIONAL)"
+          "format": "date",
+          "description": "Transaction date (YYYY-MM-DD, auto-generated)"
+        },
+        "actionDescription": {
+          "type": "string",
+          "description": "Free-text description of what happened (OPTIONAL; JSON-only)"
+        },
+        "statusChange": {
+          "type": "string",
+          "description": "Status transition, e.g. 'candidate → approved' (OPTIONAL; JSON-only)"
         }
       }
     },
 
     "conceptMetadata": {
       "type": "object",
-      "required": ["isGlossaryTerm", "termComplexity"],
+      "required": ["isGlossaryTerm", "derivedFrom"],
       "additionalProperties": false,
+      "description": "Concept origin metadata (JSON-only; not exported). Removed in 2.0: termComplexity, componentTerms, componentLookups - now computed, never stored.",
       "properties": {
-        "termComplexity": {
-          "type": "string",
-          "enum": ["simple", "complex"],
-          "description": "ISO 1087 term complexity"
+        "isGlossaryTerm": {
+          "type": "boolean",
+          "description": "True for WSO glossary imports; false for components and community additions"
         },
-        "componentTerms": {
+        "termType": {
+          "type": ["string", "null"],
+          "enum": ["component", "communityAdded", null],
+          "description": "Origin category; REQUIRED (non-null) when isGlossaryTerm is false, null when true"
+        },
+        "derivedFrom": {
           "type": "array",
-          "description": "Component words for complex terms",
+          "description": "Parent term texts for component concepts (provenance - original data). Empty for glossary and community terms. Referential integrity checked by the Python validator.",
           "items": {
             "type": "string",
             "minLength": 1
           }
         },
-        "isGlossaryTerm": {
-          "type": "boolean",
-          "description": "Is this from ACA WSO glossary?"
-        },
-        "termType": {
-          "type": ["string", "null"],
-          "enum": ["component", "communityAdded", null],
-          "description": "ACA workflow term type"
-        },
-        "derivedFrom": {
-          "type": "array",
-          "description": "Parent term IDs (for component terms)",
-          "items": {
-            "type": "string",
-            "pattern": "^aca-\\d{4}$"
-          }
-        },
         "addedReason": {
           "type": ["string", "null"],
-          "minLength": 20,
-          "description": "Reason for community-added term (CONDITIONAL REQUIRED)"
-        },
-        "componentLookups": {
-          "type": "object",
-          "description": "Dictionary lookups for component terms",
-          "patternProperties": {
-            "^[a-z]{2}$": {
-              "type": "object",
-              "patternProperties": {
-                "^.+$": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/definitions/componentLookup"
-                  }
-                }
-              }
-            }
-          }
+          "description": "REQUIRED (min 20 chars) when termType = communityAdded"
         }
-      }
-    },
-
-    "componentLookup": {
-      "type": "object",
-      "required": ["term", "sources"],
-      "additionalProperties": false,
-      "properties": {
-        "term": {
-          "type": "string",
-          "minLength": 1,
-          "description": "Component term translation"
-        },
-        "partOfSpeech": {
-          "type": "string",
-          "description": "Part of speech (OPTIONAL)"
-        },
-        "definitions": {
-          "type": "array",
-          "description": "Definitions from dictionary",
-          "items": {
-            "type": "string",
-            "minLength": 5
-          }
-        },
-        "sources": {
-          "type": "array",
-          "minItems": 1,
-          "description": "Dictionary sources",
-          "items": {
-            "type": "object",
-            "required": ["name", "link"],
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": { "isGlossaryTerm": { "const": true } },
+            "required": ["isGlossaryTerm"]
+          },
+          "then": {
             "properties": {
-              "name": {
-                "type": "string",
-                "minLength": 1
-              },
-              "link": {
-                "type": "string",
-                "format": "uri"
-              }
+              "termType": { "const": null },
+              "derivedFrom": { "maxItems": 0 }
             }
           }
+        },
+        {
+          "if": {
+            "properties": { "isGlossaryTerm": { "const": false } },
+            "required": ["isGlossaryTerm"]
+          },
+          "then": {
+            "properties": {
+              "termType": { "enum": ["component", "communityAdded"] }
+            },
+            "required": ["termType"]
+          }
+        },
+        {
+          "if": {
+            "properties": { "termType": { "const": "component" } },
+            "required": ["termType"]
+          },
+          "then": {
+            "properties": {
+              "derivedFrom": { "minItems": 1 }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": { "termType": { "const": "communityAdded" } },
+            "required": ["termType"]
+          },
+          "then": {
+            "properties": {
+              "addedReason": { "type": "string", "minLength": 20 }
+            },
+            "required": ["addedReason"]
+          }
         }
-      }
+      ]
     }
   }
 }

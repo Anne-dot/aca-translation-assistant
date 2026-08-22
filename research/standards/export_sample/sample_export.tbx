@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../iso-tr24633-2-schemas/core_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../TBX-Basic-V4-files/basic_schema.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<tbx type="TBX-Basic" style="dca" xml:lang="en" xmlns="urn:iso:std:iso:30042:ed-2">
+	<tbxHeader>
+		<fileDesc>
+			<publicationStmt>
+				<p>License: CC BY-SA 4.0. Author: Anne Ruusmann. Project: ACA Translation Assistant.</p>
+			</publicationStmt>
+			<titleStmt>
+				<title>ACA Translation Assistant terminology database - sample export</title>
+			</titleStmt>
+			<sourceDesc>
+				<p>Hand-crafted sample export of 3 concepts, produced to empirically
+				validate the export mapping adopted in Issue #44 (MUST 1 decision,
+				2026-08-22) before the export script is written.</p>
+			</sourceDesc>
+		</fileDesc>
+	</tbxHeader>
+	<text>
+		<body>
+			<conceptEntry id="aca-0001">
+				<descrip type="subjectField">ACA terminology</descrip>
+				<langSec xml:lang="en">
+					<descripGrp>
+						<descrip type="definition">The act of leaving someone or something behind.</descrip>
+						<admin type="source">ACA Glossary, ACA WSO</admin>
+					</descripGrp>
+					<termSec>
+						<term>abandonment</term>
+						<termNote type="partOfSpeech">noun</termNote>
+						<termNote type="usageStatus">preferred</termNote>
+						<admin type="source">ACA Glossary, ACA WSO</admin>
+						<transacGrp>
+							<transac type="transactionType">creation</transac>
+							<transacNote type="responsibility" target="p001">Anne Ruusmann</transacNote>
+							<date>2025-10-20</date>
+						</transacGrp>
+					</termSec>
+				</langSec>
+			</conceptEntry>
+			<conceptEntry id="aca-0002">
+				<descrip type="subjectField">ACA terminology</descrip>
+				<ref type="crossReference" target="aca-0003">addictive</ref>
+				<langSec xml:lang="en">
+					<descripGrp>
+						<descrip type="definition">Pattern of behavior characterized by addiction.</descrip>
+						<admin type="source">ACA Glossary, ACA WSO</admin>
+					</descripGrp>
+					<termSec>
+						<term>addictive behavior</term>
+						<termNote type="partOfSpeech">noun</termNote>
+						<termNote type="usageStatus">preferred</termNote>
+						<admin type="source">ACA Glossary, ACA WSO</admin>
+						<transacGrp>
+							<transac type="transactionType">creation</transac>
+							<transacNote type="responsibility" target="p001">Anne Ruusmann</transacNote>
+							<date>2025-10-20</date>
+						</transacGrp>
+					</termSec>
+				</langSec>
+				<langSec xml:lang="et">
+					<descripGrp>
+						<descrip type="definition">Sõltuvust iseloomustav käitumismuster.</descrip>
+						<admin type="source">Sõnaveeb</admin>
+					</descripGrp>
+					<termSec>
+						<term>addiktiivne käitumine</term>
+						<termNote type="partOfSpeech">noun</termNote>
+						<termNote type="usageStatus">preferred</termNote>
+						<descripGrp>
+							<descrip type="context">Me tunnistame oma addiktiivseid käitumismustreid.</descrip>
+							<admin type="source">Strengthening My Recovery, 03-15</admin>
+						</descripGrp>
+						<admin type="source">Sõnaveeb, https://sonaveeb.ee/search/unif/dlall/dsall/addiktiivne</admin>
+						<transacGrp>
+							<transac type="transactionType">creation</transac>
+							<transacNote type="responsibility" target="p001">Anne Ruusmann</transacNote>
+							<date>2025-10-20</date>
+						</transacGrp>
+						<transacGrp>
+							<transac type="transactionType">modification</transac>
+							<transacNote type="responsibility" target="p002">ATL consensus</transacNote>
+							<date>2025-10-16</date>
+						</transacGrp>
+					</termSec>
+					<termSec>
+						<term>sõltuvuslik käitumine</term>
+						<termNote type="partOfSpeech">noun</termNote>
+						<termNote type="usageStatus">deprecated</termNote>
+						<admin type="source">Sõnaveeb, https://sonaveeb.ee/search/unif/dlall/dsall/sõltuvuslik</admin>
+						<transacGrp>
+							<transac type="transactionType">creation</transac>
+							<transacNote type="responsibility" target="p001">Anne Ruusmann</transacNote>
+							<date>2025-10-20</date>
+						</transacGrp>
+						<note>Too clinical, not ACA tone</note>
+					</termSec>
+					<termSec>
+						<term>sõltlaslik käitumine</term>
+						<termNote type="partOfSpeech">noun</termNote>
+						<admin type="source">Sõnaveeb</admin>
+						<transacGrp>
+							<transac type="transactionType">creation</transac>
+							<transacNote type="responsibility" target="p001">Anne Ruusmann</transacNote>
+							<date>2025-10-20</date>
+						</transacGrp>
+						<note>Candidate — awaiting ATL review</note>
+					</termSec>
+				</langSec>
+			</conceptEntry>
+			<conceptEntry id="aca-0003">
+				<descrip type="subjectField">ACA terminology</descrip>
+				<ref type="crossReference" target="aca-0002">addictive behavior</ref>
+				<langSec xml:lang="en">
+					<descripGrp>
+						<descrip type="definition">Causing or tending to cause addiction.</descrip>
+						<admin type="source">Merriam-Webster</admin>
+					</descripGrp>
+					<termSec>
+						<term>addictive</term>
+						<termNote type="partOfSpeech">adjective</termNote>
+						<termNote type="usageStatus">preferred</termNote>
+						<admin type="source">Merriam-Webster, https://www.merriam-webster.com/dictionary/addictive</admin>
+						<transacGrp>
+							<transac type="transactionType">creation</transac>
+							<transacNote type="responsibility" target="p001">Anne Ruusmann</transacNote>
+							<date>2025-10-20</date>
+						</transacGrp>
+					</termSec>
+				</langSec>
+				<langSec xml:lang="et">
+					<termSec>
+						<term>addiktiivne</term>
+						<termNote type="partOfSpeech">adjective</termNote>
+						<admin type="source">Sõnaveeb, https://sonaveeb.ee/search/unif/dlall/dsall/addiktiivne</admin>
+						<transacGrp>
+							<transac type="transactionType">creation</transac>
+							<transacNote type="responsibility" target="p003">System</transacNote>
+							<date>2025-10-20</date>
+						</transacGrp>
+						<note>Candidate — awaiting ATL review</note>
+					</termSec>
+				</langSec>
+			</conceptEntry>
+		</body>
+		<back>
+			<refObjectSec type="respPerson">
+				<refObject id="p001">
+					<item type="fn">Anne Ruusmann</item>
+					<item type="role">maintainer</item>
+				</refObject>
+				<refObject id="p002">
+					<item type="fn">ATL consensus</item>
+					<item type="role">approver</item>
+				</refObject>
+				<refObject id="p003">
+					<item type="fn">System</item>
+					<item type="role">inputter</item>
+				</refObject>
+			</refObjectSec>
+		</back>
+	</text>
+</tbx>

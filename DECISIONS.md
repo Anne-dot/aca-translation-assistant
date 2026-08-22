@@ -2,8 +2,8 @@
 
 **Note:** Active development decisions are documented in GitHub Issues during work. This file is updated periodically with strategic and architectural decisions. For current work details, see [GitHub Issues](https://github.com/Anne-dot/aca-translation-assistant/issues).
 
-**Version:** 2.3
-**Last Updated:** 2025-10-20
+**Version:** 2.4
+**Last Updated:** 2026-08-22
 
 ---
 
@@ -56,6 +56,48 @@ See complete roadmap: [PROJECT_OVERVIEW_DRAFT.md](PROJECT_OVERVIEW_DRAFT.md)
 ---
 
 ## 📐 Architectural Decisions
+
+### ✅ DECISION: TBX Standards Review — 7 decisions (Issue #44)
+
+**Date:** 2026-08-21/22
+**Issue:** [#44](https://github.com/Anne-dot/aca-translation-assistant/issues/44)
+**Full consolidated text:** [research/standards/TBX_M1_DECISIONS_2026-08.md](research/standards/TBX_M1_DECISIONS_2026-08.md)
+**Updated specification:** [research/standards/JSON_SCHEMA_SPECIFICATION.md](research/standards/JSON_SCHEMA_SPECIFICATION.md) v2.0
+
+The critical review of the schema against the TBX-Basic standard (NotebookLM
+round 1 questions) was completed with seven decisions. Summary:
+
+1. **M1a — Target version:** TBX-Basic **Version 4** (TerminOrgs, Nov 2025)
+   replaces the v1.2.1 assumption.
+2. **MUST 1 — "TBX-Basic exportable":** the claim "100% compliant" is
+   replaced everywhere — the JSON is the internal master, TBX is an export
+   projection; export mapping table adopted.
+3. **MUST 2 — Atomic components:** component data lives only in the
+   component's own concept; `componentLookups` removed from the schema.
+4. **MUST 3 — Status:** `workflow` is the single source of truth; the TBX
+   status is derived at export, never stored (`administrativeStatus`
+   removed). Renames: `atlStatus` → `communityReviewStatus`,
+   `usageStatus` → `communityTextUsage` (V4 name collision +
+   organisation-neutral naming; ACA → ACAD transition noted).
+5. **SHOULD 1 — Part of speech:** program/human cooperation contract with
+   hard gates; enum fixed to the V4 picklist ("phrase" removed,
+   `properNoun`/`other` added); census: only 17/334 entries lack raw markers.
+6. **SHOULD 2 — Orthogonal axes:** structure/form/grammar are independent
+   facts; `termComplexity` removed (computed, not stored).
+7. **SHOULD 3 — Component sync dissolved:** nothing to synchronise in the
+   reference model; `componentTerms` removed (computed, not stored).
+
+**Common principle:** original data is guarded; derived data is computed.
+
+**Amends earlier decisions below:** Part of Speech Field (enum), Term
+Complexity Classification (field removed — the classification concept
+remains, as a computed function), TBX-Basic Compliant Structure (Decision 2
+reaffirmed as Variant C; Decision 3 hybrid partly reversed), Final JSON
+Schema Design (Decisions 6, 10, 17, 18 amended; formatVersion → 2.0).
+The affected sections below are kept for history; where they conflict with
+the Issue #44 decisions, **Issue #44 wins**.
+
+---
 
 ### ✅ DECISION: English Terms as Dictionary Keys
 
