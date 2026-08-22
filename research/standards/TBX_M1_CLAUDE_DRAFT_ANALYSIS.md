@@ -171,7 +171,7 @@ standard home. From the table in §0:
 
 | Our field | Standard home at export (v1.2.1 → V4) | Citation |
 |---|---|---|
-| workflow.atlStatus | administrativeStatus (Decision 10 mapping) → **usageStatus** (preferred/admitted/deprecated) | Min.tbxmd; V4 §6.23 |
+| workflow.atlStatus | → **usageStatus**: atl_approved → `preferred`, rejected → `deprecated`; **candidate → usageStatus OMITTED** (optional in V4) + note "Candidate — awaiting ATL review" — export never claims more than we know (refined 2026-08-21 from Decision 10's blanket `admitted` mapping) | Min.tbxmd; V4 §6.23, §6.11 |
 | workflow.rejectedReason | `note` on the term (both versions) | V4 §6.11: note at concept/language/term |
 | usageExamples.enContext / etTranslation | `context` (descrip, termSec) on the EN / ET term (both versions) | Basic.tbxmd; V4 §6.1 |
 | source object | `admin type="source"` (flattened to string); V4 also defines nesting in `descripGrp` for definition/context sources | Basic.tbxmd; V4 §6.15–6.17 |
@@ -334,7 +334,12 @@ names, v1.2.1 equivalents in brackets):
    [v1.2.1: `supersededTerm-admn-sts`]
 2. else `atlStatus = rejected` → `deprecated` [`deprecatedTerm-admn-sts`]
 3. else `atlStatus = atl_approved` → `preferred` [`preferredTerm-admn-sts`]
-4. else (candidate / no workflow) → `admitted` [`admittedTerm-admn-sts`]
+4. else (candidate / no workflow) → **no status value** (usageStatus omitted —
+   it is optional in V4) + at export a note "Candidate — awaiting ATL review"
+   [refined 2026-08-21 from Decision 10's blanket `admitted` mapping: an
+   unreviewed term must not present itself as a consciously admitted
+   alternative; a translator sees the absence + note and knows no decision
+   exists yet]
    - exception: EN glossary terms (isGlossaryTerm true, no workflow) →
      `preferred` (WSO's own term is by definition the preferred EN form)
 
