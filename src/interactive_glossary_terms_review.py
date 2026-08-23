@@ -36,13 +36,13 @@ def count_terms_by_review_status(terms):
 	}
 
 def count_actions_by_type(terms):
-	counts = { "accepted": 0, "merged": 0, "edited": 0, "flagged": 0 }
+	counts = {}
 	
 	for term in terms:
 		actions = term.get("actions", [])
 		if actions:
-			last_action = actions[-1]["type"]
-			counts[last_action] += (last_action in counts)
+			last = actions[-1]["type"]
+			counts[last] = counts.get(last, 0) + 1
 	
 	return counts
 
@@ -71,10 +71,14 @@ def display_statistics(stats):
 > Actions (of {total} total):""")
 	
 	actions = stats["actions"]
-	for action_type, count in actions.items():
-		print(
-			f"\t{action_type.capitalize()}: {count} ({percent(count, total)}%)"
-		)
+	
+	if len(actions) > 0:
+		for action_type, count in actions.items():
+			print(
+				f"\t{action_type.capitalize()}: {count} ({percent(count, total)}%)"
+			)
+	else:
+		print("\tNo actions found.")
 	
 	print()
 
@@ -1118,8 +1122,7 @@ def main():
 		return
 	
 	if choice == "6":
-		stats = count_terms_by_review_status(terms)
-		display_statistics(stats)
+		display_statistics(count_terms_by_review_status(terms))
 		return
 	
 	terms_to_review = filter_terms_for_review(terms, choice)
