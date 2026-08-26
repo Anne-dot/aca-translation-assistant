@@ -116,6 +116,9 @@ PEP 8 orders stdlib imports before local ones; the cleanup left e.g.
 - **Single quotes** (`'`) only for:
   - Character literals
   - Strings containing double quotes
+- f-string expressions follow the same double-quote rule (valid since
+  Python 3.12 / PEP 701; on older Pythons single quotes inside f-string
+  expressions were a syntax necessity, not a style choice)
 
 - sobib
 
@@ -200,9 +203,13 @@ behavior change must be named explicitly in the commit message. (Origin:
 the split-utils cleanup changed menu flow and display behavior without
 documenting it.)
 
-### Minimum Python version `[Discuss]`
-`match/case` (used since the cleanup) requires Python 3.10+. Document the
-project minimum (proposal: 3.10+) here and in README's technology stack.
+### Minimum Python version `[Agreed]`
+The project minimum is **Python 3.12** (agreed 2026-08-26; supersedes the
+earlier 3.10+ proposal). Reasons: `match/case` needs 3.10+ anyway; Python
+3.10 reaches end-of-life in October 2026; and PEP 701 (3.12) removes the
+f-string quote restriction, so the double-quote convention applies uniformly
+with no exceptions. The minimum is also documented in README's technology
+stack.
 
 ---
 

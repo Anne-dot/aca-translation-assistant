@@ -99,7 +99,7 @@ ATL_tõlkeprojekt/
 
 ## 🛠️ Technology Stack
 
-- **Language:** Python 3.x
+- **Language:** Python 3.12+
 - **Data Format:** JSON (current), SQLite (future)
 - **Standards:** TBX-Basic v1.2.1 (ISO 30042:2019), ISO 704, ISO 1087
 - **Version Control:** Git + GitHub Issues workflow
