@@ -311,6 +311,17 @@ def format_term_for_display(term):
 ---
 
 
+## 11. Commit Requirements `[Agreed]`
+
+- Every commit must at minimum pass `python3 -m py_compile` on all touched
+  Python files.
+- Scripts should be run end-to-end before committing whenever the branch has
+  the data to do so; if not possible, say so in the commit message.
+
+Proposed by Anne, agreed by Henri in [Issue #29](https://github.com/Anne-dot/aca-translation-assistant/issues/29).
+
+---
+
 ## Discussion Log
 
 See [Issue #29](https://github.com/Anne-dot/aca-translation-assistant/issues/29) for full discussion.
