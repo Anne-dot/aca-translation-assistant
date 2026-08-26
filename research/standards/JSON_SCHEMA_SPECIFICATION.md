@@ -496,16 +496,18 @@ Notes:
 - Note the ACA → ACAD transition (2026 ABC, phased 5–10 years): when WSO
   materials adopt ACAD, `supersededBy` handles the term-level succession.
 
-> **⚠️ OPEN QUESTION (found during the v2.0 documentation pass):** the MUST 3
-> derivation rule "EN glossary terms → `preferred`" is too coarse when one
-> concept has several EN variants ("ACA" and its full form cannot both be
-> `preferred`; V4 §6.23 allows one value per term and expects preferences to
-> differ). A refinement is needed — e.g. derive `preferred` for the glossary's
-> primary form and `admitted` for other EN variants (primary = first listed,
-> or an explicit small marker). **Not yet decided** — needs an Issue #44
-> follow-up decision. Until decided, the exporter emits `preferred` for the
-> first EN term of a concept and `admitted` for subsequent EN variants, and
-> this behaviour is marked provisional.
+> **⚠️ OPEN QUESTION (found during the v2.0 documentation pass; requires an
+> Issue #44 follow-up decision):** the MUST 3 derivation rule "EN glossary
+> terms → `preferred`" is too coarse when one concept has several EN variants
+> ("ACA" and its full form cannot both be `preferred`; V4 §6.23 allows one
+> value per term). **Undecided — NO interim rule exists.** (An earlier
+> drafted interim rule based on array order was struck on 2026-08-26: it was
+> never decided by the project owner, and array position is an unguarded
+> value that can change silently.) Candidate mechanisms under discussion: an
+> explicit primary marker (`isPrimary` on the term, or `primaryTermRef` at
+> the language level), and/or the export refusing multi-variant EN concepts
+> until a human has designated the primary. The export script (M2, not yet
+> written) must not process multi-variant EN concepts before this decision.
 
 ---
 
@@ -808,7 +810,11 @@ extraction data (`data/1_extracted/`) predates this structure entirely.
 2. **EN-required rule vs ET-only community terms** (Example 4) — needs an
    Issue #44 follow-up decision.
 3. **Status derivation for multi-variant EN concepts** (Example 5) — needs an
-   Issue #44 follow-up decision; provisional rule documented there.
+   Issue #44 follow-up decision. **No interim rule exists** (the earlier
+   drafted one was struck 2026-08-26 as never having been decided); the
+   export must not process such concepts until decided. Candidate
+   mechanisms: explicit primary marker (`isPrimary` / `primaryTermRef`) or
+   export refusal until human designation.
 4. **Which component words deserve concepts** (stop-words / dictionary-hit
    filtering) — Phase 2 enrichment design.
 5. **Hyphenated terms** ("self-esteem") in the shared split function.
