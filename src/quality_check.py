@@ -82,7 +82,7 @@ def count_info_issues(terms):
 			for meaning in term.get("meanings", [])
 		)
 		
-		issues["missing_examples"  ] += any(
+		issues["missing_examples"  ] += not any(
 			meaning.get("usageExample", "").strip()
 			for meaning in term.get("meanings", [])
 		)

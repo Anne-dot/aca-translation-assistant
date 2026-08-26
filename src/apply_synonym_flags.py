@@ -16,7 +16,7 @@ def main():
 	skipped_count = 0
 	
 	for term in terms:
-		if term_name := term['term'] not in ANALYSIS_RESULTS: continue
+		if (term_name := term['term']) not in ANALYSIS_RESULTS: continue
 		
 		should_flag, reason = ANALYSIS_RESULTS[term_name]
 		if not should_flag: continue

@@ -214,7 +214,7 @@ def get_issue_description_short(issue):
 
 
 def display_normalization_issue(issue):
-	print("""
+	print(f"""
 ================================================================================
 ! NORMALIZATION ISSUE DETECTED !
 ================================================================================
@@ -531,14 +531,14 @@ def select_meaning_to_edit(meanings):
 	if len(meanings) == 1: return 0
 	
 	print()
-	print("Which meaning to edit? (1 ... {i+1})")
+	print(f"Which meaning to edit? (1 ... {len(meanings)})")
 	print("[0] to cancel")
 	
 	choice = int(get_user_choice(
 		"> ", [str(i) for i in range(len(meanings) + 1)]
 	))
 	
-	return none if choice == 0 else choice - 1
+	return None if choice == 0 else choice - 1
 
 
 
@@ -804,8 +804,7 @@ def edit_term_fields(term):
 				else:
 					new_type = edit_single_field(
 						"grammaticalType",
-						current_type,
-						is_list = False
+						current_type
 					)
 					pos, qualifier = split_grammatical_type(new_type)
 					term["grammaticalType"] = pos
@@ -822,16 +821,14 @@ def edit_term_fields(term):
 			else:
 				new_type = edit_single_field(
 					"grammaticalType",
-					current_type,
-					is_list = False
+					current_type
 				)
 				term["grammaticalType"] = new_type
 		
 		if choice in ["2", "3"]:
 			term["seeAlso"] = edit_single_field(
 				"seeAlso",
-				term.get("seeAlso", []),
-				is_list = True
+				term.get("seeAlso", [])
 			)
 	
 	print("+ Term fields updated!")
@@ -972,20 +969,20 @@ def merge_term_meanings(term):
 	
 	merged = reduce(merge_two_meanings, meanings)
 	
-	print("""
+	print(f"""
 ================================================================================
 MERGE PREVIEW
 ================================================================================
 
 Merged Definition:
-	{merged["definition"]}
+	{merged['definition']}
 
 Merged Synonyms:
-	{', '.join(merged['synonyms']) if merged["synonyms"] else "(none)"}
+	{", ".join(merged["synonyms"]) if merged["synonyms"] else "(none)"}
 
 Merged Usage Example:
-	{merged["usageExample"]}
-	
+	{merged['usageExample']}
+
 ================================================================================
 """)
 	
@@ -1153,7 +1150,10 @@ def main():
 		filter_type = [
 			"NOT REVIEWED",  "FLAGGED",
 			"REVIEWED - OK", "REVIEWED - FLAGGED"
-		][("needsReview" in term)*1 + ("reviewedAt" in term)*2]
+		][
+			bool(term.get("needsReview", False))*1
+			+ (term.get("reviewedAt") is not None)*2
+		]
 		
 		display_complete_term_info(
 			term,      title = filter_type,
