@@ -214,7 +214,7 @@ def display_normalization_issue(issue):
 ================================================================================
 ! NORMALIZATION ISSUE DETECTED !
 ================================================================================
-Category: {issue['category']}
+Category: {issue["category"]}
 """)
 	
 	match issue["category"]:
@@ -974,7 +974,7 @@ Merged Definition:
 	{merged['definition']}
 
 Merged Synonyms:
-	{', '.join(merged['synonyms']) if merged['synonyms'] else '(none)'}
+	{", ".join(merged["synonyms"]) if merged["synonyms"] else "(none)"}
 
 Merged Usage Example:
 	{merged['usageExample']}
