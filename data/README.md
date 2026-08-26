@@ -42,16 +42,19 @@ See detailed documentation: [ACA_WSO/README.md](ACA_WSO/README.md)
 - Terms: 334
 - Script: `src/extract_foundation_glossary.py`
 - Structure: Terms with meanings array, auto-split multiple definitions
-- Fields: term, grammaticalType, seeAlso, meanings[], pageReferences, needsReview, reviewedAt, actions[], reviewNotes[]
+- Fields: term, grammaticalType, seeAlso, meanings[], pageReferences, needsReview, reviewedAt, actions[], reviewNotes[], waitingForUpdate, waitingForUpdateAt
+- `waitingForUpdate` / `waitingForUpdateAt`: term is parked until the review tool gains a feature it needs ("waiting for script update"). Parked terms are excluded from normal review filters and listed via review-tool filter [7].
 
-**Status:** Extraction complete. Manual review in progress.
-- Extracted: 334 terms
-- Reviewed: 11/334 (3.3%)
-- Not reviewed: 323/334 (96.7%)
-- Flagged for review: 16 terms (15 auto-flagged + 1 manual)
-- Actions tracked: accepted (10), merged (1), flagged (1)
+**Status:** Initial review complete. Waiting for human-based TBX analysis (Issue #51).
+- Total terms: 334
+- Reviewed - OK: 139
+- Reviewed - flagged: 195
+- Waiting for update: 14
 - Review tool: `src/interactive_glossary_terms_review.py`
-- Features: Percentage-based statistics, action tracking, review filters
+
+**`synonyms_analysis.json`**
+- Synonym analysis results from initial review
+- Script: `src/extract_synonyms_for_analysis.py`
 
 ---
 
@@ -70,4 +73,4 @@ See detailed documentation: [ACA_WSO/README.md](ACA_WSO/README.md)
 
 ---
 
-**Last Updated:** 2025-10-22
+**Last Updated:** 2026-01-19

@@ -20,7 +20,7 @@ This is the **Single Source of Truth** for coding standards in this project.
 
 ---
 
-## References
+## References (avatud soovitustele)
 
 - [PEP 8 – Style Guide for Python Code](https://peps.python.org/pep-0008/) (official Python style guide)
 - [PEP 257 – Docstring Conventions](https://peps.python.org/pep-0257/)
@@ -37,9 +37,11 @@ This is the **Single Source of Truth** for coding standards in this project.
 | Classes | `UpperCamelCase` | `GlossaryTerm`, `ReviewSession` | `[Henri]` |
 
 **Rules:**
-- `[Henri]` Variable names are either single letter (small scope only, max ~50 lines) or completely unabbreviated
-- `[Anne]` No abbreviations except widely-known acronyms (API, JSON, etc.)
-- `[Anne]` Names must be self-explanatory
+- `[Henri]` Variable names are either single letter (small scope only, max ~50 lines) or completely unabbreviated. Single letter for iteration (indexes, ...) and i.e generic function to remove padding for string - factory - step by step; formulas. 
+- `[Anne]` No abbreviations except widely-known acronyms (api, json, etc.). Abbreviation widely used already outside of coding (ACA abbreviation in upper case since it is written so in normal writing)
+- `[Anne]` Names must be self-explanatory.
+
+- sobib
 
 ---
 
@@ -49,11 +51,19 @@ This is the **Single Source of Truth** for coding standards in this project.
 - **Target:** 80 characters
 - **Maximum:** 100 characters (strings/comments only, in extreme cases)
 - Never start a word past column 80
+- Eelvaade ja kaks akent kõrvuti toimivad siis hästi. Henri töövoo jaoks oluline.
+
+- sobib
+
 
 ### Indentation `[Henri]`
 - Use **tabs** for indentation
 - Use **spaces** for alignment within lines
 - Keep indentation on "empty lines" for clarity in diffs
+
+- based on official recommendation (1 tab = 4 spaces)
+
+- sobib
 
 ### Line Breaks `[Henri]`
 Prefer indentation-based alignment over spacing alignment:
@@ -65,6 +75,8 @@ foo = long_function_name(
 	var_three, var_four
 )
 
+
+
 # Avoid
 foo = long_function_name(var_one, var_two,
                          var_three, var_four)
@@ -75,6 +87,27 @@ foo = long_function_name(var_one, var_two,
 - 3 blank lines between top-level functions
 - 3 blank lines before section dividers
 
+
+### Questions
+- linting - how does linting and code cleaning sw seda hoiab?
+- linterid ja formatterid ja nende seadistamise võimalused.
+- Kas saame mõne seadistada nii, et vastaks neile eeslistustele? - Henrile ülesandeks
+
+### Spaces around `=` in keyword arguments `[Discuss]`
+The cleanup introduced `encoding = "utf-8"` style (spaces around `=` in
+keyword arguments/defaults). PEP 8 forbids this, and the codebase is now
+mixed (`indent=2` next to `ensure_ascii = False`). Decide: adopt the spaced
+style as a documented exception, or follow PEP 8.
+
+### Single-line compound statements `[Discuss]`
+`if x: return` / `if __name__ == "__main__": main()` are used widely since
+the cleanup. PEP 8 discourages compound statements on one line. Decide:
+allow (e.g. only for guard clauses), or disallow.
+
+### Import order `[Discuss]`
+PEP 8 orders stdlib imports before local ones; the cleanup left e.g.
+`import re` after the `tools` imports. Decide: follow PEP 8 order.
+
 ---
 
 ## 3. Strings and Characters `[Henri]`
@@ -84,13 +117,20 @@ foo = long_function_name(var_one, var_two,
   - Character literals
   - Strings containing double quotes
 
+- sobib
+
+### Conversion status `[Discuss]`
+The double-quote rule is applied to about half the codebase; several files
+are still single-quoted. Decide: convert the rest in one dedicated commit,
+or convert files only when touched anyway.
+
 ---
 
 ## 4. Comments `[Henri]`
 
 Comments are **only** for:
 
-1. **File headers** - purpose of the file
+1. **File headers / docstrings** - purpose of the file
 2. **Section dividers** - visual separation of major sections:
 ```python
 #==============================================================================#
@@ -98,8 +138,18 @@ Comments are **only** for:
 #==============================================================================#
 ```
 3. **Why, not what** - explain *why* code exists, never *what* it does
+4. **Pseudocode** töö ajal
+5. **Todo notes** töö ajal
 
 **Never** write comments that describe what code does. If code needs explanation, refactor it or rename variables.
+
+- sobib
+
+### File header docstrings `[Discuss]`
+The cleanup deleted file-purpose docstrings entirely. The comment rule
+permits "file headers – purpose of the file" but does not require them.
+Decide: require a 1–2 line purpose docstring per file (helps ADHD-friendly
+orientation), or leave optional.
 
 ---
 
@@ -108,12 +158,15 @@ Comments are **only** for:
 - **No emojis or non-ASCII characters** in code output
 - Use instead:
   - ASCII art for visual elements
-  - ANSI escape codes for colors (via module if needed)
+  - ANSI escape codes for colors (via module if needed) - Anne ütleb: "Super!"
   - "Irregular" punctuation for emphasis: `!!Save failed:`
 
 **Rationale:** Emojis are hard to write/change, unreliable to render on CLI, and complicate testing.
 
-**Note:** Anne currently uses emojis in some scripts for visual feedback. Needs discussion.
+**Note:** Anne currently uses emojis in some scripts for visual feedback. Needs discussion. Nõus. 
+**Note:** Anne annab AI-le juhendi, et emoji on ok dokumentatsioonis ja ei ole okei cli programmides.
+
+- sobib. Ülioluline! Emojod saavad bänni!!!!
 
 ---
 
@@ -126,17 +179,30 @@ Comments are **only** for:
 - Immediate feedback (progress indicators, status messages)
 
 ### Core Principles
-- **DRY** (Don't Repeat Yourself)
+- **DRY** (Don't Repeat Yourself) - Ära kirjuta sama asja mitmesse kohta. 
 - **KISS** (Keep It Simple)
-- **MVP-first** (working > perfect)
+- **MVP-first** (working > perfect) = **Progressive Enhancement** (make it work → make it right → make it fast)
 - **Modular** (small, focused functions)
 - **Single Source of Truth**
-- **Progressive Enhancement** (make it work → make it right → make it fast)
+- **Defensive Programming**
 
 ### Code Reuse
 When a function/pattern repeats 2+ times across files:
 - Extract to `src/utils.py`
 - Import where needed
+
+### When to Split Modules
+Split when file grows and natural grouping emerges. Don't force splitting - keep code in one file as long as it's logical and understandable. When it grows and natural groupings appear, then split. ([Issue #31](https://github.com/Anne-dot/aca-translation-assistant/issues/31))
+
+### Behavior-preserving refactoring `[Discuss]`
+A cleanup/refactor must not silently change behavior. Any intentional
+behavior change must be named explicitly in the commit message. (Origin:
+the split-utils cleanup changed menu flow and display behavior without
+documenting it.)
+
+### Minimum Python version `[Discuss]`
+`match/case` (used since the cleanup) requires Python 3.10+. Document the
+project minimum (proposal: 3.10+) here and in README's technology stack.
 
 ---
 
@@ -168,6 +234,8 @@ def load_file(path):
         raise
 ```
 
+- sobib. Mõlemad nõus, et see on oluline.
+
 ---
 
 ## 8. What to Avoid `[Anne]` `[Henri]`
@@ -175,10 +243,7 @@ def load_file(path):
 ### Callback Hell
 ```python
 # BAD
-get_data(lambda a:
-    process_data(a, lambda b:
-        save_data(b, lambda c:
-            notify(c))))
+- koodimatrjoska, rekusrsive, loopime. väldid stack overflowd, mingi väljumise strateegia, safety check.
 
 # GOOD
 data = get_data()
@@ -186,6 +251,8 @@ processed = process_data(data)
 save_data(processed)
 notify()
 ```
+
+TODO: Anne - lisa parem näide (Henri näide Discordis)
 
 ### Premature Optimization
 ```python
@@ -216,9 +283,9 @@ def load_terms(path):
 
 ---
 
-## 9. OOP vs Functions `[Anne]` `[Discuss]`
+## 9. OOP vs Functions `[Agreed]`
 
-**Anne's approach:** Pragmatic OOP - use classes for entities, functions for transformations.
+Use classes only when needed (e.g., creating new data types). Otherwise prefer functions.
 
 ```python
 # Use CLASS for real-world entity with state
@@ -233,21 +300,16 @@ def format_term_for_display(term):
     return f"{term.english} → {term.estonian}"
 ```
 
-**Question for Henri:** What is your stance on OOP? When to use classes vs functions?
+- sobib 
 
 ---
 
-## 10. Tooling (Future) `[Discuss]`
+## 10. Tooling (Future)
 
-Consider adopting:
-- `black` - auto-formatter (with custom line length)
-- `flake8` - linter
-- `mypy` - type checking
-- Pre-commit hooks
-
-**Note:** Tabs vs spaces - `black` uses spaces by default. Need to decide if we adapt or configure.
+**See [Issue #30](https://github.com/Anne-dot/aca-translation-assistant/issues/30)** - Henri researching linter/formatter options. 
 
 ---
+
 
 ## Discussion Log
 

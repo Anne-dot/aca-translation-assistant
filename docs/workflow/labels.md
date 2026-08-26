@@ -30,23 +30,24 @@ Use GitHub's built-in assignee feature (not labels).
 
 ```bash
 gh issue list --assignee @me
-gh issue list --assignee henri-klimt
+gh issue list --assignee thersgo
 ```
 
 ## Milestones
 
-| Label | Description |
-|-------|-------------|
-| `m1-terminology-database` | Milestone 1: Terminology Database |
+| Milestone | Description |
+|-----------|-------------|
+| Project Foundation (M0) | Infrastructure, coding standards, documentation, tooling |
+| Terminology Database (M1) | Foundation for everything. Collects, organizes, and manages translation terms |
 
 ### Milestone 1 Phases
 
 | Label | Description |
 |-------|-------------|
-| `1a-collect-eki-terminology` | Collect terminology from EKI databases |
-| `1b-match-glossary` | Match Glossary terms with EKI terminology |
-| `1c-extract-daily-texts` | Extract terminology from daily meditation texts |
-| `1d-collaboration` | Collaboration opportunities (optional) |
+| `1a-glossary-sources` | Phase 1A: Glossary Sources (EN) - WSO materials |
+| `1b-estonian-translations` | Phase 1B: Add Estonian translations from dictionaries |
+| `1c-atl-translations` | Phase 1C: Extract from existing ATL translations |
+| `1d-collaboration` | Phase 1D: Collaboration opportunities (optional) |
 
 ## Other
 
@@ -57,7 +58,7 @@ gh issue list --assignee henri-klimt
 ## Usage
 
 Issues can have multiple labels combined, e.g.:
-- `m1-terminology-database` + `1a-collect-eki-terminology` + `wf-in-progress`
+- `1a-glossary-sources` + `wf-in-progress`
 
 ### CLI Examples
 
@@ -68,6 +69,9 @@ gh issue list --assignee @me
 # List in-progress issues
 gh issue list --label "wf-in-progress"
 
-# List Milestone 1 issues
-gh issue list --label "m1-terminology-database"
+# List Phase 1A issues
+gh issue list --label "1a-glossary-sources"
+
+# List by milestone
+gh issue list --milestone "Terminology Database"
 ```

@@ -2,8 +2,6 @@
 
 **Extraction and processing scripts for ACA Translation Assistant**
 
-FIXME: this README is severely outdated in various ways by this point
-
 ---
 
 ## 📁 Current Scripts
@@ -41,20 +39,26 @@ python3 src/interactive_glossary_terms_review.py
 ```
 
 **Menu Options:**
-- [1] Flagged - needs review (needsReview: true)
-- [2] Unflagged - needs review (not flagged AND not reviewed)
-- [3] Reviewed (reviewedAt is not None)
-- [4] All terms
-- [5] Show statistics and exit
+- [1] Flagged
+- [2] Not reviewed
+- [3] Reviewed - OK
+- [4] Reviewed - Flagged
+- [5] All terms
+- [6] Show statistics and exit
+- [7] Waiting for update
+- [8] Unflagged - not reviewed yet
 
 **Review Actions:**
 - [a] Accept - Mark as reviewed (clears review notes)
-- [s] Skip - Review later
-- [f] Flag - Mark for review with optional note
+- [d] Edit definition - Quick edit in external editor
 - [e] Edit meanings - Modify definitions, synonyms, examples
 - [t] Edit term fields - grammaticalType, seeAlso (with auto-split)
+- [n] Edit review notes
 - [m] Merge - Combine multiple meanings (with preview & edit)
-- [q] Quit - Save progress
+- [f] Flag - Mark for review with optional note
+- [w] Waiting for update - Park until the tool gains a needed feature
+- [s] Skip - Review later
+- [q] Quit review
 
 **Statistics:**
 - Percentage-based progress tracking
@@ -70,19 +74,18 @@ python3 src/interactive_glossary_terms_review.py
 
 ### Utilities
 
-**`utils.py`**
+**`tools/` package** (utils.py split into modules, Issue #34)
 - Shared utility functions following DRY principle
-- File operations: `read_csv_file()`, `load_json_file()`, `save_json_file()`
-- Directory operations: `ensure_output_dir()`
-- Text processing: `clean_text()`, `parse_list_from_text()`, `normalize_term()`
-- Multiple meanings detection: `detect_numbered_meanings()`, `split_numbered_text()`
-- **Normalization detection** (Issue #25): Categories 4, 5, 7, 8
+- `filemanage.py`: `read_csv_file()`, `load_json_file()`, `save_json_file()`, `ensure_directory_exists()`
+- `text_processing.py`: `clean_text()`, `parse_list_from_text()`, `has_numbered_meanings()`, `split_numbered_text()`, `shorten_text()`
+- `normalization_detection.py` - **Normalization detection** (Issue #25): Categories 4, 5, 7, 8
   - `detect_parentheses_notation()` - (s), (ren), (es)
   - `detect_asterisk()` - footnote markers
   - `detect_multiple_terms_comma()` - comma-separated terms
   - `detect_multiple_terms_slash()` - slash-separated terms
-  - `detect_seealso_issues()` - suspicious seeAlso entries
+  - `detect_verbose_seealso()` - suspicious seeAlso entries
   - `collect_normalization_issues()` - unified detection
+- `ui.py`: `page_break()`
 
 **`migrate_add_actions.py`**
 - One-time migration script to add actions array to reviewed terms
@@ -96,7 +99,7 @@ python3 src/interactive_glossary_terms_review.py
 **`deprecated/normalize_terms_review.py`**
 - Standalone normalization review script (deprecated)
 - Functionality integrated into `interactive_glossary_terms_review.py`
-- Detection functions moved to `utils.py` (DRY principle)
+- Detection functions moved to `tools/normalization_detection.py` (DRY principle)
 
 ---
 
@@ -104,7 +107,7 @@ python3 src/interactive_glossary_terms_review.py
 
 **Current Focus:** PHASE 1 - Manual Review (Issue #21)
 
-**Status:** Review in progress (~3/334 terms reviewed, ~1%)
+**Status:** Initial review pass complete (334/334): 139 reviewed OK, 195 flagged, 14 waiting for tool features
 - Term normalization research complete ✅ (Issue #25)
 - Normalization detection integrated ✅ (auto-detects categories 4, 5, 7, 8)
 - Term field editing `[t]` implemented ✅
@@ -121,4 +124,4 @@ python3 src/interactive_glossary_terms_review.py
 
 ---
 
-**Last Updated:** 2025-10-24
+**Last Updated:** 2026-08-21

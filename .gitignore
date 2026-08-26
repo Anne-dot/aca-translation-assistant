@@ -41,20 +41,26 @@ Thumbs.db
 
 # Project specific
 data/paevamotted/
+deprecated/**/*.json
 *.docx
 *.txt
 !requirements.txt
 !README.txt
 
 # Credentials and sensitive data
-*.json
+# *.json
 # IMPORTANT! Allow public EKI terminology data and analysis results
 !data/eki_terminid/*.json
 !data/glossary_analüüs.json
+!data/1_extracted/*.json
 !terminibaas.json.example
 !schemas/*.json
 credentials/
 secrets/
+
+# Local planning (personal, not shared)
+TODO.md
+NEXT_SESSION.md
 
 # Logs
 *.log
