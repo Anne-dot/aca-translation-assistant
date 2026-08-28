@@ -120,8 +120,10 @@ def detect_seealso_issues(term_data):
 #==============================================================================#
 
 def display_term_header(term_data, current, total):
-	page_break()
-	print(f"Term {current}/{total}: {term_data['term']}")
+	print(f"""
+{page_break()}
+Term {current}/{total}: {term_data['term']}
+""")
 	
 	if term_data.get("grammaticalType"):
 		print(f"Type: ({term_data['grammaticalType']})")
@@ -135,7 +137,7 @@ def display_term_header(term_data, current, total):
 			)
 			print(f"Definition: {short_def}")
 	
-	page_break()
+	print(page_break())
 
 
 def display_issue_details(issue):
@@ -319,11 +321,10 @@ def process_term(term_data, stats):
 #==============================================================================#
 
 def display_final_statistics(stats):
-	print()
-	page_break()
-	print("+ Review complete!")
-	page_break()
 	print(f"""
+{page_break()}
++ Review complete!
+{page_break()}
 Statistics:
 	Total reviewed: {stats["total_reviewed"]}
 	+ Accepted:  {stats["accepted"]}
@@ -344,12 +345,13 @@ def main():
 	input_file = Path("data/1_extracted/foundation_raw.json")
 	
 	sys.stdin.reconfigure(encoding = "utf-8")
-	
-	print()
-	print("> Term Normalization Review")
-	page_break()
-	print()
-	print(f"> Loading: {input_file}")
+
+	print(f"""
+> Term Normalization Review
+{page_break()}
+
+> Loading: {input_file}
+""")
 	
 	terms = load_json_file(input_file)
 	print(f"+ Loaded {len(terms)} terms\n")
@@ -376,7 +378,8 @@ def main():
 	
 	display_final_statistics(stats)
 	
-	print(f"> All changes saved to: {input_file}\n")
+	print(f"> All changes saved to: {input_file}")
+	print()
 
 
 

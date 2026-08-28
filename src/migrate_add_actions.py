@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-from pathlib import Path
+from pathlib          import Path
 from tools.filemanage import load_json_file, save_json_file
 
 def migrate_reviewed_terms(terms):

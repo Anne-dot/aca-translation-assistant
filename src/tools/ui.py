@@ -1,1 +1,1 @@
-def page_break(): return ("=" * 80)
+def page_break() -> str: return ("=" * 80)
