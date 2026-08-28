@@ -3,8 +3,8 @@
 import sys
 from pathlib import Path
 from datetime import datetime
-from utils.filemanage import load_json_file, save_json_file
-from utils.ui import page_break
+from tools.filemanage import load_json_file, save_json_file
+from tools.ui import page_break
 
 
 
@@ -31,7 +31,7 @@ def detect_parentheses_notation(term_data):
 			"pattern": "(ren)",
 			"suggestion": [base, plural]
 		}
-
+	
 	# Pattern: word(es)
 	if "(es)" in term:
 		base = term.replace("(es)", "").strip()
@@ -41,7 +41,7 @@ def detect_parentheses_notation(term_data):
 			"pattern": "(es)",
 			"suggestion": [base, plural]
 		}
-
+	
 	return None
 
 
@@ -343,7 +343,7 @@ def main():
 	# TODO: negative space!
 	input_file = Path("data/1_extracted/foundation_raw.json")
 	
-	sys.stdin.reconfigure(encoding="utf-8")
+	sys.stdin.reconfigure(encoding = "utf-8")
 	
 	print()
 	print("> Term Normalization Review")
