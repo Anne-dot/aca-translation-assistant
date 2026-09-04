@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
+from   ai_synonym_analysis_results import ANALYSIS_RESULTS
+from   datetime                    import datetime
 import json
-from datetime import datetime
-from ai_synonym_analysis_results import ANALYSIS_RESULTS
 
 def main():
 	print("Applying AI synonym analysis results...")

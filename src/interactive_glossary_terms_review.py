@@ -1,15 +1,14 @@
 #!/usr/bin/env python3
-import sys
+from   datetime            import datetime
+from   functools           import reduce
 import os
-import tempfile
+from   pathlib             import Path
 import subprocess
-from pathlib import Path
-from datetime import datetime
-from functools import reduce
-
-from tools.filemanage import load_json_file, save_json_file
-from tools.normalization_detection import collect_normalization_issues
-from tools.ui import page_break
+import sys
+import tempfile
+from   tools.filemanage    import load_json_file, save_json_file
+from   tools.normalization import collect_normalization_issues
+from   tools.ui            import page_break
 
 
 
@@ -48,8 +47,8 @@ def count_actions_by_type(terms):
 
 
 
-def display_statistics(stats):
-	def percent(count, total):
+def display_statistics(stats: dict[str, int]) -> None:
+	def percent(count: int, total: int) -> float:
 		return 0.0 if total == 0 else round(count / total * 100, 1)
 	
 	total        = stats["total"]

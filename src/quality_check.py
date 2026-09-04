@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-from pathlib import Path
-from datetime import datetime
+from datetime         import datetime
+from pathlib          import Path
 from tools.filemanage import load_json_file, save_json_file
-from tools.ui import page_break
+from tools.ui         import page_break
 
 def flag_term_for_issue(term, issue_description):
 	term["needsReview"] = True

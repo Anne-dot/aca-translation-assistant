@@ -1,13 +1,13 @@
 import re
 
-def normalize_term(term):
+def normalize_term(term: str) -> str:
 	return term.lower().strip()
 
-def clean_text_for_csv(text):
+def clean_text_for_csv(text: str) -> str:
 	# replace newlines with pipes, remove extra whitespace
 	return ' '.join(text.replace('\n', ' | ').split())
 
-def shorten_text(text, max_length = 100):
+def shorten_text(text: str, max_length: int = 100) -> str:
 	if not text: text = ""
 	cleaned = clean_text_for_csv(text)
 	if len(cleaned) <= max_length:
@@ -15,13 +15,13 @@ def shorten_text(text, max_length = 100):
 	else:
 		return (cleaned[:max_length] + "...")
 
-def clean_text(text):
+def clean_text(text: str) -> str:
 	if not text: text = ''
 	return text.replace('\u00a0', ' ').strip()
 
 
 
-def parse_list_from_text(text, delimiter=','):
+def parse_list_from_text(text: str, delimiter: str = ',') -> list[str]:
 	if not text or not text.strip():
 		return []
 	
@@ -29,13 +29,13 @@ def parse_list_from_text(text, delimiter=','):
 
 
 
-def has_numbered_meanings(text):
+def has_numbered_meanings(text: str) -> bool:
 	if not text:
 		return False
 	# starts with "1." or has "\n1." followed by space
 	return bool(re.search(r'(^|\n)\d+\.\s+', text))
 
-def split_numbered_text(text):
+def split_numbered_text(text: str) -> list[str]:
 	if not text: return []
 	
 	# Split by pattern: number followed by period and space
@@ -48,4 +48,3 @@ def split_numbered_text(text):
 			result.append(parts[i + 1].strip())
 	
 	return result if result else [text]
-

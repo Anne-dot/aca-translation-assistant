@@ -1,15 +1,18 @@
 #!/usr/bin/env python3
 
-from pathlib import Path
-from tools.filemanage import (
-    ensure_directory_exists,
-    read_csv_file, save_json_file
-)
-from tools.text_processing import (
-	clean_text, parse_list_from_text,
-	has_numbered_meanings, split_numbered_text
-)
+from   pathlib               import Path
 import re
+from   tools.filemanage      import (
+	ensure_directory_exists,
+	read_csv_file,
+	save_json_file
+)
+from   tools.text_processing import (
+	clean_text,
+	has_numbered_meanings,
+	parse_list_from_text,
+	split_numbered_text,
+)
 
 
 def extract_term_metadata(raw_term):
