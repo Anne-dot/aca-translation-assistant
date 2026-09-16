@@ -18,7 +18,9 @@ def flag_term_for_issue(term, issue_description):
         )
 
     if "flagged" not in [action["type"] for action in term["actions"]]:
-        term["actions"].append({"type": "flagged", "date": datetime.now().isoformat()})
+        term["actions"].append(
+            {"type": "flagged", "date": datetime.now().isoformat()}
+        )
 
     return term
 
@@ -84,7 +86,9 @@ def count_info_issues(terms):
             for meaning in term.get("meanings", [])
         )
 
-        issues["missing_references"] += not term.get("pageReferences", "").strip()
+        issues["missing_references"] += not term.get(
+            "pageReferences", ""
+        ).strip()
         issues["missing_see_also"] += not term.get("seeAlso")
 
     return issues

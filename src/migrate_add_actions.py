@@ -10,7 +10,9 @@ def migrate_reviewed_terms(terms):
         if "actions" in term or not term.get("reviewedAt"):
             continue
 
-        action_type = "merged" if len(term.get("meanings", [])) == 1 else "accepted"
+        action_type = (
+            "merged" if len(term.get("meanings", [])) == 1 else "accepted"
+        )
 
         term["actions"] = [{"type": action_type, "date": term["reviewedAt"]}]
 

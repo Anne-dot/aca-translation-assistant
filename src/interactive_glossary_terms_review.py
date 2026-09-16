@@ -14,6 +14,7 @@ type Term = dict[str, any]
 type Issue = dict[str, any]
 type Meaning = dict[str, str]
 
+
 # =============================================================================#
 # STATISTICS                                                                   #
 # =============================================================================#
@@ -75,7 +76,9 @@ def display_statistics(stats: dict[str, int]) -> None:
 
     if len(actions) > 0:
         for action_type, count in actions.items():
-            print(f"\t{action_type.capitalize()}: {count} ({percent(count, total)}%)")
+            print(
+                f"\t{action_type.capitalize()}: {count} ({percent(count, total)}%)"
+            )
     else:
         print("\tNo actions found.")
 
@@ -256,7 +259,11 @@ def handle_normalization_edit(issue: Issue) -> dict[str, any]:
     print("| Enter your changes:")
 
     match issue["category"]:
-        case "split_parentheses" | "split_multiple_comma" | "split_multiple_slash":
+        case (
+            "split_parentheses"
+            | "split_multiple_comma"
+            | "split_multiple_slash"
+        ):
             print("Enter terms (comma separated):")
             user_input = input("> ").strip()
             terms = [t.strip() for t in user_input.split(",")]
@@ -297,9 +304,13 @@ def display_updated_term_info(term: Term) -> None:
         if isinstance(action["data"], list):
             if action["data"] and isinstance(action["data"][0], dict):
                 entries = [item["entry"] for item in action["data"]]
-                print(f"\t-> {len(entries)} entries to clean: {', '.join(entries)}")
+                print(
+                    f"\t-> {len(entries)} entries to clean: {', '.join(entries)}"
+                )
             else:
-                print(f"\t-> {len(action['data'])} terms: {', '.join(action['data'])}")
+                print(
+                    f"\t-> {len(action['data'])} terms: {', '.join(action['data'])}"
+                )
         elif isinstance(action["data"], dict):
             if "cleanTerm" in action["data"]:
                 print(f"\t-> Clean term: {action['data']['cleanTerm']}")
@@ -319,7 +330,9 @@ def check_and_handle_normalization_issues(term: Term) -> bool:
     existing_action = term.get("normalizationAction")
     if existing_action:
         issues = [
-            issue for issue in issues if issue["category"] != existing_action["type"]
+            issue
+            for issue in issues
+            if issue["category"] != existing_action["type"]
         ]
 
     if not issues:
@@ -337,7 +350,10 @@ def check_and_handle_normalization_issues(term: Term) -> bool:
 
         match get_user_choice("> ", ["1", "2", "3", "4"]):
             case "1":
-                action = {"type": issue["category"], "data": issue["suggestion"]}
+                action = {
+                    "type": issue["category"],
+                    "data": issue["suggestion"],
+                }
                 apply_normalization_action(term, action)
 
             case "2":
@@ -409,12 +425,16 @@ def flag_term_for_review(term: Term) -> Term:
         if "reviewNotes" not in term:
             term["reviewNotes"] = []
 
-        term["reviewNotes"].append({"date": datetime.now().isoformat(), "note": note})
+        term["reviewNotes"].append(
+            {"date": datetime.now().isoformat(), "note": note}
+        )
 
     if "actions" not in term:
         term["actions"] = []
 
-    term["actions"].append({"type": "flagged", "date": datetime.now().isoformat()})
+    term["actions"].append(
+        {"type": "flagged", "date": datetime.now().isoformat()}
+    )
 
     print("!Flagged for review!")
     print()
@@ -437,7 +457,10 @@ def mark_waiting_for_update(term: Term) -> Term:
             term["reviewNotes"] = []
 
         term["reviewNotes"].append(
-            {"date": datetime.now().isoformat(), "note": f"Waiting for update: {note}"}
+            {
+                "date": datetime.now().isoformat(),
+                "note": f"Waiting for update: {note}",
+            }
         )
 
     if "actions" not in term:
@@ -516,12 +539,14 @@ def select_meaning_to_edit(meanings: list[Meaning]) -> int:
     print(f"Which meaning to edit? (1 ... {len(meanings)})")
     print("[0] to cancel")
 
-    choice = int(get_user_choice("> ", [str(i) for i in range(len(meanings) + 1)]))
+    choice = int(
+        get_user_choice("> ", [str(i) for i in range(len(meanings) + 1)])
+    )
 
     return None if choice == 0 else choice - 1
 
 
-def edit_text_in_editor(current_text: str, field_name: str="text") -> None:
+def edit_text_in_editor(current_text: str, field_name: str = "text") -> None:
     with tempfile.NamedTemporaryFile(
         mode="w", suffix=".txt", delete=False, encoding="utf-8"
     ) as file:
@@ -615,7 +640,9 @@ def handle_synonym_to_definition(term: Term) -> bool:
     current_definition = meaning.get("definition", "")
 
     formatted_synonyms = [format_synonym_as_sentence(syn) for syn in synonyms]
-    new_definition = current_definition + "\n\n" + "\n\n".join(formatted_synonyms)
+    new_definition = (
+        current_definition + "\n\n" + "\n\n".join(formatted_synonyms)
+    )
 
     print()
     print("Preview (will open in editor):")
@@ -740,7 +767,9 @@ def edit_term_fields(term: Term) -> Term:
 
         print()
         if input("Edit seeAlso too? [y/N]: ").strip().lower() == "y":
-            term["seeAlso"] = edit_single_field("seeAlso", term.get("seeAlso", []))
+            term["seeAlso"] = edit_single_field(
+                "seeAlso", term.get("seeAlso", [])
+            )
 
     else:
         print("""What to edit?
@@ -780,7 +809,9 @@ def edit_term_fields(term: Term) -> Term:
                     print(f"\tgrammaticalType: {pos}")
                     print(f"\ttermNote: {qualifier}")
                 else:
-                    new_type = edit_single_field("grammaticalType", current_type)
+                    new_type = edit_single_field(
+                        "grammaticalType", current_type
+                    )
                     pos, qualifier = split_grammatical_type(new_type)
                     term["grammaticalType"] = pos
                     if qualifier:
@@ -798,7 +829,9 @@ def edit_term_fields(term: Term) -> Term:
                 term["grammaticalType"] = new_type
 
         if choice in ["2", "3"]:
-            term["seeAlso"] = edit_single_field("seeAlso", term.get("seeAlso", []))
+            term["seeAlso"] = edit_single_field(
+                "seeAlso", term.get("seeAlso", [])
+            )
 
     print("+ Term fields updated!")
 
@@ -856,7 +889,9 @@ def ask_for_review_notes_cleanup(term: Term) -> None:
 
                 print()
                 delete = (
-                    input(f'Delete note #{i}: "{note_text}"? [y/N]: ').strip().lower()
+                    input(f'Delete note #{i}: "{note_text}"? [y/N]: ')
+                    .strip()
+                    .lower()
                 )
 
                 if delete == "y":
@@ -870,7 +905,9 @@ def ask_for_review_notes_cleanup(term: Term) -> None:
             print()
             if remaining_notes:
                 term["reviewNotes"] = remaining_notes
-                print(f"+ {deleted_count} note(s) deleted, {len(remaining_notes)} kept")
+                print(
+                    f"+ {deleted_count} note(s) deleted, {len(remaining_notes)} kept"
+                )
             else:
                 del term["reviewNotes"]
                 print(f"+ All {deleted_count} review note(s) deleted")
@@ -900,13 +937,17 @@ def combine_list_fields(list1: list, list2: list) -> list:
 def merge_two_meanings(meaning1: Meaning, meaning2: Meaning) -> Meaning:
     merged = {
         "definition": (
-            meaning1.get("definition", "") + " " + meaning2.get("definition", "")
+            meaning1.get("definition", "")
+            + " "
+            + meaning2.get("definition", "")
         ).strip(),
         "synonyms": combine_list_fields(
             meaning1.get("synonyms", []), meaning2.get("synonyms", [])
         ),
         "usageExample": (
-            meaning1.get("usageExample", "") + " " + meaning2.get("usageExample", "")
+            meaning1.get("usageExample", "")
+            + " "
+            + meaning2.get("usageExample", "")
         ).strip(),
     }
     return merged
@@ -1068,11 +1109,15 @@ def main() -> None:
 
     if flagged_count > 0:
         save_json_file(terms, input_file)
-        print(f"> Auto-flagged {flagged_count} terms with normalization issues")
+        print(
+            f"> Auto-flagged {flagged_count} terms with normalization issues"
+        )
         print()
 
     display_review_menu(terms)
-    choice = get_user_choice("> ", ["1", "2", "3", "4", "5", "6", "7", "8", "q"])
+    choice = get_user_choice(
+        "> ", ["1", "2", "3", "4", "5", "6", "7", "8", "q"]
+    )
 
     if choice == "q":
         print()
@@ -1128,7 +1173,9 @@ def main() -> None:
         if check_and_handle_normalization_issues(term):
             continue
 
-        if handle_synonym_to_definition(term) and save_with_feedback(terms, input_file):
+        if handle_synonym_to_definition(term) and save_with_feedback(
+            terms, input_file
+        ):
             modified = True
 
         ACTION_FUNCTIONS = {
@@ -1183,7 +1230,9 @@ def main() -> None:
 
     print()
     print(
-        f"+ All changes saved to `{input_file}`." if modified else "- No changes made."
+        f"+ All changes saved to `{input_file}`."
+        if modified
+        else "- No changes made."
     )
     print()
 

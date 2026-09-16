@@ -25,7 +25,9 @@ def main():
                 synonyms_text.extend(meaning.get("synonyms", []))
 
         if has_synonyms:
-            candidates.append({"term": term["term"], "synonyms": synonyms_text})
+            candidates.append(
+                {"term": term["term"], "synonyms": synonyms_text}
+            )
 
     with open(output_file, "w", encoding="utf-8") as file:
         json.dump(candidates, file, ensure_ascii=False, indent=2)

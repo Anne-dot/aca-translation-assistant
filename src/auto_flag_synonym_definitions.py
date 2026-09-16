@@ -4,7 +4,9 @@ from datetime import datetime
 
 
 def find_definitions_in_synonyms():
-    with open("data/1_extracted/synonyms_analysis.json", "r", encoding="utf-8") as f:
+    with open(
+        "data/1_extracted/synonyms_analysis.json", "r", encoding="utf-8"
+    ) as f:
         candidates = json.load(f)
 
     to_flag = {}

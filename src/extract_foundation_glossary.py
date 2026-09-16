@@ -2,7 +2,11 @@
 
 from pathlib import Path
 import re
-from tools.filemanage import ensure_directory_exists, read_csv_file, save_json_file
+from tools.filemanage import (
+    ensure_directory_exists,
+    read_csv_file,
+    save_json_file,
+)
 from tools.text_processing import (
     clean_text,
     has_numbered_meanings,

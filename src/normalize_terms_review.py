@@ -51,7 +51,10 @@ def detect_asterisk(term_data):
         return None
 
     clean_term = term.replace("*", "").strip()
-    return {"category": "remove_asterisk", "suggestion": {"cleanTerm": clean_term}}
+    return {
+        "category": "remove_asterisk",
+        "suggestion": {"cleanTerm": clean_term},
+    }
 
 
 def detect_multiple_terms_comma(term_data):
@@ -92,7 +95,9 @@ def detect_seealso_issues(term_data):
     for entry in see_also:
         word_count = len(entry.split())
         if word_count > 4:
-            issues.append({"entry": entry, "reason": f"Too long ({word_count} words)"})
+            issues.append(
+                {"entry": entry, "reason": f"Too long ({word_count} words)"}
+            )
 
     if issues:
         return {"category": "clean_seealso", "suggestion": issues}
@@ -118,7 +123,9 @@ Term {current}/{total}: {term_data['term']}
         definition = term_data["meanings"][0].get("definition", "")
         if definition:
             short_def = (
-                definition[:100] + "..." if len(definition) > 100 else definition
+                definition[:100] + "..."
+                if len(definition) > 100
+                else definition
             )
             print(f"Definition: {short_def}")
 
@@ -177,7 +184,9 @@ What to do?
         choice = input("> ").strip()
         if choice in valid_choices:
             return choice
-        print(f"Invalid choice. Please choose from: {', '.join(valid_choices)}")
+        print(
+            f"Invalid choice. Please choose from: {', '.join(valid_choices)}"
+        )
 
 
 # =============================================================================#
@@ -241,7 +250,10 @@ def collect_all_issues(term_data):
 
 
 def save_normalization_action(term_data, action_type, action_data):
-    term_data["normalizationAction"] = {"type": action_type, "data": action_data}
+    term_data["normalizationAction"] = {
+        "type": action_type,
+        "data": action_data,
+    }
     term_data["reviewedAt"] = datetime.now().isoformat()
     term_data["needsReview"] = False
 
@@ -251,7 +263,9 @@ def process_single_issue(term_data, issue, stats):
     choice = prompt_user_action()
 
     if choice == "1":  # Accept suggestion
-        save_normalization_action(term_data, issue["category"], issue["suggestion"])
+        save_normalization_action(
+            term_data, issue["category"], issue["suggestion"]
+        )
         stats["accepted"] += 1
         print("+ Suggestion accepted")
         return True
@@ -259,7 +273,9 @@ def process_single_issue(term_data, issue, stats):
     elif choice == "2":  # Edit manually
         action = handle_manual_edit(issue)
         if action:
-            save_normalization_action(term_data, action["type"], action["data"])
+            save_normalization_action(
+                term_data, action["type"], action["data"]
+            )
             stats["edited"] += 1
             print("+ Manual edit saved")
             return True

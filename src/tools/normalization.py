@@ -60,7 +60,9 @@ def detect_verbose_seealso(term_data):
     for entry in see_also:
         word_count = len(entry.split())
         if word_count > 4:
-            issues.append({"entry": entry, "reason": f"Too long ({word_count} words)"})
+            issues.append(
+                {"entry": entry, "reason": f"Too long ({word_count} words)"}
+            )
 
     if issues:
         return {"category": "clean_seealso", "suggestion": issues}

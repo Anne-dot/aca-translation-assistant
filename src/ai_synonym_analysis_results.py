@@ -10,12 +10,18 @@ Updated: 2025-10-25 - Complete analysis of all 334 terms
 # False = Don't flag (synonym is genuine)
 
 ANALYSIS_RESULTS = {
-    "abandonment": (False, '"neglect", "desertion", "rejection" are genuine synonyms'),
+    "abandonment": (
+        False,
+        '"neglect", "desertion", "rejection" are genuine synonyms',
+    ),
     "abandonment rupture": (
         True,
         '"abandonment wound" is synonym, but "soul rupture/trauma" explain the concept',
     ),
-    "abuse": (False, '"mistreatment", "assault" are genuine synonyms for noun'),
+    "abuse": (
+        False,
+        '"mistreatment", "assault" are genuine synonyms for noun',
+    ),
     "abuse (v)": (
         False,
         '"mistreat", "assault", "treat badly" are genuine synonyms for verb',
@@ -31,20 +37,32 @@ ANALYSIS_RESULTS = {
         True,
         '"returning to old, dysfunctional patterns" is definition not synonym',
     ),
-    "actor": (True, '"conscious responder" is definition explaining what actor means'),
+    "actor": (
+        True,
+        '"conscious responder" is definition explaining what actor means',
+    ),
     "acting-out": (
         True,
         '"dysfunctional", "unhealthy", "emotionally intoxicated" are descriptive, not synonyms',
     ),
-    "act out": (True, '"rely on unhealthy, dysfunctional behaviors" is definition'),
+    "act out": (
+        True,
+        '"rely on unhealthy, dysfunctional behaviors" is definition',
+    ),
     "action": (False, '"effort", "steps", "measures" are genuine synonyms'),
-    "activity": (False, '"action", "pursuit", "occupation", etc. are genuine synonyms'),
+    "activity": (
+        False,
+        '"action", "pursuit", "occupation", etc. are genuine synonyms',
+    ),
     "addicted to excitement": (
         False,
         '"drama-seeking", "adrenaline-chasing" are genuine synonyms',
     ),
     "addiction": (False, '"dependence" is genuine synonym'),
-    "addiction to excitement": (False, '"adrenaline addiction" is genuine synonym'),
+    "addiction to excitement": (
+        False,
+        '"adrenaline addiction" is genuine synonym',
+    ),
     "addictiveness": (False, '"addictive personality" is genuine synonym'),
     "address": (False, '"deal with", "confront" are genuine synonyms'),
     "adult child/Adult Child": (
@@ -59,7 +77,10 @@ ANALYSIS_RESULTS = {
         True,
         '"someone raised in alcoholic family who still exhibits..." is full definition',
     ),
-    "adulthood": (True, '"period of life in which you are an adult" is definition'),
+    "adulthood": (
+        True,
+        '"period of life in which you are an adult" is definition',
+    ),
     "affirmation": (
         True,
         '"positive statement" is definition explaining what affirmation is',
@@ -68,22 +89,37 @@ ANALYSIS_RESULTS = {
         True,
         '"social unease/apprehension..." is definitional explanation',
     ),
-    "amends": (True, '"apology and associated change in behavior" is definition'),
+    "amends": (
+        True,
+        '"apology and associated change in behavior" is definition',
+    ),
     "anger": (False, '"indignation" is genuine synonym'),
     "Annual Business Conference/ABC": (
         True,
         '"formal gathering to address business..." is definition',
     ),
     "approval": (False, '"acceptance", "validation" are genuine synonyms'),
-    "ashamed": (False, '"deeply humiliated", "mortified" are genuine synonyms'),
+    "ashamed": (
+        False,
+        '"deeply humiliated", "mortified" are genuine synonyms',
+    ),
     "attachment": (False, '"connection" is genuine synonym'),
     "authority figure": (
         True,
         '"person who has degree of power over others" is definition',
     ),
-    "awareness": (False, '"understanding", "realization" are genuine synonyms'),
-    "be burned up inside": (True, '"be overcome with anger or jealousy" is definition'),
-    "be in denial": (False, '"be unaware", "refuse to accept" are genuine synonyms'),
+    "awareness": (
+        False,
+        '"understanding", "realization" are genuine synonyms',
+    ),
+    "be burned up inside": (
+        True,
+        '"be overcome with anger or jealousy" is definition',
+    ),
+    "be in denial": (
+        False,
+        '"be unaware", "refuse to accept" are genuine synonyms',
+    ),
     "bear the brunt": (
         False,
         '"receive the full impact" is genuine, "to be on the front line" is idiom explanation',
@@ -92,18 +128,27 @@ ANALYSIS_RESULTS = {
     "bias": (False, '"inclination" is genuine synonym'),
     "black sheep": (False, '"odd one out" is genuine synonym/idiom'),
     "blameless inventory": (False, '"detached assessment" is genuine synonym'),
-    "bleeding deacon": (True, '"self-appointed ACA authority figure" is definition'),
+    "bleeding deacon": (
+        True,
+        '"self-appointed ACA authority figure" is definition',
+    ),
     "blindsided": (
         True,
         '"shocked by something you didn\'t expect" explains meaning, "caught off guard" is idiom',
     ),
     "blind spot": (False, '"denial" and "block" are genuine synonyms'),
-    "bludgeon myself": (False, '"shame myself", "beat myself up" are genuine synonyms'),
+    "bludgeon myself": (
+        False,
+        '"shame myself", "beat myself up" are genuine synonyms',
+    ),
     "boggles the mind": (
         False,
         '"baffles", "is difficult to understand" are genuine synonyms',
     ),
-    "brow-beaten": (False, '"intimidated", "bullied", "coerced" are genuine synonyms'),
+    "brow-beaten": (
+        False,
+        '"intimidated", "bullied", "coerced" are genuine synonyms',
+    ),
     "caregiver(s)": (False, '"caretaker" and "guardian" are genuine synonyms'),
     "challenge zone": (
         True,
@@ -118,7 +163,10 @@ ANALYSIS_RESULTS = {
         '"physically dependent on a substance" is a definition, not alternative term',
     ),
     "child within": (False, '"inner child" is a genuine synonym'),
-    "childhood neglect": (False, '"childhood abandonment" is a genuine synonym'),
+    "childhood neglect": (
+        False,
+        '"childhood abandonment" is a genuine synonym',
+    ),
     "childhood trauma": (
         True,
         '"adverse childhood experiences which have lasting..." is full definition',
@@ -135,7 +183,10 @@ ANALYSIS_RESULTS = {
         '"para-alcoholism" is synonym, but "making another person your higher power" is definition',
     ),
     "codependent": (False, '"para-alcoholic" is genuine synonym'),
-    "codependency": (False, '"para-alcoholism" is a genuine synonym/alternative term'),
+    "codependency": (
+        False,
+        '"para-alcoholism" is a genuine synonym/alternative term',
+    ),
     "common behaviors": (
         False,
         '"Laundry List traits" and "survival traits" are genuine synonyms',
@@ -144,9 +195,18 @@ ANALYSIS_RESULTS = {
         True,
         '"old, familiar mindset" and "comfortable way of doing things" are definitions/descriptions',
     ),
-    "compost": (True, '"create a soil amendment..." is definition of the action'),
-    "composting": (True, '"creating soil amendment..." is definition of the process'),
-    "compulsivity": (False, '"obsessiveness" and "addiction" are genuine synonyms'),
+    "compost": (
+        True,
+        '"create a soil amendment..." is definition of the action',
+    ),
+    "composting": (
+        True,
+        '"creating soil amendment..." is definition of the process',
+    ),
+    "compulsivity": (
+        False,
+        '"obsessiveness" and "addiction" are genuine synonyms',
+    ),
     "coping": (False, '"survival" is a genuine synonym'),
     "counseling": (
         True,
@@ -162,13 +222,19 @@ ANALYSIS_RESULTS = {
     "critical inner parent": (False, "All are genuine synonym variants"),
     "critical parent": (False, "Genuine synonym variants"),
     "critical survival parent": (False, "Genuine synonym variants"),
-    "cross talk": (True, '"interaction with another person\'s share" is definition'),
+    "cross talk": (
+        True,
+        '"interaction with another person\'s share" is definition',
+    ),
     "cross talk (v)": (
         True,
         '"to interact with another person\'s share in a meeting" is definition',
     ),
     "crossed the line": (False, '"went too far" is genuine synonym/idiom'),
-    "debtor's addiction": (False, '"credit card use addiction" is genuine synonym'),
+    "debtor's addiction": (
+        False,
+        '"credit card use addiction" is genuine synonym',
+    ),
     "defects of character": (False, "Genuine synonyms"),
     "defense traits": (False, "Genuine synonyms"),
     "denial": (
@@ -199,8 +265,14 @@ ANALYSIS_RESULTS = {
     "do the footwork": (False, '"put the work in" is genuine synonym/idiom'),
     "doing the heavy spiritual lifting": (False, "Genuine synonyms/idioms"),
     "dole out": (False, '"deal out" is genuine synonym'),
-    '"don\'t remember" rule': (False, '"it never happened rule" is genuine synonym'),
-    "\"don't talk, don't trust, don't feel\" rule": (False, "Genuine synonym variants"),
+    '"don\'t remember" rule': (
+        False,
+        '"it never happened rule" is genuine synonym',
+    ),
+    "\"don't talk, don't trust, don't feel\" rule": (
+        False,
+        "Genuine synonym variants",
+    ),
     "dope": (False, '"drug(s)" is genuine synonym'),
     "doormat": (False, '"pushover", "fawner" are genuine synonyms'),
     "dysfunction": (
@@ -216,9 +288,15 @@ ANALYSIS_RESULTS = {
         '"12 Step member who does not seek to control..." is definition',
     ),
     "emotional abuse": (False, '"psychological abuse" is genuine synonym'),
-    "emotional sobriety": (False, '"psychological equanimity" is genuine synonym'),
+    "emotional sobriety": (
+        False,
+        '"psychological equanimity" is genuine synonym',
+    ),
     "emotionally unavailable": (False, "Genuine synonyms"),
-    "enabler": (False, '"addiction/dysfunction facilitator" is genuine synonym'),
+    "enabler": (
+        False,
+        '"addiction/dysfunction facilitator" is genuine synonym',
+    ),
     "enmeshment": (
         True,
         '"a lack of boundaries and emotional separation..." is definition',
@@ -253,7 +331,10 @@ ANALYSIS_RESULTS = {
     "fix (n)": (False, '"repair", "solution", "cure" are genuine synonyms'),
     "fix (v)": (False, '"repair", "mend", "heal" are genuine synonyms'),
     "fixed": (False, "Genuine synonyms"),
-    "fixing": (True, '"doing whatever it takes to neutralize..." is full definition'),
+    "fixing": (
+        True,
+        '"doing whatever it takes to neutralize..." is full definition',
+    ),
     "food addiction": (
         True,
         '"compulsive eating" is synonym, but "using food as a drug" is definition/explanation',
@@ -309,7 +390,10 @@ ANALYSIS_RESULTS = {
         True,
         '"performing at high level, despite debilitating condition..." is definition',
     ),
-    "higher power/Higher Power": (True, '"a power greater than myself" is definition'),
+    "higher power/Higher Power": (
+        True,
+        '"a power greater than myself" is definition',
+    ),
     "hit bottom": (True, "Long explanation is definition"),
     "home group": (False, "Genuine synonyms"),
     "hone in on": (False, "Genuine synonyms"),
@@ -321,7 +405,10 @@ ANALYSIS_RESULTS = {
     ),
     "hung over": (False, '"feeling the after-effects" is genuine synonym'),
     "hypervigilance": (False, '"extreme hyperarousal" is genuine synonym'),
-    "identified alcoholic": (False, '"recognized alcoholic" is genuine synonym'),
+    "identified alcoholic": (
+        False,
+        '"recognized alcoholic" is genuine synonym',
+    ),
     "Identity Papers": (
         True,
         '"founding documents of ACA, the original writings..." is full definition',
@@ -363,7 +450,10 @@ ANALYSIS_RESULTS = {
         True,
         '"Recovery happens when you truly work..." is definitional explanation',
     ),
-    "judgmental": (True, '"quick to find fault, quick to criticize" are definitions'),
+    "judgmental": (
+        True,
+        '"quick to find fault, quick to criticize" are definitions',
+    ),
     "judgmentalness": (False, "Genuine synonyms"),
     "judged ourselves without mercy": (
         True,
@@ -378,12 +468,18 @@ ANALYSIS_RESULTS = {
         True,
         '"list of common behaviors, the 14 characteristics..." is definition',
     ),
-    "laundromat": (True, '"the adult child\'s workplace" is definition/explanation'),
+    "laundromat": (
+        True,
+        '"the adult child\'s workplace" is definition/explanation',
+    ),
     "living amends": (
         True,
         '"commitment to conscious change from harmful..." is definition',
     ),
-    "loss": (True, '"absence of someone or something important" is definition'),
+    "loss": (
+        True,
+        '"absence of someone or something important" is definition',
+    ),
     "lost child": (False, "Genuine synonyms"),
     "loving parent/Loving Parent": (
         True,
@@ -393,7 +489,10 @@ ANALYSIS_RESULTS = {
     "made great strides": (False, "Genuine synonyms"),
     "mental illness": (False, "Genuine synonyms"),
     "mercy": (False, "Genuine synonyms"),
-    "mindfulness": (True, '"present-moment awareness without judgment" is definition'),
+    "mindfulness": (
+        True,
+        '"present-moment awareness without judgment" is definition',
+    ),
     "mistrust": (False, '"suspicion" is genuine synonym'),
     "neglect": (
         True,
@@ -461,7 +560,10 @@ ANALYSIS_RESULTS = {
     ),
     "recovery": (False, '"healing" is genuine synonym'),
     "recreation": (False, "Genuine synonyms"),
-    "relapse (n)": (True, '"return to sickness/unhealthy behavior" is definition'),
+    "relapse (n)": (
+        True,
+        '"return to sickness/unhealthy behavior" is definition',
+    ),
     "relapse (v)": (True, '"return to unhealthy behavior" is definition'),
     "relate": (False, "Genuine synonyms (context-specific)"),
     "relate to": (False, "Genuine synonyms"),
@@ -480,7 +582,10 @@ ANALYSIS_RESULTS = {
     "resentment": (False, "Genuine synonyms"),
     "sane": (False, "Genuine synonyms"),
     "sanity": (True, '"soundness of mind" is definition'),
-    "scapegoat": (True, '"person who takes the blame for others" is definition'),
+    "scapegoat": (
+        True,
+        '"person who takes the blame for others" is definition',
+    ),
     "self-betrayal": (False, "Genuine synonyms"),
     "self-blame": (False, "Genuine synonyms with explanation"),
     "self-condemnation": (False, "Genuine synonyms"),
@@ -531,9 +636,15 @@ ANALYSIS_RESULTS = {
     "spiritual": (True, '"relating to the human spirit/soul" is definition'),
     "spiritual abuse": (False, '"religious abuse" is genuine synonym'),
     "spill the beans": (False, "Genuine synonyms/idioms"),
-    "sponsee": (True, '"fellow traveler being guided by a sponsor" is definition'),
+    "sponsee": (
+        True,
+        '"fellow traveler being guided by a sponsor" is definition',
+    ),
     "sponsor": (False, "Genuine synonyms"),
-    "sponsorship": (True, '"peer-to-peer help with ACA recovery" is definition'),
+    "sponsorship": (
+        True,
+        '"peer-to-peer help with ACA recovery" is definition',
+    ),
     "stand up for": (False, "Genuine synonyms"),
     "stand up to": (False, '"confront" is genuine synonym'),
     "stuck": (
@@ -548,7 +659,10 @@ ANALYSIS_RESULTS = {
     "substance abuser": (False, "Genuine synonyms"),
     "substance abuse": (False, "Genuine synonyms"),
     "support group": (False, "Genuine synonyms"),
-    "sureness of foot": (False, '"feeling of confidence" is genuine synonym/metaphor'),
+    "sureness of foot": (
+        False,
+        '"feeling of confidence" is genuine synonym/metaphor',
+    ),
     "survival (n)": (False, "Context-specific genuine synonyms"),
     "survival (adj)": (False, "Context-specific genuine synonyms"),
     "survival traits/survival Traits": (False, "Genuine synonyms"),
@@ -590,9 +704,15 @@ ANALYSIS_RESULTS = {
     "victim": (False, "Genuine synonyms"),
     "victimize": (False, '"abuse" is genuine synonym'),
     "victimizer": (False, '"abuser" is genuine synonym'),
-    "victim plateau": (True, '"being stuck in the victim mindset" is definition'),
+    "victim plateau": (
+        True,
+        '"being stuck in the victim mindset" is definition',
+    ),
     "victim posture": (False, "Genuine synonyms"),
-    "voice-shame": (True, '"shame we feel when hearing ourselves speak" is definition'),
+    "voice-shame": (
+        True,
+        '"shame we feel when hearing ourselves speak" is definition',
+    ),
     "walk on eggshells": (False, "Genuine synonyms/idioms"),
     "walking wounded": (False, "Genuine synonyms with explanation"),
     "whipped": (False, "Genuine synonyms"),
@@ -601,20 +721,31 @@ ANALYSIS_RESULTS = {
         '"were defenseless against, were unprotected against" are definitions',
     ),
     "while (n)": (True, '"period of time" is definition'),
-    "while (conj)": (False, '"when", "at the same time as" are genuine synonyms'),
+    "while (conj)": (
+        False,
+        '"when", "at the same time as" are genuine synonyms',
+    ),
     "wipe the slate clean": (False, "Genuine synonyms/idioms"),
-    "workaholic": (True, '"someone who works a lot and compulsively" is definition'),
+    "workaholic": (
+        True,
+        '"someone who works a lot and compulsively" is definition',
+    ),
     "workbook": (False, '"exercise book" is genuine synonym'),
     "workplace laundry list": (
         True,
         '"list of typical adult child problems in the workplace" is definition',
     ),
-    "World Service Office/WSO": (True, '"The ACA central agency" is definition'),
+    "World Service Office/WSO": (
+        True,
+        '"The ACA central agency" is definition',
+    ),
 }
 
 # Summary statistics
 total_terms = len(ANALYSIS_RESULTS)
-flagged_count = sum(1 for should_flag, _ in ANALYSIS_RESULTS.values() if should_flag)
+flagged_count = sum(
+    1 for should_flag, _ in ANALYSIS_RESULTS.values() if should_flag
+)
 not_flagged_count = total_terms - flagged_count
 
 print(f"Complete Synonym Analysis:")

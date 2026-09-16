@@ -35,7 +35,10 @@ def main():
             term["reviewNotes"] = []
 
         term["reviewNotes"].append(
-            {"date": datetime.now().isoformat(), "note": f"synonyms (AI): {reason}"}
+            {
+                "date": datetime.now().isoformat(),
+                "note": f"synonyms (AI): {reason}",
+            }
         )
 
         flagged_count += 1
@@ -44,13 +47,15 @@ def main():
     with open(input_file, "w", encoding="utf-8") as f:
         json.dump(terms, f, ensure_ascii=False, indent=2)
 
-    print(f"""
+    print(
+        f"""
 
 ================================================================================
 Done!
 	Flagged {flagged_count} terms.
 	Skipped {skipped_count} terms (already flagged / reviewed).
-================================================================================""")
+================================================================================"""
+    )
 
 
 if __name__ == "__main__":
