@@ -10,11 +10,14 @@ from tools.filemanage import load_json_file, save_json_file
 from tools.normalization import collect_normalization_issues
 from tools.ui import page_break
 
+type Term = dict[str, any]
+type Issue = dict[str, any]
+type Meaning = dict[str, str]
 
 # =============================================================================#
 # STATISTICS                                                                   #
 # =============================================================================#
-def count_terms_by_review_status(terms):
+def count_terms_by_review_status(terms: list[Term]) -> dict[str, int]:
     total = len(terms)
     flagged = reviewed = multiple_meanings = 0
 
@@ -34,7 +37,7 @@ def count_terms_by_review_status(terms):
     }
 
 
-def count_actions_by_type(terms):
+def count_actions_by_type(terms: Term) -> dict[str, int]:
     counts = {}
 
     for term in terms:
@@ -82,7 +85,9 @@ def display_statistics(stats: dict[str, int]) -> None:
 # =============================================================================#
 # TERM DISPLAY                                                                 #
 # =============================================================================#
-def display_complete_term_info(term, title=None, index=None, total=None):
+def display_complete_term_info(
+    term: Term, title: str = None, index: int = None, total: int = None
+) -> None:
     term_name = ""
     if index and total:
         term_name = f"{index}/{total}" + (bool(title) * ": ")
@@ -182,7 +187,7 @@ see also: {", ".join(term.get("seeAlso", ["N/A"]))}
 # =============================================================================#
 # USER INTERACTION                                                             #
 # =============================================================================#
-def get_user_choice(prompt, valid_choices):
+def get_user_choice(prompt: str, valid_choices: list[str]) -> None:
     while True:
         choice = input(prompt).strip().lower()
         if choice in valid_choices:
@@ -195,7 +200,7 @@ Please choose from: {", ".join(valid_choices)}
 # =============================================================================#
 # NORMALIZATION HANDLING - Issue #25                                           #
 # =============================================================================#
-def get_issue_description_short(issue):
+def get_issue_description_short(issue: Issue) -> str:
     match issue["category"]:
         case "split_parentheses":
             return f"Term contains parentheses: {issue['pattern']}"
@@ -212,7 +217,7 @@ def get_issue_description_short(issue):
             return f"Unknown issue: {issue['category']}"
 
 
-def display_normalization_issue(issue):
+def display_normalization_issue(issue: Issue) -> None:
     print(f"""
 ================================================================================
 ! NORMALIZATION ISSUE DETECTED !
@@ -246,7 +251,7 @@ Category: {issue["category"]}
     print(page_break())
 
 
-def handle_normalization_edit(issue):
+def handle_normalization_edit(issue: Issue) -> dict[str, any]:
     print()
     print("| Enter your changes:")
 
@@ -276,13 +281,13 @@ def handle_normalization_edit(issue):
     return None
 
 
-def apply_normalization_action(term, action):
+def apply_normalization_action(term: Term, action: str) -> None:
     term["normalizationAction"] = action
     print()
     print(f"+ normalizationAction added: {action['type']}")
 
 
-def display_updated_term_info(term):
+def display_updated_term_info(term: Term) -> None:
     if "normalizationAction" in term:
         action = term["normalizationAction"]
         print()
@@ -305,7 +310,7 @@ def display_updated_term_info(term):
     display_complete_term_info(term, title="UPDATED TERM INFO")
 
 
-def check_and_handle_normalization_issues(term):
+def check_and_handle_normalization_issues(term: Term) -> bool:
     issues = collect_normalization_issues(term)
 
     if not issues:
@@ -357,7 +362,7 @@ def check_and_handle_normalization_issues(term):
 # =============================================================================#
 # REVIEW ACTIONS                                                               #
 # =============================================================================#
-def save_with_feedback(terms, file_path):
+def save_with_feedback(terms: Term, file_path: path) -> bool:
     try:
         print("> Saving...", flush=True)
         save_json_file(terms, file_path)
@@ -368,7 +373,7 @@ def save_with_feedback(terms, file_path):
         return False
 
 
-def mark_term_as_reviewed(term, action_type):
+def mark_term_as_reviewed(term: Term, action_type: str) -> Term:
     term["reviewedAt"] = datetime.now().isoformat()
 
     if term.get("reviewNotes"):
@@ -381,18 +386,20 @@ def mark_term_as_reviewed(term, action_type):
     if "actions" not in term:
         term["actions"] = []
 
-    term["actions"].append({"type": action_type, "date": datetime.now().isoformat()})
+    term["actions"].append(
+        {"type": action_type, "date": datetime.now().isoformat()}
+    )
 
     return term
 
 
-def accept_term(term):
+def accept_term(term: Term) -> Term:
     print("+ Accepted!")
     print()
     return mark_term_as_reviewed(term, "accepted")
 
 
-def flag_term_for_review(term):
+def flag_term_for_review(term: Term) -> Term:
     note = input("Reason for flagging (optional): ").strip()
 
     term["needsReview"] = True
@@ -417,7 +424,7 @@ def flag_term_for_review(term):
 # "Waiting for update" parks a term until the review tool gains a
 # feature it needs (script enhancement). Parked terms are excluded
 # from normal review filters and retrievable via menu filter [7].
-def mark_waiting_for_update(term):
+def mark_waiting_for_update(term: Term) -> Term:
     term["waitingForUpdate"] = True
     term["waitingForUpdateAt"] = datetime.now().isoformat()
     term["reviewedAt"] = datetime.now().isoformat()
@@ -448,7 +455,7 @@ def mark_waiting_for_update(term):
 # =============================================================================#
 # EDIT FUNCTIONALITY - FIELD OPERATIONS                                        #
 # =============================================================================#
-def edit_single_field(field_name, current_value):
+def edit_single_field(field_name: str, current_value: any) -> list[str] | str:
     is_list = type(current_value) is list
 
     display_value = (
@@ -486,7 +493,7 @@ Options:
 # =============================================================================#
 # EDIT FUNCTIONALITY - MEANING OPERATIONS                                      #
 # =============================================================================#
-def edit_single_meaning(meaning):
+def edit_single_meaning(meaning: Meaning) -> Meaning:
     print()
     print("| Editing meaning fields...")
     print()
@@ -501,7 +508,7 @@ def edit_single_meaning(meaning):
     return new_meaning
 
 
-def select_meaning_to_edit(meanings):
+def select_meaning_to_edit(meanings: list[Meaning]) -> int:
     if len(meanings) == 1:
         return 0
 
@@ -514,7 +521,7 @@ def select_meaning_to_edit(meanings):
     return None if choice == 0 else choice - 1
 
 
-def edit_text_in_editor(current_text, field_name="text"):
+def edit_text_in_editor(current_text: str, field_name: str="text") -> None:
     with tempfile.NamedTemporaryFile(
         mode="w", suffix=".txt", delete=False, encoding="utf-8"
     ) as file:
@@ -545,7 +552,7 @@ def edit_text_in_editor(current_text, field_name="text"):
             os.unlink(temp_path)
 
 
-def format_synonym_as_sentence(text):
+def format_synonym_as_sentence(text: str) -> str:
     if text == "":
         return text
     if not text.endswith("."):
@@ -553,7 +560,7 @@ def format_synonym_as_sentence(text):
     return text.capitalize()
 
 
-def handle_synonym_to_definition(term):
+def handle_synonym_to_definition(term: Term) -> bool:
     has_synonym_note = False
     if term.get("reviewNotes"):
         for note in term["reviewNotes"]:
@@ -629,7 +636,7 @@ def handle_synonym_to_definition(term):
     return True
 
 
-def edit_definition(term):
+def edit_definition(term: Term) -> Term:
     meanings = term.get("meanings", [])
 
     if not meanings:
@@ -676,7 +683,7 @@ Current definition:
     return term
 
 
-def edit_term_meanings(term):
+def edit_term_meanings(term: Term) -> Term:
     meanings = term.get("meanings", [])
 
     meaning_index = select_meaning_to_edit(meanings)
@@ -696,7 +703,7 @@ def edit_term_meanings(term):
     return mark_term_as_reviewed(term, "edited")
 
 
-def split_grammatical_type(grammatical_type):
+def split_grammatical_type(grammatical_type: str) -> (str, str):
     if not grammatical_type or "," not in grammatical_type:
         return (grammatical_type, None)
 
@@ -704,7 +711,7 @@ def split_grammatical_type(grammatical_type):
     return (parts[0], parts[1] if len(parts) > 1 else None)
 
 
-def edit_term_fields(term):
+def edit_term_fields(term: Term) -> Term:
     print()
     print("| Editing term fields...")
     print()
@@ -803,7 +810,7 @@ def edit_term_fields(term):
     return term
 
 
-def edit_review_notes(term):
+def edit_review_notes(term: Term) -> Term:
     if not term.get("reviewNotes"):
         print("! No review notes to edit!")
         print()
@@ -814,7 +821,7 @@ def edit_review_notes(term):
     return term
 
 
-def ask_for_review_notes_cleanup(term):
+def ask_for_review_notes_cleanup(term: Term) -> None:
     display_complete_term_info(term, title="CURRENT TERM STATE")
 
     notes = term["reviewNotes"]
@@ -879,7 +886,7 @@ def ask_for_review_notes_cleanup(term):
 # =============================================================================#
 # MERGE FUNCTIONALITY                                                          #
 # =============================================================================#
-def combine_list_fields(list1, list2):
+def combine_list_fields(list1: list, list2: list) -> list:
     combined = list1 + list2
     seen = set()
     result = []
@@ -890,7 +897,7 @@ def combine_list_fields(list1, list2):
     return result
 
 
-def merge_two_meanings(meaning1, meaning2):
+def merge_two_meanings(meaning1: Meaning, meaning2: Meaning) -> Meaning:
     merged = {
         "definition": (
             meaning1.get("definition", "") + " " + meaning2.get("definition", "")
@@ -905,7 +912,7 @@ def merge_two_meanings(meaning1, meaning2):
     return merged
 
 
-def merge_term_meanings(term):
+def merge_term_meanings(term: Term) -> Term:
     meanings = term.get("meanings", [])
 
     if len(meanings) == 1:
@@ -976,7 +983,7 @@ FINAL RESULT
 # =============================================================================#
 # FILTERING                                                                    #
 # =============================================================================#
-def filter_terms_for_review(terms, review_mode):
+def filter_terms_for_review(terms: list[Term], review_mode: str) -> list:
     if review_mode == "5":
         return terms
 
@@ -1009,7 +1016,7 @@ def filter_terms_for_review(terms, review_mode):
 # =============================================================================#
 # MAIN FUNCTION                                                                #
 # =============================================================================#
-def display_review_menu(terms):
+def display_review_menu(terms: list[Term]) -> None:
     total = len(terms)
     waiting = sum(1 for t in terms if t.get("waitingForUpdate", False))
     active_terms = [t for t in terms if not t.get("waitingForUpdate", False)]
@@ -1041,7 +1048,7 @@ def display_review_menu(terms):
 """)
 
 
-def main():
+def main() -> None:
     input_file = Path("data/1_extracted/foundation_raw.json")
 
     sys.stdin.reconfigure(encoding="utf-8")
