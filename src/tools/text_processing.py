@@ -1,50 +1,56 @@
 import re
 
+
 def normalize_term(term: str) -> str:
-	return term.lower().strip()
+    return term.lower().strip()
+
 
 def clean_text_for_csv(text: str) -> str:
-	# replace newlines with pipes, remove extra whitespace
-	return ' '.join(text.replace('\n', ' | ').split())
+    # replace newlines with pipes, remove extra whitespace
+    return " ".join(text.replace("\n", " | ").split())
+
 
 def shorten_text(text: str, max_length: int = 100) -> str:
-	if not text: text = ""
-	cleaned = clean_text_for_csv(text)
-	if len(cleaned) <= max_length:
-		return cleaned
-	else:
-		return (cleaned[:max_length] + "...")
+    if not text:
+        text = ""
+    cleaned = clean_text_for_csv(text)
+    if len(cleaned) <= max_length:
+        return cleaned
+    else:
+        return cleaned[:max_length] + "..."
+
 
 def clean_text(text: str) -> str:
-	if not text: text = ''
-	return text.replace('\u00a0', ' ').strip()
+    if not text:
+        text = ""
+    return text.replace("\u00a0", " ").strip()
 
 
+def parse_list_from_text(text: str, delimiter: str = ",") -> list[str]:
+    if not text or not text.strip():
+        return []
 
-def parse_list_from_text(text: str, delimiter: str = ',') -> list[str]:
-	if not text or not text.strip():
-		return []
-	
-	return [item.strip() for item in text.split(delimiter) if item.strip()]
-
+    return [item.strip() for item in text.split(delimiter) if item.strip()]
 
 
 def has_numbered_meanings(text: str) -> bool:
-	if not text:
-		return False
-	# starts with "1." or has "\n1." followed by space
-	return bool(re.search(r'(^|\n)\d+\.\s+', text))
+    if not text:
+        return False
+    # starts with "1." or has "\n1." followed by space
+    return bool(re.search(r"(^|\n)\d+\.\s+", text))
+
 
 def split_numbered_text(text: str) -> list[str]:
-	if not text: return []
-	
-	# Split by pattern: number followed by period and space
-	parts = re.split(r'\n?(\d+)\.\s+', text)
-	
-	# parts format: ['prefix', '1', 'text1', '2', 'text2', ...]
-	result = []
-	for i in range(1, len(parts), 2):
-		if i + 1 < len(parts):
-			result.append(parts[i + 1].strip())
-	
-	return result if result else [text]
+    if not text:
+        return []
+
+    # Split by pattern: number followed by period and space
+    parts = re.split(r"\n?(\d+)\.\s+", text)
+
+    # parts format: ['prefix', '1', 'text1', '2', 'text2', ...]
+    result = []
+    for i in range(1, len(parts), 2):
+        if i + 1 < len(parts):
+            result.append(parts[i + 1].strip())
+
+    return result if result else [text]
