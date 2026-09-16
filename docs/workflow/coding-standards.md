@@ -2,7 +2,7 @@
 
 **Project:** ACA Translation Assistant
 **Status:** Draft - under discussion
-**Last updated:** 2025-12-10
+**Last updated:** 2026-09-16
 
 ---
 
@@ -45,83 +45,18 @@ This is the **Single Source of Truth** for coding standards in this project.
 
 ---
 
-## 2. Code Layout
+## 2. Formatting `[Agreed]`
 
-### Line Length `[Henri]`
-- **Target:** 80 characters
-- **Maximum:** 100 characters (strings/comments only, in extreme cases)
-- Never start a word past column 80
-- Eelvaade ja kaks akent kõrvuti toimivad siis hästi. Henri töövoo jaoks oluline.
+Formatting is handled by [Black](https://black.readthedocs.io/). Decided
+2026-09-16. Black supersedes the earlier layout rules (line length,
+indentation, line breaks, blank lines, spaces around `=` in keyword
+arguments, quote style). Configuration lives in `pyproject.toml`.
 
-- sobib
-
-
-### Indentation `[Henri]`
-- Use **tabs** for indentation
-- Use **spaces** for alignment within lines
-- Keep indentation on "empty lines" for clarity in diffs
-
-- based on official recommendation (1 tab = 4 spaces)
-
-- sobib
-
-### Line Breaks `[Henri]`
-Prefer indentation-based alignment over spacing alignment:
-
-```python
-# Preferred
-foo = long_function_name(
-	var_one, var_two,
-	var_three, var_four
-)
-
-
-# Avoid
-foo = long_function_name(var_one, var_two,
-                         var_three, var_four)
-```
-
-### Blank Lines `[Henri]`
-- 1 blank line between logical sections within a function
-- 3 blank lines between top-level functions
-- 3 blank lines before section dividers
-
-
-### Questions
-- linting - how does linting and code cleaning sw seda hoiab?
-- linterid ja formatterid ja nende seadistamise võimalused.
-- Kas saame mõne seadistada nii, et vastaks neile eeslistustele? - Henrile ülesandeks
-
-### Spaces around `=` in keyword arguments `[Agreed]`
-Spaced style (`encoding = "utf-8"`) is the project style — a documented
-exception to PEP 8, following Henri's cleanup practice (Anne agreed
-2026-08-26). Mixed spots are normalized whenever a file is touched anyway.
-
-### Single-line compound statements `[Discuss]`
-Used widely since the cleanup (`if x: return`). Anne's proposal: allow ONLY
-for short guard clauses (`return`/`continue`/`break`) and the
-`if __name__ == "__main__": main()` idiom — a long condition plus a
-substantial action must stay on separate lines. Note for the future: when
-tests arrive, measure BRANCH coverage, not line coverage (line coverage
-misreports single-line conditionals).
+Open: line length (Black default 88, earlier target 80).
 
 ---
 
-## 3. Strings and Characters `[Henri]`
-
-- **Double quotes** (`"`) for strings (default)
-- **Single quotes** (`'`) only for:
-  - Character literals
-  - Strings containing double quotes
-- f-string expressions follow the same double-quote rule (valid since
-  Python 3.12 / PEP 701; on older Pythons single quotes inside f-string
-  expressions were a syntax necessity, not a style choice)
-
-- sobib
-
----
-
-## 4. Comments `[Henri]`
+## 3. Comments `[Henri]`
 
 Comments are **only** for:
 
@@ -142,7 +77,7 @@ Comments are **only** for:
 
 ---
 
-## 5. Console Output `[Henri]` `[Discuss]`
+## 4. Console Output `[Henri]` `[Discuss]`
 
 - **No emojis or non-ASCII characters** in code output
 - Use instead:
@@ -159,7 +94,7 @@ Comments are **only** for:
 
 ---
 
-## 6. Architecture Principles `[Anne]`
+## 5. Architecture Principles `[Anne]`
 
 ### ADHD-friendly Code
 - One file = one purpose
@@ -193,7 +128,7 @@ stack.
 
 ---
 
-## 7. Error Handling `[Anne]`
+## 6. Error Handling `[Anne]`
 
 - **NO SILENT FAILURES**
 - Errors must always be visible
@@ -225,7 +160,7 @@ def load_file(path):
 
 ---
 
-## 8. What to Avoid `[Anne]` `[Henri]`
+## 7. What to Avoid `[Anne]` `[Henri]`
 
 ### Callback Hell
 ```python
@@ -270,7 +205,7 @@ def load_terms(path):
 
 ---
 
-## 9. OOP vs Functions `[Agreed]`
+## 8. OOP vs Functions `[Agreed]`
 
 Use classes only when needed (e.g., creating new data types). Otherwise prefer functions.
 
@@ -291,14 +226,15 @@ def format_term_for_display(term):
 
 ---
 
-## 10. Tooling (Future)
+## 9. Tooling
 
-**See [Issue #30](https://github.com/Anne-dot/aca-translation-assistant/issues/30)** - Henri researching linter/formatter options. 
+Formatter: Black (see section 2). Linter and editor setup: see
+[Issue #30](https://github.com/Anne-dot/aca-translation-assistant/issues/30).
 
 ---
 
 
-## 11. Commit Requirements `[Agreed]`
+## 10. Commit Requirements `[Agreed]`
 
 - Every commit must at minimum pass `python3 -m py_compile` on all touched
   Python files.
