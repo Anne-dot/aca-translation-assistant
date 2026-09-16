@@ -48,11 +48,17 @@ This is the **Single Source of Truth** for coding standards in this project.
 ## 2. Formatting `[Agreed]`
 
 Formatting is handled by [Black](https://black.readthedocs.io/). Decided
-2026-09-16. Black supersedes the earlier layout rules (line length,
-indentation, line breaks, blank lines, spaces around `=` in keyword
-arguments, quote style). Configuration lives in `pyproject.toml`.
+2026-09-16. Black supersedes the earlier layout rules (indentation, line
+breaks, blank lines, spaces around `=` in keyword arguments, quote style).
 
-Open: line length (Black default 88, earlier target 80).
+Line length is 79. Run Black from the project root with:
+
+```bash
+black --line-length 79 .
+```
+
+Until the setting lives in `pyproject.toml`, always pass the flag; without
+it Black uses 88 and reformats every file.
 
 ---
 
