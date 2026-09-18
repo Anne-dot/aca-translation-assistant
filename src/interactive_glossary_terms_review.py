@@ -9,10 +9,8 @@ import tempfile
 from tools.filemanage import load_json_file, save_json_file
 from tools.normalization import collect_normalization_issues
 from tools.ui import page_break
+from tools.types import Meaning, Action, Term, Issue
 
-type Term = dict[str, any]
-type Issue = dict[str, any]
-type Meaning = dict[str, str]
 
 
 # =============================================================================#
@@ -62,14 +60,14 @@ def display_statistics(stats: dict[str, int]) -> None:
 
     print(f"""
 | Statistics:
-	Total terms: {total}
-	Multiple meanings: {stats["multiple_meanings"]} ({multiple}%)
-	
+    Total terms: {total}
+    Multiple meanings: {stats["multiple_meanings"]} ({multiple}%)
+
 > Review Status:
-	Flagged for review: {stats["flagged"]} ({flagged}%)
-			  Reviewed: {stats["reviewed"]} ({reviewed}%)
-		  Not reviewed: {stats["not_reviewed"]} ({not_reviewed}%)
-	
+    Flagged for review: {stats["flagged"]} ({flagged}%)
+                Reviewed: {stats["reviewed"]} ({reviewed}%)
+            Not reviewed: {stats["not_reviewed"]} ({not_reviewed}%)
+
 > Actions (of {total} total):""")
 
     actions = stats["actions"]
@@ -342,10 +340,10 @@ def check_and_handle_normalization_issues(term: Term) -> bool:
         display_normalization_issue(issue)
 
         print("""Normalization actions:
-	[1] Accept suggestion
-	[2] Edit manually
-	[3] Continue with normal review (ignore)
-	[4] Skip term
+    [1] Accept suggestion
+    [2] Edit manually
+    [3] Continue with normal review (ignore)
+    [4] Skip term
 """)
 
         match get_user_choice("> ", ["1", "2", "3", "4"]):
@@ -378,7 +376,7 @@ def check_and_handle_normalization_issues(term: Term) -> bool:
 # =============================================================================#
 # REVIEW ACTIONS                                                               #
 # =============================================================================#
-def save_with_feedback(terms: Term, file_path: path) -> bool:
+def save_with_feedback(terms: Term, file_path: str) -> bool:
     try:
         print("> Saving...", flush=True)
         save_json_file(terms, file_path)
@@ -489,12 +487,12 @@ def edit_single_field(field_name: str, current_value: any) -> list[str] | str:
 
     print(f"""
 Current {field_name}:
-	{display_value}
+    {display_value}
 
 Options:
-	[k] Keep current value
-	[e] Enter new value
-	[d] Delete (set to empty)
+    [k] Keep current value
+    [e] Enter new value
+    [d] Delete (set to empty)
 """)
 
     match get_user_choice("> ", ["k", "e", "d"]):
@@ -623,9 +621,9 @@ def handle_synonym_to_definition(term: Term) -> bool:
     print()
 
     print("""Options:
-	[y] Yes - Move synonyms to definition
-	[n] No - Skip for now
-	[w] Waiting - Mark as waiting for script update
+    [y] Yes - Move synonyms to definition
+    [n] No - Skip for now
+    [w] Waiting - Mark as waiting for script update
 """)
     choice = get_user_choice("> ", ["y", "n", "w"])
 
@@ -686,7 +684,7 @@ def edit_definition(term: Term) -> Term:
     print(f"""| Opening definition in text editor...
 
 Current definition:
-	{current_definition}
+    {current_definition}
 """)
 
     edited_definition = edit_text_in_editor(current_definition, "definitsioon")
@@ -773,10 +771,10 @@ def edit_term_fields(term: Term) -> Term:
 
     else:
         print("""What to edit?
-	[1] grammaticalType
-	[2] seeAlso
-	[3] Both
-	[0] Cancel
+    [1] grammaticalType
+    [2] seeAlso
+    [3] Both
+    [0] Cancel
 """)
 
         choice = get_user_choice("> ", ["1", "2", "3", "0"])
@@ -864,9 +862,9 @@ def ask_for_review_notes_cleanup(term: Term) -> None:
     print()
 
     print("""Clear review notes?
-	[y] Clear all notes
-	[n] Keep all notes
-	[i] Interactive (choose per note)
+    [y] Clear all notes
+    [n] Keep all notes
+    [i] Interactive (choose per note)
 """)
 
     match get_user_choice("> ", ["y", "n", "i"]):
@@ -978,20 +976,20 @@ MERGE PREVIEW
 ================================================================================
 
 Merged Definition:
-	{merged['definition']}
+    {merged['definition']}
 
 Merged Synonyms:
-	{", ".join(merged["synonyms"]) if merged["synonyms"] else "(none)"}
+    {", ".join(merged["synonyms"]) if merged["synonyms"] else "(none)"}
 
 Merged Usage Example:
-	{merged['usageExample']}
+    {merged['usageExample']}
 
 ================================================================================
 """)
 
     print("""Would you like to edit the merged result?
-	[y] Yes - Edit fields
-	[n] No  - Accept as is
+    [y] Yes - Edit fields
+    [n] No  - Accept as is
 """)
 
     final_meaning = merged
@@ -1077,15 +1075,15 @@ def display_review_menu(terms: list[Term]) -> None:
     print("Foundation Glossary Review")
     print(page_break())
     print(f"""Options:
-	[1] Flagged ({flagged} terms)
-	[2] Not reviewed ({not_reviewed} terms)
-	[3] Reviewed - OK ({reviewed_ok} terms)
-	[4] Reviewed - Flagged ({reviewed_flagged} terms)
-	[5] All terms ({total} terms)
-	[6] Show statistics and exit
-	[7] Waiting for update ({waiting} terms)
-	[8] Unflagged - not reviewed yet ({unflagged} terms)
-	[q] Quit
+    [1] Flagged ({flagged} terms)
+    [2] Not reviewed ({not_reviewed} terms)
+    [3] Reviewed - OK ({reviewed_ok} terms)
+    [4] Reviewed - Flagged ({reviewed_flagged} terms)
+    [5] All terms ({total} terms)
+    [6] Show statistics and exit
+    [7] Waiting for update ({waiting} terms)
+    [8] Unflagged - not reviewed yet ({unflagged} terms)
+    [q] Quit
 """)
 
 
@@ -1191,16 +1189,16 @@ def main() -> None:
 
         while True:
             print("""Actions:
-	[a] Accept - Entry is correct
-	[d] Edit definition - Quick definition edit
-	[e] Edit - Modify meanings
-	[t] Edit term fields - grammaticalType, seeAlso
-	[n] Edit review notes
-	[m] Merge - Should be single meaning
-	[f] Flag - Mark for review
-	[w] Waiting for update - Needs script enhancement
-	[s] Skip - Review later
-	[q] Quit review
+    [a] Accept - Entry is correct
+    [d] Edit definition - Quick definition edit
+    [e] Edit - Modify meanings
+    [t] Edit term fields - grammaticalType, seeAlso
+    [n] Edit review notes
+    [m] Merge - Should be single meaning
+    [f] Flag - Mark for review
+    [w] Waiting for update - Needs script enhancement
+    [s] Skip - Review later
+    [q] Quit review
 """)
 
             action = get_user_choice(
