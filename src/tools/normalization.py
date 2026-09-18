@@ -1,10 +1,6 @@
-"""
-use collect_normalization_issues to get an array of
-normalization issues in a term.
-"""
+from .types import Term, Issue
 
-
-def detect_comma_separated_terms(term_data):
+def detect_comma_separated_terms(term_data: Term) -> Issue | None:
     # ex: "hero, hero child"
     term = term_data["term"]
     if "(" in term or "," not in term:
@@ -17,7 +13,7 @@ def detect_comma_separated_terms(term_data):
     return None
 
 
-def detect_slash_separated_terms(term_data):
+def detect_slash_separated_terms(term_data: Term) -> Issue | None:
     # ex: "Annual Business Conference/ABC"
     term = term_data["term"]
     if "/" not in term:
@@ -30,7 +26,7 @@ def detect_slash_separated_terms(term_data):
     return None
 
 
-def detect_plural_notation(term_data):
+def detect_plural_notation(term_data: Term) -> Issue | None:
     # ex: caregiver(s), foster child(ren)
     term = term_data["term"]
     if "(" not in term or ")" not in term:
@@ -50,7 +46,7 @@ def detect_plural_notation(term_data):
     return None
 
 
-def detect_verbose_seealso(term_data):
+def detect_verbose_seealso(term_data: Term) -> Issue | None:
     # ex: "trauma for further references in the literature"
     see_also = term_data.get("seeAlso", [])
     if not see_also:
@@ -70,7 +66,7 @@ def detect_verbose_seealso(term_data):
     return None
 
 
-def detect_asterisk(term_data):
+def detect_asterisk(term_data: Term) -> Issue | None:
     # ex: "counseling*", "para-alcoholic*"
     term = term_data["term"]
     if "*" not in term:
@@ -82,7 +78,7 @@ def detect_asterisk(term_data):
     }
 
 
-def collect_normalization_issues(term_data):
+def collect_normalization_issues(term_data: Term) -> list[Issue]:
     issues = []
 
     for check in [
