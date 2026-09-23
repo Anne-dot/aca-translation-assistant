@@ -251,7 +251,7 @@ Category: {issue["category"]}
     print(page_break())
 
 
-def handle_normalization_edit(issue: Issue) -> dict[str, any]:
+def handle_normalization_edit(issue: Issue) -> Action:
     print()
     print("| Enter your changes:")
 
@@ -285,7 +285,7 @@ def handle_normalization_edit(issue: Issue) -> dict[str, any]:
     return None
 
 
-def apply_normalization_action(term: Term, action: str) -> None:
+def apply_normalization_action(term: Term, action: Action) -> None:
     term["normalizationAction"] = action
     print()
     print(f"+ normalizationAction added: {action['type']}")

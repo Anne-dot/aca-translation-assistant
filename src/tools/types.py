@@ -7,9 +7,7 @@ class Meaning(TypedDict):
     usageExample: str
 
 
-class Action(TypedDict):
-    type: str
-    date: str  # should we use a more proper date type for things like this?
+type Action = dict[str, any]
 
 
 class Term(TypedDict):
