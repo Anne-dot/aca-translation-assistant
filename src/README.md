@@ -37,6 +37,12 @@ python3 src/extract_foundation_glossary.py
 ```bash
 python3 src/interactive_glossary_terms_review.py
 ```
+or, since all scripts contain a shebang:
+```bash
+./src/interactive_glossary_terms_review.py
+```
+notice, however, that for the scripts to access the `data/` directory, you must
+run them from within the root directory, not while inside `src/`.
 
 **Menu Options:**
 - [1] Flagged
