@@ -12,7 +12,6 @@ from tools.ui import page_break
 from tools.types import Meaning, Action, Term, Issue
 
 
-
 # =============================================================================#
 # STATISTICS                                                                   #
 # =============================================================================#
@@ -1148,7 +1147,7 @@ def main() -> None:
 ================================================================================
 < EXITING TERM: {previous_term_name}
 
-> NEXT TERM: {i}/{len(terms_to_review)}
+> NEXT TERM: {term.get("term", f"{i} / {len(terms_to_review)}")}
 ================================================================================
 """)
 
@@ -1200,6 +1199,7 @@ def main() -> None:
     [s] Skip - Review later
     [q] Quit review
 """)
+            # There should be an option to change the term itself!!!
 
             action = get_user_choice(
                 "> ", ["a", "d", "e", "t", "n", "m", "f", "w", "s", "q"]

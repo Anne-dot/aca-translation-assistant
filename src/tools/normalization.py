@@ -1,5 +1,6 @@
 from .types import Term, Issue
 
+
 def detect_comma_separated_terms(term_data: Term) -> Issue | None:
     # ex: "hero, hero child"
     term = term_data["term"]
