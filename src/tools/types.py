@@ -7,17 +7,20 @@ class Meaning(TypedDict):
     usageExample: str
 
 
-type Action = dict[str, any]
+class Action(TypedDict):
+    type: str
+    date: str
+    data: list | dict
 
 
 class Term(TypedDict):
-    # this should be something like "name", but changing that would
+    # `term` field should be something like "name", but changing that would
     # be a whole ordeal at the moment.
     term: str
     grammaticalType: str
     seeAlso: list
     meanings: list[Meaning]
-    # pageReferences should be a list of strings!
+    # `pageReferences` should be a list of strings!
     # it's currently a string of newline-delimited entries
     pageReferences: str
     reviewedAt: str
