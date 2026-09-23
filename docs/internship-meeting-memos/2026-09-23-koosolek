@@ -1,0 +1,48 @@
+# 📋 Koosoleku märkmed (13:30–14:42)
+*Märkus: Juhendaja vabandab hilinemise pärast.*
+
+## 📌 Koosoleku checklist
+- [ ] Graafikus püsimine tundidega
+- [ ] Tahvli täitmine
+- [ ] Commitimine
+- [ ] Praktika sisulised teemad
+
+---
+
+## 📝 Arutelu ja märkmed
+
+### ⏱️ Töökorraldus ja ajakulu
+* **Ligipääs:** Tahvli päevikusse puudub hetkel ligipääs.
+* **Graafik:** Tundidega graafikus püsimine ei ole hetkel nii hea, kui H tahaks. Iga päev on vaja teha **5.3 tundi**.
+* **Tahvel:** Sisestamised on kuhjunud, kuid tunnid on kopeerimiseks suhteliselt valmis.
+* **Koodi versioonihaldus:** Commitimine ja pushimine on korras (nädala jooksul tehtud 7 commitit, sellega on ok).
+
+### 🚀 Progressi enesehinnang (H)
+> *"Sain esimest korda scripti ise jooksutada nii, et see ei jooksnud kohe kokku. Lihtsad liigutused toimisid. Tegin tillukese lisandi, mis ütleb ülemineku ajal midagi."*
+
+### 🔍 H tähelepanekud (Pildid Discordi vestluses)
+* **Termini muutmine:** Puudub viis termi ennast muuta. Näide: `Annual Business Conference/ABC`. Siin on termis koos nii mõiste kui ka selle lühend/sünonüüm. Seda mõistet oleks vaja saada muuta menüü kaudu.
+* **Väljade nimetamine:** Segadus nimedega – olemas on `Term class` ja üks väli ise on samuti nimega `"term"` (vt täpsemalt Discordist).
+* **Page reference (Lehekülje viited):** Hetkel üks pikk string, kus on koos allikas ja lk numbrid. **Soovitus:** Võiks olla struktureeritud listina (iga raamatu iga lk eraldi kirje) või nested listina (listide list).
+* **Koodi struktuur (Vahemärkus):** Tekkis kiusatus teha otsast uus variant kogu süsteemist. Koodi on väsitav lugeda, eriti just `interactive ... review` koodi osa.
+* **Tüübid 'Issue' ja 'Action':** Kaks kirjeldusega tüüpi on hetkel "nõmedad". 
+  * Mis peaks olema nende sees väljad? Mis on täpselt `Action` väljad? 
+  * Mis on kohustuslikud ja mis valikulised (ehk mis tingimustel väli lisandub või ei lisandu)?
+* **Ajatemplid (Timestampid):** Kõigil actionitel võiks olla timestamp. 
+  * Otsida välja kohad, kus action aset leiab, kuidas seda märkida ja mis formaadis kuvada.
+  * Kas peaks üldse string olema? Python vs JSONi formaat (mis toimub Pythonis, kuidas teisendub JSONiks ja kas on üldse vaja).
+  * Kuidas Python kuupäevi sorteerib ja kas peaks kasutama korralikku andmetüüpi?
+  * **Lahendus:** `datetime.now.iso` koos timezone täpsustusega: `datetime.now(timezone.utc).isoformat()`.
+  * *Küsimus:* Mis saab olemasolevatest ajatemplitest?
+
+---
+
+## 🎯 Otsused ja edasised tegevused (TODO)
+
+- [ ] **Termini muutmine:** Termi ennast peab saama muuta (suur vs väike algustäht sõnaraamatu puhul, lühendid).
+- [ ] **Väljade nimed:** `Term` ja `term` jääb hetkel ootele, sellega pole kiiret.
+- [ ] **Lehekülje viited:** `Page reference` jääb ootele. Võiks jääda hiljem *random fix* ülesandeks (teisendada struktureeritud listiks). Muudatus tuleb teha `Extract` skriptis.
+- [ ] **Ajatemplid:** Kõikidele actionitele ja issuedele lisada timestamp (`datetime.now(timezone.utc).isoformat()`).
+- [ ] **Üldine jätkusuutlikkus:** Töö jätkub tüüpidega ja selle käigus välja tulnud tähelepanekute lahendamisega.
+- [ ] **Koolinädal:** Lepingu kohta küsimine koolinädalal.
+- [ ] **Juhendaja ülesanded:** Anne paneb kokkulepitud Issue'd GitHubi üles ja lisab selle memo repositooriumisse.
