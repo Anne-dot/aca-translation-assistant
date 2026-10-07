@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
-from datetime import datetime
 from pathlib import Path
 from tools.filemanage import load_json_file, save_json_file
+from tools.time import current_time
 from tools.ui import page_break
 
 
@@ -14,13 +14,11 @@ def flag_term_for_issue(term, issue_description):
 
     if issue_description not in [note["note"] for note in term["reviewNotes"]]:
         term["reviewNotes"].append(
-            {"date": datetime.now().isoformat(), "note": issue_description}
+            {"date": current_time(), "note": issue_description}
         )
 
     if "flagged" not in [action["type"] for action in term["actions"]]:
-        term["actions"].append(
-            {"type": "flagged", "date": datetime.now().isoformat()}
-        )
+        term["actions"].append({"type": "flagged", "date": current_time()})
 
     return term
 
@@ -95,11 +93,13 @@ def count_info_issues(terms):
 
 
 def display_results(info_counts, critical_results, flagged_count):
-    print("""
+    print(
+        """
 ================================================================================
 Quality Check Results
 ================================================================================
-""")
+"""
+    )
 
     issue_labels = {
         "missing_term": "Missing term field",
@@ -119,7 +119,8 @@ Quality Check Results
                 f"\t{issue_labels.get(issue_type, issue_type)}: {len(terms_list)} terms"
             )
 
-    print(f"""
+    print(
+        f"""
 INFO (not flagged):
 	Missing synonyms:   {info_counts["missing_synonyms"]} terms
 	Missing examples:   {info_counts["missing_examples"]} terms
@@ -127,7 +128,8 @@ INFO (not flagged):
 	Missing seeAlso:    {info_counts["missing_see_also"]} terms
 
 Terms auto-flagged: {flagged_count}
-""")
+"""
+    )
 
 
 def main():

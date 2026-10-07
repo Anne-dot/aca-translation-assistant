@@ -1,5 +1,4 @@
 #!/usr/bin/env python3
-from datetime import datetime
 from functools import reduce
 import os
 from pathlib import Path
@@ -9,6 +8,7 @@ import tempfile
 from tools.filemanage import load_json_file, save_json_file
 from tools.normalization import collect_normalization_issues
 from tools.ui import page_break
+from tools.time import now
 from tools.types import Meaning, Action, Term, Issue
 
 
@@ -57,7 +57,8 @@ def display_statistics(stats: dict[str, int]) -> None:
     reviewed = percent(stats["reviewed"], total)
     not_reviewed = percent(stats["not_reviewed"], total)
 
-    print(f"""
+    print(
+        f"""
 | Statistics:
     Total terms: {total}
     Multiple meanings: {stats["multiple_meanings"]} ({multiple}%)
@@ -67,7 +68,8 @@ def display_statistics(stats: dict[str, int]) -> None:
                 Reviewed: {stats["reviewed"]} ({reviewed}%)
             Not reviewed: {stats["not_reviewed"]} ({not_reviewed}%)
 
-> Actions (of {total} total):""")
+> Actions (of {total} total):"""
+    )
 
     actions = stats["actions"]
 
@@ -96,7 +98,8 @@ def display_complete_term_info(
     if not term_name:
         term_name = "info"
 
-    print(f"""
+    print(
+        f"""
 ================================================================================
 Term {term_name}:
 ================================================================================
@@ -105,7 +108,8 @@ Type: {term.get("grammaticalType", "N/A")}
 Note: {term.get("termNote", "none")}
 
 see also: {", ".join(term.get("seeAlso", ["N/A"]))}
-""")
+"""
+    )
 
     issues = collect_normalization_issues(term)
     if issues:
@@ -192,9 +196,11 @@ def get_user_choice(prompt: str, valid_choices: list[str]) -> None:
         choice = input(prompt).strip().lower()
         if choice in valid_choices:
             return choice
-        print(f"""Invalid choice.
+        print(
+            f"""Invalid choice.
 Please choose from: {", ".join(valid_choices)}
-""")
+"""
+        )
 
 
 # =============================================================================#
@@ -218,12 +224,14 @@ def get_issue_description_short(issue: Issue) -> str:
 
 
 def display_normalization_issue(issue: Issue) -> None:
-    print(f"""
+    print(
+        f"""
 ================================================================================
 ! NORMALIZATION ISSUE DETECTED !
 ================================================================================
 Category: {issue["category"]}
-""")
+"""
+    )
 
     match issue["category"]:
         case "split_parentheses":
@@ -338,12 +346,14 @@ def check_and_handle_normalization_issues(term: Term) -> bool:
     for issue in issues:
         display_normalization_issue(issue)
 
-        print("""Normalization actions:
+        print(
+            """Normalization actions:
     [1] Accept suggestion
     [2] Edit manually
     [3] Continue with normal review (ignore)
     [4] Skip term
-""")
+"""
+        )
 
         match get_user_choice("> ", ["1", "2", "3", "4"]):
             case "1":
@@ -387,7 +397,7 @@ def save_with_feedback(terms: Term, file_path: str) -> bool:
 
 
 def mark_term_as_reviewed(term: Term, action_type: str) -> Term:
-    term["reviewedAt"] = datetime.now().isoformat()
+    term["reviewedAt"] = current_time()
 
     if term.get("reviewNotes"):
         ask_for_review_notes_cleanup(term)
@@ -399,9 +409,7 @@ def mark_term_as_reviewed(term: Term, action_type: str) -> Term:
     if "actions" not in term:
         term["actions"] = []
 
-    term["actions"].append(
-        {"type": action_type, "date": datetime.now().isoformat()}
-    )
+    term["actions"].append({"type": action_type, "date": current_time()})
 
     return term
 
@@ -416,22 +424,18 @@ def flag_term_for_review(term: Term) -> Term:
     note = input("Reason for flagging (optional): ").strip()
 
     term["needsReview"] = True
-    term["reviewedAt"] = datetime.now().isoformat()
+    term["reviewedAt"] = current_time()
 
     if note:
         if "reviewNotes" not in term:
             term["reviewNotes"] = []
 
-        term["reviewNotes"].append(
-            {"date": datetime.now().isoformat(), "note": note}
-        )
+        term["reviewNotes"].append({"date": current_time(), "note": note})
 
     if "actions" not in term:
         term["actions"] = []
 
-    term["actions"].append(
-        {"type": "flagged", "date": datetime.now().isoformat()}
-    )
+    term["actions"].append({"type": "flagged", "date": current_time()})
 
     print("!Flagged for review!")
     print()
@@ -443,8 +447,8 @@ def flag_term_for_review(term: Term) -> Term:
 # from normal review filters and retrievable via menu filter [7].
 def mark_waiting_for_update(term: Term) -> Term:
     term["waitingForUpdate"] = True
-    term["waitingForUpdateAt"] = datetime.now().isoformat()
-    term["reviewedAt"] = datetime.now().isoformat()
+    term["waitingForUpdateAt"] = current_time()
+    term["reviewedAt"] = current_time()
     term["needsReview"] = False
 
     note = input("Reason for waiting (optional): ").strip()
@@ -455,7 +459,7 @@ def mark_waiting_for_update(term: Term) -> Term:
 
         term["reviewNotes"].append(
             {
-                "date": datetime.now().isoformat(),
+                "date": current_time(),
                 "note": f"Waiting for update: {note}",
             }
         )
@@ -464,7 +468,7 @@ def mark_waiting_for_update(term: Term) -> Term:
         term["actions"] = []
 
     term["actions"].append(
-        {"type": "waiting_for_update", "date": datetime.now().isoformat()}
+        {"type": "waiting_for_update", "date": current_time()}
     )
 
     print("!Marked as waiting for script update!")
@@ -484,7 +488,8 @@ def edit_single_field(field_name: str, current_value: any) -> list[str] | str:
         else current_value if current_value else "N/A"
     )
 
-    print(f"""
+    print(
+        f"""
 Current {field_name}:
     {display_value}
 
@@ -492,7 +497,8 @@ Options:
     [k] Keep current value
     [e] Enter new value
     [d] Delete (set to empty)
-""")
+"""
+    )
 
     match get_user_choice("> ", ["k", "e", "d"]):
         case "k":
@@ -547,11 +553,13 @@ def edit_text_in_editor(current_text: str, field_name: str = "text") -> None:
     with tempfile.NamedTemporaryFile(
         mode="w", suffix=".txt", delete=False, encoding="utf-8"
     ) as file:
-        file.write(f"""
+        file.write(
+            f"""
 # Muuda {field_name} allpool.
 # `#-ga` algavaid read eemaldatakse.
 # Salvesta ja sulge redaktor kui valmis.
-{current_text}""")
+{current_text}"""
+        )
         temp_path = file.name
 
     # TODO: shouldn't this say something if the file / subprocess fails?
@@ -619,11 +627,13 @@ def handle_synonym_to_definition(term: Term) -> bool:
         print(f"\t{i}. {syn}")
     print()
 
-    print("""Options:
+    print(
+        """Options:
     [y] Yes - Move synonyms to definition
     [n] No - Skip for now
     [w] Waiting - Mark as waiting for script update
-""")
+"""
+    )
     choice = get_user_choice("> ", ["y", "n", "w"])
 
     if choice == "n":
@@ -680,11 +690,13 @@ def edit_definition(term: Term) -> Term:
     meaning = meanings[meaning_index]
     current_definition = meaning.get("definition", "")
 
-    print(f"""| Opening definition in text editor...
+    print(
+        f"""| Opening definition in text editor...
 
 Current definition:
     {current_definition}
-""")
+"""
+    )
 
     edited_definition = edit_text_in_editor(current_definition, "definitsioon")
 
@@ -769,12 +781,14 @@ def edit_term_fields(term: Term) -> Term:
             )
 
     else:
-        print("""What to edit?
+        print(
+            """What to edit?
     [1] grammaticalType
     [2] seeAlso
     [3] Both
     [0] Cancel
-""")
+"""
+        )
 
         choice = get_user_choice("> ", ["1", "2", "3", "0"])
 
@@ -860,11 +874,13 @@ def ask_for_review_notes_cleanup(term: Term) -> None:
         print(f"\t{i}. {note}")
     print()
 
-    print("""Clear review notes?
+    print(
+        """Clear review notes?
     [y] Clear all notes
     [n] Keep all notes
     [i] Interactive (choose per note)
-""")
+"""
+    )
 
     match get_user_choice("> ", ["y", "n", "i"]):
         case "y":
@@ -969,7 +985,8 @@ def merge_term_meanings(term: Term) -> Term:
 
     merged = reduce(merge_two_meanings, meanings)
 
-    print(f"""
+    print(
+        f"""
 ================================================================================
 MERGE PREVIEW
 ================================================================================
@@ -984,22 +1001,27 @@ Merged Usage Example:
     {merged['usageExample']}
 
 ================================================================================
-""")
+"""
+    )
 
-    print("""Would you like to edit the merged result?
+    print(
+        """Would you like to edit the merged result?
     [y] Yes - Edit fields
     [n] No  - Accept as is
-""")
+"""
+    )
 
     final_meaning = merged
     if get_user_choice("> ", ["y", "n"]) == "y":
         final_meaning = edit_single_meaning(merged)
 
-    print("""
+    print(
+        """
 ================================================================================
 FINAL RESULT
 ================================================================================
-""")
+"""
+    )
     # TODO: ...uh oh. god damn you, ai hallucinations.
     # i feared i had accidentally "optimised" this function out,
     # ...but it seems like this function never existed, as far as referencing
@@ -1073,7 +1095,8 @@ def display_review_menu(terms: list[Term]) -> None:
     print(page_break())
     print("Foundation Glossary Review")
     print(page_break())
-    print(f"""Options:
+    print(
+        f"""Options:
     [1] Flagged ({flagged} terms)
     [2] Not reviewed ({not_reviewed} terms)
     [3] Reviewed - OK ({reviewed_ok} terms)
@@ -1083,7 +1106,8 @@ def display_review_menu(terms: list[Term]) -> None:
     [7] Waiting for update ({waiting} terms)
     [8] Unflagged - not reviewed yet ({unflagged} terms)
     [q] Quit
-""")
+"""
+    )
 
 
 def main() -> None:
@@ -1143,13 +1167,15 @@ def main() -> None:
 
     for i, term in enumerate(terms_to_review, 1):
         if previous_term_name:
-            print(f"""
+            print(
+                f"""
 ================================================================================
 < EXITING TERM: {previous_term_name}
 
 > NEXT TERM: {term.get("term", f"{i} / {len(terms_to_review)}")}
 ================================================================================
-""")
+"""
+            )
 
         filter_type = [
             "NOT REVIEWED",
@@ -1187,7 +1213,8 @@ def main() -> None:
         }
 
         while True:
-            print("""Actions:
+            print(
+                """Actions:
     [a] Accept - Entry is correct
     [d] Edit definition - Quick definition edit
     [e] Edit - Modify meanings
@@ -1198,7 +1225,8 @@ def main() -> None:
     [w] Waiting for update - Needs script enhancement
     [s] Skip - Review later
     [q] Quit review
-""")
+"""
+            )
             # There should be an option to change the term itself!!!
 
             action = get_user_choice(

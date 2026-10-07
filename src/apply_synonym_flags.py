@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 from ai_synonym_analysis_results import ANALYSIS_RESULTS
-from datetime import datetime
+from tools.time import current_time
 import json
 
 
@@ -36,7 +36,7 @@ def main():
 
         term["reviewNotes"].append(
             {
-                "date": datetime.now().isoformat(),
+                "date": current_time(),
                 "note": f"synonyms (AI): {reason}",
             }
         )

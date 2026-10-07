@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 import json
-from datetime import datetime
+from tools.time import current_time
 
 
 def find_definitions_in_synonyms():
@@ -69,7 +69,7 @@ def main():
 
             term["reviewNotes"].append(
                 {
-                    "date": datetime.now().isoformat(),
+                    "date": current_time(),
                     "note": f"synonyms (AI): {to_flag[term['term']]}",
                 }
             )

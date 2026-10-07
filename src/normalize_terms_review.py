@@ -2,8 +2,8 @@
 
 import sys
 from pathlib import Path
-from datetime import datetime
 from tools.filemanage import load_json_file, save_json_file
+from tools.time import current_time()
 from tools.ui import page_break
 
 
@@ -254,7 +254,7 @@ def save_normalization_action(term_data, action_type, action_data):
         "type": action_type,
         "data": action_data,
     }
-    term_data["reviewedAt"] = datetime.now().isoformat()
+    term_data["reviewedAt"] = current_time()
     term_data["needsReview"] = False
 
 
@@ -286,7 +286,7 @@ def process_single_issue(term_data, issue, stats):
         return False
 
     elif choice == "4":  # Mark as correct
-        term_data["reviewedAt"] = datetime.now().isoformat()
+        term_data["reviewedAt"] = current_time()
         term_data["needsReview"] = False
         stats["no_action"] += 1
         print("+ Marked as correct")
